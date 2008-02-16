@@ -1,0 +1,88 @@
+# tinydns data for openstreetmap.org
+#
+# Full reference is at http://cr.yp.to/djbdns/tinydns-data.html
+
+# Let Bytemark handle the DNS
+
+.openstreetmap.org::a.ns.bytemark.co.uk
+.openstreetmap.org::b.ns.bytemark.co.uk
+.openstreetmap.org::c.ns.bytemark.co.uk
+
+# Make the virtual machine the primary MX with Bytemark as backup
+
+@openstreetmap.org:80.68.94.95:a:10
+@openstreetmap.org::backup.mx.bytemark.co.uk:20
+
+# Main web server and it's aliases
+
++openstreetmap.org:128.40.58.202
++www.openstreetmap.org:128.40.58.202
++api.openstreetmap.org:128.40.58.202
+
+# Mapnik tile server, with wildcard alias to allow parallel loading
+
++tile.openstreetmap.org:128.40.58.201
++*.tile.openstreetmap.org:128.40.58.201
+
+# Osmarender tile server, with wildcard alias to allow parallel loading
+
++tah.openstreetmap.org:137.110.119.130
++*.tah.openstreetmap.org:137.110.119.130
+
+# Database server
+
++db.openstreetmap.org:128.40.58.203
+
+# Old database server (currently rails application server)
+
++db2.openstreetmap.org:128.40.58.204
+
+# Backups are currently on db2
+
++backup.openstreetmap.org:128.40.58.204
+
+# Development server with wildcard alias for user sites
+
++dev.openstreetmap.org:128.40.58.205
++*.dev.openstreetmap.org:128.40.58.205
+
+# Planet dumps are currently served from dev
+
++planet.openstreetmap.org:128.40.58.205
+
+# Munin currently operates from tile
+
++munin.openstreetmap.org:128.40.58.201
+
+# Forum server
+
++forum.openstreetmap.org:87.239.8.25
+
+# Bytemark virtual machine, and the services which operate from it
+
++vm.openstreetmap.org:80.68.94.95
++mail.openstreetmap.org:80.68.94.95
++lists.openstreetmap.org:80.68.94.95
++svn.openstreetmap.org:80.68.94.95
++trac.openstreetmap.org:80.68.94.95
+#+wiki.openstreetmap.org:80.68.94.95
++stats.wiki.openstreetmap.org:80.68.94.95
++foundation.openstreetmap.org:80.68.94.95
++irc.openstreetmap.org:80.68.94.95
+
+# Wiki is currently fronted by Grant's proxy (short timeout to allow changes)
+
++wiki.openstreetmap.org:89.145.68.232:3600
+
+# Our shop
+
+Cshop.openstreetmap.org:virtual.fotopic.net
+
+# Private LAN addresses for the UCL machines
+
++tile.internal.openstreetmap.org:10.0.0.1
++www.internal.openstreetmap.org:10.0.0.2
++db2.internal.openstreetmap.org:10.0.0.3
++tilegen.internal.openstreetmap.org:10.0.0.4
++dev.internal.openstreetmap.org:10.0.0.5
++db.internal.openstreetmap.org:10.0.0.6

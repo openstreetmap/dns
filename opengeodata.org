@@ -1,0 +1,19 @@
+# tinydns data for opengeodata.org
+#
+# Full reference is at http://cr.yp.to/djbdns/tinydns-data.html
+
+# Let Bytemark handle the DNS
+
+.opengeodata.org::a.ns.bytemark.co.uk
+.opengeodata.org::b.ns.bytemark.co.uk
+.opengeodata.org::c.ns.bytemark.co.uk
+
+# Make the virtual machine the primary MX with Bytemark as backup
+
+@opengeodata.org:80.68.94.95:a:10
+@opengeodata.org::backup.mx.bytemark.co.uk:20
+
+# Main web server and it's aliases
+
++opengeodata.org:80.68.94.95
++www.opengeodata.org:80.68.94.95
