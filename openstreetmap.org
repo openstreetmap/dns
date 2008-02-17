@@ -39,7 +39,7 @@
 
 # Backups are currently on db2
 
-+backup.openstreetmap.org:128.40.58.204
++backup.openstreetmap.org:10.0.0.3
 
 # Development server with wildcard alias for user sites
 
