@@ -86,3 +86,4 @@ Cshop.openstreetmap.org:virtual.fotopic.net
 +tilegen.internal.openstreetmap.org:10.0.0.4
 +dev.internal.openstreetmap.org:10.0.0.5
 +db.internal.openstreetmap.org:10.0.0.6
++vm.internal.openstreetmap.org:10.0.0.253
