@@ -32,7 +32,7 @@
 
 # New apnik tile server
 
-+tileserv.internal.openstreetmap.org:10.0.0.8
++tileserv.internal.openstreetmap.org:10.0.0.7
 
 # Osmarender tile server, with wildcard alias to allow parallel loading
 
