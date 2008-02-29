@@ -18,11 +18,21 @@
 +openstreetmap.org:128.40.58.202
 +www.openstreetmap.org:128.40.58.202
 +api.openstreetmap.org:128.40.58.202
++www.internal.openstreetmap.org:10.0.0.2
 
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
 +tile.openstreetmap.org:128.40.58.201
 +*.tile.openstreetmap.org:128.40.58.201
++tile.internal.openstreetmap.org:10.0.0.1
+
+# Mapnik tilegen server
+
++tilegen.internal.openstreetmap.org:10.0.0.4
+
+# New apnik tile server
+
++tileserv.internal.openstreetmap.org:10.0.0.8
 
 # Osmarender tile server, with wildcard alias to allow parallel loading
 
@@ -31,11 +41,11 @@
 
 # Database server
 
-+db.openstreetmap.org:128.40.58.203
++db.internal.openstreetmap.org:10.0.0.6
 
 # Old database server (currently rails application server)
 
-+db2.openstreetmap.org:128.40.58.204
++db2.internal.openstreetmap.org:10.0.0.3
 
 # Backups are currently on db2
 
@@ -45,6 +55,7 @@
 
 +dev.openstreetmap.org:128.40.58.205
 +*.dev.openstreetmap.org:128.40.58.205
++dev.internal.openstreetmap.org:10.0.0.5
 
 # Planet dumps are currently served from dev
 
@@ -69,6 +80,7 @@
 +stats.wiki.openstreetmap.org:80.68.94.95
 +foundation.openstreetmap.org:80.68.94.95
 +irc.openstreetmap.org:80.68.94.95
++vm.internal.openstreetmap.org:10.0.0.253
 
 # Wiki is currently fronted by Grant's proxy (short timeout to allow changes)
 
@@ -79,11 +91,3 @@
 Cshop.openstreetmap.org:virtual.fotopic.net
 
 # Private LAN addresses for the UCL machines
-
-+tile.internal.openstreetmap.org:10.0.0.1
-+www.internal.openstreetmap.org:10.0.0.2
-+db2.internal.openstreetmap.org:10.0.0.3
-+tilegen.internal.openstreetmap.org:10.0.0.4
-+dev.internal.openstreetmap.org:10.0.0.5
-+db.internal.openstreetmap.org:10.0.0.6
-+vm.internal.openstreetmap.org:10.0.0.253
