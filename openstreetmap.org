@@ -22,9 +22,9 @@
 
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
-+tile.openstreetmap.org:128.40.58.201
-+*.tile.openstreetmap.org:128.40.58.201
-+tile.internal.openstreetmap.org:10.0.0.1
++tile.openstreetmap.org:128.40.58.201:3600
++*.tile.openstreetmap.org:128.40.58.201:3600
++tile.internal.openstreetmap.org:10.0.0.1:3600
 
 # Mapnik tilegen server
 
