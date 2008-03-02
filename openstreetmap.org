@@ -20,19 +20,20 @@
 +api.openstreetmap.org:128.40.58.202
 +www.internal.openstreetmap.org:10.0.0.2
 
-# Mapnik tile server, with wildcard alias to allow parallel loading
+# Old mapnik tile server
 
-+tile.openstreetmap.org:128.40.58.201:3600
-+*.tile.openstreetmap.org:128.40.58.201:3600
-+tile.internal.openstreetmap.org:10.0.0.1:3600
++oldtile.openstreetmap.org:128.40.58.201:3600
++oldtile.internal.openstreetmap.org:10.0.0.1:3600
 
 # Mapnik tilegen server
 
 +tilegen.internal.openstreetmap.org:10.0.0.4
 
-# New apnik tile server
+# Mapnik tile server, with wildcard alias to allow parallel loading
 
-+tileserv.internal.openstreetmap.org:10.0.0.7
++tile.openstreetmap.org:128.40.58.204:3600
++*.tile.openstreetmap.org:128.40.58.204:3600
++tile.internal.openstreetmap.org:10.0.0.7
 
 # Osmarender tile server, with wildcard alias to allow parallel loading
 
