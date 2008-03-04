@@ -27,13 +27,13 @@
 
 # Gazetteer server
 
-+gazetteer.openstreetmap.org:128.40.58.201:3600
-+gazetteer.internal.openstreetmap.org:10.0.0.1:3600
++gazetteer.openstreetmap.org:128.40.58.201
++gazetteer.internal.openstreetmap.org:10.0.0.1
 
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
-+tile.openstreetmap.org:128.40.58.204:3600
-+*.tile.openstreetmap.org:128.40.58.204:3600
++tile.openstreetmap.org:128.40.58.204
++*.tile.openstreetmap.org:128.40.58.204
 +tile.internal.openstreetmap.org:10.0.0.7
 
 # Osmarender tile server, with wildcard alias to allow parallel loading
