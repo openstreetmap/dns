@@ -20,14 +20,15 @@
 +api.openstreetmap.org:128.40.58.202
 +www.internal.openstreetmap.org:10.0.0.2
 
-# Old mapnik tile server
+# Rails application servers
 
-+oldtile.openstreetmap.org:128.40.58.201:3600
-+oldtile.internal.openstreetmap.org:10.0.0.1:3600
++rails1.internal.openstreetmap.org:10.0.0.3
++rails2.internal.openstreetmap.org:10.0.0.4
 
-# Mapnik tilegen server
+# Gazetteer server
 
-+tilegen.internal.openstreetmap.org:10.0.0.4
++gazetteer.openstreetmap.org:128.40.58.201:3600
++gazetteer.internal.openstreetmap.org:10.0.0.1:3600
 
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
@@ -44,11 +45,7 @@
 
 +db.internal.openstreetmap.org:10.0.0.6
 
-# Old database server (currently rails application server)
-
-+db2.internal.openstreetmap.org:10.0.0.3
-
-# Backups are currently on db2
+# Backups are currently on rails1
 
 +backup.openstreetmap.org:10.0.0.3
 
