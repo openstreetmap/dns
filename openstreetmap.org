@@ -45,9 +45,9 @@
 
 +db.internal.openstreetmap.org:10.0.0.6
 
-# Backups are currently on rails1
+# Backups are currently on rails2
 
-+backup.openstreetmap.org:10.0.0.3
++backup.openstreetmap.org:10.0.0.4
 
 # Development server with wildcard alias for user sites
 
@@ -59,7 +59,7 @@
 
 +planet.openstreetmap.org:128.40.58.205
 
-# Munin currently operates from tile
+# Munin currently operates from gazetteer
 
 +munin.openstreetmap.org:128.40.58.201
 
