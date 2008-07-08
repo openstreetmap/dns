@@ -33,7 +33,9 @@
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
 +tile.openstreetmap.org:128.40.58.204
-+*.tile.openstreetmap.org:128.40.58.204
++a.tile.openstreetmap.org:128.40.58.204
++b.tile.openstreetmap.org:128.40.58.204
++c.tile.openstreetmap.org:128.40.58.204
 +tile.internal.openstreetmap.org:10.0.0.7
 
 # Osmarender tile server, with wildcard alias to allow parallel loading
