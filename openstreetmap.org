@@ -18,6 +18,8 @@
 +openstreetmap.org:128.40.58.202
 +www.openstreetmap.org:128.40.58.202
 +api.openstreetmap.org:128.40.58.202
++maps.openstreetmap.org:128.40.58.202
++mapz.openstreetmap.org:128.40.58.202
 +www.internal.openstreetmap.org:10.0.0.2
 
 # Rails application servers
