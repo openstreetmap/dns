@@ -10,7 +10,7 @@
 
 # Make the virtual machine the primary MX with Bytemark as backup
 
-@openstreetmap.org::89.16.177.88:a:10
+@openstreetmap.org:89.16.177.88:a:10
 @openstreetmap.org::backup.mx.bytemark.co.uk:20
 
 # Main web server and it's aliases
