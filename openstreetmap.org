@@ -103,5 +103,3 @@
 # Our shop
 
 Cshop.openstreetmap.org:virtual.fotopic.net
-
-# Private LAN addresses for the UCL machines
