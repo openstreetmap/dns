@@ -92,6 +92,10 @@
 
 +wiki.openstreetmap.org:89.145.68.232:3600
 
+# Blog aggregator (on Shaun McDonald's VM)
+
++blogs.openstreetmap.org:89.16.175.12
+
 # Our shop
 
 Cshop.openstreetmap.org:virtual.fotopic.net
