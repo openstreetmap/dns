@@ -10,7 +10,7 @@
 
 # Make the virtual machine the primary MX with Bytemark as backup
 
-@openstreetmap.org:80.68.94.95:a:10
+@openstreetmap.org::89.16.177.88:a:10
 @openstreetmap.org::backup.mx.bytemark.co.uk:20
 
 # Main web server and it's aliases
@@ -74,15 +74,19 @@
 # Bytemark virtual machine, and the services which operate from it
 
 +vm.openstreetmap.org:80.68.94.95
-+mail.openstreetmap.org:80.68.94.95
-+lists.openstreetmap.org:80.68.94.95
-+svn.openstreetmap.org:80.68.94.95
-+trac.openstreetmap.org:80.68.94.95
-#+wiki.openstreetmap.org:80.68.94.95
 +stats.wiki.openstreetmap.org:80.68.94.95
-+foundation.openstreetmap.org:80.68.94.95
-+irc.openstreetmap.org:80.68.94.95
 +vm.internal.openstreetmap.org:10.0.0.253
+
+# Bytemark atom machine, and the services which operate from it
+
++idris.openstreetmap.org:89.16.177.88
++mail.openstreetmap.org:89.16.177.88
++lists.openstreetmap.org:89.16.177.88
++svn.openstreetmap.org:89.16.177.88
++trac.openstreetmap.org:89.16.177.88
+#+wiki.openstreetmap.org:89.16.177.88
++foundation.openstreetmap.org:89.16.177.88
++irc.openstreetmap.org:89.16.177.88
 
 # Wiki is currently fronted by Grant's proxy (short timeout to allow changes)
 
