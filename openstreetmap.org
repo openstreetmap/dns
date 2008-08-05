@@ -71,6 +71,19 @@
 
 +munin.openstreetmap.org:128.40.58.201
 
+# New HP servers
+
++puff.internal.openstreetmap.org:10.0.0.8
++puff.ilo.openstreetmap.org:10.0.0.58
++fuchur.internal.openstreetmap.org:10.0.0.9
++fuchur.ilo.openstreetmap.org:10.0.0.59
++draco.internal.openstreetmap.org:10.0.0.10
++draco.ilo.openstreetmap.org:10.0.0.60
++sarel.internal.openstreetmap.org:10.0.0.11
++sarel.ilo.openstreetmap.org:10.0.0.61
++norbert.internal.openstreetmap.org:10.0.0.12
++norbert.ilo.openstreetmap.org:10.0.0.62
+
 # Forum server
 
 +forum.openstreetmap.org:87.239.8.25
