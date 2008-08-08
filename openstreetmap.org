@@ -19,17 +19,26 @@
 
 # Main web server and it's aliases
 
-+openstreetmap.org:128.40.58.202
-+www.openstreetmap.org:128.40.58.202
-+api.openstreetmap.org:128.40.58.202
-+maps.openstreetmap.org:128.40.58.202
-+mapz.openstreetmap.org:128.40.58.202
-+www.internal.openstreetmap.org:10.0.0.2
++puff.openstreetmap.org:128.40.58.203
++openstreetmap.org:128.40.58.203
++www.openstreetmap.org:128.40.58.203
++api.openstreetmap.org:128.40.58.203
++maps.openstreetmap.org:128.40.58.203
++mapz.openstreetmap.org:128.40.58.203
++puff.internal.openstreetmap.org:10.0.0.8
++puff.ilo.openstreetmap.org:10.0.0.58
 
 # Rails application servers
 
-+rails1.internal.openstreetmap.org:10.0.0.3
-+rails2.internal.openstreetmap.org:10.0.0.4
++draco.internal.openstreetmap.org:10.0.0.10
++rails1.internal.openstreetmap.org:10.0.0.10
++draco.ilo.openstreetmap.org:10.0.0.60
++sarel.internal.openstreetmap.org:10.0.0.11
++rails2.internal.openstreetmap.org:10.0.0.11
++sarel.ilo.openstreetmap.org:10.0.0.61
++norbert.internal.openstreetmap.org:10.0.0.12
++rails3.internal.openstreetmap.org:10.0.0.12
++norbert.ilo.openstreetmap.org:10.0.0.62
 
 # Gazetteer server
 
@@ -71,19 +80,14 @@
 
 +munin.openstreetmap.org:128.40.58.201
 
-# New HP servers
+# Spare servers
 
-+puff.openstreetmap.org:128.40.58.203
-+puff.internal.openstreetmap.org:10.0.0.8
-+puff.ilo.openstreetmap.org:10.0.0.58
 +fuchur.internal.openstreetmap.org:10.0.0.9
 +fuchur.ilo.openstreetmap.org:10.0.0.59
-+draco.internal.openstreetmap.org:10.0.0.10
-+draco.ilo.openstreetmap.org:10.0.0.60
-+sarel.internal.openstreetmap.org:10.0.0.11
-+sarel.ilo.openstreetmap.org:10.0.0.61
-+norbert.internal.openstreetmap.org:10.0.0.12
-+norbert.ilo.openstreetmap.org:10.0.0.62
++old-www.openstreetmap.org:128.40.58.202
++old-www.internal.openstreetmap.org:10.0.0.2
++old-rails1.internal.openstreetmap.org:10.0.0.3
++old-rails2.internal.openstreetmap.org:10.0.0.4
 
 # Forum server
 

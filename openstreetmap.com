@@ -15,5 +15,5 @@
 
 # Main web server and it's aliases
 
-+openstreetmap.com:128.40.58.202
-+www.openstreetmap.com:128.40.58.202
++openstreetmap.com:128.40.58.203
++www.openstreetmap.com:128.40.58.203
