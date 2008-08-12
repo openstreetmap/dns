@@ -84,10 +84,10 @@
 
 +fuchur.internal.openstreetmap.org:10.0.0.9
 +fuchur.ilo.openstreetmap.org:10.0.0.59
-+dulcy.openstreetmap.org:128.40.58.202
 +dulcy.internal.openstreetmap.org:10.0.0.2
 +ridley.internal.openstreetmap.org:10.0.0.3
 +fafnir.internal.openstreetmap.org:10.0.0.4
++fafnir.openstreetmap.org:128.40.58.202
 
 # Forum server
 
