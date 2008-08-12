@@ -84,9 +84,9 @@
 
 +fuchur.internal.openstreetmap.org:10.0.0.9
 +fuchur.ilo.openstreetmap.org:10.0.0.59
-+old-www.openstreetmap.org:128.40.58.202
-+old-www.internal.openstreetmap.org:10.0.0.2
-+old-rails1.internal.openstreetmap.org:10.0.0.3
++dulcy.openstreetmap.org:128.40.58.202
++dulcy.internal.openstreetmap.org:10.0.0.2
++ridley.internal.openstreetmap.org:10.0.0.3
 +old-rails2.internal.openstreetmap.org:10.0.0.4
 
 # Forum server
