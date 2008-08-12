@@ -45,6 +45,12 @@
 +gazetteer.openstreetmap.org:128.40.58.201
 +gazetteer.internal.openstreetmap.org:10.0.0.1
 
+# XAPI server
+
++fafnir.openstreetmap.org:128.40.58.202
++xapi.openstreetmap.org:128.40.58.202
++fafnir.internal.openstreetmap.org:10.0.0.4
+
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
 +tile.openstreetmap.org:128.40.58.204
@@ -86,8 +92,6 @@
 +fuchur.ilo.openstreetmap.org:10.0.0.59
 +dulcy.internal.openstreetmap.org:10.0.0.2
 +ridley.internal.openstreetmap.org:10.0.0.3
-+fafnir.internal.openstreetmap.org:10.0.0.4
-+fafnir.openstreetmap.org:128.40.58.202
 
 # Forum server
 
