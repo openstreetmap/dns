@@ -99,6 +99,9 @@
 +dulcy.internal.openstreetmap.org:10.0.0.2
 +ridley.internal.openstreetmap.org:10.0.0.3
 
+# APC power switch
+apc1.internal.openstreetmap.org:10.0.0.49
+
 # Forum server
 
 +forum.openstreetmap.org:87.239.8.25
