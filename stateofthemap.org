@@ -22,5 +22,7 @@ Clogin.stateofthemap.org:ghs.google.com
 
 # Main web server and it's aliases
 
-#+stateofthemap.org:89.16.177.88
-#+www.stateofthemap.org:89.16.177.88
++stateofthemap.org:128.40.58.205
++www.stateofthemap.org:128.40.58.205
++2008.stateofthemap.org:128.40.58.205
++2007.stateofthemap.org:128.40.58.205
