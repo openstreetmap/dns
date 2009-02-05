@@ -10,7 +10,7 @@
 
 # Let google handle email
 
-              @stateofthemap.com::aspmx.l.google.com:1:3600
+@stateofthemap.com::aspmx.l.google.com:1:3600
 @stateofthemap.com::alt1.aspmx.l.google.com:5:3600
 @stateofthemap.com::alt2.aspmx.l.google.com:5:3600
 @stateofthemap.com::aspmx2.googlemail.com:10:3600
@@ -24,5 +24,6 @@ Clogin.stateofthemap.com:ghs.google.com
 
 +stateofthemap.com:128.40.58.205
 +www.stateofthemap.com:128.40.58.205
++2009.stateofthemap.com:128.40.58.205
 +2008.stateofthemap.com:128.40.58.205
 +2007.stateofthemap.com:128.40.58.205
