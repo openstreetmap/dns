@@ -61,14 +61,14 @@
 
 # Osmarender tile server, with wildcard alias to allow parallel loading
 
-+tah.openstreetmap.org:67.159.49.178
-+a.tah.openstreetmap.org:67.159.49.178
-+b.tah.openstreetmap.org:67.159.49.178
-+c.tah.openstreetmap.org:67.159.49.178
-+d.tah.openstreetmap.org:67.159.49.178
-+e.tah.openstreetmap.org:67.159.49.178
-+f.tah.openstreetmap.org:67.159.49.178
-+server.tah.openstreetmap.org:67.159.49.179
++tah.openstreetmap.org:129.132.168.206
++a.tah.openstreetmap.org:129.132.168.206
++b.tah.openstreetmap.org:129.132.168.206
++c.tah.openstreetmap.org:129.132.168.206
++d.tah.openstreetmap.org:129.132.168.206
++e.tah.openstreetmap.org:129.132.168.206
++f.tah.openstreetmap.org:129.132.168.206
++server.tah.openstreetmap.org:129.132.168.206
 
 # Database server
 
