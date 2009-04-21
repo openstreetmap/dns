@@ -72,12 +72,13 @@
 
 # Database server
 
-+db.internal.openstreetmap.org:10.0.0.6
-
-# New database server
-
 +smaug.internal.openstreetmap.org:10.0.0.13
++db.internal.openstreetmap.org:10.0.0.13:60
 +smaug.ilo.internal.openstreetmap.org:10.0.0.63
+
+# Old database server
+
++old-db.internal.openstreetmap.org:10.0.0.6
 
 # Backups are currently on tile
 
