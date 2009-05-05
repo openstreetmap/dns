@@ -43,6 +43,7 @@
 # Gazetteer server
 
 +gazetteer.openstreetmap.org:128.40.58.201
++npe.openstreetmap.org:128.40.58.201
 +gazetteer.internal.openstreetmap.org:10.0.0.1
 
 # XAPI server
