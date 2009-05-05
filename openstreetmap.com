@@ -17,3 +17,7 @@
 
 +openstreetmap.com:128.40.58.203
 +www.openstreetmap.com:128.40.58.203
+
+# Donation site
+
++donate.openstreetmap.com:89.145.67.86
