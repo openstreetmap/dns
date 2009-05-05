@@ -76,10 +76,6 @@
 +db.internal.openstreetmap.org:10.0.0.13:60
 +smaug.ilo.internal.openstreetmap.org:10.0.0.63
 
-# Old database server
-
-+old-db.internal.openstreetmap.org:10.0.0.6
-
 # Backups are currently on tile
 
 +backup.openstreetmap.org:10.0.0.7
@@ -104,6 +100,7 @@
 +fuchur.ilo.openstreetmap.org:10.0.0.59
 +dulcy.internal.openstreetmap.org:10.0.0.2
 +ridley.internal.openstreetmap.org:10.0.0.3
++katie.internal.openstreetmap.org:10.0.0.6
 
 # APC power switch
 apc1.internal.openstreetmap.org:10.0.0.49
