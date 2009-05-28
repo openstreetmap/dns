@@ -1,0 +1,23 @@
+# tinydns data for osm.org
+#
+# Full reference is at http://cr.yp.to/djbdns/tinydns-data.html
+
+# Let Bytemark handle the DNS
+
+.osm.org::a.ns.bytemark.co.uk
+.osm.org::b.ns.bytemark.co.uk
+.osm.org::c.ns.bytemark.co.uk
+
+# Make the virtual machine the primary MX with Bytemark as backup
+
+@osm.org:89.16.177.88:a:10
+@osm.org::backup.mx.bytemark.co.uk:20
+
+# Main web server and it's aliases
+
++osm.org:128.40.58.203
++www.osm.org:128.40.58.203
+
+# Donation site
+
++donate.osm.org:89.145.67.86
