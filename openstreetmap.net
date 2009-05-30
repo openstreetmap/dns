@@ -24,13 +24,9 @@
 +lists.openstreetmap.net:89.16.177.88
 +svn.openstreetmap.net:89.16.177.88
 +trac.openstreetmap.net:89.16.177.88
-#+wiki.openstreetmap.net:89.16.177.88
++wiki.openstreetmap.net:89.16.177.88
 +foundation.openstreetmap.net:89.16.177.88
 +irc.openstreetmap.net:89.16.177.88
-
-# Wiki is currently fronted by Grant's proxy (short timeout to allow changes)
-
-+wiki.openstreetmap.net:89.145.68.232:3600
 
 #
 # Donation site
