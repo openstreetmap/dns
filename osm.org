@@ -18,6 +18,20 @@
 +osm.org:128.40.58.203
 +www.osm.org:128.40.58.203
 
+# Bytemark atom machine, and the services which operate from it
+
++mail.osm.org:89.16.177.88
++lists.osm.org:89.16.177.88
++svn.osm.org:89.16.177.88
++trac.osm.org:89.16.177.88
+#+wiki.osm.org:89.16.177.88
++foundation.osm.org:89.16.177.88
++irc.osm.org:89.16.177.88
+
+# Wiki is currently fronted by Grant's proxy (short timeout to allow changes)
+
++wiki.osm.org:89.145.68.232:3600
+
 # Donation site
 
 +donate.osm.org:89.145.67.86

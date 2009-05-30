@@ -18,6 +18,20 @@
 +openstreetmap.com:128.40.58.203
 +www.openstreetmap.com:128.40.58.203
 
+# Bytemark atom machine, and the services which operate from it
+
++mail.openstreetmap.com:89.16.177.88
++lists.openstreetmap.com:89.16.177.88
++svn.openstreetmap.com:89.16.177.88
++trac.openstreetmap.com:89.16.177.88
+#+wiki.openstreetmap.com:89.16.177.88
++foundation.openstreetmap.com:89.16.177.88
++irc.openstreetmap.com:89.16.177.88
+
+# Wiki is currently fronted by Grant's proxy (short timeout to allow changes)
+
++wiki.openstreetmap.com:89.145.68.232:3600
+
 # Donation site
 
 +donate.openstreetmap.com:89.145.67.86
