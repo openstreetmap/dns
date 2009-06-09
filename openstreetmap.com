@@ -15,8 +15,8 @@
 
 # Main web server and it's aliases
 
-+openstreetmap.com:128.40.58.203
-+www.openstreetmap.com:128.40.58.203
++openstreetmap.com:128.40.168.98
++www.openstreetmap.com:128.40.168.98
 
 # Bytemark atom machine, and the services which operate from it
 

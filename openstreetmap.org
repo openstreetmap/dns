@@ -19,12 +19,12 @@
 
 # Main web server and it's aliases
 
-+puff.openstreetmap.org:128.40.58.203
-+openstreetmap.org:128.40.58.203
-+www.openstreetmap.org:128.40.58.203
-+api.openstreetmap.org:128.40.58.203
-+maps.openstreetmap.org:128.40.58.203
-+mapz.openstreetmap.org:128.40.58.203
++puff.openstreetmap.org:128.40.168.98
++openstreetmap.org:128.40.168.98
++www.openstreetmap.org:128.40.168.98
++api.openstreetmap.org:128.40.168.98
++maps.openstreetmap.org:128.40.168.98
++mapz.openstreetmap.org:128.40.168.98
 +puff.internal.openstreetmap.org:10.0.0.8
 +puff.ilo.openstreetmap.org:10.0.0.58
 
@@ -42,22 +42,22 @@
 
 # Gazetteer server
 
-+gazetteer.openstreetmap.org:128.40.58.201
-+npe.openstreetmap.org:128.40.58.201
++gazetteer.openstreetmap.org:128.40.168.96
++npe.openstreetmap.org:128.40.168.96
 +gazetteer.internal.openstreetmap.org:10.0.0.1
 
 # XAPI server
 
-+fafnir.openstreetmap.org:128.40.58.202
-+xapi.openstreetmap.org:128.40.58.202
++fafnir.openstreetmap.org:128.40.168.97
++xapi.openstreetmap.org:128.40.168.97
 +fafnir.internal.openstreetmap.org:10.0.0.4
 
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
-+tile.openstreetmap.org:128.40.58.204
-+a.tile.openstreetmap.org:128.40.58.204
-+b.tile.openstreetmap.org:128.40.58.204
-+c.tile.openstreetmap.org:128.40.58.204
++tile.openstreetmap.org:128.40.168.99
++a.tile.openstreetmap.org:128.40.168.99
++b.tile.openstreetmap.org:128.40.168.99
++c.tile.openstreetmap.org:128.40.168.99
 +tile.internal.openstreetmap.org:10.0.0.7
 +tile.ilo.openstreetmap.org:10.1.0.7
 
@@ -84,17 +84,17 @@
 
 # Development server with wildcard alias for user sites
 
-+dev.openstreetmap.org:128.40.58.205
-+*.dev.openstreetmap.org:128.40.58.205
++dev.openstreetmap.org:128.40.168.100
++*.dev.openstreetmap.org:128.40.168.100
 +dev.internal.openstreetmap.org:10.0.0.5
 
 # Planet dumps are currently served from dev
 
-+planet.openstreetmap.org:128.40.58.205
++planet.openstreetmap.org:128.40.168.100
 
 # Munin currently operates from gazetteer
 
-+munin.openstreetmap.org:128.40.58.201
++munin.openstreetmap.org:128.40.168.96
 
 # Spare servers
 
