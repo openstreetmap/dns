@@ -105,8 +105,15 @@
 +ridley.internal.openstreetmap.org:10.0.0.3
 +katie.openstreetmap.org:128.40.168.101
 +katie.internal.openstreetmap.org:10.0.0.6
++errol.openstreetmap.org:128.40.168.103
++errol.internal.openstreetmap.org:10.0.0.14
++errol.ilo.openstreetmap.org:10.0.0.64
++yevaud.openstreetmap.org:128.40.168.104
++yavaud.internal.openstreetmap.org:10.0.0.15
++yevaud.ilo.openstreetmap.org:10.0.0.65
 
 # APC power switch
+
 +apc1.internal.openstreetmap.org:10.0.0.49
 
 # Forum server
