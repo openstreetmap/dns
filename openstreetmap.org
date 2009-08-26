@@ -61,6 +61,10 @@
 +tile.internal.openstreetmap.org:10.0.0.7
 +tile.ilo.openstreetmap.org:10.1.0.7
 
++yevaud.openstreetmap.org:128.40.168.104
++yavaud.internal.openstreetmap.org:10.0.0.15
++yevaud.ilo.openstreetmap.org:10.0.0.65
+
 # Osmarender tile server, with wildcard alias to allow parallel loading
 
 +tah.openstreetmap.org:129.132.168.206
@@ -88,6 +92,10 @@
 +*.dev.openstreetmap.org:128.40.168.100
 +dev.internal.openstreetmap.org:10.0.0.5
 
++errol.openstreetmap.org:128.40.168.103
++errol.internal.openstreetmap.org:10.0.0.14
++errol.ilo.openstreetmap.org:10.0.0.64
+
 # Planet dumps are currently served from dev
 
 +planet.openstreetmap.org:128.40.168.100
@@ -105,12 +113,6 @@
 +ridley.internal.openstreetmap.org:10.0.0.3
 +katie.openstreetmap.org:128.40.168.101
 +katie.internal.openstreetmap.org:10.0.0.6
-+errol.openstreetmap.org:128.40.168.103
-+errol.internal.openstreetmap.org:10.0.0.14
-+errol.ilo.openstreetmap.org:10.0.0.64
-+yevaud.openstreetmap.org:128.40.168.104
-+yavaud.internal.openstreetmap.org:10.0.0.15
-+yevaud.ilo.openstreetmap.org:10.0.0.65
 
 # APC power switch
 
