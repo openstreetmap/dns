@@ -88,13 +88,13 @@
 
 # Development server with wildcard alias for user sites
 
-+dev.openstreetmap.org:128.40.168.100
-+*.dev.openstreetmap.org:128.40.168.100
 +old-dev.openstreetmap.org:128.40.168.100
 +*.old-dev.openstreetmap.org:128.40.168.100
 +dev.internal.openstreetmap.org:10.0.0.5
 
 +errol.openstreetmap.org:128.40.168.103
++dev.openstreetmap.org:128.40.168.103
++*.dev.openstreetmap.org:128.40.168.103
 +new-dev.openstreetmap.org:128.40.168.103
 +*.new-dev.openstreetmap.org:128.40.168.103
 +errol.internal.openstreetmap.org:10.0.0.14
