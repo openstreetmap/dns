@@ -100,6 +100,12 @@
 +errol.internal.openstreetmap.org:10.0.0.14
 +errol.ilo.openstreetmap.org:10.0.0.64
 
+# Foundation server
+
++ridley.openstreetmap.org:128.40.168.102
++foundation.openstreetmap.org:128.40.168.102
++ridley.internal.openstreetmap.org:10.0.0.3
+
 # Planet dumps are currently served from dev
 
 +planet.openstreetmap.org:128.40.168.100
@@ -113,8 +119,6 @@
 +fuchur.internal.openstreetmap.org:10.0.0.9
 +fuchur.ilo.openstreetmap.org:10.0.0.59
 +dulcy.internal.openstreetmap.org:10.0.0.2
-+ridley.openstreetmap.org:128.40.168.102
-+ridley.internal.openstreetmap.org:10.0.0.3
 +katie.openstreetmap.org:128.40.168.101
 +katie.internal.openstreetmap.org:10.0.0.6
 
@@ -140,7 +144,6 @@
 +svn.openstreetmap.org:89.16.177.88
 +trac.openstreetmap.org:89.16.177.88
 #+wiki.openstreetmap.org:89.16.177.88
-+foundation.openstreetmap.org:89.16.177.88
 +irc.openstreetmap.org:89.16.177.88
 
 # Wiki is currently fronted by Grant's proxy (short timeout to allow changes)
