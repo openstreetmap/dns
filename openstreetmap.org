@@ -53,16 +53,17 @@
 
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
-+tile.openstreetmap.org:128.40.168.99
-+a.tile.openstreetmap.org:128.40.168.99
-+b.tile.openstreetmap.org:128.40.168.99
-+c.tile.openstreetmap.org:128.40.168.99
-+tile.internal.openstreetmap.org:10.0.0.7
-+tile.ilo.openstreetmap.org:10.1.0.7
-
 +yevaud.openstreetmap.org:128.40.168.104
++tile.openstreetmap.org:128.40.168.104
++a.tile.openstreetmap.org:128.40.168.104
++b.tile.openstreetmap.org:128.40.168.104
++c.tile.openstreetmap.org:128.40.168.104
 +yevaud.internal.openstreetmap.org:10.0.0.15
 +yevaud.ilo.openstreetmap.org:10.0.0.65
+
++old-tile.openstreetmap.org:128.40.168.99
++old-tile.internal.openstreetmap.org:10.0.0.7
++old-tile.ilo.openstreetmap.org:10.1.0.7
 
 # Osmarender tile server, with wildcard alias to allow parallel loading
 
