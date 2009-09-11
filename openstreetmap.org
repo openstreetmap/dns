@@ -64,6 +64,7 @@
 # Services machine
 
 +horntail.openstreetmap.org:128.40.168.99
++munin.openstreetmap.org:128.40.168.99
 +horntail.internal.openstreetmap.org:10.0.0.7
 +horntail.ilo.openstreetmap.org:10.1.0.7
 
@@ -112,10 +113,6 @@
 # Planet dumps are currently served from dev
 
 +planet.openstreetmap.org:128.40.168.100
-
-# Munin currently operates from gazetteer
-
-+munin.openstreetmap.org:128.40.168.96
 
 # Spare servers
 
