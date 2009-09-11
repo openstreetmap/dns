@@ -65,6 +65,7 @@
 
 +horntail.openstreetmap.org:128.40.168.99
 +munin.openstreetmap.org:128.40.168.99
++backup.openstreetmap.org:10.0.0.7
 +horntail.internal.openstreetmap.org:10.0.0.7
 +horntail.ilo.openstreetmap.org:10.1.0.7
 
@@ -84,10 +85,6 @@
 +smaug.internal.openstreetmap.org:10.0.0.13
 +db.internal.openstreetmap.org:10.0.0.13:60
 +smaug.ilo.internal.openstreetmap.org:10.0.0.63
-
-# Backups are currently on tile
-
-+backup.openstreetmap.org:10.0.0.7
 
 # Development server with wildcard alias for user sites
 
