@@ -142,6 +142,7 @@
 +trac.openstreetmap.org:89.16.177.88
 #+wiki.openstreetmap.org:89.16.177.88
 +irc.openstreetmap.org:89.16.177.88
++idris.internal.openstreetmap.org:10.0.0.253
 
 # Wiki is currently fronted by Grant's proxy (short timeout to allow changes)
 
