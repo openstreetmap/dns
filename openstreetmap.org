@@ -125,7 +125,7 @@
 
 # Forum server
 
-+forum.openstreetmap.org:87.239.8.25
++forum.openstreetmap.org:93.168.179.231
 
 # Bytemark virtual machine, and the services which operate from it
 
