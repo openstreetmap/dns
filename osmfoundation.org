@@ -24,3 +24,4 @@ Clogin.osmfoundation.org:ghs.google.com
 
 +osmfoundation.org:128.40.168.102
 +www.osmfoundation.org:128.40.168.102
++wiki.osmfoundation.org:128.40.168.102
