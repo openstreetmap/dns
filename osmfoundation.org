@@ -23,5 +23,6 @@ Clogin.osmfoundation.org:ghs.google.com
 # Main web server and it's aliases
 
 +osmfoundation.org:128.40.168.102
++old.osmfoundation.org:128.40.168.102
 +www.osmfoundation.org:128.40.168.102
 +wiki.osmfoundation.org:128.40.168.102
