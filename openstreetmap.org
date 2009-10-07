@@ -99,6 +99,9 @@
 +new-dev.openstreetmap.org:128.40.168.103
 +*.new-dev.openstreetmap.org:128.40.168.103
 +ooc.openstreetmap.org:128.40.168.103
++a.ooc.openstreetmap.org:128.40.168.103
++b.ooc.openstreetmap.org:128.40.168.103
++c.ooc.openstreetmap.org:128.40.168.103
 +npe.openstreetmap.org:128.40.168.103
 +errol.ilo.openstreetmap.org:10.0.0.64
 
