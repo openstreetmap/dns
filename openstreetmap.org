@@ -109,6 +109,7 @@
 
 +ridley.openstreetmap.org:128.40.168.102
 +otrs.openstreetmap.org:128.40.168.102
++blog.openstreetmap.org:128.40.168.102
 +foundation.openstreetmap.org:128.40.168.102
 +ridley.internal.openstreetmap.org:10.0.0.3
 
