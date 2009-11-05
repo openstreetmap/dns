@@ -13,6 +13,7 @@
 @openstreetmap.org:89.16.177.88:a:10
 @openstreetmap.org::backup.mx.bytemark.co.uk:20
 @otrs.openstreetmap.org:89.16.177.88:a:10
+@messages.openstreetmap.org:89.16.177.88:a:10
 
 # Publish an SPF record indicating that only idris sends mail
 
