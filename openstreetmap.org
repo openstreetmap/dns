@@ -42,7 +42,13 @@
 +rails3.internal.openstreetmap.org:10.0.0.12
 +norbert.ilo.openstreetmap.org:10.0.0.62
 
-# Gazetteer server
+# Gazetteer (nominatim) server
+
++katie.openstreetmap.org:128.40.168.101
++katie.internal.openstreetmap.org:10.0.0.6
++nominatim.openstreetmap.org:128.40.168.101
+
+# Gazetteer (namefinder) server
 
 +gazetteer.openstreetmap.org:128.40.168.96
 +gazetteer.internal.openstreetmap.org:10.0.0.1
@@ -123,8 +129,6 @@
 +fuchur.internal.openstreetmap.org:10.0.0.9
 +fuchur.ilo.openstreetmap.org:10.0.0.59
 +dulcy.internal.openstreetmap.org:10.0.0.2
-+katie.openstreetmap.org:128.40.168.101
-+katie.internal.openstreetmap.org:10.0.0.6
 
 # APC power switch
 
