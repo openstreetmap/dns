@@ -8,6 +8,10 @@
 .osmfoundation.org::b.ns.bytemark.co.uk
 .osmfoundation.org::c.ns.bytemark.co.uk
 
+# SPF Record
+
+'osmfoundation.org:v=spf1 a\072idris.openstreetmap.org include\072aspmx.googlemail.com ~all:3600
+
 # Let google handle email
 
 @osmfoundation.org::aspmx.l.google.com:1:3600
