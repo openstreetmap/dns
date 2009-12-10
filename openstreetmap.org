@@ -155,6 +155,10 @@
 +irc.openstreetmap.org:89.16.177.88
 +idris.internal.openstreetmap.org:10.0.0.253
 
+# Wiki server
+
++konqi.openstreetmap.org:193.63.75.26
+
 # Wiki is currently fronted by Grant's proxy (short timeout to allow changes)
 
 +wiki.openstreetmap.org:89.145.68.232:3600
