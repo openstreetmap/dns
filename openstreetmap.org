@@ -158,6 +158,7 @@
 # Wiki server
 
 +konqi.openstreetmap.org:193.63.75.26
++konqui.ilo.openstreetmap.org:193.63.75.27
 
 # Wiki is currently fronted by Grant's proxy (short timeout to allow changes)
 
