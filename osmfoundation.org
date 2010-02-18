@@ -32,4 +32,5 @@ Clogin.osmfoundation.org:ghs.google.com
 +wiki.osmfoundation.org:128.40.168.102
 +blog.osmfoundation.org:128.40.168.102
 +vote.osmfoundation.org:128.40.168.102
++accounts.osmfoundation.org:128.40.168.102
 Cdocs.osmfoundation.org:ghs.google.com
