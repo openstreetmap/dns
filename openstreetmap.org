@@ -160,6 +160,7 @@
 +konqi.openstreetmap.org:193.63.75.26
 +konqi.ilo.openstreetmap.org:193.63.75.27
 +konqi.internal.openstreetmap.org:10.0.0.252
++dump.wiki.openstreetmap.org:193.63.75.26
 
 # Wiki is currently fronted by Grant's proxy (short timeout to allow changes)
 
