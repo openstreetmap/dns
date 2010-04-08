@@ -154,6 +154,7 @@
 +mail.openstreetmap.org:89.16.177.88
 +lists.openstreetmap.org:89.16.177.88
 +svn.openstreetmap.org:89.16.177.88
++git.openstreetmap.org:89.16.177.88
 +trac.openstreetmap.org:89.16.177.88
 #+wiki.openstreetmap.org:89.16.177.88
 +irc.openstreetmap.org:89.16.177.88
