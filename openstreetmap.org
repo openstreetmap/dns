@@ -130,6 +130,7 @@
 
 # Spare servers
 
++fuchur.openstreetmap.org:128.40.168.105
 +fuchur.internal.openstreetmap.org:10.0.0.9
 +fuchur.ilo.openstreetmap.org:10.0.0.59
 +dulcy.internal.openstreetmap.org:10.0.0.2
