@@ -187,3 +187,9 @@
 # Our shop
 
 Cshop.openstreetmap.org:virtual.fotopic.net
+
+# Delegate HOT site to DreamHost
+
+.hot.openstreetmap.org::ns1.dreamhost.com
+.hot.openstreetmap.org::ns2.dreamhost.com
+.hot.openstreetmap.org::ns3.dreamhost.com
