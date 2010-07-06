@@ -98,13 +98,11 @@
 
 +old-dev.openstreetmap.org:128.40.168.100
 +*.old-dev.openstreetmap.org:128.40.168.100
-+dev.internal.openstreetmap.org:10.0.0.5
++old-dev.internal.openstreetmap.org:10.0.0.5
 
 +errol.openstreetmap.org:128.40.168.103
 +dev.openstreetmap.org:128.40.168.103
 +*.dev.openstreetmap.org:128.40.168.103
-+new-dev.openstreetmap.org:128.40.168.103
-+*.new-dev.openstreetmap.org:128.40.168.103
 +ooc.openstreetmap.org:128.40.168.103
 +a.ooc.openstreetmap.org:128.40.168.103
 +b.ooc.openstreetmap.org:128.40.168.103
@@ -157,7 +155,6 @@
 +svn.openstreetmap.org:89.16.177.88
 +git.openstreetmap.org:89.16.177.88
 +trac.openstreetmap.org:89.16.177.88
-#+wiki.openstreetmap.org:89.16.177.88
 +irc.openstreetmap.org:89.16.177.88
 +idris.internal.openstreetmap.org:10.0.0.253
 
@@ -166,6 +163,7 @@
 +konqi.openstreetmap.org:193.63.75.26
 +konqi.ilo.openstreetmap.org:193.63.75.27
 +konqi.internal.openstreetmap.org:10.0.0.252
++wiki.openstreetmap.org:193.63.75.26
 +dump.wiki.openstreetmap.org:193.63.75.26
 
 # Wiki is currently fronted by Grant's proxy (short timeout to allow changes)
