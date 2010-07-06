@@ -166,10 +166,6 @@
 +wiki.openstreetmap.org:193.63.75.26
 +dump.wiki.openstreetmap.org:193.63.75.26
 
-# Wiki is currently fronted by Grant's proxy (short timeout to allow changes)
-
-+wiki.openstreetmap.org:89.145.68.232:3600
-
 # Blog aggregator (on Shaun McDonald's VM)
 
 +blogs.openstreetmap.org:89.16.175.12
