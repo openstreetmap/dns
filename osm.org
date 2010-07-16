@@ -41,6 +41,7 @@
 +trac.osm.org:89.16.177.88
 +foundation.osm.org:89.16.177.88
 +irc.osm.org:89.16.177.88
++help.osm.org:89.16.177.88
 
 # Wiki server
 
