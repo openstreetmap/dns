@@ -22,20 +22,20 @@
 # Main web servers and their aliases
 
 +puff.osm.org:128.40.168.98
-+osm.org:128.40.168.98
-+www.osm.org:128.40.168.98
-+api.osm.org:128.40.168.98
-+maps.osm.org:128.40.168.98
-+mapz.osm.org:128.40.168.98
++osm.org:128.40.168.98:3600
++www.osm.org:128.40.168.98:3600
++api.osm.org:128.40.168.98:3600
++maps.osm.org:128.40.168.98:3600
++mapz.osm.org:128.40.168.98:3600
 +puff.internal.osm.org:10.0.0.8
 +puff.ilo.osm.org:10.0.0.58
 
 +fuchur.osm.org:128.40.168.105
-+osm.org:128.40.168.105
-+www.osm.org:128.40.168.105
-+api.osm.org:128.40.168.105
-+maps.osm.org:128.40.168.105
-+mapz.osm.org:128.40.168.105
++osm.org:128.40.168.105:3600
++www.osm.org:128.40.168.105:3600
++api.osm.org:128.40.168.105:3600
++maps.osm.org:128.40.168.105:3600
++mapz.osm.org:128.40.168.105:3600
 +fuchur.internal.osm.org:10.0.0.9
 +fuchur.ilo.osm.org:10.0.0.59
 
@@ -71,10 +71,10 @@
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
 +yevaud.osm.org:128.40.168.104
-+tile.osm.org:128.40.168.104
-+a.tile.osm.org:128.40.168.104
-+b.tile.osm.org:128.40.168.104
-+c.tile.osm.org:128.40.168.104
++tile.osm.org:128.40.168.104:3600
++a.tile.osm.org:128.40.168.104:3600
++b.tile.osm.org:128.40.168.104:3600
++c.tile.osm.org:128.40.168.104:3600
 +yevaud.internal.osm.org:10.0.0.15
 +yevaud.ilo.osm.org:10.0.0.65
 

@@ -22,20 +22,20 @@
 # Main web servers and their aliases
 
 +puff.openstreetmap:128.40.168.98
-+openstreetmap:128.40.168.98
-+www.openstreetmap:128.40.168.98
-+api.openstreetmap:128.40.168.98
-+maps.openstreetmap:128.40.168.98
-+mapz.openstreetmap:128.40.168.98
++openstreetmap:128.40.168.98:3600
++www.openstreetmap:128.40.168.98:3600
++api.openstreetmap:128.40.168.98:3600
++maps.openstreetmap:128.40.168.98:3600
++mapz.openstreetmap:128.40.168.98:3600
 +puff.internal.openstreetmap:10.0.0.8
 +puff.ilo.openstreetmap:10.0.0.58
 
 +fuchur.openstreetmap:128.40.168.105
-+openstreetmap:128.40.168.105
-+www.openstreetmap:128.40.168.105
-+api.openstreetmap:128.40.168.105
-+maps.openstreetmap:128.40.168.105
-+mapz.openstreetmap:128.40.168.105
++openstreetmap:128.40.168.105:3600
++www.openstreetmap:128.40.168.105:3600
++api.openstreetmap:128.40.168.105:3600
++maps.openstreetmap:128.40.168.105:3600
++mapz.openstreetmap:128.40.168.105:3600
 +fuchur.internal.openstreetmap:10.0.0.9
 +fuchur.ilo.openstreetmap:10.0.0.59
 
@@ -71,10 +71,10 @@
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
 +yevaud.openstreetmap:128.40.168.104
-+tile.openstreetmap:128.40.168.104
-+a.tile.openstreetmap:128.40.168.104
-+b.tile.openstreetmap:128.40.168.104
-+c.tile.openstreetmap:128.40.168.104
++tile.openstreetmap:128.40.168.104:3600
++a.tile.openstreetmap:128.40.168.104:3600
++b.tile.openstreetmap:128.40.168.104:3600
++c.tile.openstreetmap:128.40.168.104:3600
 +yevaud.internal.openstreetmap:10.0.0.15
 +yevaud.ilo.openstreetmap:10.0.0.65
 
