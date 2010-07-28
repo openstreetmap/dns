@@ -1,0 +1,30 @@
+# tinydns data for stateofthemap
+#
+# Full reference is at http://cr.yp.to/djbdns/tinydns-data.html
+
+# Let Bytemark handle the DNS
+
+.stateofthemap::a.ns.bytemark.co.uk
+.stateofthemap::b.ns.bytemark.co.uk
+.stateofthemap::c.ns.bytemark.co.uk
+
+# Let google handle email
+
+@stateofthemap::aspmx.l.google.com:1:3600
+@stateofthemap::alt1.aspmx.l.google.com:5:3600
+@stateofthemap::alt2.aspmx.l.google.com:5:3600
+@stateofthemap::aspmx2.googlemail.com:10:3600
+@stateofthemap::aspmx3.googlemail.com:10:3600
+
+# Alias for login
+
+Clogin.stateofthemap:ghs.google.com
+
+# Main web server and it's aliases
+
++stateofthemap:128.40.168.102
++www.stateofthemap:128.40.168.102
++2010.stateofthemap:128.40.168.102
++2009.stateofthemap:128.40.168.102
++2008.stateofthemap:128.40.168.102
++2007.stateofthemap:128.40.168.102

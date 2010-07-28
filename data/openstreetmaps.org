@@ -13,6 +13,7 @@
 @openstreetmaps.org:89.16.177.88:a:10
 @openstreetmaps.org::backup.mx.bytemark.co.uk:20
 @otrs.openstreetmaps.org:89.16.177.88:a:10
+@messages.openstreetmaps.org:89.16.177.88:a:10
 
 # Publish an SPF record indicating that only idris sends mail
 
@@ -41,7 +42,13 @@
 +rails3.internal.openstreetmaps.org:10.0.0.12
 +norbert.ilo.openstreetmaps.org:10.0.0.62
 
-# Gazetteer server
+# Gazetteer (nominatim) server
+
++katie.openstreetmaps.org:128.40.168.101
++katie.internal.openstreetmaps.org:10.0.0.6
++nominatim.openstreetmaps.org:128.40.168.101
+
+# Gazetteer (namefinder) server
 
 +gazetteer.openstreetmaps.org:128.40.168.96
 +gazetteer.internal.openstreetmaps.org:10.0.0.1
@@ -91,18 +98,20 @@
 
 +old-dev.openstreetmaps.org:128.40.168.100
 +*.old-dev.openstreetmaps.org:128.40.168.100
-+dev.internal.openstreetmaps.org:10.0.0.5
++old-dev.internal.openstreetmaps.org:10.0.0.5
 
 +errol.openstreetmaps.org:128.40.168.103
 +dev.openstreetmaps.org:128.40.168.103
 +*.dev.openstreetmaps.org:128.40.168.103
-+new-dev.openstreetmaps.org:128.40.168.103
-+*.new-dev.openstreetmaps.org:128.40.168.103
 +ooc.openstreetmaps.org:128.40.168.103
 +a.ooc.openstreetmaps.org:128.40.168.103
 +b.ooc.openstreetmaps.org:128.40.168.103
 +c.ooc.openstreetmaps.org:128.40.168.103
 +npe.openstreetmaps.org:128.40.168.103
++os.openstreetmaps.org:128.40.168.103
++a.os.openstreetmaps.org:128.40.168.103
++b.os.openstreetmaps.org:128.40.168.103
++c.os.openstreetmaps.org:128.40.168.103
 +errol.ilo.openstreetmaps.org:10.0.0.64
 
 # Foundation server
@@ -119,11 +128,10 @@
 
 # Spare servers
 
++fuchur.openstreetmaps.org:128.40.168.105
 +fuchur.internal.openstreetmaps.org:10.0.0.9
 +fuchur.ilo.openstreetmaps.org:10.0.0.59
 +dulcy.internal.openstreetmaps.org:10.0.0.2
-+katie.openstreetmaps.org:128.40.168.101
-+katie.internal.openstreetmaps.org:10.0.0.6
 
 # APC power switch
 
@@ -145,14 +153,19 @@
 +mail.openstreetmaps.org:89.16.177.88
 +lists.openstreetmaps.org:89.16.177.88
 +svn.openstreetmaps.org:89.16.177.88
++git.openstreetmaps.org:89.16.177.88
 +trac.openstreetmaps.org:89.16.177.88
-#+wiki.openstreetmaps.org:89.16.177.88
 +irc.openstreetmaps.org:89.16.177.88
++help.openstreetmaps.org:89.16.177.88
 +idris.internal.openstreetmaps.org:10.0.0.253
 
-# Wiki is currently fronted by Grant's proxy (short timeout to allow changes)
+# Wiki server
 
-+wiki.openstreetmaps.org:89.145.68.232:3600
++konqi.openstreetmaps.org:193.63.75.26
++konqi.ilo.openstreetmaps.org:193.63.75.27
++konqi.internal.openstreetmaps.org:10.0.0.252
++wiki.openstreetmaps.org:193.63.75.26
++dump.wiki.openstreetmaps.org:193.63.75.26
 
 # Blog aggregator (on Shaun McDonald's VM)
 
@@ -169,3 +182,7 @@
 # Our shop
 
 Cshop.openstreetmaps.org:virtual.fotopic.net
+
+# HOT site
+
++hot.openstreetmaps.org:69.163.129.108
