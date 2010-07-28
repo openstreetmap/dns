@@ -10,7 +10,7 @@
 
 # SPF Record
 
-'osmfoundation:v=spf1 a\072idris.openstreetmap.org include\072aspmx.googlemail.com ~all:3600
+'osmfoundation:v=spf1 a\072shenron.openstreetmap.org include\072aspmx.googlemail.com ~all:3600
 
 # Let google handle email
 

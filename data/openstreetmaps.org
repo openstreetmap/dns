@@ -10,14 +10,14 @@
 
 # Make the virtual machine the primary MX with Bytemark as backup
 
-@openstreetmaps.org:89.16.177.88:a:10
+@openstreetmaps.org:89.16.179.150:a:10
 @openstreetmaps.org::backup.mx.bytemark.co.uk:20
-@otrs.openstreetmaps.org:89.16.177.88:a:10
-@messages.openstreetmaps.org:89.16.177.88:a:10
+@otrs.openstreetmaps.org:89.16.179.150:a:10
+@messages.openstreetmaps.org:89.16.179.150:a:10
 
 # Publish an SPF record indicating that only idris sends mail
 
-'openstreetmaps.org:v=spf1 ip4\07289.16.177.88 ~all
+'openstreetmaps.org:v=spf1 ip4\07289.16.179.150 ~all
 
 # Main web servers and their aliases
 
@@ -139,6 +139,11 @@
 
 +dulcy.internal.openstreetmaps.org:10.0.0.2
 
++idris.openstreetmaps.org:89.16.177.88
++idris.internal.openstreetmaps.org:10.0.0.253
+
++vm.openstreetmaps.org:80.68.94.95
+
 # APC power switch
 
 +apc1.internal.openstreetmaps.org:10.0.0.49
@@ -147,23 +152,17 @@
 
 +forum.openstreetmaps.org:93.186.179.231
 
-# Bytemark virtual machine, and the services which operate from it
+# Bytemark machine, and the services which operate from it
 
-+vm.openstreetmaps.org:80.68.94.95
-+stats.wiki.openstreetmaps.org:80.68.94.95
-+vm.internal.openstreetmaps.org:10.0.0.253
-
-# Bytemark atom machine, and the services which operate from it
-
-+idris.openstreetmaps.org:89.16.177.88
-+mail.openstreetmaps.org:89.16.177.88
-+lists.openstreetmaps.org:89.16.177.88
-+svn.openstreetmaps.org:89.16.177.88
-+git.openstreetmaps.org:89.16.177.88
-+trac.openstreetmaps.org:89.16.177.88
-+irc.openstreetmaps.org:89.16.177.88
-+help.openstreetmaps.org:89.16.177.88
-+idris.internal.openstreetmaps.org:10.0.0.253
++shenron.openstreetmaps.org:89.16.179.150
++mail.openstreetmaps.org:89.16.179.150
++lists.openstreetmaps.org:89.16.179.150
++svn.openstreetmaps.org:89.16.179.150
++git.openstreetmaps.org:89.16.179.150
++trac.openstreetmaps.org:89.16.179.150
++irc.openstreetmaps.org:89.16.179.150
++help.openstreetmaps.org:89.16.179.150
++shenron.internal.openstreetmaps.org:10.0.0.251
 
 # Wiki server
 
