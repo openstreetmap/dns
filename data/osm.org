@@ -19,7 +19,7 @@
 
 'osm.org:v=spf1 ip4\07289.16.177.88 ~all
 
-# Main web server and it's aliases
+# Main web servers and their aliases
 
 +puff.osm.org:128.40.168.98
 +osm.org:128.40.168.98
@@ -29,6 +29,15 @@
 +mapz.osm.org:128.40.168.98
 +puff.internal.osm.org:10.0.0.8
 +puff.ilo.osm.org:10.0.0.58
+
++fuchur.osm.org:128.40.168.105
++osm.org:128.40.168.105
++www.osm.org:128.40.168.105
++api.osm.org:128.40.168.105
++maps.osm.org:128.40.168.105
++mapz.osm.org:128.40.168.105
++fuchur.internal.osm.org:10.0.0.9
++fuchur.ilo.osm.org:10.0.0.59
 
 # Rails application servers
 
@@ -128,9 +137,6 @@
 
 # Spare servers
 
-+fuchur.osm.org:128.40.168.105
-+fuchur.internal.osm.org:10.0.0.9
-+fuchur.ilo.osm.org:10.0.0.59
 +dulcy.internal.osm.org:10.0.0.2
 
 # APC power switch

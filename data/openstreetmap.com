@@ -19,7 +19,7 @@
 
 'openstreetmap.com:v=spf1 ip4\07289.16.177.88 ~all
 
-# Main web server and it's aliases
+# Main web servers and their aliases
 
 +puff.openstreetmap.com:128.40.168.98
 +openstreetmap.com:128.40.168.98
@@ -29,6 +29,15 @@
 +mapz.openstreetmap.com:128.40.168.98
 +puff.internal.openstreetmap.com:10.0.0.8
 +puff.ilo.openstreetmap.com:10.0.0.58
+
++fuchur.openstreetmap.com:128.40.168.105
++openstreetmap.com:128.40.168.105
++www.openstreetmap.com:128.40.168.105
++api.openstreetmap.com:128.40.168.105
++maps.openstreetmap.com:128.40.168.105
++mapz.openstreetmap.com:128.40.168.105
++fuchur.internal.openstreetmap.com:10.0.0.9
++fuchur.ilo.openstreetmap.com:10.0.0.59
 
 # Rails application servers
 
@@ -128,9 +137,6 @@
 
 # Spare servers
 
-+fuchur.openstreetmap.com:128.40.168.105
-+fuchur.internal.openstreetmap.com:10.0.0.9
-+fuchur.ilo.openstreetmap.com:10.0.0.59
 +dulcy.internal.openstreetmap.com:10.0.0.2
 
 # APC power switch
