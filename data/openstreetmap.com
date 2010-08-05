@@ -15,7 +15,7 @@
 @otrs.openstreetmap.com:89.16.179.150:a:10
 @messages.openstreetmap.com:89.16.179.150:a:10
 
-# Publish an SPF record indicating that only idris sends mail
+# Publish an SPF record indicating that only shenron sends mail
 
 'openstreetmap.com:v=spf1 ip4\07289.16.179.150 ~all
 
@@ -138,11 +138,6 @@
 # Spare servers
 
 +dulcy.internal.openstreetmap.com:10.0.0.2
-
-+idris.openstreetmap.com:89.16.177.88
-+idris.internal.openstreetmap.com:10.0.0.253
-
-+vm.openstreetmap.com:80.68.94.95
 
 # APC power switch
 
