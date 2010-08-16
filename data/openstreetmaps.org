@@ -105,10 +105,6 @@
 
 # Development server with wildcard alias for user sites
 
-+old-dev.openstreetmaps.org:128.40.168.100
-+*.old-dev.openstreetmaps.org:128.40.168.100
-+old-dev.internal.openstreetmaps.org:10.0.0.5
-
 +errol.openstreetmaps.org:128.40.168.103
 +dev.openstreetmaps.org:128.40.168.103
 +*.dev.openstreetmaps.org:128.40.168.103
