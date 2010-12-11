@@ -138,6 +138,8 @@
 # APC power switch
 
 +apc1.internal.openstreetmap:10.0.0.49
++apc2.internal.openstreetmap:10.0.0.50
++apc3.internal.openstreetmap:10.0.0.51
 
 # Forum server
 
