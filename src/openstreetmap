@@ -68,6 +68,12 @@
 +xapi.openstreetmap:128.40.168.97
 +fafnir.internal.openstreetmap:10.0.0.4
 
+# OWL server
+
++albi.openstreetmap.org:128.40.168.95
++owl.openstreetmap.org:128.40.168.95
++albi.internal.openstreetmap.org:10.0.0.2
+
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
 +yevaud.openstreetmap:128.40.168.104
