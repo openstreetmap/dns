@@ -137,10 +137,6 @@
 
 +planet.openstreetmap:128.40.168.99
 
-# Spare servers
-
-+dulcy.internal.openstreetmap:10.0.0.2
-
 # APC power switch
 
 +apc1.internal.openstreetmap:10.0.0.49
