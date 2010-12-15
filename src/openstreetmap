@@ -73,6 +73,7 @@
 +albi.openstreetmap.org:128.40.168.95
 +owl.openstreetmap.org:128.40.168.95
 +albi.internal.openstreetmap.org:10.0.0.2
++albi.ilo.openstreetmap.org:10.0.0.52
 
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
