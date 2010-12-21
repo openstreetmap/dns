@@ -75,6 +75,12 @@
 +albi.internal.openstreetmap:10.0.0.2
 +albi.ilo.openstreetmap:10.0.0.52
 
+# Spare server
+
++azure.openstreetmap:128.40.168.100
++azure.internal.openstreetmap:10.0.0.5
++azure.ilo.openstreetmap:10.0.0.55
+
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
 +yevaud.openstreetmap:128.40.168.104
