@@ -53,13 +53,10 @@
 
 # Gazetteer (nominatim) server
 
-+katie.openstreetmap:128.40.168.101
-+katie.internal.openstreetmap:10.0.0.6
-+nominatim.openstreetmap:128.40.168.101
-
 +poldi.openstreetmap:128.40.168.106 
 +poldi.internal.openstreetmap:10.0.0.16
 +poldi.ilo.openstreetmap:10.0.0.66
++nominatim.openstreetmap:128.40.168.106
 
 # Gazetteer (namefinder) server
 
