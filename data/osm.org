@@ -53,9 +53,10 @@
 
 # Gazetteer (nominatim) server
 
-+katie.osm.org:128.40.168.101
-+katie.internal.osm.org:10.0.0.6
-+nominatim.osm.org:128.40.168.101
++poldi.osm.org:128.40.168.106 
++poldi.internal.osm.org:10.0.0.16
++poldi.ilo.osm.org:10.0.0.66
++nominatim.osm.org:128.40.168.106
 
 # Gazetteer (namefinder) server
 
@@ -67,6 +68,19 @@
 +fafnir.osm.org:128.40.168.97
 +xapi.osm.org:128.40.168.97
 +fafnir.internal.osm.org:10.0.0.4
+
+# OWL server
+
++albi.osm.org:128.40.168.95
++owl.osm.org:128.40.168.95
++albi.internal.osm.org:10.0.0.2
++albi.ilo.osm.org:10.0.0.52
+
+# Spare server
+
++azure.osm.org:128.40.168.100
++azure.internal.osm.org:10.0.0.5
++azure.ilo.osm.org:10.0.0.55
 
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
@@ -131,13 +145,11 @@
 
 +planet.osm.org:128.40.168.99
 
-# Spare servers
-
-+dulcy.internal.osm.org:10.0.0.2
-
 # APC power switch
 
 +apc1.internal.osm.org:10.0.0.49
++apc2.internal.osm.org:10.0.0.50
++apc3.internal.osm.org:10.0.0.51
 
 # Forum server
 
@@ -154,6 +166,15 @@
 +irc.osm.org:89.16.179.150
 +help.osm.org:89.16.179.150
 +shenron.internal.osm.org:10.0.0.251
+
+3shenron.osm.org:200141c800100996021d7dfffec3df70
+3mail.osm.org:200141c800100996021d7dfffec3df70
+3lists.osm.org:200141c800100996021d7dfffec3df70
+3svn.osm.org:200141c800100996021d7dfffec3df70
+3git.osm.org:200141c800100996021d7dfffec3df70
+3trac.osm.org:200141c800100996021d7dfffec3df70
+3irc.osm.org:200141c800100996021d7dfffec3df70
+3help.osm.org:200141c800100996021d7dfffec3df70
 
 # Wiki server
 

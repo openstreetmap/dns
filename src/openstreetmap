@@ -167,6 +167,15 @@
 +help.openstreetmap:89.16.179.150
 +shenron.internal.openstreetmap:10.0.0.251
 
+3shenron.openstreetmap:200141c800100996021d7dfffec3df70
+3mail.openstreetmap:200141c800100996021d7dfffec3df70
+3lists.openstreetmap:200141c800100996021d7dfffec3df70
+3svn.openstreetmap:200141c800100996021d7dfffec3df70
+3git.openstreetmap:200141c800100996021d7dfffec3df70
+3trac.openstreetmap:200141c800100996021d7dfffec3df70
+3irc.openstreetmap:200141c800100996021d7dfffec3df70
+3help.openstreetmap:200141c800100996021d7dfffec3df70
+
 # Wiki server
 
 +konqi.openstreetmap:193.63.75.26

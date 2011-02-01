@@ -53,9 +53,10 @@
 
 # Gazetteer (nominatim) server
 
-+katie.openstreetmap.com:128.40.168.101
-+katie.internal.openstreetmap.com:10.0.0.6
-+nominatim.openstreetmap.com:128.40.168.101
++poldi.openstreetmap.com:128.40.168.106 
++poldi.internal.openstreetmap.com:10.0.0.16
++poldi.ilo.openstreetmap.com:10.0.0.66
++nominatim.openstreetmap.com:128.40.168.106
 
 # Gazetteer (namefinder) server
 
@@ -67,6 +68,19 @@
 +fafnir.openstreetmap.com:128.40.168.97
 +xapi.openstreetmap.com:128.40.168.97
 +fafnir.internal.openstreetmap.com:10.0.0.4
+
+# OWL server
+
++albi.openstreetmap.com:128.40.168.95
++owl.openstreetmap.com:128.40.168.95
++albi.internal.openstreetmap.com:10.0.0.2
++albi.ilo.openstreetmap.com:10.0.0.52
+
+# Spare server
+
++azure.openstreetmap.com:128.40.168.100
++azure.internal.openstreetmap.com:10.0.0.5
++azure.ilo.openstreetmap.com:10.0.0.55
 
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
@@ -131,13 +145,11 @@
 
 +planet.openstreetmap.com:128.40.168.99
 
-# Spare servers
-
-+dulcy.internal.openstreetmap.com:10.0.0.2
-
 # APC power switch
 
 +apc1.internal.openstreetmap.com:10.0.0.49
++apc2.internal.openstreetmap.com:10.0.0.50
++apc3.internal.openstreetmap.com:10.0.0.51
 
 # Forum server
 
@@ -154,6 +166,15 @@
 +irc.openstreetmap.com:89.16.179.150
 +help.openstreetmap.com:89.16.179.150
 +shenron.internal.openstreetmap.com:10.0.0.251
+
+3shenron.openstreetmap.com:200141c800100996021d7dfffec3df70
+3mail.openstreetmap.com:200141c800100996021d7dfffec3df70
+3lists.openstreetmap.com:200141c800100996021d7dfffec3df70
+3svn.openstreetmap.com:200141c800100996021d7dfffec3df70
+3git.openstreetmap.com:200141c800100996021d7dfffec3df70
+3trac.openstreetmap.com:200141c800100996021d7dfffec3df70
+3irc.openstreetmap.com:200141c800100996021d7dfffec3df70
+3help.openstreetmap.com:200141c800100996021d7dfffec3df70
 
 # Wiki server
 
