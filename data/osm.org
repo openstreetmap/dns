@@ -15,7 +15,7 @@
 @otrs.osm.org::a.mx.osm.org:10
 @messages.osm.org::a.mx.osm.org:10
 
-3:a.mx.osm.org:200141c800100996021d7dfffec3df70
+3a.mx.osm.org:200141c800100996021d7dfffec3df70
 
 # Publish an SPF record indicating that only shenron sends mail
 

@@ -15,7 +15,7 @@
 @otrs.openstreetmap::a.mx.openstreetmap:10
 @messages.openstreetmap::a.mx.openstreetmap:10
 
-3:a.mx.openstreetmap:200141c800100996021d7dfffec3df70
+3a.mx.openstreetmap:200141c800100996021d7dfffec3df70
 
 # Publish an SPF record indicating that only shenron sends mail
 
