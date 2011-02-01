@@ -12,12 +12,14 @@
 
 @osm.org:89.16.179.150:a:10
 @osm.org::backup.mx.bytemark.co.uk:20
-@otrs.osm.org:89.16.179.150:a:10
-@messages.osm.org:89.16.179.150:a:10
+@otrs.osm.org::a.mx.osm.org.org:10
+@messages.osm.org::a.mx.osm.org.org:10
+
+3:a.mx.osm.org.org:200141c800100996021d7dfffec3df70
 
 # Publish an SPF record indicating that only shenron sends mail
 
-'osm.org:v=spf1 ip4\07289.16.179.150 ~all
+'osm.org:v=spf1 ip4\07289.16.179.150 ip6\0722001\07241c8\07210\072996\07221d\0727dff\072fec3\072df70 ~all
 
 # Main web servers and their aliases
 
