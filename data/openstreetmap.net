@@ -12,10 +12,10 @@
 
 @openstreetmap.net:89.16.179.150:a:10
 @openstreetmap.net::backup.mx.bytemark.co.uk:20
-@otrs.openstreetmap.net::a.mx.openstreetmap.net.org:10
-@messages.openstreetmap.net::a.mx.openstreetmap.net.org:10
+@otrs.openstreetmap.net::a.mx.openstreetmap.net:10
+@messages.openstreetmap.net::a.mx.openstreetmap.net:10
 
-3:a.mx.openstreetmap.net.org:200141c800100996021d7dfffec3df70
+3:a.mx.openstreetmap.net:200141c800100996021d7dfffec3df70
 
 # Publish an SPF record indicating that only shenron sends mail
 
