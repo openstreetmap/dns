@@ -104,7 +104,7 @@
 +chef.openstreetmaps.org:128.40.168.99
 +backup.openstreetmaps.org:10.0.0.7
 +horntail.internal.openstreetmaps.org:10.0.0.7
-+horntail.ilo.openstreetmaps.org:10.1.0.7
++horntail.ilo.openstreetmaps.org:10.0.0.57
 
 # Osmarender tile server, with wildcard alias to allow parallel loading
 

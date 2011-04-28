@@ -104,7 +104,7 @@
 +chef.osm.org:128.40.168.99
 +backup.osm.org:10.0.0.7
 +horntail.internal.osm.org:10.0.0.7
-+horntail.ilo.osm.org:10.1.0.7
++horntail.ilo.osm.org:10.0.0.57
 
 # Osmarender tile server, with wildcard alias to allow parallel loading
 
