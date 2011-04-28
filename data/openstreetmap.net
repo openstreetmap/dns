@@ -167,6 +167,7 @@
 +trac.openstreetmap.net:89.16.179.150
 +irc.openstreetmap.net:89.16.179.150
 +help.openstreetmap.net:89.16.179.150
++shop.openstreetmap.net:89.16.179.150
 +shenron.internal.openstreetmap.net:10.0.0.251
 
 3shenron.openstreetmap.net:200141c800100996021d7dfffec3df70
@@ -177,6 +178,7 @@
 3trac.openstreetmap.net:200141c800100996021d7dfffec3df70
 3irc.openstreetmap.net:200141c800100996021d7dfffec3df70
 3help.openstreetmap.net:200141c800100996021d7dfffec3df70
+3shop.openstreetmap.net:200141c800100996021d7dfffec3df70
 
 # Wiki server
 
@@ -201,10 +203,6 @@
 # Donation site
 
 +donate.openstreetmap.net:89.145.67.86
-
-# Our shop
-
-Cshop.openstreetmap.net:virtual.fotopic.net
 
 # HOT site
 

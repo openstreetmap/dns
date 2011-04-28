@@ -167,6 +167,7 @@
 +trac.osm.org:89.16.179.150
 +irc.osm.org:89.16.179.150
 +help.osm.org:89.16.179.150
++shop.osm.org:89.16.179.150
 +shenron.internal.osm.org:10.0.0.251
 
 3shenron.osm.org:200141c800100996021d7dfffec3df70
@@ -177,6 +178,7 @@
 3trac.osm.org:200141c800100996021d7dfffec3df70
 3irc.osm.org:200141c800100996021d7dfffec3df70
 3help.osm.org:200141c800100996021d7dfffec3df70
+3shop.osm.org:200141c800100996021d7dfffec3df70
 
 # Wiki server
 
@@ -201,10 +203,6 @@
 # Donation site
 
 +donate.osm.org:89.145.67.86
-
-# Our shop
-
-Cshop.osm.org:virtual.fotopic.net
 
 # HOT site
 
