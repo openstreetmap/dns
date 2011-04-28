@@ -24,6 +24,7 @@ Clogin.stateofthemap.org:ghs.google.com
 
 +stateofthemap.org:128.40.168.102
 +www.stateofthemap.org:128.40.168.102
++2011.stateofthemap.org:128.40.168.102
 +2010.stateofthemap.org:128.40.168.102
 +2009.stateofthemap.org:128.40.168.102
 +2008.stateofthemap.org:128.40.168.102
