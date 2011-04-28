@@ -81,6 +81,7 @@
 # Spare server
 
 +azure.osm.org:128.40.168.100
++jxapi.osm.org:128.40.168.100
 +azure.internal.osm.org:10.0.0.5
 +azure.ilo.osm.org:10.0.0.55
 

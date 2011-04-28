@@ -81,6 +81,7 @@
 # Spare server
 
 +azure.openstreetmap.com:128.40.168.100
++jxapi.openstreetmap.com:128.40.168.100
 +azure.internal.openstreetmap.com:10.0.0.5
 +azure.ilo.openstreetmap.com:10.0.0.55
 
