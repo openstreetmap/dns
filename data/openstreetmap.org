@@ -99,6 +99,9 @@
 
 +horntail.openstreetmap.org:128.40.168.99
 +munin.openstreetmap.org:128.40.168.99
++apt.openstreetmap.org:128.40.168.99
++stats.openstreetmap.org:128.40.168.99
++chef.openstreetmap.org:128.40.168.99
 +backup.openstreetmap.org:10.0.0.7
 +horntail.internal.openstreetmap.org:10.0.0.7
 +horntail.ilo.openstreetmap.org:10.1.0.7
