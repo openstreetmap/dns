@@ -186,6 +186,10 @@
 +wiki.openstreetmap.com:193.63.75.26
 +dump.wiki.openstreetmap.com:193.63.75.26
 
+# Tile cache server
+
++orm.openstreetmap.com:193.63.75.98
+
 # Blog aggregator (on Shaun McDonald's VM)
 
 +blogs.openstreetmap.com:89.16.175.12

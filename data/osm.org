@@ -186,6 +186,10 @@
 +wiki.osm.org:193.63.75.26
 +dump.wiki.osm.org:193.63.75.26
 
+# Tile cache server
+
++orm.osm.org:193.63.75.98
+
 # Blog aggregator (on Shaun McDonald's VM)
 
 +blogs.osm.org:89.16.175.12
