@@ -88,10 +88,10 @@
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
 +yevaud.openstreetmap.com:128.40.168.104
-+tile.openstreetmap.com:128.40.168.104:3600
-+a.tile.openstreetmap.com:128.40.168.104:3600
-+b.tile.openstreetmap.com:128.40.168.104:3600
-+c.tile.openstreetmap.com:128.40.168.104:3600
++tile.openstreetmap.com:193.63.75.26:1800
++a.tile.openstreetmap.com:193.63.75.26:900
++b.tile.openstreetmap.com:128.40.168.95:900
++c.tile.openstreetmap.com:128.40.168.95:900
 +yevaud.internal.openstreetmap.com:10.0.0.15
 +yevaud.ilo.openstreetmap.com:10.0.0.65
 
