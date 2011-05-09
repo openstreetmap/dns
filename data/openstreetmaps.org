@@ -180,7 +180,6 @@
 3svn.openstreetmaps.org:200141c800100996021d7dfffec3df70
 3git.openstreetmaps.org:200141c800100996021d7dfffec3df70
 3trac.openstreetmaps.org:200141c800100996021d7dfffec3df70
-3irc.openstreetmaps.org:200141c800100996021d7dfffec3df70
 3help.openstreetmaps.org:200141c800100996021d7dfffec3df70
 3shop.openstreetmaps.org:200141c800100996021d7dfffec3df70
 
