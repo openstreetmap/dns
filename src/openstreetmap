@@ -145,6 +145,7 @@
 +otrs.openstreetmap:128.40.168.102
 +blog.openstreetmap:128.40.168.102
 +foundation.openstreetmap:128.40.168.102
++civicrm.openstreetmap:128.40.168.102
 +ridley.internal.openstreetmap:10.0.0.3
 
 # Planet dumps are currently served from horntail
