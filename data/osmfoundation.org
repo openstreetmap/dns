@@ -20,6 +20,17 @@
 @osmfoundation.org::aspmx2.googlemail.com:10:3600
 @osmfoundation.org::aspmx3.googlemail.com:10:3600
 
+# Add DKIM public key
+# Use : raw to workaround TXT split issue
+:google._domainkey.osmfoundation.org:16:\352v=DKIM1;\040k=rsa;\040p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCJmTBAkYRCocCCNtVsdRNMlQel8kNfjPYJpjEm7woEgZh9yZeDzxImtz+u73oUF4+7bXzrNYbP946WNQIwAba1J69he8L1qfPBJLd3Z\057fgmuaGdWcxpDno2EY4cQ8PrzvI6Vfm+6YAFANl8w09CIg41ykdlzH4iUJXD35k3SIl3wIDAQAB:900
+
+#Add XMPP chat servers for compatibility
+:_xmpp-server._tcp.osmfoundation.org:33:\000\005\000\000\024\225\013xmpp-server\001l\006google\003com\000
+:_xmpp-server._tcp.osmfoundation.org:33:\000\024\000\000\024\225\014xmpp-server1\001l\006google\003com\000
+:_xmpp-server._tcp.osmfoundation.org:33:\000\024\000\000\024\225\014xmpp-server2\001l\006google\003com\000
+:_xmpp-server._tcp.osmfoundation.org:33:\000\024\000\000\024\225\014xmpp-server3\001l\006google\003com\000
+:_xmpp-server._tcp.osmfoundation.org:33:\000\024\000\000\024\225\014xmpp-server4\001l\006google\003com\000
+
 # Alias for login
 
 Clogin.osmfoundation.org:ghs.google.com
@@ -33,4 +44,10 @@ Clogin.osmfoundation.org:ghs.google.com
 +blog.osmfoundation.org:128.40.168.102
 +vote.osmfoundation.org:128.40.168.102
 +accounts.osmfoundation.org:128.40.168.102
++crm.osmfoundation.org:128.40.168.102
+
+# easy alias
 Cdocs.osmfoundation.org:ghs.google.com
+Cmail.osmfoundation.org:ghs.google.com
+Ccalendar.osmfoundation.org:ghs.google.com
+Csites.osmfoundation.org:ghs.google.com
