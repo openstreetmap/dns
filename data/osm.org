@@ -210,3 +210,8 @@
 # HOT site
 
 +hot.osm.org:69.163.129.108
+
+# Jochen Topf's taginfo service, running on osm.org.de hardware
+
++taginfo.osm.org:85.214.118.227
+3taginfo.osm.org:2a0102384000000003cac7808a7d7be2

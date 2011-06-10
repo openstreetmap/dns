@@ -210,3 +210,8 @@
 # HOT site
 
 +hot.openstreetmap.com:69.163.129.108
+
+# Jochen Topf's taginfo service, running on openstreetmap.com.de hardware
+
++taginfo.openstreetmap.com:85.214.118.227
+3taginfo.openstreetmap.com:2a0102384000000003cac7808a7d7be2
