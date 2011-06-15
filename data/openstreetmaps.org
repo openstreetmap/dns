@@ -31,6 +31,8 @@
 +mapz.openstreetmaps.org:128.40.168.98:3600
 +puff.internal.openstreetmaps.org:10.0.0.8
 +puff.ilo.openstreetmaps.org:10.0.0.58
++puff.ucl.openstreetmaps.org:10.0.0.8
++puff.oob.openstreetmaps.org:10.0.1.8
 
 +fuchur.openstreetmaps.org:128.40.168.105
 +openstreetmaps.org:128.40.168.105:3600
@@ -40,6 +42,8 @@
 +mapz.openstreetmaps.org:128.40.168.105:3600
 +fuchur.internal.openstreetmaps.org:10.0.0.9
 +fuchur.ilo.openstreetmaps.org:10.0.0.59
++fuchur.ucl.openstreetmaps.org:10.0.0.9
++fuchur.oob.openstreetmaps.org:10.0.1.9
 
 # Rails application servers
 
@@ -52,24 +56,35 @@
 +norbert.internal.openstreetmaps.org:10.0.0.12
 +rails3.internal.openstreetmaps.org:10.0.0.12
 +norbert.ilo.openstreetmaps.org:10.0.0.62
++draco.ucl.openstreetmaps.org:10.0.0.10
++rails1.ucl.openstreetmaps.org:10.0.0.10
++draco.oob.openstreetmaps.org:10.0.1.10
++sarel.ucl.openstreetmaps.org:10.0.0.11
++rails2.ucl.openstreetmaps.org:10.0.0.11
++sarel.oob.openstreetmaps.org:10.0.1.11
++norbert.ucl.openstreetmaps.org:10.0.0.12
++rails3.ucl.openstreetmaps.org:10.0.0.12
++norbert.oob.openstreetmaps.org:10.0.1.12
 
 # Gazetteer (nominatim) server
 
 +poldi.openstreetmaps.org:128.40.168.106 
-+poldi.internal.openstreetmaps.org:10.0.0.16
-+poldi.ilo.openstreetmaps.org:10.0.0.66
 +nominatim.openstreetmaps.org:128.40.168.106
++poldi.ucl.openstreetmaps.org:10.0.0.16
++poldi.oob.openstreetmaps.org:10.0.1.16
 
 # Gazetteer (namefinder) server
 
 +gazetteer.openstreetmaps.org:128.40.168.96
 +gazetteer.internal.openstreetmaps.org:10.0.0.1
++gazetteer.ucl.openstreetmaps.org:10.0.0.1
 
 # XAPI server
 
 +fafnir.openstreetmaps.org:128.40.168.97
 +xapi.openstreetmaps.org:128.40.168.97
 +fafnir.internal.openstreetmaps.org:10.0.0.4
++fafnir.ucl.openstreetmaps.org:10.0.0.4
 
 # OWL server
 
@@ -77,6 +92,8 @@
 +owl.openstreetmaps.org:128.40.168.95
 +albi.internal.openstreetmaps.org:10.0.0.2
 +albi.ilo.openstreetmaps.org:10.0.0.52
++albi.ucl.openstreetmaps.org:10.0.0.2
++albi.oob.openstreetmaps.org:10.0.1.2
 
 # Spare server
 
@@ -84,6 +101,8 @@
 +jxapi.openstreetmaps.org:128.40.168.100
 +azure.internal.openstreetmaps.org:10.0.0.5
 +azure.ilo.openstreetmaps.org:10.0.0.55
++azure.ucl.openstreetmaps.org:10.0.0.5
++azure.ilo.openstreetmaps.org:10.0.1.5
 
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
@@ -94,17 +113,24 @@
 +c.tile.openstreetmaps.org:128.40.168.95:900
 +yevaud.internal.openstreetmaps.org:10.0.0.15
 +yevaud.ilo.openstreetmaps.org:10.0.0.65
++yevaud.ucl.openstreetmaps.org:10.0.0.15
++yevaud.oob.openstreetmaps.org:10.0.1.15
 
 # Services machine
 
 +horntail.openstreetmaps.org:128.40.168.99
++planet.openstreetmaps.org:128.40.168.99
 +munin.openstreetmaps.org:128.40.168.99
 +apt.openstreetmaps.org:128.40.168.99
 +stats.openstreetmaps.org:128.40.168.99
 +chef.openstreetmaps.org:128.40.168.99
-+backup.openstreetmaps.org:10.0.0.7
++backup.openstreetmaps.org:128.40.168.99
 +horntail.internal.openstreetmaps.org:10.0.0.7
++backup.internal.openstreetmaps.org:10.0.0.7
 +horntail.ilo.openstreetmaps.org:10.0.0.57
++horntail.ucl.openstreetmaps.org:10.0.0.7
++backup.ucl.openstreetmaps.org:10.0.0.7
++horntail.oob.openstreetmaps.org:10.0.1.7
 
 # Osmarender tile server, with wildcard alias to allow parallel loading
 
@@ -122,6 +148,9 @@
 +smaug.internal.openstreetmaps.org:10.0.0.13
 +db.internal.openstreetmaps.org:10.0.0.13:60
 +smaug.ilo.internal.openstreetmaps.org:10.0.0.63
++smaug.ucl.openstreetmaps.org:10.0.0.13
++db.ucl.openstreetmaps.org:10.0.0.13:60
++smaug.oob.internal.openstreetmaps.org:10.0.1.13
 
 # Development server with wildcard alias for user sites
 
@@ -137,7 +166,10 @@
 +a.os.openstreetmaps.org:128.40.168.103
 +b.os.openstreetmaps.org:128.40.168.103
 +c.os.openstreetmaps.org:128.40.168.103
++errol.internal.openstreetmaps.org:10.0.0.14
 +errol.ilo.openstreetmaps.org:10.0.0.64
++errol.ucl.openstreetmaps.org:10.0.0.14
++errol.oob.openstreetmaps.org:10.0.1.14
 
 # Foundation server
 
@@ -146,16 +178,16 @@
 +blog.openstreetmaps.org:128.40.168.102
 +foundation.openstreetmaps.org:128.40.168.102
 +ridley.internal.openstreetmaps.org:10.0.0.3
-
-# Planet dumps are currently served from horntail
-
-+planet.openstreetmaps.org:128.40.168.99
++ridley.ucl.openstreetmaps.org:10.0.0.3
 
 # APC power switch
 
 +apc1.internal.openstreetmaps.org:10.0.0.49
 +apc2.internal.openstreetmaps.org:10.0.0.50
 +apc3.internal.openstreetmaps.org:10.0.0.51
++apc1.ucl.openstreetmaps.org:10.0.0.49
++apc2.ucl.openstreetmaps.org:10.0.0.50
++apc3.ucl.openstreetmaps.org:10.0.0.51
 
 # Forum server
 
@@ -173,6 +205,7 @@
 +help.openstreetmaps.org:89.16.179.150
 +shop.openstreetmaps.org:89.16.179.150
 +shenron.internal.openstreetmaps.org:10.0.0.251
++shenron.bm.openstreetmaps.org:10.0.0.251
 
 3shenron.openstreetmaps.org:200141c800100996021d7dfffec3df70
 3mail.openstreetmaps.org:200141c800100996021d7dfffec3df70
@@ -190,10 +223,14 @@
 +konqi.internal.openstreetmaps.org:10.0.0.252
 +wiki.openstreetmaps.org:193.63.75.26
 +dump.wiki.openstreetmaps.org:193.63.75.26
+#+konqi.ic.openstreetmaps.org:10.0.16.1
+#+konqi.oob.openstreetmaps.org:10.0.17.1
 
 # Tile cache server
 
 +orm.openstreetmaps.org:193.63.75.98
+#+orm.ic.openstreetmaps.org:10.0.16.2
+#+orm.oob.openstreetmaps.org:10.0.17.2
 
 # Blog aggregator (on Shaun McDonald's VM)
 

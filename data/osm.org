@@ -31,6 +31,8 @@
 +mapz.osm.org:128.40.168.98:3600
 +puff.internal.osm.org:10.0.0.8
 +puff.ilo.osm.org:10.0.0.58
++puff.ucl.osm.org:10.0.0.8
++puff.oob.osm.org:10.0.1.8
 
 +fuchur.osm.org:128.40.168.105
 +osm.org:128.40.168.105:3600
@@ -40,6 +42,8 @@
 +mapz.osm.org:128.40.168.105:3600
 +fuchur.internal.osm.org:10.0.0.9
 +fuchur.ilo.osm.org:10.0.0.59
++fuchur.ucl.osm.org:10.0.0.9
++fuchur.oob.osm.org:10.0.1.9
 
 # Rails application servers
 
@@ -52,24 +56,35 @@
 +norbert.internal.osm.org:10.0.0.12
 +rails3.internal.osm.org:10.0.0.12
 +norbert.ilo.osm.org:10.0.0.62
++draco.ucl.osm.org:10.0.0.10
++rails1.ucl.osm.org:10.0.0.10
++draco.oob.osm.org:10.0.1.10
++sarel.ucl.osm.org:10.0.0.11
++rails2.ucl.osm.org:10.0.0.11
++sarel.oob.osm.org:10.0.1.11
++norbert.ucl.osm.org:10.0.0.12
++rails3.ucl.osm.org:10.0.0.12
++norbert.oob.osm.org:10.0.1.12
 
 # Gazetteer (nominatim) server
 
 +poldi.osm.org:128.40.168.106 
-+poldi.internal.osm.org:10.0.0.16
-+poldi.ilo.osm.org:10.0.0.66
 +nominatim.osm.org:128.40.168.106
++poldi.ucl.osm.org:10.0.0.16
++poldi.oob.osm.org:10.0.1.16
 
 # Gazetteer (namefinder) server
 
 +gazetteer.osm.org:128.40.168.96
 +gazetteer.internal.osm.org:10.0.0.1
++gazetteer.ucl.osm.org:10.0.0.1
 
 # XAPI server
 
 +fafnir.osm.org:128.40.168.97
 +xapi.osm.org:128.40.168.97
 +fafnir.internal.osm.org:10.0.0.4
++fafnir.ucl.osm.org:10.0.0.4
 
 # OWL server
 
@@ -77,6 +92,8 @@
 +owl.osm.org:128.40.168.95
 +albi.internal.osm.org:10.0.0.2
 +albi.ilo.osm.org:10.0.0.52
++albi.ucl.osm.org:10.0.0.2
++albi.oob.osm.org:10.0.1.2
 
 # Spare server
 
@@ -84,6 +101,8 @@
 +jxapi.osm.org:128.40.168.100
 +azure.internal.osm.org:10.0.0.5
 +azure.ilo.osm.org:10.0.0.55
++azure.ucl.osm.org:10.0.0.5
++azure.ilo.osm.org:10.0.1.5
 
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
@@ -94,17 +113,24 @@
 +c.tile.osm.org:128.40.168.95:900
 +yevaud.internal.osm.org:10.0.0.15
 +yevaud.ilo.osm.org:10.0.0.65
++yevaud.ucl.osm.org:10.0.0.15
++yevaud.oob.osm.org:10.0.1.15
 
 # Services machine
 
 +horntail.osm.org:128.40.168.99
++planet.osm.org:128.40.168.99
 +munin.osm.org:128.40.168.99
 +apt.osm.org:128.40.168.99
 +stats.osm.org:128.40.168.99
 +chef.osm.org:128.40.168.99
-+backup.osm.org:10.0.0.7
++backup.osm.org:128.40.168.99
 +horntail.internal.osm.org:10.0.0.7
++backup.internal.osm.org:10.0.0.7
 +horntail.ilo.osm.org:10.0.0.57
++horntail.ucl.osm.org:10.0.0.7
++backup.ucl.osm.org:10.0.0.7
++horntail.oob.osm.org:10.0.1.7
 
 # Osmarender tile server, with wildcard alias to allow parallel loading
 
@@ -122,6 +148,9 @@
 +smaug.internal.osm.org:10.0.0.13
 +db.internal.osm.org:10.0.0.13:60
 +smaug.ilo.internal.osm.org:10.0.0.63
++smaug.ucl.osm.org:10.0.0.13
++db.ucl.osm.org:10.0.0.13:60
++smaug.oob.internal.osm.org:10.0.1.13
 
 # Development server with wildcard alias for user sites
 
@@ -137,7 +166,10 @@
 +a.os.osm.org:128.40.168.103
 +b.os.osm.org:128.40.168.103
 +c.os.osm.org:128.40.168.103
++errol.internal.osm.org:10.0.0.14
 +errol.ilo.osm.org:10.0.0.64
++errol.ucl.osm.org:10.0.0.14
++errol.oob.osm.org:10.0.1.14
 
 # Foundation server
 
@@ -146,16 +178,16 @@
 +blog.osm.org:128.40.168.102
 +foundation.osm.org:128.40.168.102
 +ridley.internal.osm.org:10.0.0.3
-
-# Planet dumps are currently served from horntail
-
-+planet.osm.org:128.40.168.99
++ridley.ucl.osm.org:10.0.0.3
 
 # APC power switch
 
 +apc1.internal.osm.org:10.0.0.49
 +apc2.internal.osm.org:10.0.0.50
 +apc3.internal.osm.org:10.0.0.51
++apc1.ucl.osm.org:10.0.0.49
++apc2.ucl.osm.org:10.0.0.50
++apc3.ucl.osm.org:10.0.0.51
 
 # Forum server
 
@@ -173,6 +205,7 @@
 +help.osm.org:89.16.179.150
 +shop.osm.org:89.16.179.150
 +shenron.internal.osm.org:10.0.0.251
++shenron.bm.osm.org:10.0.0.251
 
 3shenron.osm.org:200141c800100996021d7dfffec3df70
 3mail.osm.org:200141c800100996021d7dfffec3df70
@@ -190,10 +223,14 @@
 +konqi.internal.osm.org:10.0.0.252
 +wiki.osm.org:193.63.75.26
 +dump.wiki.osm.org:193.63.75.26
+#+konqi.ic.osm.org:10.0.16.1
+#+konqi.oob.osm.org:10.0.17.1
 
 # Tile cache server
 
 +orm.osm.org:193.63.75.98
+#+orm.ic.osm.org:10.0.16.2
+#+orm.oob.osm.org:10.0.17.2
 
 # Blog aggregator (on Shaun McDonald's VM)
 
