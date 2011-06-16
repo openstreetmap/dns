@@ -29,7 +29,6 @@
 +api.openstreetmap.com:128.40.168.98:3600
 +maps.openstreetmap.com:128.40.168.98:3600
 +mapz.openstreetmap.com:128.40.168.98:3600
-+puff.internal.openstreetmap.com:10.0.0.8
 +puff.ilo.openstreetmap.com:10.0.0.58
 +puff.ucl.openstreetmap.com:10.0.0.8
 +puff.oob.openstreetmap.com:10.0.1.8
@@ -40,21 +39,14 @@
 +api.openstreetmap.com:128.40.168.105:3600
 +maps.openstreetmap.com:128.40.168.105:3600
 +mapz.openstreetmap.com:128.40.168.105:3600
-+fuchur.internal.openstreetmap.com:10.0.0.9
 +fuchur.ilo.openstreetmap.com:10.0.0.59
 +fuchur.ucl.openstreetmap.com:10.0.0.9
 +fuchur.oob.openstreetmap.com:10.0.1.9
 
 # Rails application servers
 
-+draco.internal.openstreetmap.com:10.0.0.10
-+rails1.internal.openstreetmap.com:10.0.0.10
 +draco.ilo.openstreetmap.com:10.0.0.60
-+sarel.internal.openstreetmap.com:10.0.0.11
-+rails2.internal.openstreetmap.com:10.0.0.11
 +sarel.ilo.openstreetmap.com:10.0.0.61
-+norbert.internal.openstreetmap.com:10.0.0.12
-+rails3.internal.openstreetmap.com:10.0.0.12
 +norbert.ilo.openstreetmap.com:10.0.0.62
 +draco.ucl.openstreetmap.com:10.0.0.10
 +rails1.ucl.openstreetmap.com:10.0.0.10
@@ -76,21 +68,18 @@
 # Gazetteer (namefinder) server
 
 +gazetteer.openstreetmap.com:128.40.168.96
-+gazetteer.internal.openstreetmap.com:10.0.0.1
 +gazetteer.ucl.openstreetmap.com:10.0.0.1
 
 # XAPI server
 
 +fafnir.openstreetmap.com:128.40.168.97
 +xapi.openstreetmap.com:128.40.168.97
-+fafnir.internal.openstreetmap.com:10.0.0.4
 +fafnir.ucl.openstreetmap.com:10.0.0.4
 
 # OWL server
 
 +albi.openstreetmap.com:128.40.168.95
 +owl.openstreetmap.com:128.40.168.95
-+albi.internal.openstreetmap.com:10.0.0.2
 +albi.ilo.openstreetmap.com:10.0.0.52
 +albi.ucl.openstreetmap.com:10.0.0.2
 +albi.oob.openstreetmap.com:10.0.1.2
@@ -99,7 +88,6 @@
 
 +azure.openstreetmap.com:128.40.168.100
 +jxapi.openstreetmap.com:128.40.168.100
-+azure.internal.openstreetmap.com:10.0.0.5
 +azure.ilo.openstreetmap.com:10.0.0.55
 +azure.ucl.openstreetmap.com:10.0.0.5
 +azure.ilo.openstreetmap.com:10.0.1.5
@@ -111,7 +99,6 @@
 +a.tile.openstreetmap.com:193.63.75.26:900
 +b.tile.openstreetmap.com:128.40.168.95:900
 +c.tile.openstreetmap.com:128.40.168.95:900
-+yevaud.internal.openstreetmap.com:10.0.0.15
 +yevaud.ilo.openstreetmap.com:10.0.0.65
 +yevaud.ucl.openstreetmap.com:10.0.0.15
 +yevaud.oob.openstreetmap.com:10.0.1.15
@@ -125,8 +112,6 @@
 +stats.openstreetmap.com:128.40.168.99
 +chef.openstreetmap.com:128.40.168.99
 +backup.openstreetmap.com:128.40.168.99
-+horntail.internal.openstreetmap.com:10.0.0.7
-+backup.internal.openstreetmap.com:10.0.0.7
 +horntail.ilo.openstreetmap.com:10.0.0.57
 +horntail.ucl.openstreetmap.com:10.0.0.7
 +backup.ucl.openstreetmap.com:10.0.0.7
@@ -145,12 +130,10 @@
 
 # Database server
 
-+smaug.internal.openstreetmap.com:10.0.0.13
-+db.internal.openstreetmap.com:10.0.0.13:60
-+smaug.ilo.internal.openstreetmap.com:10.0.0.63
++smaug.ilo.openstreetmap.com:10.0.0.63
 +smaug.ucl.openstreetmap.com:10.0.0.13
 +db.ucl.openstreetmap.com:10.0.0.13:60
-+smaug.oob.internal.openstreetmap.com:10.0.1.13
++smaug.oob.openstreetmap.com:10.0.1.13
 
 # Development server with wildcard alias for user sites
 
@@ -166,7 +149,6 @@
 +a.os.openstreetmap.com:128.40.168.103
 +b.os.openstreetmap.com:128.40.168.103
 +c.os.openstreetmap.com:128.40.168.103
-+errol.internal.openstreetmap.com:10.0.0.14
 +errol.ilo.openstreetmap.com:10.0.0.64
 +errol.ucl.openstreetmap.com:10.0.0.14
 +errol.oob.openstreetmap.com:10.0.1.14
@@ -177,14 +159,10 @@
 +otrs.openstreetmap.com:128.40.168.102
 +blog.openstreetmap.com:128.40.168.102
 +foundation.openstreetmap.com:128.40.168.102
-+ridley.internal.openstreetmap.com:10.0.0.3
 +ridley.ucl.openstreetmap.com:10.0.0.3
 
 # APC power switch
 
-+apc1.internal.openstreetmap.com:10.0.0.49
-+apc2.internal.openstreetmap.com:10.0.0.50
-+apc3.internal.openstreetmap.com:10.0.0.51
 +apc1.ucl.openstreetmap.com:10.0.0.49
 +apc2.ucl.openstreetmap.com:10.0.0.50
 +apc3.ucl.openstreetmap.com:10.0.0.51
@@ -204,7 +182,6 @@
 +irc.openstreetmap.com:89.16.179.150
 +help.openstreetmap.com:89.16.179.150
 +shop.openstreetmap.com:89.16.179.150
-+shenron.internal.openstreetmap.com:10.0.0.251
 +shenron.bm.openstreetmap.com:10.0.0.251
 
 3shenron.openstreetmap.com:200141c800100996021d7dfffec3df70
@@ -220,7 +197,6 @@
 
 +konqi.openstreetmap.com:193.63.75.26
 +konqi.ilo.openstreetmap.com:193.63.75.27
-+konqi.internal.openstreetmap.com:10.0.0.252
 +wiki.openstreetmap.com:193.63.75.26
 +dump.wiki.openstreetmap.com:193.63.75.26
 #+konqi.ic.openstreetmap.com:10.0.16.1
