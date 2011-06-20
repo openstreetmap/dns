@@ -23,35 +23,35 @@
 
 # Main web servers and their aliases
 
-+puff.osm.org:128.40.168.98
-+osm.org:128.40.168.98:3600
-+www.osm.org:128.40.168.98:3600
-+api.osm.org:128.40.168.98:3600
-+maps.osm.org:128.40.168.98:3600
-+mapz.osm.org:128.40.168.98:3600
++puff.osm.org:128.40.168.98:600
++osm.org:128.40.168.98:600
++www.osm.org:128.40.168.98:600
++api.osm.org:128.40.168.98:600
++maps.osm.org:128.40.168.98:600
++mapz.osm.org:128.40.168.98:600
 +puff.ucl.osm.org:10.0.0.8
-+puff.oob.osm.org:10.0.1.8
++puff.oob.osm.org:10.0.1.8:600
 
-+fuchur.osm.org:128.40.168.105
-+osm.org:128.40.168.105:3600
-+www.osm.org:128.40.168.105:3600
-+api.osm.org:128.40.168.105:3600
-+maps.osm.org:128.40.168.105:3600
-+mapz.osm.org:128.40.168.105:3600
++fuchur.osm.org:128.40.168.105:600
++osm.org:128.40.168.105:600
++www.osm.org:128.40.168.105:600
++api.osm.org:128.40.168.105:600
++maps.osm.org:128.40.168.105:600
++mapz.osm.org:128.40.168.105:600
 +fuchur.ucl.osm.org:10.0.0.9
-+fuchur.oob.osm.org:10.0.1.9
++fuchur.oob.osm.org:10.0.1.9:600
 
 # Rails application servers
 
 +draco.ucl.osm.org:10.0.0.10
 +rails1.ucl.osm.org:10.0.0.10
-+draco.oob.osm.org:10.0.1.10
++draco.oob.osm.org:10.0.1.10:600
 +sarel.ucl.osm.org:10.0.0.11
 +rails2.ucl.osm.org:10.0.0.11
-+sarel.oob.osm.org:10.0.1.11
++sarel.oob.osm.org:10.0.1.11:600
 +norbert.ucl.osm.org:10.0.0.12
 +rails3.ucl.osm.org:10.0.0.12
-+norbert.oob.osm.org:10.0.1.12
++norbert.oob.osm.org:10.0.1.12:600
 
 # Gazetteer (nominatim) server
 
@@ -99,16 +99,16 @@
 
 # Services machine
 
-+horntail.osm.org:128.40.168.99
-+planet.osm.org:128.40.168.99
-+munin.osm.org:128.40.168.99
-+apt.osm.org:128.40.168.99
-+stats.osm.org:128.40.168.99
-+chef.osm.org:128.40.168.99
-+backup.osm.org:128.40.168.99
++horntail.osm.org:128.40.168.99:600
++planet.osm.org:128.40.168.99:600
++munin.osm.org:128.40.168.99:600
++apt.osm.org:128.40.168.99:600
++stats.osm.org:128.40.168.99:600
++chef.osm.org:128.40.168.99:600
++backup.osm.org:128.40.168.99:600
 +horntail.ucl.osm.org:10.0.0.7
 +backup.ucl.osm.org:10.0.0.7
-+horntail.oob.osm.org:10.0.1.7
++horntail.oob.osm.org:10.0.1.7:600
 
 # Osmarender tile server, with wildcard alias to allow parallel loading
 
@@ -124,8 +124,8 @@
 # Database server
 
 +smaug.ucl.osm.org:10.0.0.13
-+db.ucl.osm.org:10.0.0.13:60
-+smaug.oob.osm.org:10.0.1.13
++db.ucl.osm.org:10.0.0.13
++smaug.oob.osm.org:10.0.1.13:600
 
 # Development server with wildcard alias for user sites
 

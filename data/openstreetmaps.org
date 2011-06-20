@@ -23,35 +23,35 @@
 
 # Main web servers and their aliases
 
-+puff.openstreetmaps.org:128.40.168.98
-+openstreetmaps.org:128.40.168.98:3600
-+www.openstreetmaps.org:128.40.168.98:3600
-+api.openstreetmaps.org:128.40.168.98:3600
-+maps.openstreetmaps.org:128.40.168.98:3600
-+mapz.openstreetmaps.org:128.40.168.98:3600
++puff.openstreetmaps.org:128.40.168.98:600
++openstreetmaps.org:128.40.168.98:600
++www.openstreetmaps.org:128.40.168.98:600
++api.openstreetmaps.org:128.40.168.98:600
++maps.openstreetmaps.org:128.40.168.98:600
++mapz.openstreetmaps.org:128.40.168.98:600
 +puff.ucl.openstreetmaps.org:10.0.0.8
-+puff.oob.openstreetmaps.org:10.0.1.8
++puff.oob.openstreetmaps.org:10.0.1.8:600
 
-+fuchur.openstreetmaps.org:128.40.168.105
-+openstreetmaps.org:128.40.168.105:3600
-+www.openstreetmaps.org:128.40.168.105:3600
-+api.openstreetmaps.org:128.40.168.105:3600
-+maps.openstreetmaps.org:128.40.168.105:3600
-+mapz.openstreetmaps.org:128.40.168.105:3600
++fuchur.openstreetmaps.org:128.40.168.105:600
++openstreetmaps.org:128.40.168.105:600
++www.openstreetmaps.org:128.40.168.105:600
++api.openstreetmaps.org:128.40.168.105:600
++maps.openstreetmaps.org:128.40.168.105:600
++mapz.openstreetmaps.org:128.40.168.105:600
 +fuchur.ucl.openstreetmaps.org:10.0.0.9
-+fuchur.oob.openstreetmaps.org:10.0.1.9
++fuchur.oob.openstreetmaps.org:10.0.1.9:600
 
 # Rails application servers
 
 +draco.ucl.openstreetmaps.org:10.0.0.10
 +rails1.ucl.openstreetmaps.org:10.0.0.10
-+draco.oob.openstreetmaps.org:10.0.1.10
++draco.oob.openstreetmaps.org:10.0.1.10:600
 +sarel.ucl.openstreetmaps.org:10.0.0.11
 +rails2.ucl.openstreetmaps.org:10.0.0.11
-+sarel.oob.openstreetmaps.org:10.0.1.11
++sarel.oob.openstreetmaps.org:10.0.1.11:600
 +norbert.ucl.openstreetmaps.org:10.0.0.12
 +rails3.ucl.openstreetmaps.org:10.0.0.12
-+norbert.oob.openstreetmaps.org:10.0.1.12
++norbert.oob.openstreetmaps.org:10.0.1.12:600
 
 # Gazetteer (nominatim) server
 
@@ -99,16 +99,16 @@
 
 # Services machine
 
-+horntail.openstreetmaps.org:128.40.168.99
-+planet.openstreetmaps.org:128.40.168.99
-+munin.openstreetmaps.org:128.40.168.99
-+apt.openstreetmaps.org:128.40.168.99
-+stats.openstreetmaps.org:128.40.168.99
-+chef.openstreetmaps.org:128.40.168.99
-+backup.openstreetmaps.org:128.40.168.99
++horntail.openstreetmaps.org:128.40.168.99:600
++planet.openstreetmaps.org:128.40.168.99:600
++munin.openstreetmaps.org:128.40.168.99:600
++apt.openstreetmaps.org:128.40.168.99:600
++stats.openstreetmaps.org:128.40.168.99:600
++chef.openstreetmaps.org:128.40.168.99:600
++backup.openstreetmaps.org:128.40.168.99:600
 +horntail.ucl.openstreetmaps.org:10.0.0.7
 +backup.ucl.openstreetmaps.org:10.0.0.7
-+horntail.oob.openstreetmaps.org:10.0.1.7
++horntail.oob.openstreetmaps.org:10.0.1.7:600
 
 # Osmarender tile server, with wildcard alias to allow parallel loading
 
@@ -124,8 +124,8 @@
 # Database server
 
 +smaug.ucl.openstreetmaps.org:10.0.0.13
-+db.ucl.openstreetmaps.org:10.0.0.13:60
-+smaug.oob.openstreetmaps.org:10.0.1.13
++db.ucl.openstreetmaps.org:10.0.0.13
++smaug.oob.openstreetmaps.org:10.0.1.13:600
 
 # Development server with wildcard alias for user sites
 
