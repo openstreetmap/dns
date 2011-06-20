@@ -29,7 +29,6 @@
 +api.openstreetmaps.org:128.40.168.98:3600
 +maps.openstreetmaps.org:128.40.168.98:3600
 +mapz.openstreetmaps.org:128.40.168.98:3600
-+puff.ilo.openstreetmaps.org:10.0.0.58
 +puff.ucl.openstreetmaps.org:10.0.0.8
 +puff.oob.openstreetmaps.org:10.0.1.8
 
@@ -39,15 +38,11 @@
 +api.openstreetmaps.org:128.40.168.105:3600
 +maps.openstreetmaps.org:128.40.168.105:3600
 +mapz.openstreetmaps.org:128.40.168.105:3600
-+fuchur.ilo.openstreetmaps.org:10.0.0.59
 +fuchur.ucl.openstreetmaps.org:10.0.0.9
 +fuchur.oob.openstreetmaps.org:10.0.1.9
 
 # Rails application servers
 
-+draco.ilo.openstreetmaps.org:10.0.0.60
-+sarel.ilo.openstreetmaps.org:10.0.0.61
-+norbert.ilo.openstreetmaps.org:10.0.0.62
 +draco.ucl.openstreetmaps.org:10.0.0.10
 +rails1.ucl.openstreetmaps.org:10.0.0.10
 +draco.oob.openstreetmaps.org:10.0.1.10
@@ -90,7 +85,7 @@
 +jxapi.openstreetmaps.org:128.40.168.100
 +azure.ilo.openstreetmaps.org:10.0.0.55
 +azure.ucl.openstreetmaps.org:10.0.0.5
-+azure.ilo.openstreetmaps.org:10.0.1.5
++azure.oob.openstreetmaps.org:10.0.1.5
 
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
@@ -99,7 +94,6 @@
 +a.tile.openstreetmaps.org:193.63.75.26:900
 +b.tile.openstreetmaps.org:128.40.168.95:900
 +c.tile.openstreetmaps.org:128.40.168.95:900
-+yevaud.ilo.openstreetmaps.org:10.0.0.65
 +yevaud.ucl.openstreetmaps.org:10.0.0.15
 +yevaud.oob.openstreetmaps.org:10.0.1.15
 
@@ -112,7 +106,6 @@
 +stats.openstreetmaps.org:128.40.168.99
 +chef.openstreetmaps.org:128.40.168.99
 +backup.openstreetmaps.org:128.40.168.99
-+horntail.ilo.openstreetmaps.org:10.0.0.57
 +horntail.ucl.openstreetmaps.org:10.0.0.7
 +backup.ucl.openstreetmaps.org:10.0.0.7
 +horntail.oob.openstreetmaps.org:10.0.1.7
@@ -130,7 +123,6 @@
 
 # Database server
 
-+smaug.ilo.openstreetmaps.org:10.0.0.63
 +smaug.ucl.openstreetmaps.org:10.0.0.13
 +db.ucl.openstreetmaps.org:10.0.0.13:60
 +smaug.oob.openstreetmaps.org:10.0.1.13
@@ -149,7 +141,6 @@
 +a.os.openstreetmaps.org:128.40.168.103
 +b.os.openstreetmaps.org:128.40.168.103
 +c.os.openstreetmaps.org:128.40.168.103
-+errol.ilo.openstreetmaps.org:10.0.0.64
 +errol.ucl.openstreetmaps.org:10.0.0.14
 +errol.oob.openstreetmaps.org:10.0.1.14
 

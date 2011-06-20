@@ -29,7 +29,6 @@
 +api.openstreetmap.com:128.40.168.98:3600
 +maps.openstreetmap.com:128.40.168.98:3600
 +mapz.openstreetmap.com:128.40.168.98:3600
-+puff.ilo.openstreetmap.com:10.0.0.58
 +puff.ucl.openstreetmap.com:10.0.0.8
 +puff.oob.openstreetmap.com:10.0.1.8
 
@@ -39,15 +38,11 @@
 +api.openstreetmap.com:128.40.168.105:3600
 +maps.openstreetmap.com:128.40.168.105:3600
 +mapz.openstreetmap.com:128.40.168.105:3600
-+fuchur.ilo.openstreetmap.com:10.0.0.59
 +fuchur.ucl.openstreetmap.com:10.0.0.9
 +fuchur.oob.openstreetmap.com:10.0.1.9
 
 # Rails application servers
 
-+draco.ilo.openstreetmap.com:10.0.0.60
-+sarel.ilo.openstreetmap.com:10.0.0.61
-+norbert.ilo.openstreetmap.com:10.0.0.62
 +draco.ucl.openstreetmap.com:10.0.0.10
 +rails1.ucl.openstreetmap.com:10.0.0.10
 +draco.oob.openstreetmap.com:10.0.1.10
@@ -90,7 +85,7 @@
 +jxapi.openstreetmap.com:128.40.168.100
 +azure.ilo.openstreetmap.com:10.0.0.55
 +azure.ucl.openstreetmap.com:10.0.0.5
-+azure.ilo.openstreetmap.com:10.0.1.5
++azure.oob.openstreetmap.com:10.0.1.5
 
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
@@ -99,7 +94,6 @@
 +a.tile.openstreetmap.com:193.63.75.26:900
 +b.tile.openstreetmap.com:128.40.168.95:900
 +c.tile.openstreetmap.com:128.40.168.95:900
-+yevaud.ilo.openstreetmap.com:10.0.0.65
 +yevaud.ucl.openstreetmap.com:10.0.0.15
 +yevaud.oob.openstreetmap.com:10.0.1.15
 
@@ -112,7 +106,6 @@
 +stats.openstreetmap.com:128.40.168.99
 +chef.openstreetmap.com:128.40.168.99
 +backup.openstreetmap.com:128.40.168.99
-+horntail.ilo.openstreetmap.com:10.0.0.57
 +horntail.ucl.openstreetmap.com:10.0.0.7
 +backup.ucl.openstreetmap.com:10.0.0.7
 +horntail.oob.openstreetmap.com:10.0.1.7
@@ -130,7 +123,6 @@
 
 # Database server
 
-+smaug.ilo.openstreetmap.com:10.0.0.63
 +smaug.ucl.openstreetmap.com:10.0.0.13
 +db.ucl.openstreetmap.com:10.0.0.13:60
 +smaug.oob.openstreetmap.com:10.0.1.13
@@ -149,7 +141,6 @@
 +a.os.openstreetmap.com:128.40.168.103
 +b.os.openstreetmap.com:128.40.168.103
 +c.os.openstreetmap.com:128.40.168.103
-+errol.ilo.openstreetmap.com:10.0.0.64
 +errol.ucl.openstreetmap.com:10.0.0.14
 +errol.oob.openstreetmap.com:10.0.1.14
 

@@ -29,7 +29,6 @@
 +api.osm.org:128.40.168.98:3600
 +maps.osm.org:128.40.168.98:3600
 +mapz.osm.org:128.40.168.98:3600
-+puff.ilo.osm.org:10.0.0.58
 +puff.ucl.osm.org:10.0.0.8
 +puff.oob.osm.org:10.0.1.8
 
@@ -39,15 +38,11 @@
 +api.osm.org:128.40.168.105:3600
 +maps.osm.org:128.40.168.105:3600
 +mapz.osm.org:128.40.168.105:3600
-+fuchur.ilo.osm.org:10.0.0.59
 +fuchur.ucl.osm.org:10.0.0.9
 +fuchur.oob.osm.org:10.0.1.9
 
 # Rails application servers
 
-+draco.ilo.osm.org:10.0.0.60
-+sarel.ilo.osm.org:10.0.0.61
-+norbert.ilo.osm.org:10.0.0.62
 +draco.ucl.osm.org:10.0.0.10
 +rails1.ucl.osm.org:10.0.0.10
 +draco.oob.osm.org:10.0.1.10
@@ -90,7 +85,7 @@
 +jxapi.osm.org:128.40.168.100
 +azure.ilo.osm.org:10.0.0.55
 +azure.ucl.osm.org:10.0.0.5
-+azure.ilo.osm.org:10.0.1.5
++azure.oob.osm.org:10.0.1.5
 
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
@@ -99,7 +94,6 @@
 +a.tile.osm.org:193.63.75.26:900
 +b.tile.osm.org:128.40.168.95:900
 +c.tile.osm.org:128.40.168.95:900
-+yevaud.ilo.osm.org:10.0.0.65
 +yevaud.ucl.osm.org:10.0.0.15
 +yevaud.oob.osm.org:10.0.1.15
 
@@ -112,7 +106,6 @@
 +stats.osm.org:128.40.168.99
 +chef.osm.org:128.40.168.99
 +backup.osm.org:128.40.168.99
-+horntail.ilo.osm.org:10.0.0.57
 +horntail.ucl.osm.org:10.0.0.7
 +backup.ucl.osm.org:10.0.0.7
 +horntail.oob.osm.org:10.0.1.7
@@ -130,7 +123,6 @@
 
 # Database server
 
-+smaug.ilo.osm.org:10.0.0.63
 +smaug.ucl.osm.org:10.0.0.13
 +db.ucl.osm.org:10.0.0.13:60
 +smaug.oob.osm.org:10.0.1.13
@@ -149,7 +141,6 @@
 +a.os.osm.org:128.40.168.103
 +b.os.osm.org:128.40.168.103
 +c.os.osm.org:128.40.168.103
-+errol.ilo.osm.org:10.0.0.64
 +errol.ucl.osm.org:10.0.0.14
 +errol.oob.osm.org:10.0.1.14
 
