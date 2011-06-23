@@ -24,20 +24,20 @@
 # Main web servers and their aliases
 
 +puff.openstreetmap:193.63.75.99
-#+openstreetmap:193.63.75.101:600
-#+www.openstreetmap:193.63.75.99:600
-#+api.openstreetmap:193.63.75.99:600
-#+maps.openstreetmap:193.63.75.99:600
-#+mapz.openstreetmap:193.63.75.99:600
++openstreetmap:193.63.75.99:600
++www.openstreetmap:193.63.75.99:600
++api.openstreetmap:193.63.75.99:600
++maps.openstreetmap:193.63.75.99:600
++mapz.openstreetmap:193.63.75.99:600
 +puff.ic.openstreetmap:146.179.159.162
 +puff.oob.openstreetmap:146.179.159.188
 
 +fuchur.openstreetmap:128.40.168.105:600
-+openstreetmap:128.40.168.105:600
-+www.openstreetmap:128.40.168.105:600
-+api.openstreetmap:128.40.168.105:600
-+maps.openstreetmap:128.40.168.105:600
-+mapz.openstreetmap:128.40.168.105:600
+#+openstreetmap:128.40.168.105:600
+#+www.openstreetmap:128.40.168.105:600
+#+api.openstreetmap:128.40.168.105:600
+#+maps.openstreetmap:128.40.168.105:600
+#+mapz.openstreetmap:128.40.168.105:600
 +fuchur.ucl.openstreetmap:10.0.0.9
 +fuchur.oob.openstreetmap:10.0.1.9:600
 
