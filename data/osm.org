@@ -24,11 +24,11 @@
 # Main web servers and their aliases
 
 +puff.osm.org:128.40.168.98:600
-+osm.org:128.40.168.98:600
-+www.osm.org:128.40.168.98:600
-+api.osm.org:128.40.168.98:600
-+maps.osm.org:128.40.168.98:600
-+mapz.osm.org:128.40.168.98:600
+#+osm.org:128.40.168.98:600
+#+www.osm.org:128.40.168.98:600
+#+api.osm.org:128.40.168.98:600
+#+maps.osm.org:128.40.168.98:600
+#+mapz.osm.org:128.40.168.98:600
 +puff.ucl.osm.org:10.0.0.8
 +puff.oob.osm.org:10.0.1.8:600
 

@@ -24,11 +24,11 @@
 # Main web servers and their aliases
 
 +puff.openstreetmaps.org:128.40.168.98:600
-+openstreetmaps.org:128.40.168.98:600
-+www.openstreetmaps.org:128.40.168.98:600
-+api.openstreetmaps.org:128.40.168.98:600
-+maps.openstreetmaps.org:128.40.168.98:600
-+mapz.openstreetmaps.org:128.40.168.98:600
+#+openstreetmaps.org:128.40.168.98:600
+#+www.openstreetmaps.org:128.40.168.98:600
+#+api.openstreetmaps.org:128.40.168.98:600
+#+maps.openstreetmaps.org:128.40.168.98:600
+#+mapz.openstreetmaps.org:128.40.168.98:600
 +puff.ucl.openstreetmaps.org:10.0.0.8
 +puff.oob.openstreetmaps.org:10.0.1.8:600
 
