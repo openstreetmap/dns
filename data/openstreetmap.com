@@ -23,14 +23,14 @@
 
 # Main web servers and their aliases
 
-+puff.openstreetmap.com:128.40.168.98:600
-#+openstreetmap.com:128.40.168.98:600
-#+www.openstreetmap.com:128.40.168.98:600
-#+api.openstreetmap.com:128.40.168.98:600
-#+maps.openstreetmap.com:128.40.168.98:600
-#+mapz.openstreetmap.com:128.40.168.98:600
-+puff.ucl.openstreetmap.com:10.0.0.8
-+puff.oob.openstreetmap.com:10.0.1.8:600
++puff.openstreetmap.com:193.63.75.99
+#+openstreetmap.com:193.63.75.101:600
+#+www.openstreetmap.com:193.63.75.99:600
+#+api.openstreetmap.com:193.63.75.99:600
+#+maps.openstreetmap.com:193.63.75.99:600
+#+mapz.openstreetmap.com:193.63.75.99:600
++puff.ic.openstreetmap.com:146.179.159.162
++puff.oob.openstreetmap.com:146.179.159.188
 
 +fuchur.openstreetmap.com:128.40.168.105:600
 +openstreetmap.com:128.40.168.105:600
@@ -43,12 +43,12 @@
 
 # Rails application servers
 
-+draco.ucl.openstreetmap.com:10.0.0.10
-+rails1.ucl.openstreetmap.com:10.0.0.10
-+draco.oob.openstreetmap.com:10.0.1.10:600
-+sarel.ucl.openstreetmap.com:10.0.0.11
-+rails2.ucl.openstreetmap.com:10.0.0.11
-+sarel.oob.openstreetmap.com:10.0.1.11:600
++draco.ic.openstreetmap.com:146.179.159.165
++rails1.ic.openstreetmap.com:146.179.159.165
++draco.oob.openstreetmap.com:146.179.159.185
++sarel.ic.openstreetmap.com:146.179.159.166
++rails2.ic.openstreetmap.com:146.179.159.166
++sarel.oob.openstreetmap.com:146.179.159.184
 +norbert.ucl.openstreetmap.com:10.0.0.12
 +rails3.ucl.openstreetmap.com:10.0.0.12
 +norbert.oob.openstreetmap.com:10.0.1.12:600
@@ -99,16 +99,16 @@
 
 # Services machine
 
-+horntail.openstreetmap.com:128.40.168.99:600
-+planet.openstreetmap.com:128.40.168.99:600
-+munin.openstreetmap.com:128.40.168.99:600
-+apt.openstreetmap.com:128.40.168.99:600
-+stats.openstreetmap.com:128.40.168.99:600
-+chef.openstreetmap.com:128.40.168.99:600
-+backup.openstreetmap.com:128.40.168.99:600
-+horntail.ucl.openstreetmap.com:10.0.0.7
-+backup.ucl.openstreetmap.com:10.0.0.7
-+horntail.oob.openstreetmap.com:10.0.1.7:600
++horntail.openstreetmap.com:193.63.75.101
++planet.openstreetmap.com:193.63.75.101
++munin.openstreetmap.com:193.63.75.101
++apt.openstreetmap.com:193.63.75.101
++stats.openstreetmap.com:193.63.75.101
++chef.openstreetmap.com:193.63.75.101
++backup.openstreetmap.com:193.63.75.101
++horntail.ic.openstreetmap.com:146.179.159.164
++backup.ic.openstreetmap.com:146.179.159.164
++horntail.oob.openstreetmap.com:146.179.159.186
 
 # Osmarender tile server, with wildcard alias to allow parallel loading
 
@@ -123,9 +123,9 @@
 
 # Database server
 
-+smaug.ucl.openstreetmap.com:10.0.0.13
-+db.ucl.openstreetmap.com:10.0.0.13
-+smaug.oob.openstreetmap.com:10.0.1.13:600
++smaug.ic.openstreetmap.com:146.179.159.168
++db.ic.openstreetmap.com:146.179.159.168
++smaug.oob.openstreetmap.com:146.179.159.182
 
 # Development server with wildcard alias for user sites
 
