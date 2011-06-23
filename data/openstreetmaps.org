@@ -24,20 +24,20 @@
 # Main web servers and their aliases
 
 +puff.openstreetmaps.org:193.63.75.99
-#+openstreetmaps.org:193.63.75.101:600
-#+www.openstreetmaps.org:193.63.75.99:600
-#+api.openstreetmaps.org:193.63.75.99:600
-#+maps.openstreetmaps.org:193.63.75.99:600
-#+mapz.openstreetmaps.org:193.63.75.99:600
++openstreetmaps.org:193.63.75.99:600
++www.openstreetmaps.org:193.63.75.99:600
++api.openstreetmaps.org:193.63.75.99:600
++maps.openstreetmaps.org:193.63.75.99:600
++mapz.openstreetmaps.org:193.63.75.99:600
 +puff.ic.openstreetmaps.org:146.179.159.162
 +puff.oob.openstreetmaps.org:146.179.159.188
 
 +fuchur.openstreetmaps.org:128.40.168.105:600
-+openstreetmaps.org:128.40.168.105:600
-+www.openstreetmaps.org:128.40.168.105:600
-+api.openstreetmaps.org:128.40.168.105:600
-+maps.openstreetmaps.org:128.40.168.105:600
-+mapz.openstreetmaps.org:128.40.168.105:600
+#+openstreetmaps.org:128.40.168.105:600
+#+www.openstreetmaps.org:128.40.168.105:600
+#+api.openstreetmaps.org:128.40.168.105:600
+#+maps.openstreetmaps.org:128.40.168.105:600
+#+mapz.openstreetmaps.org:128.40.168.105:600
 +fuchur.ucl.openstreetmaps.org:10.0.0.9
 +fuchur.oob.openstreetmaps.org:10.0.1.9:600
 
@@ -90,10 +90,10 @@
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
 +yevaud.openstreetmaps.org:128.40.168.104
-+tile.openstreetmaps.org:193.63.75.26:1800
-+a.tile.openstreetmaps.org:193.63.75.26:900
-+b.tile.openstreetmaps.org:128.40.168.95:900
-+c.tile.openstreetmaps.org:128.40.168.95:900
++tile.openstreetmaps.org:193.63.75.26:600
++a.tile.openstreetmaps.org:193.63.75.26:600
++b.tile.openstreetmaps.org:128.40.168.95:600
++c.tile.openstreetmaps.org:128.40.168.95:600
 +yevaud.ucl.openstreetmaps.org:10.0.0.15
 +yevaud.oob.openstreetmaps.org:10.0.1.15
 
@@ -152,11 +152,16 @@
 +foundation.openstreetmaps.org:128.40.168.102
 +ridley.ucl.openstreetmaps.org:10.0.0.3
 
-# APC power switch
+# APC power switches
 
 +apc1.ucl.openstreetmaps.org:10.0.0.49
 +apc2.ucl.openstreetmaps.org:10.0.0.50
 +apc3.ucl.openstreetmaps.org:10.0.0.51
+
+# Managed network switches
+
++switch1.openstreetmaps.org:193.63.75.102
++switch2.ic.openstreetmaps.org:146.179.159.169
 
 # Forum server
 
@@ -186,10 +191,10 @@
 
 # Wiki server
 
-+konqi.openstreetmaps.org:193.63.75.26
-+konqi.ilo.openstreetmaps.org:193.63.75.27
-+wiki.openstreetmaps.org:193.63.75.26
-+dump.wiki.openstreetmaps.org:193.63.75.26
++konqi.openstreetmaps.org:193.63.75.26:600
++konqi.ilo.openstreetmaps.org:193.63.75.27:600
++wiki.openstreetmaps.org:193.63.75.26:600
++dump.wiki.openstreetmaps.org:193.63.75.26:600
 #+konqi.ic.openstreetmaps.org:10.0.16.1
 #+konqi.oob.openstreetmaps.org:10.0.17.1
 

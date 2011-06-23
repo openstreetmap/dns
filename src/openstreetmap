@@ -90,10 +90,10 @@
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
 +yevaud.openstreetmap:128.40.168.104
-+tile.openstreetmap:193.63.75.26:1800
-+a.tile.openstreetmap:193.63.75.26:900
-+b.tile.openstreetmap:128.40.168.95:900
-+c.tile.openstreetmap:128.40.168.95:900
++tile.openstreetmap:193.63.75.26:600
++a.tile.openstreetmap:193.63.75.26:600
++b.tile.openstreetmap:128.40.168.95:600
++c.tile.openstreetmap:128.40.168.95:600
 +yevaud.ucl.openstreetmap:10.0.0.15
 +yevaud.oob.openstreetmap:10.0.1.15
 
@@ -191,10 +191,10 @@
 
 # Wiki server
 
-+konqi.openstreetmap:193.63.75.26
-+konqi.ilo.openstreetmap:193.63.75.27
-+wiki.openstreetmap:193.63.75.26
-+dump.wiki.openstreetmap:193.63.75.26
++konqi.openstreetmap:193.63.75.26:600
++konqi.ilo.openstreetmap:193.63.75.27:600
++wiki.openstreetmap:193.63.75.26:600
++dump.wiki.openstreetmap:193.63.75.26:600
 #+konqi.ic.openstreetmap:10.0.16.1
 #+konqi.oob.openstreetmap:10.0.17.1
 

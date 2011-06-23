@@ -24,20 +24,20 @@
 # Main web servers and their aliases
 
 +puff.osm.org:193.63.75.99
-#+osm.org:193.63.75.101:600
-#+www.osm.org:193.63.75.99:600
-#+api.osm.org:193.63.75.99:600
-#+maps.osm.org:193.63.75.99:600
-#+mapz.osm.org:193.63.75.99:600
++osm.org:193.63.75.99:600
++www.osm.org:193.63.75.99:600
++api.osm.org:193.63.75.99:600
++maps.osm.org:193.63.75.99:600
++mapz.osm.org:193.63.75.99:600
 +puff.ic.osm.org:146.179.159.162
 +puff.oob.osm.org:146.179.159.188
 
 +fuchur.osm.org:128.40.168.105:600
-+osm.org:128.40.168.105:600
-+www.osm.org:128.40.168.105:600
-+api.osm.org:128.40.168.105:600
-+maps.osm.org:128.40.168.105:600
-+mapz.osm.org:128.40.168.105:600
+#+osm.org:128.40.168.105:600
+#+www.osm.org:128.40.168.105:600
+#+api.osm.org:128.40.168.105:600
+#+maps.osm.org:128.40.168.105:600
+#+mapz.osm.org:128.40.168.105:600
 +fuchur.ucl.osm.org:10.0.0.9
 +fuchur.oob.osm.org:10.0.1.9:600
 
@@ -90,10 +90,10 @@
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
 +yevaud.osm.org:128.40.168.104
-+tile.osm.org:193.63.75.26:1800
-+a.tile.osm.org:193.63.75.26:900
-+b.tile.osm.org:128.40.168.95:900
-+c.tile.osm.org:128.40.168.95:900
++tile.osm.org:193.63.75.26:600
++a.tile.osm.org:193.63.75.26:600
++b.tile.osm.org:128.40.168.95:600
++c.tile.osm.org:128.40.168.95:600
 +yevaud.ucl.osm.org:10.0.0.15
 +yevaud.oob.osm.org:10.0.1.15
 
@@ -152,11 +152,16 @@
 +foundation.osm.org:128.40.168.102
 +ridley.ucl.osm.org:10.0.0.3
 
-# APC power switch
+# APC power switches
 
 +apc1.ucl.osm.org:10.0.0.49
 +apc2.ucl.osm.org:10.0.0.50
 +apc3.ucl.osm.org:10.0.0.51
+
+# Managed network switches
+
++switch1.osm.org:193.63.75.102
++switch2.ic.osm.org:146.179.159.169
 
 # Forum server
 
@@ -186,10 +191,10 @@
 
 # Wiki server
 
-+konqi.osm.org:193.63.75.26
-+konqi.ilo.osm.org:193.63.75.27
-+wiki.osm.org:193.63.75.26
-+dump.wiki.osm.org:193.63.75.26
++konqi.osm.org:193.63.75.26:600
++konqi.ilo.osm.org:193.63.75.27:600
++wiki.osm.org:193.63.75.26:600
++dump.wiki.osm.org:193.63.75.26:600
 #+konqi.ic.osm.org:10.0.16.1
 #+konqi.oob.osm.org:10.0.17.1
 

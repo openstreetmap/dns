@@ -24,20 +24,20 @@
 # Main web servers and their aliases
 
 +puff.openstreetmap.com:193.63.75.99
-#+openstreetmap.com:193.63.75.101:600
-#+www.openstreetmap.com:193.63.75.99:600
-#+api.openstreetmap.com:193.63.75.99:600
-#+maps.openstreetmap.com:193.63.75.99:600
-#+mapz.openstreetmap.com:193.63.75.99:600
++openstreetmap.com:193.63.75.99:600
++www.openstreetmap.com:193.63.75.99:600
++api.openstreetmap.com:193.63.75.99:600
++maps.openstreetmap.com:193.63.75.99:600
++mapz.openstreetmap.com:193.63.75.99:600
 +puff.ic.openstreetmap.com:146.179.159.162
 +puff.oob.openstreetmap.com:146.179.159.188
 
 +fuchur.openstreetmap.com:128.40.168.105:600
-+openstreetmap.com:128.40.168.105:600
-+www.openstreetmap.com:128.40.168.105:600
-+api.openstreetmap.com:128.40.168.105:600
-+maps.openstreetmap.com:128.40.168.105:600
-+mapz.openstreetmap.com:128.40.168.105:600
+#+openstreetmap.com:128.40.168.105:600
+#+www.openstreetmap.com:128.40.168.105:600
+#+api.openstreetmap.com:128.40.168.105:600
+#+maps.openstreetmap.com:128.40.168.105:600
+#+mapz.openstreetmap.com:128.40.168.105:600
 +fuchur.ucl.openstreetmap.com:10.0.0.9
 +fuchur.oob.openstreetmap.com:10.0.1.9:600
 
@@ -90,10 +90,10 @@
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
 +yevaud.openstreetmap.com:128.40.168.104
-+tile.openstreetmap.com:193.63.75.26:1800
-+a.tile.openstreetmap.com:193.63.75.26:900
-+b.tile.openstreetmap.com:128.40.168.95:900
-+c.tile.openstreetmap.com:128.40.168.95:900
++tile.openstreetmap.com:193.63.75.26:600
++a.tile.openstreetmap.com:193.63.75.26:600
++b.tile.openstreetmap.com:128.40.168.95:600
++c.tile.openstreetmap.com:128.40.168.95:600
 +yevaud.ucl.openstreetmap.com:10.0.0.15
 +yevaud.oob.openstreetmap.com:10.0.1.15
 
@@ -152,11 +152,16 @@
 +foundation.openstreetmap.com:128.40.168.102
 +ridley.ucl.openstreetmap.com:10.0.0.3
 
-# APC power switch
+# APC power switches
 
 +apc1.ucl.openstreetmap.com:10.0.0.49
 +apc2.ucl.openstreetmap.com:10.0.0.50
 +apc3.ucl.openstreetmap.com:10.0.0.51
+
+# Managed network switches
+
++switch1.openstreetmap.com:193.63.75.102
++switch2.ic.openstreetmap.com:146.179.159.169
 
 # Forum server
 
@@ -186,10 +191,10 @@
 
 # Wiki server
 
-+konqi.openstreetmap.com:193.63.75.26
-+konqi.ilo.openstreetmap.com:193.63.75.27
-+wiki.openstreetmap.com:193.63.75.26
-+dump.wiki.openstreetmap.com:193.63.75.26
++konqi.openstreetmap.com:193.63.75.26:600
++konqi.ilo.openstreetmap.com:193.63.75.27:600
++wiki.openstreetmap.com:193.63.75.26:600
++dump.wiki.openstreetmap.com:193.63.75.26:600
 #+konqi.ic.openstreetmap.com:10.0.16.1
 #+konqi.oob.openstreetmap.com:10.0.17.1
 
