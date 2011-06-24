@@ -32,14 +32,14 @@
 +puff.ic.openstreetmap.net:146.179.159.162
 +puff.oob.openstreetmap.net:146.179.159.188
 
-+fuchur.openstreetmap.net:128.40.168.105:600
-#+openstreetmap.net:128.40.168.105:600
-#+www.openstreetmap.net:128.40.168.105:600
-#+api.openstreetmap.net:128.40.168.105:600
-#+maps.openstreetmap.net:128.40.168.105:600
-#+mapz.openstreetmap.net:128.40.168.105:600
-+fuchur.ucl.openstreetmap.net:10.0.0.9
-+fuchur.oob.openstreetmap.net:10.0.1.9:600
++fuchur.openstreetmap.net:193.63.75.100
+#+openstreetmap.net:193.63.75.100:600
+#+www.openstreetmap.net:193.63.75.100:600
+#+api.openstreetmap.net:193.63.75.100:600
+#+maps.openstreetmap.net:193.63.75.100:600
+#+mapz.openstreetmap.net:193.63.75.100:600
++fuchur.ic.openstreetmap.net:146.179.159.163
++fuchur.oob.openstreetmap.net:146.179.159.187
 
 # Rails application servers
 
@@ -49,9 +49,9 @@
 +sarel.ic.openstreetmap.net:146.179.159.166
 +rails2.ic.openstreetmap.net:146.179.159.166
 +sarel.oob.openstreetmap.net:146.179.159.184
-+norbert.ucl.openstreetmap.net:10.0.0.12
-+rails3.ucl.openstreetmap.net:10.0.0.12
-+norbert.oob.openstreetmap.net:10.0.1.12:600
++norbert.ic.openstreetmap.net:146.179.159.167
++rails3.ic.openstreetmap.net:146.179.159.167
++norbert.oob.openstreetmap.net:146.179.159.183
 
 # Gazetteer (nominatim) server
 

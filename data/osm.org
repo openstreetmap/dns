@@ -32,14 +32,14 @@
 +puff.ic.osm.org:146.179.159.162
 +puff.oob.osm.org:146.179.159.188
 
-+fuchur.osm.org:128.40.168.105:600
-#+osm.org:128.40.168.105:600
-#+www.osm.org:128.40.168.105:600
-#+api.osm.org:128.40.168.105:600
-#+maps.osm.org:128.40.168.105:600
-#+mapz.osm.org:128.40.168.105:600
-+fuchur.ucl.osm.org:10.0.0.9
-+fuchur.oob.osm.org:10.0.1.9:600
++fuchur.osm.org:193.63.75.100
+#+osm.org:193.63.75.100:600
+#+www.osm.org:193.63.75.100:600
+#+api.osm.org:193.63.75.100:600
+#+maps.osm.org:193.63.75.100:600
+#+mapz.osm.org:193.63.75.100:600
++fuchur.ic.osm.org:146.179.159.163
++fuchur.oob.osm.org:146.179.159.187
 
 # Rails application servers
 
@@ -49,9 +49,9 @@
 +sarel.ic.osm.org:146.179.159.166
 +rails2.ic.osm.org:146.179.159.166
 +sarel.oob.osm.org:146.179.159.184
-+norbert.ucl.osm.org:10.0.0.12
-+rails3.ucl.osm.org:10.0.0.12
-+norbert.oob.osm.org:10.0.1.12:600
++norbert.ic.osm.org:146.179.159.167
++rails3.ic.osm.org:146.179.159.167
++norbert.oob.osm.org:146.179.159.183
 
 # Gazetteer (nominatim) server
 
