@@ -33,11 +33,11 @@
 +puff.oob.osm.org:146.179.159.188
 
 +fuchur.osm.org:193.63.75.100
-#+osm.org:193.63.75.100:600
-#+www.osm.org:193.63.75.100:600
-#+api.osm.org:193.63.75.100:600
-#+maps.osm.org:193.63.75.100:600
-#+mapz.osm.org:193.63.75.100:600
++osm.org:193.63.75.100:600
++www.osm.org:193.63.75.100:600
++api.osm.org:193.63.75.100:600
++maps.osm.org:193.63.75.100:600
++mapz.osm.org:193.63.75.100:600
 +fuchur.ic.osm.org:146.179.159.163
 +fuchur.oob.osm.org:146.179.159.187
 
