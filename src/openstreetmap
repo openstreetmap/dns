@@ -56,7 +56,7 @@
 # Gazetteer (nominatim) server
 
 +poldi.openstreetmap:128.40.168.106 
-+nominatim.openstreetmap:128.40.168.106:600
++nominatim.openstreetmap:193.63.75.98:600
 +poldi.ucl.openstreetmap:10.0.0.16
 +poldi.oob.openstreetmap:10.0.1.16
 
