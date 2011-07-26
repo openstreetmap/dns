@@ -155,6 +155,7 @@
 # Spare machines
 +fiddlestick.ucl.openstreetmap.com.org:10.0.0.7
 +soup.ucl.openstreetmap.com.org:10.0.0.8
++eustace.ucl.openstreetmap.com.org:10.0.0.9
 
 # APC power switches
 
