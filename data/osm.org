@@ -153,9 +153,9 @@
 +ridley.ucl.osm.org:10.0.0.3
 
 # Spare machines
-+fiddlestick.ucl.osm.org.org:10.0.0.7
-+soup.ucl.osm.org.org:10.0.0.8
-+eustace.ucl.osm.org.org:10.0.0.9
++fiddlestick.ucl.osm.org:10.0.0.7
++soup.ucl.osm.org:10.0.0.8
++eustace.ucl.osm.org:10.0.0.9
 
 # APC power switches
 
