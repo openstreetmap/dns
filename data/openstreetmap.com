@@ -153,9 +153,13 @@
 +ridley.ucl.openstreetmap.com:10.0.0.3
 
 # Spare machines
+
 +fiddlestick.ucl.openstreetmap.com:10.0.0.7
++fiddlestick.oob.openstreetmap.com:10.0.1.7
 +soup.ucl.openstreetmap.com:10.0.0.8
++soup.oob.openstreetmap.com:10.0.1.8
 +eustace.ucl.openstreetmap.com:10.0.0.9
++eustace.oob.openstreetmap.com:10.0.1.9
 
 # APC power switches
 
