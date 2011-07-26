@@ -56,7 +56,7 @@
 # Gazetteer (nominatim) server
 
 +poldi.osm.org:128.40.168.106 
-+nominatim.osm.org:128.40.168.106
++nominatim.osm.org:193.63.75.98:600
 +poldi.ucl.osm.org:10.0.0.16
 +poldi.oob.osm.org:10.0.1.16
 
@@ -151,6 +151,10 @@
 +blog.osm.org:128.40.168.102
 +foundation.osm.org:128.40.168.102
 +ridley.ucl.osm.org:10.0.0.3
+
+# Spare machines
++fiddlestick.ucl.osm.org.org:10.0.0.7
++soup.ucl.osm.org.org:10.0.0.8
 
 # APC power switches
 

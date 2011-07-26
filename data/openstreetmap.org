@@ -56,7 +56,7 @@
 # Gazetteer (nominatim) server
 
 +poldi.openstreetmap.org:128.40.168.106 
-+nominatim.openstreetmap.org:128.40.168.106
++nominatim.openstreetmap.org:193.63.75.98:600
 +poldi.ucl.openstreetmap.org:10.0.0.16
 +poldi.oob.openstreetmap.org:10.0.1.16
 
@@ -151,6 +151,10 @@
 +blog.openstreetmap.org:128.40.168.102
 +foundation.openstreetmap.org:128.40.168.102
 +ridley.ucl.openstreetmap.org:10.0.0.3
+
+# Spare machines
++fiddlestick.ucl.openstreetmap.org.org:10.0.0.7
++soup.ucl.openstreetmap.org.org:10.0.0.8
 
 # APC power switches
 
