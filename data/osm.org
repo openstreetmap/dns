@@ -32,14 +32,14 @@
 +puff.ic.osm.org:146.179.159.162
 +puff.oob.osm.org:146.179.159.188
 
-+fuchur.osm.org:193.63.75.100
-#+osm.org:193.63.75.100:600
-#+www.osm.org:193.63.75.100:600
-#+api.osm.org:193.63.75.100:600
-#+maps.osm.org:193.63.75.100:600
-#+mapz.osm.org:193.63.75.100:600
-+fuchur.ic.osm.org:146.179.159.163
-+fuchur.oob.osm.org:146.179.159.187
++fiddlestick.osm.org:193.63.75.100
++osm.org:193.63.75.100:600
++www.osm.org:193.63.75.100:600
++api.osm.org:193.63.75.100:600
++maps.osm.org:193.63.75.100:600
++mapz.osm.org:193.63.75.100:600
++fiddlestick.ic.osm.org:146.179.159.163
++fiddlestick.oob.osm.org:146.179.159.187
 
 # Rails application servers
 
@@ -154,8 +154,6 @@
 
 # Spare machines
 
-+fiddlestick.ucl.osm.org:10.0.0.7
-+fiddlestick.oob.osm.org:10.0.1.7
 +soup.ucl.osm.org:10.0.0.8
 +soup.oob.osm.org:10.0.1.8
 +eustace.ucl.osm.org:10.0.0.9

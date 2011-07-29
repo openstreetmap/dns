@@ -32,14 +32,14 @@
 +puff.ic.openstreetmap:146.179.159.162
 +puff.oob.openstreetmap:146.179.159.188
 
-+fuchur.openstreetmap:193.63.75.100
-#+openstreetmap:193.63.75.100:600
-#+www.openstreetmap:193.63.75.100:600
-#+api.openstreetmap:193.63.75.100:600
-#+maps.openstreetmap:193.63.75.100:600
-#+mapz.openstreetmap:193.63.75.100:600
-+fuchur.ic.openstreetmap:146.179.159.163
-+fuchur.oob.openstreetmap:146.179.159.187
++fiddlestick.openstreetmap:193.63.75.100
++openstreetmap:193.63.75.100:600
++www.openstreetmap:193.63.75.100:600
++api.openstreetmap:193.63.75.100:600
++maps.openstreetmap:193.63.75.100:600
++mapz.openstreetmap:193.63.75.100:600
++fiddlestick.ic.openstreetmap:146.179.159.163
++fiddlestick.oob.openstreetmap:146.179.159.187
 
 # Rails application servers
 
@@ -154,8 +154,6 @@
 
 # Spare machines
 
-+fiddlestick.ucl.openstreetmap:10.0.0.7
-+fiddlestick.oob.openstreetmap:10.0.1.7
 +soup.ucl.openstreetmap:10.0.0.8
 +soup.oob.openstreetmap:10.0.1.8
 +eustace.ucl.openstreetmap:10.0.0.9
