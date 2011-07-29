@@ -33,11 +33,11 @@
 +puff.oob.openstreetmap.com:146.179.159.188
 
 +fuchur.openstreetmap.com:193.63.75.100
-+openstreetmap.com:193.63.75.100:600
-+www.openstreetmap.com:193.63.75.100:600
-+api.openstreetmap.com:193.63.75.100:600
-+maps.openstreetmap.com:193.63.75.100:600
-+mapz.openstreetmap.com:193.63.75.100:600
+#+openstreetmap.com:193.63.75.100:600
+#+www.openstreetmap.com:193.63.75.100:600
+#+api.openstreetmap.com:193.63.75.100:600
+#+maps.openstreetmap.com:193.63.75.100:600
+#+mapz.openstreetmap.com:193.63.75.100:600
 +fuchur.ic.openstreetmap.com:146.179.159.163
 +fuchur.oob.openstreetmap.com:146.179.159.187
 
