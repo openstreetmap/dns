@@ -22,8 +22,8 @@ Clogin.stateofthemap:ghs.google.com
 
 # Main web server and it's aliases
 
-+stateofthemap:89.16.179.150:600
-+www.stateofthemap:89.16.179.150:600
++stateofthemap:128.40.168.102:600
++www.stateofthemap:128.40.168.102:600
 +2011.stateofthemap:128.40.168.102
 +2010.stateofthemap:128.40.168.102
 +2009.stateofthemap:128.40.168.102
