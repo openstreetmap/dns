@@ -92,7 +92,7 @@
 +yevaud.openstreetmap.net:128.40.168.104
 +tile.openstreetmap.net:193.63.75.26:600
 +a.tile.openstreetmap.net:193.63.75.26:600
-+b.tile.openstreetmap.net:128.40.168.95:600
++b.tile.openstreetmap.net:193.63.75.26:600
 +c.tile.openstreetmap.net:128.40.168.95:600
 +yevaud.ucl.openstreetmap.net:10.0.0.15
 +yevaud.oob.openstreetmap.net:10.0.1.15
@@ -154,6 +154,10 @@
 
 # Spare machines
 
++urmel.ucl.openstreetmap.net:10.0.0.6
++urmel.oob.openstreetmap.net:10.0.1.6
++faffy.ucl.openstreetmap.net:10.0.0.7
++faffy.oob.openstreetmap.net:10.0.1.7
 +soup.ucl.openstreetmap.net:10.0.0.8
 +soup.oob.openstreetmap.net:10.0.1.8
 +eustace.ucl.openstreetmap.net:10.0.0.9

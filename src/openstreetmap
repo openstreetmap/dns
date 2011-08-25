@@ -154,6 +154,10 @@
 
 # Spare machines
 
++urmel.ucl.openstreetmap:10.0.0.6
++urmel.oob.openstreetmap:10.0.1.6
++faffy.ucl.openstreetmap:10.0.0.7
++faffy.oob.openstreetmap:10.0.1.7
 +soup.ucl.openstreetmap:10.0.0.8
 +soup.oob.openstreetmap:10.0.1.8
 +eustace.ucl.openstreetmap:10.0.0.9
