@@ -23,14 +23,14 @@
 
 # Main web servers and their aliases
 
-+puff.openstreetmap:193.63.75.99
++soup.openstreetmap:193.63.75.99
 #+openstreetmap:193.63.75.99:600
 #+www.openstreetmap:193.63.75.99:600
 #+api.openstreetmap:193.63.75.99:600
 #+maps.openstreetmap:193.63.75.99:600
 #+mapz.openstreetmap:193.63.75.99:600
-+puff.ic.openstreetmap:146.179.159.162
-+puff.oob.openstreetmap:146.179.159.188
++soup.ic.openstreetmap:146.179.159.162
++soup.oob.openstreetmap:146.179.159.188
 
 +fiddlestick.openstreetmap:193.63.75.100
 +openstreetmap:193.63.75.100:600
@@ -159,8 +159,6 @@
 +urmel.oob.openstreetmap:10.0.1.6
 +faffy.ucl.openstreetmap:10.0.0.7
 +faffy.oob.openstreetmap:10.0.1.7
-+soup.ucl.openstreetmap:10.0.0.8
-+soup.oob.openstreetmap:10.0.1.8
 +eustace.ucl.openstreetmap:10.0.0.9
 +eustace.oob.openstreetmap:10.0.1.9
 
