@@ -24,11 +24,11 @@
 # Main web servers and their aliases
 
 +soup.openstreetmap:193.63.75.99
-#+openstreetmap:193.63.75.99:600
-#+www.openstreetmap:193.63.75.99:600
-#+api.openstreetmap:193.63.75.99:600
-#+maps.openstreetmap:193.63.75.99:600
-#+mapz.openstreetmap:193.63.75.99:600
++openstreetmap:193.63.75.99:600
++www.openstreetmap:193.63.75.99:600
++api.openstreetmap:193.63.75.99:600
++maps.openstreetmap:193.63.75.99:600
++mapz.openstreetmap:193.63.75.99:600
 +soup.ic.openstreetmap:146.179.159.162
 +soup.oob.openstreetmap:146.179.159.188
 
