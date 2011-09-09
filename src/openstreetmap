@@ -33,11 +33,11 @@
 +soup.oob.openstreetmap:146.179.159.188
 
 +fiddlestick.openstreetmap:193.63.75.100
-+openstreetmap:193.63.75.100:600
-+www.openstreetmap:193.63.75.100:600
-+api.openstreetmap:193.63.75.100:600
-+maps.openstreetmap:193.63.75.100:600
-+mapz.openstreetmap:193.63.75.100:600
+openstreetmap:193.63.75.100:600
+www.openstreetmap:193.63.75.100:600
+api.openstreetmap:193.63.75.100:600
+maps.openstreetmap:193.63.75.100:600
+mapz.openstreetmap:193.63.75.100:600
 +fiddlestick.ic.openstreetmap:146.179.159.163
 +fiddlestick.oob.openstreetmap:146.179.159.187
 
