@@ -153,6 +153,13 @@
 +foundation.openstreetmap:128.40.168.102
 +ridley.ucl.openstreetmap:10.0.0.3
 
+# Piwik server
+
++eustace.openstreetmap:128.40.168.101
++piwik.openstreetmap:128.40.168.101
++eustace.ucl.openstreetmap:10.0.0.9
++eustace.oob.openstreetmap:10.0.1.9
+
 # Spare machines
 
 +urmel.ucl.openstreetmap:10.0.0.6
@@ -161,8 +168,6 @@
 +faffy.oob.openstreetmap:10.0.1.7
 +zark.ucl.openstreetmap:10.0.0.8
 +zark.oob.openstreetmap:10.0.1.8
-+eustace.ucl.openstreetmap:10.0.0.9
-+eustace.oob.openstreetmap:10.0.1.9
 
 # APC power switches
 
