@@ -71,21 +71,27 @@
 +xapi.openstreetmap:128.40.168.97
 +fafnir.ucl.openstreetmap:10.0.0.4
 
-# OWL server
+# Tile cache server
 
 +albi.openstreetmap:128.40.168.95
-+owl.openstreetmap:128.40.168.95
 +albi.ilo.openstreetmap:10.0.0.52
 +albi.ucl.openstreetmap:10.0.0.2
 +albi.oob.openstreetmap:10.0.1.2
 
-# Spare server
+# JXAPI server
 
 +azure.openstreetmap:128.40.168.100
 +jxapi.openstreetmap:128.40.168.100
 +azure.ilo.openstreetmap:10.0.0.55
 +azure.ucl.openstreetmap:10.0.0.5
 +azure.oob.openstreetmap:10.0.1.5
+
+# OWL server
+
++zark.openstreetmap:128.40.168.107
++owl.openstreetmap:128.40.168107
++zark.ucl.openstreetmap:10.0.0.8
++zark.oob.openstreetmap:10.0.1.8
 
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
@@ -166,8 +172,6 @@
 +urmel.oob.openstreetmap:10.0.1.6
 +faffy.ucl.openstreetmap:10.0.0.7
 +faffy.oob.openstreetmap:10.0.1.7
-+zark.ucl.openstreetmap:10.0.0.8
-+zark.oob.openstreetmap:10.0.1.8
 
 # APC power switches
 
