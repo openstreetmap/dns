@@ -172,6 +172,8 @@
 +urmel.oob.openstreetmap:10.0.1.6
 +faffy.ucl.openstreetmap:10.0.0.7
 +faffy.oob.openstreetmap:10.0.1.7
++puff.ucl.openstreetmap:10.0.0.10
++puff.oob.openstreetmap:10.0.1.10
 
 # APC power switches
 
