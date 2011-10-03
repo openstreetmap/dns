@@ -23,7 +23,7 @@
 
 # Delegate geo.openstreetmap.org to PowerDNS
 
-&geo.openstreetmap:89.16.179.150:a
+&geo.openstreetmap:89.16.179.150:a:86400
 
 # Main web servers and their aliases
 
