@@ -23,7 +23,7 @@
 
 # Delegate geo.openstreetmap.org to PowerDNS
 
-&geo.openstreetmap:89.16.179.150:a:86400
+&geo.openstreetmap:89.16.179.150:a.ns.openstreetmap:86400
 
 # Main web servers and their aliases
 
@@ -107,6 +107,20 @@
 +parent.tile.openstreetmap:128.40.168.104:300
 +yevaud.ucl.openstreetmap:10.0.0.15
 +yevaud.oob.openstreetmap:10.0.1.15
+
+# Map geographic zones to tile servers
+
+Can.tile.openstreetmap:pool.tile.openstreetmap:600
+Caf.tile.openstreetmap:pool.tile.openstreetmap:600
+Cas.tile.openstreetmap:pool.tile.openstreetmap:600
+Ceu.tile.openstreetmap:pool.tile.openstreetmap:600
+Cna.tile.openstreetmap:pool.tile.openstreetmap:600
+Coc.tile.openstreetmap:pool.tile.openstreetmap:600
+Csa.tile.openstreetmap:pool.tile.openstreetmap:600
+
++pool.tile.openstreetmap:193.63.75.26:600
++pool.tile.openstreetmap:193.63.75.26:600
++pool.tile.openstreetmap:128.40.168.95:600
 
 # Services machine
 
