@@ -21,6 +21,10 @@
 
 'openstreetmap:v=spf1 ip4\07289.16.179.150 ip6\0722001\07241c8\07210\072996\07221d\0727dff\072fec3\072df70 ~all
 
+# Delegate geo.openstreetmap.org to PowerDNS
+
+&geo.openstreetmap:89.16.179.150:a
+
 # Main web servers and their aliases
 
 +soup.openstreetmap:193.63.75.99
