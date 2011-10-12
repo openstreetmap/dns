@@ -1,0 +1,176 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+use IO::File;
+use Math::Trig qw(deg2rad pip2 great_circle_distance);
+use XML::Writer;
+use XML::TreeBuilder;
+use YAML;
+
+my $source = shift @ARGV;
+my $zone = shift @ARGV;
+my $servers = YAML::LoadFile("src/${source}");
+
+my %countries = ();
+
+my $countries = XML::TreeBuilder->new->parsefile("lib/countries.xml");
+
+foreach my $country ($countries->look_down("_tag" => "country"))
+{
+    my $code = $country->look_down("_tag" => "countryCode")->as_text;
+    my $name = $country->look_down("_tag" => "countryName")->as_text;
+    my $continent = $country->look_down("_tag" => "continent")->as_text;
+    my $west = $country->look_down("_tag" => "bBoxWest")->as_text;
+    my $north = $country->look_down("_tag" => "bBoxNorth")->as_text;
+    my $east = $country->look_down("_tag" => "bBoxEast")->as_text;
+    my $south = $country->look_down("_tag" => "bBoxSouth")->as_text;
+    my $lat = centre_lat( $south, $north );
+    my $lon = centre_lon( $west, $east );
+    my @servers;
+
+    foreach my $servername (keys %$servers)
+    {
+        my $server = $servers->{$servername};
+        my $match = match_country($server, $code, $continent);
+
+        if ($match eq "preferred" || $match eq "allowed")
+        {
+            my $priority = $match eq "preferred" ? 20 : 10;
+            my $distance = distance($lat, $lon, $server->{lat}, $server->{lon});
+
+#            print STDERR "$servername is $match for $name with distance $distance\n";
+
+            push @servers, { name => $servername, priority => $priority, distance => $distance };
+        }
+    }
+
+    $countries{$code} = {
+        code => $code, name => $name, continent => $continent,
+        lat => $lat, lon => $lon, servers => \@servers
+    };
+}
+
+$countries->delete;
+
+my $zonefile = IO::File->new("> data/${zone}") || die "$!";
+my $kmlfile = IO::File->new("> kml/${zone}.kml") || die "$!";
+my $kmlwriter = XML::Writer->new(OUTPUT => $kmlfile);
+
+$kmlwriter->xmlDecl("UTF-8");
+$kmlwriter->startTag("kml", "xmlns" => "http://www.opengis.net/kml/2.2");
+$kmlwriter->startTag("Document");
+
+foreach my $country (values %countries)
+{
+    my @servers = sort { $b->{priority} <=> $a->{priority} || $a->{distance} <=> $b->{distance} } @{$country->{servers}};
+    my $server = $servers->{$servers[0]->{name}};
+
+    $zonefile->print("C\L$country->{code}\E.${zone}:$servers[0]->{name}.${zone}:600\n");
+
+    $kmlwriter->startTag("Placemark");
+    $kmlwriter->dataElement("name", $country->{name});
+    $kmlwriter->startTag("LineString");
+    $kmlwriter->startTag("coordinates");
+    $kmlwriter->characters("$country->{lon},$country->{lat}");
+    $kmlwriter->characters("$server->{lon},$server->{lat}");
+    $kmlwriter->endTag("coordinates");
+    $kmlwriter->endTag("LineString");
+    $kmlwriter->endTag("Placemark");
+}
+
+foreach my $server (keys %$servers)
+{
+    $zonefile->print("Cxx.${zone}:${server}.${zone}:600\n");
+}
+
+$kmlwriter->endTag("Document");
+$kmlwriter->endTag("kml");
+$kmlwriter->end();
+
+$kmlfile->close();
+$zonefile->close();
+
+exit 0;
+
+sub centre_lat
+{
+    my $south = shift;
+    my $north = shift;
+
+    return ( $south + $north ) / 2;
+}
+
+sub centre_lon
+{
+    my $west = shift;
+    my $east = shift;
+    my $lon;
+
+    if ($west < $east)
+    {
+        $lon = ( $west + $east ) / 2;
+    }
+    else
+    {
+        $lon = ( $west + $east + 360 ) / 2;
+    }
+
+    $lon = $lon - 360 if $lon > 180;
+
+    return $lon
+}
+
+sub match_country
+{
+    my $server = shift;
+    my $country = shift;
+    my $continent = shift;
+    my $match;
+
+    if ($server->{preferred} &&
+        $server->{preferred}->{countries} &&
+        grep { $_ eq $country } @{$server->{preferred}->{countries}})
+    {
+        $match = "preferred";
+    }
+    elsif ($server->{preferred} &&
+           $server->{preferred}->{continents} &&
+           grep { $_ eq $continent } @{$server->{preferred}->{continents}})
+    {
+        $match = "preferred";
+    }
+    elsif ($server->{allowed} &&
+           $server->{allowed}->{countries} &&
+           grep { $_ eq $country } @{$server->{allowed}->{countries}})
+    {
+        $match = "allowed";
+    }
+    elsif ($server->{allowed} &&
+           $server->{allowed}->{continents} &&
+           grep { $_ eq $continent } @{$server->{allowed}->{continents}})
+    {
+        $match = "allowed";
+    }
+    elsif ($server->{allowed})
+    {
+        $match = "none";
+    }
+    else
+    {
+        $match = "allowed";
+    }
+
+    return $match;
+}
+
+sub distance
+{
+    my $lat1 = deg2rad(shift);
+    my $lon1 = deg2rad(shift);
+    my $lat2 = deg2rad(shift);
+    my $lon2 = deg2rad(shift);
+
+    return great_circle_distance($lon1, pip2 - $lat1, $lon2, pip2 - $lat2);
+}

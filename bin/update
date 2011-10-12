@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+# Upload data to Bytemark Hosting's content DNS servers
+#
+
+RSYNC=/usr/bin/rsync
+USER=openstreetmap
+
+if [ ! -f $RSYNC ] ; then
+  echo "You need rsync installed to use this script"
+  if [ -f /etc/debian_version ] ; then
+    echo "I'll try to install it automatically."
+    apt-get install rsync
+  fi
+fi
+
+for SERVER in  upload ; do
+  echo -n "Server $SERVER.ns.bytemark.co.uk..."
+  if ping -c 1 $SERVER.ns.bytemark.co.uk >/dev/null 2>&1 ; then
+    echo -n "alive, sending updates..."
+    if $RSYNC -C -r --delete  data/ dns@$SERVER.ns.bytemark.co.uk::$USER; then
+      echo "sent."
+    else
+      echo "failed :-("
+    fi
+  else
+    echo "not responding."
+  fi
+done

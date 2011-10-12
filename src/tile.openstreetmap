@@ -1,0 +1,23 @@
+london:
+  lat: 51.507222
+  lon: -0.1275
+  preferred:
+    continents:
+      - EU
+      - AF
+
+moscow:
+  lat: 55.75
+  lon: 37.616667
+  preferred:
+    countries:
+      - RU
+
+oregon:
+  lat: 44
+  lon: -120.5
+  preferred:
+    continents:
+      - NA
+      - SA
+      - OC
