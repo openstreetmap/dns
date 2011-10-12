@@ -15,7 +15,9 @@ my $servers = YAML::LoadFile("src/${source}");
 
 my %countries = ();
 
-my $countries = XML::TreeBuilder->new->parsefile("lib/countries.xml");
+my $countries = XML::TreeBuilder->new;
+
+$countries->parsefile("lib/countries.xml");
 
 foreach my $country ($countries->look_down("_tag" => "country"))
 {
