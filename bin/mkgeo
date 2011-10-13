@@ -58,9 +58,9 @@ $countries->delete;
 
 my $zonefile = IO::File->new("> data/${zone}") || die "$!";
 my $kmlfile = IO::File->new("> kml/${zone}.kml") || die "$!";
-my $kmlwriter = XML::Writer->new(OUTPUT => $kmlfile);
+my $kmlwriter = XML::Writer->new(OUTPUT => $kmlfile, ENCODING => 'utf-8');
 
-$kmlwriter->xmlDecl("UTF-8");
+$kmlwriter->xmlDecl();
 $kmlwriter->startTag("kml", "xmlns" => "http://www.opengis.net/kml/2.2");
 $kmlwriter->startTag("Document");
 
