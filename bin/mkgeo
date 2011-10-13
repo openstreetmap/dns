@@ -68,17 +68,22 @@ foreach my $country (values %countries)
 {
     my @servers = sort { $b->{priority} <=> $a->{priority} || $a->{distance} <=> $b->{distance} } @{$country->{servers}};
     my $server = $servers->{$servers[0]->{name}};
+    my $clon = $country->{lon};
+    my $clat = $country->{lat};
+    my $slon = $server->{lon};
+    my $slat = $server->{lat};
+
+    if ($clon > 0 && $slon < 0 && 360 + $slon - $clon < $clon - $slon)
+    {
+        $clon = $clon - 360;
+    }
 
     $zonefile->print("C\L$country->{code}\E.${zone}:$servers[0]->{name}.${zone}:600\n");
 
     $kmlwriter->startTag("Placemark");
     $kmlwriter->dataElement("name", $country->{name});
     $kmlwriter->startTag("LineString");
-    $kmlwriter->startTag("coordinates");
-    $kmlwriter->characters("$country->{lon},$country->{lat}");
-    $kmlwriter->characters(" ");
-    $kmlwriter->characters("$server->{lon},$server->{lat}");
-    $kmlwriter->endTag("coordinates");
+    $kmlwriter->dataElement("coordinates", "$clon,$clat $slon,$slat");
     $kmlwriter->endTag("LineString");
     $kmlwriter->endTag("Placemark");
 }
