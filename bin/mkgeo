@@ -76,6 +76,7 @@ foreach my $country (values %countries)
     $kmlwriter->startTag("LineString");
     $kmlwriter->startTag("coordinates");
     $kmlwriter->characters("$country->{lon},$country->{lat}");
+    $kmlwriter->characters(" ");
     $kmlwriter->characters("$server->{lon},$server->{lat}");
     $kmlwriter->endTag("coordinates");
     $kmlwriter->endTag("LineString");
