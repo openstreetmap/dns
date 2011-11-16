@@ -233,11 +233,14 @@
 #+konqi.ic.openstreetmap:10.0.16.1
 #+konqi.oob.openstreetmap:10.0.17.1
 
-# Tile cache server
+# Tile cache servers
 
 +orm.openstreetmap:193.63.75.98
 #+orm.ic.openstreetmap:10.0.16.2
 #+orm.oob.openstreetmap:10.0.17.2
++gorwen.openstreetmap:85.30.159.149
+3gorwen.openstreetmap:2a02008000003ff8020f20fffef66c09
++gorwen.oob.openstreetmap:85.30.129.101
 
 # Blog aggregator (on Shaun McDonald's VM)
 
