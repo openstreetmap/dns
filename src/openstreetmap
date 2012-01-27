@@ -171,6 +171,7 @@
 +thinkup.openstreetmap:128.40.168.102
 +blog.openstreetmap:128.40.168.102
 +foundation.openstreetmap:128.40.168.102
++tickets.openstreetmap:128.40.168.102
 +ridley.ucl.openstreetmap:10.0.0.3
 
 # Piwik server
@@ -216,7 +217,6 @@
 +help.openstreetmap:89.16.179.150
 +shop.openstreetmap:89.16.179.150
 +dns.openstreetmap:89.16.179.150
-+osticket.openstreetmap:89.16.179.150
 +shenron.bm.openstreetmap:10.0.0.251
 
 3shenron.openstreetmap:200141c800100996021d7dfffec3df70
@@ -228,7 +228,6 @@
 3help.openstreetmap:200141c800100996021d7dfffec3df70
 3shop.openstreetmap:200141c800100996021d7dfffec3df70
 3dns.openstreetmap:200141c800100996021d7dfffec3df70
-3osticket.openstreetmap:200141c800100996021d7dfffec3df70
 
 # Wiki server
 
