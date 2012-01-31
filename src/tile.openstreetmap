@@ -1,23 +1,22 @@
+# London, GB
 london:
   lat: 51.507222
   lon: -0.1275
   preferred:
     continents:
       - EU
-      - AF
-
-moscow:
-  lat: 55.75
-  lon: 37.616667
-  preferred:
     countries:
-      - RU
+      - GB
 
-oregon:
-  lat: 44
-  lon: -120.5
+# Sjöbo, SE
+sjobo:
+  lat: 55.7
+  lon: 13.2
   preferred:
     continents:
-      - NA
-      - SA
-      - OC
+      - EU
+    countries:
+      - DK
+      - FI
+      - NO
+      - SE

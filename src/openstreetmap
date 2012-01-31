@@ -113,9 +113,9 @@
 
 # Map geographic zones to tile servers
 
-+london.tile.openstreetmap:193.63.75.26:3600
-+london.tile.openstreetmap:193.63.75.26:3600
-+london.tile.openstreetmap:128.40.168.95:3600
++london.tile.openstreetmap:193.63.75.98:3600
++sjobo.tile.openstreetmap:85.30.159.149:3600
+3sjobo.tile..openstreetmap:2a02008000003ff8020f20fffef66c09:3600
 
 # Services machine
 
