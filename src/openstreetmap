@@ -46,6 +46,11 @@
 +fiddlestick.oob.openstreetmap:146.179.159.187
 
 +bowser.openstreetmap:193.63.75.103
++openstreetmap:193.63.75.103:600
++www.openstreetmap:193.63.75.103:600
++api.openstreetmap:193.63.75.103:600
++maps.openstreetmap:193.63.75.103:600
++mapz.openstreetmap:193.63.75.103:600
 +bowser.ic.openstreetmap:146.179.159.171
 +bowser.oob.openstreetmap:146.179.159.180
 
