@@ -45,8 +45,9 @@
 +fiddlestick.ic.openstreetmap:146.179.159.163
 +fiddlestick.oob.openstreetmap:146.179.159.187
 
-+bowser.ucl.openstreetmap:10.0.0.11
-+bowser.oob.openstreetmap:10.0.1.11
++bowser.openstreetmap:193.63.75.103
++bowser.ic.openstreetmap:146.179.159.171
++bowser.oob.openstreetmap:146.179.159.180
 
 # Rails application servers
 
@@ -146,6 +147,9 @@
 +smaug.ic.openstreetmap:146.179.159.168
 +db.ic.openstreetmap:146.179.159.168
 +smaug.oob.openstreetmap:146.179.159.182
+
++ramoth.ic.openstreetmap:146.179.159.180
++ramoth.oob.openstreetmap:146.179.159.181
 
 # Development server with wildcard alias for user sites
 
