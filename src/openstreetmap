@@ -148,7 +148,7 @@
 +db.ic.openstreetmap:146.179.159.168
 +smaug.oob.openstreetmap:146.179.159.182
 
-+ramoth.ic.openstreetmap:146.179.159.180
++ramoth.ic.openstreetmap:146.179.159.170
 +ramoth.oob.openstreetmap:146.179.159.181
 
 # Development server with wildcard alias for user sites
