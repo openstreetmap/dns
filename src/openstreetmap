@@ -113,6 +113,7 @@
 +tile.openstreetmap:85.30.159.149:600
 +a.tile.openstreetmap:193.63.75.26:600
 +b.tile.openstreetmap:193.63.75.26:600
++c.tile.openstreetmap:193.63.75.98:600
 +c.tile.openstreetmap:128.40.168.95:600
 +parent.tile.openstreetmap:128.40.168.104:300
 +yevaud.ucl.openstreetmap:10.0.0.15
