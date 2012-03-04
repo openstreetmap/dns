@@ -23,4 +23,4 @@ data/tile.openstreetmap.org kml/tile.openstreetmap.org: src/tile.openstreetmap b
 	bin/mkgeo tile.openstreetmap tile.openstreetmap.org
 
 data/%:
-	sed -e 's/$(notdir $<)/$(notdir $@)/g' < $< > $@
+	sed -e 's/$(notdir $<):/$(notdir $@):/g' < $< > $@
