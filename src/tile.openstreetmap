@@ -10,8 +10,8 @@ london:
 
 # Sjöbo, SE
 sjobo:
-  lat: 55.7
-  lon: 13.2
+  lat: 55.632025
+  lon: 13.70273
   preferred:
     continents:
       - EU
