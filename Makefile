@@ -19,7 +19,7 @@ data/osmfoundation.org: src/osmfoundation
 data/stateofthemap.org: src/stateofthemap
 data/stateofthemap.com: src/stateofthemap
 
-data/tile.openstreetmap.org kml/tile.openstreetmap.org: src/tile.openstreetmap bin/mkgeo lib/countries.xml
+data/tile.openstreetmap.org kml/tile.openstreetmap.org.kml: src/tile.openstreetmap bin/mkgeo lib/countries.xml
 	bin/mkgeo tile.openstreetmap tile.openstreetmap.org
 
 data/%:
