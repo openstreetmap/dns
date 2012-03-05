@@ -5,6 +5,7 @@ london:
   preferred:
     continents:
       - EU
+      - AF
       - NA
       - SA
       - AS
@@ -24,10 +25,11 @@ sjobo:
   lat: 55.632025
   lon: 13.70273
   preferred:
-    continents:
-      - EU
     countries:
       - DK
       - FI
       - NO
       - SE
+      - IS
+      - GL
+      - FO
