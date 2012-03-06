@@ -2,6 +2,7 @@
 london:
   lat: 51.507222
   lon: -0.1275
+  default: true
   preferred:
     continents:
       - EU

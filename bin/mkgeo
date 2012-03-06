@@ -88,7 +88,7 @@ foreach my $country (values %countries)
     $kmlwriter->endTag("Placemark");
 }
 
-foreach my $server (keys %$servers)
+foreach my $server (grep { $servers->{$_}->{default} }keys %$servers)
 {
     $zonefile->print("Cxx.${zone}:${server}.${zone}:600\n");
 }
