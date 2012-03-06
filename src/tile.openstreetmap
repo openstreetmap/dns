@@ -26,6 +26,7 @@ sjobo:
   lat: 55.632025
   lon: 13.70273
   preferred:
+    continents:
       - EU
     countries:
       - DK
