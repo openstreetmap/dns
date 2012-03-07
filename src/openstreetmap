@@ -120,8 +120,8 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 # Map geographic zones to tile servers
 
 +london.tile.openstreetmap:193.63.75.98:3600
-+sjobo.tile.openstreetmap:85.30.159.149:3600
-3sjobo.tile.openstreetmap:2a02008000003ff8020f20fffef66c09:3600
+# +sjobo.tile.openstreetmap:85.30.159.149:3600
+# 3sjobo.tile.openstreetmap:2a02008000003ff8020f20fffef66c09:3600
 +sjobo.tile.openstreetmap:85.30.190.241:3600
 3sjobo.tile.openstreetmap:2a02008000003ff8022264fffe2a2714:3600
 
