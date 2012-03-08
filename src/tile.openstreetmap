@@ -7,7 +7,6 @@ london:
     continents:
       - EU
       - NA
-      - SA
     countries:
       - GB
       - FR
@@ -28,6 +27,7 @@ sjobo:
       - AF
       - OC
       - AS
+      - SA
     countries:
       - DK
       - FI
