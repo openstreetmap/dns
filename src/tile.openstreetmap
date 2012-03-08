@@ -6,11 +6,9 @@ london:
   preferred:
     continents:
       - EU
-      - AF
       - NA
       - SA
       - AS
-      - OC
     countries:
       - GB
       - FR
@@ -28,6 +26,8 @@ sjobo:
   preferred:
     continents:
       - EU
+      - AF
+      - OC
     countries:
       - DK
       - FI
