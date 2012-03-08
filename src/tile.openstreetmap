@@ -9,13 +9,6 @@ london:
       - NA
     countries:
       - GB
-      - FR
-      - DE
-      - ES
-      - PT
-      - LU
-      - CH
-      - LI
 
 # Sjöbo, SE
 sjobo:
@@ -41,3 +34,10 @@ sjobo:
       - LV
       - CZ
       - NL
+      - FR
+      - DE
+      - ES
+      - PT
+      - LU
+      - CH
+      - LI
