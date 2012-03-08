@@ -8,7 +8,6 @@ london:
       - EU
       - NA
       - SA
-      - AS
     countries:
       - GB
       - FR
@@ -28,6 +27,7 @@ sjobo:
       - EU
       - AF
       - OC
+      - AS
     countries:
       - DK
       - FI
