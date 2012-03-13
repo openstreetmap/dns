@@ -197,6 +197,9 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 +faffy.oob.openstreetmap:10.0.1.7
 +faffy.openstreetmap:128.40.168.108
 +agri.openstreetmap:128.40.168.108
++a.agri.openstreetmap:128.40.168.108
++b.agri.openstreetmap:128.40.168.108
++c.agri.openstreetmap:128.40.168.108
 
 # Spare machines
 
