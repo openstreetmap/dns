@@ -138,17 +138,6 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 +backup.ic.openstreetmap:146.179.159.164
 +horntail.oob.openstreetmap:146.179.159.186
 
-# Osmarender tile server, with wildcard alias to allow parallel loading
-
-+tah.openstreetmap:129.132.168.206
-+a.tah.openstreetmap:129.132.168.206
-+b.tah.openstreetmap:129.132.168.206
-+c.tah.openstreetmap:129.132.168.206
-+d.tah.openstreetmap:129.132.168.206
-+e.tah.openstreetmap:129.132.168.206
-+f.tah.openstreetmap:129.132.168.206
-+server.tah.openstreetmap:129.132.168.206
-
 # Database server
 
 +smaug.ic.openstreetmap:146.179.159.168
@@ -192,14 +181,15 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 +eustace.ucl.openstreetmap:10.0.0.9
 +eustace.oob.openstreetmap:10.0.1.9
 
-# Faffy (Imagery testing server)
-+faffy.ucl.openstreetmap:10.0.0.7
-+faffy.oob.openstreetmap:10.0.1.7
+# Imagery server
+
 +faffy.openstreetmap:128.40.168.108
 +agri.openstreetmap:128.40.168.108
 +a.agri.openstreetmap:128.40.168.108
 +b.agri.openstreetmap:128.40.168.108
 +c.agri.openstreetmap:128.40.168.108
++faffy.ucl.openstreetmap:10.0.0.7
++faffy.oob.openstreetmap:10.0.1.7
 
 # Spare machines
 
