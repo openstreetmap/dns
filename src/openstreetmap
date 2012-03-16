@@ -66,17 +66,12 @@
 +rails3.ic.openstreetmap:146.179.159.167
 +norbert.oob.openstreetmap:146.179.159.183
 
-# Gazetteer (nominatim) server
+# Nominatim server
 
 +poldi.openstreetmap:128.40.168.106 
 +nominatim.openstreetmap:128.40.168.106:600
 +poldi.ucl.openstreetmap:10.0.0.16
 +poldi.oob.openstreetmap:10.0.1.16
-
-# Gazetteer (namefinder) server
-
-+gazetteer.openstreetmap:128.40.168.96
-+gazetteer.ucl.openstreetmap:10.0.0.1
 
 # XAPI server
 
