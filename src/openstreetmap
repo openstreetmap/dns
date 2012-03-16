@@ -188,6 +188,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 
 # Spare machines
 
++urmel.openstreetmap:128.40.168.96
 +urmel.ucl.openstreetmap:10.0.0.6
 +urmel.oob.openstreetmap:10.0.1.6
 +puff.ucl.openstreetmap:10.0.0.10
