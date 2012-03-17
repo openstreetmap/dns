@@ -124,7 +124,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 
 +horntail.openstreetmap:193.63.75.101
 +planet.openstreetmap:193.63.75.101
-+munin.openstreetmap:193.63.75.101
++munin.openstreetmap:193.63.75.101:600
 +apt.openstreetmap:193.63.75.101
 +stats.openstreetmap:193.63.75.101
 +chef.openstreetmap:193.63.75.101
