@@ -124,7 +124,6 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 
 +horntail.openstreetmap:193.63.75.101
 +planet.openstreetmap:193.63.75.101
-+munin.openstreetmap:193.63.75.101:600
 +apt.openstreetmap:193.63.75.101
 +stats.openstreetmap:193.63.75.101
 +chef.openstreetmap:193.63.75.101
@@ -186,11 +185,15 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 +faffy.ucl.openstreetmap:10.0.0.7
 +faffy.oob.openstreetmap:10.0.1.7
 
-# Spare machines
+# Munin server
 
 +urmel.openstreetmap:128.40.168.96
++munin.openstreetmap:128.40.168.96:600
 +urmel.ucl.openstreetmap:10.0.0.6
 +urmel.oob.openstreetmap:10.0.1.6
+
+# Spare machines
+
 +puff.ucl.openstreetmap:10.0.0.10
 +puff.oob.openstreetmap:10.0.1.10
 
