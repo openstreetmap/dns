@@ -137,7 +137,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 # Database server
 
 +smaug.ic.openstreetmap:146.179.159.168
-+db.ic.openstreetmap:146.179.159.168
++db.ic.openstreetmap:146.179.159.168:600
 +smaug.oob.openstreetmap:146.179.159.182
 
 +ramoth.ic.openstreetmap:146.179.159.170
