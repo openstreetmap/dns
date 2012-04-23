@@ -1,0 +1,15 @@
+# tinydns data for opengeodata
+#
+# Full reference is at http://cr.yp.to/djbdns/tinydns-data.html
+
+# Let Bytemark handle the DNS
+
+.opengeodata::a.ns.bytemark.co.uk
+.opengeodata::b.ns.bytemark.co.uk
+.opengeodata::c.ns.bytemark.co.uk
+
+# Main web server and it's aliases
+
++opengeodata:184.106.20.102:3600
++old.opengeodata:80.68.93.92
++www.opengeodata:184.106.20.102:3600
