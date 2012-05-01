@@ -48,11 +48,11 @@
 +spike-02.oob.openstreetmap:146.179.159.187
 
 +spike-03.openstreetmap:193.63.75.103
-#+openstreetmap:193.63.75.103:60
-#+www.openstreetmap:193.63.75.103:60
-#+api.openstreetmap:193.63.75.103:60
-#+maps.openstreetmap:193.63.75.103:60
-#+mapz.openstreetmap:193.63.75.103:60
++openstreetmap:193.63.75.103:60
++www.openstreetmap:193.63.75.103:60
++api.openstreetmap:193.63.75.103:60
++maps.openstreetmap:193.63.75.103:60
++mapz.openstreetmap:193.63.75.103:60
 +spike-03.ic.openstreetmap:146.179.159.171
 +spike-03.oob.openstreetmap:146.179.159.180
 
