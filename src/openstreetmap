@@ -38,14 +38,14 @@
 +spike-01.ic.openstreetmap:146.179.159.162
 +spike-01.oob.openstreetmap:146.179.159.188
 
-+fiddlestick.openstreetmap:193.63.75.100
++spike-02.openstreetmap:193.63.75.100
 #+openstreetmap:193.63.75.100:60
 #+www.openstreetmap:193.63.75.100:60
 #+api.openstreetmap:193.63.75.100:60
 #+maps.openstreetmap:193.63.75.100:60
 #+mapz.openstreetmap:193.63.75.100:60
-+fiddlestick.ic.openstreetmap:146.179.159.163
-+fiddlestick.oob.openstreetmap:146.179.159.187
++spike-02.ic.openstreetmap:146.179.159.163
++spike-02.oob.openstreetmap:146.179.159.187
 
 +bowser.openstreetmap:193.63.75.103
 +openstreetmap:193.63.75.103:60
