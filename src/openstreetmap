@@ -30,29 +30,29 @@
 # Main web servers and their aliases
 
 +soup.openstreetmap:193.63.75.99
-+openstreetmap:193.63.75.99:600
-+www.openstreetmap:193.63.75.99:600
-+api.openstreetmap:193.63.75.99:600
-+maps.openstreetmap:193.63.75.99:600
-+mapz.openstreetmap:193.63.75.99:600
++openstreetmap:193.63.75.99:60
++www.openstreetmap:193.63.75.99:60
++api.openstreetmap:193.63.75.99:60
++maps.openstreetmap:193.63.75.99:60
++mapz.openstreetmap:193.63.75.99:60
 +soup.ic.openstreetmap:146.179.159.162
 +soup.oob.openstreetmap:146.179.159.188
 
 +fiddlestick.openstreetmap:193.63.75.100
-+openstreetmap:193.63.75.100:600
-+www.openstreetmap:193.63.75.100:600
-+api.openstreetmap:193.63.75.100:600
-+maps.openstreetmap:193.63.75.100:600
-+mapz.openstreetmap:193.63.75.100:600
++openstreetmap:193.63.75.100:60
++www.openstreetmap:193.63.75.100:60
++api.openstreetmap:193.63.75.100:60
++maps.openstreetmap:193.63.75.100:60
++mapz.openstreetmap:193.63.75.100:60
 +fiddlestick.ic.openstreetmap:146.179.159.163
 +fiddlestick.oob.openstreetmap:146.179.159.187
 
 +bowser.openstreetmap:193.63.75.103
-+openstreetmap:193.63.75.103:600
-+www.openstreetmap:193.63.75.103:600
-+api.openstreetmap:193.63.75.103:600
-+maps.openstreetmap:193.63.75.103:600
-+mapz.openstreetmap:193.63.75.103:600
++openstreetmap:193.63.75.103:60
++www.openstreetmap:193.63.75.103:60
++api.openstreetmap:193.63.75.103:60
++maps.openstreetmap:193.63.75.103:60
++mapz.openstreetmap:193.63.75.103:60
 +bowser.ic.openstreetmap:146.179.159.171
 +bowser.oob.openstreetmap:146.179.159.180
 
