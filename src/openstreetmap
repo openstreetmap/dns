@@ -39,20 +39,20 @@
 +spike-01.oob.openstreetmap:146.179.159.188
 
 +spike-02.openstreetmap:193.63.75.100
-#+openstreetmap:193.63.75.100:60
-#+www.openstreetmap:193.63.75.100:60
-#+api.openstreetmap:193.63.75.100:60
-#+maps.openstreetmap:193.63.75.100:60
-#+mapz.openstreetmap:193.63.75.100:60
++openstreetmap:193.63.75.100:60
++www.openstreetmap:193.63.75.100:60
++api.openstreetmap:193.63.75.100:60
++maps.openstreetmap:193.63.75.100:60
++mapz.openstreetmap:193.63.75.100:60
 +spike-02.ic.openstreetmap:146.179.159.163
 +spike-02.oob.openstreetmap:146.179.159.187
 
 +bowser.openstreetmap:193.63.75.103
-+openstreetmap:193.63.75.103:60
-+www.openstreetmap:193.63.75.103:60
-+api.openstreetmap:193.63.75.103:60
-+maps.openstreetmap:193.63.75.103:60
-+mapz.openstreetmap:193.63.75.103:60
+#+openstreetmap:193.63.75.103:60
+#+www.openstreetmap:193.63.75.103:60
+#+api.openstreetmap:193.63.75.103:60
+#+maps.openstreetmap:193.63.75.103:60
+#+mapz.openstreetmap:193.63.75.103:60
 +bowser.ic.openstreetmap:146.179.159.171
 +bowser.oob.openstreetmap:146.179.159.180
 
