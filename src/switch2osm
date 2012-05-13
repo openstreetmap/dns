@@ -1,0 +1,14 @@
+# tinydns data for switch2osm
+#
+# Full reference is at http://cr.yp.to/djbdns/tinydns-data.html
+
+# Let Bytemark handle the DNS
+
+.switch2osm::a.ns.bytemark.co.uk
+.switch2osm::b.ns.bytemark.co.uk
+.switch2osm::c.ns.bytemark.co.uk
+
+# Main web server and it's aliases
+
++switch2osm:212.110.186.236:3600
++www.switch2osm:212.110.186.236:3600
