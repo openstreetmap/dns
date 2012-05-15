@@ -1,19 +1,20 @@
 # London, GB
-london:
-  lat: 51.507222
-  lon: -0.1275
-  default: true
-  preferred:
-    continents:
-      - EU
-      - NA
-    countries:
-      - GB
+#london:
+#  lat: 51.507222
+#  lon: -0.1275
+#  default: true
+#  preferred:
+#    continents:
+#      - EU
+#      - NA
+#    countries:
+#      - GB
 
 # Sjöbo, SE
 sjobo:
   lat: 55.632025
   lon: 13.70273
+  default: true
   preferred:
     continents:
       - EU
