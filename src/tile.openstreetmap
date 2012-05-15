@@ -17,10 +17,8 @@ sjobo:
   preferred:
     continents:
       - EU
-      - AF
       - OC
       - AS
-      - SA
     countries:
       - DK
       - FI
