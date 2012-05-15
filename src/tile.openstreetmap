@@ -2,6 +2,7 @@
 london:
   lat: 51.507222
   lon: -0.1275
+  pingdom: 546503
   default: true
   preferred:
     continents:
@@ -14,6 +15,7 @@ london:
 sjobo:
   lat: 55.632025
   lon: 13.70273
+  pingdom: 546505
   preferred:
     continents:
       - EU
