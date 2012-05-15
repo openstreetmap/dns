@@ -11,33 +11,33 @@ london:
       - GB
 
 # Sjöbo, SE
-#sjobo:
-#  lat: 55.632025
-#  lon: 13.70273
-#  preferred:
-#    continents:
-#      - EU
-#      - AF
-#      - OC
-#      - AS
-#      - SA
-#    countries:
-#      - DK
-#      - FI
-#      - NO
-#      - SE
-#      - IS
-#      - GL
-#      - FO
-#      - PL
-#      - LT
-#      - LV
-#      - CZ
-#      - NL
-#      - FR
-#      - DE
-#      - ES
-#      - PT
-#      - LU
-#      - CH
-#      - LI
+sjobo:
+  lat: 55.632025
+  lon: 13.70273
+  preferred:
+    continents:
+      - EU
+      - AF
+      - OC
+      - AS
+      - SA
+    countries:
+      - DK
+      - FI
+      - NO
+      - SE
+      - IS
+      - GL
+      - FO
+      - PL
+      - LT
+      - LV
+      - CZ
+      - NL
+      - FR
+      - DE
+      - ES
+      - PT
+      - LU
+      - CH
+      - LI
