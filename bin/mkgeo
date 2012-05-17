@@ -15,24 +15,30 @@ my $source = shift @ARGV;
 my $zone = shift @ARGV;
 my $servers = YAML::LoadFile("src/${source}");
 
-my $ua = LWP::UserAgent->new;
-
-$ua->default_header("App-Key", "2cohi62u5haxvqmypk3ljqqrze1jufrh");
-$ua->credentials("api.pingdom.com:443", "Pingdom API", $ENV{PINGDOM_USERNAME}, $ENV{PINGDOM_PASSWORD});
-
 foreach my $server (values %$servers)
 {
     $server->{status} = "down";
+}
 
-    if (my $checkid = $server->{pingdom})
+if ($ENV{PINGDOM_USERNAME} && $ENV{PINGDOM_PASSWORD})
+{
+    my $ua = LWP::UserAgent->new;
+
+    $ua->default_header("App-Key", "2cohi62u5haxvqmypk3ljqqrze1jufrh");
+    $ua->credentials("api.pingdom.com:443", "Pingdom API", $ENV{PINGDOM_USERNAME}, $ENV{PINGDOM_PASSWORD});
+
+    foreach my $server (values %$servers)
     {
-        my $response = $ua->get("https://api.pingdom.com/api/2.0/checks/${checkid}");
-
-        if ($response->is_success)
+        if (my $checkid = $server->{pingdom})
         {
-            my $check = decode_json($response->content);
+            my $response = $ua->get("https://api.pingdom.com/api/2.0/checks/${checkid}");
 
-            $server->{status} = $check->{check}->{status};
+            if ($response->is_success)
+            {
+                my $check = decode_json($response->content);
+
+                $server->{status} = $check->{check}->{status};
+            }
         }
     }
 }
