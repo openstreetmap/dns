@@ -3,10 +3,13 @@ all: data/openstreetmap.org data/openstreetmap.com data/openstreetmap.net \
      data/osmfoundation.org data/stateofthemap.org data/stateofthemap.com \
      data/opengeodata.org \
      data/switch2osm.org data/switch2osm.com \
-     data/tile.openstreetmap.org kml/tile.openstreetmap.org.kml
+     data/tile.openstreetmap.org
 
 clean:
 	rm lib/countries.xml data/*
+
+update: all
+	bin/update
 
 lib/countries.xml:
 	curl -s -o $@ http://api.geonames.org/countryInfo?username=demo
