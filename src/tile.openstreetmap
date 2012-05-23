@@ -8,6 +8,8 @@ london:
     continents:
       - EU
       - NA
+      - OC
+      - AF
     countries:
       - GB
 
