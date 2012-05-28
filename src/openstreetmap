@@ -66,9 +66,9 @@
 +rails2.ic.openstreetmap:146.179.159.166
 +thorn-02.oob.openstreetmap:146.179.159.184
 
-+norbert.ic.openstreetmap:146.179.159.167
++thorn-03.ic.openstreetmap:146.179.159.167
 +rails3.ic.openstreetmap:146.179.159.167
-+norbert.oob.openstreetmap:146.179.159.183
++thorn-03.oob.openstreetmap:146.179.159.183
 
 # Nominatim server
 
