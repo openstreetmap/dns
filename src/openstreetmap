@@ -274,7 +274,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
  
 # Donation site
 
-+donate.openstreetmap:89.145.67.86
++donate.openstreetmap:89.145.67.86:600
 
 # HOT site
 
