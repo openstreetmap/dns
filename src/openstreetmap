@@ -31,31 +31,31 @@
 # Main web servers and their aliases
 
 +spike-01.openstreetmap:193.63.75.99
-+openstreetmap:193.63.75.99:60
-+www.openstreetmap:193.63.75.99:60
-+api.openstreetmap:193.63.75.99:60
-+maps.openstreetmap:193.63.75.99:60
-+mapz.openstreetmap:193.63.75.99:60
++openstreetmap:193.63.75.99:600
++www.openstreetmap:193.63.75.99:600
++api.openstreetmap:193.63.75.99:600
++maps.openstreetmap:193.63.75.99:600
++mapz.openstreetmap:193.63.75.99:600
 +spike-01.ic.openstreetmap:146.179.159.162
 +www.ic.openstreetmap:146.179.159.162:300
 +spike-01.oob.openstreetmap:146.179.159.188
 
 +spike-02.openstreetmap:193.63.75.100
-+openstreetmap:193.63.75.100:60
-+www.openstreetmap:193.63.75.100:60
-+api.openstreetmap:193.63.75.100:60
-+maps.openstreetmap:193.63.75.100:60
-+mapz.openstreetmap:193.63.75.100:60
++openstreetmap:193.63.75.100:600
++www.openstreetmap:193.63.75.100:600
++api.openstreetmap:193.63.75.100:600
++maps.openstreetmap:193.63.75.100:600
++mapz.openstreetmap:193.63.75.100:600
 +spike-02.ic.openstreetmap:146.179.159.163
 +www.ic.openstreetmap:146.179.159.163:300
 +spike-02.oob.openstreetmap:146.179.159.180
 
 +spike-03.openstreetmap:193.63.75.103
-+openstreetmap:193.63.75.103:60
-+www.openstreetmap:193.63.75.103:60
-+api.openstreetmap:193.63.75.103:60
-+maps.openstreetmap:193.63.75.103:60
-+mapz.openstreetmap:193.63.75.103:60
++openstreetmap:193.63.75.103:600
++www.openstreetmap:193.63.75.103:600
++api.openstreetmap:193.63.75.103:600
++maps.openstreetmap:193.63.75.103:600
++mapz.openstreetmap:193.63.75.103:600
 +spike-03.ic.openstreetmap:146.179.159.171
 +www.ic.openstreetmap:146.179.159.171:300
 +spike-03.oob.openstreetmap:146.179.159.187
