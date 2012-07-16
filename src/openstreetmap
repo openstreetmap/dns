@@ -37,6 +37,7 @@
 +maps.openstreetmap:193.63.75.99:60
 +mapz.openstreetmap:193.63.75.99:60
 +spike-01.ic.openstreetmap:146.179.159.162
++www.ic.openstreetmap:146.179.159.162:300
 +spike-01.oob.openstreetmap:146.179.159.188
 
 +spike-02.openstreetmap:193.63.75.100
@@ -46,6 +47,7 @@
 +maps.openstreetmap:193.63.75.100:60
 +mapz.openstreetmap:193.63.75.100:60
 +spike-02.ic.openstreetmap:146.179.159.163
++www.ic.openstreetmap:146.179.159.163:300
 +spike-02.oob.openstreetmap:146.179.159.180
 
 +spike-03.openstreetmap:193.63.75.103
@@ -55,6 +57,7 @@
 +maps.openstreetmap:193.63.75.103:60
 +mapz.openstreetmap:193.63.75.103:60
 +spike-03.ic.openstreetmap:146.179.159.171
++www.ic.openstreetmap:146.179.159.171:300
 +spike-03.oob.openstreetmap:146.179.159.187
 
 # Rails application servers
