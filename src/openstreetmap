@@ -96,11 +96,11 @@
 
 # JXAPI server
 
-+azure.openstreetmap:128.40.168.100
++norbert.openstreetmap:128.40.168.100
 +jxapi.openstreetmap:128.40.168.100
-+azure.ilo.openstreetmap:10.0.0.55
-+azure.ucl.openstreetmap:10.0.0.5
-+azure.oob.openstreetmap:10.0.1.5
++norbert.ilo.openstreetmap:10.0.0.55
++norbert.ucl.openstreetmap:10.0.0.5
++norbert.oob.openstreetmap:10.0.1.5
 
 # OWL server
 
