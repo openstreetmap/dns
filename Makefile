@@ -1,5 +1,6 @@
 all: data/openstreetmap.org data/openstreetmap.com data/openstreetmap.net \
      data/openstreetmaps.org data/osm.org data/openmaps.org \
+     data/openworldmap.org data/freeosm.org \
      data/osmfoundation.org data/stateofthemap.org data/stateofthemap.com \
      data/opengeodata.org \
      data/switch2osm.org data/switch2osm.com \
@@ -20,6 +21,8 @@ data/openstreetmap.net: src/openstreetmap
 data/openstreetmaps.org: src/openstreetmap
 data/osm.org: src/openstreetmap
 data/openmaps.org: src/openstreetmap
+data/openworldmap.org: src/openstreetmap
+data/freeosm.org: src/openstreetmap
 data/osmfoundation.org: src/osmfoundation
 data/stateofthemap.org: src/stateofthemap
 data/stateofthemap.com: src/stateofthemap
