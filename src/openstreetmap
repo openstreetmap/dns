@@ -161,10 +161,6 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 +b.ooc.openstreetmap:128.40.168.103
 +c.ooc.openstreetmap:128.40.168.103
 +npe.openstreetmap:128.40.168.103
-+os.openstreetmap:128.40.168.103
-+a.os.openstreetmap:128.40.168.103
-+b.os.openstreetmap:128.40.168.103
-+c.os.openstreetmap:128.40.168.103
 +errol.ucl.openstreetmap:10.0.0.14
 +errol.oob.openstreetmap:10.0.1.14
 
@@ -188,10 +184,14 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 # Imagery server
 
 +faffy.openstreetmap:128.40.168.108
-+agri.openstreetmap:128.40.168.108
-+a.agri.openstreetmap:128.40.168.108
-+b.agri.openstreetmap:128.40.168.108
-+c.agri.openstreetmap:128.40.168.108
++agri.openstreetmap:128.40.168.108:3600
++a.agri.openstreetmap:128.40.168.108:3600
++b.agri.openstreetmap:128.40.168.108:3600
++c.agri.openstreetmap:128.40.168.108:3600
++os.openstreetmap:128.40.168.108:3600
++a.os.openstreetmap:128.40.168.108:3600
++b.os.openstreetmap:128.40.168.108:3600
++c.os.openstreetmap:128.40.168.108:3600
 +faffy.ucl.openstreetmap:10.0.0.7
 +faffy.oob.openstreetmap:10.0.1.7
 
