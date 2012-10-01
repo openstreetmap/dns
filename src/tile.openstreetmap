@@ -61,7 +61,7 @@ brisbane:
   pingdom: 657940
   allowed:
     countries:
-      - ZZ
+      - AU
   preferred:
     countries:
-      - ZZ
+      - AU
