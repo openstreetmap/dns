@@ -58,6 +58,7 @@ moscow:
 brisbane:
   lat: 153.0167
   lon: -27.5
+  pingdom: 657940
   allowed:
     countries:
       - ZZ
