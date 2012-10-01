@@ -126,6 +126,8 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 +sjobo.tile.openstreetmap:85.30.190.241:3600
 # remove IPv6 until we have IPv6 capable squid
 # 3sjobo.tile.openstreetmap:2a02008000003ff8022264fffe2a2714:3600
++moscow.tile.openstreetmap:130.193.62.73:3600
++brisbane.tile.openstreetmap:203.26.72.12:3600
 
 # Services machine
 

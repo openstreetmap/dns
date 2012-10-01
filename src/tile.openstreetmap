@@ -42,3 +42,25 @@ sjobo:
       - LU
       - CH
       - LI
+
+# Moscow, RU
+moscow:
+  lat: 55.75
+  lon: 37.617
+  allowed:
+    countries:
+      - ZZ
+  preferred:
+    countries:
+      - ZZ
+
+# Brisbane, AU
+brisbane:
+  lat: 153.0167
+  lon: -27.5
+  allowed:
+    countries:
+      - ZZ
+  preferred:
+    countries:
+      - ZZ
