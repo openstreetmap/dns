@@ -109,6 +109,10 @@ foreach my $country (values %countries)
     {
         $clon = $clon - 360;
     }
+    elsif ($slon > 0 && $clon < 0 && 360 + $clon - $slon < $slon - $clon)
+    {
+        $slon = $slon - 360;
+    }
 
     $zonefile->print("C\L$country->{code}\E.${zone}:$servers[0]->{name}.${zone}:600\n");
 
