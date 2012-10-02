@@ -62,6 +62,16 @@ brisbane:
   allowed:
     countries:
       - AU
+      - NZ
+      - PG
+      - FJ
+      - NC
+      - VU
   preferred:
     countries:
       - AU
+      - NZ
+      - PG
+      - FJ
+      - NC
+      - VU
