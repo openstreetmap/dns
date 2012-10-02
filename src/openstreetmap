@@ -128,6 +128,8 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 # 3sjobo.tile.openstreetmap:2a02008000003ff8022264fffe2a2714:3600
 +moscow.tile.openstreetmap:130.193.62.73:3600
 +brisbane.tile.openstreetmap:203.26.72.12:3600
+# remove IPv6 until we have IPv6 capable squid
+# 3brisbane.tile.openstreetmap:2402640000010006021708fffe5640c3:3600
 
 # Services machine
 
@@ -264,6 +266,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 +fume.oob.openstreetmap:85.30.129.98
 +gorynych.openstreetmap:130.193.62.73
 +bunyip.openstreetmap:203.26.72.12
+3bunyip.openstreetmap:2402640000010006021708fffe5640c3
 
 # Blog aggregator (on Shaun McDonald's VM)
 
