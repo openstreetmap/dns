@@ -56,8 +56,8 @@ moscow:
 
 # Brisbane, AU
 brisbane:
-  lat: 153.0167
-  lon: -27.5
+  lat: -27.5
+  lon: 153.0167
   pingdom: 657940
   allowed:
     countries:
