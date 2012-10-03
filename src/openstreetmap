@@ -116,7 +116,7 @@ Ctile.openstreetmap:tile.geo.openstreetmap.org:600
 Ca.tile.openstreetmap:tile.geo.openstreetmap.org:600
 Cb.tile.openstreetmap:tile.geo.openstreetmap.org:600
 Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
-+parent.tile.openstreetmap:193.63.75.98:300
++parent.tile.openstreetmap:128.40.168.104:300
 +yevaud.ucl.openstreetmap:10.0.0.15
 +yevaud.oob.openstreetmap:10.0.1.15
 
