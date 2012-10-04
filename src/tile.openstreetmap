@@ -49,10 +49,16 @@ moscow:
   lon: 37.617
   allowed:
     countries:
-      - ZZ
+      - UA
+      - BY
+      - MD
+      - KZ
   preferred:
     countries:
-      - ZZ
+      - UA
+      - BY
+      - MD
+      - KZ
 
 # Brisbane, AU
 brisbane:
