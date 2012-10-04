@@ -54,10 +54,10 @@ foreach my $country ($countries->look_down("_tag" => "country"))
     my $code = $country->look_down("_tag" => "countryCode")->as_text;
     my $name = $country->look_down("_tag" => "countryName")->as_text;
     my $continent = $country->look_down("_tag" => "continent")->as_text;
-    my $west = $country->look_down("_tag" => "bBoxWest")->as_text;
-    my $north = $country->look_down("_tag" => "bBoxNorth")->as_text;
-    my $east = $country->look_down("_tag" => "bBoxEast")->as_text;
-    my $south = $country->look_down("_tag" => "bBoxSouth")->as_text;
+    my $west = $country->look_down("_tag" => "west")->as_text;
+    my $north = $country->look_down("_tag" => "north")->as_text;
+    my $east = $country->look_down("_tag" => "east")->as_text;
+    my $south = $country->look_down("_tag" => "south")->as_text;
     my $lat = centre_lat( $south, $north );
     my $lon = centre_lon( $west, $east );
     my @servers;
