@@ -48,6 +48,7 @@ sjobo:
 moscow:
   lat: 55.75
   lon: 37.617
+  pingdom: 659912
   allowed:
     countries:
       - UA
