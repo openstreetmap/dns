@@ -20,12 +20,13 @@ sjobo:
   pingdom: 546505
   allowed:
     continents:
-     - EU
-     - AS
+      - EU
+      - AS
   preferred:
     countries:
       - DK
       - FI
+      - AX
       - NO
       - SE
       - IS
