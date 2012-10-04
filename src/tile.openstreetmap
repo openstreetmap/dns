@@ -18,10 +18,11 @@ sjobo:
   lat: 55.632025
   lon: 13.70273
   pingdom: 546505
-  preferred:
+  allowed:
     continents:
-      - EU
-      - AS
+     - EU
+     - AS
+  preferred:
     countries:
       - DK
       - FI
@@ -53,12 +54,24 @@ moscow:
       - BY
       - MD
       - KZ
+      - EE
+      - LV
+      - LT
+      - AM
+      - AZ
+      - GE
   preferred:
     countries:
       - UA
       - BY
       - MD
       - KZ
+      - EE
+      - LV
+      - LT
+      - AM
+      - AZ
+      - GE
 
 # Brisbane, AU
 brisbane:
