@@ -51,6 +51,7 @@ moscow:
   pingdom: 659912
   allowed:
     countries:
+      - RU
       - UA
       - BY
       - MD
@@ -63,6 +64,7 @@ moscow:
       - GE
   preferred:
     countries:
+      - RU
       - UA
       - BY
       - MD
