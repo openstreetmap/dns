@@ -196,6 +196,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 +faffy.ucl.openstreetmap:10.0.0.7
 +faffy.oob.openstreetmap:10.0.1.7
 
++draco.openstreetmap:128.40.168.95 
 +draco.ucl.openstreetmap:10.0.0.11
 +draco.oob.openstreetmap:10.0.1.11
 
@@ -208,6 +209,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 
 # Gosmore routing server
 
++sarel.openstreetmap:128.40.168.100
 +sarel.ucl.openstreetmap:10.0.0.12
 +sarel.oob.openstreetmap:10.0.1.12
 
