@@ -182,7 +182,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 +eustace.ucl.openstreetmap:10.0.0.9
 +eustace.oob.openstreetmap:10.0.1.9
 
-# Imagery server
+# Imagery servers
 
 +faffy.openstreetmap:128.40.168.108
 +agri.openstreetmap:128.40.168.108:3600
@@ -196,12 +196,20 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 +faffy.ucl.openstreetmap:10.0.0.7
 +faffy.oob.openstreetmap:10.0.1.7
 
++draco.ucl.openstreetmap:10.0.0.11
++draco.oob.openstreetmap:10.0.1.11
+
 # Munin server
 
 +urmel.openstreetmap:128.40.168.96
 +munin.openstreetmap:128.40.168.96:600
 +urmel.ucl.openstreetmap:10.0.0.6
 +urmel.oob.openstreetmap:10.0.1.6
+
+# Gosmore routing server
+
++sarel.ucl.openstreetmap:10.0.0.12
++sarel.oob.openstreetmap:10.0.1.12
 
 # Spare machines
 
