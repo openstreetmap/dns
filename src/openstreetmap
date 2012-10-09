@@ -87,13 +87,6 @@
 +xapi.openstreetmap:128.40.168.97
 +fafnir.ucl.openstreetmap:10.0.0.4
 
-# Tile cache server
-
-+albi.openstreetmap:128.40.168.95
-+albi.ilo.openstreetmap:10.0.0.52
-+albi.ucl.openstreetmap:10.0.0.2
-+albi.oob.openstreetmap:10.0.1.2
-
 # JXAPI server
 
 +norbert.openstreetmap:128.40.168.100
