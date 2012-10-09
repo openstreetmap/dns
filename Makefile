@@ -2,6 +2,7 @@ all: data/openstreetmap.org data/openstreetmap.com data/openstreetmap.net \
      data/openstreetmaps.org data/osm.org data/openmaps.org \
      data/openworldmap.org data/freeosm.org \
      data/osmfoundation.org data/stateofthemap.org data/stateofthemap.com \
+     data/stateofthemap.eu \
      data/opengeodata.org \
      data/switch2osm.org data/switch2osm.com \
      data/tile.openstreetmap.org
@@ -29,6 +30,7 @@ data/stateofthemap.com: src/stateofthemap
 data/opengeodata.org: src/opengeodata
 data/switch2osm.org: src/switch2osm
 data/switch2osm.com: src/switch2osm
+data/stateofthemap.eu: src/stateofthemap-eu
 
 data/tile.openstreetmap.org kml/tile.openstreetmap.org.kml: src/tile.openstreetmap bin/mkgeo lib/countries.xml
 	bin/mkgeo tile.openstreetmap tile.openstreetmap.org
