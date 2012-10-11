@@ -82,14 +82,8 @@ brisbane:
   lon: 153.0167
   pingdom: 657940
   allowed:
-    continents:
-      - OC
     countries:
-      - AU
-      - NZ
+      - ZZ
   preferred:
-    continents:
-      - OC
     countries:
-      - AU
-      - NZ
+      - ZZ
