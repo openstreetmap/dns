@@ -246,10 +246,10 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 
 # Wiki server
 
-+konqi.openstreetmap:193.63.75.26:600
++konqi.openstreetmap:193.63.75.104:600
 +konqi.ilo.openstreetmap:193.63.75.27:600
-+wiki.openstreetmap:193.63.75.26:600
-+dump.wiki.openstreetmap:193.63.75.26:600
++wiki.openstreetmap:193.63.75.104:600
++dump.wiki.openstreetmap:193.63.75.104:600
 #+konqi.ic.openstreetmap:10.0.16.1
 #+konqi.oob.openstreetmap:10.0.17.1
 
