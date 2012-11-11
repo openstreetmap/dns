@@ -110,7 +110,7 @@
 # OWL server
 
 +zark.openstreetmap:128.40.168.107
-+owl.openstreetmap:128.40.168107
++owl.openstreetmap:128.40.168.107
 +zark.ucl.openstreetmap:10.0.0.8
 +zark.oob.openstreetmap:10.0.1.8
 
