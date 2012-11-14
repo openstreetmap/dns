@@ -293,9 +293,10 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 
 +blogs.openstreetmap:89.16.175.12
 
-# Cruise (on Shaun McDonald's VM)
+# Continuous integration server (on Shaun McDonald's machine)
 
-+cruise.openstreetmap:89.16.175.12
++ci.openstreetmap:5.9.72.139
++cruise.openstreetmap:5.9.72.139
  
 # Donation site
 
