@@ -93,3 +93,11 @@ brisbane:
     countries:
       - AU
       - NZ
+
+# Pau, FR
+pau:
+  lat: 43.313694
+  lon: -0.365211
+  allowed:
+    continents:
+    countries:
