@@ -1,6 +1,6 @@
 all: data/openstreetmap.org data/openstreetmap.com data/openstreetmap.net \
      data/openstreetmaps.org data/osm.org data/openmaps.org \
-     data/openworldmap.org data/freeosm.org \
+     data/openworldmap.org data/freeosm.org data/open-maps.org data/open-maps.com \
      data/osmfoundation.org data/stateofthemap.org data/stateofthemap.com \
      data/stateofthemap.eu \
      data/opengeodata.org \
@@ -24,6 +24,8 @@ data/osm.org: src/openstreetmap
 data/openmaps.org: src/openstreetmap
 data/openworldmap.org: src/openstreetmap
 data/freeosm.org: src/openstreetmap
+data/open-maps.org: src/openstreetmap
+data/open-maps.com: src/openstreetmap
 data/osmfoundation.org: src/osmfoundation
 data/stateofthemap.org: src/stateofthemap
 data/stateofthemap.com: src/stateofthemap
