@@ -37,8 +37,6 @@ sjobo:
       - CZ
       - NL
       - DE
-      - ES
-      - PT
       - LU
       - CH
       - LI
@@ -104,3 +102,6 @@ pau:
   preferred:
     countries:
       - FR
+      - ES
+      - PT
+
