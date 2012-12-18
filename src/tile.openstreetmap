@@ -98,6 +98,8 @@ brisbane:
 pau:
   lat: 43.313694
   lon: -0.365211
+  pingdom: 718192
   allowed:
     continents:
     countries:
+      - FR
