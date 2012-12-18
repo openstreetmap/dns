@@ -36,7 +36,6 @@ sjobo:
       - PL
       - CZ
       - NL
-      - FR
       - DE
       - ES
       - PT
@@ -101,5 +100,7 @@ pau:
   pingdom: 718192
   allowed:
     continents:
+    countries:
+  preferred:
     countries:
       - FR
