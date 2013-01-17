@@ -1,25 +1,24 @@
 # London, GB
-london:
-  lat: 51.507222
-  lon: -0.1275
-  pingdom: 546503
-  default: true
-  preferred:
-    continents:
-      - EU
-      - NA
-      - OC
-      - AF
-    countries:
-      - GB
-
+# london:
+#  lat: 51.507222
+#  lon: -0.1275
+#  pingdom: 546503
+#  default: false
+#  preferred:
+#    continents:
+#      - EU
+#      - NA
+#      - OC
+#      - AF
+#    countries:
+#      - GB
 # Sjöbo, SE
 sjobo:
   lat: 55.632025
   lon: 13.70273
   pingdom: 546505
   allowed:
-    continents:
+  continents:
       - EU
       - AS
   preferred:
@@ -46,6 +45,12 @@ moscow:
   lat: 55.75
   lon: 37.617
   pingdom: 659912
+  default: true
+  continents:
+      - EU
+      - NA
+      - OC
+      - AF
   allowed:
     countries:
       - RU
@@ -78,6 +83,7 @@ brisbane:
   lat: -27.5
   lon: 153.0167
   pingdom: 657940
+  default: true
   allowed:
     continents:
       - OC
@@ -96,6 +102,7 @@ pau:
   lat: 43.313694
   lon: -0.365211
   pingdom: 718192
+  default: true
   allowed:
     continents:
     countries:
