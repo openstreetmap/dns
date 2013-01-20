@@ -318,4 +318,4 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 # Jochen Topf's taginfo service, running on openstreetmap.de hardware
 
 +taginfo.openstreetmap:85.214.112.59
-#3taginfo.openstreetmap:2a0102384000000003cac7808a7d7be2
+3taginfo.openstreetmap:2a01023840000000002168799ac19e7e
