@@ -227,6 +227,8 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 
 +puff.ucl.openstreetmap:10.0.0.10
 +puff.oob.openstreetmap:10.0.1.10
++idris.ucl.openstreetmap:10.0.0.4
++idris.oob.openstreetmap:10.0.1.4
 
 # APC power switches
 
