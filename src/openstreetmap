@@ -136,6 +136,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 # remove IPv6 until we have IPv6 capable squid
 # 3brisbane.tile.openstreetmap:2402640000010006021708fffe5640c3:3600
 +pau.tile.openstreetmap:193.55.222.229:3600
++amsterdam.tile.openstreetmap:134.90.146.26:3600
 
 # Services machine
 
@@ -292,6 +293,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 +bunyip.openstreetmap:203.26.72.12
 3bunyip.openstreetmap:2402640000010006021708fffe5640c3
 +lurien.openstreetmap:193.55.222.229
++trogdor.openstreetmap:134.90.146.26
 
 # Blog aggregator (on Shaun McDonald's VM)
 
