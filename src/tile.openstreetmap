@@ -35,7 +35,6 @@ sjobo:
       - FO
       - PL
       - CZ
-      - NL
       - DE
       - LU
       - CH
@@ -115,8 +114,11 @@ pau:
 amsterdam:
   lat: 52.37306
   lon: 4.89222
+  pingdom: 766251
   allowed:
     continents:
     countries:
+      - NL
   preferred:
     countries:
+      - NL
