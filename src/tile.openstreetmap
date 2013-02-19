@@ -110,3 +110,13 @@ pau:
       - MC
       - SM
       - VA
+
+# Amsterdam, NL
+amsterdam:
+  lat: 52.37306
+  lon: 4.89222
+  allowed:
+    continents:
+    countries:
+  preferred:
+    countries:
