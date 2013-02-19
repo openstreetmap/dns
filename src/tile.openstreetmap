@@ -36,7 +36,6 @@ sjobo:
       - PL
       - CZ
       - DE
-      - LU
       - CH
       - LI
 
@@ -97,6 +96,7 @@ pau:
   pingdom: 718192
   allowed:
     continents:
+      - EU
     countries:
   preferred:
     countries:
@@ -117,10 +117,10 @@ amsterdam:
   pingdom: 766251
   allowed:
     continents:
+      - EU
     countries:
-      - NL
-      - BE
   preferred:
     countries:
       - NL
       - BE
+      - LU
