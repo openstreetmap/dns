@@ -294,6 +294,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 3bunyip.openstreetmap:2402640000010006021708fffe5640c3
 +lurien.openstreetmap:193.55.222.229
 +trogdor.openstreetmap:134.90.146.26
++trogdor.oob.openstreetmap:134.90.146.30
 
 # Blog aggregator (on Shaun McDonald's VM)
 
