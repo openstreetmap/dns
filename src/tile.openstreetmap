@@ -119,6 +119,8 @@ amsterdam:
     continents:
     countries:
       - NL
+      - BE
   preferred:
     countries:
       - NL
+      - BE
