@@ -3,6 +3,7 @@ london:
   lat: 51.507222
   lon: -0.1275
   pingdom: 546503
+  bandwidth: 100
   default: true
   preferred:
     continents:
@@ -18,6 +19,7 @@ sjobo:
   lat: 55.632025
   lon: 13.70273
   pingdom: 546505
+  bandwidth: 80
   allowed:
     continents:
       - EU
@@ -41,6 +43,7 @@ moscow:
   lat: 55.75
   lon: 37.617
   pingdom: 659912
+  bandwidth: 60
   allowed:
     countries:
       - RU
@@ -67,6 +70,7 @@ brisbane:
   lat: -27.5
   lon: 153.0167
   pingdom: 657940
+  bandwidth: 20
   allowed:
     continents:
       - OC
@@ -85,6 +89,7 @@ pau:
   lat: 43.313694
   lon: -0.365211
   pingdom: 718192
+  bandwidth: 30
   allowed:
     continents:
       - EU
@@ -106,6 +111,7 @@ amsterdam:
   lat: 52.37306
   lon: 4.89222
   pingdom: 766251
+  bandwidth: 30
   allowed:
     continents:
       - EU
