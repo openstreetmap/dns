@@ -295,6 +295,8 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 +lurien.openstreetmap:193.55.222.229
 +trogdor.openstreetmap:134.90.146.26
 +trogdor.oob.openstreetmap:134.90.146.30
++ouroboros.openstreetmap:31.169.50.10
++ouroboros.oob.openstreetmap:31.169.50.14
 
 # Blog aggregator (on Shaun McDonald's VM)
 
