@@ -34,7 +34,7 @@ data/switch2osm.org: src/switch2osm
 data/switch2osm.com: src/switch2osm
 data/stateofthemap.eu: src/stateofthemap-eu
 
-data/tile.openstreetmap.org kml/tile.openstreetmap.org.kml: src/tile.openstreetmap bin/mkgeo lib/countries.xml
+data/tile.openstreetmap.org kml/tile.openstreetmap.org.kml: src/tile.openstreetmap bandwidth/tile.openstreetmap.yml bin/mkgeo lib/countries.xml
 	bin/mkgeo tile.openstreetmap tile.openstreetmap.org
 
 data/%:

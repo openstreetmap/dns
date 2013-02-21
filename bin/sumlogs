@@ -1,0 +1,56 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+use Net::Patricia;
+use YAML;
+
+my $pt = new Net::Patricia;
+
+open(COUNTRIES, "< /etc/powerdns/countries.conf") || die "Can't open /etc/powerdns/countries.conf";
+
+while (my $line = <COUNTRIES>)
+{
+    if ($line =~ /^(\d+\.\d+\.\d+\.\d+\/\d+)\s+:127\.\d+\.\d+\.\d+:([a-z]{2})/)
+    {
+        my $address = $1;
+        my $country = uc($2);
+
+        $pt->add_string($address, $country);
+    }
+}
+
+close(COUNTRIES);
+
+my $total_bytes = 0;
+my %country_bytes;
+
+while (my $record = <>)
+{
+    if ($record =~ /^\d+\.\d+\s+\d+\s+(\d+\.\d+\.\d+\.\d+)\s+TCP_[A-Z_]+\/\d+\s+(\d+) /)
+    {
+        my $ip = $1;
+        my $bytes = $2;
+        my $country = $pt->match_string($ip);
+
+        $country_bytes{$country} += $bytes if defined($country);
+
+        $total_bytes += $bytes;
+    }
+    else
+    {
+        warn $record;
+    }
+}
+
+my %country_bandwidth;
+
+while (my($country,$bytes) = each %country_bytes)
+{
+    $country_bandwidth{$country} = $bytes * 250 * 1024 * 1024 / $total_bytes;
+}
+
+print Dump(\%country_bandwidth);
+
+exit 0;

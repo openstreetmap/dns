@@ -5,14 +5,6 @@ london:
   pingdom: 546503
   bandwidth: 100
   default: true
-  preferred:
-    continents:
-      - EU
-      - NA
-      - OC
-      - AF
-    countries:
-      - GB
 
 # Sjöbo, SE
 sjobo:
@@ -20,23 +12,6 @@ sjobo:
   lon: 13.70273
   pingdom: 546505
   bandwidth: 80
-  allowed:
-    continents:
-      - EU
-      - AS
-  preferred:
-    countries:
-      - DK
-      - FI
-      - AX
-      - SJ
-      - SE
-      - GL
-      - FO
-      - PL
-      - DE
-      - CH
-      - LI
 
 # Moscow, RU
 moscow:
@@ -44,26 +19,9 @@ moscow:
   lon: 37.617
   pingdom: 659912
   bandwidth: 60
-  allowed:
-    countries:
-      - RU
-      - UA
-      - BY
-      - MD
-      - KZ
-      - AM
-      - AZ
-      - GE
   preferred:
     countries:
       - RU
-      - UA
-      - BY
-      - MD
-      - KZ
-      - AM
-      - AZ
-      - GE
 
 # Brisbane, AU
 brisbane:
@@ -74,15 +32,6 @@ brisbane:
   allowed:
     continents:
       - OC
-    countries:
-      - AU
-      - NZ
-  preferred:
-    continents:
-      - OC
-    countries:
-      - AU
-      - NZ
 
 # Pau, FR
 pau:
@@ -93,18 +42,6 @@ pau:
   allowed:
     continents:
       - EU
-    countries:
-  preferred:
-    countries:
-      - FR
-      - ES
-      - PT
-      - AD
-      - GI
-      - IT
-      - MC
-      - SM
-      - VA
 
 # Amsterdam, NL
 amsterdam:
@@ -112,31 +49,13 @@ amsterdam:
   lon: 4.89222
   pingdom: 766251
   bandwidth: 30
-  allowed:
-    continents:
-      - EU
-    countries:
-      - IS
-  preferred:
-    countries:
-      - NL
-      - BE
-      - LU
-      - IS
-      - EE
-      - LV
-      - LT
-      - CZ
 
 # Oslo, NO
 oslo:
   lat: 59.94944
   lon: 10.75639
   pingdom: 769267
+  bandwidth: 20
   allowed:
     continents:
       - EU
-    countries:
-  preferred:
-    countries:
-      - NO

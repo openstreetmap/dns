@@ -15,11 +15,23 @@ my $source = shift @ARGV;
 my $zone = shift @ARGV;
 my $servers = YAML::LoadFile("src/${source}");
 
-foreach my $server (values %$servers)
+# Initialise server details
+while (my($name,$server) = each %$servers)
 {
-    $server->{status} = "down";
+    $server->{name} = $name;
+    $server->{bandwidth} = $server->{bandwidth} * 1024 * 1024;
+
+    if ($ENV{PINGDOM_USERNAME} && $ENV{PINGDOM_PASSWORD})
+    {
+        $server->{status} = "down";
+    }
+    else
+    {
+        $server->{status} = "up";
+    }
 }
 
+# If pingdom support is enabled then check which servers are up
 if ($ENV{PINGDOM_USERNAME} && $ENV{PINGDOM_PASSWORD})
 {
     my $ua = LWP::UserAgent->new;
@@ -44,15 +56,24 @@ if ($ENV{PINGDOM_USERNAME} && $ENV{PINGDOM_PASSWORD})
 }
 
 my %countries = ();
+my @mappings = ();
 
+# Create a parser for the country database
 my $countries = XML::TreeBuilder->new;
 
+# Parse the country database
 $countries->parsefile("lib/countries.xml");
 
+# Load the per-country bandwidth details
+my $bandwidth = YAML::LoadFile("bandwidth/${source}.yml");
+
+# Fill in country table and work out which servers each can use
 foreach my $country ($countries->look_down("_tag" => "country"))
 {
     my $code = $country->look_down("_tag" => "countryCode")->as_text;
     my $name = $country->look_down("_tag" => "countryName")->as_text;
+    my $population = $country->look_down("_tag" => "population")->as_text;
+    my $bandwidth = $bandwidth->{$code} || 0;
     my $continent = $country->look_down("_tag" => "continent")->as_text;
     my $west = $country->look_down("_tag" => "west")->as_text;
     my $north = $country->look_down("_tag" => "north")->as_text;
@@ -60,46 +81,70 @@ foreach my $country ($countries->look_down("_tag" => "country"))
     my $south = $country->look_down("_tag" => "south")->as_text;
     my $lat = centre_lat( $south, $north );
     my $lon = centre_lon( $west, $east );
-    my @servers;
 
-    foreach my $servername (keys %$servers)
+    $countries{$code} = {
+        code => $code, name => $name, continent => $continent,
+        bandwidth => $bandwidth, lat => $lat, lon => $lon
+    };
+
+    foreach my $server (values %$servers)
     {
-        my $server = $servers->{$servername};
         my $match = match_country($server, $code, $continent);
 
-        if ($match eq "preferred" || $match eq "allowed")
+        if ($server->{status} eq "up" && $match ne "denied")
         {
             my $priority = $match eq "preferred" ? 20 : 10;
             my $distance = distance($lat, $lon, $server->{lat}, $server->{lon});
 
-            $priority = $priority * 10 if $server->{status} eq "up";
-
-#            print STDERR "$servername is $match for $name with distance $distance\n";
-
-            push @servers, { name => $servername, priority => $priority, distance => $distance };
+            push @mappings, {
+                country => $countries{$code}, server => $server,
+                priority => $priority, distance => $distance
+            };
         }
     }
-
-    $countries{$code} = {
-        code => $code, name => $name, continent => $continent,
-        lat => $lat, lon => $lon, servers => \@servers
-    };
 }
 
+# Discard the parsed country database
 $countries->delete;
 
+# Loop over the mappings, trying to assign each country to the
+# nearest server, but subject to the bandwidth limits;
+foreach my $mapping (sort {  $b->{priority} <=> $a->{priority} || $a->{distance} <=> $b->{distance} } @mappings)
+{
+    my $country = $mapping->{country};
+    my $server = $mapping->{server};
+
+    if ($country->{bandwidth} <= $server->{bandwidth} && !exists($country->{server}))
+    {
+        $country->{server} = $server;
+        $server->{bandwidth} = $server->{bandwidth} - $country->{bandwidth};
+    }
+}
+
+# Loop over the mappings again, assigning anything that is left
+# as best we can, and allowing bandwidth limits to be exeeded
+foreach my $mapping (sort {  $b->{priority} <=> $a->{priority} || $a->{distance} <=> $b->{distance} } @mappings)
+{
+    my $country = $mapping->{country};
+    my $server = $mapping->{server};
+
+    $country->{server} = $server unless exists($country->{server});
+}
+
+# Open output files
 my $zonefile = IO::File->new("> data/${zone}") || die "$!";
 my $kmlfile = IO::File->new("> kml/${zone}.kml") || die "$!";
 my $kmlwriter = XML::Writer->new(OUTPUT => $kmlfile, ENCODING => 'utf-8');
 
+# Output the KML header
 $kmlwriter->xmlDecl();
 $kmlwriter->startTag("kml", "xmlns" => "http://www.opengis.net/kml/2.2");
 $kmlwriter->startTag("Document");
 
+# Output details for each country
 foreach my $country (values %countries)
 {
-    my @servers = sort { $b->{priority} <=> $a->{priority} || $a->{distance} <=> $b->{distance} } @{$country->{servers}};
-    my $server = $servers->{$servers[0]->{name}};
+    my $server = $country->{server};
     my $clon = $country->{lon};
     my $clat = $country->{lat};
     my $slon = $server->{lon};
@@ -114,7 +159,7 @@ foreach my $country (values %countries)
         $slon = $slon - 360;
     }
 
-    $zonefile->print("C\L$country->{code}\E.${zone}:$servers[0]->{name}.${zone}:600\n");
+    $zonefile->print("C\L$country->{code}\E.${zone}:$server->{name}.${zone}:600\n");
 
     $kmlwriter->startTag("Placemark");
     $kmlwriter->dataElement("name", $country->{name});
@@ -124,20 +169,26 @@ foreach my $country (values %countries)
     $kmlwriter->endTag("Placemark");
 }
 
+# Output default records for IPs that can't be mapped to a country
 foreach my $server (grep { $servers->{$_}->{default} } keys %$servers)
 {
     $zonefile->print("Cxx.${zone}:${server}.${zone}:600\n");
 }
 
+# End the KML file
 $kmlwriter->endTag("Document");
 $kmlwriter->endTag("kml");
 $kmlwriter->end();
 
+# Close the output files
 $kmlfile->close();
 $zonefile->close();
 
 exit 0;
 
+#
+# Find the centre value between two latitudes
+#
 sub centre_lat
 {
     my $south = shift;
@@ -146,6 +197,9 @@ sub centre_lat
     return ( $south + $north ) / 2;
 }
 
+#
+# Find the centre value between two longitudes
+#
 sub centre_lon
 {
     my $west = shift;
@@ -166,6 +220,9 @@ sub centre_lon
     return $lon
 }
 
+#
+# Match a country against a server
+#
 sub match_country
 {
     my $server = shift;
@@ -197,9 +254,21 @@ sub match_country
     {
         $match = "allowed";
     }
+    elsif ($server->{denied} &&
+        $server->{denied}->{countries} &&
+        grep { $_ eq $country } @{$server->{preferred}->{countries}})
+    {
+        $match = "denied";
+    }
+    elsif ($server->{denied} &&
+           $server->{denied}->{continents} &&
+           grep { $_ eq $continent } @{$server->{preferred}->{continents}})
+    {
+        $match = "denied";
+    }
     elsif ($server->{allowed})
     {
-        $match = "none";
+        $match = "denied";
     }
     else
     {
@@ -209,6 +278,9 @@ sub match_country
     return $match;
 }
 
+#
+# Compute the great circle distance between two points
+#
 sub distance
 {
     my $lat1 = deg2rad(shift);
