@@ -27,7 +27,6 @@ sjobo:
       - DK
       - FI
       - AX
-      - NO
       - SJ
       - SE
       - GL
@@ -130,6 +129,8 @@ oslo:
   pingdom: 769267
   allowed:
     continents:
+      - EU
     countries:
   preferred:
     countries:
+      - NO
