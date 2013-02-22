@@ -127,6 +127,7 @@ amsterdam:
 oslo:
   lat: 59.94944
   lon: 10.75639
+  pingdom: 769267
   allowed:
     continents:
     countries:

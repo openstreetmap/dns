@@ -137,6 +137,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 # 3brisbane.tile.openstreetmap:2402640000010006021708fffe5640c3:3600
 +pau.tile.openstreetmap:193.55.222.229:3600
 +amsterdam.tile.openstreetmap:134.90.146.26:3600
++oslo.tile.openstreetmap:31.169.50.14:3600
 
 # Services machine
 
