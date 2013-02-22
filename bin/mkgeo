@@ -7,7 +7,6 @@ use IO::File;
 use Math::Trig qw(deg2rad pip2 great_circle_distance);
 use JSON::XS;
 use LWP::UserAgent;
-use XML::Writer;
 use XML::TreeBuilder;
 use YAML;
 
@@ -131,15 +130,12 @@ foreach my $mapping (sort {  $b->{priority} <=> $a->{priority} || $a->{distance}
     $country->{server} = $server unless exists($country->{server});
 }
 
+# Create JSON collection object
+my @json;
+
 # Open output files
 my $zonefile = IO::File->new("> data/${zone}") || die "$!";
-my $kmlfile = IO::File->new("> kml/${zone}.kml") || die "$!";
-my $kmlwriter = XML::Writer->new(OUTPUT => $kmlfile, ENCODING => 'utf-8');
-
-# Output the KML header
-$kmlwriter->xmlDecl();
-$kmlwriter->startTag("kml", "xmlns" => "http://www.opengis.net/kml/2.2");
-$kmlwriter->startTag("Document");
+my $jsonfile = IO::File->new("> json/${zone}.json") || die "$!";
 
 # Output details for each country
 foreach my $country (values %countries)
@@ -152,21 +148,25 @@ foreach my $country (values %countries)
 
     if ($clon > 0 && $slon < 0 && 360 + $slon - $clon < $clon - $slon)
     {
-        $clon = $clon - 360;
+        $slon = $slon + 360;
     }
     elsif ($slon > 0 && $clon < 0 && 360 + $clon - $slon < $slon - $clon)
     {
-        $slon = $slon - 360;
+        $clon = $clon + 360;
     }
 
     $zonefile->print("C\L$country->{code}\E.${zone}:$server->{name}.${zone}:600\n");
 
-    $kmlwriter->startTag("Placemark");
-    $kmlwriter->dataElement("name", $country->{name});
-    $kmlwriter->startTag("LineString");
-    $kmlwriter->dataElement("coordinates", "$clon,$clat $slon,$slat");
-    $kmlwriter->endTag("LineString");
-    $kmlwriter->endTag("Placemark");
+    push @json, {
+        type => "Feature",
+        geometry => {
+            type => "LineString",
+            coordinates => [ [ $clon, $clat ], [ $slon, $slat ] ]
+        },
+        properties => {
+            country => $country->{name}
+        }
+    };
 }
 
 # Output default records for IPs that can't be mapped to a country
@@ -175,13 +175,11 @@ foreach my $server (grep { $servers->{$_}->{default} } keys %$servers)
     $zonefile->print("Cxx.${zone}:${server}.${zone}:600\n");
 }
 
-# End the KML file
-$kmlwriter->endTag("Document");
-$kmlwriter->endTag("kml");
-$kmlwriter->end();
+# Output the GeoJSON text
+$jsonfile->print(encode_json(\@json));
 
 # Close the output files
-$kmlfile->close();
+$jsonfile->close();
 $zonefile->close();
 
 exit 0;
