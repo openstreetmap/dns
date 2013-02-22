@@ -122,3 +122,13 @@ amsterdam:
       - LV
       - LT
       - CZ
+
+# Oslo, NO
+oslo:
+  lat: 59.94944
+  lon: 10.75639
+  allowed:
+    continents:
+    countries:
+  preferred:
+    countries:
