@@ -282,6 +282,10 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 #+konqi.ic.openstreetmap:10.0.16.1
 #+konqi.oob.openstreetmap:10.0.17.1
 
++ouroboros.openstreetmap:193.63.75.106
++ouroboros.ic.openstreetmap:146.179.159.172
++ouroboros.oob.openstreetmap:146.179.159.178
+
 # Tile cache servers
 
 +orm.openstreetmap:193.63.75.98
