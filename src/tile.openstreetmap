@@ -48,7 +48,7 @@ amsterdam:
   lat: 52.37306
   lon: 4.89222
   pingdom: 766251
-  bandwidth: 30
+  bandwidth: 60
 
 # Oslo, NO
 oslo:
