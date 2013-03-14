@@ -138,6 +138,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 +pau.tile.openstreetmap:193.55.222.229:3600
 +amsterdam.tile.openstreetmap:134.90.146.26:3600
 +oslo.tile.openstreetmap:31.169.50.10:3600
++sanfrancisco.tile.openstreetmap:64.62.205.202:3600
 
 # Services machine
 
@@ -304,6 +305,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 +trogdor.oob.openstreetmap:134.90.146.30
 +ridgeback.openstreetmap:31.169.50.10
 +ridgeback.oob.openstreetmap:31.169.50.14
++jakelong.openstreetmap:64.62.205.202
 
 # Blog aggregator (on Shaun McDonald's VM)
 
