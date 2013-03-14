@@ -65,4 +65,4 @@ sanfrancisco:
   lat: 37.708264
   lon: -122.280247
   pingdom: 788480
-  bandwidth: 0.2
+  bandwidth: 5 
