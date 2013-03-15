@@ -65,4 +65,11 @@ sanfrancisco:
   lat: 37.708264
   lon: -122.280247
   pingdom: 788480
-  bandwidth: 5 
+  bandwidth: 5
+
+# Lyon, FR
+lyon:
+  lat: 45.7575958
+  lon: 4.8323239
+  pingdom: 789594
+  bandwidth: 1
