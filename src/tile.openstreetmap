@@ -3,7 +3,7 @@ london:
   lat: 51.507222
   lon: -0.1275
   pingdom: 546503
-  bandwidth: 75
+  bandwidth: 40
   default: true
 
 # Sjöbo, SE
