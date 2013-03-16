@@ -3,8 +3,7 @@ london:
   lat: 51.507222
   lon: -0.1275
   pingdom: 546503
-  bandwidth: 40
-  default: true
+  bandwidth: 0
 
 # Sjöbo, SE
 sjobo:
@@ -48,7 +47,7 @@ amsterdam:
   lat: 52.37306
   lon: 4.89222
   pingdom: 766251
-  bandwidth: 60
+  bandwidth: 50
 
 # Oslo, NO
 oslo:
@@ -59,13 +58,14 @@ oslo:
   allowed:
     continents:
       - EU
+  default: true
 
 # San Francisco, US
 sanfrancisco:
   lat: 37.708264
   lon: -122.280247
   pingdom: 788480
-  bandwidth: 7.5
+  bandwidth: 15
 
 # Lyon, FR
 lyon:
