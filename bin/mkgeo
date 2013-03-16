@@ -155,6 +155,7 @@ foreach my $country (values %countries)
         $clon = $clon + 360;
     }
 
+    $zonefile->print("# $country->{name}\n");
     $zonefile->print("C\L$country->{code}\E.${zone}:$server->{name}.${zone}:600\n");
 
     push @json, {
