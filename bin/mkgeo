@@ -166,7 +166,8 @@ foreach my $country (values %countries)
         },
         properties => {
             country => $country->{name},
-            server => $server->{name}
+            server => $server->{name},
+            colour => $server->{colour}
         }
     };
 }

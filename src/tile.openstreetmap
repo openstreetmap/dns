@@ -3,6 +3,7 @@ london:
   lat: 51.507222
   lon: -0.1275
   pingdom: 546503
+  colour: "#bf3030"
   bandwidth: 0
 
 # Sjöbo, SE
@@ -10,6 +11,7 @@ sjobo:
   lat: 55.632025
   lon: 13.70273
   pingdom: 546505
+  colour: "#bfa730"
   bandwidth: 80
 
 # Moscow, RU
@@ -17,6 +19,7 @@ moscow:
   lat: 55.75
   lon: 37.617
   pingdom: 659912
+  colour: "#412c84"
   bandwidth: 60
   preferred:
     countries:
@@ -27,6 +30,7 @@ brisbane:
   lat: -27.5
   lon: 153.0167
   pingdom: 657940
+  colour: "#269926"
   bandwidth: 20
   allowed:
     continents:
@@ -37,6 +41,7 @@ pau:
   lat: 43.313694
   lon: -0.365211
   pingdom: 718192
+  colour: "#bf8230"
   bandwidth: 30
   allowed:
     continents:
@@ -47,6 +52,7 @@ amsterdam:
   lat: 52.37306
   lon: 4.89222
   pingdom: 766251
+  colour: "#a1b92e"
   bandwidth: 50
 
 # Oslo, NO
@@ -54,6 +60,7 @@ oslo:
   lat: 59.94944
   lon: 10.75639
   pingdom: 769267
+  colour: "#7c1f7c"
   bandwidth: 30
   allowed:
     continents:
@@ -65,6 +72,7 @@ sanfrancisco:
   lat: 37.708264
   lon: -122.280247
   pingdom: 788480
+  colour: "#25567b"
   bandwidth: 15
 
 # Lyon, FR
@@ -72,4 +80,5 @@ lyon:
   lat: 45.7575958
   lon: 4.8323239
   pingdom: 789594
+  colour: "#bf6530"
   bandwidth: 10
