@@ -165,7 +165,8 @@ foreach my $country (values %countries)
             coordinates => [ [ $clon, $clat ], [ $slon, $slat ] ]
         },
         properties => {
-            country => $country->{name}
+            country => $country->{name},
+            server => $server->{name}
         }
     };
 }
