@@ -4,7 +4,8 @@ london:
   lon: -0.1275
   pingdom: 546503
   colour: "#bf3030"
-  bandwidth: 0
+  bandwidth: 60
+  default: true
 
 # Sjöbo, SE
 sjobo:
@@ -65,7 +66,6 @@ oslo:
   allowed:
     continents:
       - EU
-  default: true
 
 # San Francisco, US
 sanfrancisco:
