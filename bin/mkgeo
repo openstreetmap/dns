@@ -18,7 +18,8 @@ my $servers = YAML::LoadFile("src/${source}");
 while (my($name,$server) = each %$servers)
 {
     $server->{name} = $name;
-    $server->{bandwidth} = $server->{bandwidth} * 1024 * 1024;
+    $server->{bandwidth_limit} = $server->{bandwidth} * 1024 * 1024;
+    $server->{bandwidth_used} = 0;
 
     if ($ENV{PINGDOM_USERNAME} && $ENV{PINGDOM_PASSWORD})
     {
@@ -106,28 +107,29 @@ foreach my $country ($countries->look_down("_tag" => "country"))
 # Discard the parsed country database
 $countries->delete;
 
-# Loop over the mappings, trying to assign each country to the
-# nearest server, but subject to the bandwidth limits;
-foreach my $mapping (sort {  $b->{priority} <=> $a->{priority} || $a->{distance} <=> $b->{distance} } @mappings)
-{
-    my $country = $mapping->{country};
-    my $server = $mapping->{server};
+# Allocate each country to a server
+allocate_servers(\@mappings);
 
-    if ($country->{bandwidth} <= $server->{bandwidth} && !exists($country->{server}))
+# If we failed to allocate every country then loop, increasing
+# the bandwidth for each server by a little and retrying until
+# we manage to allocate everything
+while (grep { !exists($_->{server}) } values %countries)
+{
+    # Clear any existing mappings of countries to servers
+    foreach my $country (values %countries)
     {
-        $country->{server} = $server;
-        $server->{bandwidth} = $server->{bandwidth} - $country->{bandwidth};
+        delete $country->{server};
     }
-}
 
-# Loop over the mappings again, assigning anything that is left
-# as best we can, and allowing bandwidth limits to be exeeded
-foreach my $mapping (sort {  $b->{priority} <=> $a->{priority} || $a->{distance} <=> $b->{distance} } @mappings)
-{
-    my $country = $mapping->{country};
-    my $server = $mapping->{server};
+    # Reset bandwidth usage for servers and increase limits by 10%
+    foreach my $server (values %$servers)
+    {
+        $server->{bandwidth_used} = 0;
+        $server->{bandwidth_limit} = $server->{bandwidth_limit} * 1.1;
+    }
 
-    $country->{server} = $server unless exists($country->{server});
+    # Try the allocate again
+    allocate_servers(\@mappings);
 }
 
 # Create JSON collection object
@@ -290,4 +292,29 @@ sub distance
     my $lon2 = deg2rad(shift);
 
     return great_circle_distance($lon1, pip2 - $lat1, $lon2, pip2 - $lat2);
+}
+
+#
+# Allocate each country to a server
+#
+sub allocate_servers
+{
+    my $mappings = shift;
+
+    # Loop over the mappings, trying to assign each country to the
+    # nearest server, but subject to the bandwidth limits
+    foreach my $mapping (sort {  $b->{priority} <=> $a->{priority} || $a->{distance} <=> $b->{distance} } @$mappings)
+    {
+        my $country = $mapping->{country};
+        my $server = $mapping->{server};
+
+        if (!exists($country->{server}) &&
+            $server->{bandwidth_used} + $country->{bandwidth} <= $server->{bandwidth_limit})
+        {
+            $country->{server} = $server;
+            $server->{bandwidth_used} = $server->{bandwidth_used} + $country->{bandwidth};
+        }
+    }
+
+    return;
 }
