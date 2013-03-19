@@ -1,4 +1,5 @@
 # London, GB
+# BW Limit: 1000Mb/s
 london:
   lat: 51.507222
   lon: -0.1275
@@ -8,6 +9,7 @@ london:
   default: true
 
 # Sjöbo, SE
+# BW Limit: 1000Mb/s
 sjobo:
   lat: 55.632025
   lon: 13.70273
@@ -16,6 +18,7 @@ sjobo:
   bandwidth: 80
 
 # Moscow, RU
+# BW Limit: 1000Mb/s
 moscow:
   lat: 55.75
   lon: 37.617
@@ -27,6 +30,7 @@ moscow:
       - RU
 
 # Brisbane, AU
+# BW Limit: 1000Mb/s
 brisbane:
   lat: -27.5
   lon: 153.0167
@@ -38,17 +42,19 @@ brisbane:
       - OC
 
 # Pau, FR
+# Limit 100Mb/s
 pau:
   lat: 43.313694
   lon: -0.365211
   pingdom: 718192
   colour: "#bf8230"
-  bandwidth: 30
+  bandwidth: 60
   allowed:
     continents:
       - EU
 
 # Amsterdam, NL
+# BW Limit: 1000Mb/s
 amsterdam:
   lat: 52.37306
   lon: 4.89222
@@ -57,6 +63,7 @@ amsterdam:
   bandwidth: 50
 
 # Oslo, NO
+# BW Limit: 1000Mb/s
 oslo:
   lat: 59.94944
   lon: 10.75639
@@ -68,6 +75,7 @@ oslo:
       - EU
 
 # San Francisco, US
+# BW Limit: 100Mb/s ?
 sanfrancisco:
   lat: 37.708264
   lon: -122.280247
@@ -76,6 +84,7 @@ sanfrancisco:
   bandwidth: 15
 
 # Lyon, FR
+# BW Limit: 100Mb/s
 lyon:
   lat: 45.7575958
   lon: 4.8323239
