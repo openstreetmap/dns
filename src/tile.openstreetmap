@@ -90,7 +90,7 @@ lyon:
   lon: 4.8323239
   pingdom: 789594
   colour: "#bf6530"
-  bandwidth: 10
+  bandwidth: 30
 
 # Spare colours:
 #
