@@ -81,7 +81,7 @@ sanfrancisco:
   lon: -122.280247
   pingdom: 788480
   colour: "#25567b"
-  bandwidth: 15
+  bandwidth: 23
 
 # Lyon, FR
 # BW Limit: 100Mb/s
