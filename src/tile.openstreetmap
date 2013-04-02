@@ -60,7 +60,7 @@ amsterdam:
   lon: 4.89222
   pingdom: 766251
   colour: "#a1b92e"
-  bandwidth: 50
+  bandwidth: 35
 
 # Oslo, NO
 # BW Limit: 1000Mb/s
