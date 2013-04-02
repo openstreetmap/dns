@@ -15,7 +15,7 @@ sjobo:
   lon: 13.70273
   pingdom: 546505
   colour: "#bfa730"
-  bandwidth: 40
+  bandwidth: 60
 
 # Moscow, RU
 # BW Limit: 1000Mb/s
