@@ -24,7 +24,7 @@ moscow:
   lon: 37.617
   pingdom: 659912
   colour: "#412c84"
-  bandwidth: 40
+  bandwidth: 50
   preferred:
     countries:
       - RU
