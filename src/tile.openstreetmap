@@ -97,7 +97,7 @@ beauharnois:
   lat: 45.308402
   lon: -73.893557
   pingdom: 824231
-  colour: "bfb830"
+  colour: "#bfb830"
   bandwidth: 5
 
 # Spare colours:
