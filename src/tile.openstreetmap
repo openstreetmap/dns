@@ -93,12 +93,12 @@ lyon:
   bandwidth: 30
 
 # Beauharnois, CA
-#beauharnois:
-#  lat: 45.308402
-#  lon: -73.893557
-#  pingdom: 824231
-#  colour: "bfb830"
-#  bandwidth: 0
+beauharnois:
+  lat: 45.308402
+  lon: -73.893557
+  pingdom: 824231
+  colour: "bfb830"
+  bandwidth: 0
 
 # Spare colours:
 #
