@@ -11,5 +11,5 @@
 # Main web server and it's aliases
 
 +opengeodata:184.106.20.102:3600
-+old.opengeodata:80.68.93.92
++old.opengeodata:80.68.93.92:3600
 +www.opengeodata:184.106.20.102:3600
