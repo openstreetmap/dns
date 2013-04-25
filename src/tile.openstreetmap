@@ -24,7 +24,20 @@ moscow:
   lon: 37.617
   pingdom: 659912
   colour: "#412c84"
-  bandwidth: 50
+  bandwidth: 55
+  allowed:
+    countries:
+      - AZ
+      - BY
+      - EE
+      - GE
+      - KZ
+      - LT
+      - LV
+      - MN
+      - UA
+    continents:
+      - EU
   preferred:
     countries:
       - RU
