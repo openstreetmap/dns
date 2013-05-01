@@ -142,8 +142,8 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 # 3lyon.openstreetmap:200107f80047002100000000000000a6:3600
 +beauharnois.tile.openstreetmap:142.4.213.166:3600
 # 3beauharnois.tile.openstreetmap:26075300006012a60000000000000001:3600
-+nuremberg.tile.openstreetmap:5.9.150.236:3600
-# 3nuremberg.openstreetmap:2a0104f8019033eb0000000000000002:3600
++falkenstein.tile.openstreetmap:5.9.150.236:3600
+# 3falkenstein.openstreetmap:2a0104f8019033eb0000000000000002:3600
 
 # Services machine
 

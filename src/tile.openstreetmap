@@ -113,10 +113,11 @@ beauharnois:
   colour: "#bfb830"
   bandwidth: 50
 
-# Nuremberg, DE
-nuremberg:
-  lat: 49.45
-  lon: 11.083333
+# Falkenstein, DE
+falkenstein:
+  lat: 50.4782198
+  lon: 12.3361987876257
+  pingdom: 834186
   colour: "#562781"
   bandwidth: 0
 
