@@ -312,6 +312,8 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 3nepomuk.openstreetmap:200107f80047002100000000000000a6
 +grisu.openstreetmap:142.4.213.166
 3grisu.openstreetmap:26075300006012a60000000000000001
++tabaluga.openstreetmap:5.9.150.236
+3tabaluga.openstreetmap:2a0104f8019033eb0000000000000002
 
 # Blog aggregator (on Shaun McDonald's VM)
 
