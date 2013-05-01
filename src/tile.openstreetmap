@@ -113,9 +113,15 @@ beauharnois:
   colour: "#bfb830"
   bandwidth: 50
 
+# Nuremberg, DE
+nuremberg:
+  lat: 49.45
+  lon: 11.083333
+  colour: "#562781"
+  bandwidth: 0
+
 # Spare colours:
 #
-#  562781
 #  1f7c65 
 #  bf9430
 #  7ab02c
