@@ -5,8 +5,7 @@ london:
   lon: -0.1275
   pingdom: 546503
   colour: "#bf3030"
-  bandwidth: 60
-  default: true
+  bandwidth: 40
 
 # Sjöbo, SE
 # BW Limit: 1000Mb/s
@@ -74,6 +73,7 @@ amsterdam:
   pingdom: 766251
   colour: "#a1b92e"
   bandwidth: 50
+  default: true
 
 # Oslo, NO
 # BW Limit: 1000Mb/s
@@ -119,7 +119,7 @@ falkenstein:
   lon: 12.3361987876257
   pingdom: 834186
   colour: "#562781"
-  bandwidth: 10
+  bandwidth: 45
 
 # Spare colours:
 #
