@@ -119,7 +119,7 @@ falkenstein:
   lon: 12.3361987876257
   pingdom: 834186
   colour: "#562781"
-  bandwidth: 0
+  bandwidth: 10
 
 # Spare colours:
 #
