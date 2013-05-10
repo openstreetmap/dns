@@ -1,0 +1,34 @@
+# tinydns data for openstreetmap.[org|co].uk
+#
+# Full reference is at http://cr.yp.to/djbdns/tinydns-data.html
+
+# Let Bytemark handle the DNS
+
+.openstreetmap-uk::a.ns.bytemark.co.uk
+.openstreetmap-uk::b.ns.bytemark.co.uk
+.openstreetmap-uk::c.ns.bytemark.co.uk
+
+# Make the virtual machine the primary MX with Bytemark as backup
+
+@openstreetmap-uk::a.mx.openstreetmap.org:10
+@openstreetmap-uk::backup.mx.bytemark.co.uk:20
+
+# Publish an SPF record indicating that only shenron sends mail
+
+'openstreetmap-uk:v=spf1 include\072openstreetmap.org ~all
+
+# Main web servers and their aliases
+
++openstreetmap-uk:193.63.75.99:600
++openstreetmap-uk:193.63.75.100:600
++openstreetmap-uk:193.63.75.103:600
+
+Cwww.openstreetmap-uk:www.openstreetmap.org
+Capi.openstreetmap-uk:api.openstreetmap.org
+
+# Andy Street calendar instance
+Ccalendar.openstreetmap-uk:cappuccino.andystreet.me.uk
+
+# Shaun McDonald taginfo instance
++taginfo.openstreetmap-uk:5.9.72.139
+
