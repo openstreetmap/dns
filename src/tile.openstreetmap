@@ -119,7 +119,11 @@ falkenstein:
   lon: 12.3361987876257
   pingdom: 834186
   colour: "#562781"
-  bandwidth: 45
+  bandwidth: 43
+  allowed:
+    continents:
+      - EU
+
 
 # Spare colours:
 #
