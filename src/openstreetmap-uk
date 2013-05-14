@@ -30,4 +30,4 @@ Capi.openstreetmap-uk:api.openstreetmap.org
 Ccalendar.openstreetmap-uk:cappuccino.andystreet.me.uk
 
 # Shaun McDonald taginfo instance
-+taginfo.openstreetmap-uk:5.9.72.139
++taginfo.openstreetmap-uk:5.9.72.139:3600
