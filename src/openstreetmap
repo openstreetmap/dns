@@ -301,7 +301,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 +orm.openstreetmap:193.63.75.98
 3orm.openstreetmap:200106300012050002e081fffec52a8c
 #+orm.ic.openstreetmap:10.0.16.2
-#+orm.oob.openstreetmap:10.0.17.2
++orm.oob.openstreetmap:146.179.159.175
 +fume.openstreetmap:85.30.190.241
 3fume.openstreetmap:2a02008000003ff8022264fffe2a2714
 +fume.oob.openstreetmap:85.30.129.98
