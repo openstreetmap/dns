@@ -170,6 +170,9 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 +db.ic.openstreetmap:146.179.159.170:600
 +ramoth.oob.openstreetmap:146.179.159.181
 
++katla.ic.openstreetmap:146.179.159.173
++katla.oob.openstreetmap:146.179.159.174
+
 # Development server with wildcard alias for user sites
 
 +errol.openstreetmap:128.40.168.103
