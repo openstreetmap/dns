@@ -161,6 +161,10 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 +backup.ic.openstreetmap:146.179.159.164
 +horntail.oob.openstreetmap:146.179.159.186
 
++ironbelly.openstreetmap:193.63.75.107
++ironbelly.ic.openstreetmap:146.179.159.177
++ironbelly.oob.openstreetmap:146.179.159.176
+
 # Database server
 
 +smaug.ic.openstreetmap:146.179.159.168
