@@ -149,12 +149,12 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 
 +horntail.openstreetmap:193.63.75.101
 3horntail.openstreetmap:20010630001205000202b3fffeeceeac
-+planet.openstreetmap:193.63.75.101
-3planet.openstreetmap:20010630001205000202b3fffeeceeac
-+stats.openstreetmap:193.63.75.101
-3stats.openstreetmap:20010630001205000202b3fffeeceeac
-+backup.openstreetmap:193.63.75.101
-3backup.openstreetmap:20010630001205000202b3fffeeceeac
++planet.openstreetmap:193.63.75.101:300
+3planet.openstreetmap:20010630001205000202b3fffeeceeac:300
++stats.openstreetmap:193.63.75.101:300
+3stats.openstreetmap:20010630001205000202b3fffeeceeac:300
++backup.openstreetmap:193.63.75.101:300
+3backup.openstreetmap:20010630001205000202b3fffeeceeac:300
 +horntail.ic.openstreetmap:146.179.159.164
 +backup.ic.openstreetmap:146.179.159.164
 +horntail.oob.openstreetmap:146.179.159.186
