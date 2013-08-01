@@ -1,12 +1,3 @@
-# London, GB
-# BW Limit: 1000Mb/s
-london:
-  lat: 51.507222
-  lon: -0.1275
-  pingdom: 546503
-  colour: "#bf3030"
-  bandwidth: 40
-
 # Sjöbo, SE
 # BW Limit: 1000Mb/s
 sjobo:
@@ -139,6 +130,7 @@ provo:
 
 # Spare colours:
 #
+#  bf3030
 #  bf9430
 #  7ab02c
 #  a1285f
