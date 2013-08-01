@@ -124,10 +124,21 @@ falkenstein:
     continents:
       - EU
 
+# Provo, US
+provo:
+  lat: 40.20686
+  lon: -111.642765
+  colour: "#1f7c65"
+  servers:
+    provo-01:
+      pingdom: 909444
+      bandwidth: 10
+    provo-02:
+      pingdom: 909445
+      bandwidth: 10
 
 # Spare colours:
 #
-#  1f7c65 
 #  bf9430
 #  7ab02c
 #  a1285f

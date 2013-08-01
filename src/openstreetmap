@@ -144,6 +144,8 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 # 3beauharnois.tile.openstreetmap:26075300006012a60000000000000001:3600
 +falkenstein.tile.openstreetmap:5.9.150.236:3600
 # 3falkenstein.openstreetmap:2a0104f8019033eb0000000000000002:3600
++provo-01.openstreetmap:192.163.219.36
++provo-02.openstreetmap:192.163.219.40
 
 # Services machine
 
