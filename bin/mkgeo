@@ -12,14 +12,53 @@ use YAML;
 
 my $source = shift @ARGV;
 my $zone = shift @ARGV;
-my $servers = YAML::LoadFile("src/${source}");
+my $clusters = YAML::LoadFile("src/${source}");
+my $servers = {};
+
+# Initialise cluster details
+while (my($name,$cluster) = each %$clusters)
+{
+    if ($cluster->{servers})
+    {
+        $cluster->{bandwidth} = 0;
+
+        while (my($name,$server) = each %{$cluster->{servers}})
+        {
+            $server->{cluster} = $cluster;
+            $cluster->{bandwidth} = $cluster->{bandwidth} + $server->{bandwidth};
+
+            $servers->{$name} = $server;
+        }
+    }
+    else
+    {
+        $servers->{$name} = {
+            cluster => $cluster,
+            pingdom => $cluster->{pingdom},
+            bandwidth => $cluster->{bandwidth}
+        };
+
+        $cluster->{servers} = {
+            $name => $servers->{$name}
+        };
+    }
+
+    $cluster->{name} = $name;
+
+    if ($ENV{PINGDOM_USERNAME} && $ENV{PINGDOM_PASSWORD})
+    {
+        $cluster->{status} = "down";
+    }
+    else
+    {
+        $cluster->{status} = "up";
+    }
+}
 
 # Initialise server details
 while (my($name,$server) = each %$servers)
 {
     $server->{name} = $name;
-    $server->{bandwidth_limit} = $server->{bandwidth} * 1024 * 1024;
-    $server->{bandwidth_used} = 0;
 
     if ($ENV{PINGDOM_USERNAME} && $ENV{PINGDOM_PASSWORD})
     {
@@ -50,9 +89,25 @@ if ($ENV{PINGDOM_USERNAME} && $ENV{PINGDOM_PASSWORD})
                 my $check = decode_json($response->content);
 
                 $server->{status} = $check->{check}->{status};
+
+                if ($server->{status} eq "up")
+                {
+                    $server->{cluster}->{status} = "up";
+                }
+                else
+                {
+                    $server->{cluster}->{bandwidth} = $server->{cluster}->{bandwidth} - $server->{bandwidth};
+                }
             }
         }
     }
+}
+
+# Initialise cluster details
+while (my($name,$cluster) = each %$clusters)
+{
+    $cluster->{bandwidth_limit} = $cluster->{bandwidth} * 1024 * 1024;
+    $cluster->{bandwidth_used} = 0;
 }
 
 my %countries = ();
@@ -67,7 +122,7 @@ $countries->parsefile("lib/countries.xml");
 # Load the per-country bandwidth details
 my $bandwidth = YAML::LoadFile("bandwidth/${source}.yml");
 
-# Fill in country table and work out which servers each can use
+# Fill in country table and work out which clusters each can use
 foreach my $country ($countries->look_down("_tag" => "country"))
 {
     my $code = $country->look_down("_tag" => "countryCode")->as_text;
@@ -87,17 +142,17 @@ foreach my $country ($countries->look_down("_tag" => "country"))
         bandwidth => $bandwidth, lat => $lat, lon => $lon
     };
 
-    foreach my $server (values %$servers)
+    foreach my $cluster (values %$clusters)
     {
-        my $match = match_country($server, $code, $continent);
+        my $match = match_country($cluster, $code, $continent);
 
-        if ($server->{status} eq "up" && $match ne "denied")
+        if ($cluster->{status} eq "up" && $match ne "denied")
         {
             my $priority = $match eq "preferred" ? 20 : 10;
-            my $distance = distance($lat, $lon, $server->{lat}, $server->{lon});
+            my $distance = distance($lat, $lon, $cluster->{lat}, $cluster->{lon});
 
             push @mappings, {
-                country => $countries{$code}, server => $server,
+                country => $countries{$code}, cluster => $cluster,
                 priority => $priority, distance => $distance
             };
         }
@@ -107,29 +162,29 @@ foreach my $country ($countries->look_down("_tag" => "country"))
 # Discard the parsed country database
 $countries->delete;
 
-# Allocate each country to a server
-allocate_servers(\@mappings);
+# Allocate each country to a cluster
+allocate_clusters(\@mappings);
 
 # If we failed to allocate every country then loop, increasing
-# the bandwidth for each server by a little and retrying until
+# the bandwidth for each cluster by a little and retrying until
 # we manage to allocate everything
-while (grep { !exists($_->{server}) } values %countries)
+while (grep { !exists($_->{cluster}) } values %countries)
 {
-    # Clear any existing mappings of countries to servers
+    # Clear any existing mappings of countries to clusters
     foreach my $country (values %countries)
     {
-        delete $country->{server};
+        delete $country->{cluster};
     }
 
-    # Reset bandwidth usage for servers and increase limits by 10%
-    foreach my $server (values %$servers)
+    # Reset bandwidth usage for clusters and increase limits by 10%
+    foreach my $cluster (values %$clusters)
     {
-        $server->{bandwidth_used} = 0;
-        $server->{bandwidth_limit} = $server->{bandwidth_limit} * 1.1;
+        $cluster->{bandwidth_used} = 0;
+        $cluster->{bandwidth_limit} = $cluster->{bandwidth_limit} * 1.1;
     }
 
     # Try the allocate again
-    allocate_servers(\@mappings);
+    allocate_clusters(\@mappings);
 }
 
 # Create JSON collection object
@@ -142,11 +197,11 @@ my $jsonfile = IO::File->new("> json/${zone}.json") || die "$!";
 # Output details for each country
 foreach my $country (values %countries)
 {
-    my $server = $country->{server};
+    my $cluster = $country->{cluster};
     my $clon = $country->{lon};
     my $clat = $country->{lat};
-    my $slon = $server->{lon};
-    my $slat = $server->{lat};
+    my $slon = $cluster->{lon};
+    my $slat = $cluster->{lat};
 
     if ($clon > 0 && $slon < 0 && 360 + $slon - $clon < $clon - $slon)
     {
@@ -158,7 +213,14 @@ foreach my $country (values %countries)
     }
 
     $zonefile->print("# $country->{name}\n");
-    $zonefile->print("C\L$country->{code}\E.${zone}:$server->{name}.${zone}:600\n");
+
+    while (my($name,$server) = each %{$cluster->{servers}})
+    {
+        if ($server->{status} eq "up")
+        {
+            $zonefile->print("C\L$country->{code}\E.${zone}:$server->{name}.${zone}:600\n");
+        }
+    }
 
     push @json, {
         type => "Feature",
@@ -168,16 +230,21 @@ foreach my $country (values %countries)
         },
         properties => {
             country => $country->{name},
-            server => $server->{name},
-            colour => $server->{colour}
+            server => $cluster->{name},
+            colour => $cluster->{colour}
         }
     };
 }
 
 # Output default records for IPs that can't be mapped to a country
-foreach my $server (grep { $servers->{$_}->{default} } keys %$servers)
+foreach my $cluster (grep { $_->{default} } values %$clusters)
 {
-    $zonefile->print("Cxx.${zone}:${server}.${zone}:600\n");
+    $zonefile->print("# Unknown countries\n");
+
+    while (my($name,$server) = each %{$cluster->{servers}})
+    {
+        $zonefile->print("Cxx.${zone}:${name}.${zone}:600\n");
+    }
 }
 
 # Output the GeoJSON text
@@ -224,52 +291,52 @@ sub centre_lon
 }
 
 #
-# Match a country against a server
+# Match a country against a cluster
 #
 sub match_country
 {
-    my $server = shift;
+    my $cluster = shift;
     my $country = shift;
     my $continent = shift;
     my $match;
 
-    if ($server->{preferred} &&
-        $server->{preferred}->{countries} &&
-        grep { $_ eq $country } @{$server->{preferred}->{countries}})
+    if ($cluster->{preferred} &&
+        $cluster->{preferred}->{countries} &&
+        grep { $_ eq $country } @{$cluster->{preferred}->{countries}})
     {
         $match = "preferred";
     }
-    elsif ($server->{preferred} &&
-           $server->{preferred}->{continents} &&
-           grep { $_ eq $continent } @{$server->{preferred}->{continents}})
+    elsif ($cluster->{preferred} &&
+           $cluster->{preferred}->{continents} &&
+           grep { $_ eq $continent } @{$cluster->{preferred}->{continents}})
     {
         $match = "preferred";
     }
-    elsif ($server->{allowed} &&
-           $server->{allowed}->{countries} &&
-           grep { $_ eq $country } @{$server->{allowed}->{countries}})
+    elsif ($cluster->{allowed} &&
+           $cluster->{allowed}->{countries} &&
+           grep { $_ eq $country } @{$cluster->{allowed}->{countries}})
     {
         $match = "allowed";
     }
-    elsif ($server->{allowed} &&
-           $server->{allowed}->{continents} &&
-           grep { $_ eq $continent } @{$server->{allowed}->{continents}})
+    elsif ($cluster->{allowed} &&
+           $cluster->{allowed}->{continents} &&
+           grep { $_ eq $continent } @{$cluster->{allowed}->{continents}})
     {
         $match = "allowed";
     }
-    elsif ($server->{denied} &&
-        $server->{denied}->{countries} &&
-        grep { $_ eq $country } @{$server->{preferred}->{countries}})
+    elsif ($cluster->{denied} &&
+           $cluster->{denied}->{countries} &&
+           grep { $_ eq $country } @{$cluster->{preferred}->{countries}})
     {
         $match = "denied";
     }
-    elsif ($server->{denied} &&
-           $server->{denied}->{continents} &&
-           grep { $_ eq $continent } @{$server->{preferred}->{continents}})
+    elsif ($cluster->{denied} &&
+           $cluster->{denied}->{continents} &&
+           grep { $_ eq $continent } @{$cluster->{preferred}->{continents}})
     {
         $match = "denied";
     }
-    elsif ($server->{allowed})
+    elsif ($cluster->{allowed})
     {
         $match = "denied";
     }
@@ -295,24 +362,24 @@ sub distance
 }
 
 #
-# Allocate each country to a server
+# Allocate each country to a cluster
 #
-sub allocate_servers
+sub allocate_clusters
 {
     my $mappings = shift;
 
     # Loop over the mappings, trying to assign each country to the
-    # nearest server, but subject to the bandwidth limits
+    # nearest cluster, but subject to the bandwidth limits
     foreach my $mapping (sort {  $b->{priority} <=> $a->{priority} || $a->{distance} <=> $b->{distance} } @$mappings)
     {
         my $country = $mapping->{country};
-        my $server = $mapping->{server};
+        my $cluster = $mapping->{cluster};
 
-        if (!exists($country->{server}) &&
-            $server->{bandwidth_used} + $country->{bandwidth} <= $server->{bandwidth_limit})
+        if (!exists($country->{cluster}) &&
+            $cluster->{bandwidth_used} + $country->{bandwidth} <= $cluster->{bandwidth_limit})
         {
-            $country->{server} = $server;
-            $server->{bandwidth_used} = $server->{bandwidth_used} + $country->{bandwidth};
+            $country->{cluster} = $cluster;
+            $cluster->{bandwidth_used} = $cluster->{bandwidth_used} + $country->{bandwidth};
         }
     }
 
