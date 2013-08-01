@@ -124,9 +124,9 @@ provo:
     provo-01:
       pingdom: 909444
       bandwidth: 10
-    provo-02:
-      pingdom: 909445
-      bandwidth: 10
+#    provo-02:
+#      pingdom: 909445
+#      bandwidth: 10
 
 # Spare colours:
 #
