@@ -137,10 +137,10 @@ provo:
   colour: "#1f7c65"
   servers:
     - pingdom: 909444
-      bandwidth: 10
+      bandwidth: 30
       ipv4: 192.163.219.36
     - pingdom: 909445
-      bandwidth: 10
+      bandwidth: 30
       ipv4: 192.163.219.40
 
 # Spare colours:
