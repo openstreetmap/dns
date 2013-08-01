@@ -6,6 +6,8 @@ sjobo:
   pingdom: 546505
   colour: "#bfa730"
   bandwidth: 90
+  ipv4: 85.30.190.241
+  ipv6: 2a02008000003ff8022264fffe2a2714
 
 # Moscow, RU
 # BW Limit: 1000Mb/s
@@ -15,6 +17,7 @@ moscow:
   pingdom: 659912
   colour: "#412c84"
   bandwidth: 55
+  ipv4: 130.193.62.73
   allowed:
     countries:
       - AZ
@@ -40,6 +43,8 @@ brisbane:
   pingdom: 657940
   colour: "#269926"
   bandwidth: 20
+  ipv4: 203.26.72.12
+  ipv6: 2402640000010006021708fffe5640c3
   allowed:
     continents:
       - OC
@@ -52,6 +57,7 @@ pau:
   pingdom: 718192
   colour: "#bf8230"
   bandwidth: 60
+  ipv4: 193.55.222.229
   allowed:
     continents:
       - EU
@@ -64,6 +70,7 @@ amsterdam:
   pingdom: 766251
   colour: "#a1b92e"
   bandwidth: 50
+  ipv4: 134.90.146.26
   default: true
 
 # Oslo, NO
@@ -74,6 +81,7 @@ oslo:
   pingdom: 769267
   colour: "#7c1f7c"
   bandwidth: 30
+  ipv4: 31.169.50.10
   allowed:
     continents:
       - EU
@@ -86,6 +94,7 @@ sanfrancisco:
   pingdom: 788480
   colour: "#25567b"
   bandwidth: 22
+  ipv4: 64.62.205.202
 
 # Lyon, FR
 # BW Limit: 100Mb/s
@@ -95,6 +104,8 @@ lyon:
   pingdom: 789594
   colour: "#bf6530"
   bandwidth: 30
+  ipv4: 77.95.70.166
+  ipv6: 200107f80047002100000000000000a6
 
 # Beauharnois, CA
 beauharnois:
@@ -103,6 +114,8 @@ beauharnois:
   pingdom: 824231
   colour: "#bfb830"
   bandwidth: 50
+  ipv4: 142.4.213.166
+  ipv6: 26075300006012a60000000000000001
 
 # Falkenstein, DE
 falkenstein:
@@ -111,6 +124,8 @@ falkenstein:
   pingdom: 834186
   colour: "#562781"
   bandwidth: 50
+  ipv4: 5.9.150.236
+  ipv6: 2a0104f8019033eb0000000000000002
   allowed:
     continents:
       - EU
@@ -121,12 +136,12 @@ provo:
   lon: -111.642765
   colour: "#1f7c65"
   servers:
-    provo-01:
-      pingdom: 909444
+    - pingdom: 909444
       bandwidth: 10
-#    provo-02:
-#      pingdom: 909445
-#      bandwidth: 10
+      ipv4: 192.163.219.36
+    - pingdom: 909445
+      bandwidth: 10
+      ipv4: 192.163.219.40
 
 # Spare colours:
 #

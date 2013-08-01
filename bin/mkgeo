@@ -13,7 +13,7 @@ use YAML;
 my $source = shift @ARGV;
 my $zone = shift @ARGV;
 my $clusters = YAML::LoadFile("src/${source}");
-my $servers = {};
+my @servers;
 
 # Initialise cluster details
 while (my($name,$cluster) = each %$clusters)
@@ -22,25 +22,27 @@ while (my($name,$cluster) = each %$clusters)
     {
         $cluster->{bandwidth} = 0;
 
-        while (my($name,$server) = each %{$cluster->{servers}})
+        foreach my $server (@{$cluster->{servers}})
         {
             $server->{cluster} = $cluster;
             $cluster->{bandwidth} = $cluster->{bandwidth} + $server->{bandwidth};
 
-            $servers->{$name} = $server;
+            push @servers, $server;
         }
     }
     else
     {
-        $servers->{$name} = {
+        my $server = {
             cluster => $cluster,
             pingdom => $cluster->{pingdom},
-            bandwidth => $cluster->{bandwidth}
+            bandwidth => $cluster->{bandwidth},
+            ipv4 => $cluster->{ipv4},
+            ipv6 => $cluster->{ipv6}
         };
 
-        $cluster->{servers} = {
-            $name => $servers->{$name}
-        };
+        $cluster->{servers} = [ $server ];
+
+        push @servers, $server;
     }
 
     $cluster->{name} = $name;
@@ -56,10 +58,8 @@ while (my($name,$cluster) = each %$clusters)
 }
 
 # Initialise server details
-while (my($name,$server) = each %$servers)
+foreach my $server (@servers)
 {
-    $server->{name} = $name;
-
     if ($ENV{PINGDOM_USERNAME} && $ENV{PINGDOM_PASSWORD})
     {
         $server->{status} = "down";
@@ -78,7 +78,7 @@ if ($ENV{PINGDOM_USERNAME} && $ENV{PINGDOM_PASSWORD})
     $ua->default_header("App-Key", "2cohi62u5haxvqmypk3ljqqrze1jufrh");
     $ua->credentials("api.pingdom.com:443", "Pingdom API", $ENV{PINGDOM_USERNAME}, $ENV{PINGDOM_PASSWORD});
 
-    foreach my $server (values %$servers)
+    foreach my $server (@servers)
     {
         if (my $checkid = $server->{pingdom})
         {
@@ -213,14 +213,7 @@ foreach my $country (values %countries)
     }
 
     $zonefile->print("# $country->{name}\n");
-
-    while (my($name,$server) = each %{$cluster->{servers}})
-    {
-        if ($server->{status} eq "up")
-        {
-            $zonefile->print("C\L$country->{code}\E.${zone}:$server->{name}.${zone}:600\n");
-        }
-    }
+    $zonefile->print("C\L$country->{code}\E.${zone}:$cluster->{name}.${zone}:600\n");
 
     push @json, {
         type => "Feature",
@@ -237,13 +230,28 @@ foreach my $country (values %countries)
 }
 
 # Output default records for IPs that can't be mapped to a country
-foreach my $cluster (grep { $_->{default} } values %$clusters)
+foreach my $cluster (grep { $clusters->{$_}->{default} } keys %$clusters)
 {
     $zonefile->print("# Unknown countries\n");
+    $zonefile->print("Cxx.${zone}:${cluster}.${zone}:600\n");
+}
 
-    while (my($name,$server) = each %{$cluster->{servers}})
+$zonefile->print("# Servers\n");
+
+# Output A records for each cluster
+while (my($name,$cluster) = each %$clusters)
+{
+    foreach my $server (@{$cluster->{servers}})
     {
-        $zonefile->print("Cxx.${zone}:${name}.${zone}:600\n");
+        if ($server->{status} eq "up")
+        {
+            $zonefile->print("+${name}.${zone}:$server->{ipv4}:600\n");
+
+            if ($server->{ipv6})
+            {
+#                $zonefile->print("3${name}.${zone}:$server->{ipv6}:600\n");
+            }
+        }
     }
 }
 

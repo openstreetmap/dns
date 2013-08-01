@@ -125,26 +125,6 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org:600
 +yevaud.ucl.openstreetmap:10.0.0.15
 +yevaud.oob.openstreetmap:10.0.1.15
 
-# Map geographic zones to tile servers
-
-+sjobo.tile.openstreetmap:85.30.190.241:3600
-# 3sjobo.tile.openstreetmap:2a02008000003ff8022264fffe2a2714:3600
-+moscow.tile.openstreetmap:130.193.62.73:3600
-+brisbane.tile.openstreetmap:203.26.72.12:3600
-# 3brisbane.tile.openstreetmap:2402640000010006021708fffe5640c3:3600
-+pau.tile.openstreetmap:193.55.222.229:3600
-+amsterdam.tile.openstreetmap:134.90.146.26:3600
-+oslo.tile.openstreetmap:31.169.50.10:3600
-+sanfrancisco.tile.openstreetmap:64.62.205.202:3600
-+lyon.tile.openstreetmap:77.95.70.166:3600
-# 3lyon.openstreetmap:200107f80047002100000000000000a6:3600
-+beauharnois.tile.openstreetmap:142.4.213.166:3600
-# 3beauharnois.tile.openstreetmap:26075300006012a60000000000000001:3600
-+falkenstein.tile.openstreetmap:5.9.150.236:3600
-# 3falkenstein.openstreetmap:2a0104f8019033eb0000000000000002:3600
-+provo-01.tile.openstreetmap:192.163.219.36
-+provo-02.tile.openstreetmap:192.163.219.40
-
 # Services machine
 
 +horntail.openstreetmap:193.63.75.101
