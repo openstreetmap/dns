@@ -1,0 +1,84 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+use XML::TreeBuilder;
+use YAML;
+
+# Get arguments
+my $bandwidthfile = shift @ARGV;
+my $originsfile = shift @ARGV;
+
+# Initialise origins
+my $origins = {};
+
+# Create a parser for the country database
+my $countries = XML::TreeBuilder->new;
+
+# Parse the country database
+$countries->parsefile("lib/countries.xml");
+
+# Load the per-country bandwidth details
+my $bandwidth = YAML::LoadFile($bandwidthfile);
+
+# Fill in country table and work out which clusters each can use
+foreach my $country ($countries->look_down("_tag" => "country"))
+{
+    my $code = $country->look_down("_tag" => "countryCode")->as_text;
+    my $name = $country->look_down("_tag" => "countryName")->as_text;
+    my $population = $country->look_down("_tag" => "population")->as_text;
+    my $bandwidth = $bandwidth->{$code} || 0;
+    my $continent = $country->look_down("_tag" => "continent")->as_text;
+    my $west = $country->look_down("_tag" => "west")->as_text;
+    my $north = $country->look_down("_tag" => "north")->as_text;
+    my $east = $country->look_down("_tag" => "east")->as_text;
+    my $south = $country->look_down("_tag" => "south")->as_text;
+    my $lat = centre_lat($south, $north);
+    my $lon = centre_lon($west, $east);
+
+    $origins->{$code} = {
+        code => $code, name => $name,
+        country => $code, continent => $continent,
+        bandwidth => $bandwidth, lat => $lat, lon => $lon
+    };
+}
+
+# Save the origins
+YAML::DumpFile($originsfile, $origins);
+
+exit 0;
+
+#
+# Find the centre value between two latitudes
+#
+sub centre_lat
+{
+    my $south = shift;
+    my $north = shift;
+
+    return ( $south + $north ) / 2;
+}
+
+#
+# Find the centre value between two longitudes
+#
+sub centre_lon
+{
+    my $west = shift;
+    my $east = shift;
+    my $lon;
+
+    if ($west < $east)
+    {
+        $lon = ( $west + $east ) / 2;
+    }
+    else
+    {
+        $lon = ( $west + $east + 360 ) / 2;
+    }
+
+    $lon = $lon - 360 if $lon > 180;
+
+    return $lon
+}

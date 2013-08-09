@@ -1,0 +1,33 @@
+orm:
+  lat: 51.507222
+  lon: -0.1275
+  pingdom: 923426
+  colour: "#bfa730"
+  bandwidth: 500
+  ipv4: 193.63.75.98
+  ipv6: 200106300012050002e081fffec52a8c
+
+yevaud:
+  lat: 51.507222
+  lon: -0.1275
+  pingdom: 923428
+  colour: "#412c84"
+  bandwidth: 250
+  ipv4: 128.40.168.104
+
+# Spare colours:
+#
+#  269926
+#  bf8230
+#  a1b92e
+#  7c1f7c
+#  25567b
+#  bf6530
+#  bfb830
+#  562781
+#  1f7c65
+#  bf3030
+#  bf9430
+#  7ab02c
+#  a1285f
+#  2c3d82

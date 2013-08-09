@@ -7,12 +7,14 @@ use IO::File;
 use Math::Trig qw(deg2rad pip2 great_circle_distance);
 use JSON::XS;
 use LWP::UserAgent;
-use XML::TreeBuilder;
 use YAML;
 
-my $source = shift @ARGV;
+my $originfile = shift @ARGV;
+my $clusterfile = shift @ARGV;
 my $zone = shift @ARGV;
-my $clusters = YAML::LoadFile("src/${source}");
+my $targetoriginfile = shift @ARGV;
+my $origins = YAML::LoadFile($originfile);
+my $clusters = YAML::LoadFile($clusterfile);
 my @servers;
 
 # Initialise cluster details
@@ -110,70 +112,40 @@ while (my($name,$cluster) = each %$clusters)
     $cluster->{bandwidth_used} = 0;
 }
 
-my %countries = ();
 my @mappings = ();
 
-# Create a parser for the country database
-my $countries = XML::TreeBuilder->new;
-
-# Parse the country database
-$countries->parsefile("lib/countries.xml");
-
-# Load the per-country bandwidth details
-my $bandwidth = YAML::LoadFile("bandwidth/${source}.yml");
-
-# Fill in country table and work out which clusters each can use
-foreach my $country ($countries->look_down("_tag" => "country"))
+# Scan origins and work out which clusters each can use
+foreach my $origin (values %$origins)
 {
-    my $code = $country->look_down("_tag" => "countryCode")->as_text;
-    my $name = $country->look_down("_tag" => "countryName")->as_text;
-    my $population = $country->look_down("_tag" => "population")->as_text;
-    my $bandwidth = $bandwidth->{$code} || 0;
-    my $continent = $country->look_down("_tag" => "continent")->as_text;
-    my $west = $country->look_down("_tag" => "west")->as_text;
-    my $north = $country->look_down("_tag" => "north")->as_text;
-    my $east = $country->look_down("_tag" => "east")->as_text;
-    my $south = $country->look_down("_tag" => "south")->as_text;
-    my $lat = centre_lat( $south, $north );
-    my $lon = centre_lon( $west, $east );
-
-    $countries{$code} = {
-        code => $code, name => $name, continent => $continent,
-        bandwidth => $bandwidth, lat => $lat, lon => $lon
-    };
-
     foreach my $cluster (values %$clusters)
     {
-        my $match = match_country($cluster, $code, $continent);
+        my $match = match_origin($cluster, $origin);
 
         if ($cluster->{status} eq "up" && $match ne "denied")
         {
             my $priority = $match eq "preferred" ? 20 : 10;
-            my $distance = distance($lat, $lon, $cluster->{lat}, $cluster->{lon});
+            my $distance = distance($origin->{lat}, $origin->{lon}, $cluster->{lat}, $cluster->{lon});
 
             push @mappings, {
-                country => $countries{$code}, cluster => $cluster,
+                origin => $origin, cluster => $cluster,
                 priority => $priority, distance => $distance
             };
         }
     }
 }
 
-# Discard the parsed country database
-$countries->delete;
-
 # Allocate each country to a cluster
-allocate_clusters(\@mappings);
+allocate_clusters(@mappings);
 
-# If we failed to allocate every country then loop, increasing
+# If we failed to allocate every origin then loop, increasing
 # the bandwidth for each cluster by a little and retrying until
 # we manage to allocate everything
-while (grep { !exists($_->{cluster}) } values %countries)
+while (grep { !exists($_->{cluster}) } values %$origins)
 {
     # Clear any existing mappings of countries to clusters
-    foreach my $country (values %countries)
+    foreach my $origin (values %$origins)
     {
-        delete $country->{cluster};
+        delete $origin->{cluster};
     }
 
     # Reset bandwidth usage for clusters and increase limits by 10%
@@ -184,22 +156,25 @@ while (grep { !exists($_->{cluster}) } values %countries)
     }
 
     # Try the allocate again
-    allocate_clusters(\@mappings);
+    allocate_clusters(@mappings);
 }
 
 # Create JSON collection object
 my @json;
+
+# Create target origins object
+my $targetorigins = {};
 
 # Open output files
 my $zonefile = IO::File->new("> data/${zone}") || die "$!";
 my $jsonfile = IO::File->new("> json/${zone}.json") || die "$!";
 
 # Output details for each country
-foreach my $country (values %countries)
+foreach my $origin (values %$origins)
 {
-    my $cluster = $country->{cluster};
-    my $clon = $country->{lon};
-    my $clat = $country->{lat};
+    my $cluster = $origin->{cluster};
+    my $clon = $origin->{lon};
+    my $clat = $origin->{lat};
     my $slon = $cluster->{lon};
     my $slat = $cluster->{lat};
 
@@ -212,8 +187,8 @@ foreach my $country (values %countries)
         $clon = $clon + 360;
     }
 
-    $zonefile->print("# $country->{name}\n");
-    $zonefile->print("C\L$country->{code}\E.${zone}:$cluster->{name}.${zone}:600\n");
+    $zonefile->print("# $origin->{name}\n");
+    $zonefile->print("C\L$origin->{code}\E.${zone}:$cluster->{name}.${zone}:600\n");
 
     push @json, {
         type => "Feature",
@@ -222,17 +197,30 @@ foreach my $country (values %countries)
             coordinates => [ [ $clon, $clat ], [ $slon, $slat ] ]
         },
         properties => {
-            country => $country->{name},
+            origin => $origin->{name},
             server => $cluster->{name},
             colour => $cluster->{colour}
         }
     };
+
+    unless (exists($targetorigins->{$cluster->{name}}))
+    {
+        $targetorigins->{$cluster->{name}} = {
+            code => $cluster->{name},
+            name => $cluster->{name},
+            lat => $cluster->{lat},
+            lon => $cluster->{lon},
+            bandwidth => 0
+        };
+    }
+
+    $targetorigins->{$cluster->{name}}->{bandwidth} += $origin->{bandwidth};
 }
 
 # Output default records for IPs that can't be mapped to a country
 foreach my $cluster (grep { $clusters->{$_}->{default} } keys %$clusters)
 {
-    $zonefile->print("# Unknown countries\n");
+    $zonefile->print("# Unknown origins\n");
     $zonefile->print("Cxx.${zone}:${cluster}.${zone}:600\n");
 }
 
@@ -262,85 +250,53 @@ $jsonfile->print(encode_json(\@json));
 $jsonfile->close();
 $zonefile->close();
 
+# Output the target details in origin format if required
+YAML::DumpFile($targetoriginfile, $targetorigins) if $targetoriginfile;
+
 exit 0;
 
 #
-# Find the centre value between two latitudes
+# Match an origin against a cluster
 #
-sub centre_lat
-{
-    my $south = shift;
-    my $north = shift;
-
-    return ( $south + $north ) / 2;
-}
-
-#
-# Find the centre value between two longitudes
-#
-sub centre_lon
-{
-    my $west = shift;
-    my $east = shift;
-    my $lon;
-
-    if ($west < $east)
-    {
-        $lon = ( $west + $east ) / 2;
-    }
-    else
-    {
-        $lon = ( $west + $east + 360 ) / 2;
-    }
-
-    $lon = $lon - 360 if $lon > 180;
-
-    return $lon
-}
-
-#
-# Match a country against a cluster
-#
-sub match_country
+sub match_origin
 {
     my $cluster = shift;
-    my $country = shift;
-    my $continent = shift;
+    my $origin = shift;
     my $match;
 
     if ($cluster->{preferred} &&
         $cluster->{preferred}->{countries} &&
-        grep { $_ eq $country } @{$cluster->{preferred}->{countries}})
+        grep { $_ eq $origin->{country} } @{$cluster->{preferred}->{countries}})
     {
         $match = "preferred";
     }
     elsif ($cluster->{preferred} &&
            $cluster->{preferred}->{continents} &&
-           grep { $_ eq $continent } @{$cluster->{preferred}->{continents}})
+           grep { $_ eq $origin->{continent} } @{$cluster->{preferred}->{continents}})
     {
         $match = "preferred";
     }
     elsif ($cluster->{allowed} &&
            $cluster->{allowed}->{countries} &&
-           grep { $_ eq $country } @{$cluster->{allowed}->{countries}})
+           grep { $_ eq $origin->{country} } @{$cluster->{allowed}->{countries}})
     {
         $match = "allowed";
     }
     elsif ($cluster->{allowed} &&
            $cluster->{allowed}->{continents} &&
-           grep { $_ eq $continent } @{$cluster->{allowed}->{continents}})
+           grep { $_ eq $origin->{continent} } @{$cluster->{allowed}->{continents}})
     {
         $match = "allowed";
     }
     elsif ($cluster->{denied} &&
            $cluster->{denied}->{countries} &&
-           grep { $_ eq $country } @{$cluster->{preferred}->{countries}})
+           grep { $_ eq $origin->{country} } @{$cluster->{preferred}->{countries}})
     {
         $match = "denied";
     }
     elsif ($cluster->{denied} &&
            $cluster->{denied}->{continents} &&
-           grep { $_ eq $continent } @{$cluster->{preferred}->{continents}})
+           grep { $_ eq $origin->{continent} } @{$cluster->{preferred}->{continents}})
     {
         $match = "denied";
     }
@@ -370,26 +326,61 @@ sub distance
 }
 
 #
-# Allocate each country to a cluster
+# Allocate each origin to a cluster
 #
 sub allocate_clusters
 {
-    my $mappings = shift;
+    my @mappings = sort { compare_mappings($a, $b) } @_;
 
-    # Loop over the mappings, trying to assign each country to the
+    # Loop over the mappings, trying to assign each origin to the
     # nearest cluster, but subject to the bandwidth limits
-    foreach my $mapping (sort {  $b->{priority} <=> $a->{priority} || $a->{distance} <=> $b->{distance} } @$mappings)
+    while (my $mapping = shift @mappings)
     {
-        my $country = $mapping->{country};
-        my $cluster = $mapping->{cluster};
+        my @group;
 
-        if (!exists($country->{cluster}) &&
-            $cluster->{bandwidth_used} + $country->{bandwidth} <= $cluster->{bandwidth_limit})
+        push @group, $mapping;
+
+        while (@mappings && compare_mappings($mapping, $mappings[0]) == 0)
         {
-            $country->{cluster} = $cluster;
-            $cluster->{bandwidth_used} = $cluster->{bandwidth_used} + $country->{bandwidth};
+            push @group, shift @mappings;
+        }
+
+        for my $mapping (sort compare_bandwidth @group)
+        {
+            my $origin = $mapping->{origin};
+            my $cluster = $mapping->{cluster};
+
+            if (!exists($origin->{cluster}) &&
+                $cluster->{bandwidth_used} + $origin->{bandwidth} <= $cluster->{bandwidth_limit})
+            {
+                $origin->{cluster} = $cluster;
+                $cluster->{bandwidth_used} = $cluster->{bandwidth_used} + $origin->{bandwidth};
+            }
         }
     }
 
     return;
+}
+
+#
+# Compare two mappings to decide which to use
+#
+sub compare_mappings
+{
+    my $a = shift;
+    my $b = shift;
+
+    return $b->{priority} <=> $a->{priority} ||
+           $a->{distance} <=> $b->{distance};
+}
+
+#
+# Compare two mappings to decide which to try first
+#
+sub compare_bandwidth
+{
+    my $a_used = ( $a->{cluster}->{bandwidth_used} * 100.0 ) / ( $a->{cluster}->{bandwidth_limit} * 1.0 );
+    my $b_used = ( $b->{cluster}->{bandwidth_used} * 100.0 ) / ( $b->{cluster}->{bandwidth_limit} * 1.0 );
+
+    return $a_used <=> $b_used;
 }

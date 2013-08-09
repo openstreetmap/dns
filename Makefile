@@ -8,7 +8,8 @@ all: data/openstreetmap.org data/openstreetmap.com data/openstreetmap.net \
      data/stateofthemap.eu \
      data/opengeodata.org \
      data/switch2osm.org data/switch2osm.com \
-     data/tile.openstreetmap.org
+     data/tile.openstreetmap.org \
+     data/render.openstreetmap.org
 
 clean:
 	rm lib/countries.xml data/*
@@ -43,8 +44,14 @@ data/switch2osm.org: src/switch2osm
 data/switch2osm.com: src/switch2osm
 data/stateofthemap.eu: src/stateofthemap-eu
 
-data/tile.openstreetmap.org json/tile.openstreetmap.org.json: src/tile.openstreetmap bandwidth/tile.openstreetmap.yml bin/mkgeo lib/countries.xml
-	bin/mkgeo tile.openstreetmap tile.openstreetmap.org
+origins/tile.openstreetmap.yml: bin/mkcountries lib/countries.xml bandwidth/tile.openstreetmap.yml
+	bin/mkcountries bandwidth/tile.openstreetmap.yml origins/tile.openstreetmap.yml
+
+data/tile.openstreetmap.org json/tile.openstreetmap.org.json origins/render.openstreetmap.yml: bin/mkgeo origins/tile.openstreetmap.yml src/tile.openstreetmap
+	bin/mkgeo origins/tile.openstreetmap.yml src/tile.openstreetmap tile.openstreetmap.org origins/render.openstreetmap.yml
+
+data/render.openstreetmap.org json/render.openstreetmap.org.json: bin/mkgeo origins/render.openstreetmap.yml src/render.openstreetmap
+	bin/mkgeo origins/render.openstreetmap.yml src/render.openstreetmap render.openstreetmap.org
 
 data/%:
 	sed -e 's/$(notdir $<):/$(notdir $@):/g' < $< > $@
