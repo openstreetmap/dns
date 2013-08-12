@@ -225,11 +225,11 @@ while (my($name,$cluster) = each %$clusters)
 {
     if (my $default = $cluster->{default})
     {
-        $zonefile->print("C${default}.${zone}:${name}.${zone}:600\n");
+        output_server($zonefile, "${default}.${zone}", $cluster);
     }
     elsif (exists($cluster->{default}))
     {
-        $zonefile->print("C${zone}:${name}.${zone}:600\n");
+        output_server($zonefile, "${zone}", $cluster);
     }
 }
 
@@ -239,18 +239,7 @@ $zonefile->print("# Servers\n");
 # Output A records for each cluster
 while (my($name,$cluster) = each %$clusters)
 {
-    foreach my $server (@{$cluster->{servers}})
-    {
-        if ($server->{status} eq "up")
-        {
-            $zonefile->print("+${name}.${zone}:$server->{ipv4}:600\n");
-
-            if ($server->{ipv6})
-            {
-#                $zonefile->print("3${name}.${zone}:$server->{ipv6}:600\n");
-            }
-        }
-    }
+    output_server($zonefile, "${name}.${zone}", $cluster);
 }
 
 # Output the GeoJSON text
@@ -393,4 +382,29 @@ sub compare_bandwidth
     my $b_used = ( $b->{cluster}->{bandwidth_used} * 100.0 ) / ( $b->{cluster}->{bandwidth_limit} * 1.0 );
 
     return $a_used <=> $b_used;
+}
+
+#
+# Output DNS records for a server
+#
+sub output_server
+{
+    my $zonefile = shift;
+    my $name = shift;
+    my $cluster = shift;
+
+    foreach my $server (@{$cluster->{servers}})
+    {
+        if ($server->{status} eq "up")
+        {
+            $zonefile->print("+${name}:$server->{ipv4}:600\n");
+
+            if ($server->{ipv6})
+            {
+#                $zonefile->print("3${name}:$server->{ipv6}:600\n");
+            }
+        }
+    }
+
+    return;
 }
