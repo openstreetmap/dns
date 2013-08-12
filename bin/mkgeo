@@ -217,13 +217,23 @@ foreach my $origin (values %$origins)
     $targetorigins->{$cluster->{name}}->{bandwidth} += $origin->{bandwidth};
 }
 
+# Header for default records
+$zonefile->print("# Unknown origins\n");
+
 # Output default records for IPs that can't be mapped to a country
-foreach my $cluster (grep { $clusters->{$_}->{default} } keys %$clusters)
+while (my($name,$cluster) = each %$clusters)
 {
-    $zonefile->print("# Unknown origins\n");
-    $zonefile->print("Cxx.${zone}:${cluster}.${zone}:600\n");
+    if (my $default = $cluster->{default})
+    {
+        $zonefile->print("C${default}.${zone}:${name}.${zone}:600\n");
+    }
+    elsif (exists($cluster->{default}))
+    {
+        $zonefile->print("C${zone}:${name}.${zone}:600\n");
+    }
 }
 
+# Header for underlying servers
 $zonefile->print("# Servers\n");
 
 # Output A records for each cluster
