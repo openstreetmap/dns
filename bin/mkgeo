@@ -397,11 +397,11 @@ sub output_server
     {
         if ($server->{status} eq "up")
         {
-            $zonefile->print("+${name}:$server->{ipv4}:600\n");
+            $zonefile->print("+${name}:$server->{ipv4}:3600\n");
 
             if ($server->{ipv6})
             {
-#                $zonefile->print("3${name}:$server->{ipv6}:600\n");
+#                $zonefile->print("3${name}:$server->{ipv6}:3600\n");
             }
         }
     }
