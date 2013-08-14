@@ -25,13 +25,13 @@
 # Delegate geo.openstreetmap.org to PowerDNS
 
 # shenron.openstreetmap.org
-&geo.openstreetmap:89.16.179.150:a.ns.openstreetmap:3600
+&geo.openstreetmap:89.16.179.150:a.ns.openstreetmap:86400
 # nadder-02.openstreetmap.org
-&geo.openstreetmap:192.163.219.40:b.ns.openstreetmap:3600
+&geo.openstreetmap:192.163.219.40:b.ns.openstreetmap:86400
 # fume.openstreetmap.org
-&geo.openstreetmap:85.30.190.241:c.ns.openstreetmap:3600
+&geo.openstreetmap:85.30.190.241:c.ns.openstreetmap:86400
 # bunyip.openstreetmap.org
-&geo.openstreetmap:203.26.72.12:d.ns.openstreetmap:3600
+&geo.openstreetmap:203.26.72.12:d.ns.openstreetmap:86400
 
 # Main web servers and their aliases
 
@@ -128,10 +128,10 @@
 +yevaud.openstreetmap:128.40.168.104
 +yevaud.ucl.openstreetmap:10.0.0.15
 +yevaud.oob.openstreetmap:10.0.1.15
-Ctile.openstreetmap:tile.geo.openstreetmap.org:3600
-Ca.tile.openstreetmap:tile.geo.openstreetmap.org:3600
-Cb.tile.openstreetmap:tile.geo.openstreetmap.org:3600
-Cc.tile.openstreetmap:tile.geo.openstreetmap.org:3600
+Ctile.openstreetmap:tile.geo.openstreetmap.org
+Ca.tile.openstreetmap:tile.geo.openstreetmap.org
+Cb.tile.openstreetmap:tile.geo.openstreetmap.org
+Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # Services machine
