@@ -105,11 +105,22 @@ if ($ENV{PINGDOM_USERNAME} && $ENV{PINGDOM_PASSWORD})
     }
 }
 
+# Create target origins object
+my $targetorigins = {};
+
 # Initialise cluster details
 while (my($name,$cluster) = each %$clusters)
 {
     $cluster->{bandwidth_limit} = $cluster->{bandwidth} * 1024 * 1024;
     $cluster->{bandwidth_used} = 0;
+
+    $targetorigins->{$cluster->{name}} = {
+        code => $cluster->{name},
+        name => $cluster->{name},
+        lat => $cluster->{lat},
+        lon => $cluster->{lon},
+        bandwidth => 0
+    };
 }
 
 my @mappings = ();
@@ -162,9 +173,6 @@ while (grep { !exists($_->{cluster}) } values %$origins)
 # Create JSON collection object
 my @json;
 
-# Create target origins object
-my $targetorigins = {};
-
 # Open output files
 my $zonefile = IO::File->new("> data/${zone}") || die "$!";
 my $jsonfile = IO::File->new("> json/${zone}.json") || die "$!";
@@ -202,17 +210,6 @@ foreach my $origin (values %$origins)
             colour => $cluster->{colour}
         }
     };
-
-    unless (exists($targetorigins->{$cluster->{name}}))
-    {
-        $targetorigins->{$cluster->{name}} = {
-            code => $cluster->{name},
-            name => $cluster->{name},
-            lat => $cluster->{lat},
-            lon => $cluster->{lon},
-            bandwidth => 0
-        };
-    }
 
     $targetorigins->{$cluster->{name}}->{bandwidth} += $origin->{bandwidth};
 }
