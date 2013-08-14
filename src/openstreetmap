@@ -139,7 +139,6 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +horntail.openstreetmap:193.63.75.101
 3horntail.openstreetmap:20010630001205000202b3fffeeceeac
 +horntail.ic.openstreetmap:146.179.159.164
-+backup.ic.openstreetmap:146.179.159.164
 +horntail.oob.openstreetmap:146.179.159.186
 
 +ironbelly.openstreetmap:193.63.75.107
@@ -154,6 +153,7 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 3planet.openstreetmap:2001063000120500022590fffec4f6ef
 +ironbelly.ic.openstreetmap:146.179.159.177
 +ironbelly.oob.openstreetmap:146.179.159.176
++backup.ic.openstreetmap:146.179.159.177
 
 # Database server
 
