@@ -28,13 +28,13 @@ Zopenstreetmap:a.ns.bytemark.co.uk:hostmaster.openstreetmap.org:::::300
 # Delegate geo.openstreetmap.org to PowerDNS
 
 # shenron.openstreetmap.org
-&geo.openstreetmap:89.16.179.150:a.ns.openstreetmap
+&geo.openstreetmap:89.16.179.150:a.ns.openstreetmap.org
 # nadder-02.openstreetmap.org
-&geo.openstreetmap:192.163.219.40:b.ns.openstreetmap
+&geo.openstreetmap:192.163.219.40:b.ns.openstreetmap.org
 # fume.openstreetmap.org
-&geo.openstreetmap:85.30.190.241:c.ns.openstreetmap
+&geo.openstreetmap:85.30.190.241:c.ns.openstreetmap.org
 # bunyip.openstreetmap.org
-&geo.openstreetmap:203.26.72.12:d.ns.openstreetmap
+&geo.openstreetmap:203.26.72.12:d.ns.openstreetmap.org
 
 # Main web servers and their aliases
 
