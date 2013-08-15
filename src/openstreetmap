@@ -2,6 +2,9 @@
 #
 # Full reference is at http://cr.yp.to/djbdns/tinydns-data.html
 
+# Set SOA values with reduced TTL for negative cache entries
+Zopenstreetmap:a.ns.bytemark.co.uk:hostmaster.openstreetmap.org:::::300
+
 # Let Bytemark handle the DNS
 
 .openstreetmap::a.ns.bytemark.co.uk
