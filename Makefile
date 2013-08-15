@@ -54,4 +54,4 @@ data/render.openstreetmap.org json/render.openstreetmap.org.json: bin/mkgeo orig
 	bin/mkgeo origins/render.openstreetmap.yml src/render.openstreetmap render.openstreetmap.org
 
 data/%:
-	sed -e 's/$(notdir $<):/$(notdir $@):/g' < $< > $@
+	sed -r -e 's/$(notdir $<)(:|$$)/$(notdir $@)\1/g' < $< > $@
