@@ -25,13 +25,13 @@
 # Delegate geo.openstreetmap.org to PowerDNS
 
 # shenron.openstreetmap.org
-&geo.openstreetmap:89.16.179.150:a.ns.openstreetmap:86400
+&geo.openstreetmap:89.16.179.150:a.ns.openstreetmap
 # nadder-02.openstreetmap.org
-&geo.openstreetmap:192.163.219.40:b.ns.openstreetmap:86400
+&geo.openstreetmap:192.163.219.40:b.ns.openstreetmap
 # fume.openstreetmap.org
-&geo.openstreetmap:85.30.190.241:c.ns.openstreetmap:86400
+&geo.openstreetmap:85.30.190.241:c.ns.openstreetmap
 # bunyip.openstreetmap.org
-&geo.openstreetmap:203.26.72.12:d.ns.openstreetmap:86400
+&geo.openstreetmap:203.26.72.12:d.ns.openstreetmap
 
 # Main web servers and their aliases
 
