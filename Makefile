@@ -1,5 +1,5 @@
 all: data/openstreetmap.org data/openstreetmap.com data/openstreetmap.net \
-     data/openstreetmap.ca data/openstreetmap.pro \
+     data/openstreetmap.ca data/openstreetmap.eu data/openstreetmap.pro \
      data/openstreetmaps.org data/osm.org data/openmaps.org \
      data/openstreetmap.io data/osm.io \
      data/openworldmap.org data/freeosm.org data/open-maps.org data/open-maps.com \
@@ -24,6 +24,7 @@ data/openstreetmap.org: src/openstreetmap
 data/openstreetmap.com: src/openstreetmap
 data/openstreetmap.net: src/openstreetmap
 data/openstreetmap.ca: src/openstreetmap
+data/openstreetmap.eu: src/openstreetmap
 data/openstreetmap.pro: src/openstreetmap
 data/openstreetmaps.org: src/openstreetmap
 data/osm.org: src/openstreetmap
