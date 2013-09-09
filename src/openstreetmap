@@ -283,7 +283,7 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +konqi.openstreetmap:193.63.75.104
 3konqi.openstreetmap:2001063000120500021560fffeaa9956
 +konqi.ilo.openstreetmap:146.179.159.179
-+wiki.openstreetmap:193.63.75.104:600
++wiki.openstreetmap:193.63.75.106:600
 +dump.wiki.openstreetmap:193.63.75.104:600
 #+konqi.ic.openstreetmap:10.0.16.1
 #+konqi.oob.openstreetmap:10.0.17.1
