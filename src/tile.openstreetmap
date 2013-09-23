@@ -71,6 +71,7 @@ amsterdam:
   colour: "#a1b92e"
   bandwidth: 35
   ipv4: 134.90.146.26
+  default: "xx"
 
 # Oslo, NO
 # BW Limit: 1000Mb/s
@@ -115,7 +116,6 @@ beauharnois:
   bandwidth: 50
   ipv4: 142.4.213.166
   ipv6: 26075300006012a60000000000000001
-  default: "xx"
 
 # Falkenstein, DE
 falkenstein:
@@ -126,6 +126,7 @@ falkenstein:
   bandwidth: 50
   ipv4: 5.9.150.236
   ipv6: 2a0104f8019033eb0000000000000002
+  default: "xx"
   allowed:
     continents:
       - EU
@@ -135,6 +136,7 @@ provo:
   lat: 40.20686
   lon: -111.642765
   colour: "#1f7c65"
+  default: "xx"
   servers:
     - pingdom: 909444
       bandwidth: 30
