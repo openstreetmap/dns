@@ -107,16 +107,6 @@ lyon:
   ipv4: 77.95.70.166
   ipv6: 200107f80047002100000000000000a6
 
-# Beauharnois, CA
-beauharnois:
-  lat: 45.308402
-  lon: -73.893557
-  pingdom: 824231
-  colour: "#bfb830"
-  bandwidth: 50
-  ipv4: 142.4.213.166
-  ipv6: 26075300006012a60000000000000001
-
 # Falkenstein, DE
 falkenstein:
   lat: 50.4782198
@@ -147,6 +137,7 @@ provo:
 
 # Spare colours:
 #
+#  bfb830
 #  bf3030
 #  bf9430
 #  7ab02c
