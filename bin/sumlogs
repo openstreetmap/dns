@@ -52,7 +52,7 @@ my %country_bandwidth;
 
 while (my($country,$bytes) = each %country_bytes)
 {
-    $country_bandwidth{$country} = $bytes * 250 * 1024 * 1024 / $total_bytes;
+    $country_bandwidth{$country} = $bytes * 300 * 1024 * 1024 / $total_bytes;
 }
 
 print Dump(\%country_bandwidth);
