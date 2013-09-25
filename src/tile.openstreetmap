@@ -16,7 +16,7 @@ moscow:
   lon: 37.617
   pingdom: 659912
   colour: "#412c84"
-  bandwidth: 55
+  bandwidth: 60
   ipv4: 130.193.62.73
   allowed:
     countries:
@@ -69,7 +69,7 @@ amsterdam:
   lon: 4.89222
   pingdom: 766251
   colour: "#a1b92e"
-  bandwidth: 35
+  bandwidth: 40
   ipv4: 134.90.146.26
   default: "xx"
 
@@ -103,7 +103,7 @@ lyon:
   lon: 4.8323239
   pingdom: 789594
   colour: "#bf6530"
-  bandwidth: 30
+  bandwidth: 35
   ipv4: 77.95.70.166
   ipv6: 200107f80047002100000000000000a6
 
@@ -113,7 +113,7 @@ falkenstein:
   lon: 12.3361987876257
   pingdom: 834186
   colour: "#562781"
-  bandwidth: 50
+  bandwidth: 70
   ipv4: 5.9.150.236
   ipv6: 2a0104f8019033eb0000000000000002
   default: "xx"
