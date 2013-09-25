@@ -8,7 +8,7 @@ use YAML;
 
 my $pt = new Net::Patricia;
 
-open(COUNTRIES, "< /etc/powerdns/countries.conf") || die "Can't open /etc/powerdns/countries.conf";
+open(COUNTRIES, "< countries.conf") || die "Can't open /etc/powerdns/countries.conf";
 
 while (my $line = <COUNTRIES>)
 {
@@ -28,7 +28,7 @@ my %country_bytes;
 
 while (my $record = <>)
 {
-    if ($record =~ /^\d+\.\d+\s+\d+\s+(\d+\.\d+\.\d+\.\d+)\s+TCP_[A-Z_]+\/\d+\s+(\d+) /)
+    if ($record =~ /^\d+\.\d+\s+\d+\s+(\d+\.\d+\.\d+\.\d+)\s+TCP_[A-Z_]+\/\d+\s+(\d+) (?:GET|HEAD|POST) /)
     {
         my $ip = $1;
         my $bytes = $2;
@@ -37,6 +37,10 @@ while (my $record = <>)
         $country_bytes{$country} += $bytes if defined($country);
 
         $total_bytes += $bytes;
+    }
+    elsif ($record =~ /^\d+\.\d+\s+\d+\s+(\d+\.\d+\.\d+\.\d+)\s+UDP_[A-Z_]+\/\d+\s+(\d+) ICP_QUERY /)
+    {
+	# do nothing
     }
     else
     {
