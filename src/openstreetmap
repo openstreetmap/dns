@@ -139,11 +139,6 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # Services machine
 
-+horntail.openstreetmap:193.63.75.101
-3horntail.openstreetmap:20010630001205000202b3fffeeceeac
-+horntail.ic.openstreetmap:146.179.159.164
-+horntail.oob.openstreetmap:146.179.159.186
-
 +ironbelly.openstreetmap:193.63.75.107
 3ironbelly.openstreetmap:2001063000120500022590fffec4f6ef
 +chef.openstreetmap:193.63.75.107
@@ -158,7 +153,7 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +ironbelly.oob.openstreetmap:146.179.159.176
 +backup.ic.openstreetmap:146.179.159.177
 
-# Database server
+# Database servers
 
 +smaug.ic.openstreetmap:146.179.159.168
 +smaug.oob.openstreetmap:146.179.159.182
@@ -280,16 +275,9 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # Wiki server
 
-+konqi.openstreetmap:193.63.75.104
-3konqi.openstreetmap:2001063000120500021560fffeaa9956
-+konqi.ilo.openstreetmap:146.179.159.179
-+wiki.openstreetmap:193.63.75.106:600
-+dump.wiki.openstreetmap:193.63.75.104:600
-#+konqi.ic.openstreetmap:10.0.16.1
-#+konqi.oob.openstreetmap:10.0.17.1
-
 +ouroboros.openstreetmap:193.63.75.106
 3ouroboros.openstreetmap:200106300012050002237dfffeea813a
++wiki.openstreetmap:193.63.75.106:600
 +ouroboros.ic.openstreetmap:146.179.159.172
 +ouroboros.oob.openstreetmap:146.179.159.178
 
