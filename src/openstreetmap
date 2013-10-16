@@ -293,9 +293,12 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +ouroboros.ic.openstreetmap:146.179.159.172
 +ouroboros.oob.openstreetmap:146.179.159.178
 
-# GPX tile server
+# GPS tile server
 
 +noquiklos.openstreetmap:128.40.168.99
++a.gps-tile.openstreetmap:128.40.168.99
++b.gps-tile.openstreetmap:128.40.168.99
++c.gps-tile.openstreetmap:128.40.168.99
 +noquiklos.ucl.openstreetmap:10.0.0.13
 +noquiklos.oob.openstreetmap:10.0.1.13
 
