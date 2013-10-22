@@ -284,6 +284,10 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 # GPS tile server
 
 +noquiklos.openstreetmap:128.40.168.99
++gps.tile.openstreetmap:128.40.168.99
++gps-a.tile.openstreetmap:128.40.168.99
++gps-d.tile.openstreetmap:128.40.168.99
++gps-c.tile.openstreetmap:128.40.168.99
 +a.gps-tile.openstreetmap:128.40.168.99
 +b.gps-tile.openstreetmap:128.40.168.99
 +c.gps-tile.openstreetmap:128.40.168.99
