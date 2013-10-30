@@ -6,7 +6,7 @@ use warnings;
 use IO::File;
 use Math::Trig qw(deg2rad pip2 great_circle_distance);
 use JSON::XS;
-use LWP::UserAgent;
+use LWP::UserAgent::Determined;
 use YAML;
 
 my $originfile = shift @ARGV;
@@ -75,7 +75,8 @@ foreach my $server (@servers)
 # If pingdom support is enabled then check which servers are up
 if ($ENV{PINGDOM_USERNAME} && $ENV{PINGDOM_PASSWORD})
 {
-    my $ua = LWP::UserAgent->new;
+    my $ua = LWP::UserAgent::Determined->new;
+    $ua->timeout(15);
 
     $ua->default_header("App-Key", "2cohi62u5haxvqmypk3ljqqrze1jufrh");
     $ua->credentials("api.pingdom.com:443", "Pingdom API", $ENV{PINGDOM_USERNAME}, $ENV{PINGDOM_PASSWORD});
