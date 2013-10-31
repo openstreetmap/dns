@@ -48,37 +48,33 @@ while (my($name,$cluster) = each %$clusters)
     }
 
     $cluster->{name} = $name;
-
-    if ($ENV{PINGDOM_USERNAME} && $ENV{PINGDOM_PASSWORD})
-    {
-        $cluster->{status} = "down";
-    }
-    else
-    {
-        $cluster->{status} = "up";
-    }
+    $cluster->{status} = "down";
 }
 
 # Initialise server details
 foreach my $server (@servers)
 {
-    if ($ENV{PINGDOM_USERNAME} && $ENV{PINGDOM_PASSWORD})
-    {
-        $server->{status} = "down";
-    }
-    else
-    {
-        $server->{status} = "up";
-    }
+    $server->{status} = "up";
 }
 
 # If pingdom support is enabled then check which servers are up
 if ($ENV{PINGDOM_USERNAME} && $ENV{PINGDOM_PASSWORD})
 {
     my $ua = LWP::UserAgent->new;
+    my $cache;
 
+    $ua->timeout(5);
     $ua->default_header("App-Key", "2cohi62u5haxvqmypk3ljqqrze1jufrh");
     $ua->credentials("api.pingdom.com:443", "Pingdom API", $ENV{PINGDOM_USERNAME}, $ENV{PINGDOM_PASSWORD});
+
+    if (-f "pingdom.yml")
+    {
+        $cache = YAML::LoadFile("pingdom.yml"); 
+    }
+    else
+    {
+        $cache = {};
+    }
 
     foreach my $server (@servers)
     {
@@ -91,17 +87,28 @@ if ($ENV{PINGDOM_USERNAME} && $ENV{PINGDOM_PASSWORD})
                 my $check = decode_json($response->content);
 
                 $server->{status} = $check->{check}->{status};
-
-                if ($server->{status} eq "up")
-                {
-                    $server->{cluster}->{status} = "up";
-                }
-                else
-                {
-                    $server->{cluster}->{bandwidth} = $server->{cluster}->{bandwidth} - $server->{bandwidth};
-                }
+                $cache->{$server->{pingdom}} = $check->{check}->{status};
+            }
+            else
+            {
+                $server->{status} = $cache->{$server->{pingdom}} || "down";
             }
         }
+    }
+
+    YAML::DumpFile("pingdom.yml", $cache);
+}
+
+# Mark a cluster as up if any servers are up
+foreach my $server (@servers)
+{
+    if ($server->{status} eq "up")
+    {
+        $server->{cluster}->{status} = "up";
+    }
+    else
+    {
+        $server->{cluster}->{bandwidth} = $server->{cluster}->{bandwidth} - $server->{bandwidth};
     }
 }
 
