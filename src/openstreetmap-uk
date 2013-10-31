@@ -11,7 +11,6 @@
 # Make the virtual machine the primary MX with Bytemark as backup
 
 @openstreetmap-uk::a.mx.openstreetmap.org:10
-@openstreetmap-uk::backup.mx.bytemark.co.uk:20
 
 # Publish an SPF record indicating that only shenron sends mail
 
