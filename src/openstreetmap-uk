@@ -26,7 +26,7 @@ Cwww.openstreetmap-uk:www.openstreetmap.org
 Capi.openstreetmap-uk:api.openstreetmap.org
 
 # Andy Street calendar instance
-Ccalendar.openstreetmap-uk:cappuccino.andystreet.me.uk
+Ccalendar.openstreetmap-uk:osmcal.street.me.uk
 
 # Shaun McDonald taginfo instance
 +taginfo.openstreetmap-uk:144.76.98.136:3600
