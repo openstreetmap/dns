@@ -39,16 +39,16 @@ Zopenstreetmap:a.ns.bytemark.co.uk:hostmaster.openstreetmap.org:::::300
 
 +spike-01.openstreetmap:193.63.75.99
 3spike-01.openstreetmap:2001063000120500021a4bfffea5fd2a
-+openstreetmap:193.63.75.99:300
-3openstreetmap:2001063000120500021a4bfffea5fd2a:300
-+www.openstreetmap:193.63.75.99:300
-3www.openstreetmap:2001063000120500021a4bfffea5fd2a:300
-+api.openstreetmap:193.63.75.99:300
-3api.openstreetmap:2001063000120500021a4bfffea5fd2a:300
-+maps.openstreetmap:193.63.75.99:300
-3maps.openstreetmap:2001063000120500021a4bfffea5fd2a:300
-+mapz.openstreetmap:193.63.75.99:300
-3mapz.openstreetmap:2001063000120500021a4bfffea5fd2a:300
+#+openstreetmap:193.63.75.99:300
+#3openstreetmap:2001063000120500021a4bfffea5fd2a:300
+#+www.openstreetmap:193.63.75.99:300
+#3www.openstreetmap:2001063000120500021a4bfffea5fd2a:300
+#+api.openstreetmap:193.63.75.99:300
+#3api.openstreetmap:2001063000120500021a4bfffea5fd2a:300
+#+maps.openstreetmap:193.63.75.99:300
+#3maps.openstreetmap:2001063000120500021a4bfffea5fd2a:300
+#+mapz.openstreetmap:193.63.75.99:300
+#3mapz.openstreetmap:2001063000120500021a4bfffea5fd2a:300
 +spike-01.ic.openstreetmap:146.179.159.162
 +www.ic.openstreetmap:146.179.159.162:3600
 +spike-01.oob.openstreetmap:146.179.159.188
