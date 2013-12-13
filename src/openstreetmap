@@ -335,7 +335,7 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # HOT site
 
-+hot.openstreetmap:50.56.49.247
++hot.openstreetmap:144.76.31.210:3600
 +humanitarian.openstreetmap:50.56.49.247
 +hot-staging.openstreetmap:50.56.49.247
 +hot-dev.openstreetmap:50.56.49.247
