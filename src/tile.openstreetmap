@@ -140,10 +140,16 @@ baku:
   lat: 40.395278
   lon: 49.882222
   colour: "#bfb830"
-  default: "xx"
   pingdom: 1064415
-  bandwidth: 14
+  bandwidth: 40
   ipv4: 94.20.20.55
+  allowed:
+    continents:
+      - AS
+      - EU
+  preferred:
+    countries:
+      - AZ
 
 # Spare colours:
 #
