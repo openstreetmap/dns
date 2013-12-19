@@ -142,7 +142,7 @@ baku:
   colour: "#bfb830"
   default: "xx"
   pingdom: 1064415
-  bandwidth: 10
+  bandwidth: 14
   ipv4: 94.20.20.55
 
 # Spare colours:
