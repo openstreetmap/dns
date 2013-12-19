@@ -336,10 +336,10 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # HOT site
 
-+hot.openstreetmap:144.76.31.210:3600
-+humanitarian.openstreetmap:144.76.31.210:3600
-+hot-staging.openstreetmap:144.76.31.210:3600
-+hot-dev.openstreetmap:144.76.31.210:3600
++hot.openstreetmap:144.76.31.210
++humanitarian.openstreetmap:144.76.31.210
++hot-staging.openstreetmap:144.76.31.210
++hot-dev.openstreetmap:144.76.31.210
 
 # Jochen Topf's taginfo service, running on openstreetmap.de hardware
 
