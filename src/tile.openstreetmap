@@ -135,9 +135,18 @@ provo:
       bandwidth: 30
       ipv4: 192.163.219.40
 
+# Baku, AZ
+baku:
+  lat: 40.395278
+  lon: 49.882222
+  colour: "#bfb830"
+  default: "xx"
+  pingdom: 1064415
+  bandwidth: 10
+  ipv4: 94.20.20.55
+
 # Spare colours:
 #
-#  bfb830
 #  bf3030
 #  bf9430
 #  7ab02c
