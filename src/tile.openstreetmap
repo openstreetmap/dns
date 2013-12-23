@@ -106,6 +106,9 @@ lyon:
   bandwidth: 35
   ipv4: 77.95.70.166
   ipv6: 2a0391800001002100000000000000a6
+  denied:
+    countries:
+      - FR
 
 # Falkenstein, DE
 falkenstein:
