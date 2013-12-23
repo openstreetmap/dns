@@ -293,13 +293,13 @@ sub match_origin
     }
     elsif ($cluster->{denied} &&
            $cluster->{denied}->{countries} &&
-           grep { $_ eq $origin->{country} } @{$cluster->{preferred}->{countries}})
+           grep { $_ eq $origin->{country} } @{$cluster->{denied}->{countries}})
     {
         $match = "denied";
     }
     elsif ($cluster->{denied} &&
            $cluster->{denied}->{continents} &&
-           grep { $_ eq $origin->{continent} } @{$cluster->{preferred}->{continents}})
+           grep { $_ eq $origin->{continent} } @{$cluster->{denied}->{continents}})
     {
         $match = "denied";
     }
