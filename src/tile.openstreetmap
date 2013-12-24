@@ -144,7 +144,7 @@ baku:
   lon: 49.882222
   colour: "#bfb830"
   pingdom: 1064415
-  bandwidth: 40
+  bandwidth: 4
   ipv4: 94.20.20.55
   allowed:
     continents:
