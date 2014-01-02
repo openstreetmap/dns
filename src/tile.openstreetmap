@@ -69,9 +69,12 @@ amsterdam:
   lon: 4.89222
   pingdom: 766251
   colour: "#a1b92e"
-  bandwidth: 40
+  bandwidth: 45
   ipv4: 134.90.146.26
   default: "xx"
+  preferred:
+    countries:
+      - ZA
 
 # Oslo, NO
 # BW Limit: 1000Mb/s
@@ -95,6 +98,11 @@ sanfrancisco:
   colour: "#25567b"
   bandwidth: 22
   ipv4: 64.62.205.202
+  preferred:
+    countries:
+      - CN
+      - KR
+      - VN
 
 # Lyon, FR
 # BW Limit: 100Mb/s
@@ -137,6 +145,9 @@ provo:
     - pingdom: 909445
       bandwidth: 30
       ipv4: 192.163.219.40
+  preferred:
+    countries:
+      - JP
 
 # Baku, AZ
 baku:
@@ -153,6 +164,12 @@ baku:
   preferred:
     countries:
       - AZ
+  denied:
+    countries:
+      - CN
+      - JP
+      - KR
+      - VN
 
 # Spare colours:
 #
