@@ -140,14 +140,15 @@ provo:
   default: "xx"
   servers:
     - pingdom: 909444
-      bandwidth: 30
+      bandwidth: 32
       ipv4: 192.163.219.36
     - pingdom: 909445
-      bandwidth: 30
+      bandwidth: 32
       ipv4: 192.163.219.40
   preferred:
     countries:
       - JP
+      - US
 
 # Baku, AZ
 baku:
