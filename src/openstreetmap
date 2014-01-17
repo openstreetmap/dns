@@ -328,11 +328,11 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
  
 # Donation site
 
-+donate.openstreetmap:5.153.225.168:600
++donate.openstreetmap:46.43.50.94:600
 
 # DMCA Notice site
 
-+dmca.openstreetmap:5.153.225.168:600
++dmca.openstreetmap:46.43.50.94:600
 
 # HOT site
 
