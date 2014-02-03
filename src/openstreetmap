@@ -228,10 +228,12 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 # Forum server
 
 +clifford.ucl.openstreetmap:10.0.0.17
++clifford.oob.openstreetmap:10.0.1.17
 
 # Loan machine for emacsen
 
 +ascalon.ucl.openstreetmap:10.0.0.18
++ascalon.oob.openstreetmap:10.0.1.18
 
 # Spare machines
 
