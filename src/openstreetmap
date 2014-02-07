@@ -257,7 +257,7 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # Forum server
 
-+forum.openstreetmap:93.186.179.231
++forum.openstreetmap:93.186.179.231:600
 
 # Bytemark machine, and the services which operate from it
 
