@@ -121,6 +121,13 @@ Zopenstreetmap:a.ns.bytemark.co.uk:hostmaster.openstreetmap.org:::::300
 +zark.ucl.openstreetmap:10.0.0.8
 +zark.oob.openstreetmap:10.0.1.8
 
+# Taginfo server
+
+#+grindtooth.openstreetmap:128.40.168.108
+#+taginfo.openstreetmap:128.40.168.108
++grindtooth.ucl.openstreetmap:10.0.0.19
++grindtooth.oob.openstreetmap:10.0.1.19
+
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
 +orm.openstreetmap:193.63.75.98
