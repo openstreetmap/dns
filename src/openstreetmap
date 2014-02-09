@@ -361,5 +361,5 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # Jochen Topf's taginfo service, running on openstreetmap.de hardware
 
-+taginfo.openstreetmap:85.214.112.59
-3taginfo.openstreetmap:2a01023840000000002168799ac19e7e
++taginfo.openstreetmap:85.214.112.59:600
+3taginfo.openstreetmap:2a01023840000000002168799ac19e7e:600
