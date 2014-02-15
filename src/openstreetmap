@@ -109,7 +109,7 @@ Zopenstreetmap:a.ns.bytemark.co.uk:hostmaster.openstreetmap.org:::::300
 # JXAPI server
 
 +norbert.openstreetmap:128.40.168.100
-+jxapi.openstreetmap:128.40.168.100
++jxapi.openstreetmap:128.40.168.108:600
 +norbert.ilo.openstreetmap:10.0.0.55
 +norbert.ucl.openstreetmap:10.0.0.5
 +norbert.oob.openstreetmap:10.0.1.5
