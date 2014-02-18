@@ -122,7 +122,7 @@ Zopenstreetmap:a.ns.bytemark.co.uk:hostmaster.openstreetmap.org:::::300
 # Taginfo server
 
 +grindtooth.openstreetmap:128.40.168.100
-#+taginfo.openstreetmap:128.40.168.100
++taginfo.openstreetmap:128.40.168.100:600
 +grindtooth.ucl.openstreetmap:10.0.0.19
 +grindtooth.oob.openstreetmap:10.0.1.19
 
@@ -359,5 +359,5 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # Jochen Topf's taginfo service, running on openstreetmap.de hardware
 
-+taginfo.openstreetmap:85.214.112.59:600
-3taginfo.openstreetmap:2a01023840000000002168799ac19e7e:600
+#+taginfo.openstreetmap:85.214.112.59:600
+#3taginfo.openstreetmap:2a01023840000000002168799ac19e7e:600
