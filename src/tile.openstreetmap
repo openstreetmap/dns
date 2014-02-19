@@ -173,8 +173,8 @@ baku:
 
 # Hsinchu, TW
 hsinchu:
-  lat: 24.78
-  lon: 121.013611
+  lat: 24.78268
+  Lon: 120.99563
   colour: "#bf3030"
   pingdom: 1124306
   bandwidth: 10
