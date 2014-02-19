@@ -171,9 +171,18 @@ baku:
       - KR
       - VN
 
+# Hsinchu, TW
+hsinchu:
+  lat: 24.78
+  lon: 121.013611
+  colour: "#bf3030"
+  pingdom: 1124306
+  bandwidth: 10
+  ipv4: 140.110.240.7
+  ipv6: 20010e10200002400000000000000007
+
 # Spare colours:
 #
-#  bf3030
 #  bf9430
 #  7ab02c
 #  a1285f
