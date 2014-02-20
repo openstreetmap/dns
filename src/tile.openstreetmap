@@ -177,7 +177,7 @@ hsinchu:
   lon: 120.99563
   colour: "#bf3030"
   pingdom: 1124306
-  bandwidth: 10
+  bandwidth: 30
   ipv4: 140.110.240.7
   ipv6: 20010e10200002400000000000000007
 
