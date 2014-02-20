@@ -101,8 +101,6 @@ sanfrancisco:
   preferred:
     countries:
       - CN
-      - KR
-      - VN
 
 # Lyon, FR
 # BW Limit: 100Mb/s
@@ -145,9 +143,6 @@ provo:
     - pingdom: 909445
       bandwidth: 20
       ipv4: 192.163.219.40
-  preferred:
-    countries:
-      - JP
 
 # Baku, AZ
 baku:
@@ -180,6 +175,13 @@ hsinchu:
   bandwidth: 30
   ipv4: 140.110.240.7
   ipv6: 20010e10200002400000000000000007
+  allowed:
+    continents:
+      - AS
+  preferred:
+    countries:
+      - TW
+      - JP
 
 # Spare colours:
 #
