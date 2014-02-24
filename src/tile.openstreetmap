@@ -85,6 +85,7 @@ oslo:
   colour: "#7c1f7c"
   bandwidth: 30
   ipv4: 31.169.50.10
+  default: "xx"
   allowed:
     continents:
       - EU
@@ -135,14 +136,17 @@ provo:
   lat: 40.20686
   lon: -111.642765
   colour: "#1f7c65"
-  default: "xx"
   servers:
     - pingdom: 909444
-      bandwidth: 20
+      bandwidth: 15.2261
       ipv4: 192.163.219.36
     - pingdom: 909445
-      bandwidth: 20
+      bandwidth: 15.2261
       ipv4: 192.163.219.40
+  allowed:
+    continents:
+      - NA
+      - SA
 
 # Baku, AZ
 baku:
