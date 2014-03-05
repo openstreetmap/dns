@@ -149,6 +149,7 @@ provo:
       - SA
 
 # Baku, AZ
+# BW Limit: 1000Mb/s
 baku:
   lat: 40.395278
   lon: 49.882222
