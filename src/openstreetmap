@@ -241,6 +241,7 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +ascalon.openstreetmap:128.40.168.105
 +ascalon.ucl.openstreetmap:10.0.0.18
 +ascalon.oob.openstreetmap:10.0.1.18
++roundup.openstreetmap:128.40.168.105:600
 
 # Spare machines
 
