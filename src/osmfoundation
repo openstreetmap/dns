@@ -22,7 +22,7 @@
 
 # Handle mail for the crm subdomain ourselves
 
-@crm.osmfoundation::a.mx.openstreetmap:10
+@crm.osmfoundation::a.mx.openstreetmap.org:10
 
 # Add DKIM public key
 # Use : raw to workaround TXT split issue
