@@ -20,6 +20,10 @@
 @osmfoundation::aspmx2.googlemail.com:10:3600
 @osmfoundation::aspmx3.googlemail.com:10:3600
 
+# Handle mail for the crm subdomain ourselves
+
+@crm.osmfoundation::a.mx.openstreetmap:10
+
 # Add DKIM public key
 # Use : raw to workaround TXT split issue
 
