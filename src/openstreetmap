@@ -99,12 +99,15 @@ Zopenstreetmap:a.ns.bytemark.co.uk:hostmaster.openstreetmap.org:::::300
 +rails3.ic.openstreetmap:146.179.159.167
 +thorn-03.oob.openstreetmap:146.179.159.183
 
-# Nominatim server
+# Nominatim servers
 
 +poldi.openstreetmap:128.40.168.106 
 +nominatim.openstreetmap:128.40.168.106:3600
 +poldi.ucl.openstreetmap:10.0.0.16
 +poldi.oob.openstreetmap:10.0.1.16
+
++pummelzacken.ucl.openstreetmap:10.0.0.20
++pummelzacken.oob.openstreetmap:10.0.1.20
 
 # JXAPI server
 
