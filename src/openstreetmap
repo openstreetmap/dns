@@ -106,6 +106,7 @@ Zopenstreetmap:a.ns.bytemark.co.uk:hostmaster.openstreetmap.org:::::300
 +poldi.ucl.openstreetmap:10.0.0.16
 +poldi.oob.openstreetmap:10.0.1.16
 
++pummelzacken.openstreetmap:128.40.168.105
 +pummelzacken.ucl.openstreetmap:10.0.0.20
 +pummelzacken.oob.openstreetmap:10.0.1.20
 
@@ -241,10 +242,8 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # Loan machine for emacsen
 
-+ascalon.openstreetmap:128.40.168.105
 +ascalon.ucl.openstreetmap:10.0.0.18
 +ascalon.oob.openstreetmap:10.0.1.18
-+roundup.openstreetmap:128.40.168.105:600
 
 # Spare machines
 
