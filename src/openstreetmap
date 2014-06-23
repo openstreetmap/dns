@@ -32,8 +32,6 @@ Zopenstreetmap:a.ns.bytemark.co.uk:hostmaster.openstreetmap.org:::::300
 &geo.openstreetmap:192.163.219.40:b.ns.openstreetmap
 # fume.openstreetmap.org
 &geo.openstreetmap:85.30.190.241:c.ns.openstreetmap
-# bunyip.openstreetmap.org
-&geo.openstreetmap:203.26.72.12:d.ns.openstreetmap
 
 # Main web servers and their aliases
 
@@ -318,8 +316,6 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 3fume.openstreetmap:2a02008000003ff8022264fffe2a2714
 +fume.oob.openstreetmap:85.30.129.98
 +gorynych.openstreetmap:130.193.62.73
-+bunyip.openstreetmap:203.26.72.12
-3bunyip.openstreetmap:2402640000010006021708fffe5640c3
 +lurien.openstreetmap:193.55.222.229
 +trogdor.openstreetmap:134.90.146.26
 +trogdor.oob.openstreetmap:134.90.146.30

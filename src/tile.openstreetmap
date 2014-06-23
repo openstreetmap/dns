@@ -35,20 +35,6 @@ moscow:
     countries:
       - RU
 
-# Brisbane, AU
-# BW Limit: 1000Mb/s
-brisbane:
-  lat: -27.5
-  lon: 153.0167
-  pingdom: 657940
-  colour: "#269926"
-  bandwidth: 20
-  ipv4: 203.26.72.12
-  ipv6: 2402640000010006021708fffe5640c3
-  allowed:
-    continents:
-      - OC
-
 # Pau, FR
 # Limit 100Mb/s
 pau:
@@ -194,3 +180,4 @@ hsinchu:
 #  7ab02c
 #  a1285f
 #  2c3d82
+#  269926
