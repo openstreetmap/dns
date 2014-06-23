@@ -240,8 +240,9 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # Loan machine for emacsen
 
-+ascalon.ucl.openstreetmap:10.0.0.18
-+ascalon.oob.openstreetmap:10.0.1.18
++ascalon.openstreetmap:128.40.45.193
+#+ascalon.ucl.openstreetmap:10.0.0.18
+#+ascalon.oob.openstreetmap:10.0.1.18
 
 # Spare machines
 
