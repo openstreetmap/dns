@@ -364,3 +364,10 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 #+taginfo.openstreetmap:85.214.112.59:600
 #3taginfo.openstreetmap:2a01023840000000002168799ac19e7e:600
+
+# OSUOSL machines
+
+stormfly-01.openstreetmap:140.211.167.104
+stormfly-01.oob.openstreetmap:10.0.0.99
+stormfly-02.openstreetmap:140.211.167.105
+stormfly-02.oob.openstreetmap:10.0.0.108
