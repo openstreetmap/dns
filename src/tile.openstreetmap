@@ -55,7 +55,7 @@ amsterdam:
   lon: 4.89222
   pingdom: 766251
   colour: "#a1b92e"
-  bandwidth: 45
+  bandwidth: 40
   ipv4: 134.90.146.26
   default: "xx"
   preferred:
