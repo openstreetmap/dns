@@ -72,9 +72,6 @@ oslo:
   bandwidth: 30
   ipv4: 31.169.50.10
   default: "xx"
-  allowed:
-    continents:
-      - EU
 
 # San Francisco, US
 # BW Limit: 100Mb/s ?
@@ -99,9 +96,6 @@ lyon:
   bandwidth: 35
   ipv4: 77.95.70.166
   ipv6: 2a0391800001002100000000000000a6
-  denied:
-    countries:
-      - FR
 
 # Falkenstein, DE
 falkenstein:
