@@ -282,15 +282,15 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +dns.openstreetmap:212.110.172.32:600
 +shenron.bm.openstreetmap:10.0.16.3
 
-3shenron.openstreetmap:200141c800100996021d7dfffec3df70:600
-3mail.openstreetmap:200141c800100996021d7dfffec3df70:600
-3lists.openstreetmap:200141c800100996021d7dfffec3df70:600
-3svn.openstreetmap:200141c800100996021d7dfffec3df70:600
-3git.openstreetmap:200141c800100996021d7dfffec3df70:600
-3trac.openstreetmap:200141c800100996021d7dfffec3df70:600
-3help.openstreetmap:200141c800100996021d7dfffec3df70:600
-3shop.openstreetmap:200141c800100996021d7dfffec3df70:600
-3dns.openstreetmap:200141c800100996021d7dfffec3df70:600
+#3shenron.openstreetmap:200141c800100996021d7dfffec3df70:600
+#3mail.openstreetmap:200141c800100996021d7dfffec3df70:600
+#3lists.openstreetmap:200141c800100996021d7dfffec3df70:600
+#3svn.openstreetmap:200141c800100996021d7dfffec3df70:600
+#3git.openstreetmap:200141c800100996021d7dfffec3df70:600
+#3trac.openstreetmap:200141c800100996021d7dfffec3df70:600
+#3help.openstreetmap:200141c800100996021d7dfffec3df70:600
+#3shop.openstreetmap:200141c800100996021d7dfffec3df70:600
+#3dns.openstreetmap:200141c800100996021d7dfffec3df70:600
 
 # Wiki server
 
