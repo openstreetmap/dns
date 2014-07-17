@@ -13,7 +13,7 @@ Zopenstreetmap:a.ns.bytemark.co.uk:hostmaster.openstreetmap.org:::::300
 
 # Make the virtual machine the primary MX with Bytemark as backup
 
-@openstreetmap:89.16.179.150:a:10:600
+@openstreetmap:212.110.172.32:a:10:600
 @noreply.openstreetmap::a.mx.openstreetmap:10
 @otrs.openstreetmap::a.mx.openstreetmap:10
 @messages.openstreetmap::a.mx.openstreetmap:10
@@ -27,7 +27,7 @@ Zopenstreetmap:a.ns.bytemark.co.uk:hostmaster.openstreetmap.org:::::300
 # Delegate geo.openstreetmap.org to PowerDNS
 
 # shenron.openstreetmap.org
-&geo.openstreetmap:89.16.179.150:a.ns.openstreetmap:600
+&geo.openstreetmap:212.110.172.32:a.ns.openstreetmap:600
 # nadder-02.openstreetmap.org
 &geo.openstreetmap:192.163.219.40:b.ns.openstreetmap
 # fume.openstreetmap.org
@@ -270,16 +270,16 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # Bytemark machine, and the services which operate from it
 
-+shenron.openstreetmap:89.16.179.150:600
-+mail.openstreetmap:89.16.179.150:600
-+lists.openstreetmap:89.16.179.150:600
-+svn.openstreetmap:89.16.179.150:600
-+git.openstreetmap:89.16.179.150:600
-+trac.openstreetmap:89.16.179.150:600
-+irc.openstreetmap:89.16.179.150:600
-+help.openstreetmap:89.16.179.150:600
-+shop.openstreetmap:89.16.179.150:600
-+dns.openstreetmap:89.16.179.150:600
++shenron.openstreetmap:212.110.172.32:600
++mail.openstreetmap:212.110.172.32:600
++lists.openstreetmap:212.110.172.32:600
++svn.openstreetmap:212.110.172.32:600
++git.openstreetmap:212.110.172.32:600
++trac.openstreetmap:212.110.172.32:600
++irc.openstreetmap:212.110.172.32:600
++help.openstreetmap:212.110.172.32:600
++shop.openstreetmap:212.110.172.32:600
++dns.openstreetmap:212.110.172.32:600
 +shenron.bm.openstreetmap:10.0.16.3
 
 3shenron.openstreetmap:200141c800100996021d7dfffec3df70:600
