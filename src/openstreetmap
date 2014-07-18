@@ -18,11 +18,11 @@ Zopenstreetmap:a.ns.bytemark.co.uk:hostmaster.openstreetmap.org:::::300
 @otrs.openstreetmap::a.mx.openstreetmap:10
 @messages.openstreetmap::a.mx.openstreetmap:10
 
-3a.mx.openstreetmap:200141c800100996021d7dfffec3df70
+3a.mx.openstreetmap:200141c9000104000000000000000032
 
 # Publish an SPF record indicating that only shenron sends mail
 
-'openstreetmap:v=spf1 ip4\07289.16.179.150 ip4\072212.110.172.32 ip6\0722001\07241c8\07210\072996\07221d\0727dff\072fec3\072df70 ~all
+'openstreetmap:v=spf1 ip4\07289.16.179.150 ip4\072212.110.172.32 ip6\0722001\07241c8\07210\072996\07221d\0727dff\072fec3\072df70 ip6\0722001\07241c9\0721\072400\072\07232 ~all
 
 # Delegate geo.openstreetmap.org to PowerDNS
 
@@ -282,15 +282,15 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +dns.openstreetmap:212.110.172.32:600
 +shenron.bm.openstreetmap:10.0.16.3
 
-#3shenron.openstreetmap:200141c800100996021d7dfffec3df70:600
-#3mail.openstreetmap:200141c800100996021d7dfffec3df70:600
-#3lists.openstreetmap:200141c800100996021d7dfffec3df70:600
-#3svn.openstreetmap:200141c800100996021d7dfffec3df70:600
-#3git.openstreetmap:200141c800100996021d7dfffec3df70:600
-#3trac.openstreetmap:200141c800100996021d7dfffec3df70:600
-#3help.openstreetmap:200141c800100996021d7dfffec3df70:600
-#3shop.openstreetmap:200141c800100996021d7dfffec3df70:600
-#3dns.openstreetmap:200141c800100996021d7dfffec3df70:600
+3shenron.openstreetmap:200141c9000104000000000000000032:600
+3mail.openstreetmap:200141c9000104000000000000000032:600
+3lists.openstreetmap:200141c9000104000000000000000032:600
+3svn.openstreetmap:200141c9000104000000000000000032:600
+3git.openstreetmap:200141c9000104000000000000000032:600
+3trac.openstreetmap:200141c9000104000000000000000032:600
+3help.openstreetmap:200141c9000104000000000000000032:600
+3shop.openstreetmap:200141c9000104000000000000000032:600
+3dns.openstreetmap:200141c9000104000000000000000032:600
 
 # Wiki server
 
