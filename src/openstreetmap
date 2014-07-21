@@ -324,8 +324,8 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +trogdor.oob.openstreetmap:134.90.146.30
 +ridgeback.openstreetmap:31.169.50.10
 +ridgeback.oob.openstreetmap:31.169.50.14
-+jakelong.openstreetmap:64.62.205.202
-3jakelong.openstreetmap:2001047000010041a80000fffe3ecdca
++jakelong.openstreetmap:64.62.205.202:600
+3jakelong.openstreetmap:2001047000010041a80000fffe3ecdca:600
 +nepomuk.openstreetmap:77.95.70.166
 3nepomuk.openstreetmap:2a0391800001002100000000000000a6
 +simurgh.openstreetmap:94.20.20.55
