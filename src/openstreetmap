@@ -213,10 +213,9 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 #+os.openstreetmap:128.40.45.198:3600
 #Ugly hack to use draco
 +os.openstreetmap:128.40.45.195:3600
-
-+a.os.openstreetmap:128.40.45.198:3600
-+b.os.openstreetmap:128.40.45.198:3600
-+c.os.openstreetmap:128.40.45.198:3600
++a.os.openstreetmap:128.40.45.195:3600
++b.os.openstreetmap:128.40.45.195:3600
++c.os.openstreetmap:128.40.45.195:3600
 +faffy.ucl.openstreetmap:10.0.0.7
 +faffy.oob.openstreetmap:10.0.1.7
 
