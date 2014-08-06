@@ -273,21 +273,9 @@ sub match_origin
     {
         $match = "preferred";
     }
-    elsif ($cluster->{preferred} &&
-           $cluster->{preferred}->{continents} &&
-           grep { $_ eq $origin->{continent} } @{$cluster->{preferred}->{continents}})
-    {
-        $match = "preferred";
-    }
     elsif ($cluster->{allowed} &&
            $cluster->{allowed}->{countries} &&
            grep { $_ eq $origin->{country} } @{$cluster->{allowed}->{countries}})
-    {
-        $match = "allowed";
-    }
-    elsif ($cluster->{allowed} &&
-           $cluster->{allowed}->{continents} &&
-           grep { $_ eq $origin->{continent} } @{$cluster->{allowed}->{continents}})
     {
         $match = "allowed";
     }
@@ -296,6 +284,18 @@ sub match_origin
            grep { $_ eq $origin->{country} } @{$cluster->{denied}->{countries}})
     {
         $match = "denied";
+    }
+    elsif ($cluster->{preferred} &&
+           $cluster->{preferred}->{continents} &&
+           grep { $_ eq $origin->{continent} } @{$cluster->{preferred}->{continents}})
+    {
+        $match = "preferred";
+    }
+    elsif ($cluster->{allowed} &&
+           $cluster->{allowed}->{continents} &&
+           grep { $_ eq $origin->{continent} } @{$cluster->{allowed}->{continents}})
+    {
+        $match = "allowed";
     }
     elsif ($cluster->{denied} &&
            $cluster->{denied}->{continents} &&
