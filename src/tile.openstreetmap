@@ -146,6 +146,7 @@ baku:
       - AZ
   denied:
     countries:
+      - AM
       - CN
       - JP
       - KR
