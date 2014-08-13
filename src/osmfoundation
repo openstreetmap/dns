@@ -10,15 +10,15 @@
 
 # SPF Record
 
-'osmfoundation:v=spf1 a\072shenron.openstreetmap.org include\072aspmx.googlemail.com ~all:3600
+'osmfoundation:v=spf1 a\072shenron.openstreetmap.org include\072_spf.google.com ~all:3600
 
 # Let google handle email
 
 @osmfoundation::aspmx.l.google.com:1:3600
 @osmfoundation::alt1.aspmx.l.google.com:5:3600
 @osmfoundation::alt2.aspmx.l.google.com:5:3600
-@osmfoundation::aspmx2.googlemail.com:10:3600
-@osmfoundation::aspmx3.googlemail.com:10:3600
+@osmfoundation::alt3.aspmx.l.google.com:10:3600
+@osmfoundation::alt4.aspmx.l.google.com:10:3600
 
 # Handle mail for the crm subdomain ourselves
 
