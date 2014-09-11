@@ -94,6 +94,10 @@ if ($ENV{PINGDOM_USERNAME} && $ENV{PINGDOM_PASSWORD})
                 $server->{status} = $cache->{$server->{pingdom}} || "down";
             }
         }
+        else
+        {
+            $server->{status} = "down";
+        }
     }
 
     YAML::DumpFile("pingdom.yml", $cache);
