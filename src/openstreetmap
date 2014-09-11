@@ -337,6 +337,8 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +nadder-02.openstreetmap:192.163.219.40
 +longma.openstreetmap:140.110.240.7
 3longma.openstreetmap:20010e10200002400000000000000007
++viserion.openstreetmap:193.198.233.211
+3viserion.openstreetmap:20010b684cff00030000000000000002
 
 # Blog aggregator (on Shaun McDonald's VM)
 
