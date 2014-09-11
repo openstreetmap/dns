@@ -169,9 +169,18 @@ hsinchu:
       - TW
       - JP
 
+# Pula, HR
+pula:
+  lat: 44.8632
+  lon: 13.8487
+  pingdom: 0
+  colour: "#bf9430"
+  bandwidth: 0
+  ipv4: 193.198.233.211
+  ipv6: 20010b684cff00030000000000000002
+
 # Spare colours:
 #
-#  bf9430
 #  7ab02c
 #  a1285f
 #  2c3d82
