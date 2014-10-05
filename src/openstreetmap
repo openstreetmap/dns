@@ -100,7 +100,7 @@ Zopenstreetmap:a.ns.bytemark.co.uk:hostmaster.openstreetmap.org:::::300
 # Nominatim servers
 
 +poldi.openstreetmap:128.40.45.203
-+nominatim.openstreetmap:128.40.45.203:3600
++nominatim.openstreetmap:128.40.45.203:600
 +poldi.ucl.openstreetmap:10.0.0.16
 +poldi.oob.openstreetmap:10.0.1.16
 
