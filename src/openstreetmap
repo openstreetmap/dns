@@ -166,13 +166,13 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +smaug.ic.openstreetmap:146.179.159.168
 +smaug.oob.openstreetmap:146.179.159.182
 
-+ramoth.ic.openstreetmap:146.179.159.170
-+db.ic.openstreetmap:146.179.159.170:600
-+ramoth.oob.openstreetmap:146.179.159.181
-
 +katla.ic.openstreetmap:146.179.159.173
-+db-slave.ic.openstreetmap:146.179.159.173:600
++db.ic.openstreetmap:146.179.159.173:600
 +katla.oob.openstreetmap:146.179.159.174
+
++ramoth.ic.openstreetmap:146.179.159.170
++db-slave.ic.openstreetmap:146.179.159.170:600
++ramoth.oob.openstreetmap:146.179.159.181
 
 # Development server with wildcard alias for user sites
 
