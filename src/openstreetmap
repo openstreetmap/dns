@@ -105,7 +105,8 @@ Zopenstreetmap:a.ns.bytemark.co.uk:hostmaster.openstreetmap.org:::::300
 +poldi.oob.openstreetmap:10.0.1.16
 
 +pummelzacken.openstreetmap:128.40.45.204
-+nominatim.openstreetmap:128.40.45.204:600
+#+nominatim.openstreetmap:128.40.45.204:600
++nominatim.openstreetmap:188.40.32.215:600
 +pummelzacken.ucl.openstreetmap:10.0.0.20
 +pummelzacken.oob.openstreetmap:10.0.1.20
 
