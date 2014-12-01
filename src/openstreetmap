@@ -126,8 +126,7 @@ Zopenstreetmap:a.ns.bytemark.co.uk:hostmaster.openstreetmap.org:::::300
 # Taginfo server
 
 +grindtooth.openstreetmap:128.40.45.199
-#+taginfo.openstreetmap:128.40.45.199:600
-+taginfo.openstreetmap:140.211.167.104:600
++taginfo.openstreetmap:128.40.45.199:600
 +grindtooth.ucl.openstreetmap:10.0.0.19
 +grindtooth.oob.openstreetmap:10.0.1.19
 
