@@ -18,6 +18,7 @@
 <north>42.65604389629997</north>
 <east>1.7865427778319827</east>
 <south>42.42849259876837</south>
+<postalCodeFormat>AD###</postalCodeFormat>
 </country>
 <country>
 <countryCode>AE</countryCode>
@@ -37,6 +38,7 @@
 <north>26.08415985107422</north>
 <east>56.38166046142578</east>
 <south>22.633329391479492</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>AF</countryCode>
@@ -56,6 +58,7 @@
 <north>38.483418</north>
 <east>74.879448</east>
 <south>29.377472</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>AG</countryCode>
@@ -75,6 +78,7 @@
 <north>17.729387</north>
 <east>-61.672421</east>
 <south>16.996979</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>AI</countryCode>
@@ -94,6 +98,7 @@
 <north>18.283424</north>
 <east>-62.971359</east>
 <south>18.166815</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>AL</countryCode>
@@ -113,6 +118,7 @@
 <north>42.665611</north>
 <east>21.068472</east>
 <south>39.648361</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>AM</countryCode>
@@ -132,6 +138,7 @@
 <north>41.301834</north>
 <east>46.772435045159995</east>
 <south>38.830528</south>
+<postalCodeFormat>######</postalCodeFormat>
 </country>
 <country>
 <countryCode>AO</countryCode>
@@ -151,6 +158,7 @@
 <north>-4.376826</north>
 <east>24.082119</east>
 <south>-18.042076</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>AQ</countryCode>
@@ -170,6 +178,7 @@
 <north>-60.515533</north>
 <east>179.9999</east>
 <south>-89.9999</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>AR</countryCode>
@@ -189,6 +198,7 @@
 <north>-21.781277</north>
 <east>-53.591835</east>
 <south>-55.061314</south>
+<postalCodeFormat>@####@@@</postalCodeFormat>
 </country>
 <country>
 <countryCode>AS</countryCode>
@@ -208,6 +218,7 @@
 <north>-11.0497</north>
 <east>-169.416077</east>
 <south>-14.382478</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>AT</countryCode>
@@ -223,10 +234,11 @@
 <currencyCode>EUR</currencyCode>
 <languages>de-AT,hr,hu,sl</languages>
 <geonameId>2782113</geonameId>
-<west>9.535916</west>
-<north>49.017056</north>
-<east>17.162722</east>
-<south>46.378029</south>
+<west>9.53095237240833</west>
+<north>49.0211627691393</north>
+<east>17.1620685652599</east>
+<south>46.3726520216244</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>AU</countryCode>
@@ -246,6 +258,7 @@
 <north>-10.062805</north>
 <east>153.639252</east>
 <south>-43.64397</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>AW</countryCode>
@@ -265,6 +278,7 @@
 <north>12.623718127152925</north>
 <east>-69.86575120104982</east>
 <south>12.411707706190716</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>AX</countryCode>
@@ -284,6 +298,7 @@
 <north>60.488861</north>
 <east>21.011862</east>
 <south>59.90675</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>AZ</countryCode>
@@ -303,6 +318,7 @@
 <north>41.90564</north>
 <east>50.370083</east>
 <south>38.38915252685547</south>
+<postalCodeFormat>AZ ####</postalCodeFormat>
 </country>
 <country>
 <countryCode>BA</countryCode>
@@ -322,6 +338,7 @@
 <north>45.239193</north>
 <east>19.622223</east>
 <south>42.546112</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>BB</countryCode>
@@ -341,6 +358,7 @@
 <north>13.327257</north>
 <east>-59.420376</east>
 <south>13.039844</south>
+<postalCodeFormat>BB#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>BD</countryCode>
@@ -360,6 +378,7 @@
 <north>26.631945</north>
 <east>92.673668</east>
 <south>20.743334</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>BE</countryCode>
@@ -379,6 +398,7 @@
 <north>51.505444</north>
 <east>6.403861</east>
 <south>49.49361</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>BF</countryCode>
@@ -398,6 +418,7 @@
 <north>15.082593</north>
 <east>2.405395</east>
 <south>9.401108</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>BG</countryCode>
@@ -417,6 +438,7 @@
 <north>44.21764</north>
 <east>28.612167</east>
 <south>41.242084</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>BH</countryCode>
@@ -436,6 +458,7 @@
 <north>26.282583</north>
 <east>50.664471</east>
 <south>25.796862</south>
+<postalCodeFormat>####|###</postalCodeFormat>
 </country>
 <country>
 <countryCode>BI</countryCode>
@@ -455,6 +478,7 @@
 <north>-2.310123</north>
 <east>30.847729</east>
 <south>-4.465713</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>BJ</countryCode>
@@ -474,6 +498,7 @@
 <north>12.418347</north>
 <east>3.851701</east>
 <south>6.225748</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>BL</countryCode>
@@ -493,6 +518,7 @@
 <north>17.928808791949283</north>
 <east>-62.788983372985854</east>
 <south>17.878183227405575</south>
+<postalCodeFormat>### ###</postalCodeFormat>
 </country>
 <country>
 <countryCode>BM</countryCode>
@@ -512,6 +538,7 @@
 <north>32.393833</north>
 <east>-64.651993</east>
 <south>32.246639</south>
+<postalCodeFormat>@@ ##</postalCodeFormat>
 </country>
 <country>
 <countryCode>BN</countryCode>
@@ -531,6 +558,7 @@
 <north>5.047167</north>
 <east>115.359444</east>
 <south>4.003083</south>
+<postalCodeFormat>@@####</postalCodeFormat>
 </country>
 <country>
 <countryCode>BO</countryCode>
@@ -550,6 +578,7 @@
 <north>-9.680567</north>
 <east>-57.45809600000001</east>
 <south>-22.896133</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>BQ</countryCode>
@@ -569,6 +598,7 @@
 <north>12.304535</north>
 <east>-68.192307</east>
 <south>12.017149</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>BR</countryCode>
@@ -588,6 +618,7 @@
 <north>5.264877</north>
 <east>-32.392998</east>
 <south>-33.750706</south>
+<postalCodeFormat>#####-###</postalCodeFormat>
 </country>
 <country>
 <countryCode>BS</countryCode>
@@ -607,6 +638,7 @@
 <north>26.919243</north>
 <east>-74.423874</east>
 <south>22.852743</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>BT</countryCode>
@@ -626,6 +658,7 @@
 <north>28.323778</north>
 <east>92.125191</east>
 <south>26.70764</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>BV</countryCode>
@@ -645,6 +678,7 @@
 <north>-54.400322</north>
 <east>3.487976</east>
 <south>-54.462383</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>BW</countryCode>
@@ -664,6 +698,7 @@
 <north>-17.780813</north>
 <east>29.360781</east>
 <south>-26.907246</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>BY</countryCode>
@@ -683,6 +718,7 @@
 <north>56.165806</north>
 <east>32.770805</east>
 <south>51.256416</south>
+<postalCodeFormat>######</postalCodeFormat>
 </country>
 <country>
 <countryCode>BZ</countryCode>
@@ -702,6 +738,7 @@
 <north>18.496557</north>
 <east>-87.776985</east>
 <south>15.8893</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>CA</countryCode>
@@ -721,6 +758,7 @@
 <north>83.110626</north>
 <east>-52.636291</east>
 <south>41.67598</south>
+<postalCodeFormat>@#@ #@#</postalCodeFormat>
 </country>
 <country>
 <countryCode>CC</countryCode>
@@ -740,10 +778,11 @@
 <north>-12.072459094</north>
 <east>96.929489344</east>
 <south>-12.208725839</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>CD</countryCode>
-<countryName>Congo</countryName>
+<countryName>Democratic Republic of the Congo</countryName>
 <isoNumeric>180</isoNumeric>
 <isoAlpha3>COD</isoAlpha3>
 <fipsCode>CG</fipsCode>
@@ -759,6 +798,7 @@
 <north>5.386098</north>
 <east>31.305912</east>
 <south>-13.455675</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>CF</countryCode>
@@ -778,6 +818,7 @@
 <north>11.007569</north>
 <east>27.463421</east>
 <south>2.220514</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>CG</countryCode>
@@ -797,6 +838,7 @@
 <north>3.703082</north>
 <east>18.649839</east>
 <south>-5.027223</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>CH</countryCode>
@@ -816,6 +858,7 @@
 <north>47.805332</north>
 <east>10.491472</east>
 <south>45.825695</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>CI</countryCode>
@@ -835,6 +878,7 @@
 <north>10.736642</north>
 <east>-2.494897</east>
 <south>4.357067</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>CK</countryCode>
@@ -854,6 +898,7 @@
 <north>-10.023114</north>
 <east>-157.312134</east>
 <south>-21.944164</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>CL</countryCode>
@@ -872,7 +917,8 @@
 <west>-80.785851</west>
 <north>-17.507553</north>
 <east>-66.417557</east>
-<south>-55.916348</south>
+<south>-55.9256225109217</south>
+<postalCodeFormat>#######</postalCodeFormat>
 </country>
 <country>
 <countryCode>CM</countryCode>
@@ -892,6 +938,7 @@
 <north>13.078056</north>
 <east>16.192116</east>
 <south>1.652548</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>CN</countryCode>
@@ -911,6 +958,7 @@
 <north>53.56086</north>
 <east>134.773911</east>
 <south>15.775416</south>
+<postalCodeFormat>######</postalCodeFormat>
 </country>
 <country>
 <countryCode>CO</countryCode>
@@ -922,7 +970,7 @@
 <continentName>South America</continentName>
 <capital>Bogotá</capital>
 <areaInSqKm>1138910.0</areaInSqKm>
-<population>44205293</population>
+<population>47790000</population>
 <currencyCode>COP</currencyCode>
 <languages>es-CO</languages>
 <geonameId>3686110</geonameId>
@@ -930,6 +978,7 @@
 <north>13.380502</north>
 <east>-66.869835</east>
 <south>-4.225869</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>CR</countryCode>
@@ -949,6 +998,7 @@
 <north>11.216819</north>
 <east>-82.555992</east>
 <south>8.032975</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>CU</countryCode>
@@ -968,6 +1018,7 @@
 <north>23.226042</north>
 <east>-74.131775</east>
 <south>19.828083</south>
+<postalCodeFormat>CP #####</postalCodeFormat>
 </country>
 <country>
 <countryCode>CV</countryCode>
@@ -987,6 +1038,7 @@
 <north>17.197178</north>
 <east>-22.669443</east>
 <south>14.808022</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>CW</countryCode>
@@ -1006,6 +1058,7 @@
 <north>12.385672</north>
 <east>-68.733948</east>
 <south>12.032745</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>CX</countryCode>
@@ -1025,6 +1078,7 @@
 <north>-10.412356007</north>
 <east>105.712596992</east>
 <south>-10.5704829995</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>CY</countryCode>
@@ -1044,10 +1098,11 @@
 <north>35.701527</north>
 <east>34.59791599999994</east>
 <south>34.6332846722908</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>CZ</countryCode>
-<countryName>Czechia</countryName>
+<countryName>Czech Republic</countryName>
 <isoNumeric>203</isoNumeric>
 <isoAlpha3>CZE</isoAlpha3>
 <fipsCode>EZ</fipsCode>
@@ -1063,6 +1118,7 @@
 <north>51.058887</north>
 <east>18.860111</east>
 <south>48.542915</south>
+<postalCodeFormat>### ##</postalCodeFormat>
 </country>
 <country>
 <countryCode>DE</countryCode>
@@ -1082,6 +1138,7 @@
 <north>55.055637</north>
 <east>15.039889</east>
 <south>47.275776</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>DJ</countryCode>
@@ -1101,6 +1158,7 @@
 <north>12.706833</north>
 <east>43.416973</east>
 <south>10.909917</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>DK</countryCode>
@@ -1120,6 +1178,7 @@
 <north>57.748417</north>
 <east>15.158834</east>
 <south>54.562389</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>DM</countryCode>
@@ -1139,6 +1198,7 @@
 <north>15.631809</north>
 <east>-61.244152</east>
 <south>15.20169</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>DO</countryCode>
@@ -1158,6 +1218,7 @@
 <north>19.929859</north>
 <east>-68.32</east>
 <south>17.543159</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>DZ</countryCode>
@@ -1177,6 +1238,7 @@
 <north>37.093723</north>
 <east>11.979548</east>
 <south>18.960028</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>EC</countryCode>
@@ -1196,6 +1258,7 @@
 <north>1.43902</north>
 <east>-75.184586</east>
 <south>-4.998823</south>
+<postalCodeFormat>@####@</postalCodeFormat>
 </country>
 <country>
 <countryCode>EE</countryCode>
@@ -1215,6 +1278,7 @@
 <north>59.676224</north>
 <east>28.209972</east>
 <south>57.516193</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>EG</countryCode>
@@ -1232,8 +1296,9 @@
 <geonameId>357994</geonameId>
 <west>24.698111</west>
 <north>31.667334</north>
-<east>35.794861</east>
+<east>36.89833068847656</east>
 <south>21.725389</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>EH</countryCode>
@@ -1253,6 +1318,7 @@
 <north>27.669674</north>
 <east>-8.670276</east>
 <south>20.774158</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>ER</countryCode>
@@ -1272,6 +1338,7 @@
 <north>18.003084</north>
 <east>43.13464</east>
 <south>12.359555</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>ES</countryCode>
@@ -1287,10 +1354,11 @@
 <currencyCode>EUR</currencyCode>
 <languages>es-ES,ca,gl,eu,oc</languages>
 <geonameId>2510769</geonameId>
-<west>-9.290778</west>
-<north>43.791721</north>
-<east>4.315389</east>
-<south>36.000332</south>
+<west>-9.30151567231899</west>
+<north>43.7913565913767</north>
+<east>4.32778473043961</east>
+<south>36.0001044260548</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>ET</countryCode>
@@ -1310,6 +1378,7 @@
 <north>14.89375</north>
 <east>47.986179</east>
 <south>3.402422</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>FI</countryCode>
@@ -1329,6 +1398,7 @@
 <north>70.096054</north>
 <east>31.580944</east>
 <south>59.808777</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>FJ</countryCode>
@@ -1348,6 +1418,7 @@
 <north>-12.480111</north>
 <east>-178.424438</east>
 <south>-20.67597</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>FK</countryCode>
@@ -1367,6 +1438,7 @@
 <north>-51.24065</north>
 <east>-57.712486</east>
 <south>-52.360512</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>FM</countryCode>
@@ -1386,6 +1458,7 @@
 <north>10.08904</north>
 <east>163.03717</east>
 <south>1.02629</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>FO</countryCode>
@@ -1405,6 +1478,7 @@
 <north>62.400749</north>
 <east>-6.399583</east>
 <south>61.394943</south>
+<postalCodeFormat>FO-###</postalCodeFormat>
 </country>
 <country>
 <countryCode>FR</countryCode>
@@ -1424,6 +1498,7 @@
 <north>51.092804</north>
 <east>9.561556</east>
 <south>41.371582</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>GA</countryCode>
@@ -1443,6 +1518,7 @@
 <north>2.322612</north>
 <east>14.502347</east>
 <south>-3.978806</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>GB</countryCode>
@@ -1462,6 +1538,7 @@
 <north>59.360249</north>
 <east>1.759</east>
 <south>49.906193</south>
+<postalCodeFormat>@# #@@|@## #@@|@@# #@@|@@## #@@|@#@ #@@|@@#@ #@@|GIR0AA</postalCodeFormat>
 </country>
 <country>
 <countryCode>GD</countryCode>
@@ -1481,6 +1558,7 @@
 <north>12.318283928171299</north>
 <east>-61.57676970108031</east>
 <south>11.986893</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>GE</countryCode>
@@ -1500,6 +1578,7 @@
 <north>43.586498</north>
 <east>46.725971</east>
 <south>41.053196</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>GF</countryCode>
@@ -1519,6 +1598,7 @@
 <north>5.776496</north>
 <east>-51.613949</east>
 <south>2.127094</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>GG</countryCode>
@@ -1534,10 +1614,11 @@
 <currencyCode>GBP</currencyCode>
 <languages>en,fr</languages>
 <geonameId>3042362</geonameId>
-<west>-2.682472</west>
-<north>49.738609</north>
-<east>-2.163889</east>
-<south>49.412777</south>
+<west>-2.673194593476069</west>
+<north>49.731727816705416</north>
+<east>-2.1577152112246267</east>
+<south>49.40764156876899</south>
+<postalCodeFormat>@# #@@|@## #@@|@@# #@@|@@## #@@|@#@ #@@|@@#@ #@@|GIR0AA</postalCodeFormat>
 </country>
 <country>
 <countryCode>GH</countryCode>
@@ -1557,6 +1638,7 @@
 <north>11.173301</north>
 <east>1.191781</east>
 <south>4.736723</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>GI</countryCode>
@@ -1576,6 +1658,7 @@
 <north>36.155439135670726</north>
 <east>-5.338285164001491</east>
 <south>36.10903070140248</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>GL</countryCode>
@@ -1595,6 +1678,7 @@
 <north>83.627357</north>
 <east>-11.312319</east>
 <south>59.777401</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>GM</countryCode>
@@ -1614,6 +1698,7 @@
 <north>13.826571</north>
 <east>-13.797793</east>
 <south>13.064252</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>GN</countryCode>
@@ -1633,6 +1718,7 @@
 <north>12.67622</north>
 <east>-7.641071</east>
 <south>7.193553</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>GP</countryCode>
@@ -1652,6 +1738,7 @@
 <north>16.516848</north>
 <east>-61.0</east>
 <south>15.867565</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>GQ</countryCode>
@@ -1671,6 +1758,7 @@
 <north>2.346989</north>
 <east>11.335724</east>
 <south>0.92086</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>GR</countryCode>
@@ -1690,6 +1778,7 @@
 <north>41.7484999849641</north>
 <east>28.2470831714347</east>
 <south>34.8020663391466</south>
+<postalCodeFormat>### ##</postalCodeFormat>
 </country>
 <country>
 <countryCode>GS</countryCode>
@@ -1709,6 +1798,7 @@
 <north>-53.970467</north>
 <east>-26.229326</east>
 <south>-59.479259</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>GT</countryCode>
@@ -1728,6 +1818,7 @@
 <north>17.81522</north>
 <east>-88.223198</east>
 <south>13.737302</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>GU</countryCode>
@@ -1743,10 +1834,11 @@
 <currencyCode>USD</currencyCode>
 <languages>en-GU,ch-GU</languages>
 <geonameId>4043988</geonameId>
-<west>144.619247</west>
-<north>13.652333</north>
-<east>144.953979</east>
-<south>13.240611</south>
+<west>144.61806</west>
+<north>13.654402</north>
+<east>144.956894</east>
+<south>13.23376</south>
+<postalCodeFormat>969##</postalCodeFormat>
 </country>
 <country>
 <countryCode>GW</countryCode>
@@ -1766,6 +1858,7 @@
 <north>12.680789</north>
 <east>-13.636522</east>
 <south>10.924265</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>GY</countryCode>
@@ -1785,6 +1878,7 @@
 <north>8.557567</north>
 <east>-56.480251</east>
 <south>1.17508</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>HK</countryCode>
@@ -1804,6 +1898,7 @@
 <north>22.559778</north>
 <east>114.434753</east>
 <south>22.15325</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>HM</countryCode>
@@ -1823,6 +1918,7 @@
 <north>-52.909416</north>
 <east>73.859146</east>
 <south>-53.192001</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>HN</countryCode>
@@ -1842,6 +1938,7 @@
 <north>16.510256</north>
 <east>-83.155403</east>
 <south>12.982411</south>
+<postalCodeFormat>@@####</postalCodeFormat>
 </country>
 <country>
 <countryCode>HR</countryCode>
@@ -1861,6 +1958,7 @@
 <north>46.53875</north>
 <east>19.427389</east>
 <south>42.43589</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>HT</countryCode>
@@ -1880,6 +1978,7 @@
 <north>20.08782</north>
 <east>-71.613358</east>
 <south>18.021032</south>
+<postalCodeFormat>HT####</postalCodeFormat>
 </country>
 <country>
 <countryCode>HU</countryCode>
@@ -1891,7 +1990,7 @@
 <continentName>Europe</continentName>
 <capital>Budapest</capital>
 <areaInSqKm>93030.0</areaInSqKm>
-<population>9930000</population>
+<population>9982000</population>
 <currencyCode>HUF</currencyCode>
 <languages>hu-HU</languages>
 <geonameId>719819</geonameId>
@@ -1899,6 +1998,7 @@
 <north>48.585667</north>
 <east>22.906</east>
 <south>45.74361</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>ID</countryCode>
@@ -1918,6 +2018,7 @@
 <north>5.904417</north>
 <east>141.021805</east>
 <south>-10.941861</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>IE</countryCode>
@@ -1937,6 +2038,7 @@
 <north>55.387917</north>
 <east>-6.002389</east>
 <south>51.451584</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>IL</countryCode>
@@ -1956,6 +2058,7 @@
 <north>33.340137</north>
 <east>35.876804</east>
 <south>29.496639</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>IM</countryCode>
@@ -1975,6 +2078,7 @@
 <north>54.419724</north>
 <east>-4.3115</east>
 <south>54.055916</south>
+<postalCodeFormat>@# #@@|@## #@@|@@# #@@|@@## #@@|@#@ #@@|@@#@ #@@|GIR0AA</postalCodeFormat>
 </country>
 <country>
 <countryCode>IN</countryCode>
@@ -1994,6 +2098,7 @@
 <north>35.504223</north>
 <east>97.403305</east>
 <south>6.747139</south>
+<postalCodeFormat>######</postalCodeFormat>
 </country>
 <country>
 <countryCode>IO</countryCode>
@@ -2013,6 +2118,7 @@
 <north>-5.268333</north>
 <east>72.493164</east>
 <south>-7.438028</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>IQ</countryCode>
@@ -2032,6 +2138,7 @@
 <north>37.378029</north>
 <east>48.575916</east>
 <south>29.069445</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>IR</countryCode>
@@ -2051,6 +2158,7 @@
 <north>39.777222</north>
 <east>63.317471</east>
 <south>25.064083</south>
+<postalCodeFormat>##########</postalCodeFormat>
 </country>
 <country>
 <countryCode>IS</countryCode>
@@ -2070,6 +2178,7 @@
 <north>66.53463</north>
 <east>-13.495815</east>
 <south>63.393253</south>
+<postalCodeFormat>###</postalCodeFormat>
 </country>
 <country>
 <countryCode>IT</countryCode>
@@ -2089,6 +2198,7 @@
 <north>47.095196</north>
 <east>18.513445</east>
 <south>36.652779</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>JE</countryCode>
@@ -2108,6 +2218,7 @@
 <north>49.265057</north>
 <east>-2.022083</east>
 <south>49.169834</south>
+<postalCodeFormat>@# #@@|@## #@@|@@# #@@|@@## #@@|@#@ #@@|@@#@ #@@|GIR0AA</postalCodeFormat>
 </country>
 <country>
 <countryCode>JM</countryCode>
@@ -2127,6 +2238,7 @@
 <north>18.526976</north>
 <east>-76.180321</east>
 <south>17.703554</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>JO</countryCode>
@@ -2146,6 +2258,7 @@
 <north>33.367668</north>
 <east>39.301167</east>
 <south>29.185888</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>JP</countryCode>
@@ -2165,6 +2278,7 @@
 <north>45.52314</north>
 <east>145.820892</east>
 <south>24.249472</south>
+<postalCodeFormat>###-####</postalCodeFormat>
 </country>
 <country>
 <countryCode>KE</countryCode>
@@ -2184,6 +2298,7 @@
 <north>5.019938</north>
 <east>41.899078</east>
 <south>-4.678047</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>KG</countryCode>
@@ -2203,6 +2318,7 @@
 <north>43.238224</north>
 <east>80.283165</east>
 <south>39.172832</south>
+<postalCodeFormat>######</postalCodeFormat>
 </country>
 <country>
 <countryCode>KH</countryCode>
@@ -2222,6 +2338,7 @@
 <north>14.686417</north>
 <east>107.627724</east>
 <south>10.409083</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>KI</countryCode>
@@ -2240,7 +2357,8 @@
 <west>169.556137</west>
 <north>4.71957</north>
 <east>-150.215347</east>
-<south>-11.437038</south>
+<south>-11.446881150186856</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>KM</countryCode>
@@ -2260,6 +2378,7 @@
 <north>-11.362381</north>
 <east>44.538223</east>
 <south>-12.387857</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>KN</countryCode>
@@ -2271,7 +2390,7 @@
 <continentName>North America</continentName>
 <capital>Basseterre</capital>
 <areaInSqKm>261.0</areaInSqKm>
-<population>49898</population>
+<population>51134</population>
 <currencyCode>XCD</currencyCode>
 <languages>en-KN</languages>
 <geonameId>3575174</geonameId>
@@ -2279,6 +2398,7 @@
 <north>17.420118</north>
 <east>-62.543266</east>
 <south>17.095343</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>KP</countryCode>
@@ -2298,6 +2418,7 @@
 <north>43.006054</north>
 <east>130.674866</east>
 <south>37.673332</south>
+<postalCodeFormat>###-###</postalCodeFormat>
 </country>
 <country>
 <countryCode>KR</countryCode>
@@ -2317,6 +2438,7 @@
 <north>38.612446</north>
 <east>129.584671</east>
 <south>33.190945</south>
+<postalCodeFormat>SEOUL ###-###</postalCodeFormat>
 </country>
 <country>
 <countryCode>KW</countryCode>
@@ -2336,6 +2458,7 @@
 <north>30.095945</north>
 <east>48.431473</east>
 <south>28.524611</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>KY</countryCode>
@@ -2355,6 +2478,7 @@
 <north>19.7617</north>
 <east>-79.727272</east>
 <south>19.263029</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>KZ</countryCode>
@@ -2374,6 +2498,7 @@
 <north>55.451195</north>
 <east>87.312668</east>
 <south>40.936333</south>
+<postalCodeFormat>######</postalCodeFormat>
 </country>
 <country>
 <countryCode>LA</countryCode>
@@ -2393,6 +2518,7 @@
 <north>22.500389</north>
 <east>107.697029</east>
 <south>13.910027</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>LB</countryCode>
@@ -2412,6 +2538,7 @@
 <north>34.691418</north>
 <east>36.639194</east>
 <south>33.05386</south>
+<postalCodeFormat>#### ####|####</postalCodeFormat>
 </country>
 <country>
 <countryCode>LC</countryCode>
@@ -2431,6 +2558,7 @@
 <north>14.103245</north>
 <east>-60.874203</east>
 <south>13.704778</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>LI</countryCode>
@@ -2446,10 +2574,11 @@
 <currencyCode>CHF</currencyCode>
 <languages>de-LI</languages>
 <geonameId>3042058</geonameId>
-<west>9.477805</west>
-<north>47.273529</north>
-<east>9.632195</east>
-<south>47.055862</south>
+<west>9.47167359782014</west>
+<north>47.2706251386959</north>
+<east>9.63564281136796</east>
+<south>47.0484284123471</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>LK</countryCode>
@@ -2469,6 +2598,7 @@
 <north>9.831361</north>
 <east>81.881279</east>
 <south>5.916833</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>LR</countryCode>
@@ -2488,6 +2618,7 @@
 <north>8.551791</north>
 <east>-7.365113</east>
 <south>4.353057</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>LS</countryCode>
@@ -2507,6 +2638,7 @@
 <north>-28.572058</north>
 <east>29.465761</east>
 <south>-30.668964</south>
+<postalCodeFormat>###</postalCodeFormat>
 </country>
 <country>
 <countryCode>LT</countryCode>
@@ -2518,7 +2650,7 @@
 <continentName>Europe</continentName>
 <capital>Vilnius</capital>
 <areaInSqKm>65200.0</areaInSqKm>
-<population>3565000</population>
+<population>2944459</population>
 <currencyCode>LTL</currencyCode>
 <languages>lt,ru,pl</languages>
 <geonameId>597427</geonameId>
@@ -2526,6 +2658,7 @@
 <north>56.446918</north>
 <east>26.871944</east>
 <south>53.901306</south>
+<postalCodeFormat>LT-#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>LU</countryCode>
@@ -2545,6 +2678,7 @@
 <north>50.184944</north>
 <east>6.528472</east>
 <south>49.446583</south>
+<postalCodeFormat>L-####</postalCodeFormat>
 </country>
 <country>
 <countryCode>LV</countryCode>
@@ -2557,13 +2691,14 @@
 <capital>Riga</capital>
 <areaInSqKm>64589.0</areaInSqKm>
 <population>2217969</population>
-<currencyCode>LVL</currencyCode>
+<currencyCode>EUR</currencyCode>
 <languages>lv,ru,lt</languages>
 <geonameId>458258</geonameId>
 <west>20.974277</west>
 <north>58.082306</north>
 <east>28.241167</east>
 <south>55.668861</south>
+<postalCodeFormat>LV-####</postalCodeFormat>
 </country>
 <country>
 <countryCode>LY</countryCode>
@@ -2583,6 +2718,7 @@
 <north>33.168999</north>
 <east>25.150612</east>
 <south>19.508045</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>MA</countryCode>
@@ -2602,6 +2738,7 @@
 <north>35.9224966985384</north>
 <east>-0.991750000000025</east>
 <south>27.662115</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>MC</countryCode>
@@ -2621,6 +2758,7 @@
 <north>43.75196717037228</north>
 <east>7.439939260482788</east>
 <south>43.72472839869377</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>MD</countryCode>
@@ -2640,6 +2778,7 @@
 <north>48.490166</north>
 <east>30.135445</east>
 <south>45.468887</south>
+<postalCodeFormat>MD-####</postalCodeFormat>
 </country>
 <country>
 <countryCode>ME</countryCode>
@@ -2659,6 +2798,7 @@
 <north>43.570137</north>
 <east>20.358833</east>
 <south>41.850166</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>MF</countryCode>
@@ -2678,6 +2818,7 @@
 <north>18.130354</north>
 <east>-63.012993</east>
 <south>18.052231</south>
+<postalCodeFormat>### ###</postalCodeFormat>
 </country>
 <country>
 <countryCode>MG</countryCode>
@@ -2697,6 +2838,7 @@
 <north>-11.945433</north>
 <east>50.48378</east>
 <south>-25.608952</south>
+<postalCodeFormat>###</postalCodeFormat>
 </country>
 <country>
 <countryCode>MH</countryCode>
@@ -2716,6 +2858,7 @@
 <north>14.62</north>
 <east>171.931808</east>
 <south>5.587639</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>MK</countryCode>
@@ -2727,7 +2870,7 @@
 <continentName>Europe</continentName>
 <capital>Skopje</capital>
 <areaInSqKm>25333.0</areaInSqKm>
-<population>2061000</population>
+<population>2062294</population>
 <currencyCode>MKD</currencyCode>
 <languages>mk,sq,tr,rmm,sr</languages>
 <geonameId>718075</geonameId>
@@ -2735,6 +2878,7 @@
 <north>42.361805</north>
 <east>23.038139</east>
 <south>40.860195</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>ML</countryCode>
@@ -2754,6 +2898,7 @@
 <north>25.000002</north>
 <east>4.244968</east>
 <south>10.159513</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>MM</countryCode>
@@ -2773,6 +2918,7 @@
 <north>28.543249</north>
 <east>101.176781</east>
 <south>9.784583</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>MN</countryCode>
@@ -2792,6 +2938,7 @@
 <north>52.154251</north>
 <east>119.924309</east>
 <south>41.567638</south>
+<postalCodeFormat>######</postalCodeFormat>
 </country>
 <country>
 <countryCode>MO</countryCode>
@@ -2811,6 +2958,7 @@
 <north>22.222334</north>
 <east>113.565834</east>
 <south>22.180389</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>MP</countryCode>
@@ -2830,6 +2978,7 @@
 <north>20.55344</north>
 <east>146.06528</east>
 <south>14.11023</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>MQ</countryCode>
@@ -2849,6 +2998,7 @@
 <north>14.878819</north>
 <east>-60.81551</east>
 <south>14.392262</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>MR</countryCode>
@@ -2868,6 +3018,7 @@
 <north>27.298073</north>
 <east>-4.827674</east>
 <south>14.715547</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>MS</countryCode>
@@ -2887,6 +3038,7 @@
 <north>16.824060205313184</north>
 <east>-62.144100129608205</east>
 <south>16.674768935441556</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>MT</countryCode>
@@ -2902,10 +3054,11 @@
 <currencyCode>EUR</currencyCode>
 <languages>mt,en-MT</languages>
 <geonameId>2562770</geonameId>
-<west>14.191584</west>
-<north>36.082027</north>
-<east>14.577639</east>
-<south>35.810276</south>
+<west>14.1834251000001</west>
+<north>36.0821530995456</north>
+<east>14.5764915000002</east>
+<south>35.8061835000002</south>
+<postalCodeFormat>@@@ ###|@@@ ##</postalCodeFormat>
 </country>
 <country>
 <countryCode>MU</countryCode>
@@ -2925,6 +3078,7 @@
 <north>-10.319255</north>
 <east>63.500179</east>
 <south>-20.525717</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>MV</countryCode>
@@ -2941,9 +3095,10 @@
 <languages>dv,en</languages>
 <geonameId>1282028</geonameId>
 <west>72.693222</west>
-<north>7.098361</north>
+<north>7.091587495414767</north>
 <east>73.637276</east>
 <south>-0.692694</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>MW</countryCode>
@@ -2963,6 +3118,7 @@
 <north>-9.367541</north>
 <east>35.916821</east>
 <south>-17.125</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>MX</countryCode>
@@ -2982,6 +3138,7 @@
 <north>32.716759</north>
 <east>-86.703392</east>
 <south>14.532866</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>MY</countryCode>
@@ -3001,6 +3158,7 @@
 <north>7.363417</north>
 <east>119.267502</east>
 <south>0.855222</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>MZ</countryCode>
@@ -3020,6 +3178,7 @@
 <north>-10.471883</north>
 <east>40.842995</east>
 <south>-26.868685</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>NA</countryCode>
@@ -3039,6 +3198,7 @@
 <north>-16.959894</north>
 <east>25.256701</east>
 <south>-28.97143</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>NC</countryCode>
@@ -3058,6 +3218,7 @@
 <north>-19.549778</north>
 <east>168.129135</east>
 <south>-22.698</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>NE</countryCode>
@@ -3077,6 +3238,7 @@
 <north>23.525026</north>
 <east>15.995643</east>
 <south>11.696975</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>NF</countryCode>
@@ -3096,6 +3258,7 @@
 <north>-28.995170686948427</north>
 <east>167.99773740209957</east>
 <south>-29.063076742954735</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>NG</countryCode>
@@ -3115,6 +3278,7 @@
 <north>13.892007</north>
 <east>14.680073</east>
 <south>4.277144</south>
+<postalCodeFormat>######</postalCodeFormat>
 </country>
 <country>
 <countryCode>NI</countryCode>
@@ -3134,6 +3298,7 @@
 <north>15.025909</north>
 <east>-82.738289</east>
 <south>10.707543</south>
+<postalCodeFormat>###-###-#</postalCodeFormat>
 </country>
 <country>
 <countryCode>NL</countryCode>
@@ -3153,6 +3318,7 @@
 <north>53.512196</north>
 <east>7.227944</east>
 <south>50.753918</south>
+<postalCodeFormat>#### @@</postalCodeFormat>
 </country>
 <country>
 <countryCode>NO</countryCode>
@@ -3172,6 +3338,7 @@
 <north>71.18811</north>
 <east>31.078052520751953</east>
 <south>57.977917</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>NP</countryCode>
@@ -3191,6 +3358,7 @@
 <north>30.43339</north>
 <east>88.199333</east>
 <south>26.356722</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>NR</countryCode>
@@ -3210,6 +3378,7 @@
 <north>-0.504306</north>
 <east>166.945282</east>
 <south>-0.552333</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>NU</countryCode>
@@ -3229,6 +3398,7 @@
 <north>-18.951069</north>
 <east>-169.775177</east>
 <south>-19.152193</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>NZ</countryCode>
@@ -3248,6 +3418,7 @@
 <north>-34.389668</north>
 <east>-180.0</east>
 <south>-47.286026</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>OM</countryCode>
@@ -3267,6 +3438,7 @@
 <north>26.387972</north>
 <east>59.836582</east>
 <south>16.64575</south>
+<postalCodeFormat>###</postalCodeFormat>
 </country>
 <country>
 <countryCode>PA</countryCode>
@@ -3286,6 +3458,7 @@
 <north>9.637514</north>
 <east>-77.17411</east>
 <south>7.197906</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>PE</countryCode>
@@ -3305,6 +3478,7 @@
 <north>-0.012977</north>
 <east>-68.677986</east>
 <south>-18.349728</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>PF</countryCode>
@@ -3324,6 +3498,7 @@
 <north>-7.903573</north>
 <east>-134.929825</east>
 <south>-27.653572</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>PG</countryCode>
@@ -3343,6 +3518,7 @@
 <north>-1.318639</north>
 <east>155.96344</east>
 <south>-11.657861</south>
+<postalCodeFormat>###</postalCodeFormat>
 </country>
 <country>
 <countryCode>PH</countryCode>
@@ -3362,6 +3538,7 @@
 <north>21.120611</north>
 <east>126.601524</east>
 <south>4.643306</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>PK</countryCode>
@@ -3381,6 +3558,7 @@
 <north>37.097</north>
 <east>77.840919</east>
 <south>23.786722</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>PL</countryCode>
@@ -3400,6 +3578,7 @@
 <north>54.839138</north>
 <east>24.150749</east>
 <south>49.006363</south>
+<postalCodeFormat>##-###</postalCodeFormat>
 </country>
 <country>
 <countryCode>PM</countryCode>
@@ -3419,6 +3598,7 @@
 <north>47.146286</north>
 <east>-56.252991</east>
 <south>46.786041</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>PN</countryCode>
@@ -3438,6 +3618,7 @@
 <north>-24.315865</north>
 <east>-124.77285</east>
 <south>-24.672565</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>PR</countryCode>
@@ -3457,6 +3638,7 @@
 <north>18.520166</north>
 <east>-65.242737</east>
 <south>17.926405</south>
+<postalCodeFormat>#####-####</postalCodeFormat>
 </country>
 <country>
 <countryCode>PS</countryCode>
@@ -3476,6 +3658,7 @@
 <north>32.54638671875</north>
 <east>35.5732955932617</east>
 <south>31.216541290283203</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>PT</countryCode>
@@ -3491,10 +3674,11 @@
 <currencyCode>EUR</currencyCode>
 <languages>pt-PT,mwl</languages>
 <geonameId>2264397</geonameId>
-<west>-9.495944</west>
-<north>42.145638</north>
-<east>-6.182694</east>
+<west>-9.50052660716588</west>
+<north>42.154311127408</north>
+<east>-6.18915930748288</east>
 <south>36.96125</south>
+<postalCodeFormat>####-###</postalCodeFormat>
 </country>
 <country>
 <countryCode>PW</countryCode>
@@ -3514,6 +3698,7 @@
 <north>8.46966</north>
 <east>134.72307</east>
 <south>2.8036</south>
+<postalCodeFormat>96940</postalCodeFormat>
 </country>
 <country>
 <countryCode>PY</countryCode>
@@ -3533,6 +3718,7 @@
 <north>-19.294041</north>
 <east>-54.259354</east>
 <south>-27.608738</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>QA</countryCode>
@@ -3552,6 +3738,7 @@
 <north>26.154722</north>
 <east>51.636639</east>
 <south>24.482944</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>RE</countryCode>
@@ -3567,10 +3754,11 @@
 <currencyCode>EUR</currencyCode>
 <languages>fr-RE</languages>
 <geonameId>935317</geonameId>
-<west>55.219086</west>
-<north>-20.856855</north>
-<east>55.845039</east>
-<south>-21.372211</south>
+<west>55.21219224792685</west>
+<north>-20.868391324576944</north>
+<east>55.838193901930026</east>
+<south>-21.383747301469107</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>RO</countryCode>
@@ -3590,6 +3778,7 @@
 <north>48.266945</north>
 <east>29.691055</east>
 <south>43.627304</south>
+<postalCodeFormat>######</postalCodeFormat>
 </country>
 <country>
 <countryCode>RS</countryCode>
@@ -3609,6 +3798,7 @@
 <north>46.18138885498047</north>
 <east>23.00499725341797</east>
 <south>42.232215881347656</south>
+<postalCodeFormat>######</postalCodeFormat>
 </country>
 <country>
 <countryCode>RU</countryCode>
@@ -3628,6 +3818,7 @@
 <north>81.857361</north>
 <east>-169.05</east>
 <south>41.188862</south>
+<postalCodeFormat>######</postalCodeFormat>
 </country>
 <country>
 <countryCode>RW</countryCode>
@@ -3647,6 +3838,7 @@
 <north>-1.053481</north>
 <east>30.895958</east>
 <south>-2.840679</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>SA</countryCode>
@@ -3666,6 +3858,7 @@
 <north>32.158333</north>
 <east>55.666584</east>
 <south>15.61425</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>SB</countryCode>
@@ -3685,6 +3878,7 @@
 <north>-6.589611</north>
 <east>166.980865</east>
 <south>-11.850555</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>SC</countryCode>
@@ -3702,8 +3896,9 @@
 <geonameId>241170</geonameId>
 <west>46.204769</west>
 <north>-4.283717</north>
-<east>56.279507</east>
+<east>56.29770287937299</east>
 <south>-9.753867</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>SD</countryCode>
@@ -3723,6 +3918,7 @@
 <north>22.232219696044922</north>
 <east>38.60749816894531</east>
 <south>8.684720993041992</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>SE</countryCode>
@@ -3734,14 +3930,15 @@
 <continentName>Europe</continentName>
 <capital>Stockholm</capital>
 <areaInSqKm>449964.0</areaInSqKm>
-<population>9045000</population>
+<population>9555893</population>
 <currencyCode>SEK</currencyCode>
 <languages>sv-SE,se,sma,fi-SE</languages>
 <geonameId>2661886</geonameId>
 <west>11.118694</west>
 <north>69.0625</north>
-<east>24.156292483918484</east>
+<east>24.1562924839185</east>
 <south>55.337112</south>
+<postalCodeFormat>### ##</postalCodeFormat>
 </country>
 <country>
 <countryCode>SG</countryCode>
@@ -3761,6 +3958,7 @@
 <north>1.471278</north>
 <east>104.007469</east>
 <south>1.258556</south>
+<postalCodeFormat>######</postalCodeFormat>
 </country>
 <country>
 <countryCode>SH</countryCode>
@@ -3780,6 +3978,7 @@
 <north>-7.887815</north>
 <east>-5.638753</east>
 <south>-16.019543</south>
+<postalCodeFormat>STHL 1ZZ</postalCodeFormat>
 </country>
 <country>
 <countryCode>SI</countryCode>
@@ -3795,10 +3994,11 @@
 <currencyCode>EUR</currencyCode>
 <languages>sl,sh</languages>
 <geonameId>3190538</geonameId>
-<west>13.383083</west>
-<north>46.877918</north>
-<east>16.566</east>
-<south>45.413139</south>
+<west>13.3753342064709</west>
+<north>46.8766275518195</north>
+<east>16.6106311807</east>
+<south>45.421812998164</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>SJ</countryCode>
@@ -3818,6 +4018,7 @@
 <north>80.762085</north>
 <east>33.287334</east>
 <south>79.220306</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>SK</countryCode>
@@ -3837,6 +4038,7 @@
 <north>49.603168</north>
 <east>22.570444</east>
 <south>47.728111</south>
+<postalCodeFormat>### ##</postalCodeFormat>
 </country>
 <country>
 <countryCode>SL</countryCode>
@@ -3856,6 +4058,7 @@
 <north>10.0</north>
 <east>-10.284238</east>
 <south>6.929611</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>SM</countryCode>
@@ -3875,6 +4078,7 @@
 <north>43.99223730851663</north>
 <east>12.51653186779788</east>
 <south>43.8937092171425</south>
+<postalCodeFormat>4789#</postalCodeFormat>
 </country>
 <country>
 <countryCode>SN</countryCode>
@@ -3894,6 +4098,7 @@
 <north>16.691633</north>
 <east>-11.355887</east>
 <south>12.307275</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>SO</countryCode>
@@ -3913,6 +4118,7 @@
 <north>11.979166</north>
 <east>51.412636</east>
 <south>-1.674868</south>
+<postalCodeFormat>@@  #####</postalCodeFormat>
 </country>
 <country>
 <countryCode>SR</countryCode>
@@ -3932,6 +4138,7 @@
 <north>6.004546</north>
 <east>-53.977493</east>
 <south>1.831145</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>SS</countryCode>
@@ -3951,6 +4158,7 @@
 <north>12.219148635864258</north>
 <east>35.9405517578125</east>
 <south>3.493394374847412</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>ST</countryCode>
@@ -3970,6 +4178,7 @@
 <north>1.701323</north>
 <east>7.466374</east>
 <south>0.024766</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>SV</countryCode>
@@ -3989,6 +4198,7 @@
 <north>14.445067</north>
 <east>-87.692162</east>
 <south>13.148679</south>
+<postalCodeFormat>CP ####</postalCodeFormat>
 </country>
 <country>
 <countryCode>SX</countryCode>
@@ -4008,6 +4218,7 @@
 <north>18.070248</north>
 <east>-63.012993</east>
 <south>18.011692</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>SY</countryCode>
@@ -4027,6 +4238,7 @@
 <north>37.319138</north>
 <east>42.385029</east>
 <south>32.310665</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>SZ</countryCode>
@@ -4046,6 +4258,7 @@
 <north>-25.719648</north>
 <east>32.13726</east>
 <south>-27.317101</south>
+<postalCodeFormat>@###</postalCodeFormat>
 </country>
 <country>
 <countryCode>TC</countryCode>
@@ -4065,6 +4278,7 @@
 <north>21.961878</north>
 <east>-71.123642</east>
 <south>21.422626</south>
+<postalCodeFormat>TKCA 1ZZ</postalCodeFormat>
 </country>
 <country>
 <countryCode>TD</countryCode>
@@ -4084,6 +4298,7 @@
 <north>23.450369</north>
 <east>24.002661</east>
 <south>7.441068</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>TF</countryCode>
@@ -4103,6 +4318,7 @@
 <north>-37.790722</north>
 <east>77.598808</east>
 <south>-49.735184</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>TG</countryCode>
@@ -4122,6 +4338,7 @@
 <north>11.138977</north>
 <east>1.806693</east>
 <south>6.104417</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>TH</countryCode>
@@ -4141,6 +4358,7 @@
 <north>20.463194</north>
 <east>105.639389</east>
 <south>5.61</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>TJ</countryCode>
@@ -4160,6 +4378,7 @@
 <north>41.042252</north>
 <east>75.137222</east>
 <south>36.674137</south>
+<postalCodeFormat>######</postalCodeFormat>
 </country>
 <country>
 <countryCode>TK</countryCode>
@@ -4179,6 +4398,7 @@
 <north>-8.553613662719727</north>
 <east>-171.21142578125</east>
 <south>-9.381111145019531</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>TL</countryCode>
@@ -4198,6 +4418,7 @@
 <north>-8.135833740234375</north>
 <east>127.30859375</east>
 <south>-9.463626861572266</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>TM</countryCode>
@@ -4217,6 +4438,7 @@
 <north>42.795555</north>
 <east>66.684303</east>
 <south>35.141083</south>
+<postalCodeFormat>######</postalCodeFormat>
 </country>
 <country>
 <countryCode>TN</countryCode>
@@ -4236,6 +4458,7 @@
 <north>37.543915</north>
 <east>11.598278</east>
 <south>30.240417</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>TO</countryCode>
@@ -4255,6 +4478,7 @@
 <north>-15.562988</north>
 <east>-173.907578</east>
 <south>-21.455057</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>TR</countryCode>
@@ -4274,6 +4498,7 @@
 <north>42.107613</north>
 <east>44.834999</east>
 <south>35.815418</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>TT</countryCode>
@@ -4293,6 +4518,7 @@
 <north>11.338342</north>
 <east>-60.517933</east>
 <south>10.036105</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>TV</countryCode>
@@ -4312,6 +4538,7 @@
 <north>-5.641972</north>
 <east>179.863281</east>
 <south>-10.801169</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>TW</countryCode>
@@ -4328,9 +4555,10 @@
 <languages>zh-TW,zh,nan,hak</languages>
 <geonameId>1668284</geonameId>
 <west>119.534691</west>
-<north>25.29825</north>
-<east>122.000443</east>
-<south>21.901806</south>
+<north>25.3002899036181</north>
+<east>122.006739823315</east>
+<south>21.896606934717</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>TZ</countryCode>
@@ -4350,6 +4578,7 @@
 <north>-0.990736</north>
 <east>40.443222</east>
 <south>-11.745696</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>UA</countryCode>
@@ -4369,6 +4598,7 @@
 <north>52.369362</north>
 <east>40.20739</east>
 <south>44.390415</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>UG</countryCode>
@@ -4388,6 +4618,7 @@
 <north>4.214427</north>
 <east>35.036049</east>
 <south>-1.48405</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>UM</countryCode>
@@ -4407,6 +4638,7 @@
 <north>28.219814</north>
 <east>166.654526</east>
 <south>-0.389006</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>US</countryCode>
@@ -4426,6 +4658,7 @@
 <north>49.388611</north>
 <east>-66.954811</east>
 <south>24.544245</south>
+<postalCodeFormat>#####-####</postalCodeFormat>
 </country>
 <country>
 <countryCode>UY</countryCode>
@@ -4445,6 +4678,7 @@
 <north>-30.082224</north>
 <east>-53.073933</east>
 <south>-34.980816</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>UZ</countryCode>
@@ -4464,6 +4698,7 @@
 <north>45.575001</north>
 <east>73.132278</east>
 <south>37.184444</south>
+<postalCodeFormat>######</postalCodeFormat>
 </country>
 <country>
 <countryCode>VA</countryCode>
@@ -4483,6 +4718,7 @@
 <north>41.90743830885576</north>
 <east>12.45837546629481</east>
 <south>41.90027960306854</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>VC</countryCode>
@@ -4502,6 +4738,7 @@
 <north>13.377834</north>
 <east>-61.11388</east>
 <south>12.583984810969037</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>VE</countryCode>
@@ -4521,6 +4758,7 @@
 <north>12.201903</north>
 <east>-59.80378</east>
 <south>0.626311</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>VG</countryCode>
@@ -4536,10 +4774,11 @@
 <currencyCode>USD</currencyCode>
 <languages>en-VG</languages>
 <geonameId>3577718</geonameId>
-<west>-64.715363</west>
+<west>-64.71312752730364</west>
 <north>18.757221</north>
 <east>-64.268768</east>
-<south>18.38998</south>
+<south>18.383710898211305</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>VI</countryCode>
@@ -4555,10 +4794,11 @@
 <currencyCode>USD</currencyCode>
 <languages>en-VI</languages>
 <geonameId>4796775</geonameId>
-<west>-65.038231</west>
-<north>18.391747</north>
-<east>-64.565178</east>
-<south>17.681725</south>
+<west>-65.101333</west>
+<north>18.415382</north>
+<east>-64.565193</east>
+<south>17.673931</south>
+<postalCodeFormat>#####-####</postalCodeFormat>
 </country>
 <country>
 <countryCode>VN</countryCode>
@@ -4578,6 +4818,7 @@
 <north>23.388834</north>
 <east>109.464638</east>
 <south>8.559611</south>
+<postalCodeFormat>######</postalCodeFormat>
 </country>
 <country>
 <countryCode>VU</countryCode>
@@ -4597,6 +4838,7 @@
 <north>-13.073444</north>
 <east>169.904785</east>
 <south>-20.248945</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>WF</countryCode>
@@ -4612,10 +4854,11 @@
 <currencyCode>XPF</currencyCode>
 <languages>wls,fud,fr-WF</languages>
 <geonameId>4034749</geonameId>
-<west>-178.206787</west>
-<north>-13.214251</north>
-<east>-176.128784</east>
-<south>-14.3286</south>
+<west>-178.1848112896414</west>
+<north>-13.216758181061444</north>
+<east>-176.16174317718253</east>
+<south>-14.314559989820843</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>WS</countryCode>
@@ -4635,6 +4878,7 @@
 <north>-13.432207</north>
 <east>-171.415741</east>
 <south>-14.040939</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>XK</countryCode>
@@ -4654,6 +4898,7 @@
 <north>43.2682495807952</north>
 <east>21.80335088694943</east>
 <south>41.856369601859925</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>YE</countryCode>
@@ -4673,6 +4918,7 @@
 <north>18.9999989031009</north>
 <east>54.5305388163283</east>
 <south>12.1110910264462</south>
+<postalCodeFormat/>
 </country>
 <country>
 <countryCode>YT</countryCode>
@@ -4692,6 +4938,7 @@
 <north>-12.648891</north>
 <east>45.29295</east>
 <south>-13.000132</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>ZA</countryCode>
@@ -4711,6 +4958,7 @@
 <north>-22.126612</north>
 <east>32.895973</east>
 <south>-34.839828</south>
+<postalCodeFormat>####</postalCodeFormat>
 </country>
 <country>
 <countryCode>ZM</countryCode>
@@ -4723,13 +4971,14 @@
 <capital>Lusaka</capital>
 <areaInSqKm>752614.0</areaInSqKm>
 <population>13460305</population>
-<currencyCode>ZMK</currencyCode>
+<currencyCode>ZMW</currencyCode>
 <languages>en-ZM,bem,loz,lun,lue,ny,toi</languages>
 <geonameId>895949</geonameId>
 <west>21.999371</west>
 <north>-8.22436</north>
 <east>33.705704</east>
 <south>-18.079473</south>
+<postalCodeFormat>#####</postalCodeFormat>
 </country>
 <country>
 <countryCode>ZW</countryCode>
@@ -4749,5 +4998,6 @@
 <north>-15.608835</north>
 <east>33.056305</east>
 <south>-22.417738</south>
+<postalCodeFormat/>
 </country>
 </geonames>
