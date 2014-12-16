@@ -173,9 +173,9 @@ hsinchu:
 pula:
   lat: 44.8632
   lon: 13.8487
-  pingdom: 0
+  pingdom: 1453872
   colour: "#bf9430"
-  bandwidth: 0
+  bandwidth: 10
   ipv4: 193.198.233.211
   ipv6: 20010b684cff00030000000000000003
 
@@ -183,9 +183,9 @@ pula:
 london:
   lat: 51.5120484
   lon: -0.00201880060605929
-  pingdom: 0
+  pingdom: 1453871
   colour: "#7ab02c"
-  bandwidth: 0
+  bandwidth: 10
   ipv4: 185.73.44.30
   ipv6: 20010ba800002c1e0000000000000000
 
