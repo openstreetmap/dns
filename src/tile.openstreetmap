@@ -179,9 +179,18 @@ pula:
   ipv4: 193.198.233.211
   ipv6: 20010b684cff00030000000000000003
 
+# London, GB
+london:
+  lat: 51.5120484
+  lon: -0.00201880060605929
+  pingdom: 0
+  colour: "#7ab02c"
+  bandwidth: 0
+  ipv4: 185.73.44.30
+  ipv6: 20010ba800002c1e0000000000000000
+
 # Spare colours:
 #
-#  7ab02c
 #  a1285f
 #  2c3d82
 #  269926
