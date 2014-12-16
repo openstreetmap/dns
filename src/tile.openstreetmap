@@ -185,7 +185,7 @@ london:
   lon: -0.00201880060605929
   pingdom: 1453871
   colour: "#7ab02c"
-  bandwidth: 10
+  bandwidth: 20
   ipv4: 185.73.44.30
   ipv6: 20010ba800002c1e0000000000000000
 
