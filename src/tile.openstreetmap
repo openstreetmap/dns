@@ -189,8 +189,16 @@ london:
   ipv4: 185.73.44.30
   ipv6: 20010ba800002c1e0000000000000000
 
+# Corvallis, US
+corvallis:
+  lat: 44.5639267
+  lon: -123.274707837676
+  pingdom: 0
+  colour: "#a1285f"
+  bandwidth: 0
+  ipv4: 140.211.167.105
+
 # Spare colours:
 #
-#  a1285f
 #  2c3d82
 #  269926
