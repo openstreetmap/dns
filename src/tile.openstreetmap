@@ -193,9 +193,9 @@ london:
 corvallis:
   lat: 44.5639267
   lon: -123.274707837676
-  pingdom: 0
+  pingdom: 1454011
   colour: "#a1285f"
-  bandwidth: 0
+  bandwidth: 10
   ipv4: 140.211.167.105
 
 # Spare colours:
