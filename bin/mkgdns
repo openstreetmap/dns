@@ -1,0 +1,79 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+use XML::TreeBuilder;
+
+# Initialise continent and country tables
+my %continents;
+my @countries;
+
+# Create a parser for the country database
+my $countries = XML::TreeBuilder->new;
+
+# Parse the country database
+$countries->parsefile("lib/countries.xml");
+
+# Build continent and country tables
+foreach my $country ($countries->look_down("_tag" => "country"))
+{
+    my $continent = $country->look_down("_tag" => "continent")->as_text;
+    my $code = $country->look_down("_tag" => "countryCode")->as_text;
+
+    next if $code eq "SS" or $code eq "XK";
+
+    $continents{$continent} ||= [];
+
+    push @countries, $code;
+    push @{$continents{$continent}}, $code;
+}
+
+# Add unknown country
+push @countries, "XX";
+
+print "plugins => {\n";
+print "  geoip => {\n";
+print "    maps => {\n";
+print "      country => {\n";
+print "        geoip_db => /usr/share/GeoIP/GeoIPv6.dat\n";
+print "        datacenters => [";
+
+print join(",", map { lc($_) } sort @countries);
+
+print "]\n";
+print "        map => {\n";
+print "          default => [xx]\n";
+
+foreach my $continent (sort keys %continents)
+{
+    print "          ${continent} => {\n";
+
+    foreach my $country (sort @{$continents{$continent}})
+    {
+        print "            ${country} => [\L${country}\E]\n";
+    }
+
+    print "          }\n";
+}
+
+print "        }\n";
+print "      }\n";
+print "    }\n";
+print "    resources => {\n";
+print "      tile => {\n";
+print "        map => country\n";
+print "        dcmap => {\n";
+
+foreach my $country (sort @countries)
+{
+    print "          \L${country}\E => \L${country}\E.tile.openstreetmap.org.\n";
+}
+
+print "        }\n";
+print "      }\n";
+print "    }\n";
+print "  }\n";
+print "}\n";
+
+exit 0;
