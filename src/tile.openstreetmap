@@ -175,7 +175,7 @@ pula:
   lon: 13.8487
   pingdom: 1453872
   colour: "#bf9430"
-  bandwidth: 5
+  bandwidth: 10
   ipv4: 193.198.233.211
   ipv6: 20010b684cff00030000000000000003
 
