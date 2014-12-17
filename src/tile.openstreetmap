@@ -171,8 +171,8 @@ hsinchu:
 
 # Pula, HR
 pula:
-  lat: 44.8632
-  lon: 13.8487
+  lat: 44.866280
+  lon: 13.851520
   pingdom: 1453872
   colour: "#bf9430"
   bandwidth: 10
