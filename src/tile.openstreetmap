@@ -175,7 +175,7 @@ pula:
   lon: 13.851520
   pingdom: 1453872
   colour: "#bf9430"
-  bandwidth: 10
+  bandwidth: 20
   ipv4: 193.198.233.211
   ipv6: 20010b684cff00030000000000000003
 
@@ -185,7 +185,7 @@ london:
   lon: -0.00201880060605929
   pingdom: 1453871
   colour: "#7ab02c"
-  bandwidth: 20
+  bandwidth: 30
   ipv4: 185.73.44.30
   ipv6: 20010ba800002c1e0000000000000000
 
