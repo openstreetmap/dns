@@ -195,8 +195,13 @@ corvallis:
   lon: -123.274707837676
   pingdom: 1454011
   colour: "#a1285f"
-  bandwidth: 20
+  bandwidth: 35
   ipv4: 140.211.167.105
+  preferred:
+    countries:
+      - US
+      - CA
+      - MX
 
 # Spare colours:
 #
