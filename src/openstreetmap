@@ -256,6 +256,10 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +idris.ucl.openstreetmap:10.0.0.4
 +idris.oob.openstreetmap:10.0.1.4
 
+# KVMs
+
++kvm1.ucl.openstreetmap:10.0.0.21
+
 # APC power switches
 
 +apc1.ucl.openstreetmap:10.0.0.49
