@@ -101,7 +101,6 @@ lyon:
 falkenstein:
   lat: 50.4782198
   lon: 12.3361987876257
-  pingdom: 834186
   colour: "#562781"
   servers:
     - pingdom: 834186
