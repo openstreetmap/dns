@@ -12,7 +12,7 @@ all: data/openstreetmap.org data/openstreetmap.com data/openstreetmap.net \
      data/render.openstreetmap.org
 
 clean:
-	rm lib/countries.xml data/*
+	rm -f data/* json/* origins/*
 
 update: all
 	bin/update
