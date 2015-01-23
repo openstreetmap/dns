@@ -97,10 +97,10 @@ lyon:
   ipv4: 77.95.70.166
   ipv6: 2a0391800001002100000000000000a6
 
-# Falkenstein, DE
-falkenstein:
-  lat: 50.4782198
-  lon: 12.3361987876257
+# Falkenstein/Jena, DE
+germany:
+  lat: 50.703515
+  lon: 11.96044
   colour: "#562781"
   servers:
     - pingdom: 834186
@@ -111,6 +111,10 @@ falkenstein:
       bandwidth: 40
       ipv4: 144.76.70.77
       ipv6: 2a0104f80191834c0000000000000002
+    - pingdom: 1486872
+      bandwidth: 40
+      ipv4: 81.7.11.83
+      ipv6: 2a0201800001000100000000551fbbf6
   default: "xx"
   allowed:
     continents:
