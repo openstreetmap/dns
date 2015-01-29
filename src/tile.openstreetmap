@@ -114,7 +114,7 @@ germany:
     - pingdom: 1486872
       bandwidth: 40
       ipv4: 81.7.11.83
-      ipv6: 2a020180000100010000000005170ad5
+      ipv6: 2a020180000100010000000005170b53
   default: "xx"
   allowed:
     continents:
