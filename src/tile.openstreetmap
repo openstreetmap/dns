@@ -103,10 +103,6 @@ germany:
   lon: 11.96044
   colour: "#562781"
   servers:
-    - pingdom: 834186
-      bandwidth: 40
-      ipv4: 5.9.150.236
-      ipv6: 2a0104f8019033eb0000000000000002
     - pingdom: 1483284
       bandwidth: 40
       ipv4: 144.76.70.77
