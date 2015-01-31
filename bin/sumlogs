@@ -13,7 +13,7 @@ my %country_bytes;
 
 while (my $record = <>)
 {
-    if ($record =~ /^\d+\.\d+\s+\d+\s+(\d+\.\d+\.\d+\.\d+)\s+TCP_[A-Z_]+\/\d+\s+(\d+) (?:GET|HEAD|POST|OPTIONS|PROPFIND) /)
+    if ($record =~ /^\d+\.\d+\s+\S+\s+".*"\s+(\d+\.\d+\.\d+\.\d+)\s+".*"\s+(\d+)$/)
     {
         my $ip = $1;
         my $bytes = $2;
@@ -27,14 +27,6 @@ while (my $record = <>)
         }
 
         $total_bytes += $bytes;
-    }
-    elsif ($record =~ /^\d+\.\d+\s+\d+\s+(\d+\.\d+\.\d+\.\d+)\s+TCP_DENIED\/\d+\s+(\d+) /)
-    {
-	# do nothing
-    }
-    elsif ($record =~ /^\d+\.\d+\s+\d+\s+(\d+\.\d+\.\d+\.\d+)\s+UDP_[A-Z_]+\/\d+\s+(\d+) ICP_QUERY /)
-    {
-	# do nothing
     }
     else
     {
