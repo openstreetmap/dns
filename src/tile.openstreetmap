@@ -16,7 +16,7 @@ moscow:
   lon: 37.617
   pingdom: 659912
   colour: "#412c84"
-  bandwidth: 60
+  bandwidth: 90
   ipv4: 130.193.62.73
   allowed:
     countries:
@@ -80,7 +80,7 @@ sanfrancisco:
   lon: -122.280247
   pingdom: 788480
   colour: "#25567b"
-  bandwidth: 22
+  bandwidth: 20
   ipv4: 64.62.205.202
   preferred:
     countries:
@@ -93,7 +93,7 @@ lyon:
   lon: 4.8323239
   pingdom: 789594
   colour: "#bf6530"
-  bandwidth: 35
+  bandwidth: 70
   ipv4: 77.95.70.166
   ipv6: 2a0391800001002100000000000000a6
 
@@ -104,11 +104,11 @@ germany:
   colour: "#562781"
   servers:
     - pingdom: 1483284
-      bandwidth: 40
+      bandwidth: 90
       ipv4: 144.76.70.77
       ipv6: 2a0104f80191834c0000000000000002
     - pingdom: 1486872
-      bandwidth: 40
+      bandwidth: 90
       ipv4: 81.7.11.83
       ipv6: 2a020180000100010000000005170b53
   default: "xx"
@@ -123,10 +123,10 @@ provo:
   colour: "#1f7c65"
   servers:
     - pingdom: 909444
-      bandwidth: 15.2261
+      bandwidth: 30
       ipv4: 192.163.219.36
     - pingdom: 909445
-      bandwidth: 15.2261
+      bandwidth: 30
       ipv4: 192.163.219.40
   allowed:
     continents:
@@ -140,7 +140,7 @@ baku:
   lon: 49.882222
   colour: "#bfb830"
   pingdom: 1064415
-  bandwidth: 45
+  bandwidth: 50
   ipv4: 94.20.20.55
   allowed:
     continents:
@@ -163,7 +163,7 @@ hsinchu:
   lon: 120.99563
   colour: "#bf3030"
   pingdom: 1124306
-  bandwidth: 80
+  bandwidth: 50
   ipv4: 140.110.240.7
   ipv6: 20010e10200002400000000000000007
   allowed:
@@ -180,7 +180,7 @@ pula:
   lon: 13.851520
   pingdom: 1453872
   colour: "#bf9430"
-  bandwidth: 30
+  bandwidth: 60
   ipv4: 193.198.233.211
   ipv6: 20010b684cff00030000000000000003
 
@@ -190,7 +190,7 @@ london:
   lon: -0.00201880060605929
   pingdom: 1453871
   colour: "#7ab02c"
-  bandwidth: 50
+  bandwidth: 60
   ipv4: 185.73.44.30
   ipv6: 20010ba800002c1e0000000000000000
 
@@ -200,7 +200,7 @@ corvallis:
   lon: -123.274707837676
   pingdom: 1454011
   colour: "#a1285f"
-  bandwidth: 35
+  bandwidth: 60
   ipv4: 140.211.167.105
   preferred:
     countries:
