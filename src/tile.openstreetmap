@@ -16,7 +16,7 @@ moscow:
   lon: 37.617
   pingdom: 659912
   colour: "#412c84"
-  bandwidth: 90
+  bandwidth: 120
   ipv4: 130.193.62.73
   allowed:
     countries:
