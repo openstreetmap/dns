@@ -20,7 +20,17 @@ moscow:
   ipv4: 130.193.62.73
   allowed:
     countries:
-      - RU
+      - AZ
+      - BY
+      - EE
+      - GE
+      - KZ
+      - LT
+      - LV
+      - MN
+      - UA
+    continents:
+      - EU
   preferred:
     countries:
       - RU
