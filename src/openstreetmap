@@ -351,6 +351,8 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 3viserion.openstreetmap:20010b684cff00030000000000000003
 +saphira.openstreetmap:185.73.44.30
 3saphira.openstreetmap:20010ba800002c1e0000000000000000
++sarkany.openstreetmap:37.17.173.8
+3sarkany.openstreetmap:20014c480002bf04025056fffe8f5c81
 
 # Blog aggregator (on Shaun McDonald's VM)
 
