@@ -214,7 +214,7 @@ budapest:
   lon: 19.051389
   pingdom: 1530226
   colour: "#2c3d82"
-  bandwidth: 10
+  bandwidth: 30
   ipv4: 37.17.173.8
   ipv6: 20014c480002bf04025056fffe8f5c81
 
