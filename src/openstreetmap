@@ -24,6 +24,10 @@ Zopenstreetmap:a.ns.bytemark.co.uk:hostmaster.openstreetmap.org:::::300
 
 'openstreetmap:v=spf1 ip4\07289.16.179.150 ip4\072212.110.172.32 ip6\0722001\07241c8\07210\072996\07221d\0727dff\072fec3\072df70 ip6\0722001\07241c9\0721\072400\072\07232 ~all
 
+# Add Google Postmaster Tools Verification
+# Grant
+Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
+
 # Delegate geo.openstreetmap.org to PowerDNS
 
 # shenron.openstreetmap.org
