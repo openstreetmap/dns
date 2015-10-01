@@ -172,9 +172,6 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # Database servers
 
-+smaug.ic.openstreetmap:146.179.159.168
-+smaug.oob.openstreetmap:146.179.159.182
-
 +katla.ic.openstreetmap:146.179.159.173
 +db.ic.openstreetmap:146.179.159.173:600
 +katla.oob.openstreetmap:146.179.159.174
@@ -222,6 +219,9 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +c.os.openstreetmap:128.40.45.195:3600
 +draco.ucl.openstreetmap:10.0.0.11
 +draco.oob.openstreetmap:10.0.1.11
+
++grisu.ic.openstreetmap:146.179.159.168
++grisu.oob.openstreetmap:146.179.159.182
 
 # Munin server
 
