@@ -190,7 +190,7 @@ osijek:
   lon: 18.71212
   pingdom: 1840482
   colour: "#269926"
-  bandwidth: 10
+  bandwidth: 30
   ipv4: 161.53.30.107
   ipv6: 20010b68c0ff000002215efffe40c7c4
 
