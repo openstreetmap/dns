@@ -3,7 +3,7 @@ all: data/openstreetmap.org data/openstreetmap.com data/openstreetmap.net \
      data/openstreetmaps.org data/osm.org data/openmaps.org \
      data/openstreetmap.io data/osm.io \
      data/openworldmap.org data/freeosm.org data/open-maps.org data/open-maps.com data/osmbugs.org \
-     data/openstreetmap.org.uk data/openstreetmap.co.uk \
+     data/openstreetmap.uk data/openstreetmap.org.uk data/openstreetmap.co.uk \
      data/osmfoundation.org data/stateofthemap.org data/stateofthemap.com \
      data/stateofthemap.eu \
      data/opengeodata.org \
@@ -36,6 +36,7 @@ data/freeosm.org: src/openstreetmap
 data/open-maps.org: src/openstreetmap
 data/open-maps.com: src/openstreetmap
 data/osmbugs.org: src/openstreetmap
+data/openstreetmap.uk: src/openstreetmap-uk
 data/openstreetmap.org.uk: src/openstreetmap-uk
 data/openstreetmap.co.uk: src/openstreetmap-uk
 data/osmfoundation.org: src/osmfoundation
