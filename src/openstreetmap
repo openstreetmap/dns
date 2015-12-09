@@ -31,11 +31,17 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 # Delegate geo.openstreetmap.org to PowerDNS
 
 # shenron.openstreetmap.org
-&geo.openstreetmap:212.110.172.32:a.ns.openstreetmap:600
-# nadder-02.openstreetmap.org
-&geo.openstreetmap:192.163.219.40:b.ns.openstreetmap
+&geo.openstreetmap:212.110.172.32:a.ns.openstreetmap
+# saphira.openstreetmap.org
+&geo.openstreetmap:185.73.44.30:b.ns.openstreetmap
 # fume.openstreetmap.org
 &geo.openstreetmap:85.30.190.241:c.ns.openstreetmap
+# jakelong.openstreetmap.org
+&geo.openstreetmap:64.62.205.202:d.ns.openstreetmap
+# katie.openstreetmap.org
+&geo.openstreetmap:144.76.70.77:e.ns.openstreetmap
+# stormfly-02.openstreetmap.org
+&geo.openstreetmap:140.211.167.105:f.ns.openstreetmap
 
 # Main web servers and their aliases
 
