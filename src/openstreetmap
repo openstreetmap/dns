@@ -236,6 +236,9 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +grisu.ic.openstreetmap:146.179.159.168
 +grisu.oob.openstreetmap:146.179.159.182
 
++kessie.openstreetmap:178.250.74.36
++kessie.oob.openstreetmap:178.250.74.37
+
 # Munin server
 
 +urmel.openstreetmap:128.40.45.207
