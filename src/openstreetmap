@@ -177,6 +177,8 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 3planet.openstreetmap:2001063000120500022590fffec4f6ef
 +logstash.openstreetmap:193.63.75.107
 3logstash.openstreetmap:2001063000120500022590fffec4f6ef
++hardware.openstreetmap:193.63.75.107
+3hardware.openstreetmap:2001063000120500022590fffec4f6ef
 +ironbelly.ic.openstreetmap:146.179.159.177
 +ironbelly.oob.openstreetmap:146.179.159.176
 +backup.ic.openstreetmap:146.179.159.177
