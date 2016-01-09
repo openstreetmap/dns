@@ -229,5 +229,18 @@ budapest:
   ipv4: 37.17.173.8
   ipv6: 20014c480002bf04025056fffe8f5c81
 
+# Minsk, BY
+minsk:
+  lat: 53.88586
+  lon: 27.45368
+  pingdom: 1941482
+  colour: "#2c3d82"
+  bandwidth: 10
+  ipv4: 31.130.201.40
+  ipv6: 2001067c22681005021e8cfffe8c8d3b
+  allowed:
+    countries:
+      - BY
+
 # Spare colours:
 #
