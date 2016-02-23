@@ -1,14 +1,3 @@
-# Sjöbo, SE
-# BW Limit: 1000Mb/s
-sjobo:
-  lat: 55.632025
-  lon: 13.70273
-  pingdom: 546505
-  colour: "#bfa730"
-  bandwidth: 90
-  ipv4: 85.30.190.241
-  ipv6: 2a02008000003ff8022264fffe2a2714
-
 # Moscow, RU
 # BW Limit: 1000Mb/s
 moscow:
@@ -234,7 +223,7 @@ minsk:
   lat: 53.88586
   lon: 27.45368
   pingdom: 1941482
-  colour: "#2c3d82"
+  colour: "#bfa730"
   bandwidth: 10
   ipv4: 31.130.201.40
   ipv6: 2001067c22681005021e8cfffe8c8d3b

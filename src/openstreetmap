@@ -34,8 +34,8 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 &geo.openstreetmap:212.110.172.32:a.ns.openstreetmap
 # saphira.openstreetmap.org
 &geo.openstreetmap:185.73.44.30:b.ns.openstreetmap
-# fume.openstreetmap.org
-&geo.openstreetmap:85.30.190.241:c.ns.openstreetmap
+# ridgeback.openstreetmap.org
+&geo.openstreetmap:31.169.50.10:c.ns.openstreetmap
 # jakelong.openstreetmap.org
 &geo.openstreetmap:64.62.205.202:d.ns.openstreetmap
 # katie.openstreetmap.org
@@ -345,9 +345,6 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # Tile cache servers
 
-+fume.openstreetmap:85.30.190.241
-3fume.openstreetmap:2a02008000003ff8022264fffe2a2714
-+fume.oob.openstreetmap:85.30.129.98
 +gorynych.openstreetmap:130.193.62.73
 3gorynych.openstreetmap:2a0206b8b0105065000000000000a001
 +lurien.openstreetmap:193.55.222.229
