@@ -195,6 +195,8 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +db-slave.ic.openstreetmap:146.179.159.170:600
 +ramoth.oob.openstreetmap:146.179.159.181
 
++fafnir.openstreetmap:52.50.86.69
+
 # Development server with wildcard alias for user sites
 
 +errol.openstreetmap:128.40.45.196
