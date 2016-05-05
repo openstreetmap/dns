@@ -239,14 +239,14 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 +grisu.openstreetmap:193.63.75.108
 3grisu.openstreetmap:2001063000120500dad385fffe5d87a0
-+agri.openstreetmap:193.63.75.108:3600
-+a.agri.openstreetmap:193.63.75.108:3600
-+b.agri.openstreetmap:193.63.75.108:3600
-+c.agri.openstreetmap:193.63.75.108:3600
 +grisu.ic.openstreetmap:146.179.159.168
 +grisu.oob.openstreetmap:146.179.159.182
 
 +kessie.openstreetmap:178.250.74.36
++agri.openstreetmap:178.250.74.36:3600
++a.agri.openstreetmap:178.250.74.36:3600
++b.agri.openstreetmap:178.250.74.36:3600
++c.agri.openstreetmap:178.250.74.36:3600
 +kessie.oob.openstreetmap:178.250.74.37
 
 # Munin server
@@ -387,7 +387,7 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 +ci.openstreetmap:144.76.98.136
 +cruise.openstreetmap:144.76.98.136
- 
+
 # Donation site
 
 +donate.openstreetmap:46.43.50.94:600
