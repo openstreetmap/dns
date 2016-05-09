@@ -229,8 +229,8 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 3grisu.openstreetmap:200141c9000200d60000000000000020
 #+planet.openstreetmap:89.16.162.20:600
 #3planet.openstreetmap:200141c9000200d60000000000000020:600
-+grisu.bm.openstreetmap:
-#+grisu.oob.openstreetmap:10.0.32.20
++grisu.bm.openstreetmap:10.0.32.20
+#+grisu.oob.openstreetmap:
 
 # Database servers
 
