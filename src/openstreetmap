@@ -139,12 +139,12 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 +rails3.ic.openstreetmap:146.179.159.167
 +thorn-03.oob.openstreetmap:146.179.159.183
 
-+thorn-04.ic.openstreetmap:10.0.32.41
-+rails4.ic.openstreetmap:10.0.32.41
++thorn-04.bm.openstreetmap:10.0.32.41
++rails4.bm.openstreetmap:10.0.32.41
 #+thorn-04.oob.openstreetmap:
 
-+thorn-05.ic.openstreetmap:10.0.32.42
-+rails5.ic.openstreetmap:10.0.32.42
++thorn-05.bm.openstreetmap:10.0.32.42
++rails5.bm.openstreetmap:10.0.32.42
 #+thorn-05.oob.openstreetmap:
 
 # Nominatim servers
