@@ -93,6 +93,38 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 +www.ic.openstreetmap:146.179.159.171:3600
 +spike-03.oob.openstreetmap:146.179.159.187
 
++spike-04.openstreetmap:89.16.162.21
+3spike-04.openstreetmap:200141c9000200d60000000000000021
+#+openstreetmap:89.16.162.21:600
+#3openstreetmap:200141c9000200d60000000000000021:600
+#+www.openstreetmap:89.16.162.21:600
+#3www.openstreetmap:200141c9000200d60000000000000021:600
+#+api.openstreetmap:89.16.162.21:600
+#3api.openstreetmap:200141c9000200d60000000000000021:600
+#+maps.openstreetmap:89.16.162.21:600
+#3maps.openstreetmap:200141c9000200d60000000000000021:600
+#+mapz.openstreetmap:89.16.162.21:600
+#3mapz.openstreetmap:200141c9000200d60000000000000021:600
++spike-04.bm.openstreetmap:10.0.32.21
++www.bm.openstreetmap:10.0.32.21:3600
+#+spike-04.oob.openstreetmap:
+
++spike-05.openstreetmap:89.16.162.22
+3spike-05.openstreetmap:200141c9000200d60000000000000022
+#+openstreetmap:89.16.162.22:600
+#3openstreetmap:200141c9000200d60000000000000022:600
+#+www.openstreetmap:89.16.162.22:600
+#3www.openstreetmap:200141c9000200d60000000000000022:600
+#+api.openstreetmap:89.16.162.22:600
+#3api.openstreetmap:200141c9000200d60000000000000022:600
+#+maps.openstreetmap:89.16.162.22:600
+#3maps.openstreetmap:200141c9000200d60000000000000022:600
+#+mapz.openstreetmap:89.16.162.22:600
+#3mapz.openstreetmap:200141c9000200d60000000000000022:600
++spike-05.bm.openstreetmap:10.0.32.22
++www.bm.openstreetmap:10.0.32.22:3600
+#+spike-05.oob.openstreetmap:
+
 # Rails application servers
 
 +thorn-01.ic.openstreetmap:146.179.159.165
@@ -106,6 +138,14 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 +thorn-03.ic.openstreetmap:146.179.159.167
 +rails3.ic.openstreetmap:146.179.159.167
 +thorn-03.oob.openstreetmap:146.179.159.183
+
++thorn-04.ic.openstreetmap:10.0.32.41
++rails4.ic.openstreetmap:10.0.32.41
+#+thorn-04.oob.openstreetmap:
+
++thorn-05.ic.openstreetmap:10.0.32.42
++rails5.ic.openstreetmap:10.0.32.42
+#+thorn-05.oob.openstreetmap:
 
 # Nominatim servers
 
@@ -185,11 +225,18 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +ironbelly.oob.openstreetmap:146.179.159.176
 +backup.ic.openstreetmap:146.179.159.177
 
++grisu.openstreetmap:89.16.162.20
+3grisu.openstreetmap:200141c9000200d60000000000000020
+#+planet.openstreetmap:89.16.162.20:600
+#3planet.openstreetmap:200141c9000200d60000000000000020:600
++grisu.bm.openstreetmap:
+#+grisu.oob.openstreetmap:10.0.32.20
+
 # Database servers
 
-+katla.ic.openstreetmap:146.179.159.173
-+db.ic.openstreetmap:146.179.159.173:600
-+katla.oob.openstreetmap:146.179.159.174
++katla.bm.openstreetmap:10.0.32.40
++db.bm.openstreetmap:10.0.32.40:600
+#+katla.oob.openstreetmap:
 
 +ramoth.ic.openstreetmap:146.179.159.170
 +db-slave.ic.openstreetmap:146.179.159.170:600
@@ -236,11 +283,6 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +c.os.openstreetmap:128.40.45.195:3600
 +draco.ucl.openstreetmap:10.0.0.11
 +draco.oob.openstreetmap:10.0.1.11
-
-+grisu.openstreetmap:193.63.75.108
-3grisu.openstreetmap:2001063000120500dad385fffe5d87a0
-+grisu.ic.openstreetmap:146.179.159.168
-+grisu.oob.openstreetmap:146.179.159.182
 
 +kessie.openstreetmap:178.250.74.36
 +agri.openstreetmap:178.250.74.36:3600
