@@ -235,11 +235,11 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 # Database servers
 
 +katla.bm.openstreetmap:10.0.32.40
-+db.bm.openstreetmap:10.0.32.40:600
++db.openstreetmap:10.0.32.40:600
 +katla.oob.openstreetmap:10.0.33.40
 
 +ramoth.ic.openstreetmap:146.179.159.170
-+db-slave.ic.openstreetmap:146.179.159.170:600
++db-slave.openstreetmap:146.179.159.170:600
 +ramoth.oob.openstreetmap:146.179.159.181
 
 +fafnir.openstreetmap:52.50.86.69
