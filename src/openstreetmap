@@ -157,14 +157,14 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 +poldi.oob.openstreetmap:146.179.159.186
 
 +pummelzacken.openstreetmap:128.40.45.204
-+nominatim.openstreetmap:128.40.45.204:600
+#+nominatim.openstreetmap:128.40.45.204:600
 +pummelzacken.ucl.openstreetmap:10.0.0.20
 +pummelzacken.oob.openstreetmap:10.0.1.20
 
 +dulcy.openstreetmap:193.63.75.109
 3dulcy.openstreetmap:20010630001205000ec47afffe6696d2
-#+nominatim.openstreetmap:193.63.75.109:600
-#3nominatim.openstreetmap:20010630001205000ec47afffe6696d2:600
++nominatim.openstreetmap:193.63.75.109:600
+3nominatim.openstreetmap:20010630001205000ec47afffe6696d2:600
 +dulcy.ic.openstreetmap:146.179.159.179
 #+dulcy.oob.openstreetmap:
 
