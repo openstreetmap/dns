@@ -215,8 +215,8 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 3backup.openstreetmap:2001063000120500022590fffec4f6ef
 +stats.openstreetmap:193.63.75.107
 3stats.openstreetmap:2001063000120500022590fffec4f6ef
-#+planet.openstreetmap:193.63.75.107:600
-#3planet.openstreetmap:2001063000120500022590fffec4f6ef:600
++planet.openstreetmap:193.63.75.107:600
+3planet.openstreetmap:2001063000120500022590fffec4f6ef:600
 +logstash.openstreetmap:193.63.75.107
 3logstash.openstreetmap:2001063000120500022590fffec4f6ef
 +hardware.openstreetmap:193.63.75.107
@@ -227,8 +227,8 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 +grisu.openstreetmap:89.16.162.20
 3grisu.openstreetmap:200141c9000200d60000000000000020
-+planet.openstreetmap:89.16.162.20:600
-3planet.openstreetmap:200141c9000200d60000000000000020:600
+#+planet.openstreetmap:89.16.162.20:600
+#3planet.openstreetmap:200141c9000200d60000000000000020:600
 +grisu.bm.openstreetmap:10.0.32.20
 +grisu.oob.openstreetmap:10.0.33.20
 
