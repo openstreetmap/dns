@@ -286,15 +286,14 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 +kessie.openstreetmap:178.250.74.36
 3kessie.openstreetmap:2a02165800040000dad385fffe5d875e
-# +agri.openstreetmap:178.250.74.36:3600
-# 3agri.openstreetmap:2a02165800040000dad385fffe5d875e:3600
-# +a.agri.openstreetmap:178.250.74.36:3600
-# 3a.agri.openstreetmap:2a02165800040000dad385fffe5d875e:3600
-# +b.agri.openstreetmap:178.250.74.36:3600
-# 3b.agri.openstreetmap:2a02165800040000dad385fffe5d875e:3600
-# +c.agri.openstreetmap:178.250.74.36:3600
-# 3c.agri.openstreetmap:2a02165800040000dad385fffe5d875e:3600
-+wiki.openstreetmap:178.250.74.36:600
+#+agri.openstreetmap:178.250.74.36:3600
+#3agri.openstreetmap:2a02165800040000dad385fffe5d875e:3600
+#+a.agri.openstreetmap:178.250.74.36:3600
+#3a.agri.openstreetmap:2a02165800040000dad385fffe5d875e:3600
+#+b.agri.openstreetmap:178.250.74.36:3600
+#3b.agri.openstreetmap:2a02165800040000dad385fffe5d875e:3600
+#+c.agri.openstreetmap:178.250.74.36:3600
+#3c.agri.openstreetmap:2a02165800040000dad385fffe5d875e:3600
 +kessie.oob.openstreetmap:178.250.74.37
 
 # Munin server
@@ -376,6 +375,7 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 +ouroboros.openstreetmap:193.63.75.106
 3ouroboros.openstreetmap:200106300012050002237dfffeea813a
++wiki.openstreetmap:193.63.75.106:600
 +ouroboros.ic.openstreetmap:146.179.159.172
 +ouroboros.oob.openstreetmap:146.179.159.178
 
