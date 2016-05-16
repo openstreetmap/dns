@@ -234,6 +234,9 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # Database servers
 
++karm.ic.openstreetmap:146.179.159.168
+#+karm.oob.openstreetmap:
+
 +katla.bm.openstreetmap:10.0.32.40
 +db.openstreetmap:10.0.32.40:600
 +katla.oob.openstreetmap:10.0.33.40
