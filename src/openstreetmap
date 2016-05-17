@@ -58,7 +58,7 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 +mapz.openstreetmap:193.63.75.99:600
 3mapz.openstreetmap:2001063000120500021a4bfffea5fd2a:600
 +spike-01.ic.openstreetmap:146.179.159.162
-+www.ic.openstreetmap:146.179.159.162:3600
++www.ic.openstreetmap:146.179.159.162:600
 +spike-01.oob.openstreetmap:146.179.159.188
 
 +spike-02.openstreetmap:193.63.75.100
@@ -74,7 +74,7 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 +mapz.openstreetmap:193.63.75.100:600
 3mapz.openstreetmap:20010630001205000219bbfffe393d9e:600
 +spike-02.ic.openstreetmap:146.179.159.163
-+www.ic.openstreetmap:146.179.159.163:3600
++www.ic.openstreetmap:146.179.159.163:600
 +spike-02.oob.openstreetmap:146.179.159.180
 
 +spike-03.openstreetmap:193.63.75.103
@@ -90,7 +90,7 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 +mapz.openstreetmap:193.63.75.103:600
 3mapz.openstreetmap:20010630001205000219bbfffe398aba:600
 +spike-03.ic.openstreetmap:146.179.159.171
-+www.ic.openstreetmap:146.179.159.171:3600
++www.ic.openstreetmap:146.179.159.171:600
 +spike-03.oob.openstreetmap:146.179.159.187
 
 +spike-04.openstreetmap:89.16.162.21
@@ -106,7 +106,7 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 #+mapz.openstreetmap:89.16.162.21:600
 #3mapz.openstreetmap:200141c9000200d60000000000000021:600
 +spike-04.bm.openstreetmap:10.0.32.21
-+www.bm.openstreetmap:10.0.32.21:3600
++www.bm.openstreetmap:10.0.32.21:600
 +spike-04.oob.openstreetmap:10.0.33.21
 
 +spike-05.openstreetmap:89.16.162.22
@@ -122,7 +122,7 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 #+mapz.openstreetmap:89.16.162.22:600
 #3mapz.openstreetmap:200141c9000200d60000000000000022:600
 +spike-05.bm.openstreetmap:10.0.32.22
-+www.bm.openstreetmap:10.0.32.22:3600
++www.bm.openstreetmap:10.0.32.22:600
 +spike-05.oob.openstreetmap:10.0.33.22
 
 # Rails application servers
