@@ -5,7 +5,7 @@ moscow:
   lon: 37.617
   pingdom: 659912
   colour: "#412c84"
-  bandwidth: 120
+  bandwidth: 175
   ipv4: 130.193.62.73
   ipv6: 2a0206b8b0105065000000000000a001
   allowed:
@@ -45,7 +45,7 @@ amsterdam:
   lon: 4.89222
   pingdom: 766251
   colour: "#a1b92e"
-  bandwidth: 40
+  bandwidth: 60
   ipv4: 134.90.146.26
   default: "xx"
   preferred:
@@ -94,11 +94,11 @@ germany:
   colour: "#562781"
   servers:
     - pingdom: 1483284
-      bandwidth: 90
+      bandwidth: 140
       ipv4: 144.76.70.77
       ipv6: 2a0104f80191834c0000000000000002
     - pingdom: 1486872
-      bandwidth: 90
+      bandwidth: 140
       ipv4: 81.7.11.83
       ipv6: 2a020180000100010000000005170b53
   default: "xx"
@@ -170,7 +170,7 @@ pula:
   lon: 13.851520
   pingdom: 1453872
   colour: "#bf9430"
-  bandwidth: 80
+  bandwidth: 120
   ipv4: 193.198.233.211
   ipv6: 20010b684cff00030000000000000003
 
@@ -180,7 +180,7 @@ osijek:
   lon: 18.71212
   pingdom: 1840482
   colour: "#269926"
-  bandwidth: 60
+  bandwidth: 80
   ipv4: 161.53.30.107
   ipv6: 20010b68c0ff000002215efffe40c7c4
 
@@ -190,7 +190,7 @@ london:
   lon: -0.00201880060605929
   pingdom: 1453871
   colour: "#7ab02c"
-  bandwidth: 60
+  bandwidth: 100
   ipv4: 185.73.44.30
   ipv6: 20010ba800002c1e0000000000000000
 
@@ -200,7 +200,7 @@ corvallis:
   lon: -123.274707837676
   pingdom: 1454011
   colour: "#a1285f"
-  bandwidth: 60
+  bandwidth: 80
   ipv4: 140.211.167.105
   preferred:
     countries:
@@ -214,7 +214,7 @@ budapest:
   lon: 19.051389
   pingdom: 1530226
   colour: "#2c3d82"
-  bandwidth: 30
+  bandwidth: 60
   ipv4: 37.17.173.8
   ipv6: 20014c480002bf04025056fffe8f5c81
 
@@ -224,7 +224,7 @@ minsk:
   lon: 27.45368
   pingdom: 1941482
   colour: "#bfa730"
-  bandwidth: 10
+  bandwidth: 30
   ipv4: 31.130.201.40
   ipv6: 2001067c22681005021e8cfffe8c8d3b
   allowed:
