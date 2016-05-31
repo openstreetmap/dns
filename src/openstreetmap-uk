@@ -49,3 +49,11 @@ Ccalendar.openstreetmap-uk:osmcal.street.me.uk
 3b.surrey.aerial.openstreetmap-uk:2a02165800040000dad385fffe5d875e:3600
 +c.surrey.aerial.openstreetmap-uk:178.250.74.36:3600
 3c.surrey.aerial.openstreetmap-uk:2a02165800040000dad385fffe5d875e:3600
++os.openstreetmap-uk:178.250.74.36:3600
+3os.openstreetmap-uk:2a02165800040000dad385fffe5d875e:3600
++a.os.openstreetmap-uk:178.250.74.36:3600
+3a.os.openstreetmap-uk:2a02165800040000dad385fffe5d875e:3600
++b.os.openstreetmap-uk:178.250.74.36:3600
+3b.os.openstreetmap-uk:2a02165800040000dad385fffe5d875e:3600
++c.os.openstreetmap-uk:178.250.74.36:3600
+3c.os.openstreetmap-uk:2a02165800040000dad385fffe5d875e:3600
