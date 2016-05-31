@@ -283,10 +283,6 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 # Imagery servers
 
 +draco.openstreetmap:128.40.45.195
-+os.openstreetmap:128.40.45.195:3600
-+a.os.openstreetmap:128.40.45.195:3600
-+b.os.openstreetmap:128.40.45.195:3600
-+c.os.openstreetmap:128.40.45.195:3600
 +draco.ucl.openstreetmap:10.0.0.11
 +draco.oob.openstreetmap:10.0.1.11
 
@@ -300,6 +296,14 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 3b.agri.openstreetmap:2a02165800040000dad385fffe5d875e:3600
 +c.agri.openstreetmap:178.250.74.36:3600
 3c.agri.openstreetmap:2a02165800040000dad385fffe5d875e:3600
++os.openstreetmap:178.250.74.36:3600
+3os.openstreetmap:2a02165800040000dad385fffe5d875e:3600
++a.os.openstreetmap:178.250.74.36:3600
+3a.os.openstreetmap:2a02165800040000dad385fffe5d875e:3600
++b.os.openstreetmap:178.250.74.36:3600
+3b.os.openstreetmap:2a02165800040000dad385fffe5d875e:3600
++c.os.openstreetmap:178.250.74.36:3600
+3c.os.openstreetmap:2a02165800040000dad385fffe5d875e:3600
 +kessie.oob.openstreetmap:178.250.74.37
 
 # Munin server
