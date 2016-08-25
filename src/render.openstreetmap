@@ -17,9 +17,18 @@ yevaud:
   ipv4: 128.40.45.208
   default: ""
 
+vial:
+  lat: 50.4782873
+  lon: 12.33623345
+  pingdom: 2277522
+  colour: "#269926"
+  bandwidth: 100
+  ipv4: 138.201.195.31
+  ipv6: 2a0104f801723cde0000000000000002
+  default: ""
+
 # Spare colours:
 #
-#  269926
 #  bf8230
 #  a1b92e
 #  7c1f7c
