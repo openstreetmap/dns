@@ -1,6 +1,6 @@
 orm:
-  lat: 51.507222
-  lon: -0.1275
+  lat: 51.49889
+  lon: -0.17636
   pingdom: 923426
   colour: "#bfa730"
   bandwidth: 500
@@ -9,8 +9,8 @@ orm:
   default: ""
 
 yevaud:
-  lat: 51.507222
-  lon: -0.1275
+  lat: 51.52672
+  lon: -0.13505
   pingdom: 923428
   colour: "#412c84"
   bandwidth: 500
