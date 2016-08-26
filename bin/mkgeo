@@ -69,7 +69,7 @@ if ($ENV{PINGDOM_USERNAME} && $ENV{PINGDOM_PASSWORD})
 
     if (-f "pingdom.yml")
     {
-        $cache = YAML::LoadFile("pingdom.yml"); 
+        $cache = YAML::LoadFile("pingdom.yml");
     }
     else
     {
@@ -189,7 +189,7 @@ my $zonefile = IO::File->new("> data/${zone}") || die "$!";
 my $jsonfile = IO::File->new("> json/${zone}.json") || die "$!";
 
 # Output details for each country
-foreach my $origin (values %$origins)
+foreach my $origin (sort { $a->{name} cmp $b->{name} } values %$origins)
 {
     my $cluster = $origin->{cluster};
     my $clon = $origin->{lon};
@@ -229,8 +229,10 @@ foreach my $origin (values %$origins)
 $zonefile->print("# Unknown origins\n");
 
 # Output default records for IPs that can't be mapped to a country
-while (my($name,$cluster) = each %$clusters)
+foreach my $cluster (sort { $a->{name} cmp $b->{name} } values %$clusters)
 {
+    my $name = $cluster->{name};
+
     if (my $default = $cluster->{default})
     {
         output_server($zonefile, "${default}.${zone}", $cluster);
@@ -245,8 +247,10 @@ while (my($name,$cluster) = each %$clusters)
 $zonefile->print("# Servers\n");
 
 # Output A records for each cluster
-while (my($name,$cluster) = each %$clusters)
+foreach my $cluster (sort { $a->{name} cmp $b->{name} } values %$clusters)
 {
+    my $name = $cluster->{name};
+
     output_server($zonefile, "${name}.${zone}", $cluster);
 }
 
