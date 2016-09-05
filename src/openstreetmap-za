@@ -18,7 +18,7 @@
 
 # Main web servers and their aliases
 
-+openstreetmap-za:193.63.75.99:600
++openstreetmap-za:193.63.75.99:1800
 
 Cwww.openstreetmap-za:openstreetmap-za
 
