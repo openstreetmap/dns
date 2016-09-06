@@ -3,7 +3,7 @@ orm:
   lon: -0.17636
   pingdom: 923426
   colour: "#bfa730"
-  bandwidth: 500
+  bandwidth: 300
   ipv4: 193.63.75.98
   ipv6: 200106300012050002e081fffec52a8c
   default: ""
@@ -13,7 +13,7 @@ yevaud:
   lon: -0.13505
   pingdom: 923428
   colour: "#412c84"
-  bandwidth: 500
+  bandwidth: 300
   ipv4: 128.40.45.208
   default: ""
 
@@ -22,7 +22,7 @@ vial:
   lon: 12.33623345
   pingdom: 2277522
   colour: "#269926"
-  bandwidth: 300
+  bandwidth: 150
   ipv4: 138.201.195.31
   ipv6: 2a0104f801723cde0000000000000002
   default: ""
