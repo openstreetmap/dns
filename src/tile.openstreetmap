@@ -230,6 +230,11 @@ minsk:
   allowed:
     countries:
       - BY
+      - LT
+      - LV
+      - EE
+      - MD
+      - UA
 
 # Spare colours:
 #
