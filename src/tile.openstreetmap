@@ -224,7 +224,7 @@ minsk:
   lon: 27.45368
   pingdom: 1941482
   colour: "#bfa730"
-  bandwidth: 30
+  bandwidth: 50
   ipv4: 31.130.201.40
   ipv6: 2001067c22681005021e8cfffe8c8d3b
   allowed:
