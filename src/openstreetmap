@@ -437,6 +437,8 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 3cmok.openstreetmap:2001067c22681005021e8cfffe8c8d3b
 +stormfly-02.openstreetmap:140.211.167.105
 +stormfly-02.oob.openstreetmap:10.0.0.108
++odin.openstreetmap:130.225.254.123
+3odin.openstreetmap:20010878034600000000000000000123
 
 # Blog aggregator (on Shaun McDonald's VM)
 
