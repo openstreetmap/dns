@@ -242,7 +242,7 @@ aalborg:
   lon: 9.97532374746345
   pingdom: 2295843
   colour: "#bfa730"
-  bandwidth: 10
+  bandwidth: 30
   ipv4: 130.225.254.123
   ipv6: 20010878034600000000000000000123
 
