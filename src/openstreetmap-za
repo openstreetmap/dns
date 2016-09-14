@@ -18,20 +18,35 @@
 
 # Main web servers and their aliases
 
-+openstreetmap-za:193.63.75.99:1800
++openstreetmap-za:193.63.75.99:600
++openstreetmap-za:193.63.75.100:600
++openstreetmap-za:193.63.75.103:600
+
+Cwww.openstreetmap-za:www.openstreetmap.org
+Capi.openstreetmap-za:api.openstreetmap.org
 
 Cwww.openstreetmap-za:openstreetmap-za
 
 # Aerial imagery sites
-Caerial.openstreetmap-za:draco.openstreetmap.org
-Ca.aerial.openstreetmap-za:draco.openstreetmap.org
-Cb.aerial.openstreetmap-za:draco.openstreetmap.org
-Cc.aerial.openstreetmap-za:draco.openstreetmap.org
-Ccoct.aerial.openstreetmap-za:kessie.openstreetmap.org
-Ca.coct.aerial.openstreetmap-za:kessie.openstreetmap.org
-Cb.coct.aerial.openstreetmap-za:kessie.openstreetmap.org
-Cc.coct.aerial.openstreetmap-za:kessie.openstreetmap.org
-Ctopo.openstreetmap-za:kessie.openstreetmap.org
-Ca.topo.openstreetmap-za:kessie.openstreetmap.org
-Cb.topo.openstreetmap-za:kessie.openstreetmap.org
-Cc.topo.openstreetmap-za:kessie.openstreetmap.org
+# Draco
++aerial.openstreetmap-za:128.40.45.195:1800
++a.aerial.openstreetmap-za:128.40.45.195:1800
++b.aerial.openstreetmap-za:128.40.45.195:1800
++c.aerial.openstreetmap-za:128.40.45.195:1800
+# Kessie
++coct.aerial.openstreetmap-za:178.250.74.36:1800
+3coct.aerial.openstreetmap-za:2a02165800040000dad385fffe5d875e:1800
++a.coct.aerial.openstreetmap-za:178.250.74.36:1800
+3a.coct.aerial.openstreetmap-za:2a02165800040000dad385fffe5d875e:1800
++b.coct.aerial.openstreetmap-za:178.250.74.36:1800
+3b.coct.aerial.openstreetmap-za:2a02165800040000dad385fffe5d875e:1800
++c.coct.aerial.openstreetmap-za:178.250.74.36:1800
+3c.coct.aerial.openstreetmap-za:2a02165800040000dad385fffe5d875e:1800
++topo.openstreetmap-za:178.250.74.36:1800
+3topo.openstreetmap-za:2a02165800040000dad385fffe5d875e:1800
++a.topo.openstreetmap-za:178.250.74.36:1800
+3a.topo.openstreetmap-za:2a02165800040000dad385fffe5d875e:1800
++b.topo.openstreetmap-za:178.250.74.36:1800
+3b.topo.openstreetmap-za:2a02165800040000dad385fffe5d875e:1800
++c.topo.openstreetmap-za:178.250.74.36:1800
+3c.topo.openstreetmap-za:2a02165800040000dad385fffe5d875e:1800
