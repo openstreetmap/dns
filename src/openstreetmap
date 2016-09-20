@@ -452,7 +452,7 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # Donation site
 
-+donate.openstreetmap:46.43.50.94:600
++donate.openstreetmap:46.43.50.94:300
 
 # DMCA Notice site
 
