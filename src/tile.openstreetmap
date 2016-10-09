@@ -246,5 +246,14 @@ aalborg:
   ipv4: 130.225.254.123
   ipv6: 20010878034600000000000000000123
 
+# Zaragoza, ES
+zaragoza:
+  lat: 41.64207
+  lon: -0.90054
+  pingdom: 2329063
+  colour: "#bfa730"
+  bandwidth: 10
+  ipv4: 155.210.4.103
+
 # Spare colours:
 #
