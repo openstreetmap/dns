@@ -252,7 +252,7 @@ zaragoza:
   lon: -0.90054
   pingdom: 2329063
   colour: "#bfa730"
-  bandwidth: 10
+  bandwidth: 30
   ipv4: 155.210.4.103
 
 # Spare colours:
