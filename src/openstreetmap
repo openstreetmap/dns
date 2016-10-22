@@ -323,6 +323,7 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 # Forum server
 
 +clifford.openstreetmap:128.40.45.194
++forum.openstreetmap:128.40.45.194:600
 +clifford.ucl.openstreetmap:10.0.0.17
 +clifford.oob.openstreetmap:10.0.1.17
 
@@ -353,10 +354,6 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 +switch1.openstreetmap:193.63.75.102
 +switch2.ic.openstreetmap:146.179.159.169:600
-
-# Forum server
-
-+forum.openstreetmap:46.19.218.68:600
 
 # Bytemark machine, and the services which operate from it
 
