@@ -63,16 +63,16 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 
 +spike-02.openstreetmap:193.63.75.100
 3spike-02.openstreetmap:20010630001205000219bbfffe393d9e
-#+openstreetmap:193.63.75.100:600
-#3openstreetmap:20010630001205000219bbfffe393d9e:600
-#+www.openstreetmap:193.63.75.100:600
-#3www.openstreetmap:20010630001205000219bbfffe393d9e:600
-#+api.openstreetmap:193.63.75.100:600
-#3api.openstreetmap:20010630001205000219bbfffe393d9e:600
-#+maps.openstreetmap:193.63.75.100:600
-#3maps.openstreetmap:20010630001205000219bbfffe393d9e:600
-#+mapz.openstreetmap:193.63.75.100:600
-#3mapz.openstreetmap:20010630001205000219bbfffe393d9e:600
++openstreetmap:193.63.75.100:600
+3openstreetmap:20010630001205000219bbfffe393d9e:600
++www.openstreetmap:193.63.75.100:600
+3www.openstreetmap:20010630001205000219bbfffe393d9e:600
++api.openstreetmap:193.63.75.100:600
+3api.openstreetmap:20010630001205000219bbfffe393d9e:600
++maps.openstreetmap:193.63.75.100:600
+3maps.openstreetmap:20010630001205000219bbfffe393d9e:600
++mapz.openstreetmap:193.63.75.100:600
+3mapz.openstreetmap:20010630001205000219bbfffe393d9e:600
 +spike-02.ic.openstreetmap:146.179.159.163:600
 +www.ic.openstreetmap:146.179.159.163:600
 +spike-02.oob.openstreetmap:146.179.159.180:600
