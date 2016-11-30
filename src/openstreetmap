@@ -440,8 +440,8 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # Blog aggregator (on Shaun McDonald's VM)
 
-+blogs.openstreetmap:213.138.110.209
-3blogs.openstreetmap:200141c8005105d1feff00fffe0032b8
++blogs.openstreetmap:213.138.110.209:600
+3blogs.openstreetmap:200141c8005105d1feff00fffe0032b8:600
 
 # Continuous integration server (on Shaun McDonald's machine)
 
