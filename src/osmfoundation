@@ -47,14 +47,14 @@ Csites.osmfoundation:ghs.google.com
 
 # Main web server and it's aliases
 
-+osmfoundation:128.40.45.205:600:3600
-+old.osmfoundation:128.40.45.205:3600
++osmfoundation:128.40.45.205:600:600
++old.osmfoundation:128.40.45.205:600
 +www.osmfoundation:128.40.45.205:600
 +wiki.osmfoundation:128.40.45.205:600
 +blog.osmfoundation:128.40.45.205:600
-+vote.osmfoundation:128.40.45.205:3600
-+accounts.osmfoundation:128.40.45.205:3600
-+crm.osmfoundation:128.40.45.205:3600
-+join.osmfoundation:128.40.45.205:3600
-+board.osmfoundation:128.40.45.205:3600
-+dwg.osmfoundation:128.40.45.205:3600
++vote.osmfoundation:128.40.45.205:600
++accounts.osmfoundation:128.40.45.205:600
++crm.osmfoundation:128.40.45.205:600
++join.osmfoundation:128.40.45.205:600
++board.osmfoundation:128.40.45.205:600
++dwg.osmfoundation:128.40.45.205:600

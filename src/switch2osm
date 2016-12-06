@@ -10,5 +10,5 @@
 
 # Main web server and it's aliases
 
-+switch2osm:128.40.45.205
-+www.switch2osm:128.40.45.205
++switch2osm:128.40.45.205:600
++www.switch2osm:128.40.45.205:600
