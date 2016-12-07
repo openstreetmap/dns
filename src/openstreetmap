@@ -156,8 +156,8 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 +poldi.ic.openstreetmap:146.179.159.164:600
 +poldi.oob.openstreetmap:146.179.159.186:600
 
-+pummelzacken.openstreetmap:128.40.45.204:600
-#+nominatim.openstreetmap:128.40.45.204:600
++pummelzacken.openstreetmap:193.60.236.18:600
+#+nominatim.openstreetmap:193.60.236.18:600
 +pummelzacken.ucl.openstreetmap:10.0.0.20:600
 +pummelzacken.oob.openstreetmap:10.0.1.20:600
 
@@ -170,22 +170,22 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 
 # JXAPI server
 
-+norbert.openstreetmap:128.40.45.202:600
-+jxapi.openstreetmap:128.40.45.202:600
++norbert.openstreetmap:193.60.236.17:600
++jxapi.openstreetmap:193.60.236.17:600
 +norbert.ucl.openstreetmap:10.0.0.5:600
 +norbert.oob.openstreetmap:10.0.1.5:600
 
 # OWL server
 
-+zark.openstreetmap:128.40.45.209:600
-+owl.openstreetmap:128.40.45.209:600
++zark.openstreetmap:193.60.236.23:600
++owl.openstreetmap:193.60.236.23:600
 +zark.ucl.openstreetmap:10.0.0.8:600
 +zark.oob.openstreetmap:10.0.1.8:600
 
 # Taginfo servers
 
-+grindtooth.openstreetmap:128.40.45.199:600
-#+taginfo.openstreetmap:128.40.45.199:600
++grindtooth.openstreetmap:193.60.236.15:600
+#+taginfo.openstreetmap:193.60.236.15:600
 +grindtooth.ucl.openstreetmap:10.0.0.19:600
 +grindtooth.oob.openstreetmap:10.0.1.19:600
 
@@ -199,7 +199,7 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 3orm.openstreetmap:200106300012050002e081fffec52a8c
 #+orm.ic.openstreetmap:10.0.16.2
 +orm.oob.openstreetmap:146.179.159.175:600
-+yevaud.openstreetmap:128.40.45.208:600
++yevaud.openstreetmap:193.60.236.22:600
 +yevaud.ucl.openstreetmap:10.0.0.15:600
 +yevaud.oob.openstreetmap:10.0.1.15:600
 +vial.openstreetmap:138.201.195.31
@@ -254,36 +254,36 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # Development server with wildcard alias for user sites
 
-+errol.openstreetmap:128.40.45.196:600
-+dev.openstreetmap:128.40.45.196:600
-+*.dev.openstreetmap:128.40.45.196:600
-+ooc.openstreetmap:128.40.45.196:600
-+a.ooc.openstreetmap:128.40.45.196:600
-+b.ooc.openstreetmap:128.40.45.196:600
-+c.ooc.openstreetmap:128.40.45.196:600
-+npe.openstreetmap:128.40.45.196:600
++errol.openstreetmap:193.60.236.13:600
++dev.openstreetmap:193.60.236.13:600
++*.dev.openstreetmap:193.60.236.13:600
++ooc.openstreetmap:193.60.236.13:600
++a.ooc.openstreetmap:193.60.236.13:600
++b.ooc.openstreetmap:193.60.236.13:600
++c.ooc.openstreetmap:193.60.236.13:600
++npe.openstreetmap:193.60.236.13:600
 +errol.ucl.openstreetmap:10.0.0.14:600
 +errol.oob.openstreetmap:10.0.1.14:600
 
 # Foundation server
 
-+ridley.openstreetmap:128.40.45.205:600
-+otrs.openstreetmap:128.40.45.205:600
-+blog.openstreetmap:128.40.45.205:600
-+foundation.openstreetmap:128.40.45.205:600
++ridley.openstreetmap:193.60.236.19:600
++otrs.openstreetmap:193.60.236.19:600
++blog.openstreetmap:193.60.236.19:600
++foundation.openstreetmap:193.60.236.19:600
 +ridley.ucl.openstreetmap:10.0.0.3:600
 +ridley.oob.openstreetmap:10.0.1.3:600
 
 # Piwik server
 
-+eustace.openstreetmap:128.40.45.197:600
-+piwik.openstreetmap:128.40.45.197:600
++eustace.openstreetmap:193.60.236.14:600
++piwik.openstreetmap:193.60.236.14:600
 +eustace.ucl.openstreetmap:10.0.0.9:600
 +eustace.oob.openstreetmap:10.0.1.9:600
 
 # Imagery servers
 
-+draco.openstreetmap:128.40.45.195:600
++draco.openstreetmap:193.60.236.12:600
 +draco.ucl.openstreetmap:10.0.0.11:600
 +draco.oob.openstreetmap:10.0.1.11:600
 
@@ -309,27 +309,27 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # Munin server
 
-+urmel.openstreetmap:128.40.45.207:600
-+munin.openstreetmap:128.40.45.207:600
++urmel.openstreetmap:193.60.236.21:600
++munin.openstreetmap:193.60.236.21:600
 +urmel.ucl.openstreetmap:10.0.0.6:600
 +urmel.oob.openstreetmap:10.0.1.6:600
 
 # Gosmore routing server
 
-+sarel.openstreetmap:128.40.45.206:600
++sarel.openstreetmap:193.60.236.20:600
 +sarel.ucl.openstreetmap:10.0.0.12:600
 +sarel.oob.openstreetmap:10.0.1.12:600
 
 # Forum server
 
-+clifford.openstreetmap:128.40.45.194:600
-+forum.openstreetmap:128.40.45.194:600
++clifford.openstreetmap:193.60.236.11:600
++forum.openstreetmap:193.60.236.11:600
 +clifford.ucl.openstreetmap:10.0.0.17:600
 +clifford.oob.openstreetmap:10.0.1.17:600
 
 # Loan machine for emacsen
 
-+ascalon.openstreetmap:128.40.45.193:600
++ascalon.openstreetmap:193.60.236.10:600
 +ascalon.ucl.openstreetmap:10.0.0.18:600
 +ascalon.oob.openstreetmap:10.0.1.18:600
 
@@ -389,14 +389,14 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # GPS tile server
 
-+noquiklos.openstreetmap:128.40.45.201:600
-+gps.tile.openstreetmap:128.40.45.201:600
-+gps-a.tile.openstreetmap:128.40.45.201:600
-+gps-b.tile.openstreetmap:128.40.45.201:600
-+gps-c.tile.openstreetmap:128.40.45.201:600
-+a.gps-tile.openstreetmap:128.40.45.201:600
-+b.gps-tile.openstreetmap:128.40.45.201:600
-+c.gps-tile.openstreetmap:128.40.45.201:600
++noquiklos.openstreetmap:193.60.236.16:600
++gps.tile.openstreetmap:193.60.236.16:600
++gps-a.tile.openstreetmap:193.60.236.16:600
++gps-b.tile.openstreetmap:193.60.236.16:600
++gps-c.tile.openstreetmap:193.60.236.16:600
++a.gps-tile.openstreetmap:193.60.236.16:600
++b.gps-tile.openstreetmap:193.60.236.16:600
++c.gps-tile.openstreetmap:193.60.236.16:600
 +noquiklos.ucl.openstreetmap:10.0.0.13:600
 +noquiklos.oob.openstreetmap:10.0.1.13:600
 
@@ -450,7 +450,7 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # Donation site
 
-+donate.openstreetmap:128.40.45.205:300
++donate.openstreetmap:193.60.236.19:300
 
 # DMCA Notice site
 

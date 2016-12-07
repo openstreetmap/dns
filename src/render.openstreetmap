@@ -14,7 +14,7 @@ yevaud:
   pingdom: 923428
   colour: "#412c84"
   bandwidth: 300
-  ipv4: 128.40.45.208
+  ipv4: 193.60.236.22
   default: ""
 
 vial:

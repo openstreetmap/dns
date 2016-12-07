@@ -29,10 +29,10 @@ Cwww.openstreetmap-za:openstreetmap-za
 
 # Aerial imagery sites
 # Draco
-+aerial.openstreetmap-za:128.40.45.195:600
-+a.aerial.openstreetmap-za:128.40.45.195:600
-+b.aerial.openstreetmap-za:128.40.45.195:600
-+c.aerial.openstreetmap-za:128.40.45.195:600
++aerial.openstreetmap-za:193.60.236.12:600
++a.aerial.openstreetmap-za:193.60.236.12:600
++b.aerial.openstreetmap-za:193.60.236.12:600
++c.aerial.openstreetmap-za:193.60.236.12:600
 # Kessie
 +coct.aerial.openstreetmap-za:178.250.74.36:1800
 3coct.aerial.openstreetmap-za:2a02165800040000dad385fffe5d875e:1800

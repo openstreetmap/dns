@@ -22,14 +22,14 @@ Clogin.stateofthemap:ghs.google.com
 
 # Main web server and it's aliases
 
-+stateofthemap:128.40.45.205:600
-+www.stateofthemap:128.40.45.205:600
++stateofthemap:193.60.236.19:600
++www.stateofthemap:193.60.236.19:600
 C2016.stateofthemap:openstreetmap.github.io:3600
 +2014.stateofthemap:188.226.171.99
 +2013.stateofthemap:83.170.104.37
-+2012.stateofthemap:128.40.45.205:600
-+2011.stateofthemap:128.40.45.205:600
-+2010.stateofthemap:128.40.45.205:600
-+2009.stateofthemap:128.40.45.205:600
-+2008.stateofthemap:128.40.45.205:600
-+2007.stateofthemap:128.40.45.205:600
++2012.stateofthemap:193.60.236.19:600
++2011.stateofthemap:193.60.236.19:600
++2010.stateofthemap:193.60.236.19:600
++2009.stateofthemap:193.60.236.19:600
++2008.stateofthemap:193.60.236.19:600
++2007.stateofthemap:193.60.236.19:600

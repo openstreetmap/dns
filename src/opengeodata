@@ -10,6 +10,6 @@
 
 # Main web server and it's aliases
 
-+opengeodata:128.40.45.205:600
-+old.opengeodata:128.40.45.205:600
-+www.opengeodata:128.40.45.205:600
++opengeodata:193.60.236.19:600
++old.opengeodata:193.60.236.19:600
++www.opengeodata:193.60.236.19:600
