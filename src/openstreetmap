@@ -168,13 +168,6 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 +dulcy.ic.openstreetmap:146.179.159.179:600
 #+dulcy.oob.openstreetmap:
 
-# JXAPI server
-
-+norbert.openstreetmap:193.60.236.17:600
-+jxapi.openstreetmap:193.60.236.17:600
-+norbert.ucl.openstreetmap:10.0.0.5:600
-+norbert.oob.openstreetmap:10.0.1.5:600
-
 # OWL server
 
 +zark.openstreetmap:193.60.236.23:600
@@ -327,28 +320,9 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +clifford.ucl.openstreetmap:10.0.0.17:600
 +clifford.oob.openstreetmap:10.0.1.17:600
 
-# Loan machine for emacsen
-
-+ascalon.openstreetmap:193.60.236.10:600
-+ascalon.ucl.openstreetmap:10.0.0.18:600
-+ascalon.oob.openstreetmap:10.0.1.18:600
-
-# Spare machines
-
-+puff.ucl.openstreetmap:10.0.0.10
-+puff.oob.openstreetmap:10.0.1.10
-+idris.ucl.openstreetmap:10.0.0.4
-+idris.oob.openstreetmap:10.0.1.4
-
 # KVMs
 
 +kvm1.ucl.openstreetmap:10.0.0.21
-
-# APC power switches
-
-+apc1.ucl.openstreetmap:10.0.0.49
-+apc2.ucl.openstreetmap:10.0.0.50
-+apc3.ucl.openstreetmap:10.0.0.51
 
 # Managed network switches
 
