@@ -47,7 +47,7 @@ Csites.osmfoundation:ghs.google.com
 
 # Main web server and it's aliases
 
-+osmfoundation:193.60.236.19:600:600
++osmfoundation:193.60.236.19:600
 +old.osmfoundation:193.60.236.19:600
 +www.osmfoundation:193.60.236.19:600
 +wiki.osmfoundation:193.60.236.19:600
