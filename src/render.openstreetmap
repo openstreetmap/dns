@@ -27,9 +27,18 @@ vial:
   ipv6: 2a0104f801723cde0000000000000002
   default: ""
 
+scorch:
+  lat: 50.6911904
+  lon: 3.2008282044777
+  pingdom: 2410154
+  colour: "#bf8230"
+  bandwidth: 50
+  ipv4: 176.31.235.79
+  ipv6: 200141d00002fc4f0000000000000001
+  default: ""
+
 # Spare colours:
 #
-#  bf8230
 #  a1b92e
 #  7c1f7c
 #  25567b
