@@ -414,6 +414,45 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 3odin.openstreetmap:20010878034600000000000000000123
 +culebre.openstreetmap:155.210.4.103
 
+# Blades
+
++tiamat-00.openstreetmap:193.60.236.40
++tiamat-00.ucl.openstreetmap:10.0.0.40
++tiamat-00.oob.openstreetmap:10.0.1.40
++tiamat-01.openstreetmap:193.60.236.41
++tiamat-01.ucl.openstreetmap:10.0.0.41
++tiamat-01.oob.openstreetmap:10.0.1.41
++tiamat-02.openstreetmap:193.60.236.42
++tiamat-02.ucl.openstreetmap:10.0.0.42
++tiamat-02.oob.openstreetmap:10.0.1.42
++tiamat-03.openstreetmap:193.60.236.43
++tiamat-03.ucl.openstreetmap:10.0.0.43
++tiamat-03.oob.openstreetmap:10.0.1.43
++tiamat-10.openstreetmap:193.60.236.44
++tiamat-10.ucl.openstreetmap:10.0.0.44
++tiamat-10.oob.openstreetmap:10.0.1.44
++tiamat-11.openstreetmap:193.60.236.45
++tiamat-11.ucl.openstreetmap:10.0.0.45
++tiamat-11.oob.openstreetmap:10.0.1.45
++tiamat-12.openstreetmap:193.60.236.46
++tiamat-12.ucl.openstreetmap:10.0.0.46
++tiamat-12.oob.openstreetmap:10.0.1.46
++tiamat-13.openstreetmap:193.60.236.47
++tiamat-13.ucl.openstreetmap:10.0.0.47
++tiamat-13.oob.openstreetmap:10.0.1.47
++tiamat-20.openstreetmap:193.60.236.48
++tiamat-20.ucl.openstreetmap:10.0.0.48
++tiamat-20.oob.openstreetmap:10.0.1.48
++tiamat-21.openstreetmap:193.60.236.49
++tiamat-21.ucl.openstreetmap:10.0.0.49
++tiamat-21.oob.openstreetmap:10.0.1.49
++tiamat-22.openstreetmap:193.60.236.50
++tiamat-22.ucl.openstreetmap:10.0.0.50
++tiamat-22.oob.openstreetmap:10.0.1.50
++tiamat-23.openstreetmap:193.60.236.51
++tiamat-23.ucl.openstreetmap:10.0.0.51
++tiamat-23.oob.openstreetmap:10.0.1.51
+
 # Blog aggregator (on Shaun McDonald's VM)
 
 +blogs.openstreetmap:213.138.110.209:600
