@@ -32,7 +32,7 @@ scorch:
   lon: 3.2008282044777
   pingdom: 2410154
   colour: "#bf8230"
-  bandwidth: 100
+  bandwidth: 150
   ipv4: 176.31.235.79
   ipv6: 200141d00002fc4f0000000000000001
   default: ""
