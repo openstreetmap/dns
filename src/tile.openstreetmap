@@ -202,6 +202,7 @@ corvallis:
   colour: "#a1285f"
   bandwidth: 80
   ipv4: 140.211.167.105
+  ipv6: 2605bc8030100700000000008cdea769
   preferred:
     countries:
       - US
