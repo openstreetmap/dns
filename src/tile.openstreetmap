@@ -88,19 +88,26 @@ lyon:
   ipv6: 2a0391800001002100000000000000a6
 
 # Falkenstein/Jena, DE
+# Falkenstain @ 50.47822,12.33607
+# Jena @ 50.9411,11.60085
+# Berlin @
 germany:
-  lat: 50.703515
-  lon: 11.96044
+  lat: 51.68959
+  lon: 12.78809
   colour: "#562781"
   servers:
     - pingdom: 1483284
-      bandwidth: 140
+      bandwidth: 100
       ipv4: 144.76.70.77
       ipv6: 2a0104f80191834c0000000000000002
     - pingdom: 1486872
-      bandwidth: 140
+      bandwidth: 100
       ipv4: 81.7.11.83
       ipv6: 2a020180000100010000000005170b53
+    - pingdom: 2441982
+      bandwidth: 100
+      ipv4: 185.66.195.245
+      ipv6: 2a032260200000010000000000000005
   default: "xx"
   allowed:
     continents:
