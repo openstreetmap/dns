@@ -380,7 +380,7 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # Tile cache servers
 
-+gorynych.openstreetmap:130.193.62.73
++gorynych.openstreetmap:5.45.248.21
 3gorynych.openstreetmap:2a0206b8b0105065000000000000a001
 +lurien.openstreetmap:193.55.222.229
 +trogdor.openstreetmap:134.90.146.26

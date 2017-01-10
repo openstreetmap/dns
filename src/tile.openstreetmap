@@ -6,7 +6,7 @@ moscow:
   pingdom: 659912
   colour: "#412c84"
   bandwidth: 175
-  ipv4: 130.193.62.73
+  ipv4: 5.45.248.21
   ipv6: 2a0206b8b0105065000000000000a001
   allowed:
     countries:
