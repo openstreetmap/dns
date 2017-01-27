@@ -345,6 +345,7 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +help.openstreetmap:212.110.172.32
 +shop.openstreetmap:212.110.172.32
 +dns.openstreetmap:212.110.172.32
++blogs.openstreetmap:212.110.172.32:600
 +shenron.bm.openstreetmap:10.0.16.3
 
 3shenron.openstreetmap:200141c9000104000000000000000032
@@ -356,6 +357,7 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 3help.openstreetmap:200141c9000104000000000000000032
 3shop.openstreetmap:200141c9000104000000000000000032
 3dns.openstreetmap:200141c9000104000000000000000032
+3blogs.openstreetmap:200141c9000104000000000000000032:600
 
 # Wiki server
 
@@ -457,11 +459,6 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +tiamat-23.openstreetmap:193.60.236.51
 +tiamat-23.ucl.openstreetmap:10.0.0.51
 +tiamat-23.oob.openstreetmap:10.0.1.51
-
-# Blog aggregator (on Shaun McDonald's VM)
-
-+blogs.openstreetmap:213.138.110.209:600
-3blogs.openstreetmap:200141c8005105d1feff00fffe0032b8:600
 
 # Continuous integration server (on Shaun McDonald's machine)
 
