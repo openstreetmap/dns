@@ -372,13 +372,14 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 # GPS tile server
 
 +noquiklos.openstreetmap:193.60.236.16
++gps-tile.openstreetmap:193.60.236.16
++a.gps-tile.openstreetmap:193.60.236.16
++b.gps-tile.openstreetmap:193.60.236.16
++c.gps-tile.openstreetmap:193.60.236.16
 +gps.tile.openstreetmap:193.60.236.16
 +gps-a.tile.openstreetmap:193.60.236.16
 +gps-b.tile.openstreetmap:193.60.236.16
 +gps-c.tile.openstreetmap:193.60.236.16
-+a.gps-tile.openstreetmap:193.60.236.16
-+b.gps-tile.openstreetmap:193.60.236.16
-+c.gps-tile.openstreetmap:193.60.236.16
 +noquiklos.ucl.openstreetmap:10.0.0.13
 +noquiklos.oob.openstreetmap:10.0.1.13
 
