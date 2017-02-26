@@ -25,19 +25,6 @@ moscow:
     countries:
       - RU
 
-# Pau, FR
-# Limit 100Mb/s
-pau:
-  lat: 43.313694
-  lon: -0.365211
-  pingdom: 718192
-  colour: "#bf8230"
-  bandwidth: 60
-  ipv4: 193.55.222.229
-  allowed:
-    continents:
-      - EU
-
 # Amsterdam, NL
 # BW Limit: 1000Mb/s
 amsterdam:
@@ -249,7 +236,7 @@ aalborg:
   lat: 57.0159232
   lon: 9.97532374746345
   pingdom: 2295843
-  colour: "#bfa730"
+  colour: "#bf8230"
   bandwidth: 30
   ipv4: 130.225.254.123
   ipv6: 20010878034600000000000000000123
