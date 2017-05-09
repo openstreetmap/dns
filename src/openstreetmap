@@ -241,6 +241,9 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +karm.ic.openstreetmap:146.179.159.168:600
 +karm.oob.openstreetmap:146.179.159.173:600
 
++eddie.ucl.openstreetmap:10.0.0.10:600
++eddie.oob.openstreetmap:10.0.1.10:600
+
 +katla.bm.openstreetmap:10.0.32.40
 +db.openstreetmap:10.0.32.40:600
 +katla.oob.openstreetmap:10.0.33.40
