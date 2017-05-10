@@ -36,7 +36,7 @@ while (my($name,$cluster) = each %$clusters)
     {
         my $server = {
             cluster => $cluster,
-            pingdom => $cluster->{pingdom},
+            statuscake => $cluster->{statuscake},
             bandwidth => $cluster->{bandwidth},
             ipv4 => $cluster->{ipv4},
             ipv6 => $cluster->{ipv6}
@@ -57,41 +57,57 @@ foreach my $server (@servers)
     $server->{status} = "up";
 }
 
-# If pingdom support is enabled then check which servers are up
-if ($ENV{PINGDOM_USERNAME} && $ENV{PINGDOM_PASSWORD})
+# If statuscake support is enabled then check which servers are up
+if ($ENV{STATUSCAKE_USERNAME} && $ENV{STATUSCAKE_APIKEY})
 {
     my $ua = LWP::UserAgent->new;
     my $cache;
 
-    $ua->timeout(5);
-    $ua->default_header("App-Key", "2cohi62u5haxvqmypk3ljqqrze1jufrh");
-    $ua->credentials("api.pingdom.com:443", "Pingdom API", $ENV{PINGDOM_USERNAME}, $ENV{PINGDOM_PASSWORD});
+    $ua->agent("mkgeo/1.0");
+    $ua->default_header("Username", $ENV{STATUSCAKE_USERNAME});
+    $ua->default_header("API", $ENV{STATUSCAKE_APIKEY});
 
-    if (-f "pingdom.yml")
+    if (-f "statuscake.yml")
     {
-        $cache = YAML::LoadFile("pingdom.yml");
+        $cache = YAML::LoadFile("statuscake.yml");
     }
     else
     {
         $cache = {};
     }
 
-    foreach my $server (@servers)
+    my $response = $ua->get("https://app.statuscake.com/API/Tests/");
+
+    if ($response->is_success)
     {
-        if (my $checkid = $server->{pingdom})
+        my $tests = decode_json($response->content);
+
+        foreach my $test (@$tests)
         {
-            my $response = $ua->get("https://api.pingdom.com/api/2.0/checks/${checkid}");
+            my $testid = $test->{TestID};
 
-            if ($response->is_success)
+            if ($test->{Status} eq "Up" && !$test->{Paused})
             {
-                my $check = decode_json($response->content);
-
-                $server->{status} = $check->{check}->{status};
-                $cache->{$server->{pingdom}} = $check->{check}->{status};
+                $cache->{$testid} = "up";
             }
             else
             {
-                $server->{status} = $cache->{$server->{pingdom}} || "down";
+                $cache->{$testid} = "down";
+            }
+        }
+    }
+
+    foreach my $server (@servers)
+    {
+        if (my $testids = $server->{statuscake})
+        {
+            $server->{status} = "up";
+
+            for my $testid (@$testids)
+            {
+                my $testresult = $cache->{$testid} || "down";
+
+                $server->{status} = "down" if $testresult eq "down";
             }
         }
         else
@@ -100,7 +116,7 @@ if ($ENV{PINGDOM_USERNAME} && $ENV{PINGDOM_PASSWORD})
         }
     }
 
-    YAML::DumpFile("pingdom.yml", $cache);
+    YAML::DumpFile("statuscake.yml", $cache);
 }
 
 # Mark a cluster as up if any servers are up

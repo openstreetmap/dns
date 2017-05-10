@@ -3,7 +3,9 @@
 moscow:
   lat: 55.75
   lon: 37.617
-  pingdom: 659912
+  statuscake:
+    - 2217257
+    - 2217258
   colour: "#412c84"
   bandwidth: 175
   ipv4: 5.45.248.21
@@ -30,7 +32,9 @@ moscow:
 amsterdam:
   lat: 52.37306
   lon: 4.89222
-  pingdom: 766251
+  statuscake:
+    - 2217259
+    - 2217260
   colour: "#a1b92e"
   bandwidth: 60
   ipv4: 134.90.146.26
@@ -44,7 +48,9 @@ amsterdam:
 oslo:
   lat: 59.94944
   lon: 10.75639
-  pingdom: 769267
+  statuscake:
+    - 2217261
+    - 2217262
   colour: "#7c1f7c"
   bandwidth: 30
   ipv4: 31.169.50.10
@@ -55,7 +61,9 @@ oslo:
 sanfrancisco:
   lat: 37.708264
   lon: -122.280247
-  pingdom: 788480
+  statuscake:
+    - 2217263
+    - 2217264
   colour: "#25567b"
   bandwidth: 20
   ipv4: 64.62.205.202
@@ -68,13 +76,15 @@ sanfrancisco:
 lyon:
   lat: 45.7575958
   lon: 4.8323239
-  pingdom: 789594
+  statuscake:
+    - 2217265
+    - 2217266
   colour: "#bf6530"
   bandwidth: 70
   ipv4: 77.95.70.166
   ipv6: 2a0391800001002100000000000000a6
 
-# Falkenstein/Jena, DE
+# Falkenstein/Jena/Berlin, DE
 # Falkenstain @ 50.47822,12.33607
 # Jena @ 50.9411,11.60085
 # Berlin @
@@ -83,15 +93,21 @@ germany:
   lon: 12.78809
   colour: "#562781"
   servers:
-    - pingdom: 1483284
+    - statuscake:
+        - 2217269
+        - 2217270
       bandwidth: 100
       ipv4: 144.76.70.77
       ipv6: 2a0104f80191834c0000000000000002
-    - pingdom: 1486872
+    - statuscake:
+        - 2217271
+        - 2217272
       bandwidth: 100
       ipv4: 81.7.11.83
       ipv6: 2a020180000100010000000005170b53
-    - pingdom: 2441982
+    - statuscake:
+        - 2217293
+        - 2217294
       bandwidth: 100
       ipv4: 185.66.195.245
       ipv6: 2a032260200000010000000000000005
@@ -106,10 +122,14 @@ provo:
   lon: -111.642765
   colour: "#1f7c65"
   servers:
-    - pingdom: 909444
+    - statuscake:
+        - 2217273
+        - 2217274
       bandwidth: 30
       ipv4: 192.163.219.36
-    - pingdom: 909445
+    - statuscake:
+        - 2217275
+        - 2217276
       bandwidth: 30
       ipv4: 192.163.219.40
   allowed:
@@ -123,7 +143,9 @@ baku:
   lat: 40.395278
   lon: 49.882222
   colour: "#bfb830"
-  pingdom: 1064415
+  statuscake:
+    - 2217267
+    - 2217268
   bandwidth: 50
   ipv4: 94.20.20.55
   allowed:
@@ -146,7 +168,9 @@ hsinchu:
   lat: 24.78268
   lon: 120.99563
   colour: "#bf3030"
-  pingdom: 1124306
+  statuscake:
+    - 2217277
+    - 2217278
   bandwidth: 50
   ipv4: 140.110.240.7
   ipv6: 20010e10200002400000000000000007
@@ -162,7 +186,9 @@ hsinchu:
 pula:
   lat: 44.866280
   lon: 13.851520
-  pingdom: 1453872
+  statuscake:
+    - 2217279
+    - 2217280
   colour: "#bf9430"
   bandwidth: 120
   ipv4: 193.198.233.211
@@ -172,7 +198,9 @@ pula:
 osijek:
   lat: 45.55656
   lon: 18.71212
-  pingdom: 1840482
+  statuscake:
+    - 2217281
+    - 2217282
   colour: "#269926"
   bandwidth: 80
   ipv4: 161.53.30.107
@@ -183,6 +211,9 @@ london:
   lat: 51.5120484
   lon: -0.00201880060605929
   pingdom: 1453871
+  statuscake:
+   - 2214077
+   - 2217246
   colour: "#7ab02c"
   bandwidth: 100
   ipv4: 185.73.44.30
@@ -192,7 +223,9 @@ london:
 corvallis:
   lat: 44.5639267
   lon: -123.274707837676
-  pingdom: 1454011
+  statuscake:
+    - 2217287
+    - 2217288
   colour: "#a1285f"
   bandwidth: 80
   ipv4: 140.211.167.105
@@ -207,7 +240,9 @@ corvallis:
 budapest:
   lat: 47.4925
   lon: 19.051389
-  pingdom: 1530226
+  statuscake:
+    - 2217283
+    - 2217284
   colour: "#2c3d82"
   bandwidth: 60
   ipv4: 37.17.173.8
@@ -217,7 +252,9 @@ budapest:
 minsk:
   lat: 53.88586
   lon: 27.45368
-  pingdom: 1941482
+  statuscake:
+    - 2217285
+    - 2217286
   colour: "#bfa730"
   bandwidth: 50
   ipv4: 31.130.201.40
@@ -235,7 +272,9 @@ minsk:
 aalborg:
   lat: 57.0159232
   lon: 9.97532374746345
-  pingdom: 2295843
+  statuscake:
+    - 2217289
+    - 2217290
   colour: "#bf8230"
   bandwidth: 30
   ipv4: 130.225.254.123
@@ -245,7 +284,9 @@ aalborg:
 zaragoza:
   lat: 41.64207
   lon: -0.90054
-  pingdom: 2329063
+  statuscake:
+    - 2217291
+    - 2217292
   colour: "#bfa730"
   bandwidth: 30
   ipv4: 155.210.4.103
