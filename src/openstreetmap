@@ -486,3 +486,7 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +humanitarian.openstreetmap:144.76.31.210
 +hot-staging.openstreetmap:144.76.31.210
 +hot-dev.openstreetmap:144.76.31.210
+
+# Uptime site at StatusCake
+
+Cuptime.openstreetmap:uptime.statuscake.com
