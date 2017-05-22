@@ -25,7 +25,7 @@ vial:
   statuscake:
     - 2217315
   colour: "#269926"
-  bandwidth: 150
+  bandwidth: 100
   ipv4: 138.201.195.31
   ipv6: 2a0104f801723cde0000000000000002
   default: ""
