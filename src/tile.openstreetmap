@@ -302,7 +302,7 @@ athens:
   colour: "#bfa730"
   bandwidth: 10
   ipv4: 83.212.2.116
-  ipv6:200106482ffe00040000000000000116
+  ipv6: 200106482ffe00040000000000000116
 
 # Spare colours:
 #
