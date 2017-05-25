@@ -292,5 +292,17 @@ zaragoza:
   bandwidth: 30
   ipv4: 155.210.4.103
 
+# Athens, GR
+athens:
+  lat: 37.983972
+  lon: 23.727806
+  statuscake:
+    - 2217291
+    - 2217292
+  colour: "#bfa730"
+  bandwidth: 10
+  ipv4: 83.212.2.116
+  ipv6:200106482ffe00040000000000000116
+
 # Spare colours:
 #
