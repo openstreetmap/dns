@@ -469,11 +469,6 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +tiamat-23.ucl.openstreetmap:10.0.0.51
 +tiamat-23.oob.openstreetmap:10.0.1.51
 
-# Continuous integration server (on Shaun McDonald's machine)
-
-+ci.openstreetmap:144.76.98.136
-+cruise.openstreetmap:144.76.98.136
-
 # Donation site
 
 +donate.openstreetmap:193.60.236.19:300
