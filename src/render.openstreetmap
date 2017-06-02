@@ -10,8 +10,8 @@ orm:
   default: ""
 
 yevaud:
-  lat: 51.52672
-  lon: -0.13505
+  lat: 51.5228002
+  lon: -0.62151043832233
   statuscake:
     - 2217313
   colour: "#412c84"
