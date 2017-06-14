@@ -146,7 +146,7 @@ baku:
   statuscake:
     - 2217267
     - 2217268
-  bandwidth: 50
+  bandwidth: 20
   ipv4: 94.20.20.55
   allowed:
     continents:
