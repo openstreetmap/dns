@@ -81,8 +81,8 @@ lyon:
     - 2217266
   colour: "#bf6530"
   bandwidth: 30
-  ipv4: 77.95.70.166
-  ipv6: 2a0391800001002100000000000000a6
+  ipv4: 77.95.65.39
+  ipv6: 2a039180000001000000000000000007
 
 # Falkenstein/Jena/Berlin, DE
 # Falkenstain @ 50.47822,12.33607
@@ -303,6 +303,17 @@ athens:
   bandwidth: 10
   ipv4: 83.212.2.116
   ipv6: 200106482ffe00040000000000000116
+
+# ID
+athens:
+  lat: -5
+  lon: 120
+  statuscake:
+    - 2534619
+    - 2534620
+  colour: "#bfa730"
+  bandwidth: 10
+  ipv4: 103.253.107.131
 
 # Spare colours:
 #
