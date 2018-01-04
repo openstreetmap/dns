@@ -256,7 +256,7 @@ minsk:
     - 2217285
     - 2217286
   colour: "#bfa730"
-  bandwidth: 50
+  bandwidth: 35
   ipv4: 31.130.201.40
   ipv6: 2001067c22681005021e8cfffe8c8d3b
   allowed:
@@ -264,9 +264,6 @@ minsk:
       - BY
       - LT
       - LV
-      - EE
-      - MD
-      - UA
 
 # Aalborg, DK
 # BW Limit: 1000Mb/s
