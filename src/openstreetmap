@@ -348,7 +348,6 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 +trac.openstreetmap:212.110.172.32
 +irc.openstreetmap:212.110.172.32
 +help.openstreetmap:212.110.172.32
-+shop.openstreetmap:212.110.172.32
 +dns.openstreetmap:212.110.172.32
 +blogs.openstreetmap:212.110.172.32:600
 +shenron.bm.openstreetmap:10.0.16.3
@@ -360,7 +359,6 @@ Cparent.tile.openstreetmap:render.openstreetmap.org
 3git.openstreetmap:200141c9000104000000000000000032
 3trac.openstreetmap:200141c9000104000000000000000032
 3help.openstreetmap:200141c9000104000000000000000032
-3shop.openstreetmap:200141c9000104000000000000000032
 3dns.openstreetmap:200141c9000104000000000000000032
 3blogs.openstreetmap:200141c9000104000000000000000032:600
 
