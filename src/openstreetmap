@@ -205,7 +205,6 @@ Ctile.openstreetmap:tile.geo.openstreetmap.org
 Ca.tile.openstreetmap:tile.geo.openstreetmap.org
 Cb.tile.openstreetmap:tile.geo.openstreetmap.org
 Cc.tile.openstreetmap:tile.geo.openstreetmap.org
-Cparent.tile.openstreetmap:render.openstreetmap.org
 
 # Services machine
 
