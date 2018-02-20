@@ -116,27 +116,6 @@ germany:
     continents:
       - EU
 
-# Provo, US
-provo:
-  lat: 40.20686
-  lon: -111.642765
-  colour: "#1f7c65"
-  servers:
-    - statuscake:
-        - 2217273
-        - 2217274
-      bandwidth: 30
-      ipv4: 192.163.219.36
-    - statuscake:
-        - 2217275
-        - 2217276
-      bandwidth: 30
-      ipv4: 192.163.219.40
-  allowed:
-    continents:
-      - NA
-      - SA
-
 # Baku, AZ
 # BW Limit: 1000Mb/s
 baku:
