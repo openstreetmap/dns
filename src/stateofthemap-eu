@@ -8,6 +8,10 @@
 .stateofthemap-eu::b.ns.bytemark.co.uk
 .stateofthemap-eu::c.ns.bytemark.co.uk
 
+# Publish a CAA record indicating that only letsencrypt should issue certificates
+
+:stateofthemap-eu:257:\000\005\151\163\163\165\145\154\145\164\163\145\156\143\162\171\160\164\056\157\162\147
+
 # Let openstreetmap.at handle email for the moment
 
 @stateofthemap-eu::openstreetmap.at:1:3600

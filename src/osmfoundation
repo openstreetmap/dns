@@ -8,6 +8,10 @@
 .osmfoundation::b.ns.bytemark.co.uk
 .osmfoundation::c.ns.bytemark.co.uk
 
+# Publish a CAA record indicating that only letsencrypt should issue certificates
+
+:osmfoundation:257:\000\005\151\163\163\165\145\154\145\164\163\145\156\143\162\171\160\164\056\157\162\147
+
 # SPF Record
 
 'osmfoundation:v=spf1 a\072shenron.openstreetmap.org include\072_spf.google.com ~all:3600

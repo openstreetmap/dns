@@ -8,6 +8,10 @@
 .switch2osm::b.ns.bytemark.co.uk
 .switch2osm::c.ns.bytemark.co.uk
 
+# Publish a CAA record indicating that only letsencrypt should issue certificates
+
+:switch2osm:257:\000\005\151\163\163\165\145\154\145\164\163\145\156\143\162\171\160\164\056\157\162\147
+
 # Main web server and it's aliases
 
 +switch2osm:193.60.236.19:600
