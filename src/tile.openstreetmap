@@ -282,8 +282,8 @@ athens:
 
 # Montréal, CA
 montreal:
-  lat: -73.566667
-  lon: 45.5
+  lat: 45.5
+  lon: -73.566667
   statuscake:
     - 3155163
     - 3155162
