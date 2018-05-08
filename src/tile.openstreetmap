@@ -280,6 +280,17 @@ athens:
   ipv4: 83.212.2.116
   ipv6: 200106482ffe00040000000000000116
 
+# Montréal, CA
+montreal:
+  lat: -73.566667
+  lon: 45.5
+  statuscake:
+    - 3155163
+    - 3155162
+  colour: "#bfa730"
+  bandwidth: 10
+  ipv4: 184.107.48.228
+
 # ID
 athens:
   lat: -5
