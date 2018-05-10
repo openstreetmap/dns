@@ -212,7 +212,6 @@ corvallis:
   preferred:
     countries:
       - US
-      - CA
       - MX
 
 # Budapest, HU
@@ -290,6 +289,9 @@ montreal:
   colour: "#bfa730"
   bandwidth: 10
   ipv4: 184.107.48.228
+  preferred:
+    countries:
+      - CA
 
 # ID
 athens:
