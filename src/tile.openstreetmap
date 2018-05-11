@@ -7,7 +7,7 @@ moscow:
     - 2217257
     - 2217258
   colour: "#412c84"
-  bandwidth: 175
+  bandwidth:200 
   ipv4: 5.45.248.21
   ipv6: 2a0206b8b0105065000000000000a001
   allowed:
@@ -36,9 +36,8 @@ amsterdam:
     - 2217259
     - 2217260
   colour: "#a1b92e"
-  bandwidth: 60
+  bandwidth: 100
   ipv4: 134.90.146.26
-  default: "xx"
   preferred:
     countries:
       - ZA
@@ -52,7 +51,7 @@ oslo:
     - 2217261
     - 2217262
   colour: "#7c1f7c"
-  bandwidth: 30
+  bandwidth: 50
   ipv4: 31.169.50.10
   default: "xx"
 
@@ -65,7 +64,7 @@ sanfrancisco:
     - 2217263
     - 2217264
   colour: "#25567b"
-  bandwidth: 20
+  bandwidth: 40
   ipv4: 64.62.205.202
   preferred:
     countries:
@@ -80,7 +79,7 @@ lyon:
     - 2217265
     - 2217266
   colour: "#bf6530"
-  bandwidth: 30
+  bandwidth: 90
   ipv4: 77.95.65.39
   ipv6: 2a039180000001000000000000000007
 
@@ -96,22 +95,21 @@ germany:
     - statuscake:
         - 2217269
         - 2217270
-      bandwidth: 100
+      bandwidth: 150
       ipv4: 144.76.70.77
       ipv6: 2a0104f80191834c0000000000000002
     - statuscake:
         - 2217271
         - 2217272
-      bandwidth: 100
+      bandwidth: 150
       ipv4: 81.7.11.83
       ipv6: 2a020180000100010000000005170b53
     - statuscake:
         - 2217293
         - 2217294
-      bandwidth: 100
+      bandwidth: 150
       ipv4: 185.66.195.245
       ipv6: 2a032260200000010000000000000005
-  default: "xx"
   allowed:
     continents:
       - EU
@@ -125,7 +123,7 @@ baku:
   statuscake:
     - 2217267
     - 2217268
-  bandwidth: 20
+  bandwidth: 50
   ipv4: 94.20.20.55
   allowed:
     continents:
@@ -150,7 +148,7 @@ hsinchu:
   statuscake:
     - 2217277
     - 2217278
-  bandwidth: 50
+  bandwidth: 120
   ipv4: 140.110.240.7
   ipv6: 20010e10200002400000000000000007
   allowed:
@@ -172,6 +170,7 @@ pula:
   bandwidth: 120
   ipv4: 193.198.233.211
   ipv6: 20010b684cff00030000000000000003
+  default: "xx"
 
 # Osijek, HR
 osijek:
@@ -184,6 +183,7 @@ osijek:
   bandwidth: 80
   ipv4: 161.53.30.107
   ipv6: 20010b68c0ff000002215efffe40c7c4
+  default: "xx"
 
 # London, GB
 london:
@@ -194,7 +194,7 @@ london:
    - 2214077
    - 2217246
   colour: "#7ab02c"
-  bandwidth: 100
+  bandwidth: 200
   ipv4: 185.73.44.30
   ipv6: 20010ba800002c1e0000000000000000
 
@@ -206,7 +206,7 @@ corvallis:
     - 2217287
     - 2217288
   colour: "#a1285f"
-  bandwidth: 80
+  bandwidth: 170
   ipv4: 140.211.167.105
   ipv6: 2605bc8030100700000000008cdea769
   preferred:
@@ -222,7 +222,7 @@ budapest:
     - 2217283
     - 2217284
   colour: "#2c3d82"
-  bandwidth: 60
+  bandwidth: 140
   ipv4: 37.17.173.8
   ipv6: 20014c480002bf04025056fffe8f5c81
 
@@ -234,7 +234,7 @@ minsk:
     - 2217285
     - 2217286
   colour: "#bfa730"
-  bandwidth: 35
+  bandwidth: 60
   ipv4: 31.130.201.40
   ipv6: 2001067c22681005021e8cfffe8c8d3b
   allowed:
@@ -255,6 +255,7 @@ aalborg:
   bandwidth: 90
   ipv4: 130.225.254.123
   ipv6: 20010878034600000000000000000123
+  default: "xx"
 
 # Zaragoza, ES
 zaragoza:
@@ -264,7 +265,7 @@ zaragoza:
     - 2217291
     - 2217292
   colour: "#bfa730"
-  bandwidth: 30
+  bandwidth: 50
   ipv4: 155.210.4.103
 
 # Athens, GR
@@ -275,7 +276,7 @@ athens:
     - 2244901
     - 2244902
   colour: "#bfa730"
-  bandwidth: 10
+  bandwidth: 40
   ipv4: 83.212.2.116
   ipv6: 200106482ffe00040000000000000116
 
@@ -287,7 +288,7 @@ montreal:
     - 3155163
     - 3155162
   colour: "#bfa730"
-  bandwidth: 10
+  bandwidth: 70
   ipv4: 184.107.48.228
   preferred:
     countries:
