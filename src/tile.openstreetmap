@@ -7,7 +7,7 @@ moscow:
     - 2217257
     - 2217258
   colour: "#412c84"
-  bandwidth:200 
+  bandwidth: 200 
   ipv4: 5.45.248.21
   ipv6: 2a0206b8b0105065000000000000a001
   allowed:
