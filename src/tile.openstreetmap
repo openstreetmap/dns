@@ -79,7 +79,7 @@ lyon:
     - 2217265
     - 2217266
   colour: "#bf6530"
-  bandwidth: 90
+  bandwidth: 80
   ipv4: 77.95.65.39
   ipv6: 2a039180000001000000000000000007
 
@@ -234,7 +234,7 @@ minsk:
     - 2217285
     - 2217286
   colour: "#bfa730"
-  bandwidth: 60
+  bandwidth: 80
   ipv4: 31.130.201.40
   ipv6: 2001067c22681005021e8cfffe8c8d3b
   allowed:
@@ -265,7 +265,7 @@ zaragoza:
     - 2217291
     - 2217292
   colour: "#bfa730"
-  bandwidth: 50
+  bandwidth: 70
   ipv4: 155.210.4.103
 
 # Athens, GR
@@ -288,14 +288,14 @@ montreal:
     - 3155163
     - 3155162
   colour: "#bfa730"
-  bandwidth: 70
+  bandwidth: 100
   ipv4: 184.107.48.228
   preferred:
     countries:
       - CA
 
 # ID
-athens:
+indonesia:
   lat: -5
   lon: 120
   statuscake:
