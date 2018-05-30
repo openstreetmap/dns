@@ -481,9 +481,6 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 # HOT site
 
 +hot.openstreetmap:144.76.31.210:300
-+humanitarian.openstreetmap:144.76.31.210:300
-+hot-staging.openstreetmap:144.76.31.210:300
-+hot-dev.openstreetmap:144.76.31.210:300
 
 # Uptime site at StatusCake
 
