@@ -31,6 +31,7 @@ Zopenstreetmap:a.ns.bytemark.co.uk:hostmaster.openstreetmap.org:::::300
 # Google postmaster tools verification
 
 Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
+'openstreetmap:google-site-verification=oMMclkNxMVPPk0lhThg5S7cuzUZmtL_OZWTCrAwNcqQ
 
 # Delegate geo.openstreetmap.org to PowerDNS
 
