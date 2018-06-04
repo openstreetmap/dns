@@ -194,7 +194,7 @@ london:
    - 2214077
    - 2217246
   colour: "#7ab02c"
-  bandwidth: 200
+  bandwidth: 150
   ipv4: 185.73.44.30
   ipv6: 20010ba800002c1e0000000000000000
 
