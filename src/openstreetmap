@@ -226,8 +226,6 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 3planet.openstreetmap:2001063000120500022590fffec4f6ef:600
 +logstash.openstreetmap:193.63.75.107
 3logstash.openstreetmap:2001063000120500022590fffec4f6ef
-+hardware.openstreetmap:193.63.75.107
-3hardware.openstreetmap:2001063000120500022590fffec4f6ef
 +acme.openstreetmap:193.63.75.107
 3acme.openstreetmap:2001063000120500022590fffec4f6ef
 +ironbelly.ic.openstreetmap:146.179.159.177:600
@@ -322,9 +320,10 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 +urmel.ucl.openstreetmap:10.0.0.6
 +urmel.oob.openstreetmap:10.0.1.6
 
-# Gosmore routing server
+# Chef server
 
 +sarel.openstreetmap:193.60.236.20
++hardware.openstreetmap:193.60.236.20
 +sarel.ucl.openstreetmap:10.0.0.12
 +sarel.oob.openstreetmap:10.0.1.12
 
