@@ -224,11 +224,11 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 3planet.openstreetmap:2001063000120500022590fffec4f6ef:600
 +logstash.openstreetmap:193.63.75.107
 3logstash.openstreetmap:2001063000120500022590fffec4f6ef
-+acme.openstreetmap:193.63.75.107
-3acme.openstreetmap:2001063000120500022590fffec4f6ef
-+ironbelly.ic.openstreetmap:146.179.159.177:600
-+ironbelly.oob.openstreetmap:146.179.159.176:600
-+backup.ic.openstreetmap:146.179.159.177:600
++acme.openstreetmap:193.63.75.107:600
+3acme.openstreetmap:2001063000120500022590fffec4f6ef:600
++ironbelly.ic.openstreetmap:146.179.159.177
++ironbelly.oob.openstreetmap:146.179.159.176
++backup.ic.openstreetmap:146.179.159.177
 
 +grisu.openstreetmap:89.16.162.20
 3grisu.openstreetmap:200141c9000200d60000000000000020
@@ -321,7 +321,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 # Chef server
 
 +sarel.openstreetmap:193.60.236.20
-+chef.openstreetmap:193.60.236.20:600
++chef.openstreetmap:193.60.236.20
 +hardware.openstreetmap:193.60.236.20
 +sarel.ucl.openstreetmap:10.0.0.12
 +sarel.oob.openstreetmap:10.0.1.12
