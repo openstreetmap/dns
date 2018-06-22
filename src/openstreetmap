@@ -348,7 +348,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 +mail.openstreetmap:212.110.172.32
 +lists.openstreetmap:212.110.172.32
 +svn.openstreetmap:212.110.172.32
-+git.openstreetmap:212.110.172.32
++git.openstreetmap:212.110.172.32:600
 +trac.openstreetmap:212.110.172.32
 +irc.openstreetmap:212.110.172.32
 +help.openstreetmap:212.110.172.32
