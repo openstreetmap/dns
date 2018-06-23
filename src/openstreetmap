@@ -322,6 +322,8 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 +chef.openstreetmap:193.60.236.20
 +hardware.openstreetmap:193.60.236.20
 +acme.openstreetmap:193.60.236.20
++git.openstreetmap:193.60.236.20:600
++dns.openstreetmap:193.60.236.20:600
 +sarel.ucl.openstreetmap:10.0.0.12
 +sarel.oob.openstreetmap:10.0.1.12
 
@@ -347,11 +349,9 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 +mail.openstreetmap:212.110.172.32
 +lists.openstreetmap:212.110.172.32
 +svn.openstreetmap:212.110.172.32
-+git.openstreetmap:212.110.172.32:600
 +trac.openstreetmap:212.110.172.32
 +irc.openstreetmap:212.110.172.32
 +help.openstreetmap:212.110.172.32
-+dns.openstreetmap:212.110.172.32
 +blogs.openstreetmap:212.110.172.32:600
 +shenron.bm.openstreetmap:10.0.16.3
 
@@ -359,10 +359,8 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 3mail.openstreetmap:200141c9000104000000000000000032
 3lists.openstreetmap:200141c9000104000000000000000032
 3svn.openstreetmap:200141c9000104000000000000000032
-3git.openstreetmap:200141c9000104000000000000000032
 3trac.openstreetmap:200141c9000104000000000000000032
 3help.openstreetmap:200141c9000104000000000000000032
-3dns.openstreetmap:200141c9000104000000000000000032
 3blogs.openstreetmap:200141c9000104000000000000000032:600
 
 # Wiki server
