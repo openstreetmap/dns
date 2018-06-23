@@ -184,14 +184,14 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 # Taginfo servers
 
 +grindtooth.openstreetmap:193.60.236.15
-+taginfo.openstreetmap:193.60.236.15:600
+#+taginfo.openstreetmap:193.60.236.15:600
 +grindtooth.ucl.openstreetmap:10.0.0.19
 +grindtooth.oob.openstreetmap:10.0.1.19
 
 +stormfly-01.openstreetmap:140.211.167.104
 6stormfly-01.openstreetmap:2605bc8030100700000000008cdea768
-#+taginfo.openstreetmap:140.211.167.104:600
-#3taginfo.openstreetmap:2605bc8030100700000000008cdea768
++taginfo.openstreetmap:140.211.167.104:600
+3taginfo.openstreetmap:2605bc8030100700000000008cdea768
 +stormfly-01.oob.openstreetmap:10.0.0.99
 
 # Mapnik tile server, with wildcard alias to allow parallel loading
