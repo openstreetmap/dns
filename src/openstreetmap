@@ -191,7 +191,7 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 +stormfly-01.openstreetmap:140.211.167.104
 6stormfly-01.openstreetmap:2605bc8030100700000000008cdea768
 #+taginfo.openstreetmap:140.211.167.104:600
-#3taginfo.openstreetmap:2605bc8030100700000000008cdea768
+#3taginfo.openstreetmap:2605bc8030100700000000008cdea768:600
 +stormfly-01.oob.openstreetmap:10.0.0.99
 
 # Mapnik tile server, with wildcard alias to allow parallel loading
