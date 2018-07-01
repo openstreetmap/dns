@@ -369,7 +369,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 +stormfly-01.openstreetmap:140.211.167.104
 6stormfly-01.openstreetmap:2605bc8030100700000000008cdea768
 +wiki.openstreetmap:140.211.167.104:600
-#3wiki.openstreetmap:2605bc8030100700000000008cdea768:600
+3wiki.openstreetmap:2605bc8030100700000000008cdea768:600
 +stormfly-01.oob.openstreetmap:10.0.0.99
 
 # GPS tile server
