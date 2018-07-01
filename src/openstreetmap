@@ -181,18 +181,12 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 +zark.ucl.openstreetmap:10.0.0.8
 +zark.oob.openstreetmap:10.0.1.8
 
-# Taginfo servers
+# Taginfo server
 
 +grindtooth.openstreetmap:193.60.236.15
 +taginfo.openstreetmap:193.60.236.15:600
 +grindtooth.ucl.openstreetmap:10.0.0.19
 +grindtooth.oob.openstreetmap:10.0.1.19
-
-+stormfly-01.openstreetmap:140.211.167.104
-6stormfly-01.openstreetmap:2605bc8030100700000000008cdea768
-#+taginfo.openstreetmap:140.211.167.104:600
-#3taginfo.openstreetmap:2605bc8030100700000000008cdea768:600
-+stormfly-01.oob.openstreetmap:10.0.0.99
 
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
@@ -363,13 +357,20 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 3help.openstreetmap:200141c9000104000000000000000032
 3blogs.openstreetmap:200141c9000104000000000000000032:600
 
-# Wiki server
+# Wiki servers
 
 +ouroboros.openstreetmap:193.63.75.106
 3ouroboros.openstreetmap:200106300012050002237dfffeea813a
-+wiki.openstreetmap:193.63.75.106:600
+#+wiki.openstreetmap:193.63.75.106:600
+#3wiki.openstreetmap:200106300012050002237dfffeea813a:600
 +ouroboros.ic.openstreetmap:146.179.159.172:600
 +ouroboros.oob.openstreetmap:146.179.159.178:600
+
++stormfly-01.openstreetmap:140.211.167.104
+6stormfly-01.openstreetmap:2605bc8030100700000000008cdea768
++wiki.openstreetmap:140.211.167.104:600
+#3wiki.openstreetmap:2605bc8030100700000000008cdea768:600
++stormfly-01.oob.openstreetmap:10.0.0.99
 
 # GPS tile server
 
