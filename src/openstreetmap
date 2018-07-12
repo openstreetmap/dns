@@ -155,13 +155,6 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 
 # Nominatim servers
 
-+poldi.openstreetmap:193.63.75.101
-3poldi.openstreetmap:200106300012050002e081fffec5333e
-#+nominatim.openstreetmap:193.63.75.101:600
-#3nominatim.openstreetmap:200106300012050002e081fffec5333e:600
-+poldi.ic.openstreetmap:146.179.159.164:600
-+poldi.oob.openstreetmap:146.179.159.186:600
-
 +pummelzacken.openstreetmap:193.60.236.18
 #+nominatim.openstreetmap:193.60.236.18:600
 +pummelzacken.ucl.openstreetmap:10.0.0.20
