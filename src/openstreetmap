@@ -203,20 +203,21 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 
 +ironbelly.openstreetmap:193.63.75.107
 3ironbelly.openstreetmap:2001063000120500022590fffec4f6ef
-+backup.openstreetmap:193.63.75.107
-3backup.openstreetmap:2001063000120500022590fffec4f6ef
-+stats.openstreetmap:193.63.75.107
-3stats.openstreetmap:2001063000120500022590fffec4f6ef
++backup.openstreetmap:193.63.75.107:600
+3backup.openstreetmap:2001063000120500022590fffec4f6ef:600
 +planet.openstreetmap:193.63.75.107:600
 3planet.openstreetmap:2001063000120500022590fffec4f6ef:600
++stats.openstreetmap:193.63.75.107
+3stats.openstreetmap:2001063000120500022590fffec4f6ef
 +logstash.openstreetmap:193.63.75.107
 3logstash.openstreetmap:2001063000120500022590fffec4f6ef
 +ironbelly.ic.openstreetmap:146.179.159.177
 +ironbelly.oob.openstreetmap:146.179.159.176
-+backup.ic.openstreetmap:146.179.159.177
 
 +grisu.openstreetmap:89.16.162.20
 3grisu.openstreetmap:200141c9000200d60000000000000020
+#+backup.openstreetmap:89.16.162.20:600
+#3backup.openstreetmap:200141c9000200d60000000000000020:600
 #+planet.openstreetmap:89.16.162.20:600
 #3planet.openstreetmap:200141c9000200d60000000000000020:600
 +grisu.bm.openstreetmap:10.0.32.20
