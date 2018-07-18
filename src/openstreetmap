@@ -51,50 +51,50 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 
 # Main web servers and their aliases
 
-+spike-01.openstreetmap:193.63.75.99:600
-3spike-01.openstreetmap:2001063000120500021a4bfffea5fd2a:600
-#+openstreetmap:193.63.75.99:600
-#3openstreetmap:2001063000120500021a4bfffea5fd2a:600
-#+www.openstreetmap:193.63.75.99:600
-#3www.openstreetmap:2001063000120500021a4bfffea5fd2a:600
-#+api.openstreetmap:193.63.75.99:600
-#3api.openstreetmap:2001063000120500021a4bfffea5fd2a:600
-#+maps.openstreetmap:193.63.75.99:600
-#3maps.openstreetmap:2001063000120500021a4bfffea5fd2a:600
-#+mapz.openstreetmap:193.63.75.99:600
-#3mapz.openstreetmap:2001063000120500021a4bfffea5fd2a:600
-+spike-01.ic.openstreetmap:146.179.159.162:600
-+spike-01.oob.openstreetmap:146.179.159.188:600
++spike-01.openstreetmap:130.177.76.6
+#3spike-01.openstreetmap:200109780002002c0000000001721006
+#+openstreetmap:130.177.76.6:600
+#3openstreetmap:200109780002002c0000000001721006:600
+#+www.openstreetmap:130.177.76.6:600
+#3www.openstreetmap:200109780002002c0000000001721006:600
+#+api.openstreetmap:130.177.76.6:600
+#3api.openstreetmap:200109780002002c0000000001721006:600
+#+maps.openstreetmap:130.177.76.6:600
+#3maps.openstreetmap:200109780002002c0000000001721006:600
+#+mapz.openstreetmap:130.177.76.6:600
+#3mapz.openstreetmap:200109780002002c0000000001721006:600
++spike-01.ams.openstreetmap:10.0.48.6
++spike-01.oob.openstreetmap:10.0.49.6
 
-+spike-02.openstreetmap:193.63.75.100:600
-3spike-02.openstreetmap:20010630001205000219bbfffe393d9e:600
-#+openstreetmap:193.63.75.100:600
-#3openstreetmap:20010630001205000219bbfffe393d9e:600
-#+www.openstreetmap:193.63.75.100:600
-#3www.openstreetmap:20010630001205000219bbfffe393d9e:600
-#+api.openstreetmap:193.63.75.100:600
-#3api.openstreetmap:20010630001205000219bbfffe393d9e:600
-#+maps.openstreetmap:193.63.75.100:600
-#3maps.openstreetmap:20010630001205000219bbfffe393d9e:600
-#+mapz.openstreetmap:193.63.75.100:600
-#3mapz.openstreetmap:20010630001205000219bbfffe393d9e:600
-+spike-02.ic.openstreetmap:146.179.159.163:600
-+spike-02.oob.openstreetmap:146.179.159.180:600
++spike-02.openstreetmap:130.177.76.7
+#3spike-02.openstreetmap:200109780002002c0000000001721007
+#+openstreetmap:130.177.76.7:600
+#3openstreetmap:200109780002002c0000000001721007:600
+#+www.openstreetmap:130.177.76.7:600
+#3www.openstreetmap:200109780002002c0000000001721007:600
+#+api.openstreetmap:130.177.76.7:600
+#3api.openstreetmap:200109780002002c0000000001721007:600
+#+maps.openstreetmap:130.177.76.7:600
+#3maps.openstreetmap:200109780002002c0000000001721007:600
+#+mapz.openstreetmap:130.177.76.7:600
+#3mapz.openstreetmap:200109780002002c0000000001721007:600
++spike-02.ams.openstreetmap:10.0.48.7
++spike-02.oob.openstreetmap:10.0.49.7
 
-+spike-03.openstreetmap:193.63.75.103:600
-3spike-03.openstreetmap:20010630001205000219bbfffe398aba:600
-#+openstreetmap:193.63.75.103:600
-#3openstreetmap:20010630001205000219bbfffe398aba:600
-#+www.openstreetmap:193.63.75.103:600
-#3www.openstreetmap:20010630001205000219bbfffe398aba:600
-#+api.openstreetmap:193.63.75.103:600
-#3api.openstreetmap:20010630001205000219bbfffe398aba:600
-#+maps.openstreetmap:193.63.75.103:600
-#3maps.openstreetmap:20010630001205000219bbfffe398aba:600
-#+mapz.openstreetmap:193.63.75.103:600
-#3mapz.openstreetmap:20010630001205000219bbfffe398aba:600
-+spike-03.ic.openstreetmap:146.179.159.171:600
-+spike-03.oob.openstreetmap:146.179.159.187:600
++spike-03.openstreetmap:130.177.76.8
+#3spike-03.openstreetmap:200109780002002c0000000001721008
+#+openstreetmap:130.177.76.8:600
+#3openstreetmap:200109780002002c0000000001721008:600
+#+www.openstreetmap:130.177.76.8:600
+#3www.openstreetmap:200109780002002c0000000001721008:600
+#+api.openstreetmap:130.177.76.8:600
+#3api.openstreetmap:200109780002002c0000000001721008:600
+#+maps.openstreetmap:130.177.76.8:600
+#3maps.openstreetmap:200109780002002c0000000001721008:600
+#+mapz.openstreetmap:130.177.76.8:600
+#3mapz.openstreetmap:200109780002002c0000000001721008:600
++spike-03.ams.openstreetmap:10.0.48.8
++spike-03.oob.openstreetmap:10.0.49.8
 
 +spike-04.openstreetmap:89.16.162.21
 3spike-04.openstreetmap:200141c9000200d60000000000000021
@@ -128,17 +128,17 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 
 # Rails application servers
 
-+thorn-01.ic.openstreetmap:146.179.159.165:600
-+rails1.ic.openstreetmap:146.179.159.165:600
-+thorn-01.oob.openstreetmap:146.179.159.185:600
++thorn-01.ams.openstreetmap:10.0.48.51
++rails1.ams.openstreetmap:10.0.48.51
++thorn-01.oob.openstreetmap:10.0.49.51
 
-+thorn-02.ic.openstreetmap:146.179.159.166:600
-+rails2.ic.openstreetmap:146.179.159.166:600
-+thorn-02.oob.openstreetmap:146.179.159.184:600
++thorn-02.ams.openstreetmap:10.0.48.52
++rails2.ams.openstreetmap:10.0.48.52
++thorn-02.oob.openstreetmap:10.0.49.52
 
-+thorn-03.ic.openstreetmap:146.179.159.167:600
-+rails3.ic.openstreetmap:146.179.159.167:600
-+thorn-03.oob.openstreetmap:146.179.159.183:600
++thorn-03.ams.openstreetmap:10.0.48.53
++rails3.ams.openstreetmap:10.0.48.53
++thorn-03.oob.openstreetmap:10.0.49.53
 
 +thorn-04.bm.openstreetmap:10.0.32.41
 +rails4.bm.openstreetmap:10.0.32.41
@@ -155,12 +155,12 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 +pummelzacken.ucl.openstreetmap:10.0.0.20
 +pummelzacken.oob.openstreetmap:10.0.1.20
 
-+dulcy.openstreetmap:193.63.75.109:600
-3dulcy.openstreetmap:20010630001205000ec47afffe6696d2:600
-#+nominatim.openstreetmap:193.63.75.109:600
-#3nominatim.openstreetmap:20010630001205000ec47afffe6696d2:600
-+dulcy.ic.openstreetmap:146.179.159.179:600
-#+dulcy.oob.openstreetmap:
++dulcy.openstreetmap:130.117.76.1
+#3dulcy.openstreetmap:200109780002002c0000000001721001
+#+nominatim.openstreetmap:130.117.76.1:600
+#3nominatim.openstreetmap:200109780002002c0000000001721001:600
++dulcy.ams.openstreetmap:10.0.48.1
++dulcy.oob.openstreetmap:10.0.49.1
 
 # OWL server
 
@@ -178,10 +178,10 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 
 # Mapnik tile server, with wildcard alias to allow parallel loading
 
-+orm.openstreetmap:193.63.75.98:600
-3orm.openstreetmap:200106300012050002e081fffec52a8c:600
-#+orm.ic.openstreetmap:10.0.16.2
-+orm.oob.openstreetmap:146.179.159.175:600
++orm.openstreetmap:130.117.76.3
+#3orm.openstreetmap:200109780002002c0000000001721003
++orm.ams.openstreetmap:10.0.48.3
++orm.oob.openstreetmap:10.0.49.3
 
 +yevaud.openstreetmap:193.60.236.22
 +yevaud.ucl.openstreetmap:10.0.0.15
@@ -202,18 +202,18 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 
 # Services machine
 
-+ironbelly.openstreetmap:193.63.75.107:600
-3ironbelly.openstreetmap:2001063000120500022590fffec4f6ef:600
-#+backup.openstreetmap:193.63.75.107:600
-#3backup.openstreetmap:2001063000120500022590fffec4f6ef:600
-#+planet.openstreetmap:193.63.75.107:600
-#3planet.openstreetmap:2001063000120500022590fffec4f6ef:600
-+stats.openstreetmap:193.63.75.107:600
-3stats.openstreetmap:2001063000120500022590fffec4f6ef:600
-+logstash.openstreetmap:193.63.75.107:600
-3logstash.openstreetmap:2001063000120500022590fffec4f6ef:600
-+ironbelly.ic.openstreetmap:146.179.159.177:600
-+ironbelly.oob.openstreetmap:146.179.159.176:600
++ironbelly.openstreetmap:130.117.76.2
+#3ironbelly.openstreetmap:200109780002002c0000000001721002
+#+backup.openstreetmap:130.117.76.2:600
+#3backup.openstreetmap:200109780002002c0000000001721002:600
+#+planet.openstreetmap:130.117.76.2:600
+#3planet.openstreetmap:200109780002002c0000000001721002:600
++stats.openstreetmap:130.117.76.2
+#3stats.openstreetmap:200109780002002c0000000001721002
++logstash.openstreetmap:130.117.76.2
+#3logstash.openstreetmap:200109780002002c0000000001721002
++ironbelly.ams.openstreetmap:10.0.48.2
++ironbelly.oob.openstreetmap:10.0.49.2
 
 +grisu.openstreetmap:89.16.162.20
 3grisu.openstreetmap:200141c9000200d60000000000000020
@@ -226,8 +226,8 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 
 # Database servers
 
-+karm.ic.openstreetmap:146.179.159.168:600
-+karm.oob.openstreetmap:146.179.159.173:600
++karm.ams.openstreetmap:10.0.48.50
++karm.oob.openstreetmap:10.0.49.50
 
 +eddie.ucl.openstreetmap:10.0.0.10
 +eddie.oob.openstreetmap:10.0.1.10
@@ -235,8 +235,8 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 +katla.bm.openstreetmap:10.0.32.40
 +katla.oob.openstreetmap:10.0.33.40
 
-+ramoth.ic.openstreetmap:146.179.159.170:600
-+ramoth.oob.openstreetmap:146.179.159.181:600
++ramoth.ams.openstreetmap:10.0.48.5
++ramoth.oob.openstreetmap:10.0.49.5
 
 +fafnir.openstreetmap:52.50.86.69
 
@@ -327,8 +327,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 
 # Managed network switches
 
-+switch1.openstreetmap:193.63.75.102:600
-+switch2.ic.openstreetmap:146.179.159.169:600
++switch1.openstreetmap:130.177.76.30
 
 # Bytemark machine, and the services which operate from it
 
@@ -352,12 +351,12 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 
 # Wiki servers
 
-+ouroboros.openstreetmap:193.63.75.106:600
-3ouroboros.openstreetmap:200106300012050002237dfffeea813a:600
-#+wiki.openstreetmap:193.63.75.106:600
-#3wiki.openstreetmap:200106300012050002237dfffeea813a:600
-+ouroboros.ic.openstreetmap:146.179.159.172:600
-+ouroboros.oob.openstreetmap:146.179.159.178:600
++ouroboros.openstreetmap:130.117.76.4
+#3ouroboros.openstreetmap:200109780002002c0000000001721004
+#+wiki.openstreetmap:130.117.76.4:600
+#3wiki.openstreetmap:200109780002002c0000000001721004:600
++ouroboros.ams.openstreetmap:10.0.48.4
++ouroboros.oob.openstreetmap:10.0.49.4
 
 +stormfly-01.openstreetmap:140.211.167.104
 6stormfly-01.openstreetmap:2605bc8030100700000000008cdea768

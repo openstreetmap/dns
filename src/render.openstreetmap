@@ -5,8 +5,8 @@ orm:
     - 2217312
   colour: "#bfa730"
   bandwidth: 300
-  ipv4: 193.63.75.98
-  ipv6: 200106300012050002e081fffec52a8c
+  ipv4: 130.117.76.3
+  ipv6: 200109780002002c0000000001721003
   default: ""
 
 yevaud:
