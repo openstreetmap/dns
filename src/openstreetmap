@@ -64,7 +64,6 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 #+mapz.openstreetmap:193.63.75.99:600
 #3mapz.openstreetmap:2001063000120500021a4bfffea5fd2a:600
 +spike-01.ic.openstreetmap:146.179.159.162:600
-+www.ic.openstreetmap:146.179.159.162:600
 +spike-01.oob.openstreetmap:146.179.159.188:600
 
 +spike-02.openstreetmap:193.63.75.100
@@ -80,7 +79,6 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 #+mapz.openstreetmap:193.63.75.100:600
 #3mapz.openstreetmap:20010630001205000219bbfffe393d9e:600
 +spike-02.ic.openstreetmap:146.179.159.163:600
-+www.ic.openstreetmap:146.179.159.163:600
 +spike-02.oob.openstreetmap:146.179.159.180:600
 
 +spike-03.openstreetmap:193.63.75.103
@@ -96,7 +94,6 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 #+mapz.openstreetmap:193.63.75.103:600
 #3mapz.openstreetmap:20010630001205000219bbfffe398aba:600
 +spike-03.ic.openstreetmap:146.179.159.171:600
-+www.ic.openstreetmap:146.179.159.171:600
 +spike-03.oob.openstreetmap:146.179.159.187:600
 
 +spike-04.openstreetmap:89.16.162.21
@@ -112,7 +109,6 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 +mapz.openstreetmap:89.16.162.21:600
 3mapz.openstreetmap:200141c9000200d60000000000000021:600
 +spike-04.bm.openstreetmap:10.0.32.21
-+www.bm.openstreetmap:10.0.32.21:600
 +spike-04.oob.openstreetmap:10.0.33.21
 
 +spike-05.openstreetmap:89.16.162.22
@@ -128,7 +124,6 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 +mapz.openstreetmap:89.16.162.22:600
 3mapz.openstreetmap:200141c9000200d60000000000000022:600
 +spike-05.bm.openstreetmap:10.0.32.22
-+www.bm.openstreetmap:10.0.32.22:600
 +spike-05.oob.openstreetmap:10.0.33.22
 
 # Rails application servers
@@ -187,13 +182,17 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 3orm.openstreetmap:200106300012050002e081fffec52a8c
 #+orm.ic.openstreetmap:10.0.16.2
 +orm.oob.openstreetmap:146.179.159.175:600
+
 +yevaud.openstreetmap:193.60.236.22
 +yevaud.ucl.openstreetmap:10.0.0.15
 +yevaud.oob.openstreetmap:10.0.1.15
+
 +vial.openstreetmap:138.201.195.31
 3vial.openstreetmap:2a0104f801723cde0000000000000002
+
 +scorch.openstreetmap:176.31.235.79
 3scorch.openstreetmap:200141d00002fc4f0000000000000001
+
 Ctile.openstreetmap:tile.geo.openstreetmap.org
 Ca.tile.openstreetmap:tile.geo.openstreetmap.org
 Cb.tile.openstreetmap:tile.geo.openstreetmap.org
@@ -232,11 +231,9 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 +eddie.oob.openstreetmap:10.0.1.10:600
 
 +katla.bm.openstreetmap:10.0.32.40
-+db.openstreetmap:10.0.32.40:600
 +katla.oob.openstreetmap:10.0.33.40
 
 +ramoth.ic.openstreetmap:146.179.159.170:600
-+db-slave.openstreetmap:146.179.159.170:600
 +ramoth.oob.openstreetmap:146.179.159.181:600
 
 +fafnir.openstreetmap:52.50.86.69
