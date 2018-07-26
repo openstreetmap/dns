@@ -330,6 +330,11 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 +switch1.openstreetmap:130.117.76.2
 3switch1.openstreetmap:200109780002002c0000000001720002
 
+# Managed power strips
+
++pdu1.openstreetmap:10.0.48.100
++pdu2.openstreetmap:10.0.48.101
+
 # Bytemark machine, and the services which operate from it
 
 +shenron.openstreetmap:212.110.172.32
