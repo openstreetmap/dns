@@ -328,6 +328,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 # Managed network switches
 
 +switch1.openstreetmap:130.117.76.2
+3switch1.openstreetmap:200109780002002c0000000001720002
 
 # Bytemark machine, and the services which operate from it
 
