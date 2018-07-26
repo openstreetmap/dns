@@ -41,9 +41,18 @@ scorch:
   ipv6: 200141d00002fc4f0000000000000001
   default: ""
 
+rhaegal:
+  lat: 45.8082123
+  lon: 15.9634238
+  statuscake:
+    - 3343399
+  colour: "#a1b92e"
+  bandwidth: 50
+  ipv4: 161.53.248.77
+  default: ""
+
 # Spare colours:
 #
-#  a1b92e
 #  7c1f7c
 #  25567b
 #  bf6530
