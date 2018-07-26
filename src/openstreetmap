@@ -332,8 +332,8 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 
 # Managed power strips
 
-+pdu1.openstreetmap:10.0.48.100
-+pdu2.openstreetmap:10.0.48.101
++pdu1.ams.openstreetmap:10.0.48.100
++pdu2.ams.openstreetmap:10.0.48.101
 
 # Bytemark machine, and the services which operate from it
 
