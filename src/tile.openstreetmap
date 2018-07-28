@@ -70,21 +70,29 @@ sanfrancisco:
     countries:
       - CN
 
-# Lyon, FR
-# BW Limit: 100Mb/s
-lyon:
-  lat: 45.7575958
-  lon: 4.8323239
-  statuscake:
-    - 2217265
-    - 2217266
+# Lyon/Toulouse, FR
+# Lyon @ 45.7575958,4.8323239 with BW limit of 100Mb/s
+# Toulouse @ 43.6044622,1.4442469
+france:
+  lat: 44.681029
+  lon: 3.1382854
   colour: "#bf6530"
-  bandwidth: 60
-  ipv4: 77.95.65.39
-  ipv6: 2a039180000001000000000000000007
-
+  servers:
+    - statuscake:
+        - 2217265
+        - 2217266
+      bandwidth: 40
+      ipv4: 77.95.65.39
+      ipv6: 2a039180000001000000000000000007
+    - statuscake:
+        - x
+        - y
+      bandwidth: 40
+      ipv4: 91.224.148.166
+      ipv6: 2a0372208080a6000000000000000001
+      
 # Falkenstein/Jena/Berlin, DE
-# Falkenstain @ 50.47822,12.33607
+# Falkenstein @ 50.47822,12.33607
 # Jena @ 50.9411,11.60085
 # Berlin @
 germany:
