@@ -81,13 +81,13 @@ france:
     - statuscake:
         - 2217265
         - 2217266
-      bandwidth: 40
+      bandwidth: 45
       ipv4: 77.95.65.39
       ipv6: 2a039180000001000000000000000007
     - statuscake:
         - x
         - y
-      bandwidth: 40
+      bandwidth: 45
       ipv4: 91.224.148.166
       ipv6: 2a0372208080a6000000000000000001
       
