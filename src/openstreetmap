@@ -359,15 +359,15 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 
 +ouroboros.openstreetmap:130.117.76.4
 3ouroboros.openstreetmap:200109780002002c0000000001720004
-#+wiki.openstreetmap:130.117.76.4:600
-#3wiki.openstreetmap:200109780002002c0000000001720004:600
++wiki.openstreetmap:130.117.76.4:600
+3wiki.openstreetmap:200109780002002c0000000001720004:600
 +ouroboros.ams.openstreetmap:10.0.48.4
 +ouroboros.oob.openstreetmap:10.0.49.4
 
 +stormfly-01.openstreetmap:140.211.167.104
 6stormfly-01.openstreetmap:2605bc8030100700000000008cdea768
-+wiki.openstreetmap:140.211.167.104:600
-3wiki.openstreetmap:2605bc8030100700000000008cdea768:600
+#+wiki.openstreetmap:140.211.167.104:600
+#3wiki.openstreetmap:2605bc8030100700000000008cdea768:600
 +stormfly-01.oob.openstreetmap:10.0.0.99
 
 # GPS tile server
