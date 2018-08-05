@@ -204,8 +204,8 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 
 +ironbelly.openstreetmap:130.117.76.10
 3ironbelly.openstreetmap:200109780002002c000000000172000a
-#+backup.openstreetmap:130.117.76.10:600
-#3backup.openstreetmap:200109780002002c000000000172000a:600
++backup.openstreetmap:130.117.76.10:600
+3backup.openstreetmap:200109780002002c000000000172000a:600
 #+planet.openstreetmap:130.117.76.10:600
 #3planet.openstreetmap:200109780002002c000000000172000a:600
 +stats.openstreetmap:130.117.76.10
@@ -217,8 +217,8 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 
 +grisu.openstreetmap:89.16.162.20
 3grisu.openstreetmap:200141c9000200d60000000000000020
-+backup.openstreetmap:89.16.162.20:600
-3backup.openstreetmap:200141c9000200d60000000000000020:600
+#+backup.openstreetmap:89.16.162.20:600
+#3backup.openstreetmap:200141c9000200d60000000000000020:600
 +planet.openstreetmap:89.16.162.20:600
 3planet.openstreetmap:200141c9000200d60000000000000020:600
 +grisu.bm.openstreetmap:10.0.32.20
