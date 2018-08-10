@@ -38,9 +38,6 @@ amsterdam:
   colour: "#a1b92e"
   bandwidth: 100
   ipv4: 134.90.146.26
-  preferred:
-    countries:
-      - ZA
 
 # Oslo, NO
 # BW Limit: 1000Mb/s
@@ -300,6 +297,21 @@ montreal:
   preferred:
     countries:
       - CA
+
+# Cape Town, ZA
+capetown:
+  lat: -33.925278
+  lon: 18.423889
+  statuscake:
+    - 2217295
+    - 2217296
+  colour: "#bfa730"
+  bandwidth: 10
+  ipv4: 196.10.54.165
+  ipv6: 200143f801f40b00b283fefffed8dd45
+  allowed:
+    countries:
+      - ZA
 
 # ID
 indonesia:
