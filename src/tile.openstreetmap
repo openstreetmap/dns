@@ -311,9 +311,13 @@ capetown:
   ipv6: 200143f801f40b00b283fefffed8dd45
   allowed:
     countries:
+      - BW
       - LS
+      - MZ
+      - NA
       - SZ
       - ZA
+      - ZW
 
 # ID
 indonesia:
