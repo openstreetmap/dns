@@ -7,7 +7,7 @@ moscow:
     - 2217257
     - 2217258
   colour: "#412c84"
-  bandwidth: 200 
+  bandwidth: 200
   ipv4: 5.45.248.21
   ipv6: 2a0206b8b0105065000000000000a001
   allowed:
@@ -87,7 +87,11 @@ france:
       bandwidth: 40
       ipv4: 91.224.148.166
       ipv6: 2a0372208080a6000000000000000001
-      
+  preferred:
+    countries:
+      - FR
+      - RE
+
 # Falkenstein/Jena/Berlin, DE
 # Falkenstein @ 50.47822,12.33607
 # Jena @ 50.9411,11.60085
@@ -300,8 +304,8 @@ montreal:
 
 # Cape Town, ZA
 capetown:
-  lat: -33.925278
-  lon: 18.423889
+  lat: -33.91834
+  lon: 18.42054
   statuscake:
     - 2217295
     - 2217296
