@@ -19,17 +19,6 @@ yevaud:
   ipv4: 193.60.236.22
   default: ""
 
-vial:
-  lat: 50.4782873
-  lon: 12.33623345
-  statuscake:
-    - 2217315
-  colour: "#269926"
-  bandwidth: 100
-  ipv4: 138.201.195.31
-  ipv6: 2a0104f801723cde0000000000000002
-  default: ""
-
 scorch:
   lat: 50.6911904
   lon: 3.2008282044777
@@ -53,6 +42,7 @@ rhaegal:
 
 # Spare colours:
 #
+#  269926
 #  7c1f7c
 #  25567b
 #  bf6530
