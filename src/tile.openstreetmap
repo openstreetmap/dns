@@ -323,16 +323,5 @@ capetown:
       - ZA
       - ZW
 
-# ID
-indonesia:
-  lat: -5
-  lon: 120
-  statuscake:
-    - 2534619
-    - 2534620
-  colour: "#bfa730"
-  bandwidth: 10
-  ipv4: 103.253.107.131
-
 # Spare colours:
 #
