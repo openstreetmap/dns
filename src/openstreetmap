@@ -257,6 +257,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 +blog.openstreetmap:193.60.236.19
 +foundation.openstreetmap:193.60.236.19
 +hot.openstreetmap:193.60.236.19
++dmca.openstreetmap:193.60.236.19
 +ridley.ucl.openstreetmap:10.0.0.3
 +ridley.oob.openstreetmap:10.0.1.3
 
@@ -468,10 +469,6 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 # Donation site
 
 +donate.openstreetmap:193.60.236.19:300
-
-# DMCA Notice site
-
-+dmca.openstreetmap:46.43.50.94:600
 
 # Uptime site at StatusCake
 
