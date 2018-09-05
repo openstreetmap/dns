@@ -46,7 +46,7 @@ pyrene:
   statuscake:
     - 3451753
   colour: "#269926"
-  bandwidth: 100
+  bandwidth: 200
   ipv4: 140.211.15.29
   default: ""
 
