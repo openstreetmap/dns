@@ -40,9 +40,18 @@ rhaegal:
   ipv4: 161.53.248.77
   default: ""
 
+pyrene:
+  lat: 44.5639267
+  lon: -123.274707837676
+  statuscake:
+    - 3451753
+  colour: "#269926"
+  bandwidth: 100
+  ipv4: 140.211.15.29
+  default: ""
+
 # Spare colours:
 #
-#  269926
 #  7c1f7c
 #  25567b
 #  bf6530
