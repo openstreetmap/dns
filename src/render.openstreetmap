@@ -15,7 +15,7 @@ yevaud:
   statuscake:
     - 2217313
   colour: "#412c84"
-  bandwidth: 250
+  bandwidth: 300
   ipv4: 193.60.236.22
   default: ""
 
@@ -25,7 +25,7 @@ scorch:
   statuscake:
     - 2217314
   colour: "#bf8230"
-  bandwidth: 200
+  bandwidth: 250
   ipv4: 176.31.235.79
   ipv6: 200141d00002fc4f0000000000000001
   default: ""
@@ -46,7 +46,7 @@ pyrene:
   statuscake:
     - 3451753
   colour: "#269926"
-  bandwidth: 300
+  bandwidth: 200
   ipv4: 140.211.15.29
   default: ""
 
