@@ -20,9 +20,11 @@ moscow:
       - LT
       - LV
       - MN
-      - UA
     continents:
       - EU
+  denied:
+    countries:
+      - UA
   preferred:
     countries:
       - RU
