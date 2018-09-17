@@ -48,6 +48,7 @@ pyrene:
   colour: "#269926"
   bandwidth: 300
   ipv4: 140.211.15.29
+  ipv6: 2605bc8030100700000000008cd30f1d
   default: ""
 
 # Spare colours:
