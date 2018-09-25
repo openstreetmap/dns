@@ -325,5 +325,19 @@ capetown:
       - ZA
       - ZW
 
+# Viña del Mar, CL
+vinadelmar:
+  lat: -33.008099
+  lon: -71.519699
+  statuscake:
+    - 3499524
+    - 3499526
+  colour: "#bfa730"
+  bandwidth: 10
+  ipv4: 200.91.44.37
+  allowed:
+    continents:
+      - SA
+
 # Spare colours:
 #
