@@ -333,7 +333,7 @@ vinadelmar:
     - 3499524
     - 3499526
   colour: "#bfa730"
-  bandwidth: 30
+  bandwidth: 50
   ipv4: 200.91.44.37
   allowed:
     continents:
