@@ -470,3 +470,6 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 # Uptime site at StatusCake
 
 Cuptime.openstreetmap:uptimessl.statuscake.com
+
+# Custom Domain for https://github.com/osmfoundation/welcome-mat/
+Cwelcome.openstreetmap:osmfoundation.github.io
