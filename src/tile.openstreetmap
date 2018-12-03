@@ -179,7 +179,7 @@ pula:
     - 2217279
     - 2217280
   colour: "#bf9430"
-  bandwidth: 80
+  bandwidth: 70
   ipv4: 193.198.233.211
   ipv6: 20010b684cff00030000000000000003
   default: "xx"
