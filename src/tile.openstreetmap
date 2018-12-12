@@ -38,7 +38,7 @@ amsterdam:
     - 2217259
     - 2217260
   colour: "#a1b92e"
-  bandwidth: 100
+  bandwidth: 80
   ipv4: 134.90.146.26
 
 # Oslo, NO
