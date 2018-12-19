@@ -32,11 +32,13 @@ Capi.openstreetmap-za:api.openstreetmap.org
 Cwww.openstreetmap-za:openstreetmap-za
 
 # Aerial imagery sites
+
 # Draco
 +aerial.openstreetmap-za:193.60.236.12:600
 +a.aerial.openstreetmap-za:193.60.236.12:600
 +b.aerial.openstreetmap-za:193.60.236.12:600
 +c.aerial.openstreetmap-za:193.60.236.12:600
+
 # Kessie
 +coct.aerial.openstreetmap-za:178.250.74.36:1800
 3coct.aerial.openstreetmap-za:2a02165800040000dad385fffe5d875e:1800
@@ -54,3 +56,12 @@ Cwww.openstreetmap-za:openstreetmap-za
 3b.topo.openstreetmap-za:2a02165800040000dad385fffe5d875e:1800
 +c.topo.openstreetmap-za:178.250.74.36:1800
 3c.topo.openstreetmap-za:2a02165800040000dad385fffe5d875e:1800
+
++namibia-topo.openstreetmap-za:178.250.74.36:1800
+3namibia-topo.openstreetmap-za:2a02165800040000dad385fffe5d875e:1800
++a.namibia-topo.openstreetmap-za:178.250.74.36:1800
+3a.namibia-topo.openstreetmap-za:2a02165800040000dad385fffe5d875e:1800
++b.namibia-topo.openstreetmap-za:178.250.74.36:1800
+3b.namibia-topo.openstreetmap-za:2a02165800040000dad385fffe5d875e:1800
++c.namibia-topo.openstreetmap-za:178.250.74.36:1800
+3c.namibia-topo.openstreetmap-za:2a02165800040000dad385fffe5d875e:1800
