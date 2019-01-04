@@ -347,5 +347,17 @@ vinadelmar:
     continents:
       - SA
 
+# Zurich, CH
+zurich:
+  lat: 47.3769434
+  lon: 8.5414061
+  statuscake:
+    - 3743984
+    - 3743985
+  colour: "#bfa730"
+  bandwidth: 40
+  ipv4: 217.71.244.22
+  ipv6: 200108e0004020390000000000000010
+
 # Spare colours:
 #
