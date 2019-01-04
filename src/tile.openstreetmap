@@ -348,6 +348,7 @@ vinadelmar:
       - SA
 
 # Zurich, CH
+# BW Limit: 200Mb/s
 zurich:
   lat: 47.3769434
   lon: 8.5414061
