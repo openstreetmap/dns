@@ -73,10 +73,10 @@ sanfrancisco:
 # Lyon/Toulouse, FR
 # Lyon @ 45.7575958,4.8323239 with BW limit of 100Mb/s
 # Toulouse @ 43.6044622,1.4442469
-# Paris @ 48.8567,2.3508
+# Rennes @ 48.10891/-1.63459
 france:
-  lat: 46.072919
-  lon: 2.8757902
+  lat: 45.823655
+  lon: 1.5473269
   colour: "#bf6530"
   servers:
     - statuscake:
