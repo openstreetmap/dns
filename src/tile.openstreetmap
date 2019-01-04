@@ -73,9 +73,10 @@ sanfrancisco:
 # Lyon/Toulouse, FR
 # Lyon @ 45.7575958,4.8323239 with BW limit of 100Mb/s
 # Toulouse @ 43.6044622,1.4442469
+# Paris @ 48.8567,2.3508
 france:
-  lat: 44.681029
-  lon: 3.1382854
+  lat: 46.072919
+  lon: 2.8757902
   colour: "#bf6530"
   servers:
     - statuscake:
@@ -90,6 +91,12 @@ france:
       bandwidth: 40
       ipv4: 91.224.148.166
       ipv6: 2a0372208080a6000000000000000001
+    - statuscake:
+        - 3743694
+        - 3743696
+      bandwidth: 40
+      ipv4: 89.234.186.100
+      ipv6: 2a005884821c00000000000000000001
   preferred:
     countries:
       - FR
