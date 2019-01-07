@@ -114,6 +114,7 @@ france:
 # Falkenstein @ 50.47822,12.33607
 # Jena @ 50.9411,11.60085
 # Berlin @
+# Nuremberg @ 49.44927,11.01402
 germany:
   lat: 51.0834196
   lon: 10.4234469
@@ -137,6 +138,12 @@ germany:
       bandwidth: 150
       ipv4: 185.66.195.245
       ipv6: 2a032260200000010000000000000005
+    - statuscake:
+        - 3750847
+        - 3750842
+      bandwidth: 150
+      ipv4: 195.201.226.63
+      ipv6: 2a0104f81c1cbc540000000000000001
   allowed:
     continents:
       - EU
