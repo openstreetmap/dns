@@ -70,10 +70,11 @@ sanfrancisco:
     countries:
       - CN
 
-# Lyon/Toulouse, FR
+# Lyon/Toulouse/Rennes/?, FR
 # Lyon @ 45.7575958,4.8323239 with BW limit of 100Mb/s
 # Toulouse @ 43.6044622,1.4442469
 # Rennes @ 48.10891/-1.63459
+# ? @ ?
 france:
   lat: 46.603354
   lon: 1.8883335
@@ -97,6 +98,12 @@ france:
       bandwidth: 100
       ipv4: 89.234.186.100
       ipv6: 2a005884821c00000000000000000001
+    - statuscake:
+        - 3750719
+        - 3750717
+      bandwidth: 100
+      ipv4: 80.67.167.77
+      ipv6: 2a0bcbc0110d0001000000000000001c
   preferred:
     countries:
       - FR
