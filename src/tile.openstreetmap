@@ -192,6 +192,9 @@ hsinchu:
     countries:
       - TW
       - JP
+  denied:
+    countries:
+      - ID
 
 # Pula, HR
 pula:
