@@ -104,6 +104,11 @@ france:
       bandwidth: 100
       ipv4: 80.67.167.77
       ipv6: 2a0bcbc0110d0001000000000000001c
+    - statuscake:
+        - 3794330
+        - 3794331
+      bandwidth: 100
+      ipv4: 185.216.27.232
   preferred:
     countries:
       - FR
