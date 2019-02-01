@@ -50,7 +50,7 @@ oslo:
     - 2217261
     - 2217262
   colour: "#7c1f7c"
-  bandwidth: 40
+  bandwidth: 30
   ipv4: 31.169.50.10
   default: "xx"
 
