@@ -206,8 +206,6 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 3backup.openstreetmap:200109780002002c000000000172000a:600
 +planet.openstreetmap:130.117.76.10:600
 3planet.openstreetmap:200109780002002c000000000172000a:600
-+stats.openstreetmap:130.117.76.10
-3stats.openstreetmap:200109780002002c000000000172000a
 +logstash.openstreetmap:130.117.76.10
 3logstash.openstreetmap:200109780002002c000000000172000a
 +ironbelly.ams.openstreetmap:10.0.48.10
