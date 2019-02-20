@@ -389,5 +389,17 @@ zurich:
       - SM
       - VA
 
+# Kiev, UA
+kiev:
+  lat: 50.4020865
+  lon: 30.6146803128848
+  statuscake:
+    - 3890448
+    - 3890447
+  colour: "#bfa730"
+  bandwidth: 70
+  ipv4: 176.122.99.101
+  ipv6: 2001067c2d4000000000000000000065
+
 # Spare colours:
 #
