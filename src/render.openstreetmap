@@ -4,7 +4,7 @@ orm:
   statuscake:
     - 2217312
   colour: "#bfa730"
-  bandwidth: 250
+  bandwidth: 200
   ipv4: 130.117.76.3
   ipv6: 200109780002002c0000000001720003
   default: ""
@@ -36,7 +36,7 @@ rhaegal:
   statuscake:
     - 3343399
   colour: "#a1b92e"
-  bandwidth: 300
+  bandwidth: 350
   ipv4: 161.53.248.77
   default: ""
 
