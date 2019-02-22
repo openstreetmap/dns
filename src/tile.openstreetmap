@@ -6,7 +6,7 @@ moscow:
   statuscake:
     - 2217257
     - 2217258
-  colour: "#412c84"
+  colour: "#8dd3c7"
   bandwidth: 200
   ipv4: 5.45.248.21
   ipv6: 2a0206b8b0105065000000000000a001
@@ -37,7 +37,7 @@ amsterdam:
   statuscake:
     - 2217259
     - 2217260
-  colour: "#a1b92e"
+  colour: "#bebada"
   bandwidth: 100
   ipv4: 134.90.146.26
 
@@ -49,7 +49,7 @@ oslo:
   statuscake:
     - 2217261
     - 2217262
-  colour: "#7c1f7c"
+  colour: "#ffffb3"
   bandwidth: 30
   ipv4: 31.169.50.10
   default: "xx"
@@ -62,7 +62,7 @@ sanfrancisco:
   statuscake:
     - 2217263
     - 2217264
-  colour: "#25567b"
+  colour: "#e31a1c"
   bandwidth: 60
   ipv4: 71.19.155.177
   ipv6: 2605270000000017a80000fffe3ecdca
@@ -78,7 +78,7 @@ sanfrancisco:
 france:
   lat: 46.603354
   lon: 1.8883335
-  colour: "#bf6530"
+  colour: "#fccde5"
   servers:
     - statuscake:
         - 2217265
@@ -123,7 +123,7 @@ france:
 germany:
   lat: 51.0834196
   lon: 10.4234469
-  colour: "#562781"
+  colour: "#b2df8a"
   servers:
     - statuscake:
         - 2217269
@@ -158,7 +158,7 @@ germany:
 baku:
   lat: 40.395278
   lon: 49.882222
-  colour: "#bfb830"
+  colour: "#1f78b4"
   statuscake:
     - 2217267
     - 2217268
@@ -183,7 +183,7 @@ baku:
 hsinchu:
   lat: 24.78268
   lon: 120.99563
-  colour: "#bf3030"
+  colour: "#33a02c"
   statuscake:
     - 2217277
     - 2217278
@@ -208,7 +208,7 @@ pula:
   statuscake:
     - 2217279
     - 2217280
-  colour: "#bf9430"
+  colour: "#a6cee3"
   bandwidth: 80
   ipv4: 193.198.233.211
   ipv6: 20010b684cff00030000000000000003
@@ -221,7 +221,7 @@ osijek:
   statuscake:
     - 2217281
     - 2217282
-  colour: "#269926"
+  colour: "#fb8072"
   bandwidth: 120
   ipv4: 161.53.30.107
   ipv6: 20010b68c0ff000002215efffe40c7c4
@@ -235,7 +235,7 @@ london:
   statuscake:
    - 2214077
    - 2217246
-  colour: "#7ab02c"
+  colour: "#ffed6f"
   bandwidth: 200
   ipv4: 185.73.44.30
   ipv6: 20010ba800002c1e0000000000000000
@@ -247,7 +247,7 @@ corvallis:
   statuscake:
     - 2217287
     - 2217288
-  colour: "#a1285f"
+  colour: "#6a3d9a"
   bandwidth: 200
   ipv4: 140.211.167.105
   ipv6: 2605bc8030100700000000008cdea769
@@ -262,7 +262,7 @@ budapest:
   statuscake:
     - 2217283
     - 2217284
-  colour: "#2c3d82"
+  colour: "#fdbf6f"
   bandwidth: 80
   ipv4: 37.17.173.8
   ipv6: 20014c480002bf04025056fffe8f5c81
@@ -274,7 +274,7 @@ minsk:
   statuscake:
     - 2217285
     - 2217286
-  colour: "#bfa730"
+  colour: "#ffed6f"
   bandwidth: 80
   ipv4: 31.130.201.40
   ipv6: 2001067c22681005021e8cfffe8c8d3b
@@ -292,7 +292,7 @@ aalborg:
   statuscake:
     - 2217289
     - 2217290
-  colour: "#bf8230"
+  colour: "#80b1d3"
   bandwidth: 160
   ipv4: 130.225.254.109
   ipv6: 20010878034600000000000000000109
@@ -305,7 +305,7 @@ zaragoza:
   statuscake:
     - 2217291
     - 2217292
-  colour: "#bfa730"
+  colour: "#fdb462"
   bandwidth: 100
   ipv4: 155.210.4.103
 
@@ -316,7 +316,7 @@ athens:
   statuscake:
     - 2244901
     - 2244902
-  colour: "#bfa730"
+  colour: "#b3de69"
   bandwidth: 80
   ipv4: 83.212.2.116
   ipv6: 200106482ffe00040000000000000116
@@ -328,7 +328,7 @@ montreal:
   statuscake:
     - 3155163
     - 3155162
-  colour: "#bfa730"
+  colour: "#b15928"
   bandwidth: 100
   ipv4: 184.107.48.228
   preferred:
@@ -342,7 +342,7 @@ capetown:
   statuscake:
     - 2217295
     - 2217296
-  colour: "#bfa730"
+  colour: "#cab2d6"
   bandwidth: 10
   ipv4: 196.10.54.165
   ipv6: 200143f801f40b00b283fefffed8dd45
@@ -363,7 +363,7 @@ vinadelmar:
   statuscake:
     - 3499524
     - 3499526
-  colour: "#bfa730"
+  colour: "#ff7f00"
   bandwidth: 80
   ipv4: 200.91.44.37
   allowed:
@@ -378,7 +378,7 @@ zurich:
   statuscake:
     - 3743984
     - 3743985
-  colour: "#bfa730"
+  colour: "#ccebc5"
   bandwidth: 200
   ipv4: 217.71.244.22
   ipv6: 200108e0004020390000000000000010
@@ -396,10 +396,10 @@ kiev:
   statuscake:
     - 3890448
     - 3890447
-  colour: "#bfa730"
+  colour: "#fb9a99"
   bandwidth: 70
   ipv4: 176.122.99.101
   ipv6: 2001067c2d4000000000000000000065
 
 # Spare colours:
-#
+# #ffff99, #999999, #d9d9d9
