@@ -9,7 +9,7 @@ The authoritative DNS nameservers we use are kindly run by [Bytemark](https://do
 
 The [zone files templates](src/) are in [tinydns-data](http://cr.yp.to/djbdns/tinydns-data.html) syntax and are written out by the [Makefile](Makefile).
 
-On a repo commit, a git [post-receive](https://github.com/openstreetmap/chef/blob/master/cookbooks/dns/files/default/post-receive) runs `make update` via a [script](https://github.com/openstreetmap/chef/blob/master/cookbooks/dns/templates/default/dns-update.erb`) which then pushes the updated zone files to the authoritative DNS nameservers.
+On a repo commit, a git [post-receive](https://github.com/openstreetmap/chef/blob/master/cookbooks/dns/files/default/post-receive) runs `make update` via a [script](https://github.com/openstreetmap/chef/blob/master/cookbooks/dns/templates/default/dns-update.erb) which then pushes the updated zone files to the authoritative DNS nameservers.
 
 ## GeoDNS Zones
 
@@ -17,7 +17,7 @@ The GeoDNS zones are handled differently.
 
 ### tile.openstreetmap.org (mkgeo Generated)
 
-The `tile.openstreetmap.org` and `[a|b|c].tile.openstreetmap.org` are CNAME'ed to `tile.geo.openstreetmap.org` zone.
+The `tile.openstreetmap.org` and `[a|b|c].tile.openstreetmap.org` are CNAME'ed to the `tile.geo.openstreetmap.org` zone.
 
 The `tile.openstreetmap.org` zone file is written by [mkgeo](bin/mkgeo) which attempts to match the [estimated country bandwidth requirements](bandwidth/tile.openstreetmap.yml) to the nearest [running](https://uptime.openstreetmap.org/) [tile cache server](src/tile.openstreetmap) with available capacity.
 
