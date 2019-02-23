@@ -1,15 +1,15 @@
 OpenStreetMap DNS
 ======================================
 
-This repository contains the DNS zonefiles and related code for managing OpenStreetMap.org and other domains. A full list of the managed domains available in [Makefile](Makefile).
+This repository contains the DNS zonefiles and related code for managing OpenStreetMap.org and other domains. A full list of the managed domains available in the [Makefile](Makefile).
 
 The authoritative DNS nameservers we use are kindly run by [Bytemark](https://docs.bytemark.co.uk/article/content-dns/). We would like to thank [Bytemark](https://www.bytemark.co.uk/) for their many years of support.
 
 ## Standard DNS Zone Files
 
-The [zone files](src/) are templated [tinydns-data](http://cr.yp.to/djbdns/tinydns-data.html) syntax and are written out by the [Makefile](Makefile).
+The [zone files templates](src/) are in [tinydns-data](http://cr.yp.to/djbdns/tinydns-data.html) syntax and are written out by the [Makefile](Makefile).
 
-On commit of a DNS update, a git [post-receive](https://github.com/openstreetmap/chef/blob/master/cookbooks/dns/files/default/post-receive) runs `make update` via a [script](https://github.com/openstreetmap/chef/blob/master/cookbooks/dns/templates/default/dns-update.erb`) which then pushes the updated zonefiles to the authoritative DNS nameservers.
+On a repo commit, a git [post-receive](https://github.com/openstreetmap/chef/blob/master/cookbooks/dns/files/default/post-receive) runs `make update` via a [script](https://github.com/openstreetmap/chef/blob/master/cookbooks/dns/templates/default/dns-update.erb`) which then pushes the updated zone files to the authoritative DNS nameservers.
 
 ## GeoDNS Zones
 
