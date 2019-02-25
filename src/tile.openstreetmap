@@ -239,6 +239,11 @@ london:
   bandwidth: 200
   ipv4: 185.73.44.30
   ipv6: 20010ba800002c1e0000000000000000
+  preferred:
+    countries:
+      - GB
+      - IE
+      - IM
 
 # Corvallis, US
 corvallis:
