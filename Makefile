@@ -59,7 +59,7 @@ data/tile.openstreetmap.org json/tile.openstreetmap.org.json origins/render.open
 	bin/mkgeo origins/tile.openstreetmap.yml src/tile.openstreetmap tile.openstreetmap.org origins/render.openstreetmap.yml
 
 data/render.openstreetmap.org json/render.openstreetmap.org.json: bin/mkgeo origins/render.openstreetmap.yml src/render.openstreetmap
-	bin/mkgeo origins/render.openstreetmap.yml src/render.openstreetmap render.openstreetmap.org
+	bin/mkgeo origins/render.openstreetmap.yml src/render.openstreetmap render.openstreetmap.org origins/total.openstreetmap.yml
 
 data/%:
 	sed -r -e 's/$(notdir $<)(:|$$)/$(notdir $@)\1/g' < $< > $@

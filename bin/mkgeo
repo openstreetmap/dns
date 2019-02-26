@@ -292,8 +292,20 @@ sub match_origin
     my $match;
 
     if ($cluster->{preferred} &&
-        $cluster->{preferred}->{countries} &&
-        grep { $_ eq $origin->{country} } @{$cluster->{preferred}->{countries}})
+        $cluster->{preferred}->{origins} &&
+        grep { $_ eq $origin->{name} } @{$cluster->{preferred}->{origins}})
+    {
+        $match = "preferred";
+    }
+    elsif ($cluster->{allowed} &&
+           $cluster->{allowed}->{origins} &&
+           grep { $_ eq $origin->{name} } @{$cluster->{allowed}->{origins}})
+    {
+        $match = "allowed";
+    }
+    elsif ($cluster->{preferred} &&
+           $cluster->{preferred}->{countries} &&
+           grep { $_ eq $origin->{country} } @{$cluster->{preferred}->{countries}})
     {
         $match = "preferred";
     }
