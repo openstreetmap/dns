@@ -420,6 +420,7 @@ wellington:
     countries:
       - AU
       - CC
+      - CX
       - HM
       - NC
       - NF
@@ -428,6 +429,7 @@ wellington:
     countries:
       - AU
       - CC
+      - CX
       - HM
       - NF
       - NZ
