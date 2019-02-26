@@ -406,5 +406,31 @@ kiev:
   ipv4: 176.122.99.101
   ipv6: 2001067c2d4000000000000000000065
 
+# Wellington, NZ
+wellington:
+  lat: -41.288889
+  lon: 174.777222
+  statuscake:
+    - 3911508
+    - 3911509
+  colour: "#ffff99"
+  bandwidth: 40
+  ipv4: 103.106.66.202
+  allowed:
+    countries:
+      - AU
+      - CC
+      - HM
+      - NC
+      - NF
+      - NZ
+  preferred:
+    countries:
+      - AU
+      - CC
+      - HM
+      - NF
+      - NZ
+
 # Spare colours:
-# #ffff99, #999999, #d9d9d9
+# #999999, #d9d9d9
