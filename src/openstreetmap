@@ -46,6 +46,8 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 &geo.openstreetmap:144.76.70.77:d.ns.openstreetmap
 # stormfly-02.openstreetmap.org
 &geo.openstreetmap:140.211.167.105:e.ns.openstreetmap
+# chrysophylax.openstreetmap.org
+&geo.openstreetmap:217.71.244.22:f.ns.openstreetmap
 
 # Main web servers and their aliases
 
