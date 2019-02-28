@@ -414,25 +414,37 @@ wellington:
     - 3911508
     - 3911509
   colour: "#ffff99"
-  bandwidth: 40
+  bandwidth: 80
   ipv4: 103.106.66.202
   allowed:
     countries:
       - AU
       - CC
       - CX
+      - FJ
       - HM
       - NC
       - NF
+      - NR
       - NZ
+      - PG
+      - SB
+      - TV
+      - VU
   preferred:
     countries:
       - AU
       - CC
       - CX
+      - FJ
       - HM
       - NF
+      - NR
       - NZ
+      - PG
+      - SB
+      - TV
+      - VU
 
 # Spare colours:
 # #999999, #d9d9d9
