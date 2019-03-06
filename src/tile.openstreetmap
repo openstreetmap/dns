@@ -416,6 +416,8 @@ wellington:
   allowed:
     continents:
       - OC
+    countries:
+      - CC
 
 # Hamilton, NZ
 hamilton:
@@ -430,6 +432,8 @@ hamilton:
   allowed:
     continents:
       - OC
+    countries:
+      - CC
 
 # Spare colours:
 # #d9d9d9
