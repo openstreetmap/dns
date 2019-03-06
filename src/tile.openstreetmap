@@ -446,5 +446,19 @@ wellington:
       - TV
       - VU
 
+# Hamilton, NZ
+hamilton:
+  lat: -37.783333
+  lon: 175.283333
+  statuscake:
+    - 3931336
+    - 3931337
+  colour: "#999999"
+  bandwidth: 40
+  ipv4: 103.197.61.160
+  allowed:
+    continents:
+      - OC
+
 # Spare colours:
-# #999999, #d9d9d9
+# #d9d9d9
