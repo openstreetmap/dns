@@ -418,6 +418,11 @@ wellington:
       - OC
     countries:
       - CC
+  preferred:
+    continents:
+      - OC
+    countries:
+      - CC
 
 # Hamilton, NZ
 hamilton:
@@ -430,6 +435,11 @@ hamilton:
   bandwidth: 80
   ipv4: 103.197.61.160
   allowed:
+    continents:
+      - OC
+    countries:
+      - CC
+  preferred:
     continents:
       - OC
     countries:
