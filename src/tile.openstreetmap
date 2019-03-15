@@ -457,4 +457,19 @@ linkoping:
   ipv4: 130.236.254.221
   ipv6: 200106b00017f0a000000000000000dd
 
+# Curitiba, Brazil
+curitaba:
+  lat: -25.41403745
+  lon: -49.252918753851
+  statuscake:
+    - 3945882
+    - 3945883
+  colour: "#d9d9d9"
+  bandwidth: 80
+  ipv4: 200.236.31.207
+  ipv6: 2801008280ff80020216ccfffeaa0021
+  allowed:
+    continents:
+      - SA
+
 # Spare colours:

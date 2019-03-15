@@ -59,13 +59,14 @@ pyrene:
   statuscake:
     - 3451753
   colour: "#269926"
-  bandwidth: 500
+  bandwidth: 600
   ipv4: 140.211.167.98
   ipv6: 2605bc8030100700000000008cd3a762
   default: ""
   preferred:
     origins:
       - corvallis
+      - curitaba
       - hsinchu
       - montreal
       - sanfrancisco
