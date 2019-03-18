@@ -445,19 +445,28 @@ hamilton:
     countries:
       - CC
 
-# Linköping, Sweden
-linkoping:
-  lat: 58.403261
-  lon: 15.623611189797
-  statuscake:
-    - 3932686
-    - 3932688
+# Linköping/Umeå, SE
+# Linköping @ 58.403261,15.623611189797
+# Umeå @ 63.82177625,20.3043163114932
+sweden:
+  lat: 61.1125186
+  lon: 17.9639637506451
   colour: "#d9d9d9"
-  bandwidth: 40
-  ipv4: 130.236.254.221
-  ipv6: 200106b00017f0a000000000000000dd
+  servers:
+    - statuscake:
+        - 3932686
+        - 3932688
+      bandwidth: 40
+      ipv4: 130.236.254.221
+      ipv6: 200106b00017f0a000000000000000dd
+    - statuscake:
+        - 3949588
+        - 3949589
+      bandwidth: 40
+      ipv4: 130.239.18.114
+      ipv6: 200106b0000e2a180000000000000114
 
-# Curitiba, Brazil
+# Curitiba, BR
 curitiba:
   lat: -25.41403745
   lon: -49.252918753851
