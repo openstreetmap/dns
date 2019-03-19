@@ -478,7 +478,7 @@ curitiba:
   ipv4: 200.236.31.207
   ipv6: 2801008280ff80020216ccfffeaa0021
   allowed:
-    continents:
-      - SA
+    countries:
+      - BR
 
 # Spare colours:
