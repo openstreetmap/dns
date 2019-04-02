@@ -33,8 +33,7 @@ Capi.openstreetmap-uk:api.openstreetmap.org
 Ccalendar.openstreetmap-uk:osmcal.street.me.uk
 
 # Shaun McDonald taginfo instance
-+taginfo.openstreetmap-uk:144.76.98.136:3600
-3taginfo.openstreetmap-uk:2a0104f8019233870000000000000002
+Ctaginfo.openstreetmap-uk:proxy.mythic-beasts.com
 
 # Aerial imagery sites
 +hampshire.aerial.openstreetmap-uk:178.250.74.36:3600
