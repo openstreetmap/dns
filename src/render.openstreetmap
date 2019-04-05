@@ -12,6 +12,20 @@ orm:
     origins:
       - amsterdam
 
+odin:
+  lat: 52.33724625
+  lon: 4.93370796776345
+  statuscake:
+    - 3987453
+  colour: "#7c1f7c"
+  bandwidth: 50
+  ipv4: 130.117.76.15
+  ipv6: 200109780002002c000000000172000F
+  default: ""
+  preferred:
+    origins:
+      - amsterdam
+
 yevaud:
   lat: 51.5228002
   lon: -0.62151043832233
@@ -75,7 +89,6 @@ pyrene:
 
 # Spare colours:
 #
-#  7c1f7c
 #  25567b
 #  bf6530
 #  bfb830
