@@ -18,7 +18,7 @@ odin:
   statuscake:
     - 3987453
   colour: "#7c1f7c"
-  bandwidth: 100
+  bandwidth: 200
   ipv4: 130.117.76.15
   ipv6: 200109780002002c000000000172000F
   default: ""
