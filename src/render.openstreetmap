@@ -4,7 +4,7 @@ orm:
   statuscake:
     - 2217312
   colour: "#bfa730"
-  bandwidth: 200
+  bandwidth: 1 
   ipv4: 130.117.76.3
   ipv6: 200109780002002c0000000001720003
   default: ""
@@ -18,7 +18,7 @@ odin:
   statuscake:
     - 3987453
   colour: "#7c1f7c"
-  bandwidth: 200
+  bandwidth: 300
   ipv4: 130.117.76.15
   ipv6: 200109780002002c000000000172000F
   default: ""
