@@ -145,14 +145,14 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 3spike-07.openstreetmap:200109780002002c000000000172000C
 +openstreetmap:130.117.76.12:600
 3openstreetmap:200109780002002c000000000172000C:600
-#+www.openstreetmap:130.117.76.12:600
-#3www.openstreetmap:200109780002002c000000000172000C:600
-#+api.openstreetmap:130.117.76.12:600
-#3api.openstreetmap:200109780002002c000000000172000C:600
-#+maps.openstreetmap:130.117.76.12:600
-#3maps.openstreetmap:200109780002002c000000000172000C:600
-#+mapz.openstreetmap:130.117.76.12:600
-#3mapz.openstreetmap:200109780002002c000000000172000C:600
++www.openstreetmap:130.117.76.12:600
+3www.openstreetmap:200109780002002c000000000172000C:600
++api.openstreetmap:130.117.76.12:600
+3api.openstreetmap:200109780002002c000000000172000C:600
++maps.openstreetmap:130.117.76.12:600
+3maps.openstreetmap:200109780002002c000000000172000C:600
++mapz.openstreetmap:130.117.76.12:600
+3mapz.openstreetmap:200109780002002c000000000172000C:600
 +spike-07.ams.openstreetmap:10.0.48.12
 +spike-07.oob.openstreetmap:10.0.49.12
 
@@ -160,14 +160,14 @@ Caf323lytato5.openstreetmap:gv-o4v3qh5pfayqex.dv.googlehosted.com
 3spike-08.openstreetmap:200109780002002c000000000172000D
 +openstreetmap:130.117.76.13:600
 3openstreetmap:200109780002002c000000000172000D:600
-+www.openstreetmap:130.117.76.13:600
-3www.openstreetmap:200109780002002c000000000172000D:600
-+api.openstreetmap:130.117.76.13:600
-3api.openstreetmap:200109780002002c000000000172000D:600
-+maps.openstreetmap:130.117.76.13:600
-3maps.openstreetmap:200109780002002c000000000172000D:600
-+mapz.openstreetmap:130.117.76.13:600
-3mapz.openstreetmap:200109780002002c000000000172000D:600
+#+www.openstreetmap:130.117.76.13:600
+#3www.openstreetmap:200109780002002c000000000172000D:600
+#+api.openstreetmap:130.117.76.13:600
+#3api.openstreetmap:200109780002002c000000000172000D:600
+#+maps.openstreetmap:130.117.76.13:600
+#3maps.openstreetmap:200109780002002c000000000172000D:600
+#+mapz.openstreetmap:130.117.76.13:600
+#3mapz.openstreetmap:200109780002002c000000000172000D:600
 +spike-08.ams.openstreetmap:10.0.48.13
 +spike-08.oob.openstreetmap:10.0.49.13
 
