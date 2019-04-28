@@ -242,7 +242,7 @@ london:
       colour: "#bebada"
       bandwidth: 100
       ipv4: 134.90.146.26
-  preferred:
+  allowed:
     countries:
       - GB
       - IE
