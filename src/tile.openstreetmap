@@ -31,15 +31,15 @@ moscow:
 
 # Amsterdam, NL
 # BW Limit: 1000Mb/s
-# amsterdam:
-#   lat: 52.37306
-#   lon: 4.89222
-#   statuscake:
-#     - 2217259
-#     - 2217260
-#   colour: "#bebada"
-#   bandwidth: 100
-#   ipv4: 134.90.146.26
+amsterdam:
+  lat: 52.37306
+  lon: 4.89222
+  statuscake:
+    - 2217259
+    - 2217260
+  colour: "#bebada"
+  bandwidth: 100
+  ipv4: 134.90.146.26
 
 # Oslo, NO
 # BW Limit: 1000Mb/s
@@ -228,21 +228,15 @@ osijek:
 london:
   lat: 51.5120484
   lon: -0.00201880060605929
+  pingdom: 1453871
+  statuscake:
+   - 2214077
+   - 2217246
   colour: "#ffed6f"
-  servers:
-    - statuscake:
-       - 2214077
-       - 2217246
-      bandwidth: 150
-      ipv4: 185.73.44.30
-      ipv6: 20010ba800002c1e0000000000000000
-    - statuscake:
-        - 2217259
-        - 2217260
-      colour: "#bebada"
-      bandwidth: 100
-      ipv4: 134.90.146.26
-  allowed:
+  bandwidth: 200
+  ipv4: 185.73.44.30
+  ipv6: 20010ba800002c1e0000000000000000
+  preferred:
     countries:
       - GB
       - IE
