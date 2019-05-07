@@ -150,8 +150,8 @@ germany:
       ipv4: 195.201.226.63
       ipv6: 2a0104f81c1cbc540000000000000001
   allowed:
-    continents:
-      - EU
+    countries:
+      - DE
 
 # Baku, AZ
 # BW Limit: 1000Mb/s
