@@ -481,4 +481,15 @@ curitiba:
     countries:
       - BR
 
+# Pilsen, CZ
+pilsen:
+  lat: 49.723689
+  lon: 13.351542
+  statuscake:
+    - 4065539
+    - 4065540
+  colour: "#d9d9d9"
+  bandwidth: 30
+  ipv4: 147.228.60.16
+
 # Spare colours:
