@@ -82,11 +82,9 @@ pyrene:
     origins:
       - corvallis
       - curitiba
-      - hsinchu
       - montreal
       - sanfrancisco
       - vinadelmar
-      - wellington
 
 # Spare colours:
 #
