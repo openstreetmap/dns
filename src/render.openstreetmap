@@ -10,6 +10,7 @@ bowser:
   preferred:
     origins:
       - hamilton
+      - hsinchu
       - wellington
 
 odin:
