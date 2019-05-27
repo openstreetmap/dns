@@ -4,7 +4,7 @@ bowser:
   statuscake:
     - 2217312
   colour: "#bfa730"
-  bandwidth: 100
+  bandwidth: 300
   ipv4: 138.44.68.106
   default: ""
   preferred:
