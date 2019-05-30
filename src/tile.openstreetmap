@@ -228,14 +228,20 @@ osijek:
 london:
   lat: 51.5120484
   lon: -0.00201880060605929
-  pingdom: 1453871
-  statuscake:
-   - 2214077
-   - 2217246
   colour: "#ffed6f"
-  bandwidth: 200
-  ipv4: 185.73.44.30
-  ipv6: 20010ba800002c1e0000000000000000
+  servers:
+    - statuscake:
+       - 2214077
+       - 2217246
+      bandwidth: 100
+      ipv4: 185.73.44.30
+      ipv6: 20010ba800002c1e0000000000000000
+    - statuscake:
+       - 4089249
+       - 4089250
+      bandwidth: 100
+      ipv4: 185.73.44.167
+      ipv6: 20010ba800002ca70000000000000000
   preferred:
     countries:
       - GB
