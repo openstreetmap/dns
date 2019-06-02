@@ -19,7 +19,7 @@ odin:
   statuscake:
     - 3987453
   colour: "#7c1f7c"
-  bandwidth: 500
+  bandwidth: 800
   ipv4: 130.117.76.15
   ipv6: 200109780002002c000000000172000F
   default: ""
@@ -46,7 +46,7 @@ scorch:
   statuscake:
     - 2217314
   colour: "#bf8230"
-  bandwidth: 500
+  bandwidth: 400
   ipv4: 176.31.235.79
   ipv6: 200141d00002fc4f0000000000000001
   default: ""
@@ -60,7 +60,7 @@ rhaegal:
   statuscake:
     - 3343399
   colour: "#a1b92e"
-  bandwidth: 700
+  bandwidth: 500
   ipv4: 161.53.248.77
   default: ""
   preferred:
