@@ -233,13 +233,13 @@ london:
     - statuscake:
        - 2214077
        - 2217246
-      bandwidth: 100
+      bandwidth: 150
       ipv4: 185.73.44.30
       ipv6: 20010ba800002c1e0000000000000000
     - statuscake:
        - 4089249
        - 4089250
-      bandwidth: 100
+      bandwidth: 150
       ipv4: 185.73.44.167
       ipv6: 20010ba800002ca70000000000000000
   preferred:
