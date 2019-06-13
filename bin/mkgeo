@@ -15,6 +15,7 @@ my $zone = shift @ARGV;
 my $targetoriginfile = shift @ARGV;
 my $origins = YAML::LoadFile($originfile);
 my $clusters = YAML::LoadFile($clusterfile);
+my $gdnsname = shift @ARGV;
 my @servers;
 
 # Initialise cluster details
@@ -276,6 +277,61 @@ $jsonfile->print(encode_json(\@json));
 # Close the output files
 $jsonfile->close();
 $zonefile->close();
+
+# Output gdnsd configuration
+if (defined($gdnsname))
+{
+    my $gdnsmapfile = IO::File->new("> gdns/${gdnsname}.map") || die "$!";
+    my $gdnsresourcefile = IO::File->new("> gdns/${gdnsname}.resource") || die "$!";
+    my $continent = "";
+
+    $gdnsmapfile->print("${gdnsname} => {\n");
+    $gdnsmapfile->print("  geoip2_db => /var/lib/GeoIP/GeoLite2-Country.mmdb\n");
+    $gdnsmapfile->print("  datacenters => [" . join(",", sort(keys(%$clusters))) . "]\n");
+    $gdnsmapfile->print("  map => {\n");
+    $gdnsmapfile->print("    default => [" . join(",", sort(map { $_->{name} } grep { $_->{default} } values(%$clusters))) . "]\n");
+
+    foreach my $origin (sort { $a->{continent} cmp $b->{continent} || $a->{code} cmp $b->{code} } values %$origins)
+    {
+        my $code = $origin->{code};
+        my $cluster = $origin->{cluster}->{name};
+
+        next if $code eq "XK";
+
+        if ($continent ne $origin->{continent})
+        {
+            $gdnsmapfile->print("    }\n") if $continent;
+
+            $continent = $origin->{continent};
+
+            $gdnsmapfile->print("    ${continent} => {\n");
+        }
+
+        $gdnsmapfile->print("      ${code} => [${cluster}]\n");
+    }
+
+    $gdnsmapfile->print("    }\n") if $continent;
+
+    $gdnsmapfile->print("  }\n");
+    $gdnsmapfile->print("}\n");
+
+    $gdnsresourcefile->print("${gdnsname} => {\n");
+    $gdnsresourcefile->print("  map => ${gdnsname}\n");
+    $gdnsresourcefile->print("  dcmap => {\n");
+
+    foreach my $cluster (sort { $a->{name} cmp $b->{name} } values %$clusters)
+    {
+        my $name = $cluster->{name};
+
+        $gdnsresourcefile->print("    ${name} => ${name}.tile.openstreetmap.org.\n");
+    }
+
+    $gdnsresourcefile->print("  }\n");
+    $gdnsresourcefile->print("}\n");
+
+    $gdnsresourcefile->close();
+    $gdnsmapfile->close();
+}
 
 # Output the target details in origin format if required
 YAML::DumpFile($targetoriginfile, $targetorigins) if $targetoriginfile;

@@ -16,8 +16,13 @@ all: data/openstreetmap.org data/openstreetmap.com data/openstreetmap.net \
 clean:
 	rm -f data/* json/* origins/*
 
-update: all
+update: update_bytemark update_geodns
+
+update_bytemark: all
 	bin/update
+
+update_geodns: all
+	parallel --will-cite rsync --quiet --recursive gdns/ {}::geodns ::: ${GEODNS_SERVERS}
 
 lib/countries.xml:
 	curl -s -o $@ http://api.geonames.org/countryInfo?username=demo
@@ -56,7 +61,7 @@ origins/tile.openstreetmap.yml: bin/mkcountries lib/countries.xml bandwidth/tile
 	bin/mkcountries bandwidth/tile.openstreetmap.yml origins/tile.openstreetmap.yml
 
 data/tile.openstreetmap.org json/tile.openstreetmap.org.json origins/render.openstreetmap.yml: bin/mkgeo origins/tile.openstreetmap.yml src/tile.openstreetmap
-	bin/mkgeo origins/tile.openstreetmap.yml src/tile.openstreetmap tile.openstreetmap.org origins/render.openstreetmap.yml
+	bin/mkgeo origins/tile.openstreetmap.yml src/tile.openstreetmap tile.openstreetmap.org origins/render.openstreetmap.yml tile
 
 data/render.openstreetmap.org json/render.openstreetmap.org.json: bin/mkgeo origins/render.openstreetmap.yml src/render.openstreetmap
 	bin/mkgeo origins/render.openstreetmap.yml src/render.openstreetmap render.openstreetmap.org origins/total.openstreetmap.yml
