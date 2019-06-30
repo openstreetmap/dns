@@ -460,6 +460,27 @@ hamilton:
     countries:
       - CC
 
+# Melbourne, AU
+melbourne:
+  lat: -37.8004228
+  lon: 144.9684343
+  statuscake:
+    - 5043902
+    - 5043903
+  colour: "#d9d9d9"
+  bandwidth: 80
+  ipv4: 138.44.68.134
+  allowed:
+    continents:
+      - OC
+    countries:
+      - CC
+  preferred:
+    continents:
+      - OC
+    countries:
+      - CC
+
 # Linköping/Umeå, SE
 # Linköping @ 58.403261,15.623611189797
 # Umeå @ 63.82177625,20.3043163114932
