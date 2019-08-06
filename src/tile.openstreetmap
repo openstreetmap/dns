@@ -193,6 +193,9 @@ hsinchu:
   allowed:
     continents:
       - AS
+  denied:
+    countries:
+      - ID
   preferred:
     countries:
       - TW
@@ -475,11 +478,13 @@ melbourne:
       - OC
     countries:
       - CC
+      - ID
   preferred:
     continents:
       - OC
     countries:
       - CC
+      - ID
 
 # Linköping/Umeå, SE
 # Linköping @ 58.403261,15.623611189797
