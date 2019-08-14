@@ -33,7 +33,7 @@ ysera:
   statuscake:
     - 2217313
   colour: "#412c84"
-  bandwidth: 300
+  bandwidth: 800
   ipv4: 193.60.236.22
   default: ""
   preferred:
