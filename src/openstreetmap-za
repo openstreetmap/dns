@@ -18,7 +18,7 @@
 
 # Publish an SPF record indicating that only shenron sends mail
 
-'openstreetmap-za:v=spf1 include\072openstreetmap.org ~all
+'openstreetmap-za:v=spf1 include\072openstreetmap.org -all
 
 # Main web servers and their aliases
 
