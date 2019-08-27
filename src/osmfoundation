@@ -13,8 +13,9 @@
 :osmfoundation:257:\000\005\151\163\163\165\145\154\145\164\163\145\156\143\162\171\160\164\056\157\162\147
 
 # SPF Record
-
-'osmfoundation:v=spf1 a\072shenron.openstreetmap.org include\072_spf.google.com ~all:3600
+# https://anders.com/projects/sysadmin/djbdnsRecordBuilder/
+# v=spf1 ip4:212.110.172.32 ip6:2001:41c9:1:400::32 a mx include:_spf.google.com -all
+'osmfoundation:v=spf1\040ip4\072212.110.172.32\040ip6\0722001\07241c9\0721\072400\072\07232\040a\040mx\040include\072_spf.google.com\040-all:86400
 
 # Let google handle email
 

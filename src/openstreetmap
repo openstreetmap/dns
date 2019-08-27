@@ -26,8 +26,10 @@ Zopenstreetmap:a.ns.bytemark.co.uk:hostmaster.openstreetmap.org:::::300
 
 # Publish an SPF record indicating that only shenron sends mail
 
-'openstreetmap:v=spf1 ip4\07289.16.179.150 ip4\072212.110.172.32 ip6\0722001\07241c8\07210\072996\07221d\0727dff\072fec3\072df70 ip6\0722001\07241c9\0721\072400\072\07232 ~all
-'otrs.openstreetmap:v=spf1 ip4\07289.16.179.150 ip4\072212.110.172.32 ip6\0722001\07241c8\07210\072996\07221d\0727dff\072fec3\072df70 ip6\0722001\07241c9\0721\072400\072\07232 ~all
+# https://anders.com/projects/sysadmin/djbdnsRecordBuilder/
+# v=spf1 ip4:212.110.172.32 ip6:2001:41c9:1:400::32 mx include:_spf.google.com -all
+'openstreetmap:v=spf1\040ip4\072212.110.172.32\040ip6\0722001\07241c9\0721\072400\072\07232\040mx\040include\072_spf.google.com\040-all:86400
+'otrs.openstreetmap:v=spf1\040ip4\072212.110.172.32\040ip6\0722001\07241c9\0721\072400\072\07232\040mx\040include\072_spf.google.com\040-all:86400
 
 # Google postmaster tools verification
 
