@@ -262,13 +262,13 @@ usa:
     - statuscake:
        - 2217287
        - 2217288
-      bandwidth: 200
+      bandwidth: 150
       ipv4: 140.211.167.105
       ipv6: 2605bc8030100700000000008cdea769
     - statuscake:
        - 4112776
        - 4112775
-      bandwidth: 200
+      bandwidth: 150
       ipv4: 204.16.246.252
       ipv6: 2607fdc0000100000000000000000052
   preferred:
