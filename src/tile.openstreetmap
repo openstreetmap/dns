@@ -251,26 +251,17 @@ london:
       - IE
       - IM
 
-# Corvallis/Pittsburgh, US
-# Corvallis @ 44.5639267,-123.274707837676
-# Pittsburgh @ 40.4474127,-80.0078641
-usa:
-  lat: 42.5056697
-  lon: -101.641285968838
+# Corvallis, US
+corvallis:
+  lat: 44.5639267
+  lon: -123.274707837676
+  statuscake:
+    - 2217287
+    - 2217288
   colour: "#6a3d9a"
-  servers:
-    - statuscake:
-       - 2217287
-       - 2217288
-      bandwidth: 150
-      ipv4: 140.211.167.105
-      ipv6: 2605bc8030100700000000008cdea769
-    - statuscake:
-       - 4112776
-       - 4112775
-      bandwidth: 150
-      ipv4: 204.16.246.252
-      ipv6: 2607fdc0000100000000000000000052
+  bandwidth: 200
+  ipv4: 140.211.167.105
+  ipv6: 2605bc8030100700000000008cdea769
   preferred:
     countries:
       - US
