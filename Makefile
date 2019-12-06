@@ -22,7 +22,7 @@ update_bytemark: all
 	bin/update
 
 update_geodns: all
-	parallel --will-cite rsync --quiet --recursive gdns/ {}::geodns ::: ${GEODNS_SERVERS}
+	parallel --will-cite rsync --quiet --recursive --checksum gdns/ {}::geodns ::: ${GEODNS_SERVERS}
 
 lib/countries.xml:
 	curl -s -o $@ http://api.geonames.org/countryInfo?username=demo
