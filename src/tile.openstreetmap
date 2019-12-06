@@ -84,30 +84,35 @@ france:
         - 2217265
         - 2217266
       bandwidth: 100
+      name: nepomuk
       ipv4: 77.95.65.39
       ipv6: 2a039180000001000000000000000007
     - statuscake:
         - 3351567
         - 3351569
       bandwidth: 100
+      name: noomoahk
       ipv4: 91.224.148.166
       ipv6: 2a0372208080a6000000000000000001
     - statuscake:
         - 3743694
         - 3743696
       bandwidth: 60
+      name: norbert
       ipv4: 89.234.186.100
       ipv6: 2a005884821c00000000000000000001
     - statuscake:
         - 3750719
         - 3750717
       bandwidth: 40
+      name: necrosan
       ipv4: 80.67.167.77
       ipv6: 2a0bcbc0110d0001000000000000001c
     - statuscake:
         - 5321339
         - 5321340
       bandwidth: 150
+      name: naga
       ipv4: 185.116.130.151
   preferred:
     countries:
@@ -241,12 +246,14 @@ london:
        - 2214077
        - 2217246
       bandwidth: 150
+      name: saphira
       ipv4: 185.73.44.30
       ipv6: 20010ba800002c1e0000000000000000
     - statuscake:
        - 4089249
        - 4089250
       bandwidth: 150
+      name: toothless
       ipv4: 185.73.44.167
       ipv6: 20010ba800002ca70000000000000000
   preferred:
@@ -493,12 +500,14 @@ sweden:
         - 3932686
         - 3932688
       bandwidth: 40
+      name: nidhogg
       ipv4: 130.236.254.221
       ipv6: 200106b00017f0a000000000000000dd
     - statuscake:
         - 3949588
         - 3949589
       bandwidth: 40
+      name: fafnir
       ipv4: 130.239.18.114
       ipv6: 200106b0000e2a180000000000000114
 
