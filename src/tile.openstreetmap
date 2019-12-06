@@ -506,7 +506,7 @@ sweden:
     - statuscake:
         - 3949588
         - 3949589
-      bandwidth: 40
+      bandwidth: 80
       name: fafnir
       ipv4: 130.239.18.114
       ipv6: 200106b0000e2a180000000000000114
