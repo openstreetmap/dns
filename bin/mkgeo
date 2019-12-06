@@ -331,8 +331,6 @@ if (defined($gdnsname))
     {
         my $name = $cluster->{name};
 
-        $gdnsresourcefile->print("    ${name} => ${name}.${zone}.\n");
-
         if (@{$cluster->{servers}} > 1)
         {
             $gdnsweightedfile->print("${name} => {\n");
@@ -349,6 +347,12 @@ if (defined($gdnsname))
             }
 
             $gdnsweightedfile->print("}\n");
+
+            $gdnsresourcefile->print("    ${name} => %weighted!${name}\n");
+        }
+        else
+        {
+            $gdnsresourcefile->print("    ${name} => ${name}.${zone}.\n");
         }
     }
 
