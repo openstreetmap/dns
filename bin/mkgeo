@@ -294,7 +294,7 @@ if (defined($gdnsname))
     my $continent = "";
 
     $gdnsmapfile->print("${gdnsname} => {\n");
-    $gdnsmapfile->print("  geoip2_db => /var/lib/GeoIP/GeoLite2-Country.mmdb\n");
+    $gdnsmapfile->print("  geoip2_db => /usr/share/GeoIP/GeoLite2-Country.mmdb\n");
     $gdnsmapfile->print("  datacenters => [" . join(",", sort(keys(%$clusters))) . "]\n");
     $gdnsmapfile->print("  map => {\n");
     $gdnsmapfile->print("    default => [" . join(",", sort(map { $_->{name} } grep { $_->{default} } values(%$clusters))) . "]\n");
