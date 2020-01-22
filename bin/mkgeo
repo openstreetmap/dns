@@ -528,7 +528,7 @@ sub output_server
 
             if ($server->{ipv6})
             {
-#                $zonefile->printf("3${name}:$server->{ipv6}:600\n", $index + 1);
+                $zonefile->printf("3${name}:$server->{ipv6}:600\n", $index + 1);
             }
         }
     }
