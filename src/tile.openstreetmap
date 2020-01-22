@@ -433,6 +433,7 @@ wellington:
   colour: "#ffff99"
   bandwidth: 80
   ipv4: 114.23.141.203
+  ipv6: 24061e00b4100c24529a4cfffe79bc3b
   allowed:
     continents:
       - OC
