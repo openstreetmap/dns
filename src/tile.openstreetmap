@@ -423,38 +423,27 @@ kiev:
   ipv4: 176.122.99.101
   ipv6: 2001067c2d4000000000000000000065
 
-# Wellington, NZ
-wellington:
-  lat: -41.288889
-  lon: 174.777222
-  statuscake:
-    - 3911508
-    - 3911509
+# Hamilton/Wellington, NZ
+# Hamilton @ -37.783333,175.283333
+# Wellington @ -41.288889,174.777222
+newzealand:
+  lat: -39.536111
+  lon: 175.0302775
   colour: "#ffff99"
-  bandwidth: 80
-  ipv4: 114.23.141.203
-  ipv6: 24061e00b4100c24529a4cfffe79bc3b
-  allowed:
-    continents:
-      - OC
-    countries:
-      - CC
-  preferred:
-    continents:
-      - OC
-    countries:
-      - CC
-
-# Hamilton, NZ
-hamilton:
-  lat: -37.783333
-  lon: 175.283333
-  statuscake:
-    - 3931336
-    - 3931337
-  colour: "#999999"
-  bandwidth: 80
-  ipv4: 103.197.61.160
+  servers:
+    - statuscake:
+        - 3911508
+        - 3911509
+      bandwidth: 10
+      name: tuatara
+      ipv4: 114.23.141.203
+      ipv6: 24061e00b4100c24529a4cfffe79bc3b
+    - statuscake:
+        - 3931336
+        - 3931337
+      bandwidth: 40
+      name: waima
+      ipv4: 103.197.61.160
   allowed:
     continents:
       - OC
@@ -473,7 +462,7 @@ melbourne:
   statuscake:
     - 5043902
     - 5043903
-  colour: "#d9d9d9"
+  colour: "#999999"
   bandwidth: 80
   ipv4: 138.44.68.134
   allowed:
