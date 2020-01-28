@@ -34,7 +34,7 @@ Zopenstreetmap:a.ns.bytemark.co.uk:hostmaster.openstreetmap.org:::::300
 # Announce MTA-STS policy and TLSRPT policy for error reports
 
 '_mta-sts.openstreetmap:v=STSv1;\040id=202001281902Z
-'_smtp._tls.openstreetmap:v=TLSRPTv1;\040rua=mailto:postmaster@openstreetmap.org
+'_smtp._tls.openstreetmap:v=TLSRPTv1;\040rua=mailto\072postmaster@openstreetmap.org
 
 # Delegate MTA-STS policy for subdomains
 
