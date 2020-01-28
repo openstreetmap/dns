@@ -25,9 +25,9 @@
 @osmfoundation::alt3.aspmx.l.google.com:10:3600
 @osmfoundation::alt4.aspmx.l.google.com:10:3600
 
-# Handle mail for the crm subdomain ourselves
+# Handle mail for the join subdomain ourselves
 
-@crm.osmfoundation::a.mx.openstreetmap.org:10
+@join.osmfoundation::a.mx.openstreetmap.org:10
 
 # Add DKIM public key
 # Use : raw to workaround TXT split issue
