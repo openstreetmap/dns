@@ -20,6 +20,10 @@
 
 'openstreetmap-uk:v=spf1 include\072openstreetmap.org -all
 
+# Delegate MTA-STS policy
+
+C_mta-sts.openstreetmap-uk:_mta-sts.openstreetmap.org
+
 # Main web servers and their aliases
 
 +openstreetmap-uk:193.63.75.99:600
@@ -28,7 +32,6 @@
 
 Cwww.openstreetmap-uk:www.openstreetmap.org
 Capi.openstreetmap-uk:api.openstreetmap.org
-Cmta-sts.openstreetmap-uk:mta-sts.openstreetmap.org
 
 # Andy Street calendar instance
 Ccalendar.openstreetmap-uk:osmcal.street.me.uk

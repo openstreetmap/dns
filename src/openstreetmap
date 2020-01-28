@@ -24,18 +24,22 @@ Zopenstreetmap:a.ns.bytemark.co.uk:hostmaster.openstreetmap.org:::::300
 
 3a.mx.openstreetmap:200141c9000104000000000000000032
 
-# Delegate MTA-STS policy for subdomains
-
-Cmta-sts.noreply.openstreetmap:mta-sts.openstreetmap
-Cmta-sts.otrs.openstreetmap:mta-sts.openstreetmap
-Cmta-sts.messages.openstreetmap:mta-sts.openstreetmap
-
 # Publish an SPF record indicating that only shenron sends mail
 
 # https://anders.com/projects/sysadmin/djbdnsRecordBuilder/
 # v=spf1 ip4:212.110.172.32 ip6:2001:41c9:1:400::32 mx -all
 'openstreetmap:v=spf1\040ip4\072212.110.172.32\040ip6\0722001\07241c9\0721\072400\072\07232\040mx\040-all:86400
 'otrs.openstreetmap:v=spf1\040ip4\072212.110.172.32\040ip6\0722001\07241c9\0721\072400\072\07232\040mx\040-all:86400
+
+# Announce MTA-STS policy
+
+'_mta-sts.openstreetmap:v=STSv1;\040id=202001281902Z
+
+# Delegate MTA-STS policy for subdomains
+
+C_mta-sts.noreply.openstreetmap:_mta-sts.openstreetmap
+C_mta-sts.otrs.openstreetmap:_mta-sts.openstreetmap
+C_mta-sts.messages.openstreetmap:_mta-sts.openstreetmap
 
 # Google postmaster tools verification
 
