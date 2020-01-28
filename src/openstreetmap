@@ -390,6 +390,7 @@ Cc.tile.openstreetmap:tile.geo.openstreetmap.org
 
 +shenron.openstreetmap:212.110.172.32
 +mail.openstreetmap:212.110.172.32
++mta-sts.openstreetmap:212.110.172.32
 +lists.openstreetmap:212.110.172.32
 +svn.openstreetmap:212.110.172.32
 +trac.openstreetmap:212.110.172.32
