@@ -1,4 +1,5 @@
-var REGISTRAR = NewRegistrar("none", "NONE");
+var REG_NONE = NewRegistrar("none", "NONE");
+var REG_GANDI = NewRegistrar("gandi_v5", "GANDI_V5");
 var PROVIDER = NewDnsProvider("cloudflare", "CLOUDFLAREAPI");
 
 var CF_TTL_ANY = TTL(1);
@@ -6,6 +7,7 @@ var CF_TTL_ANY = TTL(1);
 DEFAULTS(DefaultTTL("24h"));
 
 var DOMAIN;
+var REGISTRAR;
 var DYNAMIC_RECORDS;
 
 var QUALIFY = function (name) {
@@ -13,14 +15,15 @@ var QUALIFY = function (name) {
 };
 
 function loadTemplate(template) {
-  return function (domain) {
+  return function (domain, registrar) {
     DOMAIN = domain;
+    REGISTRAR = registrar;
     DYNAMIC_RECORDS = [];
-    
-    for (var i = 1; i < arguments.length; i++) {
+
+    for (var i = 2; i < arguments.length; i++) {
       DYNAMIC_RECORDS = DYNAMIC_RECORDS.concat(arguments[i]);
     }
-    
+
     require("src/" + template + ".js");
   };
 }
@@ -30,53 +33,53 @@ var OPENSTREETMAP = loadTemplate("openstreetmap");
 require("include/tile.js");
 require("include/render.js");
 
-OPENSTREETMAP("openstreetmap.org", TILE_RECORDS, RENDER_RECORDS);
-OPENSTREETMAP("openstreetmap.com");
-OPENSTREETMAP("openstreetmap.net");
-OPENSTREETMAP("openstreetmap.ca");
-OPENSTREETMAP("openstreetmap.eu");
-OPENSTREETMAP("openstreetmap.pro");
-OPENSTREETMAP("openstreetmaps.org");
-OPENSTREETMAP("osm.org");
-OPENSTREETMAP("openmaps.org");
-OPENSTREETMAP("openstreetmap.io");
-OPENSTREETMAP("osm.io");
-OPENSTREETMAP("openworldmap.org");
-OPENSTREETMAP("freeosm.org");
-OPENSTREETMAP("open-maps.org");
-OPENSTREETMAP("open-maps.com");
-OPENSTREETMAP("osmbugs.org");
+OPENSTREETMAP("openstreetmap.org", REG_GANDI, TILE_RECORDS, RENDER_RECORDS);
+OPENSTREETMAP("openstreetmap.com", REG_GANDI);
+OPENSTREETMAP("openstreetmap.net", REG_GANDI);
+OPENSTREETMAP("openstreetmap.ca", REG_GANDI);
+OPENSTREETMAP("openstreetmap.eu", REG_NONE);
+OPENSTREETMAP("openstreetmap.pro", REG_GANDI);
+OPENSTREETMAP("openstreetmaps.org", REG_GANDI);
+OPENSTREETMAP("osm.org", REG_GANDI);
+OPENSTREETMAP("openmaps.org", REG_GANDI);
+OPENSTREETMAP("openstreetmap.io", REG_GANDI);
+OPENSTREETMAP("osm.io", REG_GANDI);
+OPENSTREETMAP("openworldmap.org", REG_GANDI);
+OPENSTREETMAP("freeosm.org", REG_GANDI);
+OPENSTREETMAP("open-maps.org", REG_GANDI);
+OPENSTREETMAP("open-maps.com", REG_GANDI);
+OPENSTREETMAP("osmbugs.org", REG_GANDI);
 
 var OPENSTREETMAP_UK = loadTemplate("openstreetmap-uk");
 
-OPENSTREETMAP_UK("openstreetmap.uk");
-OPENSTREETMAP_UK("openstreetmap.org.uk");
-OPENSTREETMAP_UK("openstreetmap.co.uk");
+OPENSTREETMAP_UK("openstreetmap.uk", REG_GANDI);
+OPENSTREETMAP_UK("openstreetmap.org.uk", REG_GANDI);
+OPENSTREETMAP_UK("openstreetmap.co.uk", REG_GANDI);
 
 var OPENSTREETMAP_ZA = loadTemplate("openstreetmap-za");
 
-OPENSTREETMAP_UK("openstreetmap.org.za");
-OPENSTREETMAP_UK("osm.org.za");
+OPENSTREETMAP_UK("openstreetmap.org.za", REG_NONE);
+OPENSTREETMAP_UK("osm.org.za", REG_NONE);
 
 var OSMFOUNDATION = loadTemplate("osmfoundation");
 
-OSMFOUNDATION("osmfoundation.org");
+OSMFOUNDATION("osmfoundation.org", REG_GANDI);
 
 var STATEOFTHEMAP = loadTemplate("stateofthemap");
 
-STATEOFTHEMAP("stateofthemap.org");
-STATEOFTHEMAP("stateofthemap.com");
-STATEOFTHEMAP("sotm.org");
+STATEOFTHEMAP("stateofthemap.org", REG_GANDI);
+STATEOFTHEMAP("stateofthemap.com", REG_GANDI);
+STATEOFTHEMAP("sotm.org", REG_GANDI);
 
 var STATEOFTHEMAP_EU = loadTemplate("stateofthemap-eu");
 
-STATEOFTHEMAP("stateofthemap.eu");
+STATEOFTHEMAP("stateofthemap.eu", REG_GANDI);
 
 var OPENGEODATA = loadTemplate("opengeodata");
 
-OPENGEODATA("opengeodata.org");
+OPENGEODATA("opengeodata.org", REG_GANDI);
 
 var SWITCH2OSM = loadTemplate("switch2osm");
 
-SWITCH2OSM("switch2osm.org");
-SWITCH2OSM("switch2osm.com");
+SWITCH2OSM("switch2osm.org", REG_GANDI);
+SWITCH2OSM("switch2osm.com", REG_GANDI);
