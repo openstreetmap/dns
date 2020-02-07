@@ -1,28 +1,37 @@
-all: data/openstreetmap.org data/openstreetmap.com data/openstreetmap.net \
-     data/openstreetmap.ca data/openstreetmap.eu data/openstreetmap.pro \
-     data/openstreetmaps.org data/osm.org data/openmaps.org \
-     data/openstreetmap.io data/osm.io \
-     data/openworldmap.org data/freeosm.org data/open-maps.org data/open-maps.com data/osmbugs.org \
-     data/openstreetmap.uk data/openstreetmap.org.uk data/openstreetmap.co.uk \
-     data/openstreetmap.org.za data/osm.org.za \
-     data/osmfoundation.org \
-     data/stateofthemap.org data/stateofthemap.com data/sotm.org \
-     data/stateofthemap.eu \
-     data/opengeodata.org \
-     data/switch2osm.org data/switch2osm.com \
-     data/tile.openstreetmap.org \
-     data/render.openstreetmap.org
+preview: preview_bytemark preview_cloudflare
 
-clean:
-	rm -f data/* json/* origins/*
+preview_bytemark: data/openstreetmap.org data/openstreetmap.com data/openstreetmap.net \
+		  data/openstreetmap.ca data/openstreetmap.eu data/openstreetmap.pro \
+		  data/openstreetmaps.org data/osm.org data/openmaps.org \
+		  data/openstreetmap.io data/osm.io \
+		  data/openworldmap.org data/freeosm.org data/open-maps.org data/open-maps.com data/osmbugs.org \
+		  data/openstreetmap.uk data/openstreetmap.org.uk data/openstreetmap.co.uk \
+		  data/openstreetmap.org.za data/osm.org.za \
+		  data/osmfoundation.org \
+		  data/stateofthemap.org data/stateofthemap.com data/sotm.org \
+		  data/stateofthemap.eu \
+		  data/opengeodata.org \
+		  data/switch2osm.org data/switch2osm.com \
+		  data/tile.openstreetmap.org \
+		  data/tile.openstreetmap.org \
+		  data/render.openstreetmap.org
 
-update: update_bytemark update_geodns
+preview_cloudflare: data/tile.openstreetmap.org data/render.openstreetmap.org
+	dnscontrol preview
 
-update_bytemark: all
+update: update_bytemark update_cloudflare update_geodns
+
+update_bytemark: preview_bytemark
 	bin/update
 
-update_geodns: all
+update_cloudflare: data/tile.openstreetmap.org data/render.openstreetmap.org
+	dnscontrol push --providers cloudflare
+
+update_geodns: gdns/tile.map gdns/tile.resource gdns/tile.weighted
 	parallel --will-cite rsync --quiet --recursive --checksum gdns/ {}::geodns ::: ${GEODNS_SERVERS}
+
+clean:
+	rm -f data/* json/* origins/* gdns/*
 
 lib/countries.xml:
 	curl -s -o $@ http://api.geonames.org/countryInfo?username=demo
@@ -60,11 +69,11 @@ data/stateofthemap.eu: src/stateofthemap-eu
 origins/tile.openstreetmap.yml: bin/mkcountries lib/countries.xml bandwidth/tile.openstreetmap.yml
 	bin/mkcountries bandwidth/tile.openstreetmap.yml origins/tile.openstreetmap.yml
 
-data/tile.openstreetmap.org json/tile.openstreetmap.org.json origins/render.openstreetmap.yml: bin/mkgeo origins/tile.openstreetmap.yml src/tile.openstreetmap
-	bin/mkgeo origins/tile.openstreetmap.yml src/tile.openstreetmap tile.openstreetmap.org origins/render.openstreetmap.yml tile
+data/tile.openstreetmap.org json/tile.openstreetmap.org.json origins/render.openstreetmap.yml gdns/tile.map gdns/tile.resource gdns/tile.weighted: bin/mkgeo origins/tile.openstreetmap.yml src/tile.openstreetmap
+	bin/mkgeo origins/tile.openstreetmap.yml src/tile.openstreetmap tile.openstreetmap.org tile origins/render.openstreetmap.yml tile
 
 data/render.openstreetmap.org json/render.openstreetmap.org.json: bin/mkgeo origins/render.openstreetmap.yml src/render.openstreetmap
-	bin/mkgeo origins/render.openstreetmap.yml src/render.openstreetmap render.openstreetmap.org origins/total.openstreetmap.yml
+	bin/mkgeo origins/render.openstreetmap.yml src/render.openstreetmap render.openstreetmap.org render origins/total.openstreetmap.yml
 
 data/%:
 	sed -r -e 's/$(notdir $<)(:|$$)/$(notdir $@)\1/g' < $< > $@

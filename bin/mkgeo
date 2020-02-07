@@ -14,6 +14,7 @@ use YAML;
 my $originfile = shift @ARGV;
 my $clusterfile = shift @ARGV;
 my $zone = shift @ARGV;
+my $jszone = shift @ARGV;
 my $targetoriginfile = shift @ARGV;
 my $origins = YAML::LoadFile($originfile);
 my $clusters = YAML::LoadFile($clusterfile);
@@ -205,7 +206,11 @@ my @json;
 
 # Open output files
 my $zonefile = IO::File->new("> data/${zone}") || die "$!";
+my $jszonefile = IO::File->new("> include/${jszone}.js") || die "$!";
 my $jsonfile = IO::File->new("> json/${zone}.json") || die "$!";
+
+# Output headers
+$jszonefile->print("var \U${jszone}\E_RECORDS = [\n");
 
 # Output details for each country
 foreach my $origin (sort { $a->{name} cmp $b->{name} } values %$origins)
@@ -227,6 +232,8 @@ foreach my $origin (sort { $a->{name} cmp $b->{name} } values %$origins)
 
     $zonefile->print("# $origin->{name}\n");
     $zonefile->print("C\L$origin->{code}\E.${zone}:$cluster->{name}.${zone}:600\n");
+
+    $jszonefile->print("  CNAME(\"\L$origin->{code}\E.${jszone}\", \"$cluster->{name}.${zone}.\", TTL(\"10m\")),\n");
 
     push @json, {
         type => "Feature",
@@ -254,11 +261,11 @@ foreach my $cluster (sort { $a->{name} cmp $b->{name} } values %$clusters)
 
     if (my $default = $cluster->{default})
     {
-        output_server($zonefile, "${default}.${zone}", $cluster);
+        output_server($zonefile, $jszonefile, "${default}.${zone}", "${default}.${jszone}", $cluster);
     }
     elsif (exists($cluster->{default}))
     {
-        output_server($zonefile, "${zone}", $cluster);
+        output_server($zonefile, $jszonefile, "${zone}", "${jszone}", $cluster);
     }
 }
 
@@ -270,19 +277,23 @@ foreach my $cluster (sort { $a->{name} cmp $b->{name} } values %$clusters)
 {
     my $name = $cluster->{name};
 
-    output_server($zonefile, "${name}.${zone}", $cluster);
+    output_server($zonefile, $jszonefile, "${name}.${zone}", "${name}.${jszone}", $cluster);
 
     if (@{$cluster->{servers}} > 1)
     {
-        output_server($zonefile, "${name}-%02d.${zone}", $cluster);
+        output_server($zonefile, $jszonefile, "${name}-%02d.${zone}", "${name}-%02d.${jszone}", $cluster);
     }
 }
 
 # Output the GeoJSON text
 $jsonfile->print(encode_json(\@json));
 
+# Output footers
+$jszonefile->print("];\n");
+
 # Close the output files
 $jsonfile->close();
+$jszonefile->close();
 $zonefile->close();
 
 # Output gdnsd configuration
@@ -341,7 +352,7 @@ if (defined($gdnsname))
                 {
                     my $number = sprintf("%02d", $index + 1);
                     my $bandwidth = $server->{bandwidth};
-                
+
                     $gdnsweightedfile->print("  ${name}-${number} = [ ${name}-${number}.${zone}., ${bandwidth} ]\n");
                 }
             }
@@ -517,7 +528,9 @@ sub compare_bandwidth
 sub output_server
 {
     my $zonefile = shift;
+    my $jszonefile = shift;
     my $name = shift;
+    my $jsname = shift;
     my $cluster = shift;
 
     while (my($index,$server) = each @{$cluster->{servers}})
@@ -525,10 +538,16 @@ sub output_server
         if ($server->{status} eq "up")
         {
             $zonefile->printf("+${name}:$server->{ipv4}:600\n", $index + 1);
+            $jszonefile->printf("  A(\"${jsname}\", \"$server->{ipv4}\", TTL(\"10m\")),\n", $index + 1);
 
             if ($server->{ipv6})
             {
+                my $ipv6 = $server->{ipv6};
+
+                $ipv6 =~ s/([0-9a-f]{4})(?=.)/\1:/ig;
+
                 $zonefile->printf("3${name}:$server->{ipv6}:600\n", $index + 1);
+                $jszonefile->printf("  AAAA(\"${jsname}\", \"${ipv6}\", TTL(\"10m\")),\n", $index + 1);
             }
         }
     }
