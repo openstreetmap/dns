@@ -66,7 +66,7 @@ data/switch2osm.org: src/switch2osm
 data/switch2osm.com: src/switch2osm
 data/stateofthemap.eu: src/stateofthemap-eu
 
-include/sshfp.js:
+include/sshfp.js: $(wildcard /etc/ssh/ssh_known_hosts)
 	bin/mksshfp
 
 origins/tile.openstreetmap.yml: bin/mkcountries lib/countries.xml bandwidth/tile.openstreetmap.yml
