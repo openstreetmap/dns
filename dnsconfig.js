@@ -45,6 +45,8 @@ OPENSTREETMAP("osm.org", REG_GANDI);
 OPENSTREETMAP("openmaps.org", REG_GANDI);
 OPENSTREETMAP("openstreetmap.io", REG_GANDI);
 OPENSTREETMAP("osm.io", REG_GANDI);
+OPENSTREETMAP("openstreetmap.li", REG_GANDI);
+OPENSTREETMAP("osm.li", REG_GANDI);
 OPENSTREETMAP("openworldmap.org", REG_GANDI);
 OPENSTREETMAP("freeosm.org", REG_GANDI);
 OPENSTREETMAP("open-maps.org", REG_GANDI);
