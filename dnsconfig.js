@@ -58,8 +58,8 @@ OPENSTREETMAP_UK("openstreetmap.co.uk", REG_GANDI);
 
 var OPENSTREETMAP_ZA = loadTemplate("openstreetmap-za");
 
-OPENSTREETMAP_UK("openstreetmap.org.za", REG_NONE);
-OPENSTREETMAP_UK("osm.org.za", REG_NONE);
+OPENSTREETMAP_ZA("openstreetmap.org.za", REG_NONE);
+OPENSTREETMAP_ZA("osm.org.za", REG_NONE);
 
 var OSMFOUNDATION = loadTemplate("osmfoundation");
 
@@ -73,7 +73,7 @@ STATEOFTHEMAP("sotm.org", REG_GANDI);
 
 var STATEOFTHEMAP_EU = loadTemplate("stateofthemap-eu");
 
-STATEOFTHEMAP("stateofthemap.eu", REG_GANDI);
+STATEOFTHEMAP_EU("stateofthemap.eu", REG_GANDI);
 
 var OPENGEODATA = loadTemplate("opengeodata");
 

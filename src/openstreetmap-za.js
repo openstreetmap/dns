@@ -58,6 +58,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("b.namibia-topo", "178.250.74.36", TTL("30m")),
   AAAA("b.namibia-topo", "2a02:1658:4:0:dad3:85ff:fe5d:875e", TTL("30m")),
   A("c.namibia-topo", "178.250.74.36", TTL("30m")),
-  AAAA("c.namibia-topo", "2a02:1658:4:0:dad3:85ff:fe5d:875e", TTL("30m")),
+  AAAA("c.namibia-topo", "2a02:1658:4:0:dad3:85ff:fe5d:875e", TTL("30m"))
 
 );
