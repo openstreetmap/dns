@@ -34,6 +34,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // Google postmaster tools verification
 
   CNAME("af323lytato5", "gv-o4v3qh5pfayqex.dv.googlehosted.com."),
+  CNAME("irzdddnmh465", "gv-cwr6bvt7xsgact.dv.googlehosted.com."),
 
   // Delegate geo.openstreetmap.org to PowerDNS
 
