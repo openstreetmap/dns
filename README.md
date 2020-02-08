@@ -3,8 +3,6 @@ OpenStreetMap DNS
 
 This repository contains the DNS zone file templates and related code for managing OpenStreetMap.org and other domain names DNS. The full list of domains are in the [Makefile](Makefile).
 
-The authoritative DNS nameservers we use are kindly run by [Bytemark](https://docs.bytemark.co.uk/article/content-dns/). We would like to thank [Bytemark](https://www.bytemark.co.uk/) for their many years of support.
-
 ## Standard DNS Zone Files
 
 The [zone files templates](src/) are in [tinydns-data](http://cr.yp.to/djbdns/tinydns-data.html) syntax and are written out by the [Makefile](Makefile).
