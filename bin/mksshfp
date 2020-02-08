@@ -18,8 +18,7 @@ if (-f "/etc/ssh/ssh_known_hosts")
             my $type = $3;
             my $value = $4;
 
-            if ($type == 2 &&
-                ($algorithm == 3 || $algorithm == 4))
+            if ($type == 2 && $algorithm == 1)
             {
                 print SSHFP_JS qq|  SSHFP("${host}", ${algorithm}, ${type}, "${value}"),\n|;
             }
