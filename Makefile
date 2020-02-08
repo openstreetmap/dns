@@ -16,7 +16,7 @@ preview_bytemark: data/openstreetmap.org data/openstreetmap.com data/openstreetm
 		  data/tile.openstreetmap.org \
 		  data/render.openstreetmap.org
 
-preview_cloudflare: data/tile.openstreetmap.org data/render.openstreetmap.org
+preview_cloudflare: include/sshfp.js include/tile.js include/render.js
 	dnscontrol preview
 
 update: update_bytemark update_cloudflare update_geodns
@@ -24,7 +24,7 @@ update: update_bytemark update_cloudflare update_geodns
 update_bytemark: preview_bytemark
 	bin/update
 
-update_cloudflare: data/tile.openstreetmap.org data/render.openstreetmap.org
+update_cloudflare: include/sshfp.js include/tile.js include/render.js
 	dnscontrol push --providers cloudflare
 
 update_geodns: gdns/tile.map gdns/tile.resource gdns/tile.weighted
@@ -66,13 +66,16 @@ data/switch2osm.org: src/switch2osm
 data/switch2osm.com: src/switch2osm
 data/stateofthemap.eu: src/stateofthemap-eu
 
+include/sshfp.js:
+	bin/mksshfp
+
 origins/tile.openstreetmap.yml: bin/mkcountries lib/countries.xml bandwidth/tile.openstreetmap.yml
 	bin/mkcountries bandwidth/tile.openstreetmap.yml origins/tile.openstreetmap.yml
 
-data/tile.openstreetmap.org json/tile.openstreetmap.org.json origins/render.openstreetmap.yml gdns/tile.map gdns/tile.resource gdns/tile.weighted: bin/mkgeo origins/tile.openstreetmap.yml src/tile.openstreetmap
+data/tile.openstreetmap.org include/tilse.js json/tile.openstreetmap.org.json origins/render.openstreetmap.yml gdns/tile.map gdns/tile.resource gdns/tile.weighted: bin/mkgeo origins/tile.openstreetmap.yml src/tile.openstreetmap
 	bin/mkgeo origins/tile.openstreetmap.yml src/tile.openstreetmap tile.openstreetmap.org tile origins/render.openstreetmap.yml tile
 
-data/render.openstreetmap.org json/render.openstreetmap.org.json: bin/mkgeo origins/render.openstreetmap.yml src/render.openstreetmap
+data/render.openstreetmap.org include/render.js json/render.openstreetmap.org.json: bin/mkgeo origins/render.openstreetmap.yml src/render.openstreetmap
 	bin/mkgeo origins/render.openstreetmap.yml src/render.openstreetmap render.openstreetmap.org render origins/total.openstreetmap.yml
 
 data/%:

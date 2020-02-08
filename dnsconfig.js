@@ -30,10 +30,11 @@ function loadTemplate(template) {
 
 var OPENSTREETMAP = loadTemplate("openstreetmap");
 
+require("include/sshfp.js");
 require("include/tile.js");
 require("include/render.js");
 
-OPENSTREETMAP("openstreetmap.org", REG_GANDI, TILE_RECORDS, RENDER_RECORDS);
+OPENSTREETMAP("openstreetmap.org", REG_GANDI, SSHFP_RECORDS, TILE_RECORDS, RENDER_RECORDS);
 OPENSTREETMAP("openstreetmap.com", REG_GANDI);
 OPENSTREETMAP("openstreetmap.net", REG_GANDI);
 OPENSTREETMAP("openstreetmap.ca", REG_GANDI);
