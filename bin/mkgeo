@@ -544,7 +544,7 @@ sub output_server
             {
                 my $ipv6 = $server->{ipv6};
 
-                $ipv6 =~ s/([0-9a-f]{4})(?=.)/\1:/ig;
+                $ipv6 =~ s/([0-9a-f]{4})(?=.)/$1:/ig;
 
                 $zonefile->printf("3${name}:$server->{ipv6}:600\n", $index + 1);
                 $jszonefile->printf("  AAAA(\"${jsname}\", \"${ipv6}\", TTL(\"10m\")),\n", $index + 1);
