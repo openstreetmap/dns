@@ -212,60 +212,64 @@ my $jsonfile = IO::File->new("> json/${zone}.json") || die "$!";
 # Output headers
 $jszonefile->print("var \U${jszone}\E_RECORDS = [\n");
 
-# Output details for each country
-foreach my $origin (sort { $a->{name} cmp $b->{name} } values %$origins)
+# Skip outputting server map if gdnsd is doing that
+if (!defined($gdnsname))
 {
-    my $cluster = $origin->{cluster};
-    my $clon = $origin->{lon};
-    my $clat = $origin->{lat};
-    my $slon = $cluster->{lon};
-    my $slat = $cluster->{lat};
-
-    if ($clon > 0 && $slon < 0 && 360 + $slon - $clon < $clon - $slon)
+    # Output details for each country
+    foreach my $origin (sort { $a->{name} cmp $b->{name} } values %$origins)
     {
-        $slon = $slon + 360;
-    }
-    elsif ($slon > 0 && $clon < 0 && 360 + $clon - $slon < $slon - $clon)
-    {
-        $clon = $clon + 360;
-    }
+        my $cluster = $origin->{cluster};
+        my $clon = $origin->{lon};
+        my $clat = $origin->{lat};
+        my $slon = $cluster->{lon};
+        my $slat = $cluster->{lat};
 
-    $zonefile->print("# $origin->{name}\n");
-    $zonefile->print("C\L$origin->{code}\E.${zone}:$cluster->{name}.${zone}:600\n");
-
-    $jszonefile->print("  CNAME(\"\L$origin->{code}\E.${jszone}\", \"$cluster->{name}.${zone}.\", TTL(\"10m\")),\n");
-
-    push @json, {
-        type => "Feature",
-        geometry => {
-            type => "LineString",
-            coordinates => [ [ $clon, $clat ], [ $slon, $slat ] ]
-        },
-        properties => {
-            origin => $origin->{name},
-            server => $cluster->{name},
-            colour => $cluster->{colour}
+        if ($clon > 0 && $slon < 0 && 360 + $slon - $clon < $clon - $slon)
+        {
+            $slon = $slon + 360;
         }
-    };
+        elsif ($slon > 0 && $clon < 0 && 360 + $clon - $slon < $slon - $clon)
+        {
+            $clon = $clon + 360;
+        }
 
-    $targetorigins->{$cluster->{name}}->{bandwidth} += $origin->{bandwidth};
-}
+        $zonefile->print("# $origin->{name}\n");
+        $zonefile->print("C\L$origin->{code}\E.${zone}:$cluster->{name}.${zone}:600\n");
 
-# Header for default records
-$zonefile->print("# Unknown origins\n");
+        $jszonefile->print("  CNAME(\"\L$origin->{code}\E.${jszone}\", \"$cluster->{name}.${zone}.\", TTL(\"10m\")),\n");
 
-# Output default records for IPs that can't be mapped to a country
-foreach my $cluster (sort { $a->{name} cmp $b->{name} } values %$clusters)
-{
-    my $name = $cluster->{name};
+        push @json, {
+            type => "Feature",
+            geometry => {
+                type => "LineString",
+                coordinates => [ [ $clon, $clat ], [ $slon, $slat ] ]
+            },
+            properties => {
+                origin => $origin->{name},
+                server => $cluster->{name},
+                colour => $cluster->{colour}
+            }
+        };
 
-    if (my $default = $cluster->{default})
-    {
-        output_server($zonefile, $jszonefile, "${default}.${zone}", "${default}.${jszone}", $cluster);
+        $targetorigins->{$cluster->{name}}->{bandwidth} += $origin->{bandwidth};
     }
-    elsif (exists($cluster->{default}))
+
+    # Header for default records
+    $zonefile->print("# Unknown origins\n");
+
+    # Output default records for IPs that can't be mapped to a country
+    foreach my $cluster (sort { $a->{name} cmp $b->{name} } values %$clusters)
     {
-        output_server($zonefile, $jszonefile, "${zone}", "${jszone}", $cluster);
+        my $name = $cluster->{name};
+
+        if (my $default = $cluster->{default})
+        {
+            output_server($zonefile, $jszonefile, "${default}.${zone}", "${default}.${jszone}", $cluster);
+        }
+        elsif (exists($cluster->{default}))
+        {
+            output_server($zonefile, $jszonefile, "${zone}", "${jszone}", $cluster);
+        }
     }
 }
 
