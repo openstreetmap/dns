@@ -359,13 +359,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Wiki servers
 
-  A("ouroboros", "130.117.76.4"),
-  AAAA("ouroboros", "2001:978:2:2c::172:4"),
-  // A("wiki", "130.117.76.4", TTL("10m")),
-  // AAAA("wiki", "2001:978:2:2c::172:4", TTL("10m")),
-  A("ouroboros.ams", "10.0.48.4"),
-  A("ouroboros.oob", "10.0.49.4"),
-
   A("tabaluga", "130.117.76.14"),
   AAAA("tabaluga", "2001:978:2:2c::172:e"),
   A("wiki", "130.117.76.14", TTL("10m")),
