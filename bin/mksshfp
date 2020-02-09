@@ -8,7 +8,7 @@ if (-f "/etc/ssh/ssh_known_hosts")
 
     while (my $line = <SSHFP>)
     {
-        if ($line =~ /^(\S+) IN SSHFP (\d+) (\d+) ([0-9A-F]+)$/)
+        if ($line =~ /^(\S+)\.openstreetmap\.org IN SSHFP (\d+) (\d+) ([0-9A-F]+)$/)
         {
             my $host = $1;
             my $algorithm = $2;
