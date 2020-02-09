@@ -1,9 +1,6 @@
 #!/usr/bin/perl
 
-
-open(SSHFP_JS, ">", "include/sshfp.js") || die $!;
-
-print SSHFP_JS qq|var SSHFP_RECORDS = [\n|;
+my %hosts;
 
 if (-f "/etc/ssh/ssh_known_hosts")
 {
@@ -18,9 +15,34 @@ if (-f "/etc/ssh/ssh_known_hosts")
             my $type = $3;
             my $value = $4;
 
-            if ($type == 2 && $algorithm == 1)
+            if ($type == 2 && $algorithm != 2)
             {
-                print SSHFP_JS qq|  SSHFP("${host}", ${algorithm}, ${type}, "${value}"),\n|;
+                my $wanted = 0;
+
+                if (exists($hosts{$host}))
+                {
+                    if ($algorithm == 3)
+                    {
+                        $wanted = 1;
+                    }
+                    elsif ($algorithm == 4 && $hosts{$host}->{algorithm} != 3)
+                    {
+                        $wanted = 1;
+                    }
+                }
+                else
+                {
+                    $wanted = 1;
+                }
+
+                if ($wanted)
+                {
+                    $hosts{$host} = {
+                        algorithm => $algorithm,
+                        type => $type,
+                        value => $value
+                    };
+                }
             }
         }
         else
@@ -30,6 +52,19 @@ if (-f "/etc/ssh/ssh_known_hosts")
     }
 
     close(SSHFP);
+}
+
+open(SSHFP_JS, ">", "include/sshfp.js") || die $!;
+
+print SSHFP_JS qq|var SSHFP_RECORDS = [\n|;
+
+foreach my $host (sort keys %hosts)
+{
+    my $algorithm = $hosts{$host}->{algorithm};
+    my $type = $hosts{$host}->{type};
+    my $value = $hosts{$host}->{value};
+
+    print SSHFP_JS qq|  SSHFP("${host}", ${algorithm}, ${type}, "${value}"),\n|;
 }
 
 print SSHFP_JS qq|];\n|;
