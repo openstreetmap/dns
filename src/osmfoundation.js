@@ -48,16 +48,16 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Main web server and it's aliases
 
-  A("@", "193.60.236.19", TTL("10m")),
-  A("old", "193.60.236.19", TTL("10m")),
-  A("www", "193.60.236.19", TTL("10m")),
-  A("wiki", "193.60.236.19", TTL("10m")),
-  A("blog", "193.60.236.19", TTL("10m")),
-  A("crm", "193.60.236.19", TTL("10m")),
-  A("join", "193.60.236.19", TTL("10m")),
-  A("board", "193.60.236.19", TTL("10m")),
-  A("dwg", "193.60.236.19", TTL("10m")),
-  A("mwg", "193.60.236.19", TTL("10m")),
-  A("operations", "193.60.236.19", TTL("10m"))
+  A("@", RIDLEY_IPV4, TTL("10m")),
+  A("old", RIDLEY_IPV4, TTL("10m")),
+  A("www", RIDLEY_IPV4, TTL("10m")),
+  A("wiki", RIDLEY_IPV4, TTL("10m")),
+  A("blog", RIDLEY_IPV4, TTL("10m")),
+  A("crm", RIDLEY_IPV4, TTL("10m")),
+  A("join", RIDLEY_IPV4, TTL("10m")),
+  A("board", RIDLEY_IPV4, TTL("10m")),
+  A("dwg", RIDLEY_IPV4, TTL("10m")),
+  A("mwg", RIDLEY_IPV4, TTL("10m")),
+  A("operations", RIDLEY_IPV4, TTL("10m"))
 
 );

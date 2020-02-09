@@ -28,6 +28,8 @@ function loadTemplate(template) {
   };
 }
 
+require("src/hosts.js");
+
 var OPENSTREETMAP = loadTemplate("openstreetmap");
 
 require("include/sshfp.js");

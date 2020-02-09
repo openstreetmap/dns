@@ -20,20 +20,20 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Main web server and it's aliases
 
-  A("@", "193.60.236.19", TTL("10m")),
-  A("www", "193.60.236.19", TTL("10m")),
-  A("2020", "193.60.236.19", TTL("10m")),
-  A("2019", "193.60.236.19", TTL("10m")),
-  A("2018", "193.60.236.19", TTL("10m")),
-  A("2017", "193.60.236.19", TTL("10m")),
-  A("2016", "193.60.236.19", TTL("10m")),
-  A("2014", "193.60.236.19", TTL("10m")),
-  A("2013", "193.60.236.19", TTL("10m")),
-  A("2012", "193.60.236.19", TTL("10m")),
-  A("2011", "193.60.236.19", TTL("10m")),
-  A("2010", "193.60.236.19", TTL("10m")),
-  A("2009", "193.60.236.19", TTL("10m")),
-  A("2008", "193.60.236.19", TTL("10m")),
-  A("2007", "193.60.236.19", TTL("10m"))
+  A("@", RIDLEY_IPV4, TTL("10m")),
+  A("www", RIDLEY_IPV4, TTL("10m")),
+  A("2020", RIDLEY_IPV4, TTL("10m")),
+  A("2019", RIDLEY_IPV4, TTL("10m")),
+  A("2018", RIDLEY_IPV4, TTL("10m")),
+  A("2017", RIDLEY_IPV4, TTL("10m")),
+  A("2016", RIDLEY_IPV4, TTL("10m")),
+  A("2014", RIDLEY_IPV4, TTL("10m")),
+  A("2013", RIDLEY_IPV4, TTL("10m")),
+  A("2012", RIDLEY_IPV4, TTL("10m")),
+  A("2011", RIDLEY_IPV4, TTL("10m")),
+  A("2010", RIDLEY_IPV4, TTL("10m")),
+  A("2009", RIDLEY_IPV4, TTL("10m")),
+  A("2008", RIDLEY_IPV4, TTL("10m")),
+  A("2007", RIDLEY_IPV4, TTL("10m"))
 
 );

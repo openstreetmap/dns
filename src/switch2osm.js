@@ -8,7 +8,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Main web server and it's aliases
 
-  A("@", "193.60.236.19", TTL("10m")),
-  A("www", "193.60.236.19", TTL("10m"))
+  A("@", RIDLEY_IPV4, TTL("10m")),
+  A("www", RIDLEY_IPV4, TTL("10m"))
 
 );
