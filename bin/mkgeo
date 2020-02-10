@@ -212,48 +212,51 @@ my $jsonfile = IO::File->new("> json/${zone}.json") || die "$!";
 # Output headers
 $jszonefile->print("var \U${jszone}\E_RECORDS = [\n");
 
-# Skip outputting server map if gdnsd is doing that
-if (!defined($gdnsname))
+# Output details for each country
+foreach my $origin (sort { $a->{name} cmp $b->{name} } values %$origins)
 {
-    # Output details for each country
-    foreach my $origin (sort { $a->{name} cmp $b->{name} } values %$origins)
+    my $cluster = $origin->{cluster};
+    my $clon = $origin->{lon};
+    my $clat = $origin->{lat};
+    my $slon = $cluster->{lon};
+    my $slat = $cluster->{lat};
+
+    if ($clon > 0 && $slon < 0 && 360 + $slon - $clon < $clon - $slon)
     {
-        my $cluster = $origin->{cluster};
-        my $clon = $origin->{lon};
-        my $clat = $origin->{lat};
-        my $slon = $cluster->{lon};
-        my $slat = $cluster->{lat};
+        $slon = $slon + 360;
+    }
+    elsif ($slon > 0 && $clon < 0 && 360 + $clon - $slon < $slon - $clon)
+    {
+        $clon = $clon + 360;
+    }
 
-        if ($clon > 0 && $slon < 0 && 360 + $slon - $clon < $clon - $slon)
-        {
-            $slon = $slon + 360;
-        }
-        elsif ($slon > 0 && $clon < 0 && 360 + $clon - $slon < $slon - $clon)
-        {
-            $clon = $clon + 360;
-        }
-
+    if (!defined($gdnsname))
+    {
         $zonefile->print("# $origin->{name}\n");
         $zonefile->print("C\L$origin->{code}\E.${zone}:$cluster->{name}.${zone}:600\n");
 
         $jszonefile->print("  CNAME(\"\L$origin->{code}\E.${jszone}\", \"$cluster->{name}.${zone}.\", TTL(\"10m\")),\n");
-
-        push @json, {
-            type => "Feature",
-            geometry => {
-                type => "LineString",
-                coordinates => [ [ $clon, $clat ], [ $slon, $slat ] ]
-            },
-            properties => {
-                origin => $origin->{name},
-                server => $cluster->{name},
-                colour => $cluster->{colour}
-            }
-        };
-
-        $targetorigins->{$cluster->{name}}->{bandwidth} += $origin->{bandwidth};
     }
 
+    push @json, {
+        type => "Feature",
+        geometry => {
+            type => "LineString",
+            coordinates => [ [ $clon, $clat ], [ $slon, $slat ] ]
+        },
+        properties => {
+            origin => $origin->{name},
+            server => $cluster->{name},
+            colour => $cluster->{colour}
+        }
+    };
+
+    $targetorigins->{$cluster->{name}}->{bandwidth} += $origin->{bandwidth};
+}
+
+# Skip default records if we don't need them
+if (!defined($gdnsname))
+{
     # Header for default records
     $zonefile->print("# Unknown origins\n");
 
