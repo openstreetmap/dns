@@ -198,10 +198,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("bowser", BOWSER_IPV4),
 
-  CNAME("tile", QUALIFY("tile.geo")),
-  CNAME("a.tile", QUALIFY("tile.geo")),
-  CNAME("b.tile", QUALIFY("tile.geo")),
-  CNAME("c.tile", QUALIFY("tile.geo")),
+  CNAME("tile", "tile.geo.openstreetmap.org."),
+  CNAME("a.tile", "tile.geo.openstreetmap.org."),
+  CNAME("b.tile", "tile.geo.openstreetmap.org."),
+  CNAME("c.tile", "tile.geo.openstreetmap.org."),
 
   // Services machine
 
