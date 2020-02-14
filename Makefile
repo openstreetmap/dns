@@ -13,10 +13,10 @@ preview_bytemark: data/openstreetmap.org data/openstreetmap.com data/openstreetm
 		  data/opengeodata.org \
 		  data/switch2osm.org data/switch2osm.com \
 		  data/tile.openstreetmap.org \
-		  data/tile.openstreetmap.org \
-		  data/render.openstreetmap.org
+		  data/render.openstreetmap.org \
+		  data/nominatim.openstreetmap.org
 
-preview_cloudflare: include/sshfp.js include/tile.js include/render.js
+preview_cloudflare: include/sshfp.js include/tile.js include/render.js include/nominatim.js
 	dnscontrol preview
 
 update: update_bytemark update_cloudflare update_geodns
@@ -24,10 +24,10 @@ update: update_bytemark update_cloudflare update_geodns
 update_bytemark: preview_bytemark
 	bin/update
 
-update_cloudflare: include/sshfp.js include/tile.js include/render.js
+update_cloudflare: include/sshfp.js include/tile.js include/render.js include/nominatim.js
 	dnscontrol push --providers cloudflare
 
-update_geodns: gdns/tile.map gdns/tile.resource gdns/tile.weighted
+update_geodns: gdns/tile.map gdns/tile.resource gdns/tile.weighted gdns/nominatim.map gdns/nominatim.resource gdns/nominatim.weighted
 	parallel --will-cite rsync --quiet --recursive --checksum gdns/ {}::geodns ::: ${GEODNS_SERVERS}
 
 clean:
@@ -72,11 +72,17 @@ include/sshfp.js: bin/mksshfp $(wildcard /etc/ssh/ssh_known_hosts)
 origins/tile.openstreetmap.yml: bin/mkcountries lib/countries.xml bandwidth/tile.openstreetmap.yml
 	bin/mkcountries bandwidth/tile.openstreetmap.yml origins/tile.openstreetmap.yml
 
-data/tile.openstreetmap.org include/tilse.js json/tile.openstreetmap.org.json origins/render.openstreetmap.yml gdns/tile.map gdns/tile.resource gdns/tile.weighted: bin/mkgeo origins/tile.openstreetmap.yml src/tile.openstreetmap
+data/tile.openstreetmap.org include/tile.js json/tile.openstreetmap.org.json origins/render.openstreetmap.yml gdns/tile.map gdns/tile.resource gdns/tile.weighted: bin/mkgeo origins/tile.openstreetmap.yml src/tile.openstreetmap
 	bin/mkgeo origins/tile.openstreetmap.yml src/tile.openstreetmap tile.openstreetmap.org tile origins/render.openstreetmap.yml tile
 
 data/render.openstreetmap.org include/render.js json/render.openstreetmap.org.json: bin/mkgeo origins/render.openstreetmap.yml src/render.openstreetmap
-	bin/mkgeo origins/render.openstreetmap.yml src/render.openstreetmap render.openstreetmap.org render origins/total.openstreetmap.yml
+	bin/mkgeo origins/render.openstreetmap.yml src/render.openstreetmap render.openstreetmap.org render origins/tile-total.openstreetmap.yml
+
+origins/nominatim.openstreetmap.yml: bin/mkcountries lib/countries.xml bandwidth/nominatim.openstreetmap.yml
+	bin/mkcountries bandwidth/nominatim.openstreetmap.yml origins/nominatim.openstreetmap.yml
+
+data/nominatim.openstreetmap.org include/nominatim.js json/nominatim.openstreetmap.org.json origins/nominatim-total.openstreetmap.yml gdns/nominatim.map gdns/nominatim.resource gdns/nominatim.weighted: bin/mkgeo origins/nominatim.openstreetmap.yml src/nominatim.openstreetmap
+	bin/mkgeo origins/nominatim.openstreetmap.yml src/nominatim.openstreetmap nominatim.openstreetmap.org nominatim origins/nominatim-total.openstreetmap.yml nominatim
 
 data/%:
 	sed -r -e 's/$(notdir $<)(:|$$)/$(notdir $@)\1/g' < $< > $@

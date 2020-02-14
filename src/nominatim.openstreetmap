@@ -1,0 +1,20 @@
+amsterdam:
+  lat: 52.33724625
+  lon: 4.93370796776345
+  statuscake:
+    - 2217359
+    - 2217360
+  colour: "#8dd3c7"
+  bandwidth: 1
+  ipv4: 130.117.76.9
+  ipv6: 200109780002002c0000000001720009
+
+slough:
+  lat: 51.5228002
+  lon: -0.62151043832233
+  statuscake:
+    - 2217363
+    - 2217364
+  colour: "#bebada"
+  bandwidth: 0.0025
+  ipv4: 193.60.236.18
