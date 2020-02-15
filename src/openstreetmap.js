@@ -147,16 +147,15 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // Nominatim servers
 
   A("pummelzacken", PUMMELZACKEN_IPV4),
-  // A("nominatim", PUMMELZACKEN_IPV4, TTL("10m")),
   A("pummelzacken.ucl", PUMMELZACKEN_INTERNAL),
   A("pummelzacken.oob", PUMMELZACKEN_OOB),
 
   A("dulcy", DULCY_IPV4),
   AAAA("dulcy", DULCY_IPV6),
-  A("nominatim", DULCY_IPV4, TTL("10m")),
-  AAAA("nominatim", DULCY_IPV6, TTL("10m")),
   A("dulcy.ams", DULCY_INTERNAL),
   A("dulcy.oob", DULCY_OOB),
+
+  CNAME("nominatim", "nominatim.geo.openstreetmap.org."),
 
   // Taginfo server
 
