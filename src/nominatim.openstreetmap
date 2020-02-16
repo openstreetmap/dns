@@ -16,5 +16,5 @@ slough:
     - 2217363
     - 2217364
   colour: "#bebada"
-  bandwidth: 0.0025
+  bandwidth: 0.005
   ipv4: 193.60.236.18
