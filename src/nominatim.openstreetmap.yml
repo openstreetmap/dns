@@ -7,7 +7,7 @@ amsterdam:
   colour: "#8dd3c7"
   bandwidth: 1
   ipv4: 130.117.76.9
-  ipv6: 200109780002002c0000000001720009
+  ipv6: 2001:978:2:2c::172:9
 
 slough:
   lat: 51.5228002

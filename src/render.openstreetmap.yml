@@ -21,7 +21,7 @@ odin:
   colour: "#7c1f7c"
   bandwidth: 800
   ipv4: 130.117.76.15
-  ipv6: 200109780002002c000000000172000F
+  ipv6: 2001:978:2:2c::172:f
   default: ""
   preferred:
     origins:
@@ -48,7 +48,7 @@ scorch:
   colour: "#bf8230"
   bandwidth: 400
   ipv4: 176.31.235.79
-  ipv6: 200141d00002fc4f0000000000000001
+  ipv6: 2001:41d0:2:fc4f::1
   default: ""
   preferred:
     origins:
@@ -76,7 +76,7 @@ pyrene:
   colour: "#269926"
   bandwidth: 600
   ipv4: 140.211.167.98
-  ipv6: 2605bc8030100700000000008cd3a762
+  ipv6: 2605:bc80:3010:700::8cd3:a762
   default: ""
   preferred:
     origins:

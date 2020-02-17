@@ -534,11 +534,7 @@ sub output_server
 
             if ($server->{ipv6})
             {
-                my $ipv6 = $server->{ipv6};
-
-                $ipv6 =~ s/([0-9a-f]{4})(?=.)/$1:/ig;
-
-                $zonefile->printf("  AAAA(\"${name}\", \"${ipv6}\", TTL(\"10m\")),\n", $index + 1);
+                $zonefile->printf("  AAAA(\"${name}\", \"$server->{ipv6}\", TTL(\"10m\")),\n", $index + 1);
             }
         }
     }
