@@ -448,6 +448,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("fume", FUME_IPV4),
   A("balerion", BALERION_IPV4),
   A("naga", NAGA_IPV4),
+  A("takhisis", TAKHISIS_IPV4),
+  AAAA("takhisis", TAKHISIS_IPV6),
 
   // Blades
 
