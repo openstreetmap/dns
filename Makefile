@@ -23,14 +23,14 @@ include/sshfp.js: bin/mksshfp $(wildcard /etc/ssh/ssh_known_hosts)
 origins/tile.openstreetmap.yml: bin/mkcountries lib/countries.xml bandwidth/tile.openstreetmap.yml
 	bin/mkcountries bandwidth/tile.openstreetmap.yml origins/tile.openstreetmap.yml
 
-include/tile.js json/tile.openstreetmap.org.json origins/render.openstreetmap.yml gdns/tile.map gdns/tile.resource gdns/tile.weighted: bin/mkgeo origins/tile.openstreetmap.yml src/tile.openstreetmap
-	bin/mkgeo origins/tile.openstreetmap.yml src/tile.openstreetmap tile origins/render.openstreetmap.yml tile
+include/tile.js json/tile.openstreetmap.org.json origins/render.openstreetmap.yml gdns/tile.map gdns/tile.resource gdns/tile.weighted: bin/mkgeo origins/tile.openstreetmap.yml src/tile.openstreetmap.yml
+	bin/mkgeo origins/tile.openstreetmap.yml src/tile.openstreetmap.yml tile origins/render.openstreetmap.yml tile
 
-include/render.js json/render.openstreetmap.org.json: bin/mkgeo origins/render.openstreetmap.yml src/render.openstreetmap
-	bin/mkgeo origins/render.openstreetmap.yml src/render.openstreetmap render origins/tile-total.openstreetmap.yml
+include/render.js json/render.openstreetmap.org.json: bin/mkgeo origins/render.openstreetmap.yml src/render.openstreetmap.yml
+	bin/mkgeo origins/render.openstreetmap.yml src/render.openstreetmap.yml render origins/tile-total.openstreetmap.yml
 
 origins/nominatim.openstreetmap.yml: bin/mkcountries lib/countries.xml bandwidth/nominatim.openstreetmap.yml
 	bin/mkcountries bandwidth/nominatim.openstreetmap.yml origins/nominatim.openstreetmap.yml
 
-include/nominatim.js json/nominatim.openstreetmap.org.json origins/nominatim-total.openstreetmap.yml gdns/nominatim.map gdns/nominatim.resource gdns/nominatim.weighted: bin/mkgeo origins/nominatim.openstreetmap.yml src/nominatim.openstreetmap
-	bin/mkgeo origins/nominatim.openstreetmap.yml src/nominatim.openstreetmap nominatim origins/nominatim-total.openstreetmap.yml nominatim
+include/nominatim.js json/nominatim.openstreetmap.org.json origins/nominatim-total.openstreetmap.yml gdns/nominatim.map gdns/nominatim.resource gdns/nominatim.weighted: bin/mkgeo origins/nominatim.openstreetmap.yml src/nominatim.openstreetmap.yml
+	bin/mkgeo origins/nominatim.openstreetmap.yml src/nominatim.openstreetmap.yml nominatim origins/nominatim-total.openstreetmap.yml nominatim
