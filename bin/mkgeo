@@ -348,7 +348,7 @@ if (defined($gdnsname))
                     my $number = sprintf("%02d", $index + 1);
                     my $bandwidth = $server->{bandwidth};
 
-                    $gdnsweightedfile->print("  ${name}-${number} = [ ${name}-${number}.${zone}., ${bandwidth} ]\n");
+                    $gdnsweightedfile->print("  ${name}-${number} = [ ${name}-${number}.${zone}.openstreetmap.org., ${bandwidth} ]\n");
                 }
             }
 
@@ -358,7 +358,7 @@ if (defined($gdnsname))
         }
         else
         {
-            $gdnsresourcefile->print("    ${name} => ${name}.${zone}.\n");
+            $gdnsresourcefile->print("    ${name} => ${name}.${zone}.openstreetmap.org.\n");
         }
     }
 
