@@ -29,17 +29,26 @@ moscow:
     countries:
       - RU
 
-# Amsterdam, NL
+# Amsterdam/Ede, NL
+# Amsterdam @ 52.37306,4.89222
+# Ede @ 52.0458265,5.6702011
 # BW Limit: 1000Mb/s
-amsterdam:
-  lat: 52.37306
-  lon: 4.89222
-  statuscake:
-    - 2217259
-    - 2217260
+netherlands:
+  lat: 52.20944325
+  lon: 5.28121055
   colour: "#bebada"
-  bandwidth: 60
-  ipv4: 134.90.146.26
+  servers:
+    - statuscake:
+        - 2217259
+        - 2217260
+      bandwidth: 60
+      ipv4: 134.90.146.26
+    - statuscake:
+        - 5406587
+        - 5406588
+      bandwidth: 60
+      ipv4: 31.3.110.20
+      ipv6: 2a037900011100000031000301100020
 
 # Oslo, NO
 # BW Limit: 1000Mb/s
