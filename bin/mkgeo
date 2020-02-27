@@ -205,7 +205,7 @@ my @json;
 
 # Open output files
 my $zonefile = IO::File->new("> include/${zone}.js") || die "$!";
-my $jsonfile = IO::File->new("> json/${zone}.json") || die "$!";
+my $jsonfile = IO::File->new("> json/${zone}.openstreetmap.org.json") || die "$!";
 
 # Output headers
 $zonefile->print("var \U${zone}\E_RECORDS = [\n");
