@@ -60,7 +60,7 @@ rhaegal:
   statuscake:
     - 3343399
   colour: "#a1b92e"
-  bandwidth: 400
+  bandwidth: 200
   ipv4: 161.53.248.77
   default: ""
   preferred:
