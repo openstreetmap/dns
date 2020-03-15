@@ -324,10 +324,9 @@ aalborg:
     - 2217289
     - 2217290
   colour: "#80b1d3"
-  bandwidth: 160
+  bandwidth: 80
   ipv4: 130.225.254.109
   ipv6: 2001:878:346::109
-  default: "xx"
 
 # Zaragoza, ES
 zaragoza:
