@@ -123,6 +123,12 @@ france:
       bandwidth: 150
       name: naga
       ipv4: 185.116.130.151
+    - statuscake:
+        - 5434796
+        - 5434797
+      bandwidth: 40
+      name: neak
+      ipv4: 89.234.177.142
   preferred:
     countries:
       - FR
