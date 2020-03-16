@@ -99,7 +99,7 @@ france:
     - statuscake:
         - 3351567
         - 3351569
-      bandwidth: 100
+      bandwidth: 150
       name: noomoahk
       ipv4: 91.224.148.166
       ipv6: 2a03:7220:8080:a600::1
