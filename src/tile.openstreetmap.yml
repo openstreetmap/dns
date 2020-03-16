@@ -275,13 +275,22 @@ london:
 corvallis:
   lat: 44.5639267
   lon: -123.274707837676
-  statuscake:
-    - 2217287
-    - 2217288
   colour: "#6a3d9a"
-  bandwidth: 200
-  ipv4: 140.211.167.105
-  ipv6: 2605:bc80:3010:700::8cde:a769
+  servers:
+    - statuscake:
+       - 5434496
+       - 5434497
+      bandwidth: 100
+      name: stormfly-01
+      ipv4: 140.211.167.104
+      ipv6: 2605:bc80:3010:700::8cde:a768
+    - statuscake:
+       - 2217287
+       - 2217288
+      bandwidth: 200
+      name: stormfly-02
+      ipv4: 140.211.167.105
+      ipv6: 2605:bc80:3010:700::8cde:a769
   preferred:
     countries:
       - US
