@@ -454,6 +454,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("naga", NAGA_IPV4),
   A("takhisis", TAKHISIS_IPV4),
   AAAA("takhisis", TAKHISIS_IPV6),
+  A("gorwen", GORWEN_IPV4),
+  AAAA("gorwen", GORWEN_IPV6),
 
   // Blades
 
