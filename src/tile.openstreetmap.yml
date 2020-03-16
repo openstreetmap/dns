@@ -280,7 +280,7 @@ corvallis:
     - statuscake:
        - 5434496
        - 5434497
-      bandwidth: 100
+      bandwidth: 200
       name: stormfly-01
       ipv4: 140.211.167.104
       ipv6: 2605:bc80:3010:700::8cde:a768
