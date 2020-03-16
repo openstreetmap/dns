@@ -544,4 +544,17 @@ pilsen:
   bandwidth: 30
   ipv4: 147.228.60.16
 
+# Bogotá, CO
+bogota:
+  lat: 4.68067405
+  lon: -74.04102344908512
+  statuscake:
+    - 5434641
+    - 5434642
+  colour: "#d9d9d9"
+  bandwidth: 30
+  name: gorwen
+  ipv4: 200.25.1.70
+  ipv6: 2800:1e0:a01:a006::6f
+
 # Spare colours:
