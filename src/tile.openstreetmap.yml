@@ -532,7 +532,7 @@ curitiba:
     - 3945882
     - 3945883
   colour: "#d9d9d9"
-  bandwidth: 80
+  bandwidth: 60
   ipv4: 200.236.31.207
   ipv6: 2801:82:80ff:8002:216:ccff:feaa:21
   allowed:
@@ -558,7 +558,7 @@ bogota:
     - 5434641
     - 5434642
   colour: "#d9d9d9"
-  bandwidth: 30
+  bandwidth: 60
   name: gorwen
   ipv4: 200.25.1.70
   ipv6: 2800:1e0:a01:a006::6f
