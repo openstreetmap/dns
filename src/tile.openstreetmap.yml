@@ -569,5 +569,8 @@ bogota:
   name: gorwen
   ipv4: 200.25.1.70
   ipv6: 2800:1e0:a01:a006::6f
+  allowed:
+    continents:
+      - SA
 
 # Spare colours:
