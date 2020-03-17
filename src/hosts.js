@@ -109,7 +109,8 @@ var LONGMA_IPV6 = "2001:e10:2000:240::7";
 var MERAXES_IPV4 = "51.15.185.90";
 var MERAXES_IPV6 = "2001:bc8:2d57::aa1e:84ff:fe72:e660";
 
-var NAGA_IPV4 = "185.116.130.151";
+var NAGA_IPV4 = "45.13.104.40";
+var NAGA_IPV6 = "2a0b:cbc0:1101:1::41";
 
 var NEAK_IPV4 = "89.234.177.142";
 
