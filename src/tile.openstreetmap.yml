@@ -573,14 +573,22 @@ pilsen:
 bogota:
   lat: 4.68067405
   lon: -74.04102344908512
-  statuscake:
-    - 5434641
-    - 5434642
   colour: "#33a02c"
-  bandwidth: 60
-  name: gorwen
-  ipv4: 200.25.1.70
-  ipv6: 2800:1e0:a01:a006::6f
+  servers:
+    - statuscake:
+        - 5434641
+        - 5434642
+      bandwidth: 60
+      name: gorwen
+      ipv4: 200.25.1.70
+      ipv6: 2800:1e0:a01:a006::6f
+    - statuscake:
+        - 5437704
+        - 5437705
+      bandwidth: 60
+      name: glaedr
+      ipv4: 200.25.1.71
+      ipv6: 2800:1e0:a01:a006::6e
   allowed:
     continents:
       - NA
