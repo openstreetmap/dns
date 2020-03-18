@@ -565,7 +565,7 @@ bogota:
   statuscake:
     - 5434641
     - 5434642
-  colour: "#d9d9d9"
+  colour: "#33a02c"
   bandwidth: 60
   name: gorwen
   ipv4: 200.25.1.70
