@@ -583,7 +583,12 @@ bogota:
   ipv6: 2800:1e0:a01:a006::6f
   allowed:
     continents:
+      - NA
       - SA
+  denied:
+    countries:
+      - CA
+      - US
 
 # Buenos Aires, AR
 buenosaires:
@@ -599,6 +604,11 @@ buenosaires:
   ipv6: 2800:1e0:1030::64
   allowed:
     continents:
+      - NA
       - SA
+  denied:
+    countries:
+      - CA
+      - US
 
 # Spare colours:
