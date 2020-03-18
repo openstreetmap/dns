@@ -532,17 +532,28 @@ sweden:
       ipv4: 130.239.18.114
       ipv6: 2001:6b0:e:2a18::114
 
-# Curitiba, BR
-curitiba:
-  lat: -25.41403745
-  lon: -49.252918753851
-  statuscake:
-    - 3945882
-    - 3945883
-  colour: "#d9d9d9"
-  bandwidth: 60
-  ipv4: 200.236.31.207
-  ipv6: 2801:82:80ff:8002:216:ccff:feaa:21
+# Curitiba/São Paulo, BR
+# Curitaba @ -25.41403745,-49.252918753851
+# São Paulo @ -23.55,-46.633333
+brazil:
+  lat: -24.482018725
+  lon: -47.9431258769255
+  colour: "#33a02c"
+  servers:
+    - statuscake:
+        - 3945882
+        - 3945883
+      bandwidth: 60
+      name: boitata
+      ipv4: 200.236.31.207
+      ipv6: 2801:82:80ff:8002:216:ccff:feaa:21
+    - statuscake:
+        - 5436765
+        - 5436766
+      bandwidth: 60
+      name: fuchur
+      ipv4: 200.25.58.164
+      ipv6: 2800:1e0:1020::44
   allowed:
     countries:
       - BR
@@ -570,6 +581,22 @@ bogota:
   name: gorwen
   ipv4: 200.25.1.70
   ipv6: 2800:1e0:a01:a006::6f
+  allowed:
+    continents:
+      - SA
+
+# Buenos Aires, AR
+buenosaires:
+  lat: -34.603333
+  lon: -58.381667
+  statuscake:
+    - 5436768
+    - 5436769
+  colour: "#33a02c"
+  bandwidth: 60
+  name: idris
+  ipv4: 200.25.60.195
+  ipv6: 2800:1e0:1030::64
   allowed:
     continents:
       - SA
