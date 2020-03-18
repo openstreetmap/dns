@@ -460,6 +460,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("neak", NEAK_IPV4),
   A("meraxes", MERAXES_IPV4),
   AAAA("meraxes", MERAXES_IPV6),
+  A("fuchur", FUCHUR_IPV4),
+  AAAA("fuchur", FUCHUR_IPV6),
+  A("idris", IDRIS_IPV4),
+  AAAA("idris", IDRIS_IPV6),
 
   // Blades
 
