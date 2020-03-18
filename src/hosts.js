@@ -56,6 +56,9 @@ var FUCHUR_IPV6 = "2800:1e0:1020::44";
 
 var FUME_IPV4 = "147.228.60.16";
 
+var GLAEDR_IPV4 = "200.25.1.71";
+var GLAEDR_IPV6 = "2800:1e0:a01:a006::6e";
+
 var GORWEN_IPV4 = "200.25.1.70";
 var GORWEN_IPV6 = "2800:1e0:a01:a006::6f";
 
