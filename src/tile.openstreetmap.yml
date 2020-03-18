@@ -120,9 +120,10 @@ france:
     - statuscake:
         - 5321339
         - 5321340
-      bandwidth: 150
+      bandwidth: 20
       name: naga
-      ipv4: 185.116.130.151
+      ipv4: 45.13.104.40
+      ipv6: 2a0b:cbc0:1101:1::41
     - statuscake:
         - 5434796
         - 5434797
