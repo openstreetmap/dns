@@ -201,6 +201,9 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("bowser", BOWSER_IPV4),
 
+  A("albi", ALBI_IPV4),
+  AAAA("albi", ALBI_IPV6),
+
   CNAME("tile", "tile.geo.openstreetmap.org."),
   CNAME("a.tile", "tile.geo.openstreetmap.org."),
   CNAME("b.tile", "tile.geo.openstreetmap.org."),
