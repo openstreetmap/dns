@@ -86,9 +86,22 @@ pyrene:
       - sanfrancisco
       - vinadelmar
 
+albi:
+  lat: 49.0537635
+  lon: 2.137900275852825
+  statuscake:
+    - 5441356
+  colour: "#25567b"
+  bandwidth: 200
+  ipv4: 51.159.53.238
+  ipv6: 2001:bc8:1200:4:dac4:97ff:fe8a:9cfc
+  default: ""
+  preferred:
+    origins:
+      - france
+
 # Spare colours:
 #
-#  25567b
 #  bf6530
 #  bfb830
 #  562781
