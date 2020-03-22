@@ -41,8 +41,8 @@ ysera:
       - london
 
 scorch:
-  lat: 50.6911904
-  lon: 3.2008282044777
+  lat: 50.691197900000006
+  lon: 3.2008242044777013
   statuscake:
     - 2217314
   colour: "#bf8230"
