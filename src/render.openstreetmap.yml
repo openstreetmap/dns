@@ -92,7 +92,7 @@ albi:
   statuscake:
     - 5441356
   colour: "#25567b"
-  bandwidth: 200
+  bandwidth: 100
   ipv4: 51.159.53.238
   ipv6: 2001:bc8:1200:4:dac4:97ff:fe8a:9cfc
   default: ""
