@@ -136,7 +136,7 @@ france:
       bandwidth: 80
       name: meraxes
       ipv4: 51.15.185.90
-      ipv6: 2001:bc8:2d57:0:aa1e:84ff:fe72:e660
+      ipv6: 2001:bc8:2d57:100:aa1e:84ff:fe72:e660
   preferred:
     countries:
       - FR
