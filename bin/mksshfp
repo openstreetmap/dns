@@ -4,7 +4,7 @@ my %hosts;
 
 if (-f "/etc/ssh/ssh_known_hosts")
 {
-    open(SSHFP, "-|","sshfp", "-k", "/etc/ssh/ssh_known_hosts") || die $!;
+    open(SSHFP, "-|","sshfp -k /etc/ssh/ssh_known_hosts 2>&1") || die $!;
 
     while (my $line = <SSHFP>)
     {
@@ -45,7 +45,7 @@ if (-f "/etc/ssh/ssh_known_hosts")
                 }
             }
         }
-        else
+        elsif ($line !~ /^WARNING: Assuming /)
         {
             warn $line;
         }
