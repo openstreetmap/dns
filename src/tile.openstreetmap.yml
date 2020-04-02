@@ -608,7 +608,7 @@ buenosaires:
   colour: "#33a02c"
   bandwidth: 60
   name: idris
-  ipv4: 200.25.60.195
+  ipv4: 200.25.60.197
   ipv6: 2800:1e0:1030::64
   allowed:
     continents:
