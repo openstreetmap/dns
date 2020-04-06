@@ -619,4 +619,18 @@ buenosaires:
       - CA
       - US
 
+# Bissen, Luxembourg (Luxconnect DC2)
+# BW Limit: 1000Mb/s
+bissen:
+  lat: 49.787
+  lon: 6.09
+  statuscake:
+    - 5457454
+    - 5457453
+  colour: "#A22E5B"
+  bandwidth: 20
+  name: gackelchen
+  ipv4: 46.226.108.71
+  ipv6: 2001:4b98:dc2:41:216:3eff:fe62:924c
+
 # Spare colours:
