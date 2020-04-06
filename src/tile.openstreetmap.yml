@@ -627,19 +627,9 @@ bissen:
   statuscake:
     - todo
   colour: "#A22E5B"
-  bandwidth: 200
+  bandwidth: 20
   name: gackelchen
   ipv4: 46.226.108.71
   ipv6: 2001:4b98:dc2:41:216:3eff:fe62:924c
-  allowed:
-    countries:
-      - FR
-      - BE
-      - DE
-      - NL
-      - CH
-      - LU
-      - CZ
-      - AT
 
 # Spare colours:
