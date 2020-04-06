@@ -622,8 +622,8 @@ buenosaires:
 # Bissen, Luxembourg (Luxconnect DC2)
 # BW Limit: 1000Mb/s
 bissen:
-  lat: 49.787
-  lon: 6.09
+  lat: 49.78753315
+  lon: 6.089517249999999
   statuscake:
     - 5457454
     - 5457453
