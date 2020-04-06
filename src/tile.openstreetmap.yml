@@ -625,7 +625,8 @@ bissen:
   lat: 49.787
   lon: 6.09
   statuscake:
-    - todo
+    - 5457454
+    - 5457453
   colour: "#A22E5B"
   bandwidth: 20
   name: gackelchen
