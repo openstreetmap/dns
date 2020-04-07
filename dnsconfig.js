@@ -49,12 +49,15 @@ OPENSTREETMAP("openmaps.org", REG_GANDI);
 OPENSTREETMAP("openstreetmap.io", REG_GANDI);
 OPENSTREETMAP("osm.io", REG_GANDI);
 OPENSTREETMAP("openstreetmap.li", REG_GANDI);
-OPENSTREETMAP("osm.li", REG_GANDI);
 OPENSTREETMAP("openworldmap.org", REG_GANDI);
 OPENSTREETMAP("freeosm.org", REG_GANDI);
 OPENSTREETMAP("open-maps.org", REG_GANDI);
 OPENSTREETMAP("open-maps.com", REG_GANDI);
 OPENSTREETMAP("osmbugs.org", REG_GANDI);
+
+var OSM_LI = loadTemplate("osm-li");
+
+OSM_LI("osm.li", REG_GANDI);
 
 var OPENSTREETMAP_UK = loadTemplate("openstreetmap-uk");
 
