@@ -273,11 +273,13 @@ foreach my $cluster (sort { $a->{name} cmp $b->{name} } values %$clusters)
 {
     my $name = $cluster->{name};
 
-    output_server($zonefile, "${name}.${zone}", $cluster);
-
     if (@{$cluster->{servers}} > 1)
     {
         output_server($zonefile, "${name}-%02d.${zone}", $cluster);
+    }
+    else
+    {
+        output_server($zonefile, "${name}.${zone}", $cluster);
     }
 }
 
