@@ -259,11 +259,11 @@ if (!defined($gdnsname))
 
         if (my $default = $cluster->{default})
         {
-            output_server($zonefile, "${default}.${zone}", $cluster);
+            output_server($zonefile, "${default}.${zone}", $cluster, 0);
         }
         elsif (exists($cluster->{default}))
         {
-            output_server($zonefile, "${zone}", $cluster);
+            output_server($zonefile, "${zone}", $cluster, 0);
         }
     }
 }
@@ -275,11 +275,11 @@ foreach my $cluster (sort { $a->{name} cmp $b->{name} } values %$clusters)
 
     if (@{$cluster->{servers}} > 1)
     {
-        output_server($zonefile, "${name}-%02d.${zone}", $cluster);
+        output_server($zonefile, "${name}-%02d.${zone}", $cluster, 1);
     }
     else
     {
-        output_server($zonefile, "${name}.${zone}", $cluster);
+        output_server($zonefile, "${name}.${zone}", $cluster, 1);
     }
 }
 
@@ -527,10 +527,11 @@ sub output_server
     my $zonefile = shift;
     my $name = shift;
     my $cluster = shift;
+    my $all = shift;
 
     while (my($index,$server) = each @{$cluster->{servers}})
     {
-        if ($server->{status} eq "up")
+        if ($all || $server->{status} eq "up")
         {
             $zonefile->printf("  A(\"${name}\", \"$server->{ipv4}\", TTL(\"10m\")),\n", $index + 1);
 
