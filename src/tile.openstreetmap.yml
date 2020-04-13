@@ -156,7 +156,7 @@ germany:
     - statuscake:
         - 2217269
         - 2217270
-      bandwidth: 80
+      bandwidth: 60
       name: katie
       ipv4: 144.76.70.77
       ipv6: 2a01:4f8:191:834c::2
@@ -170,7 +170,7 @@ germany:
     - statuscake:
         - 2217293
         - 2217294
-      bandwidth: 80
+      bandwidth: 60
       name: kalessin
       ipv4: 185.66.195.245
       ipv6: 2a03:2260:2000:1::5
@@ -181,6 +181,14 @@ germany:
       name: keizer
       ipv4: 195.201.226.63
       ipv6: 2a01:4f8:1c1c:bc54::1
+    - statuscake:
+       - 5457454
+       - 5457453
+      colour: "#A22E5B"
+      bandwidth: 120
+      name: gackelchen
+      ipv4: 46.226.108.71
+      ipv6: 2001:4b98:dc2:41:216:3eff:fe62:924c
   allowed:
     countries:
       - DE
@@ -621,16 +629,16 @@ buenosaires:
 
 # Bissen, Luxembourg (Luxconnect DC2)
 # BW Limit: 1000Mb/s
-bissen:
-  lat: 49.78753315
-  lon: 6.089517249999999
-  statuscake:
-    - 5457454
-    - 5457453
-  colour: "#A22E5B"
-  bandwidth: 20
-  name: gackelchen
-  ipv4: 46.226.108.71
-  ipv6: 2001:4b98:dc2:41:216:3eff:fe62:924c
+#bissen:
+#  lat: 49.78753315
+#  lon: 6.089517249999999
+#  statuscake:
+#    - 5457454
+#    - 5457453
+#  colour: "#A22E5B"
+#  bandwidth: 20
+#  name: gackelchen
+#  ipv4: 46.226.108.71
+#  ipv6: 2001:4b98:dc2:41:216:3eff:fe62:924c
 
 # Spare colours:
