@@ -182,9 +182,14 @@ germany:
       ipv4: 195.201.226.63
       ipv6: 2a01:4f8:1c1c:bc54::1
     - statuscake:
-       - 5457454
-       - 5457453
-      colour: "#A22E5B"
+        - 5466374
+        - 5466375
+      bandwidth: 20
+      name: kokosnuss
+      ipv4: 85.214.255.86
+    - statuscake:
+        - 5457454
+        - 5457453
       bandwidth: 120
       name: gackelchen
       ipv4: 46.226.108.71
