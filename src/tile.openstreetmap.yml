@@ -184,7 +184,7 @@ germany:
     - statuscake:
         - 5466374
         - 5466375
-      bandwidth: 20
+      bandwidth: 60
       name: kokosnuss
       ipv4: 85.214.255.86
     - statuscake:
