@@ -339,7 +339,7 @@ if (defined($gdnsname))
     {
         my $name = $cluster->{name};
 
-        if (@{$cluster->{servers}} > 1)
+        if (@{$cluster->{servers}} > 1 && grep { $_->{status} eq "up" } @{$cluster->{servers}})
         {
             $gdnsweightedfile->print("${name} => {\n");
 
