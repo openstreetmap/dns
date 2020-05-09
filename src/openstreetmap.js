@@ -472,6 +472,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("gackelchen", GACKELCHEN_IPV4),
   AAAA("gackelchen", GACKELCHEN_IPV6),
   A("kokosnuss", KOKOSNUSS_IPV4),
+  A("shruikan", SHRUIKAN_IPV4),
+  AAAA("shruikan", SHRUIKAN_IPV6),
 
   // Blades
 
