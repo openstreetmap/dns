@@ -29,9 +29,10 @@ moscow:
     countries:
       - RU
 
-# Amsterdam/Ede, NL
+# Amsterdam/Ede/Dronten, NL
 # Amsterdam @ 52.37306,4.89222
 # Ede @ 52.0458265,5.6702011
+# Dronten @ 52.5437235,5.7050729
 # BW Limit: 1000Mb/s
 netherlands:
   lat: 52.20944325
@@ -42,13 +43,22 @@ netherlands:
         - 2217259
         - 2217260
       bandwidth: 60
+      name: trogdor
       ipv4: 134.90.146.26
     - statuscake:
         - 5406587
         - 5406588
       bandwidth: 60
+      name: takhisis
       ipv4: 31.3.110.20
       ipv6: 2a03:7900:111:0:31:3:110:20
+    - statuscake:
+        - 5499504
+        - 5499504
+      bandwidth: 20
+      name: shruikan
+      ipv4: 45.148.169.51
+      ipv6: 2a0a:aa42:56:1000::1
 
 # Oslo, NO
 # BW Limit: 1000Mb/s
