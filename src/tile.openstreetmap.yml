@@ -55,7 +55,7 @@ netherlands:
     - statuscake:
         - 5499504
         - 5499504
-      bandwidth: 20
+      bandwidth: 60
       name: shruikan
       ipv4: 45.148.169.51
       ipv6: 2a0a:aa42:56:1000::1
