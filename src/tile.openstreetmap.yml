@@ -581,16 +581,34 @@ brazil:
     countries:
       - BR
 
-# Pilsen, CZ
-pilsen:
-  lat: 49.723689
-  lon: 13.351542
-  statuscake:
-    - 4065539
-    - 4065540
+# Pilsen/Prague, CZ
+# Pilsen @ 49.723689,13.351542
+# Prague @ 50.0874654,14.4212535
+czechia:
+  lat: 49.9055772
+  lon: 13.88639775
   colour: "#d9d9d9"
-  bandwidth: 30
-  ipv4: 147.228.60.16
+  servers:
+    - statuscake:
+        - 4065539
+        - 4065540
+      bandwidth: 30
+      name: fume
+      ipv4: 147.228.60.16
+    - statuscake:
+        - 5508363
+        - 5508364
+      bandwidth: 30
+      name: falkor
+      ipv4: 81.27.197.69
+      ipv6: 2a02:8301:0:1::69
+  allowed:
+    countries:
+      - AT
+      - CZ
+      - DE
+      - PL
+      - SK
 
 # Bogotá, CO
 bogota:
