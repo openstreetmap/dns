@@ -233,6 +233,12 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Database servers
 
+  A("snap-01.ams", SNAP01_INTERNAL),
+  A("snap-01.oob", SNAP01_OOB),
+
+  A("snap-02.ucl", SNAP02_INTERNAL),
+  A("snap-02.oob", SNAP02_OOB),
+
   A("karm.ams", KARM_INTERNAL),
   A("karm.oob", KARM_OOB),
 
