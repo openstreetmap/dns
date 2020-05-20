@@ -516,6 +516,16 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("tiamat-23.ucl", TIAMAT23_INTERNAL),
   A("tiamat-23.oob", TIAMAT23_OOB),
 
+  // Spare
+
+  A("stormfly-03", STORMFLY03_IPV4),
+  AAAA("stormfly-03", STORMFLY03_IPV6),
+  A("stormfly-03.oob", STORMFLY03_OOB),
+
+  A("stormfly-04", STORMFLY04_IPV4),
+  AAAA("stormfly-04", STORMFLY04_IPV6),
+  A("stormfly-04.oob", STORMFLY04_OOB),
+
   // Donation site
 
   A("donate", RIDLEY_IPV4, TTL("10m")),
