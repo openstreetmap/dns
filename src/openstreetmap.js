@@ -46,7 +46,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   NS("geo", QUALIFY("chrysophylax")),
   NS("geo", QUALIFY("katie")),
   NS("geo", QUALIFY("saphira")),
-  NS("geo", QUALIFY("stormfly-02")),
+  NS("geo", QUALIFY("stormfly-04")),
   NS("geo", QUALIFY("ridgeback")),
 
   // Main web servers and their aliases
