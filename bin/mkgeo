@@ -120,7 +120,7 @@ if ($ENV{STATUSCAKE_USERNAME} && $ENV{STATUSCAKE_APIKEY})
     }
 
     DumpFile("statuscake-$$.yml", $cache);
-    link("statuscake-$$.yml", "statuscake.yml");
+    rename("statuscake-$$.yml", "statuscake.yml");
 }
 
 # Mark a cluster as up if any servers are up
