@@ -9,14 +9,14 @@ use IO::File;
 use Math::Trig qw(deg2rad pip2 great_circle_distance);
 use JSON::XS;
 use LWP::UserAgent;
-use YAML;
+use YAML::XS qw(LoadFile DumpFile);
 
 my $originfile = shift @ARGV;
 my $clusterfile = shift @ARGV;
 my $zone = shift @ARGV;
 my $targetoriginfile = shift @ARGV;
-my $origins = YAML::LoadFile($originfile);
-my $clusters = YAML::LoadFile($clusterfile);
+my $origins = LoadFile($originfile);
+my $clusters = LoadFile($clusterfile);
 my $gdnsname = shift @ARGV;
 my @servers;
 
@@ -72,7 +72,7 @@ if ($ENV{STATUSCAKE_USERNAME} && $ENV{STATUSCAKE_APIKEY})
 
     if (-f "statuscake.yml")
     {
-        $cache = YAML::LoadFile("statuscake.yml");
+        $cache = LoadFile("statuscake.yml");
     }
     else
     {
@@ -119,7 +119,7 @@ if ($ENV{STATUSCAKE_USERNAME} && $ENV{STATUSCAKE_APIKEY})
         }
     }
 
-    YAML::DumpFile("statuscake.yml", $cache);
+    DumpFile("statuscake.yml", $cache);
 }
 
 # Mark a cluster as up if any servers are up
@@ -373,7 +373,7 @@ if (defined($gdnsname))
 }
 
 # Output the target details in origin format if required
-YAML::DumpFile($targetoriginfile, $targetorigins) if $targetoriginfile;
+DumpFile($targetoriginfile, $targetorigins) if $targetoriginfile;
 
 exit 0;
 
