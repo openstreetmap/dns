@@ -1,31 +1,45 @@
 #!/usr/bin/perl
 
+use strict;
+use warnings;
+
+use Digest::SHA qw(sha256_hex);
+use MIME::Base64;
+
+my %algorithms = (
+    "ssh-rsa" => "1",
+    "ssh-dss" => "2",
+    "ecdsa-sha2-nistp256" => "3",
+    "ssh-ed25519" => "4"
+);
+
 my %hosts;
 
 if (-f "/etc/ssh/ssh_known_hosts")
 {
-    open(SSHFP, "-|","sshfp -k /etc/ssh/ssh_known_hosts 2>&1") || die $!;
+    open(HOSTS, "<", "/etc/ssh/ssh_known_hosts") || die $!;
 
-    while (my $line = <SSHFP>)
+    while (my $line = <HOSTS>)
     {
-        if ($line =~ /^(\S+)\.openstreetmap\.org IN SSHFP (\d+) (\d+) ([0-9A-F]+)$/)
+        if ($line =~ /^([^, ]+)\S* (\S+) (\S+)$/)
         {
             my $host = $1;
-            my $algorithm = $2;
-            my $type = $3;
-            my $value = $4;
+            my $algorithm = $algorithms{$2};
+            my $value = uc(sha256_hex(decode_base64($3)));
 
-            if ($type == 2 && $algorithm != 2)
+            $host =~ s/\.openstreetmap\.org$//;
+        
+            if ($algorithm ne "2")
             {
                 my $wanted = 0;
 
                 if (exists($hosts{$host}))
                 {
-                    if ($algorithm == 3)
+                    if ($algorithm eq "3")
                     {
                         $wanted = 1;
                     }
-                    elsif ($algorithm == 4 && $hosts{$host}->{algorithm} != 3)
+                    elsif ($algorithm eq "4" && $hosts{$host}->{algorithm} ne "3")
                     {
                         $wanted = 1;
                     }
@@ -39,19 +53,15 @@ if (-f "/etc/ssh/ssh_known_hosts")
                 {
                     $hosts{$host} = {
                         algorithm => $algorithm,
-                        type => $type,
+                        type => "2",
                         value => $value
                     };
                 }
             }
         }
-        elsif ($line !~ /^WARNING: Assuming /)
-        {
-            warn $line;
-        }
     }
 
-    close(SSHFP);
+    close(HOSTS);
 }
 
 open(SSHFP_JS, ">", "include/sshfp.js") || die $!;
