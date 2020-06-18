@@ -294,14 +294,14 @@ london:
       bandwidth: 150
       name: saphira
       ipv4: 185.73.44.30
-      ipv6: 2001:ba8:0:2c1e::
+      ipv6: 2001:ba8:0:2c1e::0
     - statuscake:
        - 4089249
        - 4089250
       bandwidth: 150
       name: toothless
       ipv4: 185.73.44.167
-      ipv6: 2001:ba8:0:2ca7::
+      ipv6: 2001:ba8:0:2ca7::0
   preferred:
     countries:
       - GB
