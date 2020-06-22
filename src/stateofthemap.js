@@ -34,6 +34,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("2010", RIDLEY_IPV4, TTL("10m")),
   A("2009", RIDLEY_IPV4, TTL("10m")),
   A("2008", RIDLEY_IPV4, TTL("10m")),
-  A("2007", RIDLEY_IPV4, TTL("10m"))
+  A("2007", RIDLEY_IPV4, TTL("10m")),
+
+  // Video conferencing server
+
+  A("talk", "95.217.113.173")
 
 );
