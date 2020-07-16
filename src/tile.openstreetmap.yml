@@ -198,6 +198,13 @@ germany:
       name: kokosnuss
       ipv4: 85.214.255.86
     - statuscake:
+        - 5590100
+        - 5590099
+      bandwidth: 20
+      name: kilgharrah
+      ipv4: 176.9.47.143
+      ipv6: 2a01:4f8:150:638d::2
+    - statuscake:
         - 5457454
         - 5457453
       bandwidth: 120
