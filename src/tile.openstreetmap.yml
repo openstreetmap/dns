@@ -200,7 +200,7 @@ germany:
     - statuscake:
         - 5590100
         - 5590099
-      bandwidth: 20
+      bandwidth: 60
       name: kilgharrah
       ipv4: 176.9.47.143
       ipv6: 2a01:4f8:150:638d::2
