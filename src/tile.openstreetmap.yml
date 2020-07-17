@@ -150,7 +150,7 @@ france:
     - statuscake:
         - 5590997
         - 5590998
-      bandwidth: 20
+      bandwidth: 60
       name: lockheed
       ipv4: 176.9.171.103
       ipv6: 2a01:4f8:13a:209::103
