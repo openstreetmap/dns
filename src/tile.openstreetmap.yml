@@ -147,6 +147,13 @@ france:
       name: meraxes
       ipv4: 51.15.185.90
       ipv6: 2001:bc8:2d57:100:aa1e:84ff:fe72:e660
+    - statuscake:
+        - 5590997
+        - 5590998
+      bandwidth: 20
+      name: lockheed
+      ipv4: 176.9.171.103
+      ipv6: 2a01:4f8:13a:209::103
   preferred:
     countries:
       - FR
