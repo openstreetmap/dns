@@ -92,3 +92,8 @@ var SWITCH2OSM = loadTemplate("switch2osm");
 
 SWITCH2OSM("switch2osm.org", REG_GANDI);
 SWITCH2OSM("switch2osm.com", REG_GANDI);
+
+var OSM2PGSQL = loadTemplate("osm2pgsql");
+
+OSM2PGSQL("osm2pgsql.org", REG_GANDI);
+OSM2PGSQL("osm2pgsql.com", REG_GANDI);
