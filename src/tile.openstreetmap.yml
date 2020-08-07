@@ -81,7 +81,7 @@ sanfrancisco:
     - 2217263
     - 2217264
   colour: "#e31a1c"
-  bandwidth: 60
+  bandwidth: 30
   ipv4: 71.19.155.177
   ipv6: 2605:2700:0:17:a800:ff:fe3e:cdca
   preferred:
