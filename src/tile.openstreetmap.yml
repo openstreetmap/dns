@@ -71,7 +71,6 @@ oslo:
   colour: "#ffffb3"
   bandwidth: 30
   ipv4: 31.169.50.10
-  default: "xx"
 
 # San Francisco, US
 # BW Limit: 100Mb/s ?
@@ -281,7 +280,6 @@ pula:
   bandwidth: 100
   ipv4: 193.198.233.211
   ipv6: 2001:b68:4cff:3::3
-  default: "xx"
 
 # Osijek, HR
 osijek:
@@ -294,7 +292,6 @@ osijek:
   bandwidth: 100
   ipv4: 161.53.30.107
   ipv6: 2001:b68:c0ff:0:221:5eff:fe40:c7c4
-  default: "xx"
 
 # London, GB
 london:
@@ -316,6 +313,7 @@ london:
       name: toothless
       ipv4: 185.73.44.167
       ipv6: 2001:ba8:0:2ca7::0
+  default: "xx"
   preferred:
     countries:
       - GB
