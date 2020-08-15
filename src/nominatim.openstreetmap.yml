@@ -18,6 +18,6 @@ slough:
   colour: "#bebada"
   bandwidth: 0.005
   ipv4: 193.60.236.18
-  allowed:
+  preferred:
     countries:
       - ES
