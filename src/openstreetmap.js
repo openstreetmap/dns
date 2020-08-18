@@ -30,7 +30,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   TXT("_smtp._tls", "v=TLSRPTv1; rua=mailto:postmaster@openstreetmap.org"),
   
   // Fastly cert domain ownership confirmation
-  TXT("_globalsign-domain-verification", "ps00GlW1BzY9c2_cwH_pFqRkvzZyaCVZ-3RLssRG6S"),
+
+  TXT("_globalsign-domain-verification=ps00GlW1BzY9c2_cwH_pFqRkvzZyaCVZ-3RLssRG6S"),
 
   // Delegate MTA-STS policy for subdomains
 
