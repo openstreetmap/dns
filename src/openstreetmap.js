@@ -172,12 +172,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("grindtooth.ucl", GRINDTOOTH_INTERNAL),
   A("grindtooth.oob", GRINDTOOTH_OOB),
 
-  A("stormfly-01", STORMFLY01_IPV4),
-  AAAA("stormfly-01", STORMFLY01_IPV6),
-  // A("taginfo", STORMFLY01_IPV4, TTL("10m")),
-  // AAAA("taginfo", STORMFLY01_IPV6, TTL("10m")),
-  A("stormfly-01.oob", STORMFLY01_OOB),
-
   // Tile servers
 
   A("orm", ORM_IPV4),
@@ -427,9 +421,12 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("sarkany", SARKANY_IPV6),
   A("cmok", CMOK_IPV4),
   AAAA("cmok", CMOK_IPV6),
-  A("stormfly-02", STORMFLY02_IPV4),
-  AAAA("stormfly-02", STORMFLY02_IPV6),
-  A("stormfly-02.oob", STORMFLY02_OOB),
+  A("stormfly-03", STORMFLY03_IPV4),
+  AAAA("stormfly-03", STORMFLY03_IPV6),
+  A("stormfly-03.oob", STORMFLY03_OOB),
+  A("stormfly-04", STORMFLY04_IPV4),
+  AAAA("stormfly-04", STORMFLY04_IPV6),
+  A("stormfly-04.oob", STORMFLY04_OOB),
   A("rimfaxe", RIMFAXE_IPV4),
   AAAA("rimfaxe", RIMFAXE_IPV6),
   A("culebre", CULEBRE_IPV4),
@@ -532,13 +529,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Spare
 
-  A("stormfly-03", STORMFLY03_IPV4),
-  AAAA("stormfly-03", STORMFLY03_IPV6),
-  A("stormfly-03.oob", STORMFLY03_OOB),
-
-  A("stormfly-04", STORMFLY04_IPV4),
-  AAAA("stormfly-04", STORMFLY04_IPV6),
-  A("stormfly-04.oob", STORMFLY04_OOB),
 
   // Donation site
 
