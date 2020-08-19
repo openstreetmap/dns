@@ -1,9 +1,11 @@
 D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
-  // Publish CAA records indicating that only letsencrypt should issue certificates
+  // Publish CAA records indicating that only letsencrypt and globalsign (Fastly) should issue certificates
 
   CAA("@", "issue", "letsencrypt.org", CF_TTL_ANY),
   CAA("@", "issuewild", "letsencrypt.org", CF_TTL_ANY),
+  CAA("@", "issue", "globalsign.com", CF_TTL_ANY),
+  CAA("@", "issuewild", "globalsign.com", CF_TTL_ANY),
   CAA("@", "iodef", "mailto:hostmaster@openstreetmap.org"),
 
   // Use shenron as the MX host
