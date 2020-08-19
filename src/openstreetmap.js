@@ -211,10 +211,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   
   // Fastly tile CDN testing
   
-  CNAME("cdn-dev.tile", "osff2.map.fastly.net."),
-  CNAME("a-cdn-dev.tile", "osff2.map.fastly.net."),
-  CNAME("b-cdn-dev.tile", "osff2.map.fastly.net."),
-  CNAME("c-cdn-dev.tile", "osff2.map.fastly.net."),
+  CNAME("cdn-fastly-test.tile", "osff2.map.fastly.net."),
 
   // Services machine
 
