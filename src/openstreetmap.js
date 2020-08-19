@@ -208,6 +208,13 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   CNAME("a.tile", "tile.geo.openstreetmap.org."),
   CNAME("b.tile", "tile.geo.openstreetmap.org."),
   CNAME("c.tile", "tile.geo.openstreetmap.org."),
+  
+  // Fastly tile CDN testing
+  
+  CNAME("cdn-dev.tile", "osff2.map.fastly.net."),
+  CNAME("a-cdn-dev.tile", "osff2.map.fastly.net."),
+  CNAME("b-cdn-dev.tile", "osff2.map.fastly.net."),
+  CNAME("c-cdn-dev.tile", "osff2.map.fastly.net."),
 
   // Services machine
 
