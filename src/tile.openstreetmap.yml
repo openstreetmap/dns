@@ -120,13 +120,6 @@ france:
       ipv4: 89.234.186.100
       ipv6: 2a00:5884:821c::1
     - statuscake:
-        - 3750719
-        - 3750717
-      bandwidth: 20
-      name: necrosan
-      ipv4: 80.67.167.77
-      ipv6: 2a0b:cbc0:110d:1::1c
-    - statuscake:
         - 5321339
         - 5321340
       bandwidth: 20
