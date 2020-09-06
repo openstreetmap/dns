@@ -491,6 +491,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("kilgharrah", KILGHARRAH_IPV6),
   A("lockheed", LOCKHEED_IPV4),
   AAAA("lockheed", LOCKHEED_IPV6),
+  A("lambton", LAMBTON_IPV4),
+  AAAA("lambton", LAMBTON_IPV6),
 
   // Blades
 
