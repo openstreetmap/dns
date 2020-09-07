@@ -210,6 +210,13 @@ germany:
       name: gackelchen
       ipv4: 46.226.108.71
       ipv6: 2001:4b98:dc2:41:216:3eff:fe62:924c
+    - statuscake:
+        - 5648863
+        - 5648862
+      bandwidth: 40
+      name: lambton
+      ipv4: 88.99.244.109
+      ipv6: 2a01:4f8:10b:492::2
   allowed:
     countries:
       - DE
