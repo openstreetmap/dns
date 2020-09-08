@@ -213,7 +213,7 @@ germany:
     - statuscake:
         - 5648863
         - 5648862
-      bandwidth: 40
+      bandwidth: 80
       name: lambton
       ipv4: 88.99.244.109
       ipv6: 2a01:4f8:10b:492::2
