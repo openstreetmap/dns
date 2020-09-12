@@ -42,7 +42,7 @@ netherlands:
     - statuscake:
         - 2217259
         - 2217260
-      bandwidth: 60
+      bandwidth: 30
       name: trogdor
       ipv4: 134.90.146.26
     - statuscake:
