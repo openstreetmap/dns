@@ -5,8 +5,13 @@ preview_cloudflare: sshfp gdns
 
 update: update_cloudflare update_geodns
 
+update_primary: update_cloudflare_primary update_geodns
+
 update_cloudflare: sshfp gdns
 	dnscontrol push --providers cloudflare
+
+update_cloudflare_primary: sshfp gdns
+	dnscontrol push --providers cloudflare --domains openstreetmap.org
 
 update_geodns: gdns
 	parallel --will-cite rsync --quiet --recursive --checksum gdns/ {}::geodns ::: ${GEODNS_SERVERS}
