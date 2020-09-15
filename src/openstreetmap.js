@@ -319,6 +319,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("urmel.ucl", URMEL_INTERNAL),
   A("urmel.oob", URMEL_OOB),
 
+  // Prometheus server
+
+  A("prometheus", TIAMAT11_IPV4),
+
   // Chef server
 
   A("sarel", SAREL_IPV4),
