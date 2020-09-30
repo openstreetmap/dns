@@ -41,6 +41,7 @@ while (my($name,$cluster) = each %$clusters)
             cluster => $cluster,
             statuscake => $cluster->{statuscake},
             bandwidth => $cluster->{bandwidth},
+            cname => $cluster->{cname},
             ipv4 => $cluster->{ipv4},
             ipv6 => $cluster->{ipv6}
         };
@@ -166,7 +167,16 @@ foreach my $origin (values %$origins)
         if ($cluster->{status} eq "up" && $match ne "denied")
         {
             my $priority = $match eq "preferred" ? 20 : 10;
-            my $distance = distance($origin->{lat}, $origin->{lon}, $cluster->{lat}, $cluster->{lon});
+            my $distance;
+
+            if ($cluster->{global})
+            {
+                $distance = 0;
+            }
+            else
+            {
+                $distance = distance($origin->{lat}, $origin->{lon}, $cluster->{lat}, $cluster->{lon});
+            }
 
             push @mappings, {
                 origin => $origin, cluster => $cluster,
@@ -215,37 +225,41 @@ $zonefile->print("var \U${zone}\E_RECORDS = [\n");
 foreach my $origin (sort { $a->{name} cmp $b->{name} } values %$origins)
 {
     my $cluster = $origin->{cluster};
-    my $clon = $origin->{lon};
-    my $clat = $origin->{lat};
-    my $slon = $cluster->{lon};
-    my $slat = $cluster->{lat};
-
-    if ($clon > 0 && $slon < 0 && 360 + $slon - $clon < $clon - $slon)
-    {
-        $slon = $slon + 360;
-    }
-    elsif ($slon > 0 && $clon < 0 && 360 + $clon - $slon < $slon - $clon)
-    {
-        $clon = $clon + 360;
-    }
 
     if (!defined($gdnsname))
     {
         $zonefile->print("  CNAME(\"\L$origin->{code}\E.${zone}\", \"$cluster->{name}.${zone}.openstreetmap.org.\", TTL(\"10m\")),\n");
     }
 
-    push @json, {
-        type => "Feature",
-        geometry => {
-            type => "LineString",
-            coordinates => [ [ $clon, $clat ], [ $slon, $slat ] ]
-        },
-        properties => {
-            origin => $origin->{name},
-            server => $cluster->{name},
-            colour => $cluster->{colour}
+    if ($cluster->{lon} && $cluster->{lat})
+    {
+        my $clon = $origin->{lon};
+        my $clat = $origin->{lat};
+        my $slon = $cluster->{lon};
+        my $slat = $cluster->{lat};
+
+        if ($clon > 0 && $slon < 0 && 360 + $slon - $clon < $clon - $slon)
+        {
+            $slon = $slon + 360;
         }
-    };
+        elsif ($slon > 0 && $clon < 0 && 360 + $clon - $slon < $slon - $clon)
+        {
+            $clon = $clon + 360;
+        }
+
+        push @json, {
+            type => "Feature",
+            geometry => {
+                type => "LineString",
+                coordinates => [ [ $clon, $clat ], [ $slon, $slat ] ]
+            },
+            properties => {
+                origin => $origin->{name},
+                server => $cluster->{name},
+                colour => $cluster->{colour}
+            }
+        };
+    }
 
     $targetorigins->{$cluster->{name}}->{bandwidth} += $origin->{bandwidth};
 }
@@ -351,13 +365,24 @@ if (defined($gdnsname))
                     my $number = sprintf("%02d", $index + 1);
                     my $bandwidth = $server->{bandwidth};
 
-                    $gdnsweightedfile->print("  ${name}-${number} = [ ${name}-${number}.${zone}.openstreetmap.org., ${bandwidth} ]\n");
+                    if (my $cname = $server->{cname})
+                    {
+                        $gdnsweightedfile->print("  ${name}-${number} = [ ${cname}., ${bandwidth} ]\n");
+                    }
+                    else
+                    {
+                        $gdnsweightedfile->print("  ${name}-${number} = [ ${name}-${number}.${zone}.openstreetmap.org., ${bandwidth} ]\n");
+                    }
                 }
             }
 
             $gdnsweightedfile->print("}\n");
 
             $gdnsresourcefile->print("    ${name} => %weighted!${name}\n");
+        }
+        elsif (my $cname = $cluster->{cname})
+        {
+            $gdnsresourcefile->print("    ${name} => ${cname}.\n");
         }
         else
         {
@@ -534,7 +559,10 @@ sub output_server
     {
         if ($all || $server->{status} eq "up")
         {
-            $zonefile->printf("  A(\"${name}\", \"$server->{ipv4}\", TTL(\"10m\")),\n", $index + 1);
+            if ($server->{ipv4})
+            {
+                $zonefile->printf("  A(\"${name}\", \"$server->{ipv4}\", TTL(\"10m\")),\n", $index + 1);
+            }
 
             if ($server->{ipv6})
             {
