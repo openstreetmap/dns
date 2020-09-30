@@ -143,6 +143,8 @@ my $targetorigins = {};
 # Initialise cluster details
 while (my($name,$cluster) = each %$clusters)
 {
+    next if $cluster->{global};
+
     $cluster->{bandwidth_limit} = $cluster->{bandwidth} * 1024 * 1024;
     $cluster->{bandwidth_used} = 0;
 
