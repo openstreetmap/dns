@@ -34,6 +34,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // Fastly cert domain ownership confirmation
 
   TXT("@", "_globalsign-domain-verification=ps00GlW1BzY9c2_cwH_pFqRkvzZyaCVZ-3RLssRG6S"),
+  TXT("@", "_globalsign-domain-verification=W0buKB5ZmL-VwwHw2oQyQImk3I1q3hSemf2qmB1hjP"),
 
   // Delegate MTA-STS policy for subdomains
 
