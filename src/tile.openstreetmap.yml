@@ -686,4 +686,19 @@ buenosaires:
 #  ipv4: 46.226.108.71
 #  ipv6: 2001:4b98:dc2:41:216:3eff:fe62:924c
 
+# Fastly
+fastly:
+  global: true
+  statuscake:
+    - 5679197
+    - 5679198
+  bandwidth: 1000
+  cname: cdn-fastly-test.tile.openstreetmap.org
+  allowed:
+    countries:
+      - US
+  preferred:
+    countries:
+      - US
+
 # Spare colours:
