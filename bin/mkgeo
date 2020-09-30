@@ -263,6 +263,8 @@ foreach my $origin (sort { $a->{name} cmp $b->{name} } values %$origins)
         };
     }
 
+    next if $cluster->{global};
+
     $targetorigins->{$cluster->{name}}->{bandwidth} += $origin->{bandwidth};
 }
 
