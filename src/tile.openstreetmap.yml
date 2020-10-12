@@ -697,8 +697,12 @@ fastly:
   allowed:
     countries:
       - US
+      - CA
+      - MX
   preferred:
     countries:
       - US
+      - CA
+      - MX
 
 # Spare colours:
