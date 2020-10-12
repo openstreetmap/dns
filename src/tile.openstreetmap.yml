@@ -693,11 +693,15 @@ fastly:
   cname: cdn-fastly-test.tile.openstreetmap.org
   allowed:
     countries:
+      - CA
+      - MX
       - US
       - CA
       - MX
   preferred:
     countries:
+      - CA
+      - MX
       - US
       - CA
       - MX
