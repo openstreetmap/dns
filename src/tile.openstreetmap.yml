@@ -419,9 +419,6 @@ montreal:
   colour: "#b15928"
   bandwidth: 100
   ipv4: 184.107.48.228
-  preferred:
-    countries:
-      - CA
 
 # Cape Town, ZA
 capetown:
