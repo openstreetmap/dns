@@ -699,14 +699,10 @@ fastly:
       - CA
       - MX
       - US
-      - CA
-      - MX
   preferred:
     countries:
       - CA
       - MX
       - US
-      - CA
-      - MX
 
 # Spare colours:
