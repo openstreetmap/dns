@@ -692,16 +692,18 @@ fastly:
   statuscake:
     - 5679197
     - 5679198
-  bandwidth: 1000
+  bandwidth: 10000
   cname: cdn-fastly-test.tile.openstreetmap.org
   allowed:
     countries:
       - CA
+      - IN
       - MX
       - US
   preferred:
     countries:
       - CA
+      - IN
       - MX
       - US
 
