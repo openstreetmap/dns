@@ -697,6 +697,8 @@ fastly:
   allowed:
     countries:
       - CA
+      - CN
+      - HK
       - IN
       - JP
       - MX
@@ -705,6 +707,8 @@ fastly:
   preferred:
     countries:
       - CA
+      - CN
+      - HK
       - IN
       - JP
       - MX
