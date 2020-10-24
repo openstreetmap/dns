@@ -698,13 +698,17 @@ fastly:
     countries:
       - CA
       - IN
+      - JP
       - MX
+      - SG
       - US
   preferred:
     countries:
       - CA
       - IN
+      - JP
       - MX
+      - SG
       - US
 
 # Spare colours:
