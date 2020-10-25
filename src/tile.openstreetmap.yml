@@ -217,6 +217,12 @@ germany:
       name: lambton
       ipv4: 88.99.244.109
       ipv6: 2a01:4f8:10b:492::2
+    - statuscake:
+      - 5715443
+      - 5715444
+      bandwidth: 40
+      name: firnen
+      ipv4: 188.241.28.82
   allowed:
     countries:
       - DE
@@ -685,6 +691,18 @@ buenosaires:
 #  name: gackelchen
 #  ipv4: 46.226.108.71
 #  ipv6: 2001:4b98:dc2:41:216:3eff:fe62:924c
+
+# Katowice, Poland
+#katowice:
+#  lat: 50.25349
+#  lon: 19.00283
+#  statuscake:
+#    - 5715443
+#    - 5715444
+#  colour: "#A22E5B"
+#  bandwidth: 20
+#  name: firnen
+#  ipv4: 188.241.28.82
 
 # Fastly
 fastly:
