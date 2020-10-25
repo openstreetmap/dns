@@ -220,7 +220,7 @@ germany:
     - statuscake:
       - 5715443
       - 5715444
-      bandwidth: 40
+      bandwidth: 80
       name: firnen
       ipv4: 188.241.28.82
   allowed:
@@ -700,7 +700,7 @@ buenosaires:
 #    - 5715443
 #    - 5715444
 #  colour: "#A22E5B"
-#  bandwidth: 20
+#  bandwidth: 80
 #  name: firnen
 #  ipv4: 188.241.28.82
 
