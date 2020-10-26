@@ -714,23 +714,53 @@ fastly:
   cname: cdn-fastly-test.tile.openstreetmap.org
   allowed:
     countries:
+      - BD
+      - BN
+      - BT
       - CA
       - CN
       - HK
+      - ID
       - IN
       - JP
+      - KH
+      - LA
+      - LK
+      - MM
+      - MO
+      - MV
       - MX
+      - MY
+      - NP
+      - PH
+      - PK
       - SG
+      - TH
       - US
   preferred:
     countries:
+      - BD
+      - BN
+      - BT
       - CA
       - CN
       - HK
+      - ID
       - IN
       - JP
+      - KH
+      - LA
+      - LK
+      - MM
+      - MO
+      - MV
       - MX
+      - MY
+      - NP
+      - PH
+      - PK
       - SG
+      - TH
       - US
 
 # Spare colours:
