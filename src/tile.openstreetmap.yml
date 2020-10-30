@@ -714,6 +714,7 @@ fastly:
   cname: cdn-fastly-test.tile.openstreetmap.org
   allowed:
     countries:
+      - AE
       - BD
       - BN
       - BT
@@ -737,12 +738,14 @@ fastly:
       - NP
       - PH
       - PK
+      - SA
       - SG
       - TH
       - US
       - VN
   preferred:
     countries:
+      - AE
       - BD
       - BN
       - BT
@@ -766,6 +769,7 @@ fastly:
       - NP
       - PH
       - PK
+      - SA
       - SG
       - TH
       - US
