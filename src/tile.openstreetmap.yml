@@ -722,11 +722,14 @@ fastly:
       - HK
       - ID
       - IN
+      - IO
       - JP
       - KH
+      - KR
       - LA
       - LK
       - MM
+      - MN
       - MO
       - MV
       - MX
@@ -737,6 +740,7 @@ fastly:
       - SG
       - TH
       - US
+      - VN
   preferred:
     countries:
       - BD
@@ -747,11 +751,14 @@ fastly:
       - HK
       - ID
       - IN
+      - IO
       - JP
       - KH
+      - KR
       - LA
       - LK
       - MM
+      - MN
       - MO
       - MV
       - MX
@@ -762,5 +769,6 @@ fastly:
       - SG
       - TH
       - US
+      - VN
 
 # Spare colours:
