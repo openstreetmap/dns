@@ -716,6 +716,7 @@ fastly:
     countries:
       - AE
       - BD
+      - BH
       - BN
       - BT
       - CA
@@ -724,6 +725,7 @@ fastly:
       - ID
       - IN
       - IO
+      - JO
       - JP
       - KH
       - KR
@@ -736,17 +738,21 @@ fastly:
       - MX
       - MY
       - NP
+      - OM
       - PH
       - PK
+      - QA
       - SA
       - SG
       - TH
       - US
       - VN
+      - YE
   preferred:
     countries:
       - AE
       - BD
+      - BH
       - BN
       - BT
       - CA
@@ -755,6 +761,7 @@ fastly:
       - ID
       - IN
       - IO
+      - JO
       - JP
       - KH
       - KR
@@ -767,12 +774,15 @@ fastly:
       - MX
       - MY
       - NP
+      - OM
       - PH
       - PK
+      - QA
       - SA
       - SG
       - TH
       - US
       - VN
+      - YE
 
 # Spare colours:
