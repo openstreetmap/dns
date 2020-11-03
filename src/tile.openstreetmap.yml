@@ -170,13 +170,6 @@ germany:
       ipv4: 144.76.70.77
       ipv6: 2a01:4f8:191:834c::2
     - statuscake:
-        - 2217271
-        - 2217272
-      bandwidth: 80
-      name: konqi
-      ipv4: 81.7.11.83
-      ipv6: 2a02:180:1:1::517:b53
-    - statuscake:
         - 2217293
         - 2217294
       bandwidth: 60
@@ -190,12 +183,6 @@ germany:
       name: keizer
       ipv4: 195.201.226.63
       ipv6: 2a01:4f8:1c1c:bc54::1
-    - statuscake:
-        - 5466374
-        - 5466375
-      bandwidth: 60
-      name: kokosnuss
-      ipv4: 85.214.255.86
     - statuscake:
         - 5590100
         - 5590099
@@ -226,32 +213,6 @@ germany:
   allowed:
     countries:
       - DE
-
-# Baku, AZ
-# BW Limit: 1000Mb/s
-baku:
-  lat: 40.395278
-  lon: 49.882222
-  colour: "#1f78b4"
-  statuscake:
-    - 2217267
-    - 2217268
-  bandwidth: 60
-  ipv4: 94.20.20.55
-  allowed:
-    continents:
-      - AS
-      - EU
-  preferred:
-    countries:
-      - AZ
-  denied:
-    countries:
-      - AM
-      - CN
-      - JP
-      - KR
-      - VN
 
 # Hsinchu, TW
 hsinchu:
@@ -786,3 +747,4 @@ fastly:
       - YE
 
 # Spare colours:
+  colour: "#1f78b4"
