@@ -191,6 +191,9 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("ysera.ucl", YSERA_INTERNAL),
   A("ysera.oob", YSERA_OOB),
 
+  A("scorch", SCORCH_IPV4),
+  AAAA("scorch", SCORCH_IPV6),
+
   A("rhaegal", RHAEGAL_IPV4),
 
   A("pyrene", PYRENE_IPV4),

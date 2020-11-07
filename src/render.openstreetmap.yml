@@ -40,6 +40,20 @@ ysera:
     origins:
       - london
 
+scorch:
+  lat: 50.691197900000006
+  lon: 3.2008242044777013
+  statuscake:
+    - 2217314
+  colour: "#bf8230"
+  bandwidth: 200
+  ipv4: 176.31.235.79
+  ipv6: 2001:41d0:2:fc4f::1
+  default: ""
+  preferred:
+    origins:
+      - france
+
 rhaegal:
   lat: 45.8082123
   lon: 15.9634238
@@ -88,7 +102,6 @@ albi:
 
 # Spare colours:
 #
-#  bf8230
 #  bf6530
 #  bfb830
 #  562781
