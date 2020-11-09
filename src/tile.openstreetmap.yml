@@ -676,13 +676,40 @@ fastly:
   allowed:
     countries:
       - AE
+      - AG
+      - AI
+      - AO
       - BD
+      - BF
       - BH
+      - BI
+      - BJ
       - BR
       - BN
+      - BS
       - BT
+      - BW
       - CA
+      - CD
+      - CF
+      - CG
+      - CI
+      - CM
       - CN
+      - DJ
+      - DZ
+      - EG
+      - EH
+      - ER
+      - ET
+      - GA
+      - GE
+      - GH
+      - GM
+      - GN
+      - GQ
+      - GW
+      - KE
       - HK
       - ID
       - IN
@@ -693,12 +720,15 @@ fastly:
       - KR
       - LA
       - LK
+      - MA
       - MM
       - MN
       - MO
       - MV
       - MX
       - MY
+      - NE
+      - NG
       - NP
       - OM
       - PH
@@ -706,20 +736,53 @@ fastly:
       - QA
       - SA
       - SG
+      - TD
+      - TG
       - TH
+      - TN
+      - TZ
+      - TG
       - US
       - VN
       - YE
+      - ZM
   preferred:
     countries:
       - AE
+      - AG
+      - AI
+      - AO
       - BD
+      - BF
       - BH
+      - BI
+      - BJ
       - BR
       - BN
+      - BS
       - BT
+      - BW
       - CA
+      - CD
+      - CF
+      - CG
+      - CI
+      - CM
       - CN
+      - DJ
+      - DZ
+      - EG
+      - EH
+      - ER
+      - ET
+      - GA
+      - GE
+      - GH
+      - GM
+      - GN
+      - GQ
+      - GW
+      - KE
       - HK
       - ID
       - IN
@@ -730,12 +793,15 @@ fastly:
       - KR
       - LA
       - LK
+      - MA
       - MM
       - MN
       - MO
       - MV
       - MX
       - MY
+      - NE
+      - NG
       - NP
       - OM
       - PH
@@ -743,10 +809,16 @@ fastly:
       - QA
       - SA
       - SG
+      - TD
+      - TG
       - TH
+      - TN
+      - TZ
+      - TG
       - US
       - VN
       - YE
+      - ZM
 
 # Spare colours:
   colour: "#1f78b4"
