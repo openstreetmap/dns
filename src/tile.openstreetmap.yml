@@ -679,6 +679,7 @@ fastly:
       - AG
       - AI
       - AO
+      - AQ
       - BD
       - BF
       - BH
@@ -688,7 +689,6 @@ fastly:
       - BN
       - BS
       - BT
-      - BW
       - CA
       - CD
       - CF
@@ -717,14 +717,20 @@ fastly:
       - JO
       - JP
       - KH
+      - KM
       - KR
       - LA
       - LK
+      - LR
       - MA
+      - MG
+      - ML
       - MM
       - MN
       - MO
+      - MR
       - MV
+      - MW
       - MX
       - MY
       - NE
@@ -734,14 +740,22 @@ fastly:
       - PH
       - PK
       - QA
+      - RW
       - SA
+      - SC
+      - SD
       - SG
+      - SL
+      - SN
+      - SO
+      - SS
       - TD
       - TG
       - TH
       - TN
       - TZ
       - TG
+      - UG
       - US
       - VN
       - YE
@@ -752,6 +766,7 @@ fastly:
       - AG
       - AI
       - AO
+      - AQ
       - BD
       - BF
       - BH
@@ -761,7 +776,6 @@ fastly:
       - BN
       - BS
       - BT
-      - BW
       - CA
       - CD
       - CF
@@ -790,14 +804,20 @@ fastly:
       - JO
       - JP
       - KH
+      - KM
       - KR
       - LA
       - LK
+      - LR
       - MA
+      - MG
+      - ML
       - MM
       - MN
       - MO
+      - MR
       - MV
+      - MW
       - MX
       - MY
       - NE
@@ -807,14 +827,22 @@ fastly:
       - PH
       - PK
       - QA
+      - RW
       - SA
+      - SC
+      - SD
       - SG
+      - SL
+      - SN
+      - SO
+      - SS
       - TD
       - TG
       - TH
       - TN
       - TZ
       - TG
+      - UG
       - US
       - VN
       - YE
