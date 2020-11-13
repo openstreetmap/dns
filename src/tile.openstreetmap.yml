@@ -686,9 +686,11 @@ fastly:
       - BI
       - BJ
       - BR
+      - BM
       - BN
       - BS
       - BT
+      - BZ
       - CA
       - CD
       - CF
@@ -696,6 +698,7 @@ fastly:
       - CI
       - CM
       - CN
+      - CV
       - DJ
       - DZ
       - EG
@@ -714,6 +717,7 @@ fastly:
       - ID
       - IN
       - IO
+      - JM
       - JO
       - JP
       - KH
@@ -729,6 +733,7 @@ fastly:
       - MN
       - MO
       - MR
+      - MU
       - MV
       - MW
       - MX
@@ -749,6 +754,8 @@ fastly:
       - SN
       - SO
       - SS
+      - ST
+      - TC
       - TD
       - TG
       - TH
@@ -759,6 +766,7 @@ fastly:
       - US
       - VN
       - YE
+      - YT
       - ZM
   preferred:
     countries:
@@ -773,9 +781,11 @@ fastly:
       - BI
       - BJ
       - BR
+      - BM
       - BN
       - BS
       - BT
+      - BZ
       - CA
       - CD
       - CF
@@ -783,6 +793,7 @@ fastly:
       - CI
       - CM
       - CN
+      - CV
       - DJ
       - DZ
       - EG
@@ -801,6 +812,7 @@ fastly:
       - ID
       - IN
       - IO
+      - JM
       - JO
       - JP
       - KH
@@ -816,6 +828,7 @@ fastly:
       - MN
       - MO
       - MR
+      - MU
       - MV
       - MW
       - MX
@@ -836,6 +849,8 @@ fastly:
       - SN
       - SO
       - SS
+      - ST
+      - TC
       - TD
       - TG
       - TH
@@ -846,6 +861,7 @@ fastly:
       - US
       - VN
       - YE
+      - YT
       - ZM
 
 # Spare colours:
