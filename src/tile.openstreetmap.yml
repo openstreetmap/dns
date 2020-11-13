@@ -744,6 +744,7 @@ fastly:
       - OM
       - PH
       - PK
+      - PM
       - QA
       - RW
       - SA
@@ -839,6 +840,7 @@ fastly:
       - OM
       - PH
       - PK
+      - PM
       - QA
       - RW
       - SA
