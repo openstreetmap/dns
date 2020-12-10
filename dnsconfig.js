@@ -43,7 +43,7 @@ OPENSTREETMAP("openstreetmap.net", REG_GANDI);
 OPENSTREETMAP("openstreetmap.ca", REG_GANDI);
 OPENSTREETMAP("openstreetmap.eu", REG_NONE);
 OPENSTREETMAP("openstreetmap.pro", REG_GANDI);
-OPENSTREETMAP("openstreetmap.gay", REG_NONE);
+OPENSTREETMAP("openstreetmap.gay", REG_GANDI);
 OPENSTREETMAP("openstreetmaps.org", REG_GANDI);
 OPENSTREETMAP("osm.org", REG_GANDI);
 OPENSTREETMAP("openmaps.org", REG_GANDI);
