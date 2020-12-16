@@ -674,6 +674,12 @@ fastly:
   bandwidth: 10000
   cname: cdn-fastly-test.tile.openstreetmap.org
   allowed:
+    continents:
+      - AF
+      - AN
+      - AS
+      - NA
+      - OC
     countries:
       - AE
       - AG
@@ -746,6 +752,7 @@ fastly:
       - NG
       - NP
       - OM
+      - PG
       - PH
       - PK
       - PM
@@ -767,6 +774,7 @@ fastly:
       - TG
       - TH
       - TJ
+      - TL
       - TM
       - TN
       - TR
@@ -781,6 +789,9 @@ fastly:
       - YT
       - ZM
   preferred:
+    continents:
+      - AN
+      - NA
     countries:
       - AE
       - AG
@@ -853,6 +864,7 @@ fastly:
       - NG
       - NP
       - OM
+      - PG
       - PH
       - PK
       - PM
@@ -874,6 +886,7 @@ fastly:
       - TG
       - TH
       - TJ
+      - TL
       - TM
       - TN
       - TR
