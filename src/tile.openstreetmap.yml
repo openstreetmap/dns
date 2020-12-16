@@ -751,6 +751,7 @@ fastly:
       - PM
       - QA
       - RS
+      - RU
       - RW
       - SA
       - SC
@@ -857,6 +858,7 @@ fastly:
       - PM
       - QA
       - RS
+      - RU
       - RW
       - SA
       - SC
