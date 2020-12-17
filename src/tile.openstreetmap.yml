@@ -680,6 +680,7 @@ fastly:
       - AS
       - NA
       - OC
+      - SA
     countries:
       - AE
       - AG
