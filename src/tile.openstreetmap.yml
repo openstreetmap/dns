@@ -482,11 +482,11 @@ newzealand:
       - OC
     countries:
       - CC
-  preferred:
-    continents:
-      - OC
-    countries:
-      - CC
+#  preferred:
+#    continents:
+#      - OC
+#    countries:
+#      - CC
 
 # Melbourne, AU
 melbourne:
