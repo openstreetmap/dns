@@ -504,12 +504,12 @@ melbourne:
     countries:
       - CC
       - ID
-  preferred:
-    continents:
-      - OC
-    countries:
-      - CC
-      - ID
+#  preferred:
+#    continents:
+#      - OC
+#    countries:
+#      - CC
+#      - ID
 
 # Linköping/Umeå, SE
 # Linköping @ 58.403261,15.623611189797
