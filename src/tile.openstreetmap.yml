@@ -756,6 +756,7 @@ fastly:
       - PG
       - PH
       - PK
+      - PL
       - PM
       - QA
       - RS
@@ -868,6 +869,7 @@ fastly:
       - PG
       - PH
       - PK
+      - PL
       - PM
       - QA
       - RS
