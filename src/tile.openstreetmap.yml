@@ -440,8 +440,8 @@ zurich:
     countries:
       - CH
       - IT
-      - SM
-      - VA
+#      - SM
+#      - VA
 
 # Kiev, UA
 kiev:
@@ -682,11 +682,14 @@ fastly:
       - OC
       - SA
     countries:
+      - AD
       - AE
       - AG
       - AI
+      - AL
       - AO
       - AQ
+      - AX
       - AZ
       - BD
       - BF
@@ -707,16 +710,21 @@ fastly:
       - CM
       - CN
       - CV
+      - CY
       - DJ
       - DZ
+      - EE
       - EG
       - EH
       - ER
       - ET
+      - FO
       - GA
       - GB
       - GE
+      - GG
       - GH
+      - GI
       - GM
       - GN
       - GQ
@@ -724,8 +732,11 @@ fastly:
       - KE
       - HK
       - ID
+      - IM
       - IN
+      - IS
       - IO
+      - JE
       - JM
       - JO
       - JP
@@ -736,17 +747,23 @@ fastly:
       - KZ
       - LA
       - LB
+      - LI
       - LK
       - LR
       - LT
+      - LU
       - LV
       - MA
+      - MC
+      - ME
       - MG
+      - MK
       - ML
       - MM
       - MN
       - MO
       - MR
+      - MT
       - MU
       - MV
       - MW
@@ -770,6 +787,7 @@ fastly:
       - SD
       - SG
       - SL
+      - SM
       - SN
       - SO
       - SS
@@ -788,6 +806,7 @@ fastly:
       - UG
       - US
       - UZ
+      - VA
       - VN
       - XK
       - YE
@@ -798,15 +817,17 @@ fastly:
       - AN
       - NA
     countries:
+      - AD
       - AE
       - AG
       - AI
+      - AL
       - AO
       - AQ
+      - AX
       - AZ
       - BD
       - BF
-      - GB
       - BH
       - BI
       - BJ
@@ -824,15 +845,21 @@ fastly:
       - CM
       - CN
       - CV
+      - CY
       - DJ
       - DZ
+      - EE
       - EG
       - EH
       - ER
       - ET
+      - FO
       - GA
+      - GB
       - GE
+      - GG
       - GH
+      - GI
       - GM
       - GN
       - GQ
@@ -840,8 +867,11 @@ fastly:
       - KE
       - HK
       - ID
+      - IM
       - IN
+      - IS
       - IO
+      - JE
       - JM
       - JO
       - JP
@@ -852,17 +882,23 @@ fastly:
       - KZ
       - LA
       - LB
+      - LI
       - LK
       - LR
       - LT
+      - LU
       - LV
       - MA
+      - MC
+      - ME
       - MG
+      - MK
       - ML
       - MM
       - MN
       - MO
       - MR
+      - MT
       - MU
       - MV
       - MW
@@ -886,6 +922,7 @@ fastly:
       - SD
       - SG
       - SL
+      - SM
       - SN
       - SO
       - SS
@@ -904,6 +941,7 @@ fastly:
       - UG
       - US
       - UZ
+      - VA
       - VN
       - XK
       - YE
