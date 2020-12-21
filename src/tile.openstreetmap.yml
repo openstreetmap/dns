@@ -689,8 +689,10 @@ fastly:
       - AL
       - AO
       - AQ
+      - AT
       - AX
       - AZ
+      - BA
       - BD
       - BF
       - BH
@@ -786,6 +788,8 @@ fastly:
       - SC
       - SD
       - SG
+      - SI
+      - SK
       - SL
       - SM
       - SN
@@ -824,8 +828,10 @@ fastly:
       - AL
       - AO
       - AQ
+      - AT
       - AX
       - AZ
+      - BA
       - BD
       - BF
       - BH
@@ -921,6 +927,8 @@ fastly:
       - SC
       - SD
       - SG
+      - SI
+      - SK
       - SL
       - SM
       - SN
