@@ -280,10 +280,9 @@ london:
       name: toothless
       ipv4: 185.73.44.167
       ipv6: 2001:ba8:0:2ca7::0
-  default: "xx"
   preferred:
     countries:
-      - GB
+#      - GB
       - IE
       - IM
 
@@ -673,6 +672,7 @@ fastly:
     - 5679198
   bandwidth: 10000
   cname: cdn-fastly-test.tile.openstreetmap.org
+  default: "xx"
   allowed:
     continents:
       - AF
@@ -738,6 +738,8 @@ fastly:
       - LB
       - LK
       - LR
+      - LT
+      - LV
       - MA
       - MG
       - ML
@@ -852,6 +854,8 @@ fastly:
       - LB
       - LK
       - LR
+      - LT
+      - LV
       - MA
       - MG
       - ML
