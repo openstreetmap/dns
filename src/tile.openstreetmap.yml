@@ -794,6 +794,7 @@ fastly:
       - PM
       - PT
       - QA
+      - RE
       - RO
       - RS
       - RU
@@ -822,6 +823,7 @@ fastly:
       - TR
       - TZ
       - TG
+      - TW
       - UG
       - US
       - UZ
@@ -948,6 +950,7 @@ fastly:
       - PM
       - PT
       - QA
+      - RE
       - RO
       - RS
       - RU
@@ -976,6 +979,7 @@ fastly:
       - TR
       - TZ
       - TG
+      - TW
       - UG
       - US
       - UZ
