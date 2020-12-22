@@ -734,6 +734,7 @@ fastly:
       - KE
       - HK
       - ID
+      - IE
       - IM
       - IN
       - IS
@@ -757,6 +758,7 @@ fastly:
       - LV
       - MA
       - MC
+      - MD
       - ME
       - MG
       - MK
@@ -773,6 +775,7 @@ fastly:
       - MY
       - NE
       - NG
+      - NO
       - NP
       - OM
       - PG
@@ -873,6 +876,7 @@ fastly:
       - KE
       - HK
       - ID
+      - IE
       - IM
       - IN
       - IS
@@ -896,6 +900,7 @@ fastly:
       - LV
       - MA
       - MC
+      - MD
       - ME
       - MG
       - MK
@@ -912,6 +917,7 @@ fastly:
       - MY
       - NE
       - NG
+      - NO
       - NP
       - OM
       - PG
