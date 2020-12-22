@@ -725,6 +725,7 @@ fastly:
       - EG
       - EH
       - ER
+      - ES
       - ET
       - FI
       - FO
@@ -737,6 +738,7 @@ fastly:
       - GM
       - GN
       - GQ
+      - GR
       - GW
       - KE
       - HK
@@ -805,6 +807,7 @@ fastly:
       - SE
       - SG
       - SI
+      - SJ
       - SK
       - SL
       - SM
@@ -881,6 +884,7 @@ fastly:
       - EG
       - EH
       - ER
+      - ES
       - ET
       - FI
       - FO
@@ -893,6 +897,7 @@ fastly:
       - GM
       - GN
       - GQ
+      - GR
       - GW
       - KE
       - HK
@@ -961,6 +966,7 @@ fastly:
       - SE
       - SG
       - SI
+      - SJ
       - SK
       - SL
       - SM
