@@ -438,7 +438,7 @@ zurich:
   ipv6: 2001:8e0:40:2039::10
   preferred:
     countries:
-      - CH
+#      - CH
       - IT
 #      - SM
 #      - VA
@@ -695,6 +695,7 @@ fastly:
       - BA
       - BD
       - BF
+      - BG
       - BH
       - BI
       - BJ
@@ -707,12 +708,14 @@ fastly:
       - CA
       - CD
       - CF
+      - CH
       - CG
       - CI
       - CM
       - CN
       - CV
       - CY
+      - CZ
       - DJ
       - DZ
       - EE
@@ -793,6 +796,7 @@ fastly:
       - SA
       - SC
       - SD
+      - SE
       - SG
       - SI
       - SK
@@ -840,6 +844,7 @@ fastly:
       - BA
       - BD
       - BF
+      - BG
       - BH
       - BI
       - BJ
@@ -853,11 +858,13 @@ fastly:
       - CD
       - CF
       - CG
+      - CH
       - CI
       - CM
       - CN
       - CV
       - CY
+      - CZ
       - DJ
       - DZ
       - EE
@@ -938,6 +945,7 @@ fastly:
       - SA
       - SC
       - SD
+      - SE
       - SG
       - SI
       - SK
