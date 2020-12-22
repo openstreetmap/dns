@@ -694,6 +694,7 @@ fastly:
       - AZ
       - BA
       - BD
+      - BE
       - BF
       - BG
       - BH
@@ -704,6 +705,7 @@ fastly:
       - BN
       - BS
       - BT
+      - BY
       - BZ
       - CA
       - CD
@@ -717,6 +719,7 @@ fastly:
       - CY
       - CZ
       - DJ
+      - DK
       - DZ
       - EE
       - EG
@@ -791,6 +794,7 @@ fastly:
       - PM
       - PT
       - QA
+      - RO
       - RS
       - RU
       - RW
@@ -844,6 +848,7 @@ fastly:
       - AZ
       - BA
       - BD
+      - BE
       - BF
       - BG
       - BH
@@ -854,6 +859,7 @@ fastly:
       - BN
       - BS
       - BT
+      - BY
       - BZ
       - CA
       - CD
@@ -867,6 +873,7 @@ fastly:
       - CY
       - CZ
       - DJ
+      - DK
       - DZ
       - EE
       - EG
@@ -941,6 +948,7 @@ fastly:
       - PM
       - PT
       - QA
+      - RO
       - RS
       - RU
       - RW
