@@ -827,6 +827,7 @@ fastly:
       - TZ
       - TG
       - TW
+      - UA
       - UG
       - US
       - UZ
@@ -986,6 +987,7 @@ fastly:
       - TZ
       - TG
       - TW
+      - UA
       - UG
       - US
       - UZ
