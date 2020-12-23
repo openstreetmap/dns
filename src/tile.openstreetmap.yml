@@ -749,6 +749,7 @@ fastly:
       - IM
       - IN
       - IS
+      - IT
       - IO
       - JE
       - JM
@@ -909,6 +910,7 @@ fastly:
       - IM
       - IN
       - IS
+      - IT
       - IO
       - JE
       - JM
