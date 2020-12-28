@@ -208,7 +208,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   CNAME("tile", "dualstack.osff2.map.fastly.net.", TTL("10m")),
   CNAME("a.tile", "dualstack.osff2.map.fastly.net.", TTL("10m")),
   CNAME("b.tile", "dualstack.osff2.map.fastly.net.", TTL("10m")),
-  CNAME("c,tile", "dualstack.osff2.map.fastly.net.", TTL("10m")),
+  CNAME("c.tile", "dualstack.osff2.map.fastly.net.", TTL("10m")),
   
   // Services machine
 
