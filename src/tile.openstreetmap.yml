@@ -667,9 +667,7 @@ buenosaires:
 # Fastly
 fastly:
   global: true
-  statuscake:
-    - 5679197
-    - 5679198
+  statuscake: []
   bandwidth: 10000
   cname: dualstack.osff2.map.fastly.net
   default: "xx"
