@@ -671,7 +671,7 @@ fastly:
     - 5679197
     - 5679198
   bandwidth: 10000
-  cname: cdn-fastly-test.tile.openstreetmap.org
+  cname: dualstack.osff2.map.fastly.net
   default: "xx"
   allowed:
     continents:

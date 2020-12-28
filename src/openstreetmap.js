@@ -205,15 +205,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("albi", ALBI_IPV4),
   AAAA("albi", ALBI_IPV6),
 
-  CNAME("tile", "tile.geo.openstreetmap.org."),
-  CNAME("a.tile", "tile.geo.openstreetmap.org."),
-  CNAME("b.tile", "tile.geo.openstreetmap.org."),
-  CNAME("c.tile", "tile.geo.openstreetmap.org."),
+  CNAME("tile", "dualstack.osff2.map.fastly.net.", TTL("10m")),
+  CNAME("a.tile", "dualstack.osff2.map.fastly.net.", TTL("10m")),
+  CNAME("b.tile", "dualstack.osff2.map.fastly.net.", TTL("10m")),
+  CNAME("c,tile", "dualstack.osff2.map.fastly.net.", TTL("10m")),
   
-  // Fastly tile CDN testing
-  
-  CNAME("cdn-fastly-test.tile", "dualstack.osff2.map.fastly.net."),
-
   // Services machine
 
   A("ironbelly", IRONBELLY_IPV4),
