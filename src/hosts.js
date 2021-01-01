@@ -142,6 +142,9 @@ var NAGA_IPV6 = "2a0b:cbc0:1101:1::41";
 
 var NEAK_IPV4 = "89.234.177.142";
 
+var NECROSAN_IPV4 = "45.85.134.91";
+var NECROSAN_IPV6 = "2a05:46c0:100:1004:ffff:ffff:ffff:ffff";
+
 var NEPOMUK_IPV4 = "77.95.65.39";
 var NEPOMUK_IPV6 = "2a03:9180:0:100::7";
 
