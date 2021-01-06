@@ -168,13 +168,6 @@ germany:
       ipv4: 195.201.226.63
       ipv6: 2a01:4f8:1c1c:bc54::1
     - statuscake:
-        - 5590100
-        - 5590099
-      bandwidth: 60
-      name: kilgharrah
-      ipv4: 176.9.47.143
-      ipv6: 2a01:4f8:150:638d::2
-    - statuscake:
       - 5715443
       - 5715444
       bandwidth: 80
