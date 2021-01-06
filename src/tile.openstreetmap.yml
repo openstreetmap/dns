@@ -72,22 +72,6 @@ oslo:
   bandwidth: 30
   ipv4: 31.169.50.10
 
-# San Francisco, US
-# BW Limit: 100Mb/s ?
-sanfrancisco:
-  lat: 37.708264
-  lon: -122.280247
-  statuscake:
-    - 2217263
-    - 2217264
-  colour: "#e31a1c"
-  bandwidth: 30
-  ipv4: 71.19.155.177
-  ipv6: 2605:2700:0:17:a800:ff:fe3e:cdca
-  preferred:
-    countries:
-      - CN
-
 # Lyon/Toulouse/Rennes/Paris, FR
 # Lyon @ 45.7575958,4.8323239 with BW limit of 100Mb/s
 # Toulouse @ 43.6044622,1.4442469
@@ -449,13 +433,6 @@ newzealand:
   lon: 175.0302775
   colour: "#ffff99"
   servers:
-    - statuscake:
-        - 3911508
-        - 3911509
-      bandwidth: 10
-      name: tuatara
-      ipv4: 114.23.141.203
-      ipv6: 2406:1e00:b410:c24:529a:4cff:fe79:bc3b
     - statuscake:
         - 3931336
         - 3931337
