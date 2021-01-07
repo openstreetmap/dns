@@ -147,13 +147,6 @@ germany:
   colour: "#b2df8a"
   servers:
     - statuscake:
-        - 2217269
-        - 2217270
-      bandwidth: 60
-      name: katie
-      ipv4: 144.76.70.77
-      ipv6: 2a01:4f8:191:834c::2
-    - statuscake:
         - 2217293
         - 2217294
       bandwidth: 60
