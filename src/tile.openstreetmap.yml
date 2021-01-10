@@ -288,19 +288,6 @@ minsk:
       - LT
       - LV
 
-# Aalborg, DK
-# BW Limit: 1000Mb/s
-aalborg:
-  lat: 57.0159232
-  lon: 9.97532374746345
-  statuscake:
-    - 2217289
-    - 2217290
-  colour: "#80b1d3"
-  bandwidth: 80
-  ipv4: 130.225.254.109
-  ipv6: 2001:878:346::109
-
 # Zaragoza, ES
 zaragoza:
   lat: 41.64207
