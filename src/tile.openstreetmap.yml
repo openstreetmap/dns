@@ -495,13 +495,6 @@ czechia:
       bandwidth: 30
       name: fume
       ipv4: 147.228.60.16
-    - statuscake:
-        - 5508363
-        - 5508364
-      bandwidth: 30
-      name: falkor
-      ipv4: 81.27.197.69
-      ipv6: 2a02:8301:0:1::69
   allowed:
     countries:
       - AT
