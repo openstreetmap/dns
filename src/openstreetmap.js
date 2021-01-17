@@ -201,6 +201,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("bowser", BOWSER_IPV4),
 
+  A("balerion", BALERION_IPV4),
+
   A("albi", ALBI_IPV4),
   AAAA("albi", ALBI_IPV6),
 
@@ -454,7 +456,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("fafnir", FAFNIR_IPV4),
   AAAA("fafnir", FAFNIR_IPV6),
   A("fume", FUME_IPV4),
-  A("balerion", BALERION_IPV4),
   A("naga", NAGA_IPV4),
   AAAA("naga", NAGA_IPV6),
   A("takhisis", TAKHISIS_IPV4),
