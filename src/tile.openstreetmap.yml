@@ -281,17 +281,6 @@ minsk:
       - LT
       - LV
 
-# Zaragoza, ES
-zaragoza:
-  lat: 41.64207
-  lon: -0.90054
-  statuscake:
-    - 2217291
-    - 2217292
-  colour: "#fdb462"
-  bandwidth: 100
-  ipv4: 155.210.4.103
-
 # Athens, GR
 athens:
   lat: 37.983972
