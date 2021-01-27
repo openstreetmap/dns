@@ -322,7 +322,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Prometheus server
 
-  A("prometheus", TIAMAT11_IPV4),
+  A("prometheus", TIAMAT11_IPV4, TTL("10m")),
 
   // Chef server
 
