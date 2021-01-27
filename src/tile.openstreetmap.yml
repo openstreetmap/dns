@@ -228,30 +228,6 @@ london:
       - IE
       - IM
 
-# Corvallis, US
-#corvallis:
-#  lat: 44.5639267
-#  lon: -123.274707837676
-#  colour: "#6a3d9a"
-#  servers:
-#    - statuscake:
-#       - 5434496
-#       - 5434497
-#      bandwidth: 200
-#      name: stormfly-03
-#      ipv4: 140.211.167.99
-#      ipv6: 2605:bc80:3010:700::8cd3:a763
-#    - statuscake:
-#       - 2217287
-#       - 5560091
-#      bandwidth: 200
-#      name: stormfly-04
-#      ipv4: 140.211.167.100
-#      ipv6: 2605:bc80:3010:700::8cd3:a764
-#  preferred:
-#    countries:
-#      - US
-
 # Budapest, HU
 budapest:
   lat: 47.4925
