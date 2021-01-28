@@ -165,6 +165,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("dulcy.ams", DULCY_INTERNAL),
   A("dulcy.oob", DULCY_OOB),
 
+  A("stormfly-04", STORMFLY04_IPV4),
+  AAAA("stormfly-04", STORMFLY04_IPV6),
+  A("stormfly-04.oob", STORMFLY04_OOB),
+
   CNAME("nominatim", "nominatim.geo.openstreetmap.org."),
 
   // Taginfo server
@@ -322,7 +326,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Prometheus server
 
-  A("prometheus", TIAMAT11_IPV4, TTL("10m")),
+  A("stormfly-03", STORMFLY03_IPV4),
+  AAAA("stormfly-03", STORMFLY03_IPV6),
+  A("prometheus", STORMFLY03_IPV4, TTL("10m")),
+  AAAA("prometheus", STORMFLY03_IPV6, TTL("10m")),
+  A("stormfly-03.oob", STORMFLY03_OOB),
 
   // Chef server
 
@@ -425,12 +433,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("sarkany", SARKANY_IPV6),
   A("cmok", CMOK_IPV4),
   AAAA("cmok", CMOK_IPV6),
-  A("stormfly-03", STORMFLY03_IPV4),
-  AAAA("stormfly-03", STORMFLY03_IPV6),
-  A("stormfly-03.oob", STORMFLY03_OOB),
-  A("stormfly-04", STORMFLY04_IPV4),
-  AAAA("stormfly-04", STORMFLY04_IPV6),
-  A("stormfly-04.oob", STORMFLY04_OOB),
   A("kalessin", KALESSIN_IPV4),
   AAAA("kalessin", KALESSIN_IPV6),
   A("angor", ANGOR_IPV4),
