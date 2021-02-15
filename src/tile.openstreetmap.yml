@@ -349,31 +349,6 @@ kiev:
   ipv4: 176.122.99.101
   ipv6: 2001:67c:2d40::65
 
-# Hamilton/Wellington, NZ
-# Hamilton @ -37.783333,175.283333
-# Wellington @ -41.288889,174.777222
-newzealand:
-  lat: -39.536111
-  lon: 175.0302775
-  colour: "#ffff99"
-  servers:
-    - statuscake:
-        - 3931336
-        - 3931337
-      bandwidth: 40
-      name: waima
-      ipv4: 103.197.61.160
-  allowed:
-    continents:
-      - OC
-    countries:
-      - CC
-#  preferred:
-#    continents:
-#      - OC
-#    countries:
-#      - CC
-
 # Linköping/Umeå, SE
 # Linköping @ 58.403261,15.623611189797
 # Umeå @ 63.82177625,20.3043163114932
