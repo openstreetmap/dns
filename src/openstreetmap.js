@@ -170,6 +170,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("stormfly-04.oob", STORMFLY04_OOB),
 
   CNAME("nominatim", "nominatim.geo.openstreetmap.org."),
+  CNAME("qgis.nominatim", "nominatim.geo.openstreetmap.org."),
 
   // Taginfo server
 
