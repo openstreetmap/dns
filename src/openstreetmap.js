@@ -517,7 +517,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Uptime site at StatusCake
 
-  CNAME("uptime", "uptimessl.statuscake.com."),
+  CNAME("uptime", "uptimessl-new.statuscake.com."),
 
   // Custom Domain for https://github.com/osmfoundation/welcome-mat/
 
