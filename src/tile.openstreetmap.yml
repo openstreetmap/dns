@@ -188,32 +188,6 @@ osijek:
   ipv4: 161.53.30.107
   ipv6: 2001:b68:c0ff:0:221:5eff:fe40:c7c4
 
-# London, GB
-london:
-  lat: 51.5120484
-  lon: -0.00201880060605929
-  colour: "#ffed6f"
-  servers:
-    - statuscake:
-       - 2214077
-       - 2217246
-      bandwidth: 150
-      name: saphira
-      ipv4: 185.73.44.30
-      ipv6: 2001:ba8:0:2c1e::0
-    - statuscake:
-       - 4089249
-       - 4089250
-      bandwidth: 150
-      name: toothless
-      ipv4: 185.73.44.167
-      ipv6: 2001:ba8:0:2ca7::0
-  preferred:
-    countries:
-#      - GB
-      - IE
-      - IM
-
 # Budapest, HU
 budapest:
   lat: 47.4925
