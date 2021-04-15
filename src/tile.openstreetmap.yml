@@ -90,20 +90,6 @@ france:
       ipv4: 77.95.65.39
       ipv6: 2a03:9180:0:100::7
     - statuscake:
-        - 3743694
-        - 3743696
-      bandwidth: 30
-      name: norbert
-      ipv4: 89.234.186.100
-      ipv6: 2a00:5884:821c::1
-    - statuscake:
-        - 5321339
-        - 5321340
-      bandwidth: 20
-      name: naga
-      ipv4: 45.13.104.40
-      ipv6: 2a0b:cbc0:1101:1::41
-    - statuscake:
         - 5434796
         - 5434797
       bandwidth: 40
@@ -239,23 +225,6 @@ budapest:
   bandwidth: 80
   ipv4: 37.17.173.8
   ipv6: 2001:4c48:2:bf04:250:56ff:fe8f:5c81
-
-# Minsk, BY
-minsk:
-  lat: 53.88586
-  lon: 27.45368
-  statuscake:
-    - 2217285
-    - 2217286
-  colour: "#ffed6f"
-  bandwidth: 80
-  ipv4: 31.130.201.40
-  ipv6: 2001:67c:2268:1005:21e:8cff:fe8c:8d3b
-  allowed:
-    countries:
-      - BY
-      - LT
-      - LV
 
 # Athens, GR
 athens:
