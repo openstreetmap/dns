@@ -50,7 +50,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // Main web server and it's aliases
 
   A("@", RIDLEY_IPV4, TTL("10m")),
-  A("old", RIDLEY_IPV4, TTL("10m")),
   A("www", RIDLEY_IPV4, TTL("10m")),
   A("wiki", RIDLEY_IPV4, TTL("10m")),
   A("blog", RIDLEY_IPV4, TTL("10m")),
