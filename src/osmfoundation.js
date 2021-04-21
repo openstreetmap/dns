@@ -31,14 +31,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   CNAME("uaqn4jv2xaoe", "gv-jun5dginqysxph.dv.googlehosted.com."),
 
-  // XMPP chat servers
-
-  SRV("_xmpp-server._tcp", 5, 0, 5269, "xmpp-server.l.google.com."),
-  SRV("_xmpp-server._tcp", 20, 0, 5269, "xmpp-server1.l.google.com."),
-  SRV("_xmpp-server._tcp", 20, 0, 5269, "xmpp-server2.l.google.com."),
-  SRV("_xmpp-server._tcp", 20, 0, 5269, "xmpp-server3.l.google.com."),
-  SRV("_xmpp-server._tcp", 20, 0, 5269, "xmpp-server4.l.google.com."),
-
   // Aliases for google services
 
   CNAME("login", "ghs.google.com."),
