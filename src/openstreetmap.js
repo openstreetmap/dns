@@ -134,10 +134,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Rails application servers
 
-  A("thorn-01.ams", THORN01_INTERNAL),
-  A("rails1.ams", THORN01_INTERNAL),
-  A("thorn-01.oob", THORN01_OOB),
-
   A("thorn-02.ams", THORN02_INTERNAL),
   A("rails2.ams", THORN02_INTERNAL),
   A("thorn-02.oob", THORN02_OOB),
@@ -350,6 +346,13 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("forum", CLIFFORD_IPV4, TTL("10m")),
   A("clifford.ucl", CLIFFORD_INTERNAL),
   A("clifford.oob", CLIFFORD_OOB),
+
+  // Discourse server
+
+  A("lockheed", LOCKHEED_IPV4),
+  AAAA("lockheed", LOCKHEED_IPV6),
+  A("lockheed.ams", LOCKHEED_INTERNAL),
+  A("lockheed.oob", LOCKHEED_OOB),
 
   // KVMs
 
