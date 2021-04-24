@@ -50,6 +50,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("board", RIDLEY_IPV4, TTL("10m")),
   A("dwg", RIDLEY_IPV4, TTL("10m")),
   A("mwg", RIDLEY_IPV4, TTL("10m")),
-  A("operations", RIDLEY_IPV4, TTL("10m"))
+  A("operations", RIDLEY_IPV4, TTL("10m")),
+
+  // Nextcloud instance
+
+  CNAME("files", "osmfiles.cloud68.co")
 
 );
