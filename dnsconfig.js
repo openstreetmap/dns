@@ -2,10 +2,6 @@ var REG_NONE = NewRegistrar("none", "NONE");
 var REG_GANDI = NewRegistrar("gandi_v5", "GANDI_V5");
 var PROVIDER = NewDnsProvider("cloudflare", "CLOUDFLAREAPI");
 
-var CF_TTL_ANY = TTL(1);
-
-DEFAULTS(DefaultTTL("24h"));
-
 var DOMAIN;
 var REGISTRAR;
 var DYNAMIC_RECORDS;
@@ -81,12 +77,12 @@ STATEOFTHEMAP("stateofthemap.org", REG_GANDI);
 STATEOFTHEMAP("stateofthemap.com", REG_GANDI);
 STATEOFTHEMAP("sotm.org", REG_GANDI);
 
-var STATEOFTHEMAP_EU = loadTemplate("stateofthemap-eu");
 
-STATEOFTHEMAP_EU("stateofthemap.eu", REG_GANDI);
+// Domain Owner Issue / Registration Issues - Disable for the moment. 31 May 2021
+// var STATEOFTHEMAP_EU = loadTemplate("stateofthemap-eu");
+// STATEOFTHEMAP_EU("stateofthemap.eu", REG_GANDI);
 
 var OPENGEODATA = loadTemplate("opengeodata");
-
 OPENGEODATA("opengeodata.org", REG_GANDI);
 
 var SWITCH2OSM = loadTemplate("switch2osm");
