@@ -2,9 +2,17 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Publish CAA records indicating that only letsencrypt should issue certificates
 
-  CAA("@", "issue", "letsencrypt.org", CF_TTL_ANY),
-  CAA("@", "issuewild", "letsencrypt.org", CF_TTL_ANY),
-  CAA("@", "iodef", "mailto:hostmaster@openstreetmap.org"),
+  CAA_BUILDER({
+    label: "@",
+    ttl: "1h",
+    iodef: "mailto:hostmaster@openstreetmap.org",
+    issue: [
+      "letsencrypt.org",
+    ],
+    issuewild: [
+      "letsencrypt.org",
+    ],
+  }),
 
   // Let the main domain handle the email
 
@@ -12,7 +20,15 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Delegate SPF policy to the main domain
 
-  TXT("@", "v=spf1 include:openstreetmap.org -all"),
+  SPF_BUILDER({
+    label: "@",
+    ttl: "1h",
+    parts: [
+      "v=spf1",
+      "include:openstreetmap.org",      // main openstreetmap.org spf record
+      "-all"
+    ]
+  }),
 
   // Delegate MTA-STS policy to the main domain
 

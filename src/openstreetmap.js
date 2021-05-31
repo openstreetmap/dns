@@ -2,11 +2,19 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Publish CAA records indicating that only letsencrypt and globalsign (Fastly) should issue certificates
 
-  CAA("@", "issue", "letsencrypt.org", CF_TTL_ANY),
-  CAA("@", "issuewild", "letsencrypt.org", CF_TTL_ANY),
-  CAA("@", "issue", "globalsign.com", CF_TTL_ANY),
-  CAA("@", "issuewild", "globalsign.com", CF_TTL_ANY),
-  CAA("@", "iodef", "mailto:hostmaster@openstreetmap.org"),
+  CAA_BUILDER({
+    label: "@",
+    ttl: "1h",
+    iodef: "mailto:hostmaster@openstreetmap.org",
+    issue: [
+      "letsencrypt.org",
+      "globalsign.com",   // Used by Fastly for CDN certificates
+    ],
+    issuewild: [
+      "letsencrypt.org",
+      "globalsign.com",   // Used by Fastly for CDN certificates
+    ],
+  }),
 
   // Use shenron as the MX host
 
@@ -19,8 +27,29 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Publish SPF records indicating that only shenron sends mail
 
-  TXT("@", "v=spf1 ip4:212.110.172.32 ip6:2001:41c9:1:400::32 mx -all"),
-  TXT("otrs", "v=spf1 ip4:212.110.172.32 ip6:2001:41c9:1:400::32 mx -all"),
+  SPF_BUILDER({
+    label: "@",
+    ttl: "1h",
+    parts: [
+      "v=spf1",
+      "ip4:212.110.172.32",       // shenron ipv4
+      "ip6:2001:41c9:1:400::32",  // shenron ipv6
+      "mx",                       // safety net if we change mx
+      "-all"
+    ]
+  }),
+
+  SPF_BUILDER({
+    label: "otrs",
+    ttl: "1h",
+    parts: [
+      "v=spf1",
+      "ip4:212.110.172.32",       // shenron ipv4
+      "ip6:2001:41c9:1:400::32",  // shenron ipv6
+      "mx",                       // safety net if we change mx
+      "-all"
+    ]
+  }),
 
   // Publish DKIM public key
 
@@ -30,7 +59,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   TXT("_mta-sts", "v=STSv1; id=202001291805Z"),
   TXT("_smtp._tls", "v=TLSRPTv1; rua=mailto:postmaster@openstreetmap.org"),
-  
+
   // Fastly cert domain ownership confirmation
 
   TXT("@", "_globalsign-domain-verification=ps00GlW1BzY9c2_cwH_pFqRkvzZyaCVZ-3RLssRG6S"),
@@ -214,7 +243,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   CNAME("a.tile", "dualstack.osff2.map.fastly.net.", TTL("10m")),
   CNAME("b.tile", "dualstack.osff2.map.fastly.net.", TTL("10m")),
   CNAME("c.tile", "dualstack.osff2.map.fastly.net.", TTL("10m")),
-  
+
   // Services machine
 
   A("ironbelly", IRONBELLY_IPV4),
@@ -510,7 +539,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Donation site
 
-  A("donate", RIDLEY_IPV4, TTL("10m")),
+  A("donate", RIDLEY_IPV4),
 
   // Uptime site at StatusCake
 

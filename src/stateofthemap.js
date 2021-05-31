@@ -2,9 +2,31 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Publish CAA records indicating that only letsencrypt should issue certificates
 
-  CAA("@", "issue", "letsencrypt.org", CF_TTL_ANY),
-  CAA("@", "issuewild", "letsencrypt.org", CF_TTL_ANY),
-  CAA("@", "iodef", "mailto:hostmaster@openstreetmap.org"),
+  CAA_BUILDER({
+    label: "@",
+    ttl: "1h",
+    iodef: "mailto:hostmaster@openstreetmap.org",
+    issue: [
+      "letsencrypt.org",
+    ],
+    issuewild: [
+      "letsencrypt.org",
+    ],
+  }),
+
+  // SPF policy
+
+  SPF_BUILDER({
+    label: "@",
+    ttl: "1h",
+    parts: [
+      "v=spf1",
+      "include:_spf.google.com",  // Google GSuite
+      "ip4:212.110.172.32",       // shenron ipv4
+      "ip6:2001:41c9:1:400::32",  // shenron ipv6
+      "-all"
+    ]
+  }),
 
   // Let google handle email
 
@@ -35,10 +57,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("2010", RIDLEY_IPV4, TTL("10m")),
   A("2009", RIDLEY_IPV4, TTL("10m")),
   A("2008", RIDLEY_IPV4, TTL("10m")),
-  A("2007", RIDLEY_IPV4, TTL("10m")),
-
-  // Video conferencing server
-
-  A("talk", "95.217.113.173")
+  A("2007", RIDLEY_IPV4, TTL("10m"))
 
 );
