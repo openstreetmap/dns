@@ -58,7 +58,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // Announce MTA-STS policy and TLSRPT policy for error reports
 
   TXT("_mta-sts", "v=STSv1; id=202001291805Z"),
-  TXT("_smtp._tls", "v=TLSRPTv1; rua=mailto:postmaster@openstreetmap.org"),
+  TXT("_smtp._tls", "v=TLSRPTv1; rua=mailto:openstreetmap-d@tlsrpt.report-uri.com"),
 
   // Fastly cert domain ownership confirmation
 
