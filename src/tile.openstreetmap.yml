@@ -307,13 +307,6 @@ sweden:
       name: nidhogg
       ipv4: 130.236.254.221
       ipv6: 2001:6b0:17:f0a0::dd
-    - statuscake:
-        - 3949588
-        - 3949589
-      bandwidth: 80
-      name: fafnir
-      ipv4: 130.239.18.114
-      ipv6: 2001:6b0:e:2a18::114
 
 # Curitiba/São Paulo, BR
 # Curitaba @ -25.41403745,-49.252918753851
