@@ -40,6 +40,30 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   }),
 
   SPF_BUILDER({
+    label: "messages",
+    ttl: "1h",
+    parts: [
+      "v=spf1",
+      "ip4:212.110.172.32",       // shenron ipv4
+      "ip6:2001:41c9:1:400::32",  // shenron ipv6
+      "mx",                       // safety net if we change mx
+      "-all"
+    ]
+  }),
+
+  SPF_BUILDER({
+    label: "noreply",
+    ttl: "1h",
+    parts: [
+      "v=spf1",
+      "ip4:212.110.172.32",       // shenron ipv4
+      "ip6:2001:41c9:1:400::32",  // shenron ipv6
+      "mx",                       // safety net if we change mx
+      "-all"
+    ]
+  }),
+
+  SPF_BUILDER({
     label: "otrs",
     ttl: "1h",
     parts: [
