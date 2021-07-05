@@ -126,13 +126,6 @@ germany:
       ipv4: 185.66.195.245
       ipv6: 2a03:2260:2000:1::5
     - statuscake:
-        - 3750847
-        - 3750842
-      bandwidth: 120
-      name: keizer
-      ipv4: 195.201.226.63
-      ipv6: 2a01:4f8:1c1c:bc54::1
-    - statuscake:
       - 5715443
       - 5715444
       bandwidth: 80
@@ -307,25 +300,6 @@ sweden:
       name: nidhogg
       ipv4: 130.236.254.221
       ipv6: 2001:6b0:17:f0a0::dd
-
-# Curitiba/São Paulo, BR
-# Curitaba @ -25.41403745,-49.252918753851
-# São Paulo @ -23.55,-46.633333
-brazil:
-  lat: -24.482018725
-  lon: -47.9431258769255
-  colour: "#33a02c"
-  servers:
-    - statuscake:
-        - 3945882
-        - 3945883
-      bandwidth: 60
-      name: boitata
-      ipv4: 200.236.31.207
-      ipv6: 2801:82:80ff:8002:216:ccff:feaa:21
-  allowed:
-    countries:
-      - BR
 
 # Pilsen/Prague, CZ
 # Pilsen @ 49.723689,13.351542

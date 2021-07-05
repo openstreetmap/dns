@@ -8,9 +8,6 @@ var ASCALON_IPV4 = "184.107.48.228";
 
 var BALERION_IPV4 = "138.44.68.134";
 
-var BOITATA_IPV4 = "200.236.31.207";
-var BOITATA_IPV6 = "2801:82:80ff:8002:216:ccff:feaa:21";
-
 var BOWSER_IPV4 = "138.44.68.106";
 
 var CHERUFE_IPV4 = "200.91.44.37";
@@ -74,9 +71,6 @@ var KARM_OOB = "10.0.49.50";
 
 var KATLA_INTERNAL = "10.0.32.40";
 var KATLA_OOB = "10.0.33.40";
-
-var KEIZER_IPV4 = "195.201.226.63";
-var KEIZER_IPV6 = "2a01:4f8:1c1c:bc54::1";
 
 var KESSIE_IPV4 = "178.250.74.36";
 var KESSIE_IPV6 = "2a02:1658:4:0:dad3:85ff:fe5d:875e";
