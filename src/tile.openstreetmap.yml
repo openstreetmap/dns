@@ -52,13 +52,6 @@ netherlands:
       name: takhisis
       ipv4: 31.3.110.20
       ipv6: 2a03:7900:111:0:31:3:110:20
-    - statuscake:
-        - 5499504
-        - 5499504
-      bandwidth: 60
-      name: shruikan
-      ipv4: 45.148.169.51
-      ipv6: 2a0a:aa42:56:1000::1
 
 # Oslo, NO
 # BW Limit: 1000Mb/s
@@ -239,20 +232,6 @@ capetown:
       - SZ
       - ZA
       - ZW
-
-# Viña del Mar, CL
-vinadelmar:
-  lat: -33.008099
-  lon: -71.519699
-  statuscake:
-    - 3499524
-    - 3499526
-  colour: "#ff7f00"
-  bandwidth: 80
-  ipv4: 200.91.44.37
-  allowed:
-    continents:
-      - SA
 
 # Zurich, CH
 # BW Limit: 200Mb/s
