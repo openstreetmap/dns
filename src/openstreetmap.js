@@ -86,9 +86,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
     rua: [
       "mailto:openstreetmap-d@dmarc.report-uri.com"
     ],
-    ruf: [
-      "mailto:admins@openstreetmap.org"
-    ],
     failureOptions: 1
   }),
 
