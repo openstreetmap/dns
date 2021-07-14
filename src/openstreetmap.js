@@ -410,10 +410,12 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("clifford.ucl", CLIFFORD_INTERNAL),
   A("clifford.oob", CLIFFORD_OOB),
 
-  // Discourse server
+  // Discourse server ("community")
 
   A("lockheed", LOCKHEED_IPV4),
   AAAA("lockheed", LOCKHEED_IPV6),
+  A("community", LOCKHEED_IPV4),
+  AAAA("community", LOCKHEED_IPV6),
   A("lockheed.ams", LOCKHEED_INTERNAL),
   A("lockheed.oob", LOCKHEED_OOB),
 
