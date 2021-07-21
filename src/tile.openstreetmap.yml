@@ -112,13 +112,6 @@ germany:
   colour: "#b2df8a"
   servers:
     - statuscake:
-        - 2217293
-        - 2217294
-      bandwidth: 60
-      name: kalessin
-      ipv4: 185.66.195.245
-      ipv6: 2a03:2260:2000:1::5
-    - statuscake:
       - 5715443
       - 5715444
       bandwidth: 80
@@ -173,18 +166,6 @@ osijek:
   bandwidth: 100
   ipv4: 161.53.30.107
   ipv6: 2001:b68:c0ff:0:221:5eff:fe40:c7c4
-
-# Budapest, HU
-budapest:
-  lat: 47.4925
-  lon: 19.051389
-  statuscake:
-    - 2217283
-    - 2217284
-  colour: "#fdbf6f"
-  bandwidth: 80
-  ipv4: 37.17.173.8
-  ipv6: 2001:4c48:2:bf04:250:56ff:fe8f:5c81
 
 # Athens, GR
 athens:
@@ -263,22 +244,6 @@ kiev:
   bandwidth: 70
   ipv4: 176.122.99.101
   ipv6: 2001:67c:2d40::65
-
-# Linköping/Umeå, SE
-# Linköping @ 58.403261,15.623611189797
-# Umeå @ 63.82177625,20.3043163114932
-sweden:
-  lat: 61.1125186
-  lon: 17.9639637506451
-  colour: "#d9d9d9"
-  servers:
-    - statuscake:
-        - 3932686
-        - 3932688
-      bandwidth: 40
-      name: nidhogg
-      ipv4: 130.236.254.221
-      ipv6: 2001:6b0:17:f0a0::dd
 
 # Pilsen/Prague, CZ
 # Pilsen @ 49.723689,13.351542
