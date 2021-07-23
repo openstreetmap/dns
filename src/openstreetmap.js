@@ -513,7 +513,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("neak", NEAK_IPV4),
   A("meraxes", MERAXES_IPV4),
   AAAA("meraxes", MERAXES_IPV6),
-  A("kokosnuss", KOKOSNUSS_IPV4),
   A("firnen", FIRNEN_IPV4),
 
   // Blades
