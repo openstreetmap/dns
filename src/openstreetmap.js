@@ -101,7 +101,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // github openstreetmap organisation domain verification
 
-  TXT("_github-challenge-openstreetmap", "8b4a8eb60c"),
+  TXT("_github-challenge-openstreetmap", "6d16757cc4"),
 
   // Delegate MTA-STS policy for subdomains
 
