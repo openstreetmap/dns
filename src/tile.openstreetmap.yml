@@ -121,28 +121,6 @@ germany:
     countries:
       - DE
 
-# Hsinchu, TW
-hsinchu:
-  lat: 24.78268
-  lon: 120.99563
-  colour: "#33a02c"
-  statuscake:
-    - 2217277
-    - 2217278
-  bandwidth: 200
-  ipv4: 140.110.240.7
-  ipv6: 2001:e10:2000:240::7
-  allowed:
-    continents:
-      - AS
-  denied:
-    countries:
-      - ID
-  preferred:
-    countries:
-      - TW
-      - JP
-
 # Pula, HR
 pula:
   lat: 44.866280
