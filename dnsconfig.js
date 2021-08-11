@@ -51,6 +51,22 @@ OPENSTREETMAP("freeosm.org", REG_GANDI);
 OPENSTREETMAP("open-maps.org", REG_GANDI);
 OPENSTREETMAP("open-maps.com", REG_GANDI);
 OPENSTREETMAP("osmbugs.org", REG_GANDI);
+OPENSTREETMAP("freethepostcode.org", REG_GANDI);
+OPENSTREETMAP("openstreetmap.ai", REG_GANDI);
+OPENSTREETMAP("openstreetmap.am", REG_GANDI);
+OPENSTREETMAP("openstreetmap.cymru", REG_GANDI);
+OPENSTREETMAP("openstreetmap.fi", REG_GANDI);
+OPENSTREETMAP("openstreetmap.gr", REG_GANDI);
+OPENSTREETMAP("openstreetmap.me", REG_GANDI);
+OPENSTREETMAP("openstreetmap.mx", REG_GANDI);
+OPENSTREETMAP("openstreetmap.nz", REG_GANDI);
+OPENSTREETMAP("openstreetmap.pe", REG_GANDI);
+OPENSTREETMAP("openstreetmap.ph", REG_GANDI);
+OPENSTREETMAP("openstreetmap.sg", REG_GANDI);
+OPENSTREETMAP("openstreetmap.tv", REG_GANDI);
+OPENSTREETMAP("openstreetmap.wales", REG_GANDI);
+OPENSTREETMAP("openstreetmapdata.org", REG_GANDI);
+OPENSTREETMAP("openstreetmap.al", REG_NONE);
 
 var OSM_LI = loadTemplate("osm-li");
 
