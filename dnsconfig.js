@@ -54,7 +54,6 @@ OPENSTREETMAP("osmbugs.org", REG_GANDI);
 OPENSTREETMAP("freethepostcode.org", REG_GANDI);
 OPENSTREETMAP("openstreetmap.ai", REG_GANDI);
 OPENSTREETMAP("openstreetmap.am", REG_GANDI);
-OPENSTREETMAP("openstreetmap.cymru", REG_GANDI);
 OPENSTREETMAP("openstreetmap.fi", REG_GANDI);
 OPENSTREETMAP("openstreetmap.gr", REG_GANDI);
 OPENSTREETMAP("openstreetmap.me", REG_GANDI);
