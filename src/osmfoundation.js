@@ -51,11 +51,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Aliases for google services
 
-  CNAME("login", "ghs.google.com."),
-  CNAME("docs", "ghs.google.com."),
-  CNAME("mail", "ghs.google.com."),
-  CNAME("calendar", "ghs.google.com."),
-  CNAME("sites", "ghs.google.com."),
+  CNAME("login", "ghs.googlehosted.com."),
+  CNAME("docs", "ghs.googlehosted.com."),
+  CNAME("mail", "ghs.googlehosted.com."),
+  CNAME("calendar", "ghs.googlehosted.com."),
+  CNAME("sites", "ghs.googlehosted.com."),
 
   // Main web server and it's aliases
 
