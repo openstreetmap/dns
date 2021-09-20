@@ -425,13 +425,23 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Managed network switches
 
-  A("switch1", SWITCH1_IPV4),
-  AAAA("switch1", SWITCH1_IPV6),
+  A("switch1.ams", SWITCH1AMS_IPV4),
+  AAAA("switch1.ams", SWITCH1AMS_IPV6),
+
+  A("switch1.dub", SWITCH1DUB_IPV4),
+  AAAA("switch1.dub", SWITCH1DUB_IPV6),
 
   // Managed power strips
 
-  A("pdu1.ams", PDU1_INTERNAL),
-  A("pdu2.ams", PDU2_INTERNAL),
+  A("pdu1.ams", PDU1AMS_INTERNAL),
+  A("pdu2.ams", PDU2AMS_INTERNAL),
+
+  A("pdu1.dub", PDU1DUB_INTERNAL),
+  A("pdu2.dub", PDU2DUB_INTERNAL),
+
+  // Out of band access servers
+
+  A("oob1.dub", OOB1DUB_INTERNAL),
 
   // Bytemark machine, and the services which operate from it
 
@@ -554,6 +564,12 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Spare
 
+  A("idris", IDRIS_IPV4),
+  AAAA("idris", IDRIS_IPV6),
+  A("konqi", KONQI_IPV4),
+  AAAA("konqi", KONQI_IPV6),
+  A("naga", NAGA_IPV4),
+  AAAA("naga", NAGA_IPV6),
 
   // Donation site
 
