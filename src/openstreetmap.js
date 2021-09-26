@@ -148,7 +148,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // A("mapz", SPIKE02_IPV4, TTL("10m")),
   // AAAA("mapz", SPIKE02_IPV6, TTL("10m")),
   A("spike-02.dub", SPIKE02_INTERNAL),
-  A("spike-02.oob", SPIKE04_OOB),
+  A("spike-02.oob", SPIKE02_OOB),
 
   A("spike-03", SPIKE03_IPV4),
   AAAA("spike-03", SPIKE03_IPV6),
