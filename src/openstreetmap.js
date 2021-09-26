@@ -300,8 +300,9 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("ysera.oob", YSERA_OOB),
 
   A("culebre", CULEBRE_IPV4),
-  A("culebre.dub", CULEBRE_INTERNAL),
   AAAA("culebre", CULEBRE_IPV6),
+  A("culebre.dub", CULEBRE_INTERNAL),
+  A("culebre.oob", CULEBRE_OOB),
 
   A("scorch", SCORCH_IPV4),
   AAAA("scorch", SCORCH_IPV6),
@@ -627,10 +628,16 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("idris", IDRIS_IPV4),
   AAAA("idris", IDRIS_IPV6),
+  A("idris.dub", IDRIS_INTERNAL),
+  A("idris.oob", IDRIS_OOB),
   A("konqi", KONQI_IPV4),
   AAAA("konqi", KONQI_IPV6),
+  A("konqi.dub", KONQI_INTERNAL),
+  A("konqi.oob", KONQI_OOB),
   A("naga", NAGA_IPV4),
   AAAA("naga", NAGA_IPV6),
+  A("naga.dub", NAGA_INTERNAL),
+  A("naga.oob", NAGA_OOB),
 
   // Donation site
 
