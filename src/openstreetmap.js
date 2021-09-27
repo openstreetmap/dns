@@ -638,6 +638,14 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("naga", NAGA_IPV6),
   A("naga.dub", NAGA_INTERNAL),
   A("naga.oob", NAGA_OOB),
+  A("gorwen", GORWEN_IPV4),
+  AAAA("gorwen", GORWEN_IPV6),
+  A("gorwen.dub", GORWEN_INTERNAL),
+  A("gorwen.oob", GORWEN_OOB),
+  A("jakelong", JAKELONG_IPV4),
+  AAAA("jakelong", JAKELONG_IPV6),
+  A("jakelong.dub", JAKELONG_INTERNAL),
+  A("jakelong.oob", JAKELONG_OOB),
 
   // Donation site
 
