@@ -6,13 +6,6 @@ use warnings;
 use Digest::SHA qw(sha256_hex);
 use MIME::Base64;
 
-my %algorithms = (
-    "ssh-rsa" => "1",
-    "ssh-dss" => "2",
-    "ecdsa-sha2-nistp256" => "3",
-    "ssh-ed25519" => "4"
-);
-
 my %hosts;
 
 if (-f "/etc/ssh/ssh_known_hosts")
@@ -21,42 +14,21 @@ if (-f "/etc/ssh/ssh_known_hosts")
 
     while (my $line = <HOSTS>)
     {
+        last if $line =~ /^# Manually maintained records$/;
+
         if ($line =~ /^([^, ]+)\S* (\S+) (\S+)$/)
         {
             my $host = $1;
-            my $algorithm = $algorithms{$2};
+            my $algorithm = $2;
             my $value = uc(sha256_hex(decode_base64($3)));
 
             $host =~ s/\.openstreetmap\.org$//;
-        
+
             if ($algorithm ne "2")
             {
-                my $wanted = 0;
+                $hosts{$host} ||= {};
 
-                if (exists($hosts{$host}))
-                {
-                    if ($algorithm eq "3")
-                    {
-                        $wanted = 1;
-                    }
-                    elsif ($algorithm eq "4" && $hosts{$host}->{algorithm} ne "3")
-                    {
-                        $wanted = 1;
-                    }
-                }
-                else
-                {
-                    $wanted = 1;
-                }
-
-                if ($wanted)
-                {
-                    $hosts{$host} = {
-                        algorithm => $algorithm,
-                        type => "2",
-                        value => $value
-                    };
-                }
+                $hosts{$host}->{$algorithm} = $value;
             }
         }
     }
@@ -70,11 +42,22 @@ print SSHFP_JS qq|var SSHFP_RECORDS = [\n|;
 
 foreach my $host (sort keys %hosts)
 {
-    my $algorithm = $hosts{$host}->{algorithm};
-    my $type = $hosts{$host}->{type};
-    my $value = $hosts{$host}->{value};
+    if ($hosts{$host}->{"ecdsa-sha2-nistp256"} || $hosts{$host}->{"ssh-ed25519"})
+    {
+        if ($hosts{$host}->{"ecdsa-sha2-nistp256"})
+        {
+            print SSHFP_JS sshfp_record($host, "3", $hosts{$host}->{"ecdsa-sha2-nistp256"});
+        }
 
-    print SSHFP_JS qq|  SSHFP("${host}", ${algorithm}, ${type}, "${value}"),\n|;
+        if ($hosts{$host}->{"ssh-ed25519"})
+        {
+            print SSHFP_JS sshfp_record($host, "4", $hosts{$host}->{"ssh-ed25519"});
+        }
+    }
+    elsif ($hosts{$host}->{"ssh-rsa"})
+    {
+        print SSHFP_JS sshfp_record($host, "1", $hosts{$host}->{"ssh-rsa"});
+    }
 }
 
 print SSHFP_JS qq|];\n|;
@@ -82,3 +65,12 @@ print SSHFP_JS qq|];\n|;
 close(SSHFP_JS);
 
 exit 0;
+
+sub sshfp_record
+{
+    my $host = shift;
+    my $algorithm = shift;
+    my $value = shift;
+
+    return qq|  SSHFP("${host}", ${algorithm}, 2, "${value}"),\n|;
+}
