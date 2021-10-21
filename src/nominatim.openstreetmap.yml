@@ -5,7 +5,7 @@ amsterdam:
     - 2217359
     - 2217360
   colour: "#8dd3c7"
-  bandwidth: 1
+  bandwidth: 20000
   ipv4: 130.117.76.9
   ipv6: 2001:978:2:2c::172:9
   default: "xx"
@@ -17,12 +17,9 @@ slough:
     - 2217363
     - 2217364
   colour: "#bebada"
-  bandwidth: 0.05
+  bandwidth: 2000
   ipv4: 193.60.236.18
   default: "xx"
-  preferred:
-    countries:
-      - ES
 
 corvallis:
   lat: 44.5639267
@@ -31,7 +28,7 @@ corvallis:
     - 5769055
     - 5769056
   colour: "#ffffb3"
-  bandwidth: 1
+  bandwidth: 20000
   ipv4: 140.211.167.100
   ipv6: 2605:bc80:3010:700::8cd3:a764
   default: "xx"
