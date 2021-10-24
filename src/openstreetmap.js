@@ -323,10 +323,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("necrosan", NECROSAN_IPV4),
   AAAA("necrosan", NECROSAN_IPV6),
 
-  CNAME("tile", "dualstack.osff2.map.fastly.net.", TTL("10m")),
-  CNAME("a.tile", "dualstack.osff2.map.fastly.net.", TTL("10m")),
-  CNAME("b.tile", "dualstack.osff2.map.fastly.net.", TTL("10m")),
-  CNAME("c.tile", "dualstack.osff2.map.fastly.net.", TTL("10m")),
+  CNAME("tile", "dualstack.k.sni.global.fastly.net.", TTL("10m")),
+  CNAME("a.tile", "dualstack.k.sni.global.fastly.net.", TTL("10m")),
+  CNAME("b.tile", "dualstack.k.sni.global.fastly.net.", TTL("10m")),
+  CNAME("c.tile", "dualstack.k.sni.global.fastly.net.", TTL("10m")),
 
   // Services machine
 
