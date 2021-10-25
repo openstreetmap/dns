@@ -17,7 +17,7 @@ slough:
     - 2217363
     - 2217364
   colour: "#bebada"
-  requests: 200
+  requests: 300
   ipv4: 193.60.236.18
   default: "xx"
 
