@@ -30,5 +30,5 @@ clean:
 lib/countries.xml:
 	curl -s -o $@ http://api.geonames.org/countryInfo?username=demo
 
-origins/nominatim.openstreetmap.yml: bin/mkcountries lib/countries.xml bandwidth/nominatim.openstreetmap.yml
-	bin/mkcountries bandwidth/nominatim.openstreetmap.yml origins/nominatim.openstreetmap.yml
+origins/nominatim.openstreetmap.yml: bin/mkcountries lib/countries.xml requests/nominatim.openstreetmap.yml
+	bin/mkcountries requests/nominatim.openstreetmap.yml origins/nominatim.openstreetmap.yml

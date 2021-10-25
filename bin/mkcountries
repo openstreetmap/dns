@@ -7,7 +7,7 @@ use XML::TreeBuilder;
 use YAML;
 
 # Get arguments
-my $bandwidthfile = shift @ARGV;
+my $requestsfile = shift @ARGV;
 my $originsfile = shift @ARGV;
 
 # Initialise origins
@@ -19,8 +19,8 @@ my $countries = XML::TreeBuilder->new;
 # Parse the country database
 $countries->parsefile("lib/countries.xml");
 
-# Load the per-country bandwidth details
-my $bandwidth = YAML::LoadFile($bandwidthfile);
+# Load the per-country requests details
+my $requests = YAML::LoadFile($requestsfile);
 
 # Fill in country table and work out which clusters each can use
 foreach my $country ($countries->look_down("_tag" => "country"))
@@ -28,7 +28,7 @@ foreach my $country ($countries->look_down("_tag" => "country"))
     my $code = $country->look_down("_tag" => "countryCode")->as_text;
     my $name = $country->look_down("_tag" => "countryName")->as_text;
     my $population = $country->look_down("_tag" => "population")->as_text;
-    my $bandwidth = $bandwidth->{$code} || 0;
+    my $requests = $requests->{$code} || 0;
     my $continent = $country->look_down("_tag" => "continent")->as_text;
     my $west = $country->look_down("_tag" => "west")->as_text;
     my $north = $country->look_down("_tag" => "north")->as_text;
@@ -40,7 +40,7 @@ foreach my $country ($countries->look_down("_tag" => "country"))
     $origins->{$code} = {
         code => $code, name => $name,
         country => $code, continent => $continent,
-        bandwidth => $bandwidth, lat => $lat, lon => $lon
+        requests => $requests, lat => $lat, lon => $lon
     };
 }
 

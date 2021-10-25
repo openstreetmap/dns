@@ -25,12 +25,12 @@ while (my($name,$cluster) = each %$clusters)
 {
     if ($cluster->{servers})
     {
-        $cluster->{bandwidth} = 0;
+        $cluster->{requests} = 0;
 
         foreach my $server (@{$cluster->{servers}})
         {
             $server->{cluster} = $cluster;
-            $cluster->{bandwidth} = $cluster->{bandwidth} + $server->{bandwidth};
+            $cluster->{requests} = $cluster->{requests} + $server->{requests};
 
             push @servers, $server;
         }
@@ -40,7 +40,7 @@ while (my($name,$cluster) = each %$clusters)
         my $server = {
             cluster => $cluster,
             statuscake => $cluster->{statuscake},
-            bandwidth => $cluster->{bandwidth},
+            requests => $cluster->{requests},
             cname => $cluster->{cname},
             ipv4 => $cluster->{ipv4},
             ipv6 => $cluster->{ipv6}
@@ -133,7 +133,7 @@ foreach my $server (@servers)
     }
     else
     {
-        $server->{cluster}->{bandwidth} = $server->{cluster}->{bandwidth} - $server->{bandwidth};
+        $server->{cluster}->{requests} = $server->{cluster}->{requests} - $server->{requests};
     }
 }
 
@@ -143,8 +143,8 @@ my $targetorigins = {};
 # Initialise cluster details
 while (my($name,$cluster) = each %$clusters)
 {
-    $cluster->{bandwidth_limit} = $cluster->{bandwidth} * 1024 * 1024;
-    $cluster->{bandwidth_used} = 0;
+    $cluster->{requests_limit} = $cluster->{requests};
+    $cluster->{requests_used} = 0;
 
     next if $cluster->{global};
 
@@ -153,7 +153,7 @@ while (my($name,$cluster) = each %$clusters)
         name => $cluster->{name},
         lat => $cluster->{lat},
         lon => $cluster->{lon},
-        bandwidth => 0
+        requests => 0
     };
 }
 
@@ -192,7 +192,7 @@ foreach my $origin (values %$origins)
 allocate_clusters(@mappings);
 
 # If we failed to allocate every origin then loop, increasing
-# the bandwidth for each cluster by a little and retrying until
+# the requests for each cluster by a little and retrying until
 # we manage to allocate everything
 while (grep { !exists($_->{cluster}) } values %$origins)
 {
@@ -202,11 +202,11 @@ while (grep { !exists($_->{cluster}) } values %$origins)
         delete $origin->{cluster};
     }
 
-    # Reset bandwidth usage for clusters and increase limits by 10%
+    # Reset requests usage for clusters and increase limits by 10%
     foreach my $cluster (values %$clusters)
     {
-        $cluster->{bandwidth_used} = 0;
-        $cluster->{bandwidth_limit} = $cluster->{bandwidth_limit} * 1.1;
+        $cluster->{requests_used} = 0;
+        $cluster->{requests_limit} = $cluster->{requests_limit} * 1.1;
     }
 
     # Try the allocate again
@@ -265,7 +265,7 @@ foreach my $origin (sort { $a->{name} cmp $b->{name} } values %$origins)
 
     next if $cluster->{global};
 
-    $targetorigins->{$cluster->{name}}->{bandwidth} += $origin->{bandwidth};
+    $targetorigins->{$cluster->{name}}->{requests} += $origin->{requests};
 }
 
 # Skip default records if we don't need them
@@ -367,15 +367,15 @@ if (defined($gdnsname))
                 if ($server->{status} eq "up")
                 {
                     my $number = sprintf("%02d", $index + 1);
-                    my $bandwidth = $server->{bandwidth};
+                    my $requests = $server->{requests};
 
                     if (my $cname = $server->{cname})
                     {
-                        $gdnsweightedfile->print("  ${name}-${number} = [ ${cname}., ${bandwidth} ]\n");
+                        $gdnsweightedfile->print("  ${name}-${number} = [ ${cname}., ${requests} ]\n");
                     }
                     else
                     {
-                        $gdnsweightedfile->print("  ${name}-${number} = [ ${name}-${number}.${zone}.openstreetmap.org., ${bandwidth} ]\n");
+                        $gdnsweightedfile->print("  ${name}-${number} = [ ${name}-${number}.${zone}.openstreetmap.org., ${requests} ]\n");
                     }
                 }
             }
@@ -497,7 +497,7 @@ sub allocate_clusters
     my @mappings = sort { compare_mappings($a, $b) } @_;
 
     # Loop over the mappings, trying to assign each origin to the
-    # nearest cluster, but subject to the bandwidth limits
+    # nearest cluster, but subject to the request limits
     while (my $mapping = shift @mappings)
     {
         my @group;
@@ -509,16 +509,16 @@ sub allocate_clusters
             push @group, shift @mappings;
         }
 
-        for my $mapping (sort compare_bandwidth @group)
+        for my $mapping (sort compare_requests @group)
         {
             my $origin = $mapping->{origin};
             my $cluster = $mapping->{cluster};
 
             if (!exists($origin->{cluster}) &&
-                $cluster->{bandwidth_used} + $origin->{bandwidth} <= $cluster->{bandwidth_limit})
+                $cluster->{requests_used} + $origin->{requests} <= $cluster->{requests_limit})
             {
                 $origin->{cluster} = $cluster;
-                $cluster->{bandwidth_used} = $cluster->{bandwidth_used} + $origin->{bandwidth};
+                $cluster->{requests_used} = $cluster->{requests_used} + $origin->{requests};
             }
         }
     }
@@ -541,10 +541,10 @@ sub compare_mappings
 #
 # Compare two mappings to decide which to try first
 #
-sub compare_bandwidth
+sub compare_requests
 {
-    my $a_used = ( $a->{cluster}->{bandwidth_used} * 100.0 ) / ( $a->{cluster}->{bandwidth_limit} * 1.0 );
-    my $b_used = ( $b->{cluster}->{bandwidth_used} * 100.0 ) / ( $b->{cluster}->{bandwidth_limit} * 1.0 );
+    my $a_used = ( $a->{cluster}->{requests_used} * 100.0 ) / ( $a->{cluster}->{requests_limit} * 1.0 );
+    my $b_used = ( $b->{cluster}->{requests_used} * 100.0 ) / ( $b->{cluster}->{requests_limit} * 1.0 );
 
     return $a_used <=> $b_used;
 }
