@@ -536,6 +536,15 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("tabaluga.ams", TABALUGA_INTERNAL),
   A("tabaluga.oob", TABALUGA_OOB),
 
+  // Overpass server
+
+  A("gorwen", GORWEN_IPV4),
+  AAAA("gorwen", GORWEN_IPV6),
+  A("query", GORWEN_IPV4, TTL("10m")),
+  AAAA("query", GORWEN_IPV6, TTL("10m")),
+  A("gorwen.dub", GORWEN_INTERNAL),
+  A("gorwen.oob", GORWEN_OOB),
+
   // GPS tile server
 
   A("noquiklos", NOQUIKLOS_IPV4),
@@ -638,10 +647,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("naga", NAGA_IPV6),
   A("naga.dub", NAGA_INTERNAL),
   A("naga.oob", NAGA_OOB),
-  A("gorwen", GORWEN_IPV4),
-  AAAA("gorwen", GORWEN_IPV6),
-  A("gorwen.dub", GORWEN_INTERNAL),
-  A("gorwen.oob", GORWEN_OOB),
   A("jakelong", JAKELONG_IPV4),
   AAAA("jakelong", JAKELONG_IPV6),
   A("jakelong.dub", JAKELONG_INTERNAL),
