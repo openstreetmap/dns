@@ -304,6 +304,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("culebre.dub", CULEBRE_INTERNAL),
   A("culebre.oob", CULEBRE_OOB),
 
+  A("nidhogg", NIDHOGG_IPV4),
+  AAAA("nidhogg", NIDHOGG_IPV6),
+  A("nidhogg.oob", NIDHOGG_OOB),
+
   A("scorch", SCORCH_IPV4),
   AAAA("scorch", SCORCH_IPV6),
 
