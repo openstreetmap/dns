@@ -8,11 +8,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
       libjson-xs-perl \
       jq \
       less \
-      curl
+      curl \
+      ca-certificates
 
-RUN curl -fsSL https://github.com/StackExchange/dnscontrol/releases/download/v3.9.0/dnscontrol-Linux -o /usr/local/bin/dnscontrol \
-    && chmod +x /usr/local/bin/dnscontrol \
-    && /usr/local/bin/dnscontrol version
+RUN curl -fsSL https://github.com/StackExchange/dnscontrol/releases/download/v3.13.0/dnscontrol_3.13.0_amd64.deb -o /tmp/dnscontrol.deb \
+    && apt install /tmp/dnscontrol.deb -y
 
 WORKDIR /dns
 ADD . .
