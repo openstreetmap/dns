@@ -268,6 +268,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("dulcy.ams", DULCY_INTERNAL),
   A("dulcy.oob", DULCY_OOB),
 
+  A("longma", LONGMA_IPV4),
+  AAAA("longma", LONGMA_IPV6),
+  A("longma.dub", LONGMA_INTERNAL),
+  A("longma.oob", LONGMA_OOB),
+
   A("stormfly-04", STORMFLY04_IPV4),
   AAAA("stormfly-04", STORMFLY04_IPV6),
   A("stormfly-04.oob", STORMFLY04_OOB),
