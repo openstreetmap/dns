@@ -5,7 +5,7 @@ amsterdam:
     - 2217359
     - 2217360
   colour: "#8dd3c7"
-  requests: 700
+  requests: 500
   ipv4: 130.117.76.9
   ipv6: 2001:978:2:2c::172:9
   default: "xx"
@@ -17,7 +17,7 @@ dublin:
     - 6224536
     - 6224537
   colour: "#b15928"
-  requests: 700
+  requests: 1000
   ipv4: 184.104.226.109
   ipv6: 2001:470:1:b3b::d
   default: "xx"
