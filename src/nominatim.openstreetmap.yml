@@ -17,7 +17,7 @@ dublin:
     - 6224536
     - 6224537
   colour: "#b15928"
-  requests: 1000
+  requests: 1500
   ipv4: 184.104.226.109
   ipv6: 2001:470:1:b3b::d
   default: "xx"
@@ -29,7 +29,7 @@ slough:
     - 2217363
     - 2217364
   colour: "#bebada"
-  requests: 300
+  requests: 0
   ipv4: 193.60.236.18
   default: "xx"
 
