@@ -279,6 +279,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   CNAME("nominatim", "nominatim.geo.openstreetmap.org."),
   CNAME("qgis.nominatim", "nominatim.geo.openstreetmap.org."),
+  CNAME("qa-tile.nominatim", "longma.openstreetmap.org."),
 
   // Taginfo server
 
