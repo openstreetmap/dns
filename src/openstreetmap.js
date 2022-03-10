@@ -22,6 +22,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   MX("messages", 10, QUALIFY("a.mx")),
   MX("noreply", 10, QUALIFY("a.mx")),
   MX("otrs", 10, QUALIFY("a.mx")),
+  MX("community", 10, QUALIFY("a.mx")),
   A("a.mx", SHENRON_IPV4),
   AAAA("a.mx", SHENRON_IPV6),
 
@@ -75,6 +76,18 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
     ]
   }),
 
+  SPF_BUILDER({
+    label: "community",
+    ttl: "1h",
+    parts: [
+      "v=spf1",
+      "ip4:212.110.172.32",       // shenron ipv4
+      "ip6:2001:41c9:1:400::32",  // shenron ipv6
+      "mx",                       // safety net if we change mx
+      "-all"
+    ]
+  }),
+
   // Publish DKIM public key
 
   TXT("20200301._domainkey", "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzvoNZVOGfw1V4A171hxHMhzVTAnIUQVJ8iX3wbqCld8A5iIaXeTGYvBmewymax/cYJS4QqzbpUzkgrrTA9avuZhd+QGJDgjADgx4VyMOaOS6FwAxS0uXtLrt+lsixRDx/feKyZHaxjzJAQy46ok77xXL4UXIaaovw6G6eZpIScMzZQ2zkKNJxTICzzSOduIilHhMWte4XP+/2PdRmD7Ge9jb0U4bZjswX0AqKSGzDKYw+yxVna9l53adeCnklqg2ofoXu+ResiH+kt05aCUOMo8en3em6yBnRCMalgi1E3Tt7I5BWcYFRkT/8agUGW4gGC6XMV9IskOsYL0emG0kGwIDAQAB", AUTOSPLIT),
@@ -104,6 +117,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   CNAME("_mta-sts.messages", QUALIFY("_mta-sts")),
   CNAME("_mta-sts.noreply", QUALIFY("_mta-sts")),
   CNAME("_mta-sts.otrs", QUALIFY("_mta-sts")),
+  CNAME("_mta-sts.community", QUALIFY("_mta-sts")),
 
   // Google postmaster tools verification
 
