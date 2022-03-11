@@ -515,15 +515,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("clifford.ucl", CLIFFORD_INTERNAL),
   A("clifford.oob", CLIFFORD_OOB),
 
-  // Discourse server ("community")
-
-  A("lockheed", LOCKHEED_IPV4),
-  AAAA("lockheed", LOCKHEED_IPV6),
-  A("community", LOCKHEED_IPV4),
-  AAAA("community", LOCKHEED_IPV6),
-  A("lockheed.ams", LOCKHEED_INTERNAL),
-  A("lockheed.oob", LOCKHEED_OOB),
-
   // KVMs
 
   A("kvm1.ucl", KVM1_INTERNAL),
@@ -685,8 +676,16 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("naga", NAGA_IPV6),
   A("naga.dub", NAGA_INTERNAL),
   A("naga.oob", NAGA_OOB),
+  A("lockheed", LOCKHEED_IPV4),
+  AAAA("lockheed", LOCKHEED_IPV6),
+  A("lockheed.ams", LOCKHEED_INTERNAL),
+  A("lockheed.oob", LOCKHEED_OOB),
+
+  // Discourse server ("community")
   A("jakelong", JAKELONG_IPV4),
   AAAA("jakelong", JAKELONG_IPV6),
+  A("community", JAKELONG_IPV6),
+  AAAA("community", JAKELONG_IPV6),
   A("jakelong.dub", JAKELONG_INTERNAL),
   A("jakelong.oob", JAKELONG_OOB),
 
