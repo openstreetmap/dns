@@ -684,7 +684,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // Discourse server ("community")
   A("jakelong", JAKELONG_IPV4),
   AAAA("jakelong", JAKELONG_IPV6),
-  A("community", JAKELONG_IPV6),
+  A("community", JAKELONG_IPV4),
   AAAA("community", JAKELONG_IPV6),
   A("jakelong.dub", JAKELONG_INTERNAL),
   A("jakelong.oob", JAKELONG_OOB),
