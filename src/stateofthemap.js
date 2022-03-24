@@ -48,6 +48,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("@", RIDLEY_IPV4, TTL("10m")),
   A("www", RIDLEY_IPV4, TTL("10m")),
+  A("2022", RIDLEY_IPV4, TTL("10m")),
   A("2021", RIDLEY_IPV4, TTL("10m")),
   A("2020", RIDLEY_IPV4, TTL("10m")),
   A("2019", RIDLEY_IPV4, TTL("10m")),
