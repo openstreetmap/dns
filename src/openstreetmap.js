@@ -304,11 +304,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Tile servers
 
-  A("orm", ORM_IPV4),
-  AAAA("orm", ORM_IPV6),
-  A("orm.ams", ORM_INTERNAL),
-  A("orm.oob", ORM_OOB),
-
   A("odin", ODIN_IPV4),
   AAAA("odin", ODIN_IPV6),
   A("odin.ams", ODIN_INTERNAL),
@@ -421,9 +416,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("katla.bm", KATLA_INTERNAL),
   A("katla.oob", KATLA_OOB),
-
-  A("ramoth.ams", RAMOTH_INTERNAL),
-  A("ramoth.oob", RAMOTH_OOB),
 
   // Development server with wildcard alias for user sites
 
