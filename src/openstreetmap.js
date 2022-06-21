@@ -529,6 +529,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Out of band access servers
 
+  A("oob1.ams", OOB1AMS_INTERNAL),
+
   A("oob1.dub", OOB1DUB_INTERNAL),
 
   // Bytemark machine, and the services which operate from it
