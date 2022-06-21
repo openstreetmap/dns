@@ -75,6 +75,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Nextcloud instance
 
-  CNAME("files", "osmfiles.cloud68.co.")
+  CNAME("files", "nextcloud-openstreetmapfoundation.cloud68.systems.")
 
 );
