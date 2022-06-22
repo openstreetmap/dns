@@ -341,10 +341,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("necrosan", NECROSAN_IPV4),
   AAAA("necrosan", NECROSAN_IPV6),
 
-  CNAME("tile", "dualstack.n.sni.global.fastly.net.", TTL("10m")),
-  CNAME("a.tile", "dualstack.n.sni.global.fastly.net.", TTL("10m")),
-  CNAME("b.tile", "dualstack.n.sni.global.fastly.net.", TTL("10m")),
-  CNAME("c.tile", "dualstack.n.sni.global.fastly.net.", TTL("10m")),
+  CNAME("tile", "dualstack.k.sni.global.fastly.net.", TTL("10m")),
+  CNAME("a.tile", "dualstack.k.sni.global.fastly.net.", TTL("10m")),
+  CNAME("b.tile", "dualstack.k.sni.global.fastly.net.", TTL("10m")),
+  CNAME("c.tile", "dualstack.k.sni.global.fastly.net.", TTL("10m")),
   // Fastly DNS based ACME Challenge requirement
   CNAME("_acme-challenge.tile", "bxve5ryiwwv7woiraq.fastly-validations.com.", TTL("10m")),
 
