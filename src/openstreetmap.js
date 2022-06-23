@@ -348,6 +348,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // Fastly DNS based ACME Challenge requirement
   CNAME("_acme-challenge.tile", "bxve5ryiwwv7woiraq.fastly-validations.com.", TTL("10m")),
 
+  A("render", CULEBRE_IPV4),
+  A("render", NIDHOGG_IPV4),
+  AAAA("render", CULEBRE_IPV6),
+  AAAA("render", NIDHOGG_IPV6),
+
   // Services machine
 
   A("ironbelly", IRONBELLY_IPV4),
