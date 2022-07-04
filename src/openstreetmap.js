@@ -127,9 +127,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // Delegate geo.openstreetmap.org to PowerDNS
 
   NS("geo", QUALIFY("balerion")),
-  NS("geo", QUALIFY("saphira")),
   NS("geo", QUALIFY("stormfly-04")),
-  NS("geo", QUALIFY("ridgeback")),
 
   // Main web servers and their aliases
 
