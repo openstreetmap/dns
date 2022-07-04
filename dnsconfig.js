@@ -31,7 +31,13 @@ var OPENSTREETMAP = loadTemplate("openstreetmap");
 require("include/sshfp.js");
 require("include/nominatim.js");
 
-OPENSTREETMAP("openstreetmap.org", REG_GANDI, SSHFP_RECORDS, NOMINATIM_RECORDS);
+try {
+  require("include/geo.js");
+} catch {
+  var GEO_NS_RECORDS = [];
+}
+
+OPENSTREETMAP("openstreetmap.org", REG_GANDI, SSHFP_RECORDS, GEO_NS_RECORDS, NOMINATIM_RECORDS);
 OPENSTREETMAP("openstreetmap.com", REG_GANDI);
 OPENSTREETMAP("openstreetmap.net", REG_GANDI);
 OPENSTREETMAP("openstreetmap.ca", REG_GANDI);

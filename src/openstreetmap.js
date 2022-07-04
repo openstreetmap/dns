@@ -124,11 +124,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   CNAME("af323lytato5", "gv-o4v3qh5pfayqex.dv.googlehosted.com."),
   CNAME("irzdddnmh465", "gv-cwr6bvt7xsgact.dv.googlehosted.com."),
 
-  // Delegate geo.openstreetmap.org to PowerDNS
-
-  NS("geo", QUALIFY("balerion")),
-  NS("geo", QUALIFY("stormfly-04")),
-
   // Main web servers and their aliases
 
   A("spike-01", SPIKE01_IPV4),
