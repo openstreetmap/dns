@@ -33,7 +33,7 @@ require("include/nominatim.js");
 
 try {
   require("include/geo.js");
-} catch {
+} catch (e) {
   var GEO_NS_RECORDS = [];
 }
 
