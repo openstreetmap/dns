@@ -17,7 +17,7 @@ dublin:
     - 6224536
     - 6224537
   colour: "#b15928"
-  requests: 1500
+  requests: 0
   ipv4: 184.104.226.109
   ipv6: 2001:470:1:b3b::d
   default: "xx"
