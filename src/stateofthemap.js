@@ -62,6 +62,9 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("2010", RIDLEY_IPV4, TTL("10m")),
   A("2009", RIDLEY_IPV4, TTL("10m")),
   A("2008", RIDLEY_IPV4, TTL("10m")),
-  A("2007", RIDLEY_IPV4, TTL("10m"))
+  A("2007", RIDLEY_IPV4, TTL("10m")),
+
+  // Google Site Verification - Grant
+  TXT("2022", "google-site-verification=wT1dJzSYM_2By372lJ_v9IU1crF21qOySEAPABxUcyo")
 
 );
