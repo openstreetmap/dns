@@ -62,14 +62,13 @@ foreach my $server (@servers)
 }
 
 # If statuscake support is enabled then check which servers are up
-if ($ENV{STATUSCAKE_USERNAME} && $ENV{STATUSCAKE_APIKEY})
+if ($ENV{STATUSCAKE_APIKEY})
 {
     my $ua = LWP::UserAgent->new;
     my $cache;
 
     $ua->agent("mkgeo/1.0");
-    $ua->default_header("Username", $ENV{STATUSCAKE_USERNAME});
-    $ua->default_header("API", $ENV{STATUSCAKE_APIKEY});
+    $ua->default_header("Authorization", "Bearer $ENV{STATUSCAKE_APIKEY}");
 
     if (-f "statuscake.yml")
     {
@@ -80,24 +79,33 @@ if ($ENV{STATUSCAKE_USERNAME} && $ENV{STATUSCAKE_APIKEY})
         $cache = {};
     }
 
-    my $response = $ua->get("https://app.statuscake.com/API/Tests/");
+    my $page = 1;
+    my $pages = 1;
 
-    if ($response->is_success)
+    while ($page <= $pages)
     {
-        my $tests = decode_json($response->content);
+        my $response = $ua->get("https://api.statuscake.com/v1/uptime?limit=100&page=${page}");
 
-        foreach my $test (@$tests)
+        if ($response->is_success)
         {
-            my $testid = $test->{TestID};
+            my $uptime = decode_json($response->content);
 
-            if ($test->{Status} eq "Up" && !$test->{Paused})
+            foreach my $test (@{$uptime->{data}})
             {
-                $cache->{$testid} = "up";
+                my $testid = $test->{id};
+
+                if ($test->{status} eq "up" && !$test->{paused})
+                {
+                    $cache->{$testid} = "up";
+                }
+                else
+                {
+                    $cache->{$testid} = "down";
+                }
             }
-            else
-            {
-                $cache->{$testid} = "down";
-            }
+
+            $page = $page + 1;
+            $pages = $uptime->{metadata}->{page_count};
         }
     }
 
