@@ -541,17 +541,24 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("mta-sts", SHENRON_IPV6),
   A("lists", SHENRON_IPV4),
   AAAA("lists", SHENRON_IPV6),
-  A("svn", SHENRON_IPV4),
-  AAAA("svn", SHENRON_IPV6),
-  A("trac", SHENRON_IPV4),
-  AAAA("trac", SHENRON_IPV6),
-  A("irc", SHENRON_IPV4),
-  AAAA("irc", SHENRON_IPV6),
   A("help", SHENRON_IPV4),
   AAAA("help", SHENRON_IPV6),
   A("blogs", SHENRON_IPV4, TTL("10m")),
   AAAA("blogs", SHENRON_IPV6, TTL("10m")),
   A("shenron.bm", SHENRON_INTERNAL),
+
+  // Lockheed service
+
+  A("lockheed", LOCKHEED_IPV4),
+  AAAA("lockheed", LOCKHEED_IPV6),
+  A("svn", LOCKHEED_IPV4),
+  AAAA("svn", LOCKHEED_IPV6),
+  A("trac", LOCKHEED_IPV4),
+  AAAA("trac", LOCKHEED_IPV6),
+  A("irc", LOCKHEED_IPV4),
+  AAAA("irc", LOCKHEED_IPV6),
+  A("lockheed.ams", LOCKHEED_INTERNAL),
+  A("lockheed.oob", LOCKHEED_OOB),
 
   // Wiki servers
 
@@ -668,10 +675,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("naga", NAGA_IPV6),
   A("naga.dub", NAGA_INTERNAL),
   A("naga.oob", NAGA_OOB),
-  A("lockheed", LOCKHEED_IPV4),
-  AAAA("lockheed", LOCKHEED_IPV6),
-  A("lockheed.ams", LOCKHEED_INTERNAL),
-  A("lockheed.oob", LOCKHEED_OOB),
 
   // Discourse server ("community")
   A("jakelong", JAKELONG_IPV4),
