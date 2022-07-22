@@ -543,8 +543,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("lists", SHENRON_IPV6),
   A("help", SHENRON_IPV4),
   AAAA("help", SHENRON_IPV6),
-  A("blogs", SHENRON_IPV4, TTL("10m")),
-  AAAA("blogs", SHENRON_IPV6, TTL("10m")),
   A("shenron.bm", SHENRON_INTERNAL),
 
   // Lockheed service
@@ -557,6 +555,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("trac", LOCKHEED_IPV6),
   A("irc", LOCKHEED_IPV4),
   AAAA("irc", LOCKHEED_IPV6),
+  A("blogs", LOCKHEED_IPV4),
+  AAAA("blogs", LOCKHEED_IPV6),
   A("lockheed.ams", LOCKHEED_INTERNAL),
   A("lockheed.oob", LOCKHEED_OOB),
 
