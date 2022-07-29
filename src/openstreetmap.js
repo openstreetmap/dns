@@ -439,9 +439,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("ridley.ucl", RIDLEY_INTERNAL),
   A("ridley.oob", RIDLEY_OOB),
 
-  // Piwik server
+  // Matomo server
 
   A("eustace", EUSTACE_IPV4),
+  A("matomo", EUSTACE_IPV4),
   A("piwik", EUSTACE_IPV4),
   A("eustace.ucl", EUSTACE_INTERNAL),
   A("eustace.oob", EUSTACE_OOB),
