@@ -84,7 +84,7 @@ if ($ENV{STATUSCAKE_APIKEY})
 
     while ($page <= $pages)
     {
-        my $response = $ua->get("https://api.statuscake.com/v1/uptime?limit=100&page=${page}");
+        my $response = $ua->get("https://api.statuscake.com/v1/uptime?nouptime=true&limit=100&page=${page}");
 
         if ($response->is_success)
         {
