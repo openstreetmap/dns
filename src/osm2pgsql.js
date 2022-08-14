@@ -4,7 +4,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   CAA_BUILDER({
     label: "@",
-    ttl: "1h",
     iodef: "mailto:hostmaster@openstreetmap.org",
     issue: [
       "letsencrypt.org",

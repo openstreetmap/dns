@@ -30,7 +30,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   SPF_BUILDER({
     label: "@",
-    ttl: "1h",
     parts: [
       "v=spf1",
       "ip4:212.110.172.32",       // shenron ipv4
@@ -42,7 +41,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   SPF_BUILDER({
     label: "messages",
-    ttl: "1h",
     parts: [
       "v=spf1",
       "ip4:212.110.172.32",       // shenron ipv4
@@ -54,7 +52,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   SPF_BUILDER({
     label: "noreply",
-    ttl: "1h",
     parts: [
       "v=spf1",
       "ip4:212.110.172.32",       // shenron ipv4
@@ -66,7 +63,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   SPF_BUILDER({
     label: "otrs",
-    ttl: "1h",
     parts: [
       "v=spf1",
       "ip4:212.110.172.32",       // shenron ipv4
@@ -78,7 +74,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   SPF_BUILDER({
     label: "community",
-    ttl: "1h",
     parts: [
       "v=spf1",
       "ip4:212.110.172.32",       // shenron ipv4
