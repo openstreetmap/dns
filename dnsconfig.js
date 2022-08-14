@@ -1,6 +1,6 @@
-var REG_NONE = NewRegistrar("none", "NONE");
-var REG_GANDI = NewRegistrar("gandi_v5", "GANDI_V5");
-var PROVIDER = NewDnsProvider("cloudflare", "CLOUDFLAREAPI");
+var REG_NONE = NewRegistrar("none");
+var REG_GANDI = NewRegistrar("gandi_v5");
+var PROVIDER = NewDnsProvider("cloudflare");
 
 var DOMAIN;
 var REGISTRAR;
