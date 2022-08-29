@@ -251,14 +251,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("rails3.ams", THORN03_INTERNAL),
   A("thorn-03.oob", THORN03_OOB),
 
-  A("thorn-04.bm", THORN04_INTERNAL),
-  A("rails4.bm", THORN04_INTERNAL),
-  A("thorn-04.oob", THORN04_OOB),
-
-  A("thorn-05.bm", THORN05_INTERNAL),
-  A("rails5.bm", THORN05_INTERNAL),
-  A("thorn-05.oob", THORN05_OOB),
-
   // Nominatim servers
 
   A("pummelzacken", PUMMELZACKEN_IPV4),
