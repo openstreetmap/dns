@@ -37,7 +37,15 @@ try {
   var GEO_NS_RECORDS = [];
 }
 
-OPENSTREETMAP("openstreetmap.org", REG_GANDI, SSHFP_RECORDS, GEO_NS_RECORDS, NOMINATIM_RECORDS);
+OPENSTREETMAP_ORG_RECORDS = [
+  CNAME("_acme-challenge.tile", "bxve5ryiwwv7woiraq.fastly-validations.com.", TTL("10m"))
+]
+
+OSM_ORG_RECORDS = [
+  CNAME("_acme-challenge.tile", "21gvdfyyxjoc4lmsem.fastly-validations.com.", TTL("10m"))
+]
+
+OPENSTREETMAP("openstreetmap.org", REG_GANDI, OPENSTREETMAP_ORG_RECORDS, SSHFP_RECORDS, GEO_NS_RECORDS, NOMINATIM_RECORDS);
 OPENSTREETMAP("openstreetmap.com", REG_GANDI);
 OPENSTREETMAP("openstreetmap.net", REG_GANDI);
 OPENSTREETMAP("openstreetmap.ca", REG_GANDI);
@@ -45,7 +53,7 @@ OPENSTREETMAP("openstreetmap.eu", REG_NONE);
 OPENSTREETMAP("openstreetmap.pro", REG_GANDI);
 OPENSTREETMAP("openstreetmap.gay", REG_GANDI);
 OPENSTREETMAP("openstreetmaps.org", REG_GANDI);
-OPENSTREETMAP("osm.org", REG_GANDI);
+OPENSTREETMAP("osm.org", REG_GANDI, OSM_ORG_RECORDS);
 OPENSTREETMAP("openmaps.org", REG_GANDI);
 OPENSTREETMAP("openstreetmap.io", REG_GANDI);
 OPENSTREETMAP("osm.io", REG_GANDI);

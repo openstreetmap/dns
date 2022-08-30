@@ -325,8 +325,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   CNAME("a.tile", "dualstack.n.sni.global.fastly.net.", TTL("10m")),
   CNAME("b.tile", "dualstack.n.sni.global.fastly.net.", TTL("10m")),
   CNAME("c.tile", "dualstack.n.sni.global.fastly.net.", TTL("10m")),
-  // Fastly DNS based ACME Challenge requirement
-  CNAME("_acme-challenge.tile", "bxve5ryiwwv7woiraq.fastly-validations.com.", TTL("10m")),
 
   A("render", CULEBRE_IPV4),
   A("render", NIDHOGG_IPV4),
