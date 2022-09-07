@@ -121,3 +121,7 @@ var OSM2PGSQL = loadTemplate("osm2pgsql");
 
 OSM2PGSQL("osm2pgsql.org", REG_GANDI);
 OSM2PGSQL("osm2pgsql.com", REG_GANDI);
+
+var IDEDITOR = loadTemplate("ideditor");
+
+IDEDITOR("ideditor.com", REG_GANDI);
