@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
       curl \
       ca-certificates
 
-RUN curl -fsSL https://github.com/StackExchange/dnscontrol/releases/download/v3.13.0/dnscontrol_3.13.0_amd64.deb -o /tmp/dnscontrol.deb \
+RUN curl -fsSL https://github.com/StackExchange/dnscontrol/releases/download/v3.20.0/dnscontrol_3.20.0_amd64.deb -o /tmp/dnscontrol.deb \
     && apt install /tmp/dnscontrol.deb -y
 
 WORKDIR /dns
