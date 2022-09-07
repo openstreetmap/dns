@@ -11,11 +11,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
       curl \
       ca-certificates
 
-RUN curl -fsSL https://github.com/StackExchange/dnscontrol/releases/download/v3.20.0/dnscontrol_3.20.0_amd64.deb -o /tmp/dnscontrol.deb \
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
+RUN arch=$(arch | sed s/aarch64/arm64/ | sed s/x86_64/amd64/) \
+    && curl -fsSL https://github.com/StackExchange/dnscontrol/releases/download/v3.20.0/dnscontrol-3.20.0.${arch}.deb -o /tmp/dnscontrol.deb \
     && apt install /tmp/dnscontrol.deb -y
 
 WORKDIR /dns
 ADD . .
-RUN make preview
 
 VOLUME ["/dns/data"]
+
+CMD ["make", "check"]
