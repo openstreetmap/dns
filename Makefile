@@ -3,6 +3,11 @@ preview: preview_cloudflare
 preview_cloudflare: sshfp gdns
 	dnscontrol preview
 
+check: check_cloudflare
+
+check_cloudflare: sshfp gdns
+	dnscontrol check
+
 update: update_cloudflare update_geodns
 
 update_primary: update_cloudflare_primary update_geodns
