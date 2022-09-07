@@ -24,11 +24,9 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
     ]
   }),
 
-  // Main web server and it's aliases
+  // site hosted on github pages
 
-  A("@", "192.30.252.153"),
-  A("@", "192.30.252.154"),
-  A("www", "192.30.252.153"),
-  A("www", "192.30.252.154")
+  ALIAS("@", "openstreetmap.github.io."),
+  CNAME("www", "openstreetmap.github.io.")
 
 );
