@@ -27,6 +27,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // site hosted on github pages
 
   ALIAS("@", "openstreetmap.github.io."),
-  CNAME("www", "openstreetmap.github.io.")
+  CNAME("www", "openstreetmap.github.io."),
+  A("preview", RIDLEY_IPV4)
 
 );
