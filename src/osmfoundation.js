@@ -60,19 +60,21 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Main web server and it's aliases
 
-  A("@", RIDLEY_IPV4, TTL("10m")),
-  A("www", RIDLEY_IPV4, TTL("10m")),
-  A("wiki", RIDLEY_IPV4, TTL("10m")),
-  A("blog", RIDLEY_IPV4, TTL("10m")),
-  A("crm", RIDLEY_IPV4, TTL("10m")),
-  A("join", RIDLEY_IPV4, TTL("10m")),
-  A("board", RIDLEY_IPV4, TTL("10m")),
-  A("dwg", RIDLEY_IPV4, TTL("10m")),
-  A("mwg", RIDLEY_IPV4, TTL("10m")),
-  A("operations", RIDLEY_IPV4, TTL("10m")),
+  A("@", RIDLEY_IPV4),
+  A("www", RIDLEY_IPV4),
+  A("wiki", RIDLEY_IPV4),
+  A("blog", RIDLEY_IPV4),
+  A("crm", RIDLEY_IPV4),
+  A("join", RIDLEY_IPV4),
+  A("board", RIDLEY_IPV4),
+  A("dwg", RIDLEY_IPV4),
+  A("mwg", RIDLEY_IPV4),
+  A("operations", RIDLEY_IPV4),
 
   // Nextcloud instance
 
-  CNAME("files", "nextcloud-openstreetmapfoundation.cloud68.systems.")
+  CNAME("files", "nextcloud-openstreetmapfoundation.cloud68.systems."),
+
+  A("hardware", SAREL_IPV4)
 
 );
