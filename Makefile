@@ -1,6 +1,6 @@
-preview: preview_dnscontrol
+preview: check preview_dnscontrol
 
-preview_dnscontrol: sshfp gdns
+preview_dnscontrol: check_dnscontrol sshfp gdns
 	dnscontrol preview
 
 check: check_dnscontrol
