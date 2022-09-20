@@ -1,22 +1,22 @@
-preview: preview_cloudflare
+preview: preview_dnscontrol
 
-preview_cloudflare: sshfp gdns
+preview_dnscontrol: check sshfp gdns
 	dnscontrol preview
 
-check: check_cloudflare
+check: check_dnscontrol
 
-check_cloudflare: sshfp gdns
+check_dnscontrol: sshfp gdns
 	dnscontrol check
 
-update: update_cloudflare update_geodns
+update: update_dnscontrol update_geodns
 
-update_primary: update_cloudflare_primary update_geodns
+update_primary: update_dnscontrol_primary update_geodns
 
-update_cloudflare: sshfp gdns
-	dnscontrol push --providers cloudflare
+update_dnscontrol: check sshfp gdns
+	dnscontrol push
 
-update_cloudflare_primary: sshfp gdns
-	dnscontrol push --providers cloudflare --domains openstreetmap.org
+update_dnscontrol_primary: check sshfp gdns
+	dnscontrol push --domains openstreetmap.org
 
 update_geodns: gdns
 	parallel --will-cite rsync --quiet --recursive --checksum gdns/ {}::geodns ::: ${GEODNS_SERVERS}
