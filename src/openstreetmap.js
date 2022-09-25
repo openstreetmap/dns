@@ -425,7 +425,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("faffy", FAFFY_IPV4),
   AAAA("faffy", FAFFY_IPV6),
-  A("faffy.dub", FAFFY_INTERNAL),
+  A("faffy.ams", FAFFY_INTERNAL),
   A("faffy.oob", FAFFY_OOB),
 
   // Foundation server
