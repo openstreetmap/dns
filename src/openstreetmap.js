@@ -34,6 +34,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
       "v=spf1",
       "ip4:212.110.172.32",       // shenron ipv4
       "ip6:2001:41c9:1:400::32",  // shenron ipv6
+      "ip4:184.104.226.98",       // fafnir ipv4
+      "ip6:2001:470:1:b3b::2",    // fafnir ipv6
       "mx",                       // safety net if we change mx
       "-all"
     ]
@@ -45,6 +47,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
       "v=spf1",
       "ip4:212.110.172.32",       // shenron ipv4
       "ip6:2001:41c9:1:400::32",  // shenron ipv6
+      "ip4:184.104.226.98",       // fafnir ipv4
+      "ip6:2001:470:1:b3b::2",    // fafnir ipv6
       "mx",                       // safety net if we change mx
       "-all"
     ]
@@ -56,6 +60,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
       "v=spf1",
       "ip4:212.110.172.32",       // shenron ipv4
       "ip6:2001:41c9:1:400::32",  // shenron ipv6
+      "ip4:184.104.226.98",       // fafnir ipv4
+      "ip6:2001:470:1:b3b::2",    // fafnir ipv6
       "mx",                       // safety net if we change mx
       "-all"
     ]
@@ -67,6 +73,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
       "v=spf1",
       "ip4:212.110.172.32",       // shenron ipv4
       "ip6:2001:41c9:1:400::32",  // shenron ipv6
+      "ip4:184.104.226.98",       // fafnir ipv4
+      "ip6:2001:470:1:b3b::2",    // fafnir ipv6
       "mx",                       // safety net if we change mx
       "-all"
     ]
@@ -78,6 +86,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
       "v=spf1",
       "ip4:212.110.172.32",       // shenron ipv4
       "ip6:2001:41c9:1:400::32",  // shenron ipv6
+      "ip4:184.104.226.98",       // fafnir ipv4
+      "ip6:2001:470:1:b3b::2",    // fafnir ipv6
       "mx",                       // safety net if we change mx
       "-all"
     ]
