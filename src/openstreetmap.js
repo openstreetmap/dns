@@ -423,6 +423,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("errol.ucl", ERROL_INTERNAL),
   A("errol.oob", ERROL_OOB),
 
+  A("faffy", FAFFY_IPV4),
+  AAAA("faffy", FAFFY_IPV6),
+  A("faffy.dub", FAFFY_INTERNAL),
+  A("faffy.oob", FAFFY_OOB),
+
   // Foundation server
 
   A("ridley", RIDLEY_IPV4),
