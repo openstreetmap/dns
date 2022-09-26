@@ -125,3 +125,9 @@ OSM2PGSQL("osm2pgsql.com", REG_GANDI);
 var IDEDITOR = loadTemplate("ideditor");
 
 IDEDITOR("ideditor.com", REG_GANDI);
+
+var PTR_EQUINIX_DUB_IPV4 = loadTemplate("ptr_equinix_dub_ipv4");
+PTR_EQUINIX_DUB_IPV4("96-27.226.104.184.in-addr.arpa", REG_NONE);
+
+var PTR_EQUINIX_DUB_IPV6 = loadTemplate("ptr_equinix_dub_ipv6");
+PTR_EQUINIX_DUB_IPV6(REV("2001:470:1:b3b::/64"), REG_NONE);
