@@ -128,7 +128,7 @@ IDEDITOR("ideditor.com", REG_GANDI);
 
 var PTR_EQUINIX_DUB_IPV4 = loadTemplate("ptr_equinix_dub_ipv4");
 
-PTR_EQUINIX_DUB_IPV4(REV("184.104.226.96/27"), REG_NONE);
+PTR_EQUINIX_DUB_IPV4("96-27.226.104.184.in-addr.arpa", REG_NONE);
 
 var PTR_EQUINIX_DUB_IPV6 = loadTemplate("ptr_equinix_dub_ipv6");
 
