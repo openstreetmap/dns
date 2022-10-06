@@ -492,7 +492,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("sarel", SAREL_IPV4),
   A("chef", SAREL_IPV4),
-  A("hardware", SAREL_IPV4),
   A("acme", SAREL_IPV4),
   A("git", SAREL_IPV4, TTL("10m")),
   A("dns", SAREL_IPV4, TTL("10m")),
@@ -501,6 +500,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("idris", IDRIS_IPV4),
   AAAA("idris", IDRIS_IPV6),
+  A("hardware", IDRIS_IPV4),
+  AAAA("hardware", IDRIS_IPV6),
   A("idris.dub", IDRIS_INTERNAL),
   A("idris.oob", IDRIS_OOB),
 
