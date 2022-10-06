@@ -488,7 +488,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("prometheus", STORMFLY03_IPV6, TTL("10m")),
   A("stormfly-03.oob", STORMFLY03_OOB),
 
-  // Chef server
+  // Management server
 
   A("sarel", SAREL_IPV4),
   A("chef", SAREL_IPV4),
@@ -498,6 +498,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("dns", SAREL_IPV4, TTL("10m")),
   A("sarel.ucl", SAREL_INTERNAL),
   A("sarel.oob", SAREL_OOB),
+
+  A("idris", IDRIS_IPV4),
+  AAAA("idris", IDRIS_IPV6),
+  A("idris.dub", IDRIS_INTERNAL),
+  A("idris.oob", IDRIS_OOB),
 
   // Forum server
 
@@ -664,10 +669,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Spare
 
-  A("idris", IDRIS_IPV4),
-  AAAA("idris", IDRIS_IPV6),
-  A("idris.dub", IDRIS_INTERNAL),
-  A("idris.oob", IDRIS_OOB),
   A("konqi", KONQI_IPV4),
   AAAA("konqi", KONQI_IPV6),
   A("konqi.dub", KONQI_INTERNAL),
