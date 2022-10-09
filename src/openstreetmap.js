@@ -490,17 +490,16 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Management server
 
-  A("sarel", SAREL_IPV4),
-  A("chef", SAREL_IPV4),
-  A("git", SAREL_IPV4, TTL("10m")),
-  A("dns", SAREL_IPV4, TTL("10m")),
-  A("sarel.ucl", SAREL_INTERNAL),
-  A("sarel.oob", SAREL_OOB),
-
   A("idris", IDRIS_IPV4),
   AAAA("idris", IDRIS_IPV6),
   A("acme", IDRIS_IPV4),
   AAAA("acme", IDRIS_IPV6),
+  A("chef", IDRIS_IPV4),
+  AAAA("chef", IDRIS_IPV6),
+  A("dns", IDRIS_IPV4),
+  AAAA("dns", IDRIS_IPV6),
+  A("git", IDRIS_IPV4),
+  AAAA("git", IDRIS_IPV6),
   A("hardware", IDRIS_IPV4),
   AAAA("hardware", IDRIS_IPV6),
   A("idris.dub", IDRIS_INTERNAL),
@@ -675,12 +674,18 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("konqi", KONQI_IPV6),
   A("konqi.dub", KONQI_INTERNAL),
   A("konqi.oob", KONQI_OOB),
+
   A("naga", NAGA_IPV4),
   AAAA("naga", NAGA_IPV6),
   A("naga.dub", NAGA_INTERNAL),
   A("naga.oob", NAGA_OOB),
 
+  A("sarel", SAREL_IPV4),
+  A("sarel.ucl", SAREL_INTERNAL),
+  A("sarel.oob", SAREL_OOB),
+
   // Discourse server ("community")
+
   A("jakelong", JAKELONG_IPV4),
   AAAA("jakelong", JAKELONG_IPV6),
   A("community", JAKELONG_IPV4),
