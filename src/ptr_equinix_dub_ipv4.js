@@ -1,3 +1,4 @@
+// http://www.he.net/adm/reverse.dns.html (RFC4183 notation)
 D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   PTR(SWITCH1DUB_IPV4.split(".").pop(), "switch1.dub.openstreetmap.org."),
   PTR(FAFNIR_IPV4.split(".").pop(), "fafnir.openstreetmap.org."),
