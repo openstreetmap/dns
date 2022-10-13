@@ -412,19 +412,22 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Development server with wildcard alias for user sites
 
-  A("errol", ERROL_IPV4),
-  A("dev", ERROL_IPV4),
-  A("*.dev", ERROL_IPV4),
-  A("ooc", ERROL_IPV4),
-  A("a.ooc", ERROL_IPV4),
-  A("b.ooc", ERROL_IPV4),
-  A("c.ooc", ERROL_IPV4),
-  A("npe", ERROL_IPV4),
-  A("errol.ucl", ERROL_INTERNAL),
-  A("errol.oob", ERROL_OOB),
-
   A("faffy", FAFFY_IPV4),
   AAAA("faffy", FAFFY_IPV6),
+  A("dev", FAFFY_IPV4),
+  AAAA("dev", FAFFY_IPV6),
+  A("*.dev", FAFFY_IPV4),
+  AAAA("*.dev", FAFFY_IPV6),
+  A("ooc", FAFFY_IPV4),
+  AAAA("ooc", FAFFY_IPV6),
+  A("a.ooc", FAFFY_IPV4),
+  AAAA("a.ooc", FAFFY_IPV6),
+  A("b.ooc", FAFFY_IPV4),
+  AAAA("b.ooc", FAFFY_IPV6),
+  A("c.ooc", FAFFY_IPV4),
+  AAAA("c.ooc", FAFFY_IPV6),
+  A("npe", FAFFY_IPV4),
+  AAAA("npe", FAFFY_IPV6),
   A("faffy.ams", FAFFY_INTERNAL),
   A("faffy.oob", FAFFY_OOB),
 
@@ -669,6 +672,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("tiamat-23.oob", TIAMAT23_OOB),
 
   // Spare
+
+  A("errol", ERROL_IPV4),
+  A("errol.ucl", ERROL_INTERNAL),
+  A("errol.oob", ERROL_OOB),
 
   A("konqi", KONQI_IPV4),
   AAAA("konqi", KONQI_IPV6),
