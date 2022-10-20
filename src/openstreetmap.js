@@ -251,16 +251,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("spike-08.ams", SPIKE08_INTERNAL),
   A("spike-08.oob", SPIKE08_OOB),
 
-  // Rails application servers
-
-  A("thorn-02.ams", THORN02_INTERNAL),
-  A("rails2.ams", THORN02_INTERNAL),
-  A("thorn-02.oob", THORN02_OOB),
-
-  A("thorn-03.ams", THORN03_INTERNAL),
-  A("rails3.ams", THORN03_INTERNAL),
-  A("thorn-03.oob", THORN03_OOB),
-
   // Nominatim servers
 
   A("pummelzacken", PUMMELZACKEN_IPV4),
