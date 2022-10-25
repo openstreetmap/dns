@@ -514,9 +514,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("switch1.ams", SWITCH1AMS_IPV4),
   AAAA("switch1.ams", SWITCH1AMS_IPV6),
 
-  A("juniper1.ams", JUNIPER1AMS_IPV4),
-  AAAA("juniper1.ams", JUNIPER1AMS_IPV6),
-
   A("switch1.dub", SWITCH1DUB_IPV4),
   AAAA("switch1.dub", SWITCH1DUB_IPV6),
 
