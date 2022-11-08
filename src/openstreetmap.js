@@ -309,7 +309,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("pyrene", PYRENE_IPV4),
   AAAA("pyrene", PYRENE_IPV6),
-  A("pyrene.oob", PYRENE_INTERNAL),
+  A("pyrene.oob", PYRENE_OOB),
 
   A("bowser", BOWSER_IPV4),
 
