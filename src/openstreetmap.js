@@ -307,6 +307,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("rhaegal", RHAEGAL_IPV4),
 
+  A("palulukon", PALULUKON_IPV4),
+
   A("pyrene", PYRENE_IPV4),
   AAAA("pyrene", PYRENE_IPV6),
   A("pyrene.oob", PYRENE_OOB),
