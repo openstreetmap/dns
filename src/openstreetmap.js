@@ -309,7 +309,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("pyrene", PYRENE_IPV4),
   AAAA("pyrene", PYRENE_IPV6),
-  A("pyrene.oob", TIAMAT00_INTERNAL),
+  // A("pyrene.oob", PYRENE_INTERNAL),
 
   A("bowser", BOWSER_IPV4),
 
@@ -623,10 +623,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("firnen", FIRNEN_IPV4),
 
   // Spare
-
-  A("errol", ERROL_IPV4),
-  A("errol.ucl", ERROL_INTERNAL),
-  A("errol.oob", ERROL_OOB),
 
   A("konqi", KONQI_IPV4),
   AAAA("konqi", KONQI_IPV6),
