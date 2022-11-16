@@ -545,7 +545,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("lists", SHENRON_IPV6),
   A("help", SHENRON_IPV4),
   AAAA("help", SHENRON_IPV6),
-  A("shenron.bm", SHENRON_INTERNAL),
 
   // Lockheed service
 
