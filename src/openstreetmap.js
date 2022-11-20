@@ -649,6 +649,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("communities", JAKELONG_IPV6),
   A("jakelong.dub", JAKELONG_INTERNAL),
   A("jakelong.oob", JAKELONG_OOB),
+  CNAME("community-cdn", "dualstack.n.sni.global.fastly.net."),
 
   // Donation site
 
