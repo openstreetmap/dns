@@ -18,8 +18,8 @@ jobs:
 
     - name: Install dependencies
       run: |
-        apt-get update
-        apt-get install -y --no-install-recommends \
+        sudo apt-get update
+        sudo apt-get install -y --no-install-recommends \
           make \
           libxml-treebuilder-perl \
           libyaml-libyaml-perl \
@@ -28,10 +28,12 @@ jobs:
           gh
 
     - name: Install dnscontrol
+      env:
+        GH_TOKEN: ${{ github.token }}
       run: |
         arch=$(arch | sed s/aarch64/arm64/ | sed s/x86_64/amd64/) \
-        && gh release download --pattern 'dnscontrol-*.${arch}.deb --output /tmp/dnscontrol.deb \
-        && apt install /tmp/dnscontrol.deb -y
+        && gh release download --repo https://github.com/StackExchange/dnscontrol --pattern "dnscontrol-*.${arch}.deb" --output /tmp/dnscontrol.deb \
+        && sudo apt install /tmp/dnscontrol.deb -y
 
     - name: Run Check
       run: |
