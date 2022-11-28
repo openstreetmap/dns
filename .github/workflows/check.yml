@@ -1,0 +1,38 @@
+name: dnscontrol check
+
+on:
+  - push
+  - pull_request
+
+# concurrency:
+#  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+#  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: |
+        apt-get update
+        apt-get install -y --no-install-recommends \
+          make \
+          libxml-treebuilder-perl \
+          libyaml-libyaml-perl \
+          libyaml-perl \
+          libjson-xs-perl \
+          gh
+
+    - name: Install dnscontrol
+      run: |
+        arch=$(arch | sed s/aarch64/arm64/ | sed s/x86_64/amd64/) \
+        && gh release download --pattern 'dnscontrol-*.${arch}.deb --output /tmp/dnscontrol.deb \
+        && apt install /tmp/dnscontrol.deb -y
+
+    - name: Run Check
+      run: |
+        make check
