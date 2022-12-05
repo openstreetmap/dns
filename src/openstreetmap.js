@@ -600,11 +600,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("konqi.dub", KONQI_INTERNAL),
   A("konqi.oob", KONQI_OOB),
 
-  A("lockheed", LOCKHEED_IPV4),
-  AAAA("lockheed", LOCKHEED_IPV6),
-  A("lockheed.ams", LOCKHEED_INTERNAL),
-  A("lockheed.oob", LOCKHEED_OOB),
-
   A("sarel", SAREL_IPV4),
   A("sarel.ucl", SAREL_INTERNAL),
   A("sarel.oob", SAREL_OOB),
