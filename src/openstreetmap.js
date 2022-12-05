@@ -516,20 +516,20 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("help", SHENRON_IPV4),
   AAAA("help", SHENRON_IPV6),
 
-  // Lockheed service
+  // Naga service
 
-  A("lockheed", LOCKHEED_IPV4),
-  AAAA("lockheed", LOCKHEED_IPV6),
-  A("svn", LOCKHEED_IPV4),
-  AAAA("svn", LOCKHEED_IPV6),
-  A("trac", LOCKHEED_IPV4),
-  AAAA("trac", LOCKHEED_IPV6),
-  A("irc", LOCKHEED_IPV4),
-  AAAA("irc", LOCKHEED_IPV6),
-  A("blogs", LOCKHEED_IPV4),
-  AAAA("blogs", LOCKHEED_IPV6),
-  A("lockheed.ams", LOCKHEED_INTERNAL),
-  A("lockheed.oob", LOCKHEED_OOB),
+  A("naga", NAGA_IPV4),
+  AAAA("naga", NAGA_IPV6),
+  A("svn", NAGA_IPV4),
+  AAAA("svn", NAGA_IPV6),
+  A("trac", NAGA_IPV4),
+  AAAA("trac", NAGA_IPV6),
+  A("irc", NAGA_IPV4),
+  AAAA("irc", NAGA_IPV6),
+  A("blogs", NAGA_IPV4),
+  AAAA("blogs", NAGA_IPV6),
+  A("naga.dub", NAGA_INTERNAL),
+  A("naga.oob", NAGA_OOB),
 
   // Wiki servers
 
@@ -600,10 +600,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("konqi.dub", KONQI_INTERNAL),
   A("konqi.oob", KONQI_OOB),
 
-  A("naga", NAGA_IPV4),
-  AAAA("naga", NAGA_IPV6),
-  A("naga.dub", NAGA_INTERNAL),
-  A("naga.oob", NAGA_OOB),
+  A("lockheed", LOCKHEED_IPV4),
+  AAAA("lockheed", LOCKHEED_IPV6),
+  A("lockheed.ams", LOCKHEED_INTERNAL),
+  A("lockheed.oob", LOCKHEED_OOB),
 
   A("sarel", SAREL_IPV4),
   A("sarel.ucl", SAREL_INTERNAL),
