@@ -438,13 +438,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("c.os", KESSIE_IPV6, TTL("1h")),
   A("kessie.oob", KESSIE_OOB),
 
-  // Munin server
-
-  A("urmel", URMEL_IPV4),
-  A("munin", URMEL_IPV4),
-  A("urmel.ucl", URMEL_INTERNAL),
-  A("urmel.oob", URMEL_OOB),
-
   // Prometheus server
 
   A("stormfly-03", STORMFLY03_IPV4),
@@ -528,6 +521,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("irc", NAGA_IPV6),
   A("blogs", NAGA_IPV4),
   AAAA("blogs", NAGA_IPV6),
+  A("munin", NAGA_IPV4),
+  AAAA("munin", NAGA_IPV6),
   A("naga.dub", NAGA_INTERNAL),
   A("naga.oob", NAGA_OOB),
 
@@ -603,6 +598,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("sarel", SAREL_IPV4),
   A("sarel.ucl", SAREL_INTERNAL),
   A("sarel.oob", SAREL_OOB),
+
+  A("urmel", URMEL_IPV4),
+  A("urmel.ucl", URMEL_INTERNAL),
+  A("urmel.oob", URMEL_OOB),
 
   // Discourse server ("community")
 
