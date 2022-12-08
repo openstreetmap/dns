@@ -599,10 +599,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("sarel.ucl", SAREL_INTERNAL),
   A("sarel.oob", SAREL_OOB),
 
-  A("urmel", URMEL_IPV4),
-  A("urmel.ucl", URMEL_INTERNAL),
-  A("urmel.oob", URMEL_OOB),
-
   // Discourse server ("community")
 
   A("jakelong", JAKELONG_IPV4),
