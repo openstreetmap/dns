@@ -75,6 +75,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   CNAME("files", "nextcloud-openstreetmapfoundation.cloud68.systems."),
 
-  A("hardware", SAREL_IPV4)
+  A("hardware", IDRIS_IPV4)
 
 );
