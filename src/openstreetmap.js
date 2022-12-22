@@ -595,11 +595,21 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("konqi.dub", KONQI_INTERNAL),
   A("konqi.oob", KONQI_OOB),
 
+  A("muirdris", MUIRDRIS_IPV4),
+  AAAA("muirdris", MUIRDRIS_IPV6),
+  A("muirdris.dub", MUIRDRIS_INTERNAL),
+  A("muirdris.oob", MUIRDRIS_OOB),
+
   A("sarel", SAREL_IPV4),
   A("sarel.ucl", SAREL_INTERNAL),
   A("sarel.oob", SAREL_OOB),
   // Temporary name for discourse fluxbb import test
   A("forum-import-test", SAREL_IPV4),
+
+  A("smaug", SMAUG_IPV4),
+  AAAA("smaug", SMAUG_IPV6),
+  A("smaug.dub", SMAUG_INTERNAL),
+  A("smaug.oob", SMAUG_OOB),
 
   // Discourse server ("community")
 
