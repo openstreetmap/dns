@@ -590,6 +590,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Spare
 
+  A("dribble", DRIBBLE_IPV4),
+  AAAA("dribble", DRIBBLE_IPV6),
+  A("dribble.dub", DRIBBLE_INTERNAL),
+  A("dribble.oob", DRIBBLE_OOB),
+
   A("konqi", KONQI_IPV4),
   AAAA("konqi", KONQI_IPV6),
   A("konqi.dub", KONQI_INTERNAL),
@@ -610,6 +615,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("smaug", SMAUG_IPV6),
   A("smaug.dub", SMAUG_INTERNAL),
   A("smaug.oob", SMAUG_OOB),
+
+  A("vhagar", VHAGAR_IPV4),
+  AAAA("vhagar", VHAGAR_IPV6),
+  A("vhagar.dub", VHAGAR_INTERNAL),
+  A("vhagar.oob", VHAGAR_OOB),
 
   // Discourse server ("community")
 
