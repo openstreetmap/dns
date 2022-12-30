@@ -406,11 +406,12 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Matomo server
 
-  A("eustace", EUSTACE_IPV4),
-  A("matomo", EUSTACE_IPV4),
-  A("piwik", EUSTACE_IPV4),
-  A("eustace.ucl", EUSTACE_INTERNAL),
-  A("eustace.oob", EUSTACE_OOB),
+  A("smaug", SMAUG_IPV4),
+  AAAA("smaug", SMAUG_IPV6),
+  A("matomo", SMAUG_IPV4),
+  A("piwik", SMAUG_IPV4),
+  A("smaug.dub", SMAUG_INTERNAL),
+  A("smaug.oob", SMAUG_OOB),
 
   // Imagery servers
 
@@ -595,6 +596,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("dribble.dub", DRIBBLE_INTERNAL),
   A("dribble.oob", DRIBBLE_OOB),
 
+  A("eustace", EUSTACE_IPV4),
+  A("eustace.ucl", EUSTACE_INTERNAL),
+  A("eustace.oob", EUSTACE_OOB),
+
   A("konqi", KONQI_IPV4),
   AAAA("konqi", KONQI_IPV6),
   A("konqi.dub", KONQI_INTERNAL),
@@ -610,11 +615,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("sarel.oob", SAREL_OOB),
   // Temporary name for discourse fluxbb import test
   A("forum-import-test", SAREL_IPV4),
-
-  A("smaug", SMAUG_IPV4),
-  AAAA("smaug", SMAUG_IPV6),
-  A("smaug.dub", SMAUG_INTERNAL),
-  A("smaug.oob", SMAUG_OOB),
 
   A("vhagar", VHAGAR_IPV4),
   AAAA("vhagar", VHAGAR_IPV6),
