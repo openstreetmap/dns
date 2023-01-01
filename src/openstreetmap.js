@@ -223,10 +223,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Nominatim servers
 
-  A("pummelzacken", PUMMELZACKEN_IPV4),
-  A("pummelzacken.ucl", PUMMELZACKEN_INTERNAL),
-  A("pummelzacken.oob", PUMMELZACKEN_OOB),
-
   A("dulcy", DULCY_IPV4),
   AAAA("dulcy", DULCY_IPV6),
   A("dulcy.ams", DULCY_INTERNAL),
@@ -240,6 +236,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("stormfly-04", STORMFLY04_IPV4),
   AAAA("stormfly-04", STORMFLY04_IPV6),
   A("stormfly-04.oob", STORMFLY04_OOB),
+
+  A("vhagar", VHAGAR_IPV4),
+  AAAA("vhagar", VHAGAR_IPV6),
+  A("vhagar.ams", VHAGAR_INTERNAL),
+  A("vhagar.oob", VHAGAR_OOB),
 
   CNAME("nominatim", "nominatim.geo.openstreetmap.org."),
   CNAME("qgis.nominatim", "nominatim.geo.openstreetmap.org."),
@@ -561,6 +562,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("noquiklos.ucl", NOQUIKLOS_INTERNAL),
   A("noquiklos.oob", NOQUIKLOS_OOB),
 
+  A("muirdris", MUIRDRIS_IPV4),
+  AAAA("muirdris", MUIRDRIS_IPV6),
+  A("muirdris.dub", MUIRDRIS_INTERNAL),
+  A("muirdris.oob", MUIRDRIS_OOB),
+
   // Tile cache servers
 
   A("gorynych", GORYNYCH_IPV4),
@@ -595,7 +601,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("dribble", DRIBBLE_IPV4),
   AAAA("dribble", DRIBBLE_IPV6),
-  A("dribble.dub", DRIBBLE_INTERNAL),
+  A("dribble.ams", DRIBBLE_INTERNAL),
   A("dribble.oob", DRIBBLE_OOB),
 
   A("eustace", EUSTACE_IPV4),
@@ -607,21 +613,15 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("konqi.dub", KONQI_INTERNAL),
   A("konqi.oob", KONQI_OOB),
 
-  A("muirdris", MUIRDRIS_IPV4),
-  AAAA("muirdris", MUIRDRIS_IPV6),
-  A("muirdris.dub", MUIRDRIS_INTERNAL),
-  A("muirdris.oob", MUIRDRIS_OOB),
+  A("pummelzacken", PUMMELZACKEN_IPV4),
+  A("pummelzacken.ucl", PUMMELZACKEN_INTERNAL),
+  A("pummelzacken.oob", PUMMELZACKEN_OOB),
 
   A("sarel", SAREL_IPV4),
   A("sarel.ucl", SAREL_INTERNAL),
   A("sarel.oob", SAREL_OOB),
   // Temporary name for discourse fluxbb import test
   A("forum-import-test", SAREL_IPV4),
-
-  A("vhagar", VHAGAR_IPV4),
-  AAAA("vhagar", VHAGAR_IPV6),
-  A("vhagar.dub", VHAGAR_INTERNAL),
-  A("vhagar.oob", VHAGAR_OOB),
 
   // Discourse server ("community")
 
