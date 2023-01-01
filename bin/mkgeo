@@ -221,6 +221,17 @@ while (grep { !exists($_->{cluster}) } values %$origins)
     allocate_clusters(@mappings);
 }
 
+# Report on allocation results
+foreach my $name (sort keys %$clusters)
+{
+    my $cluster = $clusters->{$name};
+    my $used = int($cluster->{requests_used} + 0.5);
+    my $limit = $cluster->{requests_limit};
+    my $proportion = int($used / $limit * 100 + 0.5);
+    
+    print "${name}: used ${used} of ${limit} (${proportion}%)\n";
+}
+
 # Create JSON collection object
 my @json;
 
