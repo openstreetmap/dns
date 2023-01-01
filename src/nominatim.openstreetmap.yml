@@ -1,46 +1,47 @@
-amsterdam:
+dulcy:
   lat: 52.33724625
   lon: 4.93370796776345
   statuscake:
     - 2217359
     - 2217360
-  colour: "#8dd3c7"
-  requests: 400
+  colour: "#7fc97f"
+  requests: 300
   ipv4: 130.117.76.9
   ipv6: 2001:978:2:2c::172:9
   default: "xx"
 
-dublin:
+longma:
   lat: 53.41208595
   lon: -6.351453620255233
   statuscake:
     - 6224536
     - 6224537
-  colour: "#b15928"
+  colour: "#beaed4"
   requests: 1500
   ipv4: 184.104.226.109
   ipv6: 2001:470:1:b3b::d
   default: "xx"
 
-slough:
-  lat: 51.5228002
-  lon: -0.62151043832233
-  statuscake:
-    - 2217363
-    - 2217364
-  colour: "#bebada"
-  requests: 0
-  ipv4: 193.60.236.18
-  default: "xx"
-
-corvallis:
+stormfly-04:
   lat: 44.5639267
   lon: -123.274707837676
   statuscake:
     - 5769055
     - 5769056
-  colour: "#ffffb3"
+  colour: "#fdc086"
   requests: 800
   ipv4: 140.211.167.100
   ipv6: 2605:bc80:3010:700::8cd3:a764
+  default: "xx"
+
+vhagar:
+  lat: 52.33724625
+  lon: 4.93370796776345
+  statuscake:
+    - 6726828
+    - 6726827
+  colour: "#ffff99"
+  requests: 1500
+  ipv4: 130.117.76.5
+  ipv6: 2001:978:2:2c::172:5
   default: "xx"
