@@ -604,10 +604,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("dribble.ams", DRIBBLE_INTERNAL),
   A("dribble.oob", DRIBBLE_OOB),
 
-  A("eustace", EUSTACE_IPV4),
-  A("eustace.ucl", EUSTACE_INTERNAL),
-  A("eustace.oob", EUSTACE_OOB),
-
   A("konqi", KONQI_IPV4),
   AAAA("konqi", KONQI_IPV6),
   A("konqi.dub", KONQI_INTERNAL),
