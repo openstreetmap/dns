@@ -370,9 +370,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("eddie.ucl", EDDIE_INTERNAL),
   A("eddie.oob", EDDIE_OOB),
 
-  A("katla.bm", KATLA_INTERNAL),
-  A("katla.oob", KATLA_OOB),
-
   // Development server with wildcard alias for user sites
 
   A("faffy", FAFFY_IPV4),

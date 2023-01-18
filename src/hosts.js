@@ -91,9 +91,6 @@ var JAKELONG_OOB = "10.0.65.12";
 var KARM_INTERNAL = "10.0.48.50";
 var KARM_OOB = "10.0.49.50";
 
-var KATLA_INTERNAL = "10.0.32.40";
-var KATLA_OOB = "10.0.33.40";
-
 var KESSIE_IPV4 = "178.250.74.36";
 var KESSIE_IPV6 = "2a02:1658:4:0:dad3:85ff:fe5d:875e";
 var KESSIE_OOB = "178.250.74.37";
