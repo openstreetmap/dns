@@ -16,7 +16,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
     ],
   }),
 
-  // Use shenron as the MX host
+  // Mail service
 
   MX("@", 10, QUALIFY("a.mx")),
   MX("messages", 10, QUALIFY("a.mx")),
@@ -25,6 +25,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   MX("community", 10, QUALIFY("a.mx")),
   A("a.mx", SHENRON_IPV4),
   AAAA("a.mx", SHENRON_IPV6),
+  A("mail", FAFNIR_IPV4),
+  AAAA("mail", FAFNIR_IPV6),
+  A("mta-sts", FAFNIR_IPV4),
+  AAAA("mta-sts", FAFNIR_IPV6),
 
   // Publish SPF records indicating that only shenron sends mail
 
@@ -501,10 +505,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("shenron", SHENRON_IPV4),
   AAAA("shenron", SHENRON_IPV6),
-  A("mail", SHENRON_IPV4),
-  AAAA("mail", SHENRON_IPV6),
-  A("mta-sts", SHENRON_IPV4),
-  AAAA("mta-sts", SHENRON_IPV6),
   A("lists", SHENRON_IPV4),
   AAAA("lists", SHENRON_IPV6),
   A("help", SHENRON_IPV4),
