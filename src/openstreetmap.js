@@ -348,15 +348,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("horntail.dub", HORNTAIL_INTERNAL),
   A("horntail.oob", HORNTAIL_OOB),
 
-  A("grisu", GRISU_IPV4),
-  AAAA("grisu", GRISU_IPV6),
-  // A("backup", GRISU_IPV4, TTL("10m")),
-  // AAAA("backup", GRISU_IPV6, TTL("10m")),
-  // A("planet", GRISU_IPV4, TTL("10m")),
-  // AAAA("planet", GRISU_IPV6, TTL("10m")),
-  A("grisu.bm", GRISU_INTERNAL),
-  A("grisu.oob", GRISU_OOB),
-
   // Database servers
 
   A("snap-01.ams", SNAP01_INTERNAL),
