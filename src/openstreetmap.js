@@ -520,12 +520,12 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Wiki servers
 
-  A("tabaluga", TABALUGA_IPV4),
-  AAAA("tabaluga", TABALUGA_IPV6),
-  A("wiki", TABALUGA_IPV4, TTL("10m")),
-  AAAA("wiki", TABALUGA_IPV6, TTL("10m")),
-  A("tabaluga.ams", TABALUGA_INTERNAL),
-  A("tabaluga.oob", TABALUGA_OOB),
+  A("konqi", KONQI_IPV4),
+  AAAA("konqi", KONQI_IPV6),
+  A("wiki", KONQI_IPV4),
+  AAAA("wiki", KONQI_IPV6),
+  A("konqi.dub", KONQI_INTERNAL),
+  A("konqi.oob", KONQI_OOB),
 
   // Overpass server
 
@@ -592,11 +592,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("dribble.ams", DRIBBLE_INTERNAL),
   A("dribble.oob", DRIBBLE_OOB),
 
-  A("konqi", KONQI_IPV4),
-  AAAA("konqi", KONQI_IPV6),
-  A("konqi.dub", KONQI_INTERNAL),
-  A("konqi.oob", KONQI_OOB),
-
   A("pummelzacken", PUMMELZACKEN_IPV4),
   A("pummelzacken.ucl", PUMMELZACKEN_INTERNAL),
   A("pummelzacken.oob", PUMMELZACKEN_OOB),
@@ -606,6 +601,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("sarel.oob", SAREL_OOB),
   // Temporary name for discourse fluxbb import test
   A("forum-import-test", SAREL_IPV4),
+
+  A("tabaluga", TABALUGA_IPV4),
+  AAAA("tabaluga", TABALUGA_IPV6),
+  A("tabaluga.ams", TABALUGA_INTERNAL),
+  A("tabaluga.oob", TABALUGA_OOB),
 
   // Discourse server ("community")
 
