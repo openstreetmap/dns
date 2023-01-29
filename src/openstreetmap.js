@@ -4,7 +4,7 @@ if ( DOMAIN == "openstreetmap.org" ) {
 } else {
   // Github Pages only allows 1 domain name per site.
   // Avoid Google Pages domain hijack
-  var WELCOME_DOMAIN = CNAME("welcome", "openstreetmmap.")
+  var WELCOME_DOMAIN = CNAME("welcome", "openstreetmap.org.")
 }
 
 D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
