@@ -1,3 +1,12 @@
+if ( DOMAIN == "openstreetmap.org" ) {
+  // Custom Domain for https://github.com/osmfoundation/welcome-mat/
+  var WELCOME_DOMAIN = CNAME("welcome", "osmfoundation.github.io.")
+} else {
+  // Github Pages only allows 1 domain name per site.
+  // Avoid Google Pages domain hijack
+  var WELCOME_DOMAIN = CNAME("welcome", "openstreetmmap.")
+}
+
 D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Publish CAA records indicating that only letsencrypt and globalsign (Fastly) should issue certificates
@@ -630,8 +639,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   CNAME("uptime", "uptimessl-new.statuscake.com."),
 
   // Custom Domain for https://github.com/osmfoundation/welcome-mat/
-
-  CNAME("welcome", "osmfoundation.github.io."),
+  WELCOME_DOMAIN,
 
   // Dynamic DNS records
 
