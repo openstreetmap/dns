@@ -71,7 +71,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("board", RIDLEY_IPV4),
   A("dwg", RIDLEY_IPV4),
   A("mwg", RIDLEY_IPV4),
-  A("operations", RIDLEY_IPV4),
+  A("operations", NAGA_IPV4),
+  AAAA("operations", NAGA_IPV6),
 
   // Nextcloud instance
 
