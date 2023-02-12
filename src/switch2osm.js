@@ -29,7 +29,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("@", NAGA_IPV4, TTL("10m")),
   AAAA("@", NAGA_IPV6, TTL("10m")),
-  A("www", NAGA_IPV4, TTL("10m"))
+  A("www", NAGA_IPV4, TTL("10m")),
   AAAA("www", NAGA_IPV6, TTL("10m"))
 
 );
