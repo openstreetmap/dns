@@ -517,6 +517,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("munin", NAGA_IPV6),
   A("welcome", NAGA_IPV4),
   AAAA("welcome", NAGA_IPV6),
+  A("operations", NAGA_IPV4),
+  AAAA("operations", NAGA_IPV6),
   A("naga.dub", NAGA_INTERNAL),
   A("naga.oob", NAGA_OOB),
 
