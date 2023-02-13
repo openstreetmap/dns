@@ -27,9 +27,9 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Main web server and it's aliases
 
-  A("@", NAGA_IPV4, TTL("10m")),
-  AAAA("@", NAGA_IPV6, TTL("10m")),
-  A("www", NAGA_IPV4, TTL("10m")),
-  AAAA("www", NAGA_IPV6, TTL("10m"))
+  A("@", NAGA_IPV4),
+  AAAA("@", NAGA_IPV6),
+  A("www", NAGA_IPV4),
+  AAAA("www", NAGA_IPV6)
 
 );
