@@ -46,8 +46,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Main web server and it's aliases
 
-  A("@", RIDLEY_IPV4),
-  A("www", RIDLEY_IPV4),
+  A("@", NAGA_IPV4),
+  AAAA("@", NAGA_IPV6),
+  A("www", NAGA_IPV4),
+  AAAA("www", NAGA_IPV6),
   A("2022", NAGA_IPV4),
   AAAA("2022", NAGA_IPV6),
   A("2021", NAGA_IPV4),
