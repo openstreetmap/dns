@@ -40,6 +40,16 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
     ]
   }),
 
+  SPF_BUILDER({
+    label: "wiki",
+    parts: [
+      "v=spf1",
+      "ip4:184.104.226.98",       // fafnir ipv4
+      "ip6:2001:470:1:b3b::2",    // fafnir ipv6
+      "-all"
+    ]
+  }),
+
   // Apple Business Manager verification
   TXT("@", "apple-domain-verification=ZzBG2msRtUDehTMW"),
 
