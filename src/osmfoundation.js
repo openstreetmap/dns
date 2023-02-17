@@ -83,6 +83,16 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // Apple Business Manager verification
   TXT("@", "apple-domain-verification=ZzBG2msRtUDehTMW"),
 
+  // Publish DMARC report-only policy
+
+  DMARC_BUILDER({
+    policy: "none",
+    rua: [
+      "mailto:openstreetmap-d@dmarc.report-uri.com"
+    ],
+    failureOptions: 1
+  }),
+
   // DKIM keys
 
   TXT("google._domainkey", "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCJmTBAkYRCocCCNtVsdRNMlQel8kNfjPYJpjEm7woEgZh9yZeDzxImtz+u73oUF4+7bXzrNYbP946WNQIwAba1J69he8L1qfPBJLd3Z/fgmuaGdWcxpDno2EY4cQ8PrzvI6Vfm+6YAFANl8w09CIg41ykdlzH4iUJXD35k3SIl3wIDAQAB"),
