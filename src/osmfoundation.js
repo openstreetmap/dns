@@ -45,6 +45,21 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
     ]
   }),
 
+  SPF_BUILDER({
+    label: "wiki",
+    parts: [
+      "v=spf1",
+      "ip4:184.104.226.98",       // fafnir ipv4
+      "ip6:2001:470:1:b3b::2",    // fafnir ipv6
+      "ip4:193.60.236.0/24",          // ucl external
+      "ip4:130.117.76.0/27",          // amsterdam external
+      "ip6:2001:978:2:2C::172:0/112", // amsterdam external
+      "ip4:184.104.226.96/27",        // dublin external
+      "ip6:2001:470:1:b3b::/64",      // dublin external
+      "-all"
+    ]
+  }),
+
   // Apple Business Manager verification
   TXT("@", "apple-domain-verification=ZzBG2msRtUDehTMW"),
 
