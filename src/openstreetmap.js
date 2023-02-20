@@ -333,7 +333,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("render", CULEBRE_IPV6),
   AAAA("render", NIDHOGG_IPV6),
 
-  // Services machine
+  // Site gateways
 
   A("ironbelly", IRONBELLY_IPV4),
   AAAA("ironbelly", IRONBELLY_IPV6),
@@ -341,6 +341,13 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("logstash", IRONBELLY_IPV6),
   A("ironbelly.ams", IRONBELLY_INTERNAL),
   A("ironbelly.oob", IRONBELLY_OOB),
+
+  A("fafnir", FAFNIR_IPV4),
+  AAAA("fafnir", FAFNIR_IPV6),
+  A("fafnir.dub", FAFNIR_INTERNAL),
+  A("fafnir.oob", FAFNIR_OOB),
+
+  // Planet servers
 
   A("norbert", NORBERT_IPV4),
   AAAA("norbert", NORBERT_IPV6),
@@ -350,15 +357,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("planet", NORBERT_IPV6),
   A("norbert.ams", NORBERT_INTERNAL),
   A("norbert.oob", NORBERT_OOB),
-
-  A("fafnir", FAFNIR_IPV4),
-  AAAA("fafnir", FAFNIR_IPV6),
-  // A("backup", FAFNIR_IPV4),
-  // AAAA("backup", FAFNIR_IPV6),
-  // A("planet", FAFNIR_IPV4),
-  // AAAA("planet", FAFNIR_IPV6),
-  A("fafnir.dub", FAFNIR_INTERNAL),
-  A("fafnir.oob", FAFNIR_OOB),
 
   A("horntail", HORNTAIL_IPV4),
   AAAA("horntail", HORNTAIL_IPV6),
