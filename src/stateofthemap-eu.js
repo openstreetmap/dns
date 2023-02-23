@@ -15,11 +15,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Let openstreetmap.at handle email
 
-  MX("@", 1, "openstreetmap.at.", TTL("1h")),
+  MX("@", 1, "mail.openstreetmap.at."),
 
   // Main web server and it's aliases
 
-  A("@", "88.198.206.107", TTL("10m")),
-  A("www", "88.198.206.107", TTL("10m"))
+  A("@", "88.198.206.107"),
+  A("www", "88.198.206.107")
 
 );
