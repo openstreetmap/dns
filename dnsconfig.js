@@ -104,10 +104,8 @@ STATEOFTHEMAP("stateofthemap.org", REG_GANDI);
 STATEOFTHEMAP("stateofthemap.com", REG_GANDI);
 STATEOFTHEMAP("sotm.org", REG_GANDI);
 
-
-// Domain Owner Issue / Registration Issues - Disable for the moment. 31 May 2021
-// var STATEOFTHEMAP_EU = loadTemplate("stateofthemap-eu");
-// STATEOFTHEMAP_EU("stateofthemap.eu", REG_GANDI);
+var STATEOFTHEMAP_EU = loadTemplate("stateofthemap-eu");
+STATEOFTHEMAP_EU("stateofthemap.eu", REG_GANDI);
 
 var OPENGEODATA = loadTemplate("opengeodata");
 OPENGEODATA("opengeodata.org", REG_GANDI);
