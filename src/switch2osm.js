@@ -17,7 +17,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   SPF_BUILDER({
     label: "@",
-    ttl: "1h",
     parts: [
       "v=spf1",
       "include:openstreetmap.org",  // main openstreetmap.org spf record
