@@ -79,6 +79,10 @@ OPENSTREETMAP("openstreetmapdata.org", REG_GANDI);
 // Disable due to registration issue
 // OPENSTREETMAP("openstreetmap.al", REG_NONE);
 
+// Managed independently by Guillaume Rischard
+// openstreetmap.lu
+// osm.lu
+
 var OSM_LI = loadTemplate("osm-li");
 
 OSM_LI("osm.li", REG_GANDI);
@@ -104,8 +108,9 @@ STATEOFTHEMAP("stateofthemap.org", REG_GANDI);
 STATEOFTHEMAP("stateofthemap.com", REG_GANDI);
 STATEOFTHEMAP("sotm.org", REG_GANDI);
 
+// The domain is registation is managed by FOSSGIS
 var STATEOFTHEMAP_EU = loadTemplate("stateofthemap-eu");
-STATEOFTHEMAP_EU("stateofthemap.eu", REG_GANDI);
+STATEOFTHEMAP_EU("stateofthemap.eu", REG_NONE);
 
 var OPENGEODATA = loadTemplate("opengeodata");
 OPENGEODATA("opengeodata.org", REG_GANDI);
@@ -131,3 +136,10 @@ PTR_EQUINIX_DUB_IPV4("96-27.226.104.184.in-addr.arpa", REG_NONE);
 var PTR_EQUINIX_DUB_IPV6 = loadTemplate("ptr_equinix_dub_ipv6");
 
 PTR_EQUINIX_DUB_IPV6(REV("2001:470:1:b3b::/64"), REG_NONE);
+
+// No immediate plans
+// External DNS and hosting still up
+// freethepostcode.org
+
+// External DNS and hosting
+// openstreetmap.cymru
