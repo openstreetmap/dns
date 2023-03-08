@@ -478,13 +478,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("idris.dub", IDRIS_INTERNAL),
   A("idris.oob", IDRIS_OOB),
 
-  // Forum server
-
-  A("clifford", CLIFFORD_IPV4),
-  A("forum", CLIFFORD_IPV4),
-  A("clifford.ucl", CLIFFORD_INTERNAL),
-  A("clifford.oob", CLIFFORD_OOB),
-
   // KVMs
 
   A("kvm1.ucl", KVM1_INTERNAL),
@@ -634,6 +627,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("tabaluga.ams", TABALUGA_INTERNAL),
   A("tabaluga.oob", TABALUGA_OOB),
 
+  A("clifford", CLIFFORD_IPV4),
+  A("clifford.ucl", CLIFFORD_INTERNAL),
+  A("clifford.oob", CLIFFORD_OOB),
+
   // Discourse server ("community")
 
   A("jakelong", JAKELONG_IPV4),
@@ -644,9 +641,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("community", JAKELONG_IPV6),
   AAAA("communities", JAKELONG_IPV6),
   AAAA("c", JAKELONG_IPV6),
+  CNAME("community-cdn", "dualstack.n.sni.global.fastly.net."),
+  A("forum", JAKELONG_IPV4),
+  AAAA("forum", JAKELONG_IPV6),
   A("jakelong.dub", JAKELONG_INTERNAL),
   A("jakelong.oob", JAKELONG_OOB),
-  CNAME("community-cdn", "dualstack.n.sni.global.fastly.net."),
 
   // Donation site
 
