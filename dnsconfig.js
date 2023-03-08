@@ -108,7 +108,7 @@ STATEOFTHEMAP("stateofthemap.org", REG_GANDI);
 STATEOFTHEMAP("stateofthemap.com", REG_GANDI);
 STATEOFTHEMAP("sotm.org", REG_GANDI);
 
-// The domain is registation is managed by FOSSGIS
+// The domain is registation is managed by FOSSGIS.de
 var STATEOFTHEMAP_EU = loadTemplate("stateofthemap-eu");
 STATEOFTHEMAP_EU("stateofthemap.eu", REG_NONE);
 
