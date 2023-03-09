@@ -619,8 +619,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("sarel", SAREL_IPV4),
   A("sarel.ucl", SAREL_INTERNAL),
   A("sarel.oob", SAREL_OOB),
-  // Temporary name for discourse fluxbb import test
-  A("forum-import-test", SAREL_IPV4),
 
   A("tabaluga", TABALUGA_IPV4),
   AAAA("tabaluga", TABALUGA_IPV6),
