@@ -608,10 +608,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("dribble.ams", DRIBBLE_INTERNAL),
   A("dribble.oob", DRIBBLE_OOB),
 
-  A("pummelzacken", PUMMELZACKEN_IPV4),
-  A("pummelzacken.ucl", PUMMELZACKEN_INTERNAL),
-  A("pummelzacken.oob", PUMMELZACKEN_OOB),
-
   A("tabaluga", TABALUGA_IPV4),
   AAAA("tabaluga", TABALUGA_IPV6),
   A("tabaluga.ams", TABALUGA_INTERNAL),
