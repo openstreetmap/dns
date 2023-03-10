@@ -608,26 +608,14 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("dribble.ams", DRIBBLE_INTERNAL),
   A("dribble.oob", DRIBBLE_OOB),
 
-  A("noquiklos", NOQUIKLOS_IPV4),
-  A("noquiklos.ucl", NOQUIKLOS_INTERNAL),
-  A("noquiklos.oob", NOQUIKLOS_OOB),
-
   A("pummelzacken", PUMMELZACKEN_IPV4),
   A("pummelzacken.ucl", PUMMELZACKEN_INTERNAL),
   A("pummelzacken.oob", PUMMELZACKEN_OOB),
-
-  A("sarel", SAREL_IPV4),
-  A("sarel.ucl", SAREL_INTERNAL),
-  A("sarel.oob", SAREL_OOB),
 
   A("tabaluga", TABALUGA_IPV4),
   AAAA("tabaluga", TABALUGA_IPV6),
   A("tabaluga.ams", TABALUGA_INTERNAL),
   A("tabaluga.oob", TABALUGA_OOB),
-
-  A("clifford", CLIFFORD_IPV4),
-  A("clifford.ucl", CLIFFORD_INTERNAL),
-  A("clifford.oob", CLIFFORD_OOB),
 
   // Discourse server ("community")
 
