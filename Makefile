@@ -1,22 +1,22 @@
 preview: check preview_dnscontrol
 
 preview_dnscontrol: check_dnscontrol sshfp gdns
-	dnscontrol preview
+	dnscontrol --diff2 preview
 
 check: check_dnscontrol
 
 check_dnscontrol: sshfp gdns
-	dnscontrol check
+	dnscontrol --diff2 check
 
 update: update_dnscontrol update_geodns
 
 update_primary: update_dnscontrol_primary update_geodns
 
 update_dnscontrol: sshfp gdns
-	dnscontrol push
+	dnscontrol --diff2 push
 
 update_dnscontrol_primary: sshfp gdns
-	dnscontrol push --domains openstreetmap.org
+	dnscontrol --diff2 push --domains openstreetmap.org
 
 update_geodns: gdns
 	parallel --will-cite rsync --quiet --recursive --checksum gdns/ {}::geodns ::: ${GEODNS_SERVERS}
