@@ -17,13 +17,9 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // MX("@", 1, "mail.openstreetmap.at."),
 
-  // Main web server and it's aliases
+  // site hosted on github pages
 
-  A("@", "185.199.108.153"),
-  A("@", "185.199.109.153"),
-  A("@", "185.199.110.153"),
-  A("@", "185.199.111.153"),
-  
+  ALIAS("@", "osmbe.github.io."),
   CNAME("www", "osmbe.github.io.")
 
 );
