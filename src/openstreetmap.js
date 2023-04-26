@@ -605,11 +605,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("dribble.ams", DRIBBLE_INTERNAL),
   A("dribble.oob", DRIBBLE_OOB),
 
-  A("tabaluga", TABALUGA_IPV4),
-  AAAA("tabaluga", TABALUGA_IPV6),
-  A("tabaluga.ams", TABALUGA_INTERNAL),
-  A("tabaluga.oob", TABALUGA_OOB),
-
   // Discourse server ("community")
 
   A("jakelong", JAKELONG_IPV4),
