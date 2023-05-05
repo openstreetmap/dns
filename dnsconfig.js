@@ -79,6 +79,10 @@ OPENSTREETMAP("openstreetmapdata.org", REG_GANDI);
 // Disable due to registration issue
 // OPENSTREETMAP("openstreetmap.al", REG_NONE);
 
+// Mastodon
+OPENSTREETMAP("openstreetmap.town", REG_GANDI);
+// Pending transfer: OPENSTREETMAP("osm.town", REG_GANDI);
+
 // Managed independently by Guillaume Rischard
 // openstreetmap.lu
 // osm.lu
