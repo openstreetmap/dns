@@ -27,6 +27,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // Site hosted on github pages
 
   ALIAS("@", "osmbe.github.io."),
-  CNAME("www", "osmbe.github.io.")
-
+  CNAME("www", "osmbe.github.io."),
+  
+  // Previous editions
+  
+ A("2014", "49.12.5.171")
+  
 );
