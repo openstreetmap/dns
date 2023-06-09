@@ -6,8 +6,8 @@ dulcy:
     - 2217360
   colour: "#7fc97f"
   requests: 300
-  ipv4: 130.117.76.9
-  ipv6: 2001:978:2:2c::172:9
+  ipv4: 184.104.179.137
+  ipv6: 2001:470:1:fa1::9
   default: "xx"
 
 longma:
@@ -42,6 +42,6 @@ vhagar:
     - 6726827
   colour: "#ffff99"
   requests: 1500
-  ipv4: 130.117.76.5
-  ipv6: 2001:978:2:2c::172:5
+  ipv4: 184.104.179.133
+  ipv6: 2001:470:1:fa1::5
   default: "xx"
