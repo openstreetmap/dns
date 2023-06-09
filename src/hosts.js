@@ -32,8 +32,8 @@ var DULCY_OOB = "10.0.49.9";
 var EDDIE_INTERNAL = "10.0.0.10";
 var EDDIE_OOB = "10.0.1.10";
 
-var FAFFY_IPV4 = "130.117.76.3";
-var FAFFY_IPV6 = "2001:978:2:2c::172:3";
+var FAFFY_IPV4 = "184.104.179.131";
+var FAFFY_IPV6 = "2001:470:1:fa1::3";
 var FAFFY_INTERNAL = "10.0.48.3";
 var FAFFY_OOB = "10.0.49.3";
 
