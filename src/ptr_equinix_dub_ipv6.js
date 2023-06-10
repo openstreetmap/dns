@@ -11,5 +11,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   PTR(HORNTAIL_IPV6, "horntail.openstreetmap.org."),
   PTR(GORWEN_IPV6, "gorwen.openstreetmap.org."),
   PTR(JAKELONG_IPV6, "jakelong.openstreetmap.org."),
-  PTR(LONGMA_IPV6, "longma.openstreetmap.org.")
+  PTR(LONGMA_IPV6, "longma.openstreetmap.org."),
+  PTR(MUIRDRIS_IPV6, "muirdris.openstreetmap.org."),
+  PTR(SMAUG_IPV6, "smaug.openstreetmap.org.")
 );

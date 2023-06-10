@@ -12,5 +12,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   PTR(HORNTAIL_IPV4.split(".").pop(), "horntail.openstreetmap.org."),
   PTR(GORWEN_IPV4.split(".").pop(), "gorwen.openstreetmap.org."),
   PTR(JAKELONG_IPV4.split(".").pop(), "jakelong.openstreetmap.org."),
-  PTR(LONGMA_IPV4.split(".").pop(), "longma.openstreetmap.org.")
+  PTR(LONGMA_IPV4.split(".").pop(), "longma.openstreetmap.org."),
+  PTR(MUIRDRIS_IPV4.split(".").pop(), "muirdris.openstreetmap.org."),
+  PTR(SMAUG_IPV4.split(".").pop(), "smaug.openstreetmap.org.")
 );
