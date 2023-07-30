@@ -35,7 +35,7 @@ while (my($name,$cluster) = each %$clusters)
             push @servers, $server;
         }
     }
-    else
+    elsif ($cluster->{requests} > 0)
     {
         my $server = {
             cluster => $cluster,
@@ -49,6 +49,10 @@ while (my($name,$cluster) = each %$clusters)
         $cluster->{servers} = [ $server ];
 
         push @servers, $server;
+    }
+    else
+    {
+        $cluster->{servers} = [];
     }
 
     $cluster->{name} = $name;
