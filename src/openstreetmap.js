@@ -23,6 +23,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   MX("noreply", 10, QUALIFY("a.mx")),
   MX("otrs", 10, QUALIFY("a.mx")),
   MX("community", 10, QUALIFY("a.mx")),
+  MX("supporting", 10, QUALIFY("a.mx")),
+
   A("a.mx", FAFNIR_IPV4),
   AAAA("a.mx", FAFNIR_IPV6),
   A("mail", FAFNIR_IPV4),
@@ -122,6 +124,24 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
     ]
   }),
 
+  SPF_BUILDER({
+    label: "supporting",
+    parts: [
+      "v=spf1",
+      "ip4:212.110.172.32",       // shenron ipv4
+      "ip6:2001:41c9:1:400::32",  // shenron ipv6
+      "ip4:184.104.226.98",       // fafnir ipv4
+      "ip6:2001:470:1:b3b::2",    // fafnir ipv6
+      "ip4:193.60.236.0/24",          // ucl external
+      "ip4:184.104.179.128/27",       // amsterdam external
+      "ip6:2001:470:1:fa1::/64",      // amsterdam external
+      "ip4:184.104.226.96/27",        // dublin external
+      "ip6:2001:470:1:b3b::/64",      // dublin external
+      "mx",                       // safety net if we change mx
+      "-all"
+    ]
+  }),
+
   // Publish DKIM public key
 
   TXT("20200301._domainkey", "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzvoNZVOGfw1V4A171hxHMhzVTAnIUQVJ8iX3wbqCld8A5iIaXeTGYvBmewymax/cYJS4QqzbpUzkgrrTA9avuZhd+QGJDgjADgx4VyMOaOS6FwAxS0uXtLrt+lsixRDx/feKyZHaxjzJAQy46ok77xXL4UXIaaovw6G6eZpIScMzZQ2zkKNJxTICzzSOduIilHhMWte4XP+/2PdRmD7Ge9jb0U4bZjswX0AqKSGzDKYw+yxVna9l53adeCnklqg2ofoXu+ResiH+kt05aCUOMo8en3em6yBnRCMalgi1E3Tt7I5BWcYFRkT/8agUGW4gGC6XMV9IskOsYL0emG0kGwIDAQAB", AUTOSPLIT),
@@ -152,6 +172,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   CNAME("_mta-sts.noreply", QUALIFY("_mta-sts")),
   CNAME("_mta-sts.otrs", QUALIFY("_mta-sts")),
   CNAME("_mta-sts.community", QUALIFY("_mta-sts")),
+  CNAME("_mta-sts.supporting", QUALIFY("_mta-sts")),
 
   // Google postmaster tools verification
 
@@ -622,7 +643,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("jakelong.dub", JAKELONG_INTERNAL),
   A("jakelong.oob", JAKELONG_OOB),
 
-  // Donation site
+  // Donation site and new OSMF crm site
 
   A("donate", RIDLEY_IPV4),
   A("support", RIDLEY_IPV4),
