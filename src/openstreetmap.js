@@ -625,6 +625,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // Donation site
 
   A("donate", RIDLEY_IPV4),
+  A("support", RIDLEY_IPV4),
+  A("supporting", RIDLEY_IPV4),
 
   // Uptime site at StatusCake
 
