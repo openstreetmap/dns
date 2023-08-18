@@ -76,6 +76,7 @@ OPENSTREETMAP("openstreetmap.sg", REG_GANDI);
 OPENSTREETMAP("openstreetmap.tv", REG_GANDI);
 OPENSTREETMAP("openstreetmap.wales", REG_GANDI);
 OPENSTREETMAP("openstreetmapdata.org", REG_GANDI);
+OPENSTREETMAP("osm.wiki", REG_GANDI);
 // Disable due to registration issue
 // OPENSTREETMAP("openstreetmap.al", REG_NONE);
 
