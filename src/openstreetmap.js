@@ -298,10 +298,12 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Taginfo server
 
-  A("grindtooth", GRINDTOOTH_IPV4),
-  A("taginfo", GRINDTOOTH_IPV4),
-  A("grindtooth.ucl", GRINDTOOTH_INTERNAL),
-  A("grindtooth.oob", GRINDTOOTH_OOB),
+  A("dribble", DRIBBLE_IPV4),
+  A("taginfo", DRIBBLE_IPV4),
+  AAAA("dribble", DRIBBLE_IPV6),
+  AAAA("taginfo", DRIBBLE_IPV6),
+  A("dribble.ams", DRIBBLE_INTERNAL),
+  A("dribble.oob", DRIBBLE_OOB),
 
   // Tile servers
 
@@ -621,10 +623,9 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Spare
 
-  A("dribble", DRIBBLE_IPV4),
-  AAAA("dribble", DRIBBLE_IPV6),
-  A("dribble.ams", DRIBBLE_INTERNAL),
-  A("dribble.oob", DRIBBLE_OOB),
+  A("grindtooth", GRINDTOOTH_IPV4),
+  A("grindtooth.ucl", GRINDTOOTH_INTERNAL),
+  A("grindtooth.oob", GRINDTOOTH_OOB),
 
   // Discourse server ("community")
 
