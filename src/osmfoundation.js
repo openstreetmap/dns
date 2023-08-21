@@ -109,12 +109,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("operations", NAGA_IPV4),
   AAAA("operations", NAGA_IPV6),
 
-  // Temporary join development staging server
-  A("crm-staging", DRIBBLE_IPV4),
-  AAAA("crm-staging", DRIBBLE_IPV6),
-  A("join-staging", DRIBBLE_IPV4),
-  AAAA("join-staging", DRIBBLE_IPV6),
-
   // Nextcloud instance
 
   CNAME("files", "nextcloud-openstreetmapfoundation.cloud68.systems."),
