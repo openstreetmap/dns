@@ -29,7 +29,7 @@ stormfly-04:
     - 5769055
     - 5769056
   colour: "#fdc086"
-  requests: 800
+  requests: 600
   ipv4: 140.211.167.100
   ipv6: 2605:bc80:3010:700::8cd3:a764
   default: "xx"
