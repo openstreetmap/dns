@@ -622,12 +622,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("meraxes", MERAXES_IPV6),
   A("firnen", FIRNEN_IPV4),
 
-  // Spare
-
-  A("grindtooth", GRINDTOOTH_IPV4),
-  A("grindtooth.ucl", GRINDTOOTH_INTERNAL),
-  A("grindtooth.oob", GRINDTOOTH_OOB),
-
   // Discourse server ("community")
 
   A("jakelong", JAKELONG_IPV4),
