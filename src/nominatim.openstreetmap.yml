@@ -41,7 +41,7 @@ vhagar:
     - 6726828
     - 6726827
   colour: "#ffff99"
-  requests: 1500
+  requests: 0
   ipv4: 184.104.179.133
   ipv6: 2001:470:1:fa1::5
   default: "xx"
