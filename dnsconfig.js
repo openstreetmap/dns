@@ -76,7 +76,7 @@ OPENSTREETMAP("openstreetmap.sg", REG_GANDI);
 OPENSTREETMAP("openstreetmap.tv", REG_GANDI);
 OPENSTREETMAP("openstreetmap.wales", REG_GANDI);
 OPENSTREETMAP("openstreetmapdata.org", REG_GANDI);
-OPENSTREETMAP("osm.wiki", REG_GANDI);
+
 // Disable due to registration issue
 // OPENSTREETMAP("openstreetmap.al", REG_NONE);
 
@@ -133,6 +133,9 @@ OSM2PGSQL("osm2pgsql.com", REG_GANDI);
 var IDEDITOR = loadTemplate("ideditor");
 
 IDEDITOR("ideditor.com", REG_GANDI);
+
+var OSMWIKI = loadTemplate("osm-wiki");
+OSMWIKI("osm.wiki", REG_GANDI);
 
 var PTR_EQUINIX_AMS_IPV4 = loadTemplate("ptr_equinix_ams_ipv4");
 
