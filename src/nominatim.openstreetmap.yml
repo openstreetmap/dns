@@ -5,7 +5,7 @@ dulcy:
     - 2217359
     - 2217360
   colour: "#7fc97f"
-  requests: 300
+  requests: 0
   ipv4: 184.104.179.137
   ipv6: 2001:470:1:fa1::9
   default: "xx"
