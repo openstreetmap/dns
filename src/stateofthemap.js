@@ -74,6 +74,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("2007", RIDLEY_IPV4),
 
   // Google Site Verification - Grant
-  TXT("2022", "google-site-verification=wT1dJzSYM_2By372lJ_v9IU1crF21qOySEAPABxUcyo")
+  TXT("2022", "google-site-verification=wT1dJzSYM_2By372lJ_v9IU1crF21qOySEAPABxUcyo"),
+  TXT("@", "google-site-verification=pqJHZHtrC4UhevQdPlR_2gVDPml6UCwmyHq75bfWLRQ")
 
 );
