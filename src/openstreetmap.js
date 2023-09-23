@@ -649,6 +649,18 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("support", RIDLEY_IPV4),
   A("supporting", RIDLEY_IPV4),
 
+  // Spare servers
+
+  A("fume", FUME_IPV4),
+  AAAA("fume", FUME_IPV6),
+  A("fume.dub", FUME_INTERNAL),
+  A("fume.oob", FUME_OOB),
+
+  A("grisu", GRISU_IPV4),
+  AAAA("grisu", GRISU_IPV6),
+  A("grisu.dub", GRISU_INTERNAL),
+  A("grisu.oob", GRISU_OOB),
+
   // Uptime site at StatusCake
 
   CNAME("uptime", "uptimessl-new.statuscake.com."),
