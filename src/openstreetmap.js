@@ -602,25 +602,16 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Tile cache servers
 
-  A("gorynych", GORYNYCH_IPV4),
-  AAAA("gorynych", GORYNYCH_IPV6),
-  A("trogdor", TROGDOR_IPV4),
-  A("trogdor.oob", TROGDOR_OOB),
   A("ridgeback", RIDGEBACK_IPV4),
   A("ridgeback.oob", RIDGEBACK_OOB),
-  A("nepomuk", NEPOMUK_IPV4),
-  AAAA("nepomuk", NEPOMUK_IPV6),
   A("angor", ANGOR_IPV4),
   AAAA("angor", ANGOR_IPV6),
   A("ladon", LADON_IPV4),
   AAAA("ladon", LADON_IPV6),
   A("ascalon", ASCALON_IPV4),
-  A("takhisis", TAKHISIS_IPV4),
-  AAAA("takhisis", TAKHISIS_IPV6),
   A("neak", NEAK_IPV4),
   A("meraxes", MERAXES_IPV4),
   AAAA("meraxes", MERAXES_IPV6),
-  A("firnen", FIRNEN_IPV4),
 
   // Discourse server ("community")
 
