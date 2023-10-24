@@ -64,6 +64,9 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // Apple Business Manager verification
   TXT("@", "apple-domain-verification=ZzBG2msRtUDehTMW"),
 
+  // Mailbox.org registration verification
+  TXT("d00f46a3fde45d06c53f3cd5b21f213ea384e7f5", "4a229bebe41606a1f7d909507846729a73998c31"),
+
   // Publish DMARC report-only policy
 
   DMARC_BUILDER({
@@ -78,6 +81,12 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   TXT("google._domainkey", "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCJmTBAkYRCocCCNtVsdRNMlQel8kNfjPYJpjEm7woEgZh9yZeDzxImtz+u73oUF4+7bXzrNYbP946WNQIwAba1J69he8L1qfPBJLd3Z/fgmuaGdWcxpDno2EY4cQ8PrzvI6Vfm+6YAFANl8w09CIg41ykdlzH4iUJXD35k3SIl3wIDAQAB"),
   TXT("20201112._domainkey", "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz4OyJc77mpW5djxVfZm18HcmJHQLpo7B2Z8Og8byICjDiG91Tpkv5ws3xIbMsi/tVA6p5L76uL0TGKlo4ayewYvJUTC22+hBWARUuWA0DgeMwBpW/dNUOJHBABCTouolvXLKRTPTefA177Y5jYbD7ZeJAR4ZnFbZX6spimXCT66AyhqCBSrOCXYXFm3ons5ANkkQBNZ/jMYczYs9T1ijNEbBNTJmLO+whOrYLyGd3iZ9X9iOmuNFBCgXp0tsN//FBsOyTl559/XY25r3GZhiKXMbrZ1IJewqJlG0+hN1y9qwWGgq5YpZPt5YJ1KGjIrcFX59/PhNQX4khPOaD5g7ZQIDAQAB", AUTOSPLIT),
+
+  // https://kb.mailbox.org/en/private/custom-domains/spf-dkim-and-dmarc-how-to-improve-spam-reputation-and-avoid-bounces
+  CNAME("MBO0001._domainkey", "MBO0001._domainkey.mailbox.org."),
+  CNAME("MBO0002._domainkey", "MBO0002._domainkey.mailbox.org."),
+  CNAME("MBO0003._domainkey", "MBO0003._domainkey.mailbox.org."),
+  CNAME("MBO0004._domainkey", "MBO0004._domainkey.mailbox.org."),
 
   // Google postmaster tools verification
 
