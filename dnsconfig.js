@@ -55,6 +55,7 @@ OPENSTREETMAP("openstreetmap.gay", REG_GANDI);
 OPENSTREETMAP("openstreetmaps.org", REG_GANDI);
 OPENSTREETMAP("osm.org", REG_GANDI, OSM_ORG_RECORDS, SSHFP_RECORDS);
 OPENSTREETMAP("openmaps.org", REG_GANDI);
+OPENSTREETMAP("openstreetmap.io", REG_GANDI);
 OPENSTREETMAP("osm.io", REG_GANDI);
 OPENSTREETMAP("openstreetmap.li", REG_GANDI);
 OPENSTREETMAP("openworldmap.org", REG_GANDI);
@@ -105,10 +106,6 @@ OPENSTREETMAP_ZA("osm.org.za", REG_NONE);
 var OSMFOUNDATION = loadTemplate("osmfoundation");
 
 OSMFOUNDATION("osmfoundation.org", REG_GANDI);
-
-// Domain used for testing osmfoundation.org email hosting replacement
-var OPENSTREETMAP_IO = loadTemplate("openstreetmap-io");
-OPENSTREETMAP_IO("openstreetmap.io", REG_GANDI);
 
 var STATEOFTHEMAP = loadTemplate("stateofthemap");
 
