@@ -80,9 +80,12 @@ OPENSTREETMAP("openstreetmapdata.org", REG_GANDI);
 // Disable due to registration issue
 // OPENSTREETMAP("openstreetmap.al", REG_NONE);
 
-// Mastodon
-OPENSTREETMAP("openstreetmap.town", REG_GANDI);
-// Pending transfer: OPENSTREETMAP("osm.town", REG_GANDI);
+// Mastodon redirects to en.osm.town
+var OPENSTREETMAP_TOWN = loadTemplate("openstreetmap-town");
+OPENSTREETMAP_TOWN("openstreetmap.town", REG_GANDI);
+
+// Domain owned by Amanda McCann
+// osm.town
 
 // Managed independently by Guillaume Rischard
 // openstreetmap.lu
