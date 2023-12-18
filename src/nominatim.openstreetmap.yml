@@ -1,25 +1,29 @@
-dulcy:
-  lat: 52.33724625
-  lon: 4.93370796776345
-  statuscake:
-    - 2217359
-    - 2217360
+europe:
+  lat: 52.8746661
+  lon: -0.7088728262458915
   colour: "#7fc97f"
-  requests: 300
-  ipv4: 184.104.179.137
-  ipv6: 2001:470:1:fa1::9
-  default: "xx"
-
-longma:
-  lat: 53.41208595
-  lon: -6.351453620255233
-  statuscake:
-    - 6224536
-    - 6224537
-  colour: "#beaed4"
-  requests: 700
-  ipv4: 184.104.226.109
-  ipv6: 2001:470:1:b3b::d
+  servers:
+    - statuscake:
+       - 2217359
+       - 2217360
+      requests: 300
+      name: dulcy
+      ipv4: 184.104.179.137
+      ipv6: 2001:470:1:fa1::9
+    - statuscake:
+       - 6224536
+       - 6224537
+      requests: 1500
+      name: longma
+      ipv4: 184.104.226.109
+      ipv6: 2001:470:1:b3b::d
+    - statuscake:
+       - 6726828
+       - 6726827
+      requests: 1500
+      name: vhagar
+      ipv4: 184.104.179.133
+      ipv6: 2001:470:1:fa1::5
   default: "xx"
 
 stormfly-04:
@@ -32,16 +36,4 @@ stormfly-04:
   requests: 400
   ipv4: 140.211.167.100
   ipv6: 2605:bc80:3010:700::8cd3:a764
-  default: "xx"
-
-vhagar:
-  lat: 52.33724625
-  lon: 4.93370796776345
-  statuscake:
-    - 6726828
-    - 6726827
-  colour: "#ffff99"
-  requests: 700
-  ipv4: 184.104.179.133
-  ipv6: 2001:470:1:fa1::5
   default: "xx"
