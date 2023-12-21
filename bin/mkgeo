@@ -149,6 +149,9 @@ foreach my $server (@servers)
     }
 }
 
+# Abort if no servers at all are up
+exit 0 unless grep { $_->{status} eq "up" } values(%$clusters);
+
 # Create target origins object
 my $targetorigins = {};
 
