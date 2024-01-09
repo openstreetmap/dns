@@ -362,6 +362,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("ironbelly", IRONBELLY_IPV6),
   A("logstash", IRONBELLY_IPV4),
   AAAA("logstash", IRONBELLY_IPV6),
+  A("tiler", IRONBELLY_IPV4),
+  AAAA("tiler", IRONBELLY_IPV6),
   A("ironbelly.ams", IRONBELLY_INTERNAL),
   A("ironbelly.oob", IRONBELLY_OOB),
 
