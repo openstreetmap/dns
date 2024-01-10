@@ -166,6 +166,9 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   TXT("@", "_globalsign-domain-verification=ps00GlW1BzY9c2_cwH_pFqRkvzZyaCVZ-3RLssRG6S"),
   TXT("@", "_globalsign-domain-verification=W0buKB5ZmL-VwwHw2oQyQImk3I1q3hSemf2qmB1hjP"),
 
+  // Facebook Business domain verification
+  TXT("@", "facebook-domain-verification=j5hix5i8r0kortfugqf2p9wx9x9by0"),
+
   // Delegate MTA-STS policy for subdomains
 
   CNAME("_mta-sts.messages", QUALIFY("_mta-sts")),
