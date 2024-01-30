@@ -13,13 +13,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
     ],
   }),
 
-  // Let google handle email
+  // Let mailbox.org handle email
 
-  MX("@", 1, "aspmx.l.google.com."),
-  MX("@", 5, "alt1.aspmx.l.google.com."),
-  MX("@", 5, "alt2.aspmx.l.google.com."),
-  MX("@", 10, "alt3.aspmx.l.google.com."),
-  MX("@", 10, "alt4.aspmx.l.google.com."),
+  MX("@", 10, "mxext1.mailbox.org."),
+  MX("@", 10, "mxext2.mailbox.org."),
+  MX("@", 20, "mxext3.mailbox.org."),
 
   // Handle mail for the join subdomain ourselves
 
@@ -99,6 +97,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   CNAME("mail", "ghs.googlehosted.com."),
   CNAME("calendar", "ghs.googlehosted.com."),
   CNAME("sites", "ghs.googlehosted.com."),
+
+  // Aliases for mailbox.org services
+
+  CNAME("autoconfig", "mailbox.org."),
+  SRV("_hkps._tcp", 1, 1, 443, "pgp.mailbox.org."),
 
   // Main web server and it's aliases
 
