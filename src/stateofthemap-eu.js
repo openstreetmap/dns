@@ -31,6 +31,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   
   // Previous editions
   
-  A("2014", "49.12.5.171")
+  A("2014", "49.12.5.171"),
+  CNAME("2023", "osmbe.github.io.")
   
 );
