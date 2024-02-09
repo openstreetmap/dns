@@ -68,7 +68,7 @@ OPENSTREETMAP("openstreetmap.am", REG_GANDI);
 OPENSTREETMAP("openstreetmap.fi", REG_GANDI);
 OPENSTREETMAP("openstreetmap.gr", REG_GANDI);
 OPENSTREETMAP("openstreetmap.me", REG_GANDI);
-OPENSTREETMAP("openstreetmap.mg", REG_GANDI);
+OPENSTREETMAP("openstreetmap.mg", REG_GANDI); // State of the Map Madagascar
 OPENSTREETMAP("openstreetmap.mx", REG_GANDI);
 OPENSTREETMAP("openstreetmap.nz", REG_GANDI);
 OPENSTREETMAP("openstreetmap.pe", REG_GANDI);
