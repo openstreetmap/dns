@@ -575,10 +575,15 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Overpass server
 
+  A("grisu", GRISU_IPV4),
+  AAAA("grisu", GRISU_IPV6),
+  A("query", GRISU_IPV4),
+  AAAA("query", GRISU_IPV6),
+  A("grisu.dub", GRISU_INTERNAL),
+  A("grisu.oob", GRISU_OOB),
+
   A("gorwen", GORWEN_IPV4),
   AAAA("gorwen", GORWEN_IPV6),
-  A("query", GORWEN_IPV4),
-  AAAA("query", GORWEN_IPV6),
   A("gorwen.dub", GORWEN_INTERNAL),
   A("gorwen.oob", GORWEN_OOB),
 
@@ -647,11 +652,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("fume", FUME_IPV6),
   A("fume.dub", FUME_INTERNAL),
   A("fume.oob", FUME_OOB),
-
-  A("grisu", GRISU_IPV4),
-  AAAA("grisu", GRISU_IPV6),
-  A("grisu.dub", GRISU_INTERNAL),
-  A("grisu.oob", GRISU_OOB),
 
   // Uptime site at StatusCake
 
