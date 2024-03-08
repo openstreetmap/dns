@@ -68,7 +68,6 @@ OPENSTREETMAP("openstreetmap.am", REG_GANDI);
 OPENSTREETMAP("openstreetmap.fi", REG_GANDI);
 OPENSTREETMAP("openstreetmap.gr", REG_GANDI);
 OPENSTREETMAP("openstreetmap.me", REG_GANDI);
-OPENSTREETMAP("openstreetmap.mg", REG_GANDI); // State of the Map Madagascar
 OPENSTREETMAP("openstreetmap.mx", REG_GANDI);
 OPENSTREETMAP("openstreetmap.nz", REG_GANDI);
 OPENSTREETMAP("openstreetmap.pe", REG_GANDI);
@@ -120,6 +119,10 @@ STATEOFTHEMAP("sotm.org", REG_GANDI);
 // The domain is registation is managed by FOSSGIS.de
 var STATEOFTHEMAP_EU = loadTemplate("stateofthemap-eu");
 STATEOFTHEMAP_EU("stateofthemap.eu", REG_NONE);
+
+// State of the Map Madagascar
+var OPENSTREETMAP_MG = loadTemplate("openstreetmap-mg");
+OPENSTREETMAP_MG("openstreetmap.mg", REG_GANDI);
 
 var OPENGEODATA = loadTemplate("opengeodata");
 OPENGEODATA("opengeodata.org", REG_GANDI);
