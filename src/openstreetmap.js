@@ -582,11 +582,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("grisu.dub", GRISU_INTERNAL),
   A("grisu.oob", GRISU_OOB),
 
-  A("gorwen", GORWEN_IPV4),
-  AAAA("gorwen", GORWEN_IPV6),
-  A("gorwen.dub", GORWEN_INTERNAL),
-  A("gorwen.oob", GORWEN_OOB),
-
   // GPS tile server
 
   A("muirdris", MUIRDRIS_IPV4),
