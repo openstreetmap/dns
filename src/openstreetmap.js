@@ -479,12 +479,14 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("c.os", KESSIE_IPV6, TTL("1h")),
   A("kessie.oob", KESSIE_OOB),
 
-  // Prometheus server
+  // Prometheus server and munin redirect
 
   A("stormfly-03", STORMFLY03_IPV4),
   AAAA("stormfly-03", STORMFLY03_IPV6),
   A("prometheus", STORMFLY03_IPV4),
   AAAA("prometheus", STORMFLY03_IPV6),
+  A("munin", STORMFLY03_IPV4),
+  AAAA("munin", STORMFLY03_IPV6),
   A("stormfly-03.oob", STORMFLY03_OOB),
 
   // Management server
@@ -551,8 +553,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("irc", NAGA_IPV6),
   A("blogs", NAGA_IPV4),
   AAAA("blogs", NAGA_IPV6),
-  A("munin", NAGA_IPV4),
-  AAAA("munin", NAGA_IPV6),
   A("welcome", NAGA_IPV4),
   AAAA("welcome", NAGA_IPV6),
   A("operations", NAGA_IPV4),
