@@ -442,6 +442,9 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("ridley.ucl", RIDLEY_INTERNAL),
   A("ridley.oob", RIDLEY_OOB),
 
+  A("staging.blog", FUME_IPV4),
+  AAAA("staging.blog", FUME_IPV6),
+
   // Matomo server
 
   A("smaug", SMAUG_IPV4),

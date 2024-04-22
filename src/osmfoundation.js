@@ -110,6 +110,9 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("wiki", RIDLEY_IPV4),
   A("blog", RIDLEY_IPV4),
 
+  A("staging.blog", FUME_IPV4),
+  AAAA("staging.blog", FUME_IPV6),
+
   A("crm", RIDLEY_IPV4),
   A("join", RIDLEY_IPV4),
   A("support", RIDLEY_IPV4),
