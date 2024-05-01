@@ -560,6 +560,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("hot", NAGA_IPV6),
   A("dmca", NAGA_IPV4),
   AAAA("dmca", NAGA_IPV6),
+
+  A("test.otrs", NAGA_IPV4),
+  AAAA("test.otrs", NAGA_IPV6),
+
   A("naga.dub", NAGA_INTERNAL),
   A("naga.oob", NAGA_OOB),
 
