@@ -444,6 +444,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("staging.blog", FUME_IPV4),
   AAAA("staging.blog", FUME_IPV6),
+  A("birthday20", FUME_IPV4),
+  AAAA("birthday20", FUME_IPV6),
 
   // Matomo server
 
