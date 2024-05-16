@@ -436,7 +436,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // Foundation server
 
   A("ridley", RIDLEY_IPV4),
-  A("otrs", RIDLEY_IPV4),
   A("blog", RIDLEY_IPV4),
   A("foundation", RIDLEY_IPV4),
   A("ridley.ucl", RIDLEY_INTERNAL),
@@ -562,9 +561,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("hot", NAGA_IPV6),
   A("dmca", NAGA_IPV4),
   AAAA("dmca", NAGA_IPV6),
-
-  A("test.otrs", NAGA_IPV4),
-  AAAA("test.otrs", NAGA_IPV6),
+  A("otrs", NAGA_IPV4),
+  AAAA("otrs", NAGA_IPV6),
 
   A("naga.dub", NAGA_INTERNAL),
   A("naga.oob", NAGA_OOB),
