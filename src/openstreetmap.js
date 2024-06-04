@@ -332,6 +332,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("scorch", SCORCH_IPV6),
 
   A("rhaegal", RHAEGAL_IPV4),
+  AAAA("rhaegal", RHAEGAL_IPV6),
 
   A("palulukon", PALULUKON_IPV4),
 
