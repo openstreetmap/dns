@@ -262,6 +262,12 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("spike-08.ams", SPIKE08_INTERNAL),
   A("spike-08.oob", SPIKE08_OOB),
 
+  // HTTPS / SVCB records
+  HTTPS("www", 1, ".", "alpn=h2"),
+  HTTPS("api", 1, ".", "alpn=h2"),
+  HTTPS("maps", 1, ".", "alpn=h2"),
+  HTTPS("mapz", 1, ".", "alpn=h2"),
+
   // Nominatim servers
 
   A("dulcy", DULCY_IPV4),
@@ -295,6 +301,9 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("taginfo", DRIBBLE_IPV6),
   A("dribble.ams", DRIBBLE_INTERNAL),
   A("dribble.oob", DRIBBLE_OOB),
+
+  // HTTPS / SVCB records
+  HTTPS("taginfo", 1, ".", "alpn=h2"),
 
   // Tile servers
 
@@ -622,16 +631,28 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("jakelong", JAKELONG_IPV4),
   AAAA("jakelong", JAKELONG_IPV6),
+
   A("community", JAKELONG_IPV4),
   A("communities", JAKELONG_IPV4),
   A("c", JAKELONG_IPV4),
   AAAA("community", JAKELONG_IPV6),
   AAAA("communities", JAKELONG_IPV6),
   AAAA("c", JAKELONG_IPV6),
+
+  // HTTPS / SVCB records
+  HTTPS("community", 1, ".", "alpn=h2"),
+  HTTPS("communities", 1, ".", "alpn=h2"),
+  HTTPS("c", 1, ".", "alpn=h2"),
+
   CNAME("community-cdn", "dualstack.n.sni.global.fastly.net."),
   TXT("community", "google-site-verification=hQ8GZyj4KwnPqAX2oAzpbLrh6I5dfR08PSdL3icVkfg"),
+
   A("forum", JAKELONG_IPV4),
   AAAA("forum", JAKELONG_IPV6),
+
+  // HTTPS / SVCB records
+  HTTPS("forum", 1, ".", "alpn=h2"),
+
   A("jakelong.dub", JAKELONG_INTERNAL),
   A("jakelong.oob", JAKELONG_OOB),
 
@@ -640,6 +661,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("donate", RIDLEY_IPV4),
   A("support", RIDLEY_IPV4),
   A("supporting", RIDLEY_IPV4),
+
+  // HTTPS / SVCB records
+  HTTPS("donate", 1, ".", "alpn=h2"),
+  HTTPS("support", 1, ".", "alpn=h2"),
+  HTTPS("supporting", 1, ".", "alpn=h2"),
 
   // Spare servers
 
