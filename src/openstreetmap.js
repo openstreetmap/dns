@@ -376,6 +376,13 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("ironbelly.ams", IRONBELLY_INTERNAL),
   A("ironbelly.oob", IRONBELLY_OOB),
 
+  // HTTPS / SVCB records
+  HTTPS("tiler", 1, ".", "alpn=h2"),
+  HTTPS("us-imagery", 1, ".", "alpn=h2"),
+  HTTPS("a.us-imagery", 1, ".", "alpn=h2"),
+  HTTPS("b.us-imagery", 1, ".", "alpn=h2"),
+  HTTPS("c.us-imagery", 1, ".", "alpn=h2"),
+
   A("fafnir", FAFNIR_IPV4),
   AAAA("fafnir", FAFNIR_IPV6),
   A("fafnir.dub", FAFNIR_INTERNAL),
@@ -391,6 +398,9 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("planet", NORBERT_IPV6),
   A("norbert.ams", NORBERT_INTERNAL),
   A("norbert.oob", NORBERT_OOB),
+
+  // HTTPS / SVCB records
+  HTTPS("planet", 1, ".", "alpn=h2"),
 
   A("horntail", HORNTAIL_IPV4),
   AAAA("horntail", HORNTAIL_IPV6),
@@ -452,6 +462,12 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("birthday20", FUME_IPV4),
   AAAA("birthday20", FUME_IPV6),
 
+  // HTTPS / SVCB records
+  HTTPS("blog", 1, ".", "alpn=h2"),
+  HTTPS("foundation", 1, ".", "alpn=h2"),
+  HTTPS("staging.blog", 1, ".", "alpn=h2"),
+  HTTPS("birthday20", 1, ".", "alpn=h2"),
+
   // Matomo server
 
   A("smaug", SMAUG_IPV4),
@@ -462,6 +478,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("piwik", SMAUG_IPV6),
   A("smaug.dub", SMAUG_INTERNAL),
   A("smaug.oob", SMAUG_OOB),
+
+  // HTTPS / SVCB records
+  HTTPS("matomo", 1, ".", "alpn=h2"),
+  HTTPS("piwik", 1, ".", "alpn=h2"),
 
   // Imagery servers
 
@@ -495,6 +515,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("munin", STORMFLY03_IPV6),
   A("stormfly-03.oob", STORMFLY03_OOB),
 
+  // HTTPS / SVCB records
+  HTTPS("prometheus", 1, ".", "alpn=h2"),
+  HTTPS("munin", 1, ".", "alpn=h2"),
+
   // Management server
 
   A("idris", IDRIS_IPV4),
@@ -511,6 +535,13 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("hardware", IDRIS_IPV6),
   A("idris.dub", IDRIS_INTERNAL),
   A("idris.oob", IDRIS_OOB),
+
+  // HTTPS / SVCB records
+  HTTPS("acme", 1, ".", "alpn=h2"),
+  HTTPS("chef", 1, ".", "alpn=h2"),
+  HTTPS("dns", 1, ".", "alpn=h2"),
+  HTTPS("git", 1, ".", "alpn=h2"),
+  HTTPS("hardware", 1, ".", "alpn=h2"),
 
   // KVMs
 
@@ -547,6 +578,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("help", SHENRON_IPV4),
   AAAA("help", SHENRON_IPV6),
 
+  // HTTPS / SVCB records
+  HTTPS("lists", 1, ".", "alpn=h2"),
+  HTTPS("help", 1, ".", "alpn=h2"),
+
   // Naga service
 
   A("naga", NAGA_IPV4),
@@ -570,6 +605,17 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("otrs", NAGA_IPV4),
   AAAA("otrs", NAGA_IPV6),
 
+  // HTTPS / SVCB records
+  HTTPS("svn", 1, ".", "alpn=h2"),
+  HTTPS("trac", 1, ".", "alpn=h2"),
+  HTTPS("irc", 1, ".", "alpn=h2"),
+  HTTPS("blogs", 1, ".", "alpn=h2"),
+  HTTPS("welcome", 1, ".", "alpn=h2"),
+  HTTPS("operations", 1, ".", "alpn=h2"),
+  HTTPS("hot", 1, ".", "alpn=h2"),
+  HTTPS("dmca", 1, ".", "alpn=h2"),
+  // HTTPS("otrs", 1, ".", "alpn=h2"), - OTRS is not available using HTTPS/2
+
   A("naga.dub", NAGA_INTERNAL),
   A("naga.oob", NAGA_OOB),
 
@@ -582,6 +628,9 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("konqi.dub", KONQI_INTERNAL),
   A("konqi.oob", KONQI_OOB),
 
+  // HTTPS / SVCB records
+  HTTPS("wiki", 1, ".", "alpn=h2"),
+
   // Overpass server
 
   A("grisu", GRISU_IPV4),
@@ -590,6 +639,9 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("query", GRISU_IPV6),
   A("grisu.dub", GRISU_INTERNAL),
   A("grisu.oob", GRISU_OOB),
+
+  // HTTPS / SVCB records
+  HTTPS("query", 1, ".", "alpn=h2"),
 
   // GPS tile server
 
@@ -613,6 +665,15 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("gps-c.tile", MUIRDRIS_IPV6),
   A("muirdris.dub", MUIRDRIS_INTERNAL),
   A("muirdris.oob", MUIRDRIS_OOB),
+
+  // HTTPS / SVCB records
+  HTTPS("gps-tile", 1, ".", "alpn=h2"),
+  HTTPS("a.gps-tile", 1, ".", "alpn=h2"),
+  HTTPS("b.gps-tile", 1, ".", "alpn=h2"),
+  HTTPS("c.gps-tile", 1, ".", "alpn=h2"),
+  HTTPS("gps-a.tile", 1, ".", "alpn=h2"),
+  HTTPS("gps-b.tile", 1, ".", "alpn=h2"),
+  HTTPS("gps-c.tile", 1, ".", "alpn=h2"),
 
   // Tile cache servers
 

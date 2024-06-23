@@ -29,6 +29,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("@", NAGA_IPV4),
   AAAA("@", NAGA_IPV6),
   A("www", NAGA_IPV4),
-  AAAA("www", NAGA_IPV6)
+  AAAA("www", NAGA_IPV6),
+
+  // HTTPS / SVCB records
+  HTTPS("@", 1, ".", "alpn=h2"),
+  HTTPS("www", 1, ".", "alpn=h2")
 
 );

@@ -49,6 +49,12 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("c.aerial", IRONBELLY_IPV4),
   AAAA("c.aerial", IRONBELLY_IPV6),
 
+  // HTTPS / SVCB records
+  HTTPS("aerial", 1, ".", "alpn=h2"),
+  HTTPS("a.aerial", 1, ".", "alpn=h2"),
+  HTTPS("b.aerial", 1, ".", "alpn=h2"),
+  HTTPS("c.aerial", 1, ".", "alpn=h2"),
+
   // Aerial imagery sites on kessie
 
   A("coct.aerial", KESSIE_IPV4),
@@ -60,6 +66,12 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("c.coct.aerial", KESSIE_IPV4),
   AAAA("c.coct.aerial", KESSIE_IPV6),
 
+  // HTTPS / SVCB records
+  HTTPS("coct.aerial", 1, ".", "alpn=h2"),
+  HTTPS("a.coct.aerial", 1, ".", "alpn=h2"),
+  HTTPS("b.coct.aerial", 1, ".", "alpn=h2"),
+  HTTPS("c.coct.aerial", 1, ".", "alpn=h2"),
+
   A("topo", KESSIE_IPV4),
   AAAA("topo", KESSIE_IPV6),
   A("a.topo", KESSIE_IPV4),
@@ -69,6 +81,12 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("c.topo", KESSIE_IPV4),
   AAAA("c.topo", KESSIE_IPV6),
 
+  // HTTPS / SVCB records
+  HTTPS("topo", 1, ".", "alpn=h2"),
+  HTTPS("a.topo", 1, ".", "alpn=h2"),
+  HTTPS("b.topo", 1, ".", "alpn=h2"),
+  HTTPS("c.topo", 1, ".", "alpn=h2"),
+
   A("namibia-topo", KESSIE_IPV4),
   AAAA("namibia-topo", KESSIE_IPV6),
   A("a.namibia-topo", KESSIE_IPV4),
@@ -76,6 +94,12 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("b.namibia-topo", KESSIE_IPV4),
   AAAA("b.namibia-topo", KESSIE_IPV6),
   A("c.namibia-topo", KESSIE_IPV4),
-  AAAA("c.namibia-topo", KESSIE_IPV6)
+  AAAA("c.namibia-topo", KESSIE_IPV6),
+
+  // HTTPS / SVCB records
+  HTTPS("namibia-topo", 1, ".", "alpn=h2"),
+  HTTPS("a.namibia-topo", 1, ".", "alpn=h2"),
+  HTTPS("b.namibia-topo", 1, ".", "alpn=h2"),
+  HTTPS("c.namibia-topo", 1, ".", "alpn=h2")
 
 );

@@ -75,6 +75,25 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("2008", RIDLEY_IPV4),
   A("2007", RIDLEY_IPV4),
 
+  // HTTPS / SVCB records
+  HTTPS("@", 1, ".", "alpn=h2"),
+  HTTPS("www", 1, ".", "alpn=h2"),
+  HTTPS("2024", 1, ".", "alpn=h2"),
+  HTTPS("2022", 1, ".", "alpn=h2"),
+  HTTPS("2021", 1, ".", "alpn=h2"),
+  HTTPS("2020", 1, ".", "alpn=h2"),
+  HTTPS("2019", 1, ".", "alpn=h2"),
+  HTTPS("2018", 1, ".", "alpn=h2"),
+  HTTPS("2017", 1, ".", "alpn=h2"),
+  HTTPS("2016", 1, ".", "alpn=h2"),
+  HTTPS("2013", 1, ".", "alpn=h2"),
+  HTTPS("2012", 1, ".", "alpn=h2"),
+  HTTPS("2011", 1, ".", "alpn=h2"),
+  HTTPS("2010", 1, ".", "alpn=h2"),
+  HTTPS("2009", 1, ".", "alpn=h2"),
+  HTTPS("2008", 1, ".", "alpn=h2"),
+  HTTPS("2007", 1, ".", "alpn=h2"),
+
   // Google Site Verification - Grant
   TXT("2022", "google-site-verification=wT1dJzSYM_2By372lJ_v9IU1crF21qOySEAPABxUcyo"),
   TXT("@", "google-site-verification=pqJHZHtrC4UhevQdPlR_2gVDPml6UCwmyHq75bfWLRQ")

@@ -31,8 +31,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
       "v=spf1",
       "include:mailbox.org",     // mailbox.org
       "include:_spf.google.com", // Google GSuite
-      "ip4:212.110.172.32",      // shenron ipv4
-      "ip6:2001:41c9:1:400::32", // shenron ipv6
       "ip4:184.104.226.98",      // fafnir ipv4
       "ip6:2001:470:1:b3b::2",   // fafnir ipv6
       "ip4:193.60.236.0/24",     // ucl external
@@ -125,10 +123,28 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("operations", NAGA_IPV4),
   AAAA("operations", NAGA_IPV6),
 
+  // HTTPS / SVCB records
+  HTTPS("www", 1, ".", "alpn=h2"),
+  HTTPS("wiki", 1, ".", "alpn=h2"),
+  HTTPS("blog", 1, ".", "alpn=h2"),
+  HTTPS("staging.blog", 1, ".", "alpn=h2"),
+  HTTPS("crm", 1, ".", "alpn=h2"),
+  HTTPS("join", 1, ".", "alpn=h2"),
+  HTTPS("support", 1, ".", "alpn=h2"),
+  HTTPS("supporting", 1, ".", "alpn=h2"),
+  HTTPS("donate", 1, ".", "alpn=h2"),
+  HTTPS("board", 1, ".", "alpn=h2"),
+  HTTPS("dwg", 1, ".", "alpn=h2"),
+  HTTPS("mwg", 1, ".", "alpn=h2"),
+  HTTPS("operations", 1, ".", "alpn=h2"),
+
   // Nextcloud instance
 
   CNAME("files", "nextcloud-openstreetmapfoundation.cloud68.systems."),
 
-  A("hardware", IDRIS_IPV4)
+  A("hardware", IDRIS_IPV4),
+
+  // HTTPS / SVCB records
+  HTTPS("hardware", 1, ".", "alpn=h2")
 
 );
