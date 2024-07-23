@@ -690,15 +690,15 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Discourse server ("community")
 
-  A("jakelong", JAKELONG_IPV4),
-  AAAA("jakelong", JAKELONG_IPV6),
+  A("gorwen", GORWEN_IPV4),
+  AAAA("gorwen", GORWEN_IPV6),
 
-  A("community", JAKELONG_IPV4),
-  A("communities", JAKELONG_IPV4),
-  A("c", JAKELONG_IPV4),
-  AAAA("community", JAKELONG_IPV6),
-  AAAA("communities", JAKELONG_IPV6),
-  AAAA("c", JAKELONG_IPV6),
+  A("community", GORWEN_IPV4),
+  A("communities", GORWEN_IPV4),
+  A("c", GORWEN_IPV4),
+  AAAA("community", GORWEN_IPV6),
+  AAAA("communities", GORWEN_IPV6),
+  AAAA("c", GORWEN_IPV6),
 
   // HTTPS / SVCB records
   HTTPS("community", 1, ".", "alpn=h2"),
@@ -708,14 +708,14 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   CNAME("community-cdn", "dualstack.n.sni.global.fastly.net."),
   TXT("community", "google-site-verification=hQ8GZyj4KwnPqAX2oAzpbLrh6I5dfR08PSdL3icVkfg"),
 
-  A("forum", JAKELONG_IPV4),
-  AAAA("forum", JAKELONG_IPV6),
+  A("forum", GORWEN_IPV4),
+  AAAA("forum", GORWEN_IPV6),
 
   // HTTPS / SVCB records
   HTTPS("forum", 1, ".", "alpn=h2"),
 
-  A("jakelong.dub", JAKELONG_INTERNAL),
-  A("jakelong.oob", JAKELONG_OOB),
+  A("gorwen.dub", GORWEN_INTERNAL),
+  A("gorwen.oob", GORWEN_OOB),
 
   // Donation site and new OSMF crm site
 
