@@ -325,6 +325,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("nidhogg", NIDHOGG_IPV6),
   A("nidhogg.oob", NIDHOGG_OOB),
 
+  A("wawel", WAWEL_IPV4),
+
   A("scorch", SCORCH_IPV4),
   AAAA("scorch", SCORCH_IPV6),
 
