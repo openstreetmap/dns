@@ -359,6 +359,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("render", CULEBRE_IPV6),
   AAAA("render", NIDHOGG_IPV6),
 
+  // Vector tile servers
+
+  A("cmok", CMOK_IPV4),
+
   // Site gateways
 
   A("ironbelly", IRONBELLY_IPV4),
