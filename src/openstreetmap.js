@@ -465,8 +465,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("staging.blog", FUME_IPV4),
   AAAA("staging.blog", FUME_IPV6),
-  A("birthday20", FUME_IPV4),
-  AAAA("birthday20", FUME_IPV6),
 
   // HTTPS / SVCB records
   HTTPS("blog", 1, ".", "alpn=h2"),
@@ -612,6 +610,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("dmca", NAGA_IPV6),
   A("otrs", NAGA_IPV4),
   AAAA("otrs", NAGA_IPV6),
+  A("birthday20", NAGA_IPV4),
+  AAAA("birthday20", NAGA_IPV6),
 
   // HTTPS / SVCB records
   HTTPS("svn", 1, ".", "alpn=h2"),
