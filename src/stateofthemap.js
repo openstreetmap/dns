@@ -72,8 +72,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("2011", RIDLEY_IPV4),
   A("2010", RIDLEY_IPV4),
   A("2009", RIDLEY_IPV4),
-  A("2008", RIDLEY_IPV4),
-  A("2007", RIDLEY_IPV4),
+  A("2008", NAGA_IPV4),
+  AAAA("2008", NAGA_IPV6),
+  A("2007", NAGA_IPV4),
+  AAAA("2007", NAGA_IPV6),
 
   // HTTPS / SVCB records
   HTTPS("@", 1, ".", "alpn=h2"),
