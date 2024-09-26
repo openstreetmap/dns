@@ -743,6 +743,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("fume.dub", FUME_INTERNAL),
   A("fume.oob", FUME_OOB),
 
+  A("tabaluga", TABALUGA_IPV4),
+  AAAA("tabaluga", TABALUGA_IPV6),
+  A("tabaluga.ams", TABALUGA_INTERNAL),
+  A("tabaluga.oob", TABALUGA_OOB),
+
   // Uptime site at StatusCake
 
   CNAME("uptime", "uptimessl-new.statuscake.com."),
