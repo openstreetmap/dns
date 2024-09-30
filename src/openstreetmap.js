@@ -743,6 +743,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("fume.dub", FUME_INTERNAL),
   A("fume.oob", FUME_OOB),
 
+  A("lockheed", LOCKHEED_IPV4),
+  AAAA("lockheed", LOCKHEED_IPV6),
+  A("lockheed.ams", LOCKHEED_INTERNAL),
+  A("lockheed.oob", LOCKHEED_OOB),
+
   A("tabaluga", TABALUGA_IPV4),
   AAAA("tabaluga", TABALUGA_IPV6),
   A("tabaluga.ams", TABALUGA_INTERNAL),
