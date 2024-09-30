@@ -40,14 +40,14 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Aerial imagery sites on ironbelly
 
-  A("aerial", IRONBELLY_IPV4),
-  AAAA("aerial", IRONBELLY_IPV6),
-  A("a.aerial", IRONBELLY_IPV4),
-  AAAA("a.aerial", IRONBELLY_IPV6),
-  A("b.aerial", IRONBELLY_IPV4),
-  AAAA("b.aerial", IRONBELLY_IPV6),
-  A("c.aerial", IRONBELLY_IPV4),
-  AAAA("c.aerial", IRONBELLY_IPV6),
+  A("aerial", LOCKHEED_IPV4),
+  AAAA("aerial", LOCKHEED_IPV6),
+  A("a.aerial", LOCKHEED_IPV4),
+  AAAA("a.aerial", LOCKHEED_IPV6),
+  A("b.aerial", LOCKHEED_IPV4),
+  AAAA("b.aerial", LOCKHEED_IPV6),
+  A("c.aerial", LOCKHEED_IPV4),
+  AAAA("c.aerial", LOCKHEED_IPV6),
 
   // HTTPS / SVCB records
   HTTPS("aerial", 1, ".", "alpn=h2"),
