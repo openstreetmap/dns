@@ -679,35 +679,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("meraxes", MERAXES_IPV4),
   AAAA("meraxes", MERAXES_IPV6),
 
-  // Discourse server ("community")
-
-  A("gorwen", GORWEN_IPV4),
-  AAAA("gorwen", GORWEN_IPV6),
-
-  A("community", GORWEN_IPV4),
-  A("communities", GORWEN_IPV4),
-  A("c", GORWEN_IPV4),
-  AAAA("community", GORWEN_IPV6),
-  AAAA("communities", GORWEN_IPV6),
-  AAAA("c", GORWEN_IPV6),
-
-  // HTTPS / SVCB records
-  HTTPS("community", 1, ".", "alpn=h2"),
-  HTTPS("communities", 1, ".", "alpn=h2"),
-  HTTPS("c", 1, ".", "alpn=h2"),
-
-  CNAME("community-cdn", "dualstack.n.sni.global.fastly.net."),
-  TXT("community", "google-site-verification=hQ8GZyj4KwnPqAX2oAzpbLrh6I5dfR08PSdL3icVkfg"),
-
-  A("forum", GORWEN_IPV4),
-  AAAA("forum", GORWEN_IPV6),
-
-  // HTTPS / SVCB records
-  HTTPS("forum", 1, ".", "alpn=h2"),
-
-  A("gorwen.dub", GORWEN_INTERNAL),
-  A("gorwen.oob", GORWEN_OOB),
-
   // Donation site and new OSMF crm site
 
   A("donate", RIDLEY_IPV4),
@@ -741,12 +712,47 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   HTTPS("b.us-imagery", 1, ".", "alpn=h2"),
   HTTPS("c.us-imagery", 1, ".", "alpn=h2"),
 
-  // Spare servers
+  // Discourse server ("community")
 
   A("fume", FUME_IPV4),
   AAAA("fume", FUME_IPV6),
   A("fume.dub", FUME_INTERNAL),
   A("fume.oob", FUME_OOB),
+
+  A("community", FUME_IPV4),
+  A("communities", FUME_IPV4),
+  A("c", FUME_IPV4),
+  AAAA("community", FUME_IPV6),
+  AAAA("communities", FUME_IPV6),
+  AAAA("c", FUME_IPV6),
+
+  A("community", FUME_IPV4),
+  A("communities", FUME_IPV4),
+  A("c", FUME_IPV4),
+  AAAA("community", FUME_IPV6),
+  AAAA("communities", FUME_IPV6),
+  AAAA("c", FUME_IPV6),
+
+  // HTTPS / SVCB records
+  HTTPS("community", 1, ".", "alpn=h2"),
+  HTTPS("communities", 1, ".", "alpn=h2"),
+  HTTPS("c", 1, ".", "alpn=h2"),
+
+  CNAME("community-cdn", "dualstack.n.sni.global.fastly.net."),
+  TXT("community", "google-site-verification=hQ8GZyj4KwnPqAX2oAzpbLrh6I5dfR08PSdL3icVkfg"),
+
+  A("forum", FUME_IPV4),
+  AAAA("forum", FUME_IPV6),
+
+  // HTTPS / SVCB records
+  HTTPS("forum", 1, ".", "alpn=h2"),
+
+  // Spare servers
+
+  A("gorwen", GORWEN_IPV4),
+  AAAA("gorwen", GORWEN_IPV6),
+  A("gorwen.dub", GORWEN_INTERNAL),
+  A("gorwen.oob", GORWEN_OOB),
 
   A("tabaluga", TABALUGA_IPV4),
   AAAA("tabaluga", TABALUGA_IPV6),
