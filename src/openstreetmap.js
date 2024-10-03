@@ -726,13 +726,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("communities", FUME_IPV6),
   AAAA("c", FUME_IPV6),
 
-  A("community", FUME_IPV4),
-  A("communities", FUME_IPV4),
-  A("c", FUME_IPV4),
-  AAAA("community", FUME_IPV6),
-  AAAA("communities", FUME_IPV6),
-  AAAA("c", FUME_IPV6),
-
   // HTTPS / SVCB records
   HTTPS("community", 1, ".", "alpn=h2"),
   HTTPS("communities", 1, ".", "alpn=h2"),
