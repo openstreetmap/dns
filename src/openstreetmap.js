@@ -446,14 +446,9 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("ridley.ucl", RIDLEY_INTERNAL),
   A("ridley.oob", RIDLEY_OOB),
 
-  A("staging.blog", FUME_IPV4),
-  AAAA("staging.blog", FUME_IPV6),
-
   // HTTPS / SVCB records
   HTTPS("blog", 1, ".", "alpn=h2"),
   HTTPS("foundation", 1, ".", "alpn=h2"),
-  HTTPS("staging.blog", 1, ".", "alpn=h2"),
-  HTTPS("birthday20", 1, ".", "alpn=h2"),
 
   // Matomo server
 
@@ -606,6 +601,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   HTTPS("hot", 1, ".", "alpn=h2"),
   HTTPS("dmca", 1, ".", "alpn=h2"),
   // HTTPS("otrs", 1, ".", "alpn=h2"), - OTRS is not available using HTTPS/2
+  HTTPS("birthday20", 1, ".", "alpn=h2"),
 
   A("naga.dub", NAGA_INTERNAL),
   A("naga.oob", NAGA_OOB),
