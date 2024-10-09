@@ -738,11 +738,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Spare servers
 
-  A("gorwen", GORWEN_IPV4),
-  AAAA("gorwen", GORWEN_IPV6),
-  A("gorwen.dub", GORWEN_INTERNAL),
-  A("gorwen.oob", GORWEN_OOB),
-
   A("tabaluga", TABALUGA_IPV4),
   AAAA("tabaluga", TABALUGA_IPV6),
   A("tabaluga.ams", TABALUGA_INTERNAL),

@@ -2,7 +2,6 @@
 D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   PTR(CULEBRE_IPV4.split(".").pop(), "culebre.openstreetmap.org."),
   PTR(FAFNIR_IPV4.split(".").pop(), "fafnir.openstreetmap.org."),
-  PTR(GORWEN_IPV4.split(".").pop(), "gorwen.openstreetmap.org."),
   PTR(HORNTAIL_IPV4.split(".").pop(), "horntail.openstreetmap.org."),
   PTR(IDRIS_IPV4.split(".").pop(), "idris.openstreetmap.org."),
   PTR(KONQI_IPV4.split(".").pop(), "konqi.openstreetmap.org."),
