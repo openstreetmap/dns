@@ -363,6 +363,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("cmok", CMOK_IPV4),
 
+  CNAME("vector", "dualstack.n.sni.global.fastly.net."),
+
   // Site gateways
 
   A("ironbelly", IRONBELLY_IPV4),
