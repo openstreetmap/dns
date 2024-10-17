@@ -738,12 +738,20 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // HTTPS / SVCB records
   HTTPS("forum", 1, ".", "alpn=h2"),
 
-  // Spare servers
+  // Staging Blog Server
 
   A("tabaluga", TABALUGA_IPV4),
   AAAA("tabaluga", TABALUGA_IPV6),
   A("tabaluga.ams", TABALUGA_INTERNAL),
   A("tabaluga.oob", TABALUGA_OOB),
+
+  A("staging.blog", TABALUGA_IPV4),
+  AAAA("staging.blog", TABALUGA_IPV6),
+
+  // HTTPS / SVCB records
+  HTTPS("staging.blog", 1, ".", "alpn=h2"),
+
+  // Spare servers
 
   // Uptime site at StatusCake
 
