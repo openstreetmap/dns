@@ -137,6 +137,12 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   CNAME("files", "nextcloud-openstreetmapfoundation.cloud68.systems."),
 
+  // Staging Blog
+  A("staging.blog", TABALUGA_IPV4),
+  AAAA("staging.blog", TABALUGA_IPV6),
+  // HTTPS / SVCB records
+  HTTPS("staging.blog", 1, ".", "alpn=h2"),
+
   A("hardware", IDRIS_IPV4),
 
   // HTTPS / SVCB records
