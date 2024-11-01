@@ -293,18 +293,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   CNAME("qgis.nominatim", "nominatim.geo.openstreetmap.org."),
   CNAME("qa-tile.nominatim", "longma.openstreetmap.org."),
 
-  // Taginfo server
-
-  A("dribble", DRIBBLE_IPV4),
-  A("taginfo", DRIBBLE_IPV4),
-  AAAA("dribble", DRIBBLE_IPV6),
-  AAAA("taginfo", DRIBBLE_IPV6),
-  A("dribble.ams", DRIBBLE_INTERNAL),
-  A("dribble.oob", DRIBBLE_OOB),
-
-  // HTTPS / SVCB records
-  HTTPS("taginfo", 1, ".", "alpn=h2"),
-
   // Tile servers
 
   A("odin", ODIN_IPV4),
@@ -738,7 +726,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // HTTPS / SVCB records
   HTTPS("forum", 1, ".", "alpn=h2"),
 
-  // Staging Blog Server
+  // Taginfo and Staging Blog Server
 
   A("tabaluga", TABALUGA_IPV4),
   AAAA("tabaluga", TABALUGA_IPV6),
@@ -751,7 +739,18 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // HTTPS / SVCB records
   HTTPS("staging.blog", 1, ".", "alpn=h2"),
 
+  A("taginfo", TABALUGA_IPV4),
+  AAAA("taginfo", TABALUGA_IPV6),
+
+  // HTTPS / SVCB records
+  HTTPS("taginfo", 1, ".", "alpn=h2"),
+
   // Spare servers
+
+  A("dribble", DRIBBLE_IPV4),
+  AAAA("dribble", DRIBBLE_IPV6),
+  A("dribble.ams", DRIBBLE_INTERNAL),
+  A("dribble.oob", DRIBBLE_OOB),
 
   // Uptime site at StatusCake
 
