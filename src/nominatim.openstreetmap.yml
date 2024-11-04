@@ -10,13 +10,13 @@ europe:
       name: dulcy
       ipv4: 184.104.179.137
       ipv6: 2001:470:1:fa1::9
-    - statuscake:
-       - 6224536
-       - 6224537
-      requests: 1500
-      name: longma
-      ipv4: 184.104.226.109
-      ipv6: 2001:470:1:b3b::d
+    # - statuscake:
+    #    - 6224536
+    #    - 6224537
+    #   requests: 1500
+    #   name: longma
+    #   ipv4: 184.104.226.109
+    #   ipv6: 2001:470:1:b3b::d
     - statuscake:
        - 6726828
        - 6726827
