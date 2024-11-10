@@ -334,9 +334,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("albi", ALBI_IPV4),
   AAAA("albi", ALBI_IPV6),
 
-  A("necrosan", NECROSAN_IPV4),
-  AAAA("necrosan", NECROSAN_IPV6),
-
   CNAME("tile", "dualstack.n.sni.global.fastly.net."),
   CNAME("a.tile", "dualstack.n.sni.global.fastly.net."),
   CNAME("b.tile", "dualstack.n.sni.global.fastly.net."),

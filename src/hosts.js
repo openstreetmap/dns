@@ -107,9 +107,6 @@ var NAGA_OOB = "10.0.65.8";
 
 var NEAK_IPV4 = "89.234.177.142";
 
-var NECROSAN_IPV4 = "45.85.134.91";
-var NECROSAN_IPV6 = "2a05:46c0:100:1004:ffff:ffff:ffff:ffff";
-
 var NIDHOGG_IPV4 = "194.71.11.111";
 var NIDHOGG_IPV6 = "2001:6b0:19:2::111";
 var NIDHOGG_OOB = "130.239.18.115";
