@@ -4,8 +4,6 @@ var ALBI_IPV6 = "2001:0bc8:1200:0004:dac4:97ff:fe8a:9cfc";
 var ANGOR_IPV4 = "196.10.54.165";
 var ANGOR_IPV6 = "2001:43f8:1f4:b00:b283:feff:fed8:dd45";
 
-var ASCALON_IPV4 = "184.107.48.228";
-
 var BALERION_IPV4 = "138.44.68.134";
 
 var BOWSER_IPV4 = "138.44.68.106";
