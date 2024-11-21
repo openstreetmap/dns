@@ -1,6 +1,8 @@
 D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   PTR(CULEBRE_IPV6, "culebre.openstreetmap.org."),
   PTR(FAFNIR_IPV6, "fafnir.openstreetmap.org."),
+  PTR(FUME_IPV6, "fume.openstreetmap.org."),
+  PTR(GRISU_IPV6, "grisu.openstreetmap.org."),
   PTR(HORNTAIL_IPV6, "horntail.openstreetmap.org."),
   PTR(IDRIS_IPV6, "idris.openstreetmap.org."),
   PTR(KONQI_IPV6, "konqi.openstreetmap.org."),
