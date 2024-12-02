@@ -459,25 +459,23 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Imagery servers
 
-  A("kessie", KESSIE_IPV4),
-  AAAA("kessie", KESSIE_IPV6),
-  A("agri", KESSIE_IPV4),
-  AAAA("agri", KESSIE_IPV6),
-  A("a.agri", KESSIE_IPV4),
-  AAAA("a.agri", KESSIE_IPV6),
-  A("b.agri", KESSIE_IPV4),
-  AAAA("b.agri", KESSIE_IPV6),
-  A("c.agri", KESSIE_IPV4),
-  AAAA("c.agri", KESSIE_IPV6),
-  A("os", KESSIE_IPV4),
-  AAAA("os", KESSIE_IPV6),
-  A("a.os", KESSIE_IPV4),
-  AAAA("a.os", KESSIE_IPV6),
-  A("b.os", KESSIE_IPV4),
-  AAAA("b.os", KESSIE_IPV6),
-  A("c.os", KESSIE_IPV4),
-  AAAA("c.os", KESSIE_IPV6),
-  A("kessie.oob", KESSIE_OOB),
+  A("agri", LOCKHEED_IPV4),
+  AAAA("agri", LOCKHEED_IPV6),
+  A("a.agri", LOCKHEED_IPV4),
+  AAAA("a.agri", LOCKHEED_IPV6),
+  A("b.agri", LOCKHEED_IPV4),
+  AAAA("b.agri", LOCKHEED_IPV6),
+  A("c.agri", LOCKHEED_IPV4),
+  AAAA("c.agri", LOCKHEED_IPV6),
+  A("os", LOCKHEED_IPV4),
+  AAAA("os", LOCKHEED_IPV6),
+  A("a.os", LOCKHEED_IPV4),
+  AAAA("a.os", LOCKHEED_IPV6),
+  A("b.os", LOCKHEED_IPV4),
+  AAAA("b.os", LOCKHEED_IPV6),
+  A("c.os", LOCKHEED_IPV4),
+  AAAA("c.os", LOCKHEED_IPV6),
+
 
   // Prometheus server and munin redirect
 
@@ -752,6 +750,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("dribble", DRIBBLE_IPV6),
   A("dribble.ams", DRIBBLE_INTERNAL),
   A("dribble.oob", DRIBBLE_OOB),
+
+  A("kessie", KESSIE_IPV4),
+  AAAA("kessie", KESSIE_IPV6),
+  A("kessie.oob", KESSIE_OOB),
 
   // Uptime site at StatusCake
 
