@@ -751,10 +751,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("dribble.ams", DRIBBLE_INTERNAL),
   A("dribble.oob", DRIBBLE_OOB),
 
-  A("kessie", KESSIE_IPV4),
-  AAAA("kessie", KESSIE_IPV6),
-  A("kessie.oob", KESSIE_OOB),
-
   // Uptime site at StatusCake
 
   CNAME("uptime", "uptimessl-new.statuscake.com."),
