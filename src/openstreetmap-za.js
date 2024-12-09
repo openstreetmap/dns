@@ -38,7 +38,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   CNAME("www", "www.openstreetmap.org."),
   CNAME("api", "api.openstreetmap.org."),
 
-  // Aerial imagery sites on ironbelly
+  // Aerial imagery sites
 
   A("aerial", LOCKHEED_IPV4),
   AAAA("aerial", LOCKHEED_IPV6),

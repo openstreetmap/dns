@@ -357,13 +357,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Site gateways
 
-  A("ironbelly", IRONBELLY_IPV4),
-  AAAA("ironbelly", IRONBELLY_IPV6),
-  A("logstash", IRONBELLY_IPV4),
-  AAAA("logstash", IRONBELLY_IPV6),
-  A("ironbelly.ams", IRONBELLY_INTERNAL),
-  A("ironbelly.oob", IRONBELLY_OOB),
-
   A("fafnir", FAFNIR_IPV4),
   AAAA("fafnir", FAFNIR_IPV6),
   A("fafnir.dub", FAFNIR_INTERNAL),
