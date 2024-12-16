@@ -41,8 +41,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
       "ip4:184.104.226.98",       // fafnir ipv4
       "ip6:2001:470:1:b3b::2",    // fafnir ipv6
       "ip4:193.60.236.0/24",      // ucl external
-      "ip4:184.104.179.128/27",   // amsterdam external
-      "ip6:2001:470:1:fa1::/64",  // amsterdam external
+      "ip4:184.104.179.128/27",   // amsterdam old HE external
+      "ip6:2001:470:1:fa1::/64",  // amsterdam old HE external
+      "ipv4:82.199.86.96/27",     // amsterdam equinix external
+      "ipv6:2001:4d78:500:5e3::/64", // amsterdam equinix external
       "ip4:184.104.226.96/27",    // dublin external
       "ip6:2001:470:1:b3b::/64",  // dublin external
       "mx",                       // safety net if we change mx
@@ -57,8 +59,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
       "ip4:184.104.226.98",       // fafnir ipv4
       "ip6:2001:470:1:b3b::2",    // fafnir ipv6
       "ip4:193.60.236.0/24",      // ucl external
-      "ip4:184.104.179.128/27",   // amsterdam external
-      "ip6:2001:470:1:fa1::/64",  // amsterdam external
+      "ip4:184.104.179.128/27",   // amsterdam old HE external
+      "ip6:2001:470:1:fa1::/64",  // amsterdam old HE external
+      "ipv4:82.199.86.96/27",     // amsterdam equinix external
+      "ipv6:2001:4d78:500:5e3::/64", // amsterdam equinix external
       "ip4:184.104.226.96/27",    // dublin external
       "ip6:2001:470:1:b3b::/64",  // dublin external
       "mx",                       // safety net if we change mx
@@ -73,8 +77,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
       "ip4:184.104.226.98",       // fafnir ipv4
       "ip6:2001:470:1:b3b::2",    // fafnir ipv6
       "ip4:193.60.236.0/24",      // ucl external
-      "ip4:184.104.179.128/27",   // amsterdam external
-      "ip6:2001:470:1:fa1::/64",  // amsterdam external
+      "ip4:184.104.179.128/27",   // amsterdam old HE external
+      "ip6:2001:470:1:fa1::/64",  // amsterdam old HE external
+      "ipv4:82.199.86.96/27",     // amsterdam equinix external
+      "ipv6:2001:4d78:500:5e3::/64", // amsterdam equinix external
       "ip4:184.104.226.96/27",    // dublin external
       "ip6:2001:470:1:b3b::/64",  // dublin external
       "mx",                       // safety net if we change mx
@@ -89,8 +95,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
       "ip4:184.104.226.98",       // fafnir ipv4
       "ip6:2001:470:1:b3b::2",    // fafnir ipv6
       "ip4:193.60.236.0/24",      // ucl external
-      "ip4:184.104.179.128/27",   // amsterdam external
-      "ip6:2001:470:1:fa1::/64",  // amsterdam external
+      "ip4:184.104.179.128/27",   // amsterdam old HE external
+      "ip6:2001:470:1:fa1::/64",  // amsterdam old HE external
+      "ipv4:82.199.86.96/27",     // amsterdam equinix external
+      "ipv6:2001:4d78:500:5e3::/64", // amsterdam equinix external
       "ip4:184.104.226.96/27",    // dublin external
       "ip6:2001:470:1:b3b::/64",  // dublin external
       "mx",                       // safety net if we change mx
@@ -105,8 +113,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
       "ip4:184.104.226.98",       // fafnir ipv4
       "ip6:2001:470:1:b3b::2",    // fafnir ipv6
       "ip4:193.60.236.0/24",      // ucl external
-      "ip4:184.104.179.128/27",   // amsterdam external
-      "ip6:2001:470:1:fa1::/64",  // amsterdam external
+      "ip4:184.104.179.128/27",   // amsterdam old HE external
+      "ip6:2001:470:1:fa1::/64",  // amsterdam old HE external
+      "ipv4:82.199.86.96/27",     // amsterdam equinix external
+      "ipv6:2001:4d78:500:5e3::/64", // amsterdam equinix external
       "ip4:184.104.226.96/27",    // dublin external
       "ip6:2001:470:1:b3b::/64",  // dublin external
       "mx",                       // safety net if we change mx
@@ -121,8 +131,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
       "ip4:184.104.226.98",       // fafnir ipv4
       "ip6:2001:470:1:b3b::2",    // fafnir ipv6
       "ip4:193.60.236.0/24",      // ucl external
-      "ip4:184.104.179.128/27",   // amsterdam external
-      "ip6:2001:470:1:fa1::/64",  // amsterdam external
+      "ip4:184.104.179.128/27",   // amsterdam old HE external
+      "ip6:2001:470:1:fa1::/64",  // amsterdam old HE external
+      "ipv4:82.199.86.96/27",     // amsterdam equinix external
+      "ipv6:2001:4d78:500:5e3::/64", // amsterdam equinix external
       "ip4:184.104.226.96/27",    // dublin external
       "ip6:2001:470:1:b3b::/64",  // dublin external
       "mx",                       // safety net if we change mx
