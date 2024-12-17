@@ -44,7 +44,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
       "ip6:2001:4d78:fe03:1c::2",   // fafnir ipv6 (equinix)
       "ip4:193.60.236.0/24",        // ucl external
       "ip4:82.199.86.96/27",        // amsterdam external (equinix)
-      //"ip6:/64",                  // amsterdam external (equinix)
+      "ip6:2001:4d78:500:5e3::/64", // amsterdam external (equinix)
       "ip4:87.252.214.96/27",       // dublin external (equinix)
       "ip6:2001:4d78:fe03:1c::/64", // dublin external (equinix)
       "ip4:184.104.179.128/27",     // amsterdam external (he.net)
@@ -66,7 +66,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
       "ip6:2001:4d78:fe03:1c::2",   // fafnir ipv6 (equinix)
       "ip4:193.60.236.0/24",        // ucl external
       "ip4:82.199.86.96/27",        // amsterdam external (equinix)
-      //"ip6:/64",                  // amsterdam external (equinix)
+      "ip6:2001:4d78:500:5e3::/64", // amsterdam external (equinix)
       "ip4:87.252.214.96/27",       // dublin external (equinix)
       "ip6:2001:4d78:fe03:1c::/64", // dublin external (equinix)
       "ip4:184.104.179.128/27",     // amsterdam external (he.net)
@@ -88,7 +88,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
       "ip6:2001:4d78:fe03:1c::2",   // fafnir ipv6 (equinix)
       "ip4:193.60.236.0/24",        // ucl external
       "ip4:82.199.86.96/27",        // amsterdam external (equinix)
-      //"ip6:/64",                  // amsterdam external (equinix)
+      "ip6:2001:4d78:500:5e3::/64", // amsterdam external (equinix)
       "ip4:87.252.214.96/27",       // dublin external (equinix)
       "ip6:2001:4d78:fe03:1c::/64", // dublin external (equinix)
       "ip4:184.104.179.128/27",     // amsterdam external (he.net)
@@ -110,7 +110,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
       "ip6:2001:4d78:fe03:1c::2",   // fafnir ipv6 (equinix)
       "ip4:193.60.236.0/24",        // ucl external
       "ip4:82.199.86.96/27",        // amsterdam external (equinix)
-      //"ip6:/64",                  // amsterdam external (equinix)
+      "ip6:2001:4d78:500:5e3::/64", // amsterdam external (equinix)
       "ip4:87.252.214.96/27",       // dublin external (equinix)
       "ip6:2001:4d78:fe03:1c::/64", // dublin external (equinix)
       "ip4:184.104.179.128/27",     // amsterdam external (he.net)
@@ -132,7 +132,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
       "ip6:2001:4d78:fe03:1c::2",   // fafnir ipv6 (equinix)
       "ip4:193.60.236.0/24",        // ucl external
       "ip4:82.199.86.96/27",        // amsterdam external (equinix)
-      //"ip6:/64",                  // amsterdam external (equinix)
+      "ip6:2001:4d78:500:5e3::/64", // amsterdam external (equinix)
       "ip4:87.252.214.96/27",       // dublin external (equinix)
       "ip6:2001:4d78:fe03:1c::/64", // dublin external (equinix)
       "ip4:184.104.179.128/27",     // amsterdam external (he.net)
@@ -154,7 +154,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
       "ip6:2001:4d78:fe03:1c::2",   // fafnir ipv6 (equinix)
       "ip4:193.60.236.0/24",        // ucl external
       "ip4:82.199.86.96/27",        // amsterdam external (equinix)
-      //"ip6:/64",                  // amsterdam external (equinix)
+      "ip6:2001:4d78:500:5e3::/64", // amsterdam external (equinix)
       "ip4:87.252.214.96/27",       // dublin external (equinix)
       "ip6:2001:4d78:fe03:1c::/64", // dublin external (equinix)
       "ip4:184.104.179.128/27",     // amsterdam external (he.net)
