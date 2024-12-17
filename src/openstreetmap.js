@@ -553,7 +553,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // Managed network switches
 
   A("switch1.ams", SWITCH1AMS_IPV4),
-  AAAA("switch1.ams", SWITCH1AMS_IPV6),
+  // AAAA("switch1.ams", SWITCH1AMS_IPV6),
 
   A("switch1.dub", SWITCH1DUB_IPV4),
   AAAA("switch1.dub", SWITCH1DUB_IPV6),
