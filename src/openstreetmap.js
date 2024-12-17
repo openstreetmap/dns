@@ -757,7 +757,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // Taginfo and Staging Blog Server
 
   A("tabaluga", TABALUGA_IPV4),
-  AAAA("tabaluga", TABALUGA_IPV6),
+  // AAAA("tabaluga", TABALUGA_IPV6),
   A("tabaluga.ams", TABALUGA_INTERNAL),
   A("tabaluga.oob", TABALUGA_OOB),
 
