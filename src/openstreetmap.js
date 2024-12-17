@@ -38,14 +38,20 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
     label: "@",
     parts: [
       "v=spf1",
-      "ip4:184.104.226.98",       // fafnir ipv4
-      "ip6:2001:470:1:b3b::2",    // fafnir ipv6
-      "ip4:193.60.236.0/24",      // ucl external
-      "ip4:184.104.179.128/27",   // amsterdam external
-      "ip6:2001:470:1:fa1::/64",  // amsterdam external
-      "ip4:184.104.226.96/27",    // dublin external
-      "ip6:2001:470:1:b3b::/64",  // dublin external
-      "mx",                       // safety net if we change mx
+      "ip4:184.104.226.98",         // fafnir ipv4 (he.net)
+      "ip6:2001:470:1:b3b::2",      // fafnir ipv6 (he.net)
+      "ip4:87.252.214.98",          // fafnir ipv4 (equinix)
+      "ip6:2001:4d78:fe03:1c::2",   // fafnir ipv6 (equinix)
+      "ip4:193.60.236.0/24",        // ucl external
+      "ip4:82.199.86.96/27",        // amsterdam external (equinix)
+      //"ip6:/64",                  // amsterdam external (equinix)
+      "ip4:87.252.214.96/27",       // dublin external (equinix)
+      "ip6:2001:4d78:fe03:1c::/64", // dublin external (equinix)
+      "ip4:184.104.179.128/27",     // amsterdam external (he.net)
+      "ip6:2001:470:1:fa1::/64",    // amsterdam external (he.net)
+      "ip4:184.104.226.96/27",      // dublin external (he.net)
+      "ip6:2001:470:1:b3b::/64",    // dublin external (he.net)
+      "mx",                         // safety net if we change mx
       "-all"
     ]
   }),
@@ -54,14 +60,20 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
     label: "messages",
     parts: [
       "v=spf1",
-      "ip4:184.104.226.98",       // fafnir ipv4
-      "ip6:2001:470:1:b3b::2",    // fafnir ipv6
-      "ip4:193.60.236.0/24",      // ucl external
-      "ip4:184.104.179.128/27",   // amsterdam external
-      "ip6:2001:470:1:fa1::/64",  // amsterdam external
-      "ip4:184.104.226.96/27",    // dublin external
-      "ip6:2001:470:1:b3b::/64",  // dublin external
-      "mx",                       // safety net if we change mx
+      "ip4:184.104.226.98",         // fafnir ipv4 (he.net)
+      "ip6:2001:470:1:b3b::2",      // fafnir ipv6 (he.net)
+      "ip4:87.252.214.98",          // fafnir ipv4 (equinix)
+      "ip6:2001:4d78:fe03:1c::2",   // fafnir ipv6 (equinix)
+      "ip4:193.60.236.0/24",        // ucl external
+      "ip4:82.199.86.96/27",        // amsterdam external (equinix)
+      //"ip6:/64",                  // amsterdam external (equinix)
+      "ip4:87.252.214.96/27",       // dublin external (equinix)
+      "ip6:2001:4d78:fe03:1c::/64", // dublin external (equinix)
+      "ip4:184.104.179.128/27",     // amsterdam external (he.net)
+      "ip6:2001:470:1:fa1::/64",    // amsterdam external (he.net)
+      "ip4:184.104.226.96/27",      // dublin external (he.net)
+      "ip6:2001:470:1:b3b::/64",    // dublin external (he.net)
+      "mx",                         // safety net if we change mx
       "-all"
     ]
   }),
@@ -70,14 +82,20 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
     label: "noreply",
     parts: [
       "v=spf1",
-      "ip4:184.104.226.98",       // fafnir ipv4
-      "ip6:2001:470:1:b3b::2",    // fafnir ipv6
-      "ip4:193.60.236.0/24",      // ucl external
-      "ip4:184.104.179.128/27",   // amsterdam external
-      "ip6:2001:470:1:fa1::/64",  // amsterdam external
-      "ip4:184.104.226.96/27",    // dublin external
-      "ip6:2001:470:1:b3b::/64",  // dublin external
-      "mx",                       // safety net if we change mx
+      "ip4:184.104.226.98",         // fafnir ipv4 (he.net)
+      "ip6:2001:470:1:b3b::2",      // fafnir ipv6 (he.net)
+      "ip4:87.252.214.98",          // fafnir ipv4 (equinix)
+      "ip6:2001:4d78:fe03:1c::2",   // fafnir ipv6 (equinix)
+      "ip4:193.60.236.0/24",        // ucl external
+      "ip4:82.199.86.96/27",        // amsterdam external (equinix)
+      //"ip6:/64",                  // amsterdam external (equinix)
+      "ip4:87.252.214.96/27",       // dublin external (equinix)
+      "ip6:2001:4d78:fe03:1c::/64", // dublin external (equinix)
+      "ip4:184.104.179.128/27",     // amsterdam external (he.net)
+      "ip6:2001:470:1:fa1::/64",    // amsterdam external (he.net)
+      "ip4:184.104.226.96/27",      // dublin external (he.net)
+      "ip6:2001:470:1:b3b::/64",    // dublin external (he.net)
+      "mx",                         // safety net if we change mx
       "-all"
     ]
   }),
@@ -86,14 +104,20 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
     label: "otrs",
     parts: [
       "v=spf1",
-      "ip4:184.104.226.98",       // fafnir ipv4
-      "ip6:2001:470:1:b3b::2",    // fafnir ipv6
-      "ip4:193.60.236.0/24",      // ucl external
-      "ip4:184.104.179.128/27",   // amsterdam external
-      "ip6:2001:470:1:fa1::/64",  // amsterdam external
-      "ip4:184.104.226.96/27",    // dublin external
-      "ip6:2001:470:1:b3b::/64",  // dublin external
-      "mx",                       // safety net if we change mx
+      "ip4:184.104.226.98",         // fafnir ipv4 (he.net)
+      "ip6:2001:470:1:b3b::2",      // fafnir ipv6 (he.net)
+      "ip4:87.252.214.98",          // fafnir ipv4 (equinix)
+      "ip6:2001:4d78:fe03:1c::2",   // fafnir ipv6 (equinix)
+      "ip4:193.60.236.0/24",        // ucl external
+      "ip4:82.199.86.96/27",        // amsterdam external (equinix)
+      //"ip6:/64",                  // amsterdam external (equinix)
+      "ip4:87.252.214.96/27",       // dublin external (equinix)
+      "ip6:2001:4d78:fe03:1c::/64", // dublin external (equinix)
+      "ip4:184.104.179.128/27",     // amsterdam external (he.net)
+      "ip6:2001:470:1:fa1::/64",    // amsterdam external (he.net)
+      "ip4:184.104.226.96/27",      // dublin external (he.net)
+      "ip6:2001:470:1:b3b::/64",    // dublin external (he.net)
+      "mx",                         // safety net if we change mx
       "-all"
     ]
   }),
@@ -102,14 +126,20 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
     label: "community",
     parts: [
       "v=spf1",
-      "ip4:184.104.226.98",       // fafnir ipv4
-      "ip6:2001:470:1:b3b::2",    // fafnir ipv6
-      "ip4:193.60.236.0/24",      // ucl external
-      "ip4:184.104.179.128/27",   // amsterdam external
-      "ip6:2001:470:1:fa1::/64",  // amsterdam external
-      "ip4:184.104.226.96/27",    // dublin external
-      "ip6:2001:470:1:b3b::/64",  // dublin external
-      "mx",                       // safety net if we change mx
+      "ip4:184.104.226.98",         // fafnir ipv4 (he.net)
+      "ip6:2001:470:1:b3b::2",      // fafnir ipv6 (he.net)
+      "ip4:87.252.214.98",          // fafnir ipv4 (equinix)
+      "ip6:2001:4d78:fe03:1c::2",   // fafnir ipv6 (equinix)
+      "ip4:193.60.236.0/24",        // ucl external
+      "ip4:82.199.86.96/27",        // amsterdam external (equinix)
+      //"ip6:/64",                  // amsterdam external (equinix)
+      "ip4:87.252.214.96/27",       // dublin external (equinix)
+      "ip6:2001:4d78:fe03:1c::/64", // dublin external (equinix)
+      "ip4:184.104.179.128/27",     // amsterdam external (he.net)
+      "ip6:2001:470:1:fa1::/64",    // amsterdam external (he.net)
+      "ip4:184.104.226.96/27",      // dublin external (he.net)
+      "ip6:2001:470:1:b3b::/64",    // dublin external (he.net)
+      "mx",                         // safety net if we change mx
       "-all"
     ]
   }),
@@ -118,14 +148,20 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
     label: "supporting",
     parts: [
       "v=spf1",
-      "ip4:184.104.226.98",       // fafnir ipv4
-      "ip6:2001:470:1:b3b::2",    // fafnir ipv6
-      "ip4:193.60.236.0/24",      // ucl external
-      "ip4:184.104.179.128/27",   // amsterdam external
-      "ip6:2001:470:1:fa1::/64",  // amsterdam external
-      "ip4:184.104.226.96/27",    // dublin external
-      "ip6:2001:470:1:b3b::/64",  // dublin external
-      "mx",                       // safety net if we change mx
+      "ip4:184.104.226.98",         // fafnir ipv4 (he.net)
+      "ip6:2001:470:1:b3b::2",      // fafnir ipv6 (he.net)
+      "ip4:87.252.214.98",          // fafnir ipv4 (equinix)
+      "ip6:2001:4d78:fe03:1c::2",   // fafnir ipv6 (equinix)
+      "ip4:193.60.236.0/24",        // ucl external
+      "ip4:82.199.86.96/27",        // amsterdam external (equinix)
+      //"ip6:/64",                  // amsterdam external (equinix)
+      "ip4:87.252.214.96/27",       // dublin external (equinix)
+      "ip6:2001:4d78:fe03:1c::/64", // dublin external (equinix)
+      "ip4:184.104.179.128/27",     // amsterdam external (he.net)
+      "ip6:2001:470:1:fa1::/64",    // amsterdam external (he.net)
+      "ip4:184.104.226.96/27",      // dublin external (he.net)
+      "ip6:2001:470:1:b3b::/64",    // dublin external (he.net)
+      "mx",                         // safety net if we change mx
       "-all"
     ]
   }),
