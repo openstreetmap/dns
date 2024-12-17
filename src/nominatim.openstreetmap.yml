@@ -21,7 +21,7 @@ europe:
        - 6726827
       requests: 500
       name: vhagar
-      ipv4: 82.199.86.10
+      ipv4: 82.199.86.101
   default: "xx"
 
 stormfly-04:
