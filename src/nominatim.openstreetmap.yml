@@ -9,6 +9,7 @@ europe:
       requests: 300
       name: dulcy
       ipv4: 82.199.86.105
+      ipv6: 2001:4d78:500:5e3::9
     - statuscake:
       - 6224536
       - 6224537
@@ -22,6 +23,7 @@ europe:
       requests: 500
       name: vhagar
       ipv4: 82.199.86.101
+      ipv6: 2001:4d78:500:5e3::5
   default: "xx"
 
 stormfly-04:
