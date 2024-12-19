@@ -20,12 +20,12 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   MX("@", 10, QUALIFY("a.mx")),
 
-  A("a.mx", FAFNIR_IPV4),
-  AAAA("a.mx", FAFNIR_IPV6),
-  A("mail", FAFNIR_IPV4),
-  AAAA("mail", FAFNIR_IPV6),
-  A("mta-sts", FAFNIR_IPV4),
-  AAAA("mta-sts", FAFNIR_IPV6),
+  A("a.mx", FAFNIR_IPV4_HE),
+  AAAA("a.mx", FAFNIR_IPV6_HE),
+  A("mail", FAFNIR_IPV4_HE),
+  AAAA("mail", FAFNIR_IPV6_HE),
+  A("mta-sts", FAFNIR_IPV4_HE),
+  AAAA("mta-sts", FAFNIR_IPV6_HE),
 
   // Delegate SPF policy to the main domain
 
@@ -58,11 +58,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   TXT("@", "_globalsign-domain-verification=ps00GlW1BzY9c2_cwH_pFqRkvzZyaCVZ-3RLssRG6S"),
   TXT("@", "_globalsign-domain-verification=W0buKB5ZmL-VwwHw2oQyQImk3I1q3hSemf2qmB1hjP"),
 
-  A("wiki", KONQI_IPV4),
-  AAAA("wiki", KONQI_IPV6),
-  A("www", KONQI_IPV4),
-  AAAA("www", KONQI_IPV6),
-  A("@", KONQI_IPV4),
-  AAAA("@", KONQI_IPV6)
+  A("wiki", KONQI_IPV4_HE),
+  AAAA("wiki", KONQI_IPV6_HE),
+  A("www", KONQI_IPV4_HE),
+  AAAA("www", KONQI_IPV6_HE),
+  A("@", KONQI_IPV4_HE),
+  AAAA("@", KONQI_IPV6_HE)
 
 );

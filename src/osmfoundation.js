@@ -116,8 +116,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   A("board", RIDLEY_IPV4),
   A("dwg", RIDLEY_IPV4),
   A("mwg", RIDLEY_IPV4),
-  A("operations", NAGA_IPV4),
-  AAAA("operations", NAGA_IPV6),
+  A("operations", NAGA_IPV4_HE),
+  AAAA("operations", NAGA_IPV6_HE),
 
   // HTTPS / SVCB records
   HTTPS("www", 1, ".", "alpn=h2"),
@@ -143,7 +143,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // HTTPS / SVCB records
   HTTPS("staging.blog", 1, ".", "alpn=h2"),
 
-  A("hardware", IDRIS_IPV4),
+  A("hardware", IDRIS_IPV4_HE),
 
   // HTTPS / SVCB records
   HTTPS("hardware", 1, ".", "alpn=h2")
