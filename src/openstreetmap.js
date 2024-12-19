@@ -572,6 +572,26 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("oob1.dub", OOB1DUB_INTERNAL),
 
+  // Network gateways
+
+  A("equinix-gw.ams", EQUINIXGWAMS_IPV4),
+  AAAA("equinix-gw.ams", EQUINIXGWAMS_IPV6),
+  A("equinix-gw-1.ams", EQUINIXGW1AMS_IPV4),
+  AAAA("equinix-gw-1.ams", EQUINIXGW1AMS_IPV6),
+  A("equinix-gw-2.ams", EQUINIXGW2AMS_IPV4),
+  AAAA("equinix-gw-2.ams", EQUINIXGW2AMS_IPV6),
+  A("equinix-osm.ams", EQUINIXOSMAMS_IPV4),
+  AAAA("equinix-osm.ams", EQUINIXOSMAMS_IPV6),
+
+  A("equinix-gw.dub", EQUINIXGWDUB_IPV4),
+  AAAA("equinix-gw.dub", EQUINIXGWDUB_IPV6),
+  A("equinix-gw-1.dub", EQUINIXGW1DUB_IPV4),
+  AAAA("equinix-gw-1.dub", EQUINIXGW1DUB_IPV6),
+  A("equinix-gw-2.dub", EQUINIXGW2DUB_IPV4),
+  AAAA("equinix-gw-2.dub", EQUINIXGW2DUB_IPV6),
+  A("equinix-osm.dub", EQUINIXOSMDUB_IPV4),
+  AAAA("equinix-osm.dub", EQUINIXOSMDUB_IPV6),
+
   // Bytemark machine, and the services which operate from it
 
   A("shenron", SHENRON_IPV4),
