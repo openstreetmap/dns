@@ -168,22 +168,6 @@ var PTR_EQUINIX_DUB_IPV6 = loadTemplate("ptr_equinix_dub_ipv6");
 
 PTR_EQUINIX_DUB_IPV6(REV("2001:4d78:fe03:1c::/64"), REG_NONE);
 
-var PTR_EQUINIX_AMS_UPLINK_IPV4 = loadTemplate("ptr_equinix_ams_uplink_ipv4");
-
-PTR_EQUINIX_AMS_UPLINK_IPV4("72-29.86.199.82.in-addr.arpa", REG_NONE);
-
-var PTR_EQUINIX_AMS_UPLINK_IPV6 = loadTemplate("ptr_equinix_ams_uplink_ipv6");
-
-PTR_EQUINIX_AMS_UPLINK_IPV6(REV("2001:4d78:500:5e2::/64"), REG_NONE);
-
-var PTR_EQUINIX_DUB_UPLINK_IPV4 = loadTemplate("ptr_equinix_dub_uplink_ipv4");
-
-PTR_EQUINIX_DUB_UPLINK_IPV4("104-29.218.252.87.in-addr.arpa", REG_NONE);
-
-var PTR_EQUINIX_DUB_UPLINK_IPV6 = loadTemplate("ptr_equinix_dub_uplink_ipv6");
-
-PTR_EQUINIX_DUB_UPLINK_IPV6(REV("2001:4d78:fe03:1b::/64"), REG_NONE);
-
 // No immediate plans
 // External DNS and hosting still up
 // freethepostcode.org
