@@ -356,9 +356,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("wawel", WAWEL_IPV4),
 
-  A("scorch", SCORCH_IPV4),
-  AAAA("scorch", SCORCH_IPV6),
-
   A("rhaegal", RHAEGAL_IPV4),
   AAAA("rhaegal", RHAEGAL_IPV6),
 
