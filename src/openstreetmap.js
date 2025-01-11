@@ -365,10 +365,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("piasa", PIASA_IPV6),
   A("piasa.oob", PIASA_OOB),
 
-  A("bowser", BOWSER_IPV4),
-
-  A("balerion", BALERION_IPV4),
-
   A("albi", ALBI_IPV4),
   AAAA("albi", ALBI_IPV6),
 
