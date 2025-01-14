@@ -213,8 +213,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Main web servers and their aliases
 
-  A("spike-01", SPIKE01_IPV4_HE),
-  AAAA("spike-01", SPIKE01_IPV6_HE),
   // A("@", SPIKE01_IPV4_HE),
   // AAAA("@", SPIKE01_IPV6_HE),
   // A("www", SPIKE01_IPV4_HE),
@@ -225,11 +223,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // AAAA("maps", SPIKE01_IPV6_HE),
   // A("mapz", SPIKE01_IPV4_HE),
   // AAAA("mapz", SPIKE01_IPV6_HE),
-  A("spike-01.dub", SPIKE01_INTERNAL),
-  A("spike-01.oob", SPIKE01_OOB),
 
-  A("spike-02", SPIKE02_IPV4_HE),
-  AAAA("spike-02", SPIKE02_IPV6_HE),
   // A("@", SPIKE02_IPV4_HE),
   // AAAA("@", SPIKE02_IPV6_HE),
   // A("www", SPIKE02_IPV4_HE),
@@ -240,11 +234,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // AAAA("maps", SPIKE02_IPV6_HE),
   // A("mapz", SPIKE02_IPV4_HE),
   // AAAA("mapz", SPIKE02_IPV6_HE),
-  A("spike-02.dub", SPIKE02_INTERNAL),
-  A("spike-02.oob", SPIKE02_OOB),
 
-  A("spike-03", SPIKE03_IPV4_HE),
-  AAAA("spike-03", SPIKE03_IPV6_HE),
   // A("@", SPIKE03_IPV4_HE),
   // AAAA("@", SPIKE03_IPV6_HE),
   // A("www", SPIKE03_IPV4_HE),
@@ -255,11 +245,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // AAAA("maps", SPIKE03_IPV6_HE),
   // A("mapz", SPIKE03_IPV4_HE),
   // AAAA("mapz", SPIKE03_IPV6_HE),
-  A("spike-03.dub", SPIKE03_INTERNAL),
-  A("spike-03.oob", SPIKE03_OOB),
 
-  A("spike-06", SPIKE06_IPV4),
-  AAAA("spike-06", SPIKE06_IPV6),
   A("@", SPIKE06_IPV4, CF_PROXY_ON),
   AAAA("@", SPIKE06_IPV6, CF_PROXY_ON),
   A("www", SPIKE06_IPV4, CF_PROXY_ON),
@@ -270,11 +256,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("maps", SPIKE06_IPV6, CF_PROXY_ON),
   A("mapz", SPIKE06_IPV4, CF_PROXY_ON),
   AAAA("mapz", SPIKE06_IPV6, CF_PROXY_ON),
-  A("spike-06.ams", SPIKE06_INTERNAL),
-  A("spike-06.oob", SPIKE06_OOB),
 
-  A("spike-07", SPIKE07_IPV4),
-  AAAA("spike-07", SPIKE07_IPV6),
   A("@", SPIKE07_IPV4, CF_PROXY_ON),
   AAAA("@", SPIKE07_IPV6, CF_PROXY_ON),
   A("www", SPIKE07_IPV4, CF_PROXY_ON),
@@ -285,11 +267,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("maps", SPIKE07_IPV6, CF_PROXY_ON),
   A("mapz", SPIKE07_IPV4, CF_PROXY_ON),
   AAAA("mapz", SPIKE07_IPV6, CF_PROXY_ON),
-  A("spike-07.ams", SPIKE07_INTERNAL),
-  A("spike-07.oob", SPIKE07_OOB),
 
-  A("spike-08", SPIKE08_IPV4),
-  AAAA("spike-08", SPIKE08_IPV6),
   A("@", SPIKE08_IPV4, CF_PROXY_ON),
   AAAA("@", SPIKE08_IPV6, CF_PROXY_ON),
   A("www", SPIKE08_IPV4, CF_PROXY_ON),
@@ -300,8 +278,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("maps", SPIKE08_IPV6, CF_PROXY_ON),
   A("mapz", SPIKE08_IPV4, CF_PROXY_ON),
   AAAA("mapz", SPIKE08_IPV6, CF_PROXY_ON),
-  A("spike-08.ams", SPIKE08_INTERNAL),
-  A("spike-08.oob", SPIKE08_OOB),
 
   // HTTPS / SVCB records
   HTTPS("www", 1, ".", "alpn=h2"),
@@ -311,62 +287,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Nominatim servers
 
-  A("dulcy", DULCY_IPV4),
-  AAAA("dulcy", DULCY_IPV6),
-  A("dulcy.ams", DULCY_INTERNAL),
-  A("dulcy.oob", DULCY_OOB),
-
-  A("longma", LONGMA_IPV4_HE),
-  AAAA("longma", LONGMA_IPV6_HE),
-  A("longma.dub", LONGMA_INTERNAL),
-  A("longma.oob", LONGMA_OOB),
-
-  A("stormfly-04", STORMFLY04_IPV4),
-  AAAA("stormfly-04", STORMFLY04_IPV6),
-  A("stormfly-04.oob", STORMFLY04_OOB),
-
-  A("vhagar", VHAGAR_IPV4),
-  AAAA("vhagar", VHAGAR_IPV6),
-  A("vhagar.ams", VHAGAR_INTERNAL),
-  A("vhagar.oob", VHAGAR_OOB),
-
   CNAME("nominatim", "nominatim.geo.openstreetmap.org."),
   CNAME("qgis.nominatim", "nominatim.geo.openstreetmap.org."),
   CNAME("qa-tile.nominatim", "longma.openstreetmap.org."),
 
   // Tile servers
-
-  A("odin", ODIN_IPV4),
-  AAAA("odin", ODIN_IPV6),
-  A("odin.ams", ODIN_INTERNAL),
-  A("odin.oob", ODIN_OOB),
-
-  A("ysera", YSERA_IPV4),
-  A("ysera.ucl", YSERA_INTERNAL),
-  A("ysera.oob", YSERA_OOB),
-
-  A("culebre", CULEBRE_IPV4_HE),
-  AAAA("culebre", CULEBRE_IPV6_HE),
-  A("culebre.dub", CULEBRE_INTERNAL),
-  A("culebre.oob", CULEBRE_OOB),
-
-  A("nidhogg", NIDHOGG_IPV4),
-  AAAA("nidhogg", NIDHOGG_IPV6),
-  A("nidhogg.oob", NIDHOGG_OOB),
-
-  A("wawel", WAWEL_IPV4),
-
-  A("rhaegal", RHAEGAL_IPV4),
-  AAAA("rhaegal", RHAEGAL_IPV6),
-
-  A("palulukon", PALULUKON_IPV4),
-
-  A("piasa", PIASA_IPV4),
-  AAAA("piasa", PIASA_IPV6),
-  A("piasa.oob", PIASA_OOB),
-
-  A("albi", ALBI_IPV4),
-  AAAA("albi", ALBI_IPV6),
 
   CNAME("tile", "dualstack.n.sni.global.fastly.net."),
   CNAME("a.tile", "dualstack.n.sni.global.fastly.net."),
@@ -380,66 +305,28 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Vector tile servers
 
-  A("cmok", CMOK_IPV4),
-
-  A("dribble", DRIBBLE_IPV4),
-  AAAA("dribble", DRIBBLE_IPV6),
-  A("dribble.ams", DRIBBLE_INTERNAL),
-  A("dribble.oob", DRIBBLE_OOB),
-
   CNAME("vector", "dualstack.n.sni.global.fastly.net."),
-
-  // Site gateways
-
-  A("fafnir", FAFNIR_IPV4_HE),
-  AAAA("fafnir", FAFNIR_IPV6_HE),
-  A("fafnir.dub", FAFNIR_INTERNAL),
-  A("fafnir.oob", FAFNIR_OOB),
 
   // Planet servers
 
-  A("norbert", NORBERT_IPV4),
-  AAAA("norbert", NORBERT_IPV6),
   A("backup", NORBERT_IPV4),
   AAAA("backup", NORBERT_IPV6),
+
   A("planet", NORBERT_IPV4),
   AAAA("planet", NORBERT_IPV6),
-  A("norbert.ams", NORBERT_INTERNAL),
-  A("norbert.oob", NORBERT_OOB),
+
+  // A("backup", HORNTAIL_IPV4_HE),
+  // AAAA("backup", HORNTAIL_IPV6_HE),
+
+  // A("planet", HORNTAIL_IPV4_HE),
+  // AAAA("planet", HORNTAIL_IPV6_HE),
 
   // HTTPS / SVCB records
   HTTPS("planet", 1, ".", "alpn=h2"),
 
-  A("horntail", HORNTAIL_IPV4_HE),
-  AAAA("horntail", HORNTAIL_IPV6_HE),
-  // A("backup", HORNTAIL_IPV4_HE),
-  // AAAA("backup", HORNTAIL_IPV6_HE),
-  // A("planet", HORNTAIL_IPV4_HE),
-  // AAAA("planet", HORNTAIL_IPV6_HE),
-  A("horntail.dub", HORNTAIL_INTERNAL),
-  A("horntail.oob", HORNTAIL_OOB),
-
-  // Database servers
-
-  A("snap-01.ams", SNAP01_INTERNAL),
-  A("snap-01.oob", SNAP01_OOB),
-
-  A("snap-02.ucl", SNAP02_INTERNAL),
-  A("snap-02.oob", SNAP02_OOB),
-
-  A("snap-03.dub", SNAP03_INTERNAL),
-  A("snap-03.oob", SNAP03_OOB),
-
-  A("karm.ams", KARM_INTERNAL),
-  A("karm.oob", KARM_OOB),
-
-  A("eddie.ucl", EDDIE_INTERNAL),
-  A("eddie.oob", EDDIE_OOB),
 
   // Development server with wildcard alias for user sites
 
-  A("faffy", FAFFY_IPV4),
-  AAAA("faffy", FAFFY_IPV6),
   A("dev", FAFFY_IPV4),
   AAAA("dev", FAFFY_IPV6),
   A("*.dev", FAFFY_IPV4),
@@ -454,74 +341,44 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("c.ooc", FAFFY_IPV6),
   A("npe", FAFFY_IPV4),
   AAAA("npe", FAFFY_IPV6),
-  A("faffy.ams", FAFFY_INTERNAL),
-  A("faffy.oob", FAFFY_OOB),
+
 
   // Foundation server
 
-  A("ridley", RIDLEY_IPV4),
   A("blog", RIDLEY_IPV4),
   A("foundation", RIDLEY_IPV4),
-  A("ridley.ucl", RIDLEY_INTERNAL),
-  A("ridley.oob", RIDLEY_OOB),
 
   // HTTPS / SVCB records
   HTTPS("blog", 1, ".", "alpn=h2"),
   HTTPS("foundation", 1, ".", "alpn=h2"),
 
+
   // Matomo server
 
-  A("smaug", SMAUG_IPV4_HE),
-  AAAA("smaug", SMAUG_IPV6_HE),
   A("matomo", SMAUG_IPV4_HE),
   AAAA("matomo", SMAUG_IPV6_HE),
   A("piwik", SMAUG_IPV4_HE),
   AAAA("piwik", SMAUG_IPV6_HE),
-  A("smaug.dub", SMAUG_INTERNAL),
-  A("smaug.oob", SMAUG_OOB),
 
   // HTTPS / SVCB records
   HTTPS("matomo", 1, ".", "alpn=h2"),
   HTTPS("piwik", 1, ".", "alpn=h2"),
 
-  // Imagery servers
-
-  A("agri", LOCKHEED_IPV4),
-  AAAA("agri", LOCKHEED_IPV6),
-  A("a.agri", LOCKHEED_IPV4),
-  AAAA("a.agri", LOCKHEED_IPV6),
-  A("b.agri", LOCKHEED_IPV4),
-  AAAA("b.agri", LOCKHEED_IPV6),
-  A("c.agri", LOCKHEED_IPV4),
-  AAAA("c.agri", LOCKHEED_IPV6),
-  A("os", LOCKHEED_IPV4),
-  AAAA("os", LOCKHEED_IPV6),
-  A("a.os", LOCKHEED_IPV4),
-  AAAA("a.os", LOCKHEED_IPV6),
-  A("b.os", LOCKHEED_IPV4),
-  AAAA("b.os", LOCKHEED_IPV6),
-  A("c.os", LOCKHEED_IPV4),
-  AAAA("c.os", LOCKHEED_IPV6),
-
 
   // Prometheus server and munin redirect
 
-  A("stormfly-03", STORMFLY03_IPV4),
-  AAAA("stormfly-03", STORMFLY03_IPV6),
   A("prometheus", STORMFLY03_IPV4),
   AAAA("prometheus", STORMFLY03_IPV6),
   A("munin", STORMFLY03_IPV4),
   AAAA("munin", STORMFLY03_IPV6),
-  A("stormfly-03.oob", STORMFLY03_OOB),
 
   // HTTPS / SVCB records
   HTTPS("prometheus", 1, ".", "alpn=h2"),
   HTTPS("munin", 1, ".", "alpn=h2"),
 
+
   // Management server
 
-  A("idris", IDRIS_IPV4_HE),
-  AAAA("idris", IDRIS_IPV6_HE),
   A("acme", IDRIS_IPV4_HE),
   AAAA("acme", IDRIS_IPV6_HE),
   A("apt", IDRIS_IPV4_HE),
@@ -534,8 +391,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("git", IDRIS_IPV6_HE),
   A("hardware", IDRIS_IPV4_HE),
   AAAA("hardware", IDRIS_IPV6_HE),
-  A("idris.dub", IDRIS_INTERNAL),
-  A("idris.oob", IDRIS_OOB),
 
   // HTTPS / SVCB records
   HTTPS("acme", 1, ".", "alpn=h2"),
@@ -544,52 +399,9 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   HTTPS("git", 1, ".", "alpn=h2"),
   HTTPS("hardware", 1, ".", "alpn=h2"),
 
-  // Managed network switches
-
-  A("switch1.ams", SWITCH1AMS_IPV4),
-  AAAA("switch1.ams", SWITCH1AMS_IPV6),
-
-  A("switch1.dub", SWITCH1DUB_IPV4_HE),
-  AAAA("switch1.dub", SWITCH1DUB_IPV6_HE),
-
-  // Managed power strips
-
-  A("pdu1.ams", PDU1AMS_INTERNAL),
-  A("pdu2.ams", PDU2AMS_INTERNAL),
-
-  A("pdu1.dub", PDU1DUB_INTERNAL),
-  A("pdu2.dub", PDU2DUB_INTERNAL),
-
-  // Out of band access servers
-
-  A("oob1.ams", OOB1AMS_INTERNAL),
-
-  A("oob1.dub", OOB1DUB_INTERNAL),
-
-  // Network gateways
-
-  A("equinix-gw.ams", EQUINIXGWAMS_IPV4),
-  AAAA("equinix-gw.ams", EQUINIXGWAMS_IPV6),
-  A("equinix-gw-1.ams", EQUINIXGW1AMS_IPV4),
-  AAAA("equinix-gw-1.ams", EQUINIXGW1AMS_IPV6),
-  A("equinix-gw-2.ams", EQUINIXGW2AMS_IPV4),
-  AAAA("equinix-gw-2.ams", EQUINIXGW2AMS_IPV6),
-  A("equinix-osm.ams", EQUINIXOSMAMS_IPV4),
-  AAAA("equinix-osm.ams", EQUINIXOSMAMS_IPV6),
-
-  A("equinix-gw.dub", EQUINIXGWDUB_IPV4),
-  AAAA("equinix-gw.dub", EQUINIXGWDUB_IPV6),
-  A("equinix-gw-1.dub", EQUINIXGW1DUB_IPV4),
-  AAAA("equinix-gw-1.dub", EQUINIXGW1DUB_IPV6),
-  A("equinix-gw-2.dub", EQUINIXGW2DUB_IPV4),
-  AAAA("equinix-gw-2.dub", EQUINIXGW2DUB_IPV6),
-  A("equinix-osm.dub", EQUINIXOSMDUB_IPV4),
-  AAAA("equinix-osm.dub", EQUINIXOSMDUB_IPV6),
 
   // Bytemark machine, and the services which operate from it
 
-  A("shenron", SHENRON_IPV4),
-  AAAA("shenron", SHENRON_IPV6),
   A("lists", SHENRON_IPV4),
   AAAA("lists", SHENRON_IPV6),
   A("help", SHENRON_IPV4),
@@ -599,10 +411,9 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   HTTPS("lists", 1, ".", "alpn=h2"),
   HTTPS("help", 1, ".", "alpn=h2"),
 
+
   // Naga service
 
-  A("naga", NAGA_IPV4_HE),
-  AAAA("naga", NAGA_IPV6_HE),
   A("svn", NAGA_IPV4_HE),
   AAAA("svn", NAGA_IPV6_HE),
   A("trac", NAGA_IPV4_HE),
@@ -636,37 +447,27 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // HTTPS("otrs", 1, ".", "alpn=h2"), - OTRS is not available using HTTPS/2
   HTTPS("birthday20", 1, ".", "alpn=h2"),
 
-  A("naga.dub", NAGA_INTERNAL),
-  A("naga.oob", NAGA_OOB),
 
   // Wiki servers
 
-  A("konqi", KONQI_IPV4_HE),
-  AAAA("konqi", KONQI_IPV6_HE),
   A("wiki", KONQI_IPV4_HE),
   AAAA("wiki", KONQI_IPV6_HE),
-  A("konqi.dub", KONQI_INTERNAL),
-  A("konqi.oob", KONQI_OOB),
 
   // HTTPS / SVCB records
   HTTPS("wiki", 1, ".", "alpn=h2"),
 
+
   // Overpass server
 
-  A("grisu", GRISU_IPV4_HE),
-  AAAA("grisu", GRISU_IPV6_HE),
   A("query", GRISU_IPV4_HE),
   AAAA("query", GRISU_IPV6_HE),
-  A("grisu.dub", GRISU_INTERNAL),
-  A("grisu.oob", GRISU_OOB),
 
   // HTTPS / SVCB records
   HTTPS("query", 1, ".", "alpn=h2"),
 
+
   // GPS tile server
 
-  A("muirdris", MUIRDRIS_IPV4_HE),
-  AAAA("muirdris", MUIRDRIS_IPV6_HE),
   A("gps-tile", MUIRDRIS_IPV4_HE),
   AAAA("gps-tile", MUIRDRIS_IPV6_HE),
   A("a.gps-tile", MUIRDRIS_IPV4_HE),
@@ -683,8 +484,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("gps-b.tile", MUIRDRIS_IPV6_HE),
   A("gps-c.tile", MUIRDRIS_IPV4_HE),
   AAAA("gps-c.tile", MUIRDRIS_IPV6_HE),
-  A("muirdris.dub", MUIRDRIS_INTERNAL),
-  A("muirdris.oob", MUIRDRIS_OOB),
 
   // HTTPS / SVCB records
   HTTPS("gps-tile", 1, ".", "alpn=h2"),
@@ -695,17 +494,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   HTTPS("gps-b.tile", 1, ".", "alpn=h2"),
   HTTPS("gps-c.tile", 1, ".", "alpn=h2"),
 
-  // Tile cache servers
-
-  A("ridgeback", RIDGEBACK_IPV4),
-  A("ridgeback.oob", RIDGEBACK_OOB),
-  A("angor", ANGOR_IPV4),
-  AAAA("angor", ANGOR_IPV6),
-  A("ladon", LADON_IPV4),
-  AAAA("ladon", LADON_IPV6),
-  A("neak", NEAK_IPV4),
-  A("meraxes", MERAXES_IPV4),
-  AAAA("meraxes", MERAXES_IPV6),
 
   // Donation site and new OSMF crm site
 
@@ -718,12 +506,30 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   HTTPS("support", 1, ".", "alpn=h2"),
   HTTPS("supporting", 1, ".", "alpn=h2"),
 
-  A("lockheed", LOCKHEED_IPV4),
-  AAAA("lockheed", LOCKHEED_IPV6),
-  A("lockheed.ams", LOCKHEED_INTERNAL),
-  A("lockheed.oob", LOCKHEED_OOB),
+
+  // Imagery servers
+
+  A("agri", LOCKHEED_IPV4),
+  AAAA("agri", LOCKHEED_IPV6),
+  A("a.agri", LOCKHEED_IPV4),
+  AAAA("a.agri", LOCKHEED_IPV6),
+  A("b.agri", LOCKHEED_IPV4),
+  AAAA("b.agri", LOCKHEED_IPV6),
+  A("c.agri", LOCKHEED_IPV4),
+  AAAA("c.agri", LOCKHEED_IPV6),
+
+  A("os", LOCKHEED_IPV4),
+  AAAA("os", LOCKHEED_IPV6),
+  A("a.os", LOCKHEED_IPV4),
+  AAAA("a.os", LOCKHEED_IPV6),
+  A("b.os", LOCKHEED_IPV4),
+  AAAA("b.os", LOCKHEED_IPV6),
+  A("c.os", LOCKHEED_IPV4),
+  AAAA("c.os", LOCKHEED_IPV6),
+
   A("tiler", LOCKHEED_IPV4),
   AAAA("tiler", LOCKHEED_IPV6),
+
   A("us-imagery", LOCKHEED_IPV4),
   AAAA("us-imagery", LOCKHEED_IPV6),
   A("a.us-imagery", LOCKHEED_IPV4),
@@ -734,18 +540,24 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("c.us-imagery", LOCKHEED_IPV6),
 
   // HTTPS / SVCB records
+  HTTPS("agri", 1, ".", "alpn=h2"),
+  HTTPS("a.agri", 1, ".", "alpn=h2"),
+  HTTPS("b.agri", 1, ".", "alpn=h2"),
+  HTTPS("c.agri", 1, ".", "alpn=h2"),
+
+  HTTPS("os", 1, ".", "alpn=h2"),
+  HTTPS("a.os", 1, ".", "alpn=h2"),
+  HTTPS("b.os", 1, ".", "alpn=h2"),
+  HTTPS("c.os", 1, ".", "alpn=h2"),
+
   HTTPS("tiler", 1, ".", "alpn=h2"),
+
   HTTPS("us-imagery", 1, ".", "alpn=h2"),
   HTTPS("a.us-imagery", 1, ".", "alpn=h2"),
   HTTPS("b.us-imagery", 1, ".", "alpn=h2"),
   HTTPS("c.us-imagery", 1, ".", "alpn=h2"),
 
   // Discourse server ("community")
-
-  A("fume", FUME_IPV4_HE),
-  AAAA("fume", FUME_IPV6_HE),
-  A("fume.dub", FUME_INTERNAL),
-  A("fume.oob", FUME_OOB),
 
   A("community", FUME_IPV4_HE),
   A("communities", FUME_IPV4_HE),
@@ -770,11 +582,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Taginfo and Staging Blog Server
 
-  A("tabaluga", TABALUGA_IPV4),
-  AAAA("tabaluga", TABALUGA_IPV6),
-  A("tabaluga.ams", TABALUGA_INTERNAL),
-  A("tabaluga.oob", TABALUGA_OOB),
-
   A("staging.blog", TABALUGA_IPV4),
   AAAA("staging.blog", TABALUGA_IPV6),
 
@@ -787,15 +594,292 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // HTTPS / SVCB records
   HTTPS("taginfo", 1, ".", "alpn=h2"),
 
-  // Spare servers
-
-
-  // Uptime site at StatusCake
-
-  CNAME("uptime", "uptimessl-new.statuscake.com."),
-
-  // Dynamic DNS records
-
-  DYNAMIC_RECORDS
-
 );
+
+// Records only in openstreetmap.org
+if (["openstreetmap.org"].indexOf(DOMAIN) !== -1) {
+  D_EXTEND(DOMAIN,
+
+    // Uptime site at StatusCake
+    CNAME("uptime", "uptimessl-new.statuscake.com."),
+  );
+}
+
+// Records only in openstreetmap.org and osm.org
+if (["openstreetmap.org", "osm.org"].indexOf(DOMAIN) !== -1) {
+  D_EXTEND(DOMAIN,
+
+    // Main web servers and their aliases
+
+    A("spike-01", SPIKE01_IPV4_HE),
+    AAAA("spike-01", SPIKE01_IPV6_HE),
+    A("spike-01.dub", SPIKE01_INTERNAL),
+    A("spike-01.oob", SPIKE01_OOB),
+
+    A("spike-02", SPIKE02_IPV4_HE),
+    AAAA("spike-02", SPIKE02_IPV6_HE),
+    A("spike-02.dub", SPIKE02_INTERNAL),
+    A("spike-02.oob", SPIKE02_OOB),
+
+    A("spike-03", SPIKE03_IPV4_HE),
+    AAAA("spike-03", SPIKE03_IPV6_HE),
+    A("spike-03.dub", SPIKE03_INTERNAL),
+    A("spike-03.oob", SPIKE03_OOB),
+
+    A("spike-06", SPIKE06_IPV4),
+    AAAA("spike-06", SPIKE06_IPV6),
+    A("spike-06.ams", SPIKE06_INTERNAL),
+    A("spike-06.oob", SPIKE06_OOB),
+
+    A("spike-07", SPIKE07_IPV4),
+    AAAA("spike-07", SPIKE07_IPV6),
+    A("spike-07.ams", SPIKE07_INTERNAL),
+    A("spike-07.oob", SPIKE07_OOB),
+
+    A("spike-08", SPIKE08_IPV4),
+    AAAA("spike-08", SPIKE08_IPV6),
+    A("spike-08.ams", SPIKE08_INTERNAL),
+    A("spike-08.oob", SPIKE08_OOB),
+
+    // Nominatim servers
+
+    A("dulcy", DULCY_IPV4),
+    AAAA("dulcy", DULCY_IPV6),
+    A("dulcy.ams", DULCY_INTERNAL),
+    A("dulcy.oob", DULCY_OOB),
+
+    A("longma", LONGMA_IPV4_HE),
+    AAAA("longma", LONGMA_IPV6_HE),
+    A("longma.dub", LONGMA_INTERNAL),
+    A("longma.oob", LONGMA_OOB),
+
+    A("stormfly-04", STORMFLY04_IPV4),
+    AAAA("stormfly-04", STORMFLY04_IPV6),
+    A("stormfly-04.oob", STORMFLY04_OOB),
+
+    A("vhagar", VHAGAR_IPV4),
+    AAAA("vhagar", VHAGAR_IPV6),
+    A("vhagar.ams", VHAGAR_INTERNAL),
+    A("vhagar.oob", VHAGAR_OOB),
+
+    // Tile cache servers
+
+    A("ridgeback", RIDGEBACK_IPV4),
+    A("ridgeback.oob", RIDGEBACK_OOB),
+    A("angor", ANGOR_IPV4),
+    AAAA("angor", ANGOR_IPV6),
+    A("ladon", LADON_IPV4),
+    AAAA("ladon", LADON_IPV6),
+    A("neak", NEAK_IPV4),
+    A("meraxes", MERAXES_IPV4),
+    AAAA("meraxes", MERAXES_IPV6),
+
+    A("odin", ODIN_IPV4),
+    AAAA("odin", ODIN_IPV6),
+    A("odin.ams", ODIN_INTERNAL),
+    A("odin.oob", ODIN_OOB),
+
+    A("ysera", YSERA_IPV4),
+    A("ysera.ucl", YSERA_INTERNAL),
+    A("ysera.oob", YSERA_OOB),
+
+    A("culebre", CULEBRE_IPV4_HE),
+    AAAA("culebre", CULEBRE_IPV6_HE),
+    A("culebre.dub", CULEBRE_INTERNAL),
+    A("culebre.oob", CULEBRE_OOB),
+
+    A("nidhogg", NIDHOGG_IPV4),
+    AAAA("nidhogg", NIDHOGG_IPV6),
+    A("nidhogg.oob", NIDHOGG_OOB),
+
+    A("wawel", WAWEL_IPV4),
+
+    A("rhaegal", RHAEGAL_IPV4),
+    AAAA("rhaegal", RHAEGAL_IPV6),
+
+    A("palulukon", PALULUKON_IPV4),
+
+    A("piasa", PIASA_IPV4),
+    AAAA("piasa", PIASA_IPV6),
+    A("piasa.oob", PIASA_OOB),
+
+    // Vector tile servers
+
+    A("cmok", CMOK_IPV4),
+
+    A("dribble", DRIBBLE_IPV4),
+    AAAA("dribble", DRIBBLE_IPV6),
+    A("dribble.ams", DRIBBLE_INTERNAL),
+    A("dribble.oob", DRIBBLE_OOB),
+
+    // Site gateways
+
+    A("fafnir", FAFNIR_IPV4_HE),
+    AAAA("fafnir", FAFNIR_IPV6_HE),
+    A("fafnir.dub", FAFNIR_INTERNAL),
+    A("fafnir.oob", FAFNIR_OOB),
+
+    // Planet servers
+
+    A("norbert", NORBERT_IPV4),
+    AAAA("norbert", NORBERT_IPV6),
+    A("norbert.ams", NORBERT_INTERNAL),
+    A("norbert.oob", NORBERT_OOB),
+
+    A("horntail", HORNTAIL_IPV4_HE),
+    AAAA("horntail", HORNTAIL_IPV6_HE),
+    A("horntail.dub", HORNTAIL_INTERNAL),
+    A("horntail.oob", HORNTAIL_OOB),
+
+    // Database servers
+
+    A("snap-01.ams", SNAP01_INTERNAL),
+    A("snap-01.oob", SNAP01_OOB),
+
+    A("snap-02.ucl", SNAP02_INTERNAL),
+    A("snap-02.oob", SNAP02_OOB),
+
+    A("snap-03.dub", SNAP03_INTERNAL),
+    A("snap-03.oob", SNAP03_OOB),
+
+    A("karm.ams", KARM_INTERNAL),
+    A("karm.oob", KARM_OOB),
+
+    A("eddie.ucl", EDDIE_INTERNAL),
+    A("eddie.oob", EDDIE_OOB),
+
+    // Development server with wildcard alias for user sites
+
+    A("faffy", FAFFY_IPV4),
+    AAAA("faffy", FAFFY_IPV6),
+    A("faffy.ams", FAFFY_INTERNAL),
+    A("faffy.oob", FAFFY_OOB),
+
+    // Foundation server
+
+    A("ridley", RIDLEY_IPV4),
+    A("ridley.ucl", RIDLEY_INTERNAL),
+    A("ridley.oob", RIDLEY_OOB),
+
+    // Matomo server
+
+    A("smaug", SMAUG_IPV4_HE),
+    AAAA("smaug", SMAUG_IPV6_HE),
+    A("smaug.dub", SMAUG_INTERNAL),
+    A("smaug.oob", SMAUG_OOB),
+
+    // Prometheus server and munin redirect
+
+    A("stormfly-03", STORMFLY03_IPV4),
+    AAAA("stormfly-03", STORMFLY03_IPV6),
+    A("stormfly-03.oob", STORMFLY03_OOB),
+
+    // Management server
+
+    A("idris", IDRIS_IPV4_HE),
+    AAAA("idris", IDRIS_IPV6_HE),
+    A("idris.dub", IDRIS_INTERNAL),
+    A("idris.oob", IDRIS_OOB),
+
+    // Managed network switches
+
+    A("switch1.ams", SWITCH1AMS_IPV4),
+    AAAA("switch1.ams", SWITCH1AMS_IPV6),
+
+    A("switch1.dub", SWITCH1DUB_IPV4_HE),
+    AAAA("switch1.dub", SWITCH1DUB_IPV6_HE),
+
+    // Managed power strips
+
+    A("pdu1.ams", PDU1AMS_INTERNAL),
+    A("pdu2.ams", PDU2AMS_INTERNAL),
+
+    A("pdu1.dub", PDU1DUB_INTERNAL),
+    A("pdu2.dub", PDU2DUB_INTERNAL),
+
+    // Out of band access servers
+
+    A("oob1.ams", OOB1AMS_INTERNAL),
+
+    A("oob1.dub", OOB1DUB_INTERNAL),
+
+    // Network gateways
+
+    A("equinix-gw.ams", EQUINIXGWAMS_IPV4),
+    AAAA("equinix-gw.ams", EQUINIXGWAMS_IPV6),
+    A("equinix-gw-1.ams", EQUINIXGW1AMS_IPV4),
+    AAAA("equinix-gw-1.ams", EQUINIXGW1AMS_IPV6),
+    A("equinix-gw-2.ams", EQUINIXGW2AMS_IPV4),
+    AAAA("equinix-gw-2.ams", EQUINIXGW2AMS_IPV6),
+    A("equinix-osm.ams", EQUINIXOSMAMS_IPV4),
+    AAAA("equinix-osm.ams", EQUINIXOSMAMS_IPV6),
+
+    A("equinix-gw.dub", EQUINIXGWDUB_IPV4),
+    AAAA("equinix-gw.dub", EQUINIXGWDUB_IPV6),
+    A("equinix-gw-1.dub", EQUINIXGW1DUB_IPV4),
+    AAAA("equinix-gw-1.dub", EQUINIXGW1DUB_IPV6),
+    A("equinix-gw-2.dub", EQUINIXGW2DUB_IPV4),
+    AAAA("equinix-gw-2.dub", EQUINIXGW2DUB_IPV6),
+    A("equinix-osm.dub", EQUINIXOSMDUB_IPV4),
+    AAAA("equinix-osm.dub", EQUINIXOSMDUB_IPV6),
+
+    // Bytemark machine, and the services which operate from it
+
+    A("shenron", SHENRON_IPV4),
+    AAAA("shenron", SHENRON_IPV6),
+
+    // Naga service
+
+    A("naga", NAGA_IPV4_HE),
+    AAAA("naga", NAGA_IPV6_HE),
+    A("naga.dub", NAGA_INTERNAL),
+    A("naga.oob", NAGA_OOB),
+
+    // Wiki servers
+
+    A("konqi", KONQI_IPV4_HE),
+    AAAA("konqi", KONQI_IPV6_HE),
+    A("konqi.dub", KONQI_INTERNAL),
+    A("konqi.oob", KONQI_OOB),
+
+    // Overpass server
+
+    A("grisu", GRISU_IPV4_HE),
+    AAAA("grisu", GRISU_IPV6_HE),
+    A("grisu.dub", GRISU_INTERNAL),
+    A("grisu.oob", GRISU_OOB),
+
+    // GPS tile server
+
+    A("muirdris", MUIRDRIS_IPV4_HE),
+    AAAA("muirdris", MUIRDRIS_IPV6_HE),
+    A("muirdris.dub", MUIRDRIS_INTERNAL),
+    A("muirdris.oob", MUIRDRIS_OOB),
+
+    A("lockheed", LOCKHEED_IPV4),
+    AAAA("lockheed", LOCKHEED_IPV6),
+    A("lockheed.ams", LOCKHEED_INTERNAL),
+    A("lockheed.oob", LOCKHEED_OOB),
+
+    // Discourse server ("community")
+
+    A("fume", FUME_IPV4_HE),
+    AAAA("fume", FUME_IPV6_HE),
+    A("fume.dub", FUME_INTERNAL),
+    A("fume.oob", FUME_OOB),
+
+    // Taginfo and Staging Blog Server
+
+    A("tabaluga", TABALUGA_IPV4),
+    AAAA("tabaluga", TABALUGA_IPV6),
+    A("tabaluga.ams", TABALUGA_INTERNAL),
+    A("tabaluga.oob", TABALUGA_OOB),
+
+    // Spare servers
+    A("albi", ALBI_IPV4),
+    AAAA("albi", ALBI_IPV6),
+
+    // Dynamic DNS records
+    DYNAMIC_RECORDS
+  );
+}
