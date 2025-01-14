@@ -24,6 +24,9 @@ function loadTemplate(template) {
   };
 }
 
+// Ensure that the reverse DNS records are in RFC 4183 notation
+REVCOMPAT("rfc4183");
+
 require("src/hosts.js");
 
 var OPENSTREETMAP = loadTemplate("openstreetmap");
@@ -147,7 +150,7 @@ OSMWIKI("osm.wiki", REG_GANDI);
 
 var PTR_HE_DUB_IPV4 = loadTemplate("ptr_he_dub_ipv4");
 
-PTR_HE_DUB_IPV4("96-27.226.104.184.in-addr.arpa", REG_NONE);
+PTR_HE_DUB_IPV4(REV("184.104.226.96/27"), REG_NONE);
 
 var PTR_HE_DUB_IPV6 = loadTemplate("ptr_he_dub_ipv6");
 
@@ -155,7 +158,7 @@ PTR_HE_DUB_IPV6(REV("2001:470:1:b3b::/64"), REG_NONE);
 
 var PTR_EQUINIX_AMS_IPV4 = loadTemplate("ptr_equinix_ams_ipv4");
 
-PTR_EQUINIX_AMS_IPV4("96-27.86.199.82.in-addr.arpa", REG_NONE);
+PTR_EQUINIX_AMS_IPV4(REV("82.199.86.96/27"), REG_NONE);
 
 var PTR_EQUINIX_AMS_IPV6 = loadTemplate("ptr_equinix_ams_ipv6");
 
@@ -163,7 +166,7 @@ PTR_EQUINIX_AMS_IPV6(REV("2001:4d78:500:5e3::/64"), REG_NONE);
 
 var PTR_EQUINIX_DUB_IPV4 = loadTemplate("ptr_equinix_dub_ipv4");
 
-PTR_EQUINIX_DUB_IPV4("96-27.214.252.87.in-addr.arpa", REG_NONE);
+PTR_EQUINIX_DUB_IPV4(REV("87.252.214.96/27"), REG_NONE);
 
 var PTR_EQUINIX_DUB_IPV6 = loadTemplate("ptr_equinix_dub_ipv6");
 
