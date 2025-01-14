@@ -382,6 +382,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("cmok", CMOK_IPV4),
 
+  A("dribble", DRIBBLE_IPV4),
+  AAAA("dribble", DRIBBLE_IPV6),
+  A("dribble.ams", DRIBBLE_INTERNAL),
+  A("dribble.oob", DRIBBLE_OOB),
+
   CNAME("vector", "dualstack.n.sni.global.fastly.net."),
 
   // Site gateways
@@ -538,10 +543,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   HTTPS("dns", 1, ".", "alpn=h2"),
   HTTPS("git", 1, ".", "alpn=h2"),
   HTTPS("hardware", 1, ".", "alpn=h2"),
-
-  // KVMs
-
-  A("kvm1.ucl", KVM1_INTERNAL),
 
   // Managed network switches
 
@@ -788,10 +789,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Spare servers
 
-  A("dribble", DRIBBLE_IPV4),
-  AAAA("dribble", DRIBBLE_IPV6),
-  A("dribble.ams", DRIBBLE_INTERNAL),
-  A("dribble.oob", DRIBBLE_OOB),
 
   // Uptime site at StatusCake
 
