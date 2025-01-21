@@ -494,6 +494,13 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("b.agri", LOCKHEED_IPV6),
   A("c.agri", LOCKHEED_IPV4),
   AAAA("c.agri", LOCKHEED_IPV6),
+
+  // HTTPS / SVCB records
+  HTTPS("agri", 1, ".", "alpn=h2"),
+  HTTPS("a.agri", 1, ".", "alpn=h2"),
+  HTTPS("b.agri", 1, ".", "alpn=h2"),
+  HTTPS("c.agri", 1, ".", "alpn=h2"),
+
   A("os", LOCKHEED_IPV4),
   AAAA("os", LOCKHEED_IPV6),
   A("a.os", LOCKHEED_IPV4),
@@ -502,6 +509,12 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("b.os", LOCKHEED_IPV6),
   A("c.os", LOCKHEED_IPV4),
   AAAA("c.os", LOCKHEED_IPV6),
+
+  // HTTPS / SVCB records
+  HTTPS("os", 1, ".", "alpn=h2"),
+  HTTPS("a.os", 1, ".", "alpn=h2"),
+  HTTPS("b.os", 1, ".", "alpn=h2"),
+  HTTPS("c.os", 1, ".", "alpn=h2"),
 
 
   // Prometheus server and munin redirect
