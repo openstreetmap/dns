@@ -14,11 +14,6 @@ function loadTemplate(template) {
   return function (domain, registrar) {
     DOMAIN = domain;
     REGISTRAR = registrar;
-    DYNAMIC_RECORDS = [];
-
-    for (var i = 2; i < arguments.length; i++) {
-      DYNAMIC_RECORDS = DYNAMIC_RECORDS.concat(arguments[i]);
-    }
 
     require("src/" + template + ".js");
   };
@@ -40,15 +35,7 @@ try {
   var GEO_NS_RECORDS = [];
 }
 
-OPENSTREETMAP_ORG_RECORDS = [
-  CNAME("_acme-challenge.tile", "bxve5ryiwwv7woiraq.fastly-validations.com.", TTL("10m"))
-]
-
-OSM_ORG_RECORDS = [
-  CNAME("_acme-challenge.tile", "21gvdfyyxjoc4lmsem.fastly-validations.com.", TTL("10m"))
-]
-
-OPENSTREETMAP("openstreetmap.org", REG_GANDI, OPENSTREETMAP_ORG_RECORDS, SSHFP_RECORDS, GEO_NS_RECORDS, NOMINATIM_RECORDS);
+OPENSTREETMAP("openstreetmap.org", REG_GANDI);
 OPENSTREETMAP("openstreetmap.com", REG_GANDI);
 OPENSTREETMAP("openstreetmap.net", REG_GANDI);
 OPENSTREETMAP("openstreetmap.ca", REG_GANDI);
@@ -56,7 +43,7 @@ OPENSTREETMAP("openstreetmap.eu", REG_NONE);
 OPENSTREETMAP("openstreetmap.pro", REG_GANDI);
 OPENSTREETMAP("openstreetmap.gay", REG_GANDI);
 OPENSTREETMAP("openstreetmaps.org", REG_GANDI);
-OPENSTREETMAP("osm.org", REG_GANDI, OSM_ORG_RECORDS, SSHFP_RECORDS);
+OPENSTREETMAP("osm.org", REG_GANDI);
 OPENSTREETMAP("openmaps.org", REG_GANDI);
 OPENSTREETMAP("openstreetmap.io", REG_GANDI);
 OPENSTREETMAP("osm.io", REG_GANDI);
@@ -83,6 +70,20 @@ OPENSTREETMAP("openstreetmap.org.nz", REG_GANDI);
 
 // Disable due to registration issue
 // OPENSTREETMAP("openstreetmap.al", REG_NONE);
+
+D_EXTEND("openstreetmap.org",
+  CNAME("_acme-challenge.tile", "bxve5ryiwwv7woiraq.fastly-validations.com.", TTL("10m")),
+
+  SSHFP_RECORDS,
+  GEO_NS_RECORDS,
+  NOMINATIM_RECORDS
+);
+
+D_EXTEND("osm.org",
+  CNAME("_acme-challenge.tile", "21gvdfyyxjoc4lmsem.fastly-validations.com.", TTL("10m")),
+
+  SSHFP_RECORDS
+);
 
 // Mastodon redirects to en.osm.town
 var OPENSTREETMAP_TOWN = loadTemplate("openstreetmap-town");

@@ -805,10 +805,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Uptime site at StatusCake
 
-  CNAME("uptime", "uptimessl-new.statuscake.com."),
-
-  // Dynamic DNS records
-
-  DYNAMIC_RECORDS
+  CNAME("uptime", "uptimessl-new.statuscake.com.")
 
 );
