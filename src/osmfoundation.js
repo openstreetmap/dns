@@ -103,21 +103,21 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Main web server and it's aliases
 
-  A("@", RIDLEY_IPV4),
-  A("www", RIDLEY_IPV4),
-  A("wiki", RIDLEY_IPV4),
-  A("blog", RIDLEY_IPV4),
-  A("crm", RIDLEY_IPV4),
-  A("join", RIDLEY_IPV4),
-  A("support", RIDLEY_IPV4),
-  A("supporting", RIDLEY_IPV4),
-  A("donate", RIDLEY_IPV4),
+  A("@", IPV4["ridley"]),
+  A("www", IPV4["ridley"]),
+  A("wiki", IPV4["ridley"]),
+  A("blog", IPV4["ridley"]),
+  A("crm", IPV4["ridley"]),
+  A("join", IPV4["ridley"]),
+  A("support", IPV4["ridley"]),
+  A("supporting", IPV4["ridley"]),
+  A("donate", IPV4["ridley"]),
 
-  A("board", RIDLEY_IPV4),
-  A("dwg", RIDLEY_IPV4),
-  A("mwg", RIDLEY_IPV4),
-  A("operations", NAGA_IPV4_HE),
-  AAAA("operations", NAGA_IPV6_HE),
+  A("board", IPV4["ridley"]),
+  A("dwg", IPV4["ridley"]),
+  A("mwg", IPV4["ridley"]),
+  A("operations", IPV4["naga.he"]),
+  AAAA("operations", IPV6["naga.he"]),
 
   // HTTPS / SVCB records
   HTTPS("www", 1, ".", "alpn=h2"),
@@ -138,12 +138,12 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   CNAME("files", "nextcloud-openstreetmapfoundation.cloud68.systems."),
 
   // Staging Blog
-  A("staging.blog", TABALUGA_IPV4),
-  AAAA("staging.blog", TABALUGA_IPV6),
+  A("staging.blog", IPV4["tabaluga"]),
+  AAAA("staging.blog", IPV6["tabaluga"]),
   // HTTPS / SVCB records
   HTTPS("staging.blog", 1, ".", "alpn=h2"),
 
-  A("hardware", IDRIS_IPV4_HE),
+  A("hardware", IPV4["idris.he"]),
 
   // HTTPS / SVCB records
   HTTPS("hardware", 1, ".", "alpn=h2")

@@ -26,8 +26,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Main web server and it's aliases
 
-  A("@", RIDLEY_IPV4),
-  A("old", RIDLEY_IPV4), // Legacy URL support https://blog.openstreetmap.org/2010/02/25/old-opengeodata-posts-now-up-at-old-opengeodata-org/
-  A("www", RIDLEY_IPV4)
+  A("@", IPV4["ridley"]),
+  A("old", IPV4["ridley"]), // Legacy URL support https://blog.openstreetmap.org/2010/02/25/old-opengeodata-posts-now-up-at-old-opengeodata-org/
+  A("www", IPV4["ridley"])
 
 );

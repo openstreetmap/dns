@@ -26,10 +26,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Main web server and it's aliases
 
-  A("@", NAGA_IPV4_HE),
-  AAAA("@", NAGA_IPV6_HE),
-  A("www", NAGA_IPV4_HE),
-  AAAA("www", NAGA_IPV6_HE),
+  A("@", IPV4["naga.he"]),
+  AAAA("@", IPV6["naga.he"]),
+  A("www", IPV4["naga.he"]),
+  AAAA("www", IPV6["naga.he"]),
 
   // HTTPS / SVCB records
   HTTPS("@", 1, ".", "alpn=h2"),

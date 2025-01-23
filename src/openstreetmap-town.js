@@ -34,7 +34,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Redirect en.openstreetmap.town to en.osm.town
 
-  A("en", NAGA_IPV4_HE),
-  AAAA("en", NAGA_IPV6_HE)
+  A("en", IPV4["naga.he"]),
+  AAAA("en", IPV6["naga.he"])
 
 );

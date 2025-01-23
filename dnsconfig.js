@@ -22,7 +22,8 @@ function loadTemplate(template) {
 // Ensure that the reverse DNS records are in RFC 4183 notation
 REVCOMPAT("rfc4183");
 
-require("src/hosts.js");
+var IPV4 = require("src/ipv4.json");
+var IPV6 = require("src/ipv6.json");
 
 var OPENSTREETMAP = loadTemplate("openstreetmap");
 
