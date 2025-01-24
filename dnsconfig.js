@@ -25,6 +25,16 @@ REVCOMPAT("rfc4183");
 var IPV4 = require("src/ipv4.json");
 var IPV6 = require("src/ipv6.json");
 
+var HOST_RECORDS = [];
+
+for (var name in IPV4) {
+  HOST_RECORDS.push(A(name, IPV4[name]));
+}
+
+for (var name in IPV6) {
+  HOST_RECORDS.push(AAAA(name, IPV6[name]));
+}
+
 var OPENSTREETMAP = loadTemplate("openstreetmap");
 
 require("include/sshfp.js");
@@ -75,6 +85,7 @@ OPENSTREETMAP("openstreetmap.org.nz", REG_GANDI);
 D_EXTEND("openstreetmap.org",
   CNAME("_acme-challenge.tile", "bxve5ryiwwv7woiraq.fastly-validations.com.", TTL("10m")),
 
+  HOST_RECORDS,
   SSHFP_RECORDS,
   GEO_NS_RECORDS,
   NOMINATIM_RECORDS
@@ -83,6 +94,7 @@ D_EXTEND("openstreetmap.org",
 D_EXTEND("osm.org",
   CNAME("_acme-challenge.tile", "21gvdfyyxjoc4lmsem.fastly-validations.com.", TTL("10m")),
 
+  HOST_RECORDS,
   SSHFP_RECORDS
 );
 
