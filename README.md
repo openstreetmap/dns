@@ -5,7 +5,7 @@ This repository contains the DNS zone templates and related code for managing Op
 
 ## Standard DNS Zone Files
 
-We use [dnscontrol](https://stackexchange.github.io/dnscontrol/) to manage OpenStreetMap DNS. A set of wrapper scripts are used, which are called from the [Makefile](Makefile)
+We use [dnscontrol](https://dnscontrol.org/) to manage OpenStreetMap DNS. A set of wrapper scripts are used, which are called from the [Makefile](Makefile)
 
 Merges to the master branch trigger a git [post-receive](https://github.com/openstreetmap/chef/blob/master/cookbooks/dns/files/default/post-receive) which runs `make update` via a [script](https://github.com/openstreetmap/chef/blob/master/cookbooks/dns/templates/default/dns-update.erb), the DNS is then updated by dnscontrol.
 
