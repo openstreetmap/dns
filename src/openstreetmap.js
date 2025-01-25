@@ -559,10 +559,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   HTTPS("staging.blog", 1, ".", "alpn=h2"),
 
   A("staging.blog", IPV4["tabaluga"]),
-  AAAA("staging.blog", IPV6["tabaluga"]),
-
-  // Uptime site at StatusCake
-
-  CNAME("uptime", "uptimessl-new.statuscake.com.")
+  AAAA("staging.blog", IPV6["tabaluga"])
 
 );

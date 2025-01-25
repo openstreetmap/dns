@@ -85,6 +85,9 @@ OPENSTREETMAP("openstreetmap.org.nz", REG_GANDI);
 D_EXTEND("openstreetmap.org",
   CNAME("_acme-challenge.tile", "bxve5ryiwwv7woiraq.fastly-validations.com.", TTL("10m")),
 
+  // Uptime site at StatusCake
+  CNAME("uptime", "uptimessl-new.statuscake.com."),
+
   HOST_RECORDS,
   SSHFP_RECORDS,
   GEO_NS_RECORDS,
