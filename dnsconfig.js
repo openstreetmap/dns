@@ -165,6 +165,14 @@ IDEDITOR("ideditor.com", REG_GANDI);
 var OSMWIKI = loadTemplate("osm-wiki");
 OSMWIKI("osm.wiki", REG_GANDI);
 
+var PTR_HE_AMS_IPV4 = loadTemplate("ptr_he_ams_ipv4");
+
+PTR_HE_AMS_IPV4(REV("184.104.179.128/27"), REG_NONE);
+
+var PTR_HE_AMS_IPV6 = loadTemplate("ptr_he_ams_ipv6");
+
+PTR_HE_AMS_IPV6(REV("2001:470:1:fa1::/64"), REG_NONE);
+
 var PTR_HE_DUB_IPV4 = loadTemplate("ptr_he_dub_ipv4");
 
 PTR_HE_DUB_IPV4(REV("184.104.226.96/27"), REG_NONE);

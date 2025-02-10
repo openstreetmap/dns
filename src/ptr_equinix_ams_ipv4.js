@@ -1,4 +1,3 @@
-// http://www.he.net/adm/reverse.dns.html (RFC4183 notation)
 D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   PTR(IPV4["dribble"], "dribble.openstreetmap.org."),
   PTR(IPV4["dulcy"], "dulcy.openstreetmap.org."),
