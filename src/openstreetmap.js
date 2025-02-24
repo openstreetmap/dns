@@ -148,20 +148,20 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Main web servers and their aliases
 
-  osm_web_service("@",    [ "spike-06",
-                            "spike-07",
-                            "spike-08"
-                          ], { cfproxy: true }),
+  osm_web_service("@", [ "spike-06",
+                         "spike-07",
+                         "spike-08"
+                       ], { cfproxy: true }),
 
-  osm_web_service("www", [  "spike-06",
-                            "spike-07",
-                            "spike-08"
-                          ], { cfproxy: true }),
+  osm_web_service("www", [ "spike-06",
+                           "spike-07",
+                           "spike-08"
+                         ], { cfproxy: true }),
 
-  osm_web_service("api", [  "spike-06",
-                            "spike-07",
-                            "spike-08"
-                          ], { cfproxy: true }),
+  osm_web_service("api", [ "spike-06",
+                           "spike-07",
+                           "spike-08"
+                         ], { cfproxy: true }),
 
   osm_web_service("maps", [ "spike-06",
                             "spike-07",
@@ -170,7 +170,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   osm_web_service("mapz", [ "spike-06",
                             "spike-07",
-                            "spike-08"
+                             "spike-08"
                           ], { cfproxy: true }),
 
   // Nominatim servers
@@ -206,49 +206,51 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Development server with wildcard alias for user sites
 
-  osm_web_service("dev",   "faffy"),
+  osm_web_service("dev", "faffy"),
   osm_web_service("*.dev", "faffy"),
-  osm_web_service("ooc",   "faffy"),
+
+  osm_web_service("ooc", "faffy"),
   osm_web_service("a.ooc", "faffy"),
   osm_web_service("b.ooc", "faffy"),
   osm_web_service("c.ooc", "faffy"),
-  osm_web_service("npe",   "faffy"),
+
+  osm_web_service("npe", "faffy"),
 
   // Foundation server
 
-  osm_web_service("blog",       "ridley"),
+  osm_web_service("blog", "ridley"),
   osm_web_service("foundation", "ridley"),
 
   // Matomo server
 
   osm_web_service("matomo", "smaug.he"),
-  osm_web_service("piwik",  "smaug.he"),
+  osm_web_service("piwik", "smaug.he"),
 
   // Imagery servers
 
-  osm_web_service("agri",   "lockheed"),
+  osm_web_service("agri", "lockheed"),
   osm_web_service("a.agri", "lockheed"),
   osm_web_service("b.agri", "lockheed"),
   osm_web_service("c.agri", "lockheed"),
 
-  osm_web_service("act-imagery",   "lockheed"),
+  osm_web_service("act-imagery", "lockheed"),
   osm_web_service("a.act-imagery", "lockheed"),
   osm_web_service("b.act-imagery", "lockheed"),
   osm_web_service("c.act-imagery", "lockheed"),
 
-  osm_web_service("au-vic-melbourne-imagery",   "lockheed"),
+  osm_web_service("au-vic-melbourne-imagery", "lockheed"),
   osm_web_service("a.au-vic-melbourne-imagery", "lockheed"),
   osm_web_service("b.au-vic-melbourne-imagery", "lockheed"),
   osm_web_service("c.au-vic-melbourne-imagery", "lockheed"),
 
-  osm_web_service("os",   "lockheed"),
+  osm_web_service("os", "lockheed"),
   osm_web_service("a.os", "lockheed"),
   osm_web_service("b.os", "lockheed"),
   osm_web_service("c.os", "lockheed"),
 
   osm_web_service("tiler", "lockheed"),
 
-  osm_web_service("us-imagery",   "lockheed"),
+  osm_web_service("us-imagery", "lockheed"),
   osm_web_service("a.us-imagery", "lockheed"),
   osm_web_service("b.us-imagery", "lockheed"),
   osm_web_service("c.us-imagery", "lockheed"),
@@ -256,33 +258,33 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // Prometheus server and munin redirect
 
   osm_web_service("prometheus", "stormfly-03"),
-  osm_web_service("munin",      "stormfly-03"),
+  osm_web_service("munin", "stormfly-03"),
 
   // Management server
 
-  osm_web_service("acme",     "idris.he"),
-  osm_web_service("apt",      "idris.he"),
-  osm_web_service("chef",     "idris.he"),
-  osm_web_service("dns",      "idris.he"),
-  osm_web_service("git",      "idris.he"),
+  osm_web_service("acme", "idris.he"),
+  osm_web_service("apt", "idris.he"),
+  osm_web_service("chef", "idris.he"),
+  osm_web_service("dns", "idris.he"),
+  osm_web_service("git", "idris.he"),
   osm_web_service("hardware", "idris.he"),
 
   // Bytemark machine, and the services which operate from it
 
   osm_web_service("lists", "shenron"),
-  osm_web_service("help",  "shenron"),
+  osm_web_service("help", "shenron"),
 
   // Naga services
 
-  osm_web_service("svn",        "naga.he"),
-  osm_web_service("trac",       "naga.he"),
-  osm_web_service("irc",        "naga.he"),
-  osm_web_service("blogs",      "naga.he"),
-  osm_web_service("welcome",    "naga.he"),
+  osm_web_service("svn", "naga.he"),
+  osm_web_service("trac", "naga.he"),
+  osm_web_service("irc", "naga.he"),
+  osm_web_service("blogs", "naga.he"),
+  osm_web_service("welcome", "naga.he"),
   osm_web_service("operations", "naga.he"),
-  osm_web_service("hot",        "naga.he"),
-  osm_web_service("dmca",       "naga.he"),
-  osm_web_service("otrs",       "naga.he", { h1: true, h2: false }), // OTRS is not available using HTTPS/2
+  osm_web_service("hot", "naga.he"),
+  osm_web_service("dmca", "naga.he"),
+  osm_web_service("otrs", "naga.he", { h1: true, h2: false }), // OTRS is not available using HTTPS/2
   osm_web_service("birthday20", "naga.he"),
 
   // Wiki servers
@@ -295,27 +297,27 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // GPS tile server
 
-  osm_web_service("gps-tile",   "muirdris.he"),
+  osm_web_service("gps-tile", "muirdris.he"),
   osm_web_service("a.gps-tile", "muirdris.he"),
   osm_web_service("b.gps-tile", "muirdris.he"),
   osm_web_service("c.gps-tile", "muirdris.he"),
-  osm_web_service("gps.tile",   "muirdris.he"),
+  osm_web_service("gps.tile", "muirdris.he"),
   osm_web_service("gps-a.tile", "muirdris.he"),
   osm_web_service("gps-b.tile", "muirdris.he"),
   osm_web_service("gps-c.tile", "muirdris.he"),
 
   // Donation site and new OSMF crm site
 
-  osm_web_service("donate",     "ridley"),
-  osm_web_service("support",    "ridley"),
+  osm_web_service("donate", "ridley"),
+  osm_web_service("support", "ridley"),
   osm_web_service("supporting", "ridley"),
 
   // Discourse server ("community")
 
-  osm_web_service("community",   "fume.he"),
+  osm_web_service("community", "fume.he"),
   osm_web_service("communities", "fume.he"),
-  osm_web_service("c",           "fume.he"),
-  osm_web_service("forum",       "fume.he"),
+  osm_web_service("c", "fume.he"),
+  osm_web_service("forum", "fume.he"),
 
   CNAME("community-cdn", "dualstack.n.sni.global.fastly.net."),
   TXT("community", "google-site-verification=hQ8GZyj4KwnPqAX2oAzpbLrh6I5dfR08PSdL3icVkfg"),

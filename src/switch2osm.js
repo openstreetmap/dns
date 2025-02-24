@@ -26,13 +26,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Main web server and it's aliases
 
-  A("@", IPV4["naga.he"]),
-  AAAA("@", IPV6["naga.he"]),
-  A("www", IPV4["naga.he"]),
-  AAAA("www", IPV6["naga.he"]),
-
-  // HTTPS / SVCB records
-  HTTPS("@", 1, ".", "alpn=h2"),
-  HTTPS("www", 1, ".", "alpn=h2")
+  osm_web_service("@", "naga.he"),
+  osm_web_service("www", "naga.he")
 
 );

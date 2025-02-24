@@ -58,11 +58,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   TXT("@", "_globalsign-domain-verification=ps00GlW1BzY9c2_cwH_pFqRkvzZyaCVZ-3RLssRG6S"),
   TXT("@", "_globalsign-domain-verification=W0buKB5ZmL-VwwHw2oQyQImk3I1q3hSemf2qmB1hjP"),
 
-  A("wiki", IPV4["konqi.he"]),
-  AAAA("wiki", IPV6["konqi.he"]),
-  A("www", IPV4["konqi.he"]),
-  AAAA("www", IPV6["konqi.he"]),
-  A("@", IPV4["konqi.he"]),
-  AAAA("@", IPV6["konqi.he"])
+  osm_web_service("wiki", "konqi.he"),
+  osm_web_service("www", "konqi.he"),
+  osm_web_service("@", "konqi.he")
 
 );

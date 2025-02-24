@@ -91,49 +91,27 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Main web server and it's aliases
 
-  A("@", IPV4["ridley"]),
-  A("www", IPV4["ridley"]),
-  A("wiki", IPV4["ridley"]),
-  A("blog", IPV4["ridley"]),
-  A("crm", IPV4["ridley"]),
-  A("join", IPV4["ridley"]),
-  A("support", IPV4["ridley"]),
-  A("supporting", IPV4["ridley"]),
-  A("donate", IPV4["ridley"]),
-
-  A("board", IPV4["ridley"]),
-  A("dwg", IPV4["ridley"]),
-  A("mwg", IPV4["ridley"]),
-  A("operations", IPV4["naga.he"]),
-  AAAA("operations", IPV6["naga.he"]),
-
-  // HTTPS / SVCB records
-  HTTPS("www", 1, ".", "alpn=h2"),
-  HTTPS("wiki", 1, ".", "alpn=h2"),
-  HTTPS("blog", 1, ".", "alpn=h2"),
-  HTTPS("crm", 1, ".", "alpn=h2"),
-  HTTPS("join", 1, ".", "alpn=h2"),
-  HTTPS("support", 1, ".", "alpn=h2"),
-  HTTPS("supporting", 1, ".", "alpn=h2"),
-  HTTPS("donate", 1, ".", "alpn=h2"),
-  HTTPS("board", 1, ".", "alpn=h2"),
-  HTTPS("dwg", 1, ".", "alpn=h2"),
-  HTTPS("mwg", 1, ".", "alpn=h2"),
-  HTTPS("operations", 1, ".", "alpn=h2"),
+  osm_web_service("@", "ridley"),
+  osm_web_service("www", "ridley"),
+  osm_web_service("wiki", "ridley"),
+  osm_web_service("blog", "ridley"),
+  osm_web_service("crm", "ridley"),
+  osm_web_service("join", "ridley"),
+  osm_web_service("support", "ridley"),
+  osm_web_service("supporting", "ridley"),
+  osm_web_service("donate", "ridley"),
+  osm_web_service("board", "ridley"),
+  osm_web_service("dwg", "ridley"),
+  osm_web_service("mwg", "ridley"),
+  osm_web_service("operations", "naga.he"),
 
   // Nextcloud instance
 
   CNAME("files", "nextcloud-openstreetmapfoundation.cloud68.systems."),
 
   // Staging Blog
-  A("staging.blog", IPV4["tabaluga"]),
-  AAAA("staging.blog", IPV6["tabaluga"]),
-  // HTTPS / SVCB records
-  HTTPS("staging.blog", 1, ".", "alpn=h2"),
+  osm_web_service("staging.blog", "tabaluga"),
 
-  A("hardware", IPV4["idris.he"]),
-
-  // HTTPS / SVCB records
-  HTTPS("hardware", 1, ".", "alpn=h2")
+  osm_web_service("hardware", "idris.he"),
 
 );

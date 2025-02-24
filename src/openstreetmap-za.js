@@ -40,64 +40,24 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Aerial imagery sites
 
-  A("aerial", IPV4["lockheed"]),
-  AAAA("aerial", IPV6["lockheed"]),
-  A("a.aerial", IPV4["lockheed"]),
-  AAAA("a.aerial", IPV6["lockheed"]),
-  A("b.aerial", IPV4["lockheed"]),
-  AAAA("b.aerial", IPV6["lockheed"]),
-  A("c.aerial", IPV4["lockheed"]),
-  AAAA("c.aerial", IPV6["lockheed"]),
+  osm_web_service("aerial", "lockheed"),
+  osm_web_service("a.aerial", "lockheed"),
+  osm_web_service("b.aerial", "lockheed"),
+  osm_web_service("c.aerial", "lockheed"),
 
-  // HTTPS / SVCB records
-  HTTPS("aerial", 1, ".", "alpn=h2"),
-  HTTPS("a.aerial", 1, ".", "alpn=h2"),
-  HTTPS("b.aerial", 1, ".", "alpn=h2"),
-  HTTPS("c.aerial", 1, ".", "alpn=h2"),
+  osm_web_service("coct.aerial", "lockheed"),
+  osm_web_service("a.coct.aerial", "lockheed"),
+  osm_web_service("b.coct.aerial", "lockheed"),
+  osm_web_service("c.coct.aerial", "lockheed"),
 
-  A("coct.aerial", IPV4["lockheed"]),
-  AAAA("coct.aerial", IPV6["lockheed"]),
-  A("a.coct.aerial", IPV4["lockheed"]),
-  AAAA("a.coct.aerial", IPV6["lockheed"]),
-  A("b.coct.aerial", IPV4["lockheed"]),
-  AAAA("b.coct.aerial", IPV6["lockheed"]),
-  A("c.coct.aerial", IPV4["lockheed"]),
-  AAAA("c.coct.aerial", IPV6["lockheed"]),
+  osm_web_service("topo", "lockheed"),
+  osm_web_service("a.topo", "lockheed"),
+  osm_web_service("b.topo", "lockheed"),
+  osm_web_service("c.topo", "lockheed"),
 
-  // HTTPS / SVCB records
-  HTTPS("coct.aerial", 1, ".", "alpn=h2"),
-  HTTPS("a.coct.aerial", 1, ".", "alpn=h2"),
-  HTTPS("b.coct.aerial", 1, ".", "alpn=h2"),
-  HTTPS("c.coct.aerial", 1, ".", "alpn=h2"),
-
-  A("topo", IPV4["lockheed"]),
-  AAAA("topo", IPV6["lockheed"]),
-  A("a.topo", IPV4["lockheed"]),
-  AAAA("a.topo", IPV6["lockheed"]),
-  A("b.topo", IPV4["lockheed"]),
-  AAAA("b.topo", IPV6["lockheed"]),
-  A("c.topo", IPV4["lockheed"]),
-  AAAA("c.topo", IPV6["lockheed"]),
-
-  // HTTPS / SVCB records
-  HTTPS("topo", 1, ".", "alpn=h2"),
-  HTTPS("a.topo", 1, ".", "alpn=h2"),
-  HTTPS("b.topo", 1, ".", "alpn=h2"),
-  HTTPS("c.topo", 1, ".", "alpn=h2"),
-
-  A("namibia-topo", IPV4["lockheed"]),
-  AAAA("namibia-topo", IPV6["lockheed"]),
-  A("a.namibia-topo", IPV4["lockheed"]),
-  AAAA("a.namibia-topo", IPV6["lockheed"]),
-  A("b.namibia-topo", IPV4["lockheed"]),
-  AAAA("b.namibia-topo", IPV6["lockheed"]),
-  A("c.namibia-topo", IPV4["lockheed"]),
-  AAAA("c.namibia-topo", IPV6["lockheed"]),
-
-  // HTTPS / SVCB records
-  HTTPS("namibia-topo", 1, ".", "alpn=h2"),
-  HTTPS("a.namibia-topo", 1, ".", "alpn=h2"),
-  HTTPS("b.namibia-topo", 1, ".", "alpn=h2"),
-  HTTPS("c.namibia-topo", 1, ".", "alpn=h2")
+  osm_web_service("namibia-topo", "lockheed"),
+  osm_web_service("a.namibia-topo", "lockheed"),
+  osm_web_service("b.namibia-topo", "lockheed"),
+  osm_web_service("c.namibia-topo", "lockheed")
 
 );
