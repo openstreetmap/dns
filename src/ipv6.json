@@ -7,14 +7,14 @@
   "dribble.he": "2001:470:1:fa1::4",
   "dulcy": "2001:4d78:500:5e3::9",
   "dulcy.he": "2001:470:1:fa1::9",
-  "equinix-gw.ams": "2001:4d78:500:5e2::1"
-  "equinix-gw-1.ams": "2001:4d78:500:5e2::2"
+  "equinix-gw.ams": "2001:4d78:500:5e2::1",
+  "equinix-gw-1.ams": "2001:4d78:500:5e2::2",
   "equinix-gw-2.ams": "2001:4d78:500:5e2::3",
-  "equinix-osm.ams": "2001:4d78:500:5e2::4"
-  "equinix-gw.dub": "2001:4d78:fe03:1b::1"
-  "equinix-gw-1.dub": "2001:4d78:fe03:1b::2"
-  "equinix-gw-2.dub": "2001:4d78:fe03:1b::3"
-  "equinix-osm.dub": "2001:4d78:fe03:1b::4"
+  "equinix-osm.ams": "2001:4d78:500:5e2::4",
+  "equinix-gw.dub": "2001:4d78:fe03:1b::1",
+  "equinix-gw-1.dub": "2001:4d78:fe03:1b::2",
+  "equinix-gw-2.dub": "2001:4d78:fe03:1b::3",
+  "equinix-osm.dub": "2001:4d78:fe03:1b::4",
   "faffy": "2001:4d78:500:5e3::3",
   "faffy.he": "2001:470:1:fa1::3",
   "fafnir": "2001:4d78:fe03:1c::2",
@@ -29,12 +29,12 @@
   "idris.he": "2001:470:1:b3b::6",
   "konqi": "2001:4d78:fe03:1c::7",
   "konqi.he": "2001:470:1:b3b::7",
-  "ladon": "2001:648:2ffe:4::116"
+  "ladon": "2001:648:2ffe:4::116",
   "lockheed": "2001:4d78:500:5e3::10",
   "lockheed.he": "2001:470:1:fa1::10",
   "longma": "2001:4d78:fe03:1c::d",
   "longma.he": "2001:470:1:b3b::d",
-  "meraxes": "2001:bc8:2d57:100:aa1e:84ff:fe72:e660"
+  "meraxes": "2001:bc8:2d57:100:aa1e:84ff:fe72:e660",
   "muirdris": "2001:4d78:fe03:1c::f",
   "muirdris.he": "2001:470:1:b3b::f",
   "naga": "2001:4d78:fe03:1c::8",
@@ -45,8 +45,8 @@
   "odin": "2001:4d78:500:5e3::f",
   "odin.he": "2001:470:1:fa1::f",
   "piasa": "2605:bc80:3010:700::8cd3:a765",
-  "rhaegal": "2001:b68:40ff:3::2"
-  "shenron": "2001:41c9:1:400::32"
+  "rhaegal": "2001:b68:40ff:3::2",
+  "shenron": "2001:41c9:1:400::32",
   "smaug": "2001:4d78:fe03:1c::e",
   "smaug.he": "2001:470:1:b3b::e",
   "spike-01": "2001:4d78:fe03:1c::3",
@@ -63,10 +63,10 @@
   "spike-08.he": "2001:470:1:fa1::8",
   "stormfly-03": "2605:bc80:3010:700::8cd3:a763",
   "stormfly-04": "2605:bc80:3010:700::8cd3:a764",
-  "switch1.he.ams": "2001:470:1:fa1::1"
-  "switch1.ams": "2001:4d78:500:5e3::1"
+  "switch1.he.ams": "2001:470:1:fa1::1",
+  "switch1.ams": "2001:4d78:500:5e3::1",
   "switch1.dub": "2001:4d78:fe03:1c::1",
-  "switch1.he.dub": "2001:470:1:b3b::1"
+  "switch1.he.dub": "2001:470:1:b3b::1",
   "tabaluga": "2001:4d78:500:5e3::e",
   "tabaluga.he": "2001:470:1:fa1::e",
   "vhagar": "2001:4d78:500:5e3::5",
