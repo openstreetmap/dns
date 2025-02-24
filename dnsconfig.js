@@ -70,14 +70,12 @@ OPENSTREETMAP("openstreetmap.fi", REG_GANDI);
 OPENSTREETMAP("openstreetmap.gr", REG_GANDI);
 OPENSTREETMAP("openstreetmap.me", REG_GANDI);
 OPENSTREETMAP("openstreetmap.mx", REG_GANDI);
-OPENSTREETMAP("openstreetmap.nz", REG_GANDI);
 OPENSTREETMAP("openstreetmap.pe", REG_GANDI);
 OPENSTREETMAP("openstreetmap.ph", REG_GANDI);
 OPENSTREETMAP("openstreetmap.sg", REG_GANDI);
 OPENSTREETMAP("openstreetmap.tv", REG_GANDI);
 OPENSTREETMAP("openstreetmap.wales", REG_GANDI);
 OPENSTREETMAP("openstreetmapdata.org", REG_GANDI);
-OPENSTREETMAP("openstreetmap.org.nz", REG_GANDI);
 
 // Disable due to registration issue
 // OPENSTREETMAP("openstreetmap.al", REG_NONE);
@@ -115,6 +113,11 @@ OPENSTREETMAP_TOWN("openstreetmap.town", REG_GANDI);
 var OSM_LI = loadTemplate("osm-li");
 
 OSM_LI("osm.li", REG_GANDI);
+
+var OPENSTREETMAP_NZ = loadTemplate("openstreetmap-nz");
+
+OPENSTREETMAP_NZ("openstreetmap.nz", REG_GANDI);
+OPENSTREETMAP_NZ("openstreetmap.org.nz", REG_GANDI);
 
 var OPENSTREETMAP_UK = loadTemplate("openstreetmap-uk");
 
