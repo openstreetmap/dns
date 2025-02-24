@@ -19,6 +19,104 @@ function loadTemplate(template) {
   };
 }
 
+/**
+ * Create A, optional AAAA, and optional HTTPS (SVCB) records for an OSM web service,
+ * with optional Cloudflare proxy support.
+ *
+ * @param {string} name                - Hostname (e.g. "www").
+ * @param {string[]} servers           - Required array of servers.
+ * @param {Object} [options]           - Optional settings for HTTPS and Cloudflare.
+ * @param {boolean} [options.h1=false]  - If true, sets HTTPS apn=http1.1
+ * @param {boolean} [options.h2=true]  - If true, sets HTTPS apn=h2
+ * @param {boolean} [options.h3=false]  - If true, sets HTTPS apn=h3
+ * @param {boolean} [options.cfproxy=false] - If true, enables Cloudflare proxy on A/AAAA.
+ *
+ */
+function osm_web_service(
+  name,
+  servers,
+  options
+) {
+
+  // If servers is a string, convert to a single-element array
+  if (typeof servers === "string") {
+    servers = [servers];
+  }
+
+  if (options === undefined) {
+    options = {};
+  }
+
+  // Set default values for options.h1, options.h2, and options.h3
+  options.h1 = options.h1 !== undefined ? options.h1 : false;
+  options.h2 = options.h2 !== undefined ? options.h2 : true;
+  options.h3 = options.h3 !== undefined ? options.h3 : false;
+
+  var records = [];
+  var ipv4s = [];
+  var ipv6s = [];
+
+  servers.forEach(function(serverName) {
+    if (IPV4[serverName]) {
+      ipv4s.push(IPV4[serverName]);
+      if (!options.cfproxy) {
+        records.push(A(name, IPV4[serverName]));
+      } else {
+        records.push(A(name, IPV4[serverName], CF_PROXY_ON));
+      }
+    }
+    if (IPV6[serverName]) {
+      ipv6s.push(IPV6[serverName]);
+      if (!options.cfproxy) {
+        records.push(AAAA(name, IPV6[serverName]));
+      } else {
+        records.push(AAAA(name, IPV6[serverName], CF_PROXY_ON));
+      }
+    }
+  });
+
+  if (ipv4s.length === 0 && ipv6s.length === 0) {
+    throw new Error("An IPv4 or IPv6 address is required for " + name + " service");
+  }
+
+  //
+  // Build a parameter string for DNSControl HTTPS() syntax.
+  // Example: "ipv4hint=1.2.3.4,1.2.3.5 ipv6hint=2001:db8::1,2001:db8::2 alpn=h2"
+  //
+  var paramParts = [];
+  if (ipv4s.length > 0) {
+    // Join IPv4 addresses with comma+space
+    paramParts.push("ipv4hint=" + ipv4s.join(","));
+  }
+  if (ipv6s.length > 0) {
+    // Join IPv6 addresses with comma+space
+    paramParts.push("ipv6hint=" + ipv6s.join(","));
+  }
+
+  if (options.h1 || options.h2 || options.h3) {
+    var paramPartsALPN = [];
+    if (options.h3) {
+      paramPartsALPN.push("h3");
+    }
+    if (options.h2) {
+      paramPartsALPN.push("h2");
+    }
+    if (options.h1) {
+      paramPartsALPN.push("http/1.1");
+    }
+    paramParts.push("alpn=" + paramPartsALPN.join(","));
+  }
+
+  // Join the parts with a space
+  var paramString = paramParts.join(" ");
+
+  // Create the HTTPS record with 4 arguments
+  records.push(HTTPS(name, 1, ".", paramString));
+
+
+  return records;
+}
+
 // Ensure that the reverse DNS records are in RFC 4183 notation
 REVCOMPAT("rfc4183");
 
