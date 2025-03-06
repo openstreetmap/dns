@@ -25,12 +25,12 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   MX("community", 10, QUALIFY("a.mx")),
   MX("supporting", 10, QUALIFY("a.mx")),
 
-  A("a.mx", IPV4["fafnir.he"]),
-  AAAA("a.mx", IPV6["fafnir.he"]),
-  A("mail", IPV4["fafnir.he"]),
-  AAAA("mail", IPV6["fafnir.he"]),
-  A("mta-sts", IPV4["fafnir.he"]),
-  AAAA("mta-sts", IPV6["fafnir.he"]),
+  A("a.mx", IPV4["fafnir"]),
+  AAAA("a.mx", IPV6["fafnir"]),
+  A("mail", IPV4["fafnir"]),
+  AAAA("mail", IPV6["fafnir"]),
+  A("mta-sts", IPV4["fafnir"]),
+  AAAA("mta-sts", IPV6["fafnir"]),
 
   // Publish SPF records indicating that only shenron sends mail
 
@@ -186,7 +186,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   CNAME("b.tile", "dualstack.n.sni.global.fastly.net."),
   CNAME("c.tile", "dualstack.n.sni.global.fastly.net."),
 
-  osm_web_service("render", [ "culebre.he",
+  osm_web_service("render", [ "culebre",
                               "nidhogg"
                             ]),
 
@@ -198,11 +198,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   A("backup", IPV4["norbert"]),
   AAAA("backup", IPV6["norbert"]),
-  // A("backup", IPV4["horntail.he"]),
-  // AAAA("backup", IPV6["horntail.he"]),
+  // A("backup", IPV4["horntail"]),
+  // AAAA("backup", IPV6["horntail"]),
 
   osm_web_service("planet", "norbert"),
-  // osm_web_service("planet", "horntail.he"),
+  // osm_web_service("planet", "horntail"),
 
   // Development server with wildcard alias for user sites
 
@@ -223,8 +223,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Matomo server
 
-  osm_web_service("matomo", "smaug.he"),
-  osm_web_service("piwik", "smaug.he"),
+  osm_web_service("matomo", "smaug"),
+  osm_web_service("piwik", "smaug"),
 
   // Imagery servers
 
@@ -262,12 +262,12 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Management server
 
-  osm_web_service("acme", "idris.he"),
-  osm_web_service("apt", "idris.he"),
-  osm_web_service("chef", "idris.he"),
-  osm_web_service("dns", "idris.he"),
-  osm_web_service("git", "idris.he"),
-  osm_web_service("hardware", "idris.he"),
+  osm_web_service("acme", "idris"),
+  osm_web_service("apt", "idris"),
+  osm_web_service("chef", "idris"),
+  osm_web_service("dns", "idris"),
+  osm_web_service("git", "idris"),
+  osm_web_service("hardware", "idris"),
 
   // Bytemark machine, and the services which operate from it
 
@@ -276,35 +276,35 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Naga services
 
-  osm_web_service("svn", "naga.he"),
-  osm_web_service("trac", "naga.he"),
-  osm_web_service("irc", "naga.he"),
-  osm_web_service("blogs", "naga.he"),
-  osm_web_service("welcome", "naga.he"),
-  osm_web_service("operations", "naga.he"),
-  osm_web_service("hot", "naga.he"),
-  osm_web_service("dmca", "naga.he"),
-  osm_web_service("otrs", "naga.he", { h1: true, h2: false }), // OTRS is not available using HTTPS/2
-  osm_web_service("birthday20", "naga.he"),
+  osm_web_service("svn", "naga"),
+  osm_web_service("trac", "naga"),
+  osm_web_service("irc", "naga"),
+  osm_web_service("blogs", "naga"),
+  osm_web_service("welcome", "naga"),
+  osm_web_service("operations", "naga"),
+  osm_web_service("hot", "naga"),
+  osm_web_service("dmca", "naga"),
+  osm_web_service("otrs", "naga", { h1: true, h2: false }), // OTRS is not available using HTTPS/2
+  osm_web_service("birthday20", "naga"),
 
   // Wiki servers
 
-  osm_web_service("wiki", "konqi.he"),
+  osm_web_service("wiki", "konqi"),
 
   // Overpass server
 
-  osm_web_service("query", "grisu.he"),
+  osm_web_service("query", "grisu"),
 
   // GPS tile server
 
-  osm_web_service("gps-tile", "muirdris.he"),
-  osm_web_service("a.gps-tile", "muirdris.he"),
-  osm_web_service("b.gps-tile", "muirdris.he"),
-  osm_web_service("c.gps-tile", "muirdris.he"),
-  osm_web_service("gps.tile", "muirdris.he"),
-  osm_web_service("gps-a.tile", "muirdris.he"),
-  osm_web_service("gps-b.tile", "muirdris.he"),
-  osm_web_service("gps-c.tile", "muirdris.he"),
+  osm_web_service("gps-tile", "muirdris"),
+  osm_web_service("a.gps-tile", "muirdris"),
+  osm_web_service("b.gps-tile", "muirdris"),
+  osm_web_service("c.gps-tile", "muirdris"),
+  osm_web_service("gps.tile", "muirdris"),
+  osm_web_service("gps-a.tile", "muirdris"),
+  osm_web_service("gps-b.tile", "muirdris"),
+  osm_web_service("gps-c.tile", "muirdris"),
 
   // Donation site and new OSMF crm site
 
@@ -314,10 +314,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Discourse server ("community")
 
-  osm_web_service("community", "fume.he"),
-  osm_web_service("communities", "fume.he"),
-  osm_web_service("c", "fume.he"),
-  osm_web_service("forum", "fume.he"),
+  osm_web_service("community", "fume"),
+  osm_web_service("communities", "fume"),
+  osm_web_service("c", "fume"),
+  osm_web_service("forum", "fume"),
 
   CNAME("community-cdn", "dualstack.n.sni.global.fastly.net."),
   TXT("community", "google-site-verification=hQ8GZyj4KwnPqAX2oAzpbLrh6I5dfR08PSdL3icVkfg"),

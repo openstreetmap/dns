@@ -28,7 +28,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   ALIAS("@", "openstreetmap.github.io."),
   CNAME("www", "openstreetmap.github.io."),
-  A("preview", IPV4["naga.he"]),
-  AAAA("preview", IPV6["naga.he"])
+  A("preview", IPV4["naga"]),
+  AAAA("preview", IPV6["naga"])
 
 );

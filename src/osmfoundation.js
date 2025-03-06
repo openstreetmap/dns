@@ -103,7 +103,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   osm_web_service("board", "ridley"),
   osm_web_service("dwg", "ridley"),
   osm_web_service("mwg", "ridley"),
-  osm_web_service("operations", "naga.he"),
+  osm_web_service("operations", "naga"),
 
   // Nextcloud instance
 
@@ -112,6 +112,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // Staging Blog
   osm_web_service("staging.blog", "tabaluga"),
 
-  osm_web_service("hardware", "idris.he"),
+  osm_web_service("hardware", "idris"),
 
 );
