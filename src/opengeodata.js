@@ -28,6 +28,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   osm_web_service("@", "ridley"),
   osm_web_service("old", "ridley"), // Legacy URL support https://blog.openstreetmap.org/2010/02/25/old-opengeodata-posts-now-up-at-old-opengeodata-org/
-  osm_web_service("www", "ridley")
+  osm_web_service("www", "ridley"),
 
 );

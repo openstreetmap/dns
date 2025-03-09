@@ -21,6 +21,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   AAAA("www", "2a01:4f8:1c17:6433::2"),
 
   // Test server for osm2pgsql development
-  A("test", "135.181.221.216")
+  A("test", "135.181.221.216"),
 
 );

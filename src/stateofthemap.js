@@ -67,6 +67,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Google Site Verification - Grant
   TXT("2022", "google-site-verification=wT1dJzSYM_2By372lJ_v9IU1crF21qOySEAPABxUcyo"),
-  TXT("@", "google-site-verification=pqJHZHtrC4UhevQdPlR_2gVDPml6UCwmyHq75bfWLRQ")
+  TXT("@", "google-site-verification=pqJHZHtrC4UhevQdPlR_2gVDPml6UCwmyHq75bfWLRQ"),
 
 );

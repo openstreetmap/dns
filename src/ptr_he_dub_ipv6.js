@@ -13,5 +13,5 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   PTR(IPV6["spike-01.he"], "spike-01.he.openstreetmap.org."),
   PTR(IPV6["spike-02.he"], "spike-02.he.openstreetmap.org."),
   PTR(IPV6["spike-03.he"], "spike-03.he.openstreetmap.org."),
-  PTR(IPV6["switch1.he.dub"], "switch1.he.dub.openstreetmap.org.")
+  PTR(IPV6["switch1.he.dub"], "switch1.he.dub.openstreetmap.org."),
 );

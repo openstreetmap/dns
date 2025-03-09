@@ -58,6 +58,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   osm_web_service("namibia-topo", "lockheed"),
   osm_web_service("a.namibia-topo", "lockheed"),
   osm_web_service("b.namibia-topo", "lockheed"),
-  osm_web_service("c.namibia-topo", "lockheed")
+  osm_web_service("c.namibia-topo", "lockheed"),
 
 );

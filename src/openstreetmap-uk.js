@@ -62,6 +62,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   osm_web_service("ea", "lockheed"),
   osm_web_service("a.ea", "lockheed"),
   osm_web_service("b.ea", "lockheed"),
-  osm_web_service("c.ea", "lockheed")
+  osm_web_service("c.ea", "lockheed"),
 
 );

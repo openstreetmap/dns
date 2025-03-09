@@ -24,6 +24,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   ALIAS("@", "openstreetmap-madagascar.github.io."),
   CNAME("www", "openstreetmap-madagascar.github.io."),
 
-  CNAME("sotm2024", "openstreetmap-madagascar.github.io.")
+  CNAME("sotm2024", "openstreetmap-madagascar.github.io."),
 
 );

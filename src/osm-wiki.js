@@ -60,6 +60,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   osm_web_service("wiki", "konqi"),
   osm_web_service("www", "konqi"),
-  osm_web_service("@", "konqi")
+  osm_web_service("@", "konqi"),
 
 );

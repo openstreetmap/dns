@@ -36,6 +36,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   ALIAS("@", "www.openstreetmap.org."),
   CNAME("www", "www.openstreetmap.org."),
-  CNAME("api", "api.openstreetmap.org.")
+  CNAME("api", "api.openstreetmap.org."),
 
 );
