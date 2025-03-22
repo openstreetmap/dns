@@ -290,6 +290,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // Wiki servers
 
   osm_web_service("wiki", "konqi"),
+  osm_web_service("test.wiki", "muirdris"),
 
   // Overpass server
 
