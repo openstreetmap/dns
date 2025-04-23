@@ -13,16 +13,28 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
     ],
   }),
 
-  // Block email delivery
+  // Email delivery
+  SPF_BUILDER({
+    label: "@",
+    parts: [
+      "v=spf1",
+      "include:secureserver.net",
+      "-all"
+    ]
+  }),
 
-  TXT("_dmarc", "v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s;"),
-  TXT("*._domainkey", "v=DKIM1; p="),
-  TXT("@", "v=spf1 -all"),
+  TXT("_dmarc", "v=DMARC1; p=none;"),
 
-  // Site hosted on github pages
+  CNAME("k2._domainkey", "dkim2.mcsv.net."),
+  CNAME("k3._domainkey", "dkim3.mcsv.net."),
+  A("mail", "92.205.4.228"),
 
-  ALIAS("@", "openstreetmap-polska.github.io."),
-  CNAME("www", "openstreetmap-polska.github.io."),
+  MX("mail", 10, "mail"),
+
+  // 2025 SoTM site
+
+  A("@", "92.205.4.228"),
+  A("www", "92.205.4.228"),
 
   // Previous editions
 
