@@ -35,6 +35,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   ALIAS("@", "osm-uk.github.io."),
   CNAME("www", "osm-uk.github.io."),
+  CNAME("2025", "osm-uk.github.io."),
 
   // Previous editions
 
