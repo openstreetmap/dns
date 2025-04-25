@@ -33,8 +33,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // 2025 SoTM site
 
-  A("@", "92.205.4.228"),
-  A("www", "92.205.4.228"),
+  ALIAS("@", "osm-uk.github.io."),
+  CNAME("www", "osm-uk.github.io."),
 
   // Previous editions
 
