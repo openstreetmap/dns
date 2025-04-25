@@ -33,8 +33,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // 2025 SoTM site
 
-  ALIAS("@", "osm-uk.github.io."),
-  CNAME("www", "osm-uk.github.io."),
+  ALIAS("@", "osm-uk.github.io.", CF_PROXY_ON),
+  CNAME("www", "osm-uk.github.io.", CF_PROXY_ON),
+  CF_SINGLE_REDIRECT("sotm-eu-root", 302, "stateofthemap.eu", "2025.stateofthemap.eu"),
+  CF_SINGLE_REDIRECT("soth-eu-year", 302, "www.stateofthemap.eu", "2025.stateofthemap.eu"),
+
   CNAME("2025", "osm-uk.github.io."),
 
   // Previous editions
