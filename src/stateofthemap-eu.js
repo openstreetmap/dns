@@ -29,7 +29,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   CNAME("k3._domainkey", "dkim3.mcsv.net."),
   A("mail", "92.205.4.228"),
 
-  MX("mail", 10, "mail"),
+  MX("@", 10, "mail"),
 
   // Web service for stateofthemap.eu index site
   osm_web_service("@", "naga"),
