@@ -313,6 +313,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   osm_web_service("support", "ridley"),
   osm_web_service("supporting", "ridley"),
 
+  osm_web_service("test.civicrm", "muirdris"),
+
   // Discourse server ("community")
 
   osm_web_service("community", "fume"),
