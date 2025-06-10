@@ -272,7 +272,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // Bytemark machine, and the services which operate from it
 
   osm_web_service("lists", "shenron"),
-  osm_web_service("help", "shenron"),
 
   // Naga services
 
@@ -286,6 +285,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   osm_web_service("dmca", "naga"),
   osm_web_service("otrs", "naga", { h1: true, h2: false }), // OTRS is not available using HTTPS/2
   osm_web_service("birthday20", "naga"),
+  osm_web_service("help", "naga"),
 
   // Wiki servers
 
