@@ -333,4 +333,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   osm_web_service("staging.blog", "tabaluga"),
 
+  // Awards (external - Ilya Zverev)
+  ALIAS("awards", "awards.osmz.ee."),
+
 );
