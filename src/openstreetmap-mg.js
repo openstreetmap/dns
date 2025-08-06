@@ -19,10 +19,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   TXT("*._domainkey", "v=DKIM1; p="),
   TXT("@", "v=spf1 -all"),
 
-  // Site hosted on github pages
+  ALIAS("@", "www.openstreetmap.org."),
+  CNAME("www", "www.openstreetmap.org."),
 
-  ALIAS("@", "openstreetmap-madagascar.github.io."),
-  CNAME("www", "openstreetmap-madagascar.github.io."),
+  // Site hosted on github pages
 
   CNAME("sotm2024", "openstreetmap-madagascar.github.io."),
 
