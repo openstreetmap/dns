@@ -15,8 +15,8 @@ europe:
       - 6224537
       requests: 700
       name: longma
-      ipv4: 184.104.226.109
-      ipv6: 2001:470:1:b3b::d
+      ipv4: 87.252.214.109
+      ipv6: 2001:4d78:fe03:1c::d
     - statuscake:
        - 6726828
        - 6726827
