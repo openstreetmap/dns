@@ -147,8 +147,8 @@ try {
 OPENSTREETMAP("openstreetmap.org", REG_GANDI);
 OPENSTREETMAP("openstreetmap.com", REG_GANDI);
 OPENSTREETMAP("openstreetmap.net", REG_GANDI);
-OPENSTREETMAP("openstreetmap.ca", REG_GANDI);
-OPENSTREETMAP("openstreetmap.eu", REG_NONE);
+OPENSTREETMAP("openstreetmap.ca", REG_GANDI); // Richard Weait managed the registration
+OPENSTREETMAP("openstreetmap.eu", REG_NONE); // fossgis.de manages the registration
 OPENSTREETMAP("openstreetmap.pro", REG_GANDI);
 OPENSTREETMAP("openstreetmap.gay", REG_GANDI);
 OPENSTREETMAP("openstreetmaps.org", REG_GANDI);
@@ -225,8 +225,8 @@ OPENSTREETMAP_UK("openstreetmap.co.uk", REG_GANDI);
 
 var OPENSTREETMAP_ZA = loadTemplate("openstreetmap-za");
 
-OPENSTREETMAP_ZA("openstreetmap.org.za", REG_NONE);
-OPENSTREETMAP_ZA("osm.org.za", REG_NONE);
+OPENSTREETMAP_ZA("openstreetmap.org.za", REG_NONE); // Registration managed by Grant Slater via https://www.vweb.co.za/
+OPENSTREETMAP_ZA("osm.org.za", REG_NONE); // Registration managed by Grant Slater via https://www.vweb.co.za/
 
 var OSMFOUNDATION = loadTemplate("osmfoundation");
 
