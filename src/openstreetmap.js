@@ -255,6 +255,16 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   osm_web_service("b.us-imagery", "lockheed"),
   osm_web_service("c.us-imagery", "lockheed"),
 
+  osm_web_service("bg-imagery", "lockheed"),
+  osm_web_service("a.bg-imagery", "lockheed"),
+  osm_web_service("b.bg-imagery", "lockheed"),
+  osm_web_service("c.bg-imagery", "lockheed"),
+
+  osm_web_service("br-imagery", "lockheed"),
+  osm_web_service("a.br-imagery", "lockheed"),
+  osm_web_service("b.br-imagery", "lockheed"),
+  osm_web_service("c.br-imagery", "lockheed"),
+
   // Prometheus server and munin redirect
 
   osm_web_service("prometheus", "stormfly-03"),
