@@ -132,6 +132,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // Bluesky domain verification
 
   TXT("_atproto", "did=did:plc:i6llv7iwybeipknl57v4dalb"),
+  TXT("_atproto.operations", "did=did:plc:eikdzxaxo3gjyebugkn6za5w"),
 
   // Delegate MTA-STS policy for subdomains
 
