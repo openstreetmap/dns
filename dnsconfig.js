@@ -170,6 +170,7 @@ OPENSTREETMAP("openstreetmap.me", REG_GANDI);
 OPENSTREETMAP("openstreetmap.mx", REG_GANDI);
 OPENSTREETMAP("openstreetmap.pe", REG_GANDI);
 OPENSTREETMAP("openstreetmap.ph", REG_GANDI);
+OPENSTREETMAP("openstreetmap.se", REG_GANDI); // Transfer to OSMF care 23 Sept 2025
 OPENSTREETMAP("openstreetmap.sg", REG_GANDI);
 OPENSTREETMAP("openstreetmap.tv", REG_GANDI);
 OPENSTREETMAP("openstreetmap.wales", REG_GANDI);
