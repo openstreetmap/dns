@@ -98,7 +98,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Main web server and it's aliases
 
-  osm_web_service("@", "ridley"),
+  osm_web_service("@", "naga"),
   osm_web_service("www", "naga"),
   osm_web_service("wiki", "naga"),
   osm_web_service("blog", "ridley"),
