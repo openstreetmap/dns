@@ -152,27 +152,27 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   osm_web_service("@", [ "spike-06",
                          "spike-07",
                          "spike-08"
-                       ], { cfproxy: true }),
+                       ], { cfproxy: false }),
 
   osm_web_service("www", [ "spike-06",
                            "spike-07",
                            "spike-08"
-                         ], { cfproxy: true }),
+                         ], { cfproxy: false }),
 
   osm_web_service("api", [ "spike-06",
                            "spike-07",
                            "spike-08"
-                         ], { cfproxy: true }),
+                         ], { cfproxy: false }),
 
   osm_web_service("maps", [ "spike-06",
                             "spike-07",
                             "spike-08"
-                          ], { cfproxy: true }),
+                          ], { cfproxy: false }),
 
   osm_web_service("mapz", [ "spike-06",
                             "spike-07",
                              "spike-08"
-                          ], { cfproxy: true }),
+                          ], { cfproxy: false }),
 
   // Nominatim servers
 
