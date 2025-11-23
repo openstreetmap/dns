@@ -307,6 +307,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   osm_web_service("query", "grisu"),
 
+  // Spyglass server
+
+  osm_web_service("spyglass", "grisu"),
+
   // GPS tile server
 
   osm_web_service("gps-tile", "muirdris"),
