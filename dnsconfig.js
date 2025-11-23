@@ -134,6 +134,7 @@ for (var name in IPV6) {
 }
 
 var OPENSTREETMAP = loadTemplate("openstreetmap");
+var OPENSTREETMAP_MINIMAL = loadTemplate("openstreetmap-minimal");
 
 require("include/sshfp.js");
 require("include/nominatim.js");
@@ -147,33 +148,33 @@ try {
 OPENSTREETMAP("openstreetmap.org", REG_GANDI);
 OPENSTREETMAP("openstreetmap.com", REG_GANDI);
 OPENSTREETMAP("openstreetmap.net", REG_GANDI);
-OPENSTREETMAP("openstreetmap.ca", REG_GANDI); // Richard Weait managed the registration
+OPENSTREETMAP_MINIMAL("openstreetmap.ca", REG_GANDI); // Richard Weait managed the registration
 OPENSTREETMAP("openstreetmap.eu", REG_NONE); // fossgis.de manages the registration
 OPENSTREETMAP("openstreetmap.pro", REG_GANDI);
-OPENSTREETMAP("openstreetmap.gay", REG_GANDI);
+OPENSTREETMAP_MINIMAL("openstreetmap.gay", REG_GANDI);
 OPENSTREETMAP("openstreetmaps.org", REG_GANDI);
 OPENSTREETMAP("osm.org", REG_GANDI);
 OPENSTREETMAP("openmaps.org", REG_GANDI);
 OPENSTREETMAP("openstreetmap.io", REG_GANDI);
 OPENSTREETMAP("osm.io", REG_GANDI);
-OPENSTREETMAP("openstreetmap.li", REG_GANDI);
+OPENSTREETMAP_MINIMAL("openstreetmap.li", REG_GANDI);
 OPENSTREETMAP("openworldmap.org", REG_GANDI);
 OPENSTREETMAP("freeosm.org", REG_GANDI);
 OPENSTREETMAP("open-maps.org", REG_GANDI);
 OPENSTREETMAP("open-maps.com", REG_GANDI);
 OPENSTREETMAP("osmbugs.org", REG_GANDI);
-OPENSTREETMAP("openstreetmap.ai", REG_GANDI);
-OPENSTREETMAP("openstreetmap.am", REG_GANDI);
-OPENSTREETMAP("openstreetmap.fi", REG_GANDI);
-OPENSTREETMAP("openstreetmap.gr", REG_GANDI);
-OPENSTREETMAP("openstreetmap.me", REG_GANDI);
-OPENSTREETMAP("openstreetmap.mx", REG_GANDI);
-OPENSTREETMAP("openstreetmap.pe", REG_GANDI);
-OPENSTREETMAP("openstreetmap.ph", REG_GANDI);
-OPENSTREETMAP("openstreetmap.se", REG_GANDI); // Transfer to OSMF care 23 Sept 2025
-OPENSTREETMAP("openstreetmap.sg", REG_GANDI);
-OPENSTREETMAP("openstreetmap.tv", REG_GANDI);
-OPENSTREETMAP("openstreetmap.wales", REG_GANDI);
+OPENSTREETMAP_MINIMAL("openstreetmap.ai", REG_GANDI);
+OPENSTREETMAP_MINIMAL("openstreetmap.am", REG_GANDI);
+OPENSTREETMAP_MINIMAL("openstreetmap.fi", REG_GANDI);
+OPENSTREETMAP_MINIMAL("openstreetmap.gr", REG_GANDI);
+OPENSTREETMAP_MINIMAL("openstreetmap.me", REG_GANDI);
+OPENSTREETMAP_MINIMAL("openstreetmap.mx", REG_GANDI);
+OPENSTREETMAP_MINIMAL("openstreetmap.pe", REG_GANDI);
+OPENSTREETMAP_MINIMAL("openstreetmap.ph", REG_GANDI);
+OPENSTREETMAP_MINIMAL("openstreetmap.se", REG_GANDI); // Transfer to OSMF care 23 Sept 2025
+OPENSTREETMAP_MINIMAL("openstreetmap.sg", REG_GANDI);
+OPENSTREETMAP_MINIMAL("openstreetmap.tv", REG_GANDI);
+OPENSTREETMAP_MINIMAL("openstreetmap.wales", REG_GANDI);
 OPENSTREETMAP("openstreetmapdata.org", REG_GANDI);
 
 // Disable due to registration issue
