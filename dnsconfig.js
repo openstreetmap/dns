@@ -145,6 +145,23 @@ try {
   var GEO_NS_RECORDS = [];
 }
 
+// Publish CAA records indicating that only letsencrypt and globalsign (Fastly) should issue certificates
+var OSM_CAA = [
+  CAA_BUILDER({
+    label: "@",
+    ttl: "1h",
+    iodef: "mailto:hostmaster@openstreetmap.org",
+    issue: [
+      "letsencrypt.org",
+      "globalsign.com",   // Used by Fastly for CDN certificates
+    ],
+    issuewild: [
+      "letsencrypt.org",
+      "globalsign.com",   // Used by Fastly for CDN certificates
+    ],
+  }),
+];
+
 OPENSTREETMAP("openstreetmap.org", REG_GANDI);
 OPENSTREETMAP("openstreetmap.com", REG_GANDI);
 OPENSTREETMAP("openstreetmap.net", REG_GANDI);

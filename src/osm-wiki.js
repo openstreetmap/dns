@@ -1,20 +1,7 @@
 D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
-  // Publish CAA records indicating that only letsencrypt and globalsign (Fastly) should issue certificates
-
-  CAA_BUILDER({
-    label: "@",
-    ttl: "1h",
-    iodef: "mailto:hostmaster@openstreetmap.org",
-    issue: [
-      "letsencrypt.org",
-      "globalsign.com",   // Used by Fastly for CDN certificates
-    ],
-    issuewild: [
-      "letsencrypt.org",
-      "globalsign.com",   // Used by Fastly for CDN certificates
-    ],
-  }),
+  // Include OSM standard CAA records
+  OSM_CAA,
 
   // Mail service
 

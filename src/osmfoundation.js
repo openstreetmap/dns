@@ -1,17 +1,7 @@
 D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
-  // Publish CAA records indicating that only letsencrypt should issue certificates
-
-  CAA_BUILDER({
-    label: "@",
-    iodef: "mailto:hostmaster@openstreetmap.org",
-    issue: [
-      "letsencrypt.org",
-    ],
-    issuewild: [
-      "letsencrypt.org",
-    ],
-  }),
+  // Include OSM standard CAA records
+  OSM_CAA,
 
   // Let mailbox.org handle email
 
