@@ -38,6 +38,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   osm_web_service("@", "naga"),
   osm_web_service("www", "naga"),
+  osm_web_service("2026", "naga"),
   osm_web_service("2025", "naga"),
   osm_web_service("2024", "naga"),
   osm_web_service("2022", "naga"),
