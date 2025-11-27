@@ -50,4 +50,9 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   osm_web_service("b.namibia-topo", "lockheed"),
   osm_web_service("c.namibia-topo", "lockheed"),
 
+  osm_web_service("eswatini-topo", "lockheed"),
+  osm_web_service("a.eswatini-topo", "lockheed"),
+  osm_web_service("b.eswatini-topo", "lockheed"),
+  osm_web_service("c.eswatini-topo", "lockheed"),
+
 );
