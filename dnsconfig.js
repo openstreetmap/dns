@@ -216,6 +216,16 @@ D_EXTEND("osm.org",
   SSHFP_RECORDS
 );
 
+// Add TXT records for Fastly domain verification
+D_EXTEND("openstreetmap.com",
+    TXT("@", "fastly-domain-delegation-fddelt00562353-11-27-25")
+);
+
+// Add TXT records for Fastly domain verification
+D_EXTEND("openstreetmaps.org",
+    TXT("@", "fastly-domain-delegation-fddelt00562353-11-27-25")
+);
+
 // Mastodon redirects to en.osm.town
 var OPENSTREETMAP_TOWN = loadTemplate("openstreetmap-town");
 OPENSTREETMAP_TOWN("openstreetmap.town", REG_GANDI);
