@@ -204,6 +204,7 @@ D_EXTEND("openstreetmap.org",
   CNAME("_acme-challenge.maps", "2leu29v9afqhemef1q.fastly-validations.com.", TTL("10m")),
   CNAME("_acme-challenge.mapz", "rmoim12atygshmupwo.fastly-validations.com.", TTL("10m")),
   CNAME("_acme-challenge.api", "8tehoklqvtfwibarur.fastly-validations.com.", TTL("10m")),
+  CNAME("_acme-challenge.nominatim", "awgahoan90pug3ahwe.fastly-validations.com.", TTL("10m")),
 
   // Uptime site at StatusCake
   CNAME("uptime", "uptimessl-new.statuscake.com."),
@@ -221,6 +222,7 @@ D_EXTEND("osm.org",
   CNAME("_acme-challenge.maps", "do483jonhr62v692b3.fastly-validations.com.", TTL("10m")),
   CNAME("_acme-challenge.mapz", "bqwrbkn9ro4bk6qst0.fastly-validations.com.", TTL("10m")),
   CNAME("_acme-challenge.api", "io2kxc7zwh7qhv8ils.fastly-validations.com.", TTL("10m")),
+  CNAME("_acme-challenge.nominatim", "92s4lnmzw5u38t7h0h.fastly-validations.com.", TTL("10m")),
 
   HOST_RECORDS,
   SSHFP_RECORDS,
@@ -231,12 +233,27 @@ D_EXTEND("openstreetmap.com",
     TXT("@", "fastly-domain-delegation-fddelt00562353-11-27-25"),
     CNAME("_acme-challenge.www", "ca8edx6j0j9bajvnsg.fastly-validations.com.", TTL("10m")),
     CNAME("_acme-challenge", "ainebd3sbkqlnd7xov.fastly-validations.com.", TTL("10m")),
+    CNAME("_acme-challenge.nominatim", "sdbt50u2ph4qtyed64.fastly-validations.com.", TTL("10m")),
 );
 
 // Add TXT records for Fastly domain verification
 D_EXTEND("openstreetmaps.org",
     TXT("@", "fastly-domain-delegation-fddelt00562353-11-27-25"),
+    CNAME("_acme-challenge.nominatim", "h11ge5fz27wesj7ed7.fastly-validations.com.", TTL("10m")),
 );
+
+// Add TXT records for Fastly domain verification
+D_EXTEND("openstreetmap.net",
+    CNAME("_acme-challenge.nominatim", "2gt66frz9mw2vyxeet.fastly-validations.com.", TTL("10m")),
+);
+
+// Add TXT records for Fastly domain verification
+D_EXTEND("openmaps.org",
+    CNAME("_acme-challenge.nominatim", "so1z8p2v65qhhll8ke.fastly-validations.com.", TTL("10m")),
+);
+
+// qgis.org is an external domain
+// CNAME _acme-challenge.nominatim.qgis.org to swkbam5e9pajdkw4zn.fastly-validations.com.
 
 // Mastodon redirects to en.osm.town
 var OPENSTREETMAP_TOWN = loadTemplate("openstreetmap-town");
