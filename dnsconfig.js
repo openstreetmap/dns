@@ -199,6 +199,11 @@ OPENSTREETMAP("openstreetmapdata.org", REG_GANDI);
 
 D_EXTEND("openstreetmap.org",
   CNAME("_acme-challenge.tile", "bxve5ryiwwv7woiraq.fastly-validations.com.", TTL("10m")),
+  CNAME("_acme-challenge.www", "hv7ku2116ruaoctsdy.fastly-validations.com.", TTL("10m")),
+  CNAME("_acme-challenge", "ubtonkdwf7q3za34m7.fastly-validations.com.", TTL("10m")),
+  CNAME("_acme-challenge.maps", "2leu29v9afqhemef1q.fastly-validations.com.", TTL("10m")),
+  CNAME("_acme-challenge.mapz", "rmoim12atygshmupwo.fastly-validations.com.", TTL("10m")),
+  CNAME("_acme-challenge.api", "8tehoklqvtfwibarur.fastly-validations.com.", TTL("10m")),
 
   // Uptime site at StatusCake
   CNAME("uptime", "uptimessl-new.statuscake.com."),
@@ -206,24 +211,31 @@ D_EXTEND("openstreetmap.org",
   HOST_RECORDS,
   SSHFP_RECORDS,
   GEO_NS_RECORDS,
-  NOMINATIM_RECORDS
+  NOMINATIM_RECORDS,
 );
 
 D_EXTEND("osm.org",
   CNAME("_acme-challenge.tile", "21gvdfyyxjoc4lmsem.fastly-validations.com.", TTL("10m")),
+  CNAME("_acme-challenge.www", "qs9mizzvj2ahu30lf8.fastly-validations.com.", TTL("10m")),
+  CNAME("_acme-challenge", "k0jpswighq5jhf18ft.fastly-validations.com.", TTL("10m")),
+  CNAME("_acme-challenge.maps", "do483jonhr62v692b3.fastly-validations.com.", TTL("10m")),
+  CNAME("_acme-challenge.mapz", "bqwrbkn9ro4bk6qst0.fastly-validations.com.", TTL("10m")),
+  CNAME("_acme-challenge.api", "io2kxc7zwh7qhv8ils.fastly-validations.com.", TTL("10m")),
 
   HOST_RECORDS,
-  SSHFP_RECORDS
+  SSHFP_RECORDS,
 );
 
 // Add TXT records for Fastly domain verification
 D_EXTEND("openstreetmap.com",
-    TXT("@", "fastly-domain-delegation-fddelt00562353-11-27-25")
+    TXT("@", "fastly-domain-delegation-fddelt00562353-11-27-25"),
+    CNAME("_acme-challenge.www", "ca8edx6j0j9bajvnsg.fastly-validations.com.", TTL("10m")),
+    CNAME("_acme-challenge", "ainebd3sbkqlnd7xov.fastly-validations.com.", TTL("10m")),
 );
 
 // Add TXT records for Fastly domain verification
 D_EXTEND("openstreetmaps.org",
-    TXT("@", "fastly-domain-delegation-fddelt00562353-11-27-25")
+    TXT("@", "fastly-domain-delegation-fddelt00562353-11-27-25"),
 );
 
 // Mastodon redirects to en.osm.town
