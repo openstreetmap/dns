@@ -163,8 +163,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Nominatim servers
 
-  CNAME("nominatim", "nominatim.geo.openstreetmap.org."),
-  CNAME("qgis.nominatim", "nominatim.geo.openstreetmap.org."),
+  CNAME("nominatim", "dualstack.n.sni.global.fastly.net."),
+  CNAME("qgis.nominatim", "dualstack.n.sni.global.fastly.net."),
   CNAME("qa-tile.nominatim", "longma.openstreetmap.org."),
 
   // Tile servers
