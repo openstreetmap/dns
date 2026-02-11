@@ -162,11 +162,11 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   //                         ], { cfproxy: false }),
 
   // Fastly CDN aliases for main web servers
-  ALIAS("@", "dualstack.n.sni.global.fastly.net."),
-  CNAME("www", "dualstack.n.sni.global.fastly.net."),
-  CNAME("api", "dualstack.n.sni.global.fastly.net."),
-  CNAME("maps", "dualstack.n.sni.global.fastly.net."),
-  CNAME("mapz", "dualstack.n.sni.global.fastly.net."),
+  ALIAS("@", "dualstack.m.sni.global.fastly.net."),
+  CNAME("www", "dualstack.m.sni.global.fastly.net."),
+  CNAME("api", "dualstack.m.sni.global.fastly.net."),
+  CNAME("maps", "dualstack.m.sni.global.fastly.net."),
+  CNAME("mapz", "dualstack.m.sni.global.fastly.net."),
 
   // Nominatim servers
 
