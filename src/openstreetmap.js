@@ -136,37 +136,37 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Main web servers and their aliases
 
-  osm_web_service("@", [ "spike-06",
-                         "spike-07",
-                         "spike-08"
-                       ], { cfproxy: false }),
+  // osm_web_service("@", [ "spike-06",
+  //                        "spike-07",
+  //                        "spike-08"
+  //                      ], { cfproxy: false }),
 
-  osm_web_service("www", [ "spike-06",
-                           "spike-07",
-                           "spike-08"
-                         ], { cfproxy: false }),
+  // osm_web_service("www", [ "spike-06",
+  //                          "spike-07",
+  //                          "spike-08"
+  //                        ], { cfproxy: false }),
 
-  osm_web_service("api", [ "spike-06",
-                           "spike-07",
-                           "spike-08"
-                         ], { cfproxy: false }),
+  // osm_web_service("api", [ "spike-06",
+  //                          "spike-07",
+  //                          "spike-08"
+  //                        ], { cfproxy: false }),
 
-  osm_web_service("maps", [ "spike-06",
-                            "spike-07",
-                            "spike-08"
-                          ], { cfproxy: false }),
+  // osm_web_service("maps", [ "spike-06",
+  //                           "spike-07",
+  //                           "spike-08"
+  //                         ], { cfproxy: false }),
 
-  osm_web_service("mapz", [ "spike-06",
-                            "spike-07",
-                             "spike-08"
-                          ], { cfproxy: false }),
+  // osm_web_service("mapz", [ "spike-06",
+  //                           "spike-07",
+  //                            "spike-08"
+  //                         ], { cfproxy: false }),
 
   // Fastly CDN aliases for main web servers
-  // ALIAS("@", "dualstack.m.sni.global.fastly.net."),
-  // CNAME("www", "dualstack.m.sni.global.fastly.net."),
-  // CNAME("api", "dualstack.m.sni.global.fastly.net."),
-  // CNAME("maps", "dualstack.m.sni.global.fastly.net."),
-  // CNAME("mapz", "dualstack.m.sni.global.fastly.net."),
+  ALIAS("@", "dualstack.m.sni.global.fastly.net."),
+  CNAME("www", "dualstack.m.sni.global.fastly.net."),
+  CNAME("api", "dualstack.m.sni.global.fastly.net."),
+  CNAME("maps", "dualstack.m.sni.global.fastly.net."),
+  CNAME("mapz", "dualstack.m.sni.global.fastly.net."),
 
   // Nominatim servers
 
