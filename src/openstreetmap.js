@@ -196,8 +196,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // A("backup", IPV4["horntail"]),
   // AAAA("backup", IPV6["horntail"]),
 
-  osm_web_service("planet", "norbert"),
-  // osm_web_service("planet", "horntail"),
+  // osm_web_service("planet", "norbert"),
+  osm_web_service("planet", "horntail"),
 
   // Development server with wildcard alias for user sites
 
