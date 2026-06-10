@@ -55,4 +55,23 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   osm_web_service("b.eswatini-topo", "lockheed"),
   osm_web_service("c.eswatini-topo", "lockheed"),
 
+  osm_web_service("zimbabwe-topo", "lockheed"),
+  osm_web_service("a.zimbabwe-topo", "lockheed"),
+  osm_web_service("b.zimbabwe-topo", "lockheed"),
+  osm_web_service("c.zimbabwe-topo", "lockheed"),
+
+  osm_web_service("malawi-topo", "lockheed"),
+  osm_web_service("a.malawi-topo", "lockheed"),
+  osm_web_service("b.malawi-topo", "lockheed"),
+  osm_web_service("c.malawi-topo", "lockheed"),
+
+  osm_web_service("zambia-topo", "lockheed"),
+  osm_web_service("a.zambia-topo", "lockheed"),
+  osm_web_service("b.zambia-topo", "lockheed"),
+  osm_web_service("c.zambia-topo", "lockheed"),
+
+  osm_web_service("botswana-topo", "lockheed"),
+  osm_web_service("a.botswana-topo", "lockheed"),
+  osm_web_service("b.botswana-topo", "lockheed"),
+  osm_web_service("c.botswana-topo", "lockheed"),
 );
