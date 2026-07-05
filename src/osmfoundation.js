@@ -7,7 +7,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   MX("@", 10, "mxext1.mailbox.org."),
   MX("@", 10, "mxext2.mailbox.org."),
-  MX("@", 20, "mxext3.mailbox.org."),
+  MX("@", 10, "mxext3.mailbox.org."),
+  MX("@", 10, "mxext4.mailbox.org."),
 
   // Handle mail for the join subdomain ourselves
 
@@ -20,7 +21,6 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
     parts: [
       "v=spf1",
       "include:mailbox.org",     // mailbox.org
-      "include:_spf.google.com", // Google GSuite
       "include:openstreetmap.org",  // main openstreetmap.org spf record
       "-all"
     ]
