@@ -221,6 +221,10 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   osm_web_service("matomo", "smaug"),
   osm_web_service("piwik", "smaug"),
 
+  // GlitchTip server
+
+  osm_web_service("glitchtip", "smaug"),
+
   // Imagery servers
 
   osm_web_service("agri", "lockheed"),
