@@ -74,4 +74,9 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   osm_web_service("a.botswana-topo", "lockheed"),
   osm_web_service("b.botswana-topo", "lockheed"),
   osm_web_service("c.botswana-topo", "lockheed"),
+
+  osm_web_service("lesotho-topo", "lockheed"),
+  osm_web_service("a.lesotho-topo", "lockheed"),
+  osm_web_service("b.lesotho-topo", "lockheed"),
+  osm_web_service("c.lesotho-topo", "lockheed"),
 );
