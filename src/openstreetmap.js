@@ -295,6 +295,8 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   osm_web_service("otrs", "naga", { h1: true, h2: false }), // OTRS is not available using HTTPS/2
   osm_web_service("birthday20", "naga"),
   osm_web_service("help", "naga"),
+  // News redirect to weeklyosm
+  osm_web_service("news", "naga"),
 
   // Wiki servers
 
