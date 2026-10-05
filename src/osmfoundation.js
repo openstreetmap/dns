@@ -38,11 +38,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   // Apple Business Manager verification
   TXT("@", "apple-domain-verification=ZzBG2msRtUDehTMW"),
 
-  // Mailbox.org registration verification
-  TXT("d00f46a3fde45d06c53f3cd5b21f213ea384e7f5", "4a229bebe41606a1f7d909507846729a73998c31"),
-
   // Publish DMARC report-only policy
-
   DMARC_BUILDER({
     policy: "none",
     rua: [

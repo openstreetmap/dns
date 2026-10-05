@@ -289,7 +289,16 @@ OPENSTREETMAP_ZA("osm.org.za", REG_NONE); // Registration managed by Grant Slate
 var OSMFOUNDATION = loadTemplate("osmfoundation");
 
 OSMFOUNDATION("osmfoundation.org", REG_GANDI);
+D_EXTEND("osmfoundation.org",
+  // Mailbox.org registration verification
+  TXT("d00f46a3fde45d06c53f3cd5b21f213ea384e7f5", "4a229bebe41606a1f7d909507846729a73998c31")
+);
+
 OSMFOUNDATION("osmfoundation.com", REG_GANDI);
+D_EXTEND("osmfoundation.com",
+  // Mailbox.org registration verification
+  TXT("d00f46a3fde45d06c53f3cd5b21f213ea384e7f5", "6da2dfe55108d555b0035968b8a4a0789226498e")
+);
 
 var STATEOFTHEMAP = loadTemplate("stateofthemap");
 
