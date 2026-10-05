@@ -289,6 +289,7 @@ OPENSTREETMAP_ZA("osm.org.za", REG_NONE); // Registration managed by Grant Slate
 var OSMFOUNDATION = loadTemplate("osmfoundation");
 
 OSMFOUNDATION("osmfoundation.org", REG_GANDI);
+OSMFOUNDATION("osmfoundation.com", REG_GANDI);
 
 var STATEOFTHEMAP = loadTemplate("stateofthemap");
 
