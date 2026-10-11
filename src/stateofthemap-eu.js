@@ -30,7 +30,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Previous editions
 
-  A("2014", "49.12.5.171"),
+  osm_web_service("2014", "naga"),
   CNAME("2023", "osmbe.github.io."),
   CNAME("2024", "openstreetmap-polska.github.io."),
 
