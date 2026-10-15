@@ -97,6 +97,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
   osm_web_service("dwg", "naga"),
   osm_web_service("mwg", "naga"),
   osm_web_service("operations", "naga"),
+  osm_web_service("vault", "naga"),
 
   // Nextcloud instance
 
