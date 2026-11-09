@@ -213,7 +213,7 @@ D(DOMAIN, REGISTRAR, DnsProvider(PROVIDER),
 
   // Foundation server
 
-  osm_web_service("blog", "ridley"),
+  osm_web_service("blog", "naga"),
   ALIAS("foundation", "www.osmfoundation.org."),
 
   // Matomo server
